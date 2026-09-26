@@ -10,6 +10,8 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -22,6 +24,8 @@ jobs:
       - name: Recount paper results
         run: python paper/reproduce_results.py
       - name: Framework regression suite
-        run: python -m pytest tests -q
+        run: |
+          make -C native/s1_backend_probe all
+          python tools/test_public_framework.py
       - name: Current strategy regression suite
         run: python tools/test_current_strategy.py

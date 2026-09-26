@@ -21,11 +21,18 @@ On Linux, create a Python 3.12 virtual environment and run:
 
 ```bash
 python -m pip install -e . -r requirements-dev.txt
-python -m pytest tests -q
+make -C native/s1_backend_probe all
+python tools/test_public_framework.py
 python tools/test_current_strategy.py
 ```
 
 The editable installation makes subprocess imports resolve the same source tree.
+Install a C compiler and GNU make for the native build (for example, the
+`build-essential` package on Ubuntu). Use a normal clone with its public parent
+history, not a depth-one checkout. The public test entry reports two omitted
+private-provenance checks from `runtime/PUBLIC_TEST_SCOPE.json`; it retains all
+other framework tests. Direct `pytest tests` additionally requires those two
+historical assets on the original deployment.
 Do not collect every historical package into one pytest invocation: different
 snapshots deliberately reuse module names. Windows supports numerical checks and
 the current strategy suite; complete controller tests require POSIX `fcntl`.

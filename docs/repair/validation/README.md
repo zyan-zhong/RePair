@@ -5,6 +5,12 @@ aggregates, runs the framework suite on Linux and runs the current strategy suit
 separately. Executed checks are recorded with commands, exit status and counts.
 Source integrity and passing software tests do not establish policy improvement.
 
+The public framework command is `python tools/test_public_framework.py`, after
+`make -C native/s1_backend_probe all`. It explicitly deselects two original
+provenance tests requiring the private B0/A9 server assets and an old private Git
+commit. Their unmodified tests remain in the tree, and every other framework test
+is retained. `runtime/PUBLIC_TEST_SCOPE.json` records the exact node IDs and reasons.
+
 `LINUX_BASELINE_TESTS.json` is the earlier 1,998-test result on the base scientific
 checkout, retained as historical evidence. `LINUX_PUBLIC_VALIDATION.json` records
 the fresh extracted public source check when present. The release GitHub Actions

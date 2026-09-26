@@ -16,7 +16,8 @@ release inventory. None grants execution authority or starts training.
 
 ```bash
 python -m pip install -e . -r requirements-dev.txt
-python -m pytest tests -q
+make -C native/s1_backend_probe all
+python tools/test_public_framework.py
 python tools/test_current_strategy.py
 ```
 

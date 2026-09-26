@@ -1,0 +1,17 @@
+{
+  "schema": "REPAIR_PUBLIC_TEST_SCOPE_V1",
+  "scope": "Offline framework regression tests; no GPU or provider requests",
+  "excluded_tests": [
+    {
+      "nodeid": "tests/memory/test_package_b_b0_dependency.py::test_b0_exact_dependency_binding_is_rehashable",
+      "reason": "Checks the exact historical server-only calibrated B0 snapshot and A9 audit at their registered absolute locations. Those external evidence assets are not distributed in this public release."
+    },
+    {
+      "nodeid": "tests/memory/test_task_access_materializer.py::test_task_access_core_file_remains_byte_identical",
+      "reason": "Runs git show against private historical commit 08aa577a299012aa59b03d75a4a0654ae0d74d69. This new repository intentionally does not publish private Git history. All other task-access materializer behavior tests remain enabled."
+    }
+  ],
+  "historical_tests_retained_unchanged": true,
+  "native_build_command": ["make", "-C", "native/s1_backend_probe", "all"],
+  "git_history_requirement": "Public repository parent commit must be present for the ancestry regression test"
+}

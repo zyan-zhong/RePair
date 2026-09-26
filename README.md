@@ -45,11 +45,15 @@ Use Linux and Python 3.12 for the complete suite (the controller uses POSIX lock
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install -e . -r requirements-dev.txt
-python -m pytest tests -q
+make -C native/s1_backend_probe all
+python tools/test_public_framework.py
 python tools/test_current_strategy.py
 ```
 
 The current strategy suite and numerical/source checks also run on Windows.
+The public framework suite excludes two explicitly listed checks of private
+historical evidence and Git history; their original test files remain unchanged.
+See [public test scope](runtime/PUBLIC_TEST_SCOPE.json).
 Historical runtime packages have their own tests and must be tested separately
 because module names overlap. [Validation records](docs/repair/validation/README.md)
 distinguish executed checks from full GPU/API campaign reproduction.
