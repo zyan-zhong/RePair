@@ -1,0 +1,19 @@
+{
+  "checks": [
+    "BASE_MODEL_LOAD",
+    "PARENT_ADAPTER_LOAD_IS_TRAINABLE",
+    "INITIAL_TRAINABLE_PARAMETER_SHA",
+    "LORA_ONLY_TRAINABLE",
+    "TARGET_MODULE_BOUNDARY",
+    "MODEL_UNLOADED_WITHOUT_OPTIMIZER_STEP"
+  ],
+  "model_load_count": 0,
+  "optimizer_step_count": 0,
+  "profile_id": "HUMAN_T2_UNVERIFIED_REPAIR_DIAGNOSTIC_PROFILE_V1",
+  "round_id": "HUMAN_REFERENCE_ROUND_PI1_PI2_V1",
+  "schema_id": "ROUND_TRAINING_MODEL_INITIALIZATION_SMOKE_REQUEST_V1",
+  "schema_version": 1,
+  "stage_binding_sha256": "9185d27c16789689906eddc67759a6280572016cbfd1f1122ec18f608462853e",
+  "status": "NOT_AUTHORIZED",
+  "training_execution_count": 0
+}

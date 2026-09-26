@@ -1,0 +1,161 @@
+test_accounting_selects_exact_parent_not_steps (test_driver.DriverTests.test_accounting_selects_exact_parent_not_steps) ... FAIL
+test_audit_uses_separate_process_and_source_tree (test_driver.DriverTests.test_audit_uses_separate_process_and_source_tree) ... FAIL
+test_driver_never_publishes_restricted_results (test_driver.DriverTests.test_driver_never_publishes_restricted_results) ... FAIL
+test_resume_receipt_is_parsed_exactly (test_driver.DriverTests.test_resume_receipt_is_parsed_exactly) ... FAIL
+test_terminal_nonzero_must_not_trigger_audit (test_driver.DriverTests.test_terminal_nonzero_must_not_trigger_audit) ... FAIL
+test_unknown_accounting_never_assumes_success (test_driver.DriverTests.test_unknown_accounting_never_assumes_success) ... FAIL
+
+======================================================================
+FAIL: test_accounting_selects_exact_parent_not_steps (test_driver.DriverTests.test_accounting_selects_exact_parent_not_steps)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_driver.py", line 8, in module
+    try: return importlib.import_module('stage4e.driver')
+                ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/importlib/__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'stage4e.driver'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_driver.py", line 11, in test_accounting_selects_exact_parent_not_steps
+    m=self.module()
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_driver.py", line 9, in module
+    except ModuleNotFoundError: self.fail('MISSING_OUTCOME_GATED_DRIVER')
+                                ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: MISSING_OUTCOME_GATED_DRIVER
+
+======================================================================
+FAIL: test_audit_uses_separate_process_and_source_tree (test_driver.DriverTests.test_audit_uses_separate_process_and_source_tree)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_driver.py", line 8, in module
+    try: return importlib.import_module('stage4e.driver')
+                ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/importlib/__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'stage4e.driver'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_driver.py", line 30, in test_audit_uses_separate_process_and_source_tree
+    m=self.module();text=Path(m.__file__).read_text()
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_driver.py", line 9, in module
+    except ModuleNotFoundError: self.fail('MISSING_OUTCOME_GATED_DRIVER')
+                                ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: MISSING_OUTCOME_GATED_DRIVER
+
+======================================================================
+FAIL: test_driver_never_publishes_restricted_results (test_driver.DriverTests.test_driver_never_publishes_restricted_results)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_driver.py", line 8, in module
+    try: return importlib.import_module('stage4e.driver')
+                ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/importlib/__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'stage4e.driver'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_driver.py", line 22, in test_driver_never_publishes_restricted_results
+    m=self.module()
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_driver.py", line 9, in module
+    except ModuleNotFoundError: self.fail('MISSING_OUTCOME_GATED_DRIVER')
+                                ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: MISSING_OUTCOME_GATED_DRIVER
+
+======================================================================
+FAIL: test_resume_receipt_is_parsed_exactly (test_driver.DriverTests.test_resume_receipt_is_parsed_exactly)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_driver.py", line 8, in module
+    try: return importlib.import_module('stage4e.driver')
+                ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/importlib/__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'stage4e.driver'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_driver.py", line 26, in test_resume_receipt_is_parsed_exactly
+    m=self.module()
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_driver.py", line 9, in module
+    except ModuleNotFoundError: self.fail('MISSING_OUTCOME_GATED_DRIVER')
+                                ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: MISSING_OUTCOME_GATED_DRIVER
+
+======================================================================
+FAIL: test_terminal_nonzero_must_not_trigger_audit (test_driver.DriverTests.test_terminal_nonzero_must_not_trigger_audit)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_driver.py", line 8, in module
+    try: return importlib.import_module('stage4e.driver')
+                ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/importlib/__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'stage4e.driver'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_driver.py", line 19, in test_terminal_nonzero_must_not_trigger_audit
+    m=self.module()
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_driver.py", line 9, in module
+    except ModuleNotFoundError: self.fail('MISSING_OUTCOME_GATED_DRIVER')
+                                ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: MISSING_OUTCOME_GATED_DRIVER
+
+======================================================================
+FAIL: test_unknown_accounting_never_assumes_success (test_driver.DriverTests.test_unknown_accounting_never_assumes_success)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_driver.py", line 8, in module
+    try: return importlib.import_module('stage4e.driver')
+                ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/importlib/__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'stage4e.driver'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_driver.py", line 15, in test_unknown_accounting_never_assumes_success
+    m=self.module()
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_driver.py", line 9, in module
+    except ModuleNotFoundError: self.fail('MISSING_OUTCOME_GATED_DRIVER')
+                                ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: MISSING_OUTCOME_GATED_DRIVER
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.013s
+
+FAILED (failures=6)

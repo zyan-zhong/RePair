@@ -1,0 +1,36 @@
+test_completion_gate_precedes_receipt_read (test_audit_adapter.AuditAdapterTests.test_completion_gate_precedes_receipt_read) ... ok
+test_exact_order_duplicate_missing_and_boolean_outcomes (test_audit_adapter.AuditAdapterTests.test_exact_order_duplicate_missing_and_boolean_outcomes) ... ok
+test_loader_source_missing_is_a_hard_error (test_audit_adapter.AuditAdapterTests.test_loader_source_missing_is_a_hard_error) ... ok
+test_metadata_only_lineage_does_not_read_unsealed_benchmark (test_audit_adapter.AuditAdapterTests.test_metadata_only_lineage_does_not_read_unsealed_benchmark) ... ok
+test_native_audit_and_aggregator_are_imported_not_reimplemented (test_audit_adapter.AuditAdapterTests.test_native_audit_and_aggregator_are_imported_not_reimplemented) ... ok
+test_takeover_not_forged_when_metrics_missing (test_audit_adapter.AuditAdapterTests.test_takeover_not_forged_when_metrics_missing) ... ok
+test_completion_requires_full_counts_not_just_slurm_zero (test_core.Contracts.test_completion_requires_full_counts_not_just_slurm_zero) ... ok
+test_diagnostic_retention_independent_of_score_direction (test_core.Contracts.test_diagnostic_retention_independent_of_score_direction) ... ok
+test_failed_or_unknown_job_does_not_authorize_audit_or_retry (test_core.Contracts.test_failed_or_unknown_job_does_not_authorize_audit_or_retry) ... ok
+test_inventory_rejects_path_traversal (test_core.Contracts.test_inventory_rejects_path_traversal) ... ok
+test_no_clobber_and_exact_resume (test_core.Contracts.test_no_clobber_and_exact_resume) ... ok
+test_no_guess_for_other_training_arm (test_core.Contracts.test_no_guess_for_other_training_arm) ... ok
+test_nonfinite_json_rejected (test_core.Contracts.test_nonfinite_json_rejected) ... ok
+test_sha_bytes_and_semantics_not_interchanged (test_core.Contracts.test_sha_bytes_and_semantics_not_interchanged) ... ok
+test_strict_duplicate_keys_rejected (test_core.Contracts.test_strict_duplicate_keys_rejected) ... ok
+test_summary_projection_removes_all_per_task_content (test_core.Contracts.test_summary_projection_removes_all_per_task_content) ... ok
+test_symlink_output_rejected (test_core.Contracts.test_symlink_output_rejected) ... ok
+test_accounting_selects_exact_parent_not_steps (test_driver.DriverTests.test_accounting_selects_exact_parent_not_steps) ... ok
+test_audit_uses_separate_process_and_source_tree (test_driver.DriverTests.test_audit_uses_separate_process_and_source_tree) ... ok
+test_driver_never_publishes_restricted_results (test_driver.DriverTests.test_driver_never_publishes_restricted_results) ... ok
+test_resume_receipt_is_parsed_exactly (test_driver.DriverTests.test_resume_receipt_is_parsed_exactly) ... ok
+test_terminal_nonzero_must_not_trigger_audit (test_driver.DriverTests.test_terminal_nonzero_must_not_trigger_audit) ... ok
+test_unknown_accounting_never_assumes_success (test_driver.DriverTests.test_unknown_accounting_never_assumes_success) ... ok
+test_divergence_refuses_main_and_does_not_publish_branch (test_publication_integration.GitPublicationIntegrationTests.test_divergence_refuses_main_and_does_not_publish_branch) ... ok
+test_isolated_clone_and_atomic_publication_leave_active_unchanged (test_publication_integration.GitPublicationIntegrationTests.test_isolated_clone_and_atomic_publication_leave_active_unchanged) ... ok
+test_fast_forward_only_rejects_divergent_history (test_source.SourceTests.test_fast_forward_only_rejects_divergent_history) ... ok
+test_native_file_digest_changes_on_source_mutation (test_source.SourceTests.test_native_file_digest_changes_on_source_mutation) ... ok
+test_publisher_uses_atomic_push_without_force_or_main_checkout (test_source.SourceTests.test_publisher_uses_atomic_push_without_force_or_main_checkout) ... ok
+test_secret_value_detected_not_variable_name (test_source.SourceTests.test_secret_value_detected_not_variable_name) ... ok
+test_source_filter_does_not_include_logs_or_dataset_or_weights (test_source.SourceTests.test_source_filter_does_not_include_logs_or_dataset_or_weights) ... ok
+test_symbol_map_reports_path_line_and_dynamic_limits (test_source.SourceTests.test_symbol_map_reports_path_line_and_dynamic_limits) ... ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 2.315s
+
+OK

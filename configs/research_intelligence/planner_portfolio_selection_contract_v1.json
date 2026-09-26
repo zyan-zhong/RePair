@@ -1,0 +1,30 @@
+{
+  "across_state_rule": [
+    "task-family-coverage",
+    "group-coverage",
+    "repair-kind-coverage",
+    "within-state-mechanical-quality"
+  ],
+  "final_human_fields": [
+    "expected_value",
+    "harm_risk",
+    "historical_no_go_overlap",
+    "selection_rationale",
+    "approve_or_override"
+  ],
+  "human_scientific_authority_required": true,
+  "mechanical_decision_aid_authority": false,
+  "registered_state_budget_source": "VERIFICATION_BUDGET_PLAN_V1",
+  "schema_id": "PLANNER_PORTFOLIO_SELECTION_CONTRACT_V1",
+  "success_trajectory_optimization_active": false,
+  "uses_current_f0f1_outcomes": false,
+  "uses_strong_model_benchmark_per_task_results": false,
+  "within_state_rule": [
+    "explicit-negative-crosscheck",
+    "contradiction-count",
+    "residual-count",
+    "support-count-desc",
+    "intervention-action-count",
+    "lexical-candidate-sha"
+  ]
+}

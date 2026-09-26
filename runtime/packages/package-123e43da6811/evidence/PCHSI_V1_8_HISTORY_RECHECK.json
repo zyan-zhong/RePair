@@ -1,0 +1,81 @@
+{
+  "schema_id": "V18_FULL_LEDGER_AND_FROZEN_AUTHORITY_RECHECK_V1",
+  "ledger": {
+    "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\outputs\\MAX10_V1_8_SUCCESS_GAIN_ENTRY\\ledger\\PCHSI_CANONICAL_STATUS_20260924_FORMAL_MAX10_V1_8_SUCCESS_GAIN_MATERIALIZED_FULL.md",
+    "sha256": "2e04f46d5cd3a0662c9fe3fb3e62d83f6ddc866dca6b055843a3b87bcb196100",
+    "full_bytes_read": 4680411,
+    "full_line_count": 167725
+  },
+  "method": "Full byte/prefix validation and all-line indexed historical-anchor reconciliation; no claim of live scientific completion.",
+  "historical_anchors": {
+    "aggregate_only_research_access": [
+      37153,
+      37819,
+      37838,
+      43388,
+      167652
+    ],
+    "per_task_select_forbidden": [
+      43386
+    ],
+    "benchmark_feedback_forbidden": [
+      43385,
+      143450
+    ],
+    "no_human_fallback": [
+      42127,
+      43383
+    ],
+    "same_round_memory_exclusion": [
+      76878
+    ],
+    "registered_scientific_commit": [
+      163244,
+      163247,
+      163321,
+      163324,
+      163413,
+      163611,
+      163862,
+      164031,
+      164125,
+      164493,
+      164568,
+      164663,
+      164718,
+      165017,
+      165095,
+      165170,
+      165197,
+      165359,
+      165451,
+      165471,
+      165650,
+      167385,
+      167416
+    ],
+    "prior_secondary_pending_superseded": [
+      167649
+    ],
+    "current_user_no_auxiliary_thresholds": [
+      167648
+    ]
+  },
+  "previous_v17_and_paper_reconciliation_prefixes_identical": true,
+  "historical_pending_rule_materialized": true,
+  "auxiliary_research_summary_reuses_existing_slot": true,
+  "native_scientific_pipeline_replaced": false,
+  "final_134_140_benchmark_feedback_authorized": false,
+  "original_update_select_audit_counts": [
+    2843,
+    355,
+    355
+  ],
+  "canary_formal_denominator_contribution": 0,
+  "native_max_valid_rounds": 10,
+  "native_no_promotion_patience": 3,
+  "native_max_infrastructure_attempt_restarts": 2,
+  "native_force_run_all_rounds": false,
+  "scientific_scope_drift_detected": false,
+  "authority_location_policy_unchanged": true
+}

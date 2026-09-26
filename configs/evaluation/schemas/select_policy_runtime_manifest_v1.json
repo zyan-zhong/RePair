@@ -1,0 +1,82 @@
+{
+  "$id": "SELECT_POLICY_RUNTIME_MANIFEST_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "adapter_bundle_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "adapter_path": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "adapter_rank": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "checkpoint_instance_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "logical_condition_id": {
+      "minLength": 1,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,63}$",
+      "type": "string"
+    },
+    "manifest_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "policy_condition_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "schema_id": {
+      "const": "SELECT_POLICY_RUNTIME_MANIFEST_V1",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    },
+    "served_model_name": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "server_runtime_manifest_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "training_seed": {
+      "minimum": 0,
+      "type": [
+        "integer",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "manifest_id",
+    "server_runtime_manifest_sha256",
+    "policy_condition_id",
+    "logical_condition_id",
+    "checkpoint_instance_id",
+    "training_seed",
+    "served_model_name",
+    "adapter_path",
+    "adapter_bundle_sha256",
+    "adapter_rank"
+  ],
+  "title": "P4 SELECT concrete policy runtime manifest",
+  "type": "object"
+}

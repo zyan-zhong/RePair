@@ -1,0 +1,67 @@
+{
+  "effect_authority": "INDEPENDENT_ENVIRONMENT_VERIFIER_ONLY",
+  "input_head": "a2023e08e13541b84a248a0190566a3ec13e5652",
+  "portfolio_contract": {
+    "condition_balance_quota": false,
+    "selected_candidate_count": 12,
+    "selected_condition_counts": {
+      "A2": 11,
+      "A3": 1
+    },
+    "selected_repair_kind": "EXACT_ACTION",
+    "selected_state_count": 12,
+    "selected_states_per_task_family": 2,
+    "selected_task_family_count": 6,
+    "selected_unique_group_count": 12,
+    "selected_x_disposition": "ACCEPT"
+  },
+  "principal_bottleneck": "B3_UNVERIFIED_SOURCE_CONDITIONED_REPAIR_QUALITY",
+  "principal_change": "PC1_VERIFY_BALANCED_SOURCE_CONDITIONED_REPAIR_PORTFOLIO",
+  "promotion_authority": "DETERMINISTIC_INDEPENDENT_GATE_ONLY",
+  "registered_candidate_universe": {
+    "a2_analyzer_memory_bindings": 0,
+    "a3_analyzer_memory_bindings": 30,
+    "candidate_count": 60,
+    "conditions": {
+      "A2": 30,
+      "A3": 30
+    },
+    "formal_x_candidate_bindings": 60,
+    "formal_x_dispositions": {
+      "ACCEPT": 59,
+      "DOWNGRADE_SCOPE": 1
+    },
+    "source_state_count": 30,
+    "unique_a3_analyzer_memory_packs": 24
+  },
+  "schema_id": "HUMAN_REFERENCE_PLANNER_ADJUDICATION_CONTRACT_V1",
+  "schema_version": 1,
+  "strong_shadow_contract": {
+    "benchmark_per_task_results_visible": false,
+    "current_f0f1_outcomes_visible": false,
+    "human_pre_hash_visible": false,
+    "human_pre_visible": false,
+    "human_rationale_visible": false,
+    "human_selection_visible": false,
+    "must_independently_select_or_abstain": true,
+    "same_pre_outcome_evidence": true
+  },
+  "success_trajectory_optimization_active": false,
+  "training_policy_at_pre": {
+    "benefit_positive_sft_eligible": true,
+    "exact_training_mixture_frozen": false,
+    "harm_counterexample_eligible": true,
+    "harm_positive_sft_eligible": false,
+    "neutral_primary_training_by_default": false,
+    "status": "HOLD_PENDING_VERIFIED_F0F1_MANIFEST",
+    "uncertain_primary_training": false
+  },
+  "verification_budget": {
+    "branch_arms_per_repetition": 2,
+    "branch_runs_per_state": 10,
+    "outcome_adaptive_budget_change": false,
+    "outcome_adaptive_replacement": false,
+    "paired_repetitions_per_state": 5,
+    "total_branch_run_budget": 120
+  }
+}

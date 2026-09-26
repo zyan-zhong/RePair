@@ -1,0 +1,29 @@
+{
+  "archive_execution_authorized": false,
+  "rule": "candidate only if clean, non-protected, and head contained in main or active integration; actual move/remove requires separate fixed-head review",
+  "schema_id": "SERVER_WORKTREE_ARCHIVE_CANDIDATES_V1",
+  "worktrees": [
+    {
+      "archive_candidate_review_only": false,
+      "archive_execution_authorized": false,
+      "branch": "integration/clean-human-r1-stage4e-v1",
+      "clean": true,
+      "head": "4fb1f124aa25325e6e62dfdb284c60c520c74c0b",
+      "head_ancestor_of_active_integration": true,
+      "head_ancestor_of_remote_main": true,
+      "path": "/data/run01/scwb204/sdar_repro/badcase/github_exports/pchsi-stage4e-clean-human-r1-integration-v1",
+      "protected_from_archive": true
+    },
+    {
+      "archive_candidate_review_only": false,
+      "archive_execution_authorized": false,
+      "branch": "integration/strong-primary-takeover-prep-v1",
+      "clean": true,
+      "head": "b914f2b7dc02c141a31586756938154cf31a4823",
+      "head_ancestor_of_active_integration": true,
+      "head_ancestor_of_remote_main": false,
+      "path": "/data/run01/scwb204/sdar_repro/badcase/github_exports/pchsi-wt-strong-primary-takeover-prep-v1",
+      "protected_from_archive": true
+    }
+  ]
+}

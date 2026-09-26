@@ -1,0 +1,17 @@
+{
+  "schema_id": "POST_CONTEXT_BUDGET_POLICY_V1",
+  "schema_version": 1,
+  "scope": "STRONG_RESEARCHER_POST_PRIMARY",
+  "requested_model_authority": "RUNTIME_MANIFEST",
+  "min_model_context_window_tokens": 1050000,
+  "max_provider_request_body_bytes": 524288,
+  "max_new_context_bounded_logical_calls_after_full_projection_overflow": 1,
+  "provider_truncation_policy": "DISABLED",
+  "projection_policy": "ALL_STATE_AND_PAIR_RESULTS_PLUS_CONTENT_ADDRESSED_BRANCH_INDEX",
+  "full_environment_result_sha_required": true,
+  "original_method_failure_preserved": true,
+  "same_logical_call_resend_allowed": false,
+  "raw_branch_policy_calls_in_planner_projection": false,
+  "raw_branch_environment_transitions_in_planner_projection": false,
+  "current_round_cardinality_constants_allowed": false
+}

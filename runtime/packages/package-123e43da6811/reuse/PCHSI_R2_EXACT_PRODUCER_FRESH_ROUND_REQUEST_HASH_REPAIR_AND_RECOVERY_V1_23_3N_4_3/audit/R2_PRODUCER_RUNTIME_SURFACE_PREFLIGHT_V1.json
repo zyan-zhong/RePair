@@ -1,0 +1,56 @@
+{
+  "schema_id": "R2_PRODUCER_RUNTIME_SURFACE_PREFLIGHT_V1",
+  "schema_version": 1,
+  "purpose": "Bound cleanliness checks to the actual R2 producer runtime surfaces; do not scan the full historical worktree.",
+  "historical_precedent": {
+    "authority": "V181/V1.31 exact repo-preflight timeout resilience",
+    "untracked_command_family": "git ls-files --others --exclude-standard -- <runtime surfaces>",
+    "timeout_retry_only": true,
+    "retry_argv_identical": true,
+    "retry_timeout_seconds": 180,
+    "acceptance_semantics_changed": false
+  },
+  "runtime_surface_pathspecs": [
+    "src/pchsi/evaluation",
+    "src/pchsi/round_control",
+    "scripts/evaluation"
+  ],
+  "capsule_source_bindings": [
+    {
+      "capsule_relative": "repo_source/src/pchsi/evaluation/episode_evaluator.py",
+      "worktree_relative": "src/pchsi/evaluation/episode_evaluator.py"
+    },
+    {
+      "capsule_relative": "repo_source/src/pchsi/evaluation/policy_attempt_adapter.py",
+      "worktree_relative": "src/pchsi/evaluation/policy_attempt_adapter.py"
+    },
+    {
+      "capsule_relative": "repo_source/src/pchsi/round_control/attempt_receipts.py",
+      "worktree_relative": "src/pchsi/round_control/attempt_receipts.py"
+    },
+    {
+      "capsule_relative": "repo_source/src/pchsi/round_control/clean_execution_binding.py",
+      "worktree_relative": "src/pchsi/round_control/clean_execution_binding.py"
+    },
+    {
+      "capsule_relative": "repo_source/src/pchsi/round_control/rollout_collection.py",
+      "worktree_relative": "src/pchsi/round_control/rollout_collection.py"
+    }
+  ],
+  "tracked_scan": {
+    "command": "git diff --name-only HEAD -- <runtime surfaces>",
+    "timeout_seconds": 60,
+    "require_empty_stdout": true
+  },
+  "untracked_scan": {
+    "command": "git ls-files --others --exclude-standard -- <runtime surfaces>",
+    "initial_timeout_seconds": 30,
+    "retry_timeout_seconds": 180,
+    "retry_condition": "TIMEOUT_ONLY",
+    "maximum_attempts": 2,
+    "argv_must_be_identical": true,
+    "require_empty_stdout": true
+  },
+  "full_worktree_git_status_forbidden": true,
+  "server_or_round_specific_identity_hardcoded": false
+}

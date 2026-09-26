@@ -1,0 +1,35 @@
+{
+  "attempt_id": "human-t2-model-init-smoke-v1-a000",
+  "attempt_root": "/data/run01/scwb204/sdar_repro/badcase/experiments/human_reference_round_pi1_pi2_v1/round_training_model_init_smoke_v1/attempts/human-t2-model-init-smoke-v1-a000",
+  "profile_id": "HUMAN_T2_UNVERIFIED_REPAIR_DIAGNOSTIC_PROFILE_V1",
+  "required_checks": [
+    "REVIEWED_V2_1_FREEZE_ROOT",
+    "CURRENT_PROFILE_OFFLINE_PREFLIGHT",
+    "EXACT_BASE_MODEL_LOAD",
+    "PARENT_ADAPTER_LOAD_IS_TRAINABLE",
+    "INITIAL_TRAINABLE_PARAMETER_SHA",
+    "LORA_ONLY_TRAINABLE",
+    "TARGET_MODULE_BOUNDARY",
+    "NO_GRADIENTS_CREATED",
+    "NO_FORWARD_OR_BACKWARD",
+    "NO_OPTIMIZER_CONSTRUCTED",
+    "ZERO_OPTIMIZER_STEPS",
+    "ZERO_TRAINING_EXECUTIONS",
+    "MODEL_UNLOADED"
+  ],
+  "result_root": "/data/run01/scwb204/sdar_repro/badcase/experiments/human_reference_round_pi1_pi2_v1/round_training_model_init_smoke_v1/attempts/human-t2-model-init-smoke-v1-a000/results",
+  "reviewed_training_stage_freeze_root_sha256": "c6918c25da0cba986ef80f05f4c144011835bca5592e4c81cc6a58cb198dd37e",
+  "reviewed_training_stage_root": "/data/home/scwb204/run/sdar_repro/badcase/pchsi_scripts/round_generic_training_stage_v2_1_hardening_build",
+  "round_id": "HUMAN_REFERENCE_ROUND_PI1_PI2_V1",
+  "schema_id": "ROUND_TRAINING_MODEL_INITIALIZATION_SMOKE_BINDING_V1",
+  "schema_version": 1,
+  "smoke_binding_sha256": "ede33862076c94f50c6199fc1433aef945adeee5002637e9828119ff44889a30",
+  "smoke_runtime_adapter_ref": {
+    "path": "smoke/model_init_adapter.py",
+    "sha256": "2ddc245aa75099146e8796f4770bb5e8896b3181eb88b376179ea504914d70a2"
+  },
+  "stage_id": "TRAINING_MODEL_INITIALIZATION_SMOKE",
+  "training_stage_binding_domain_sha256": "9185d27c16789689906eddc67759a6280572016cbfd1f1122ec18f608462853e",
+  "training_stage_binding_file_sha256": "3c4b9954e5feea8ef7f682c2df1328f4413f7e4e2e650ce61aea91d8602e379a",
+  "training_stage_binding_path": "/data/home/scwb204/run/sdar_repro/badcase/pchsi_scripts/round_generic_training_stage_v2_1_hardening_build/profiles/human_reference_t2/ROUND_TRAINING_STAGE_BINDING_V1.json"
+}

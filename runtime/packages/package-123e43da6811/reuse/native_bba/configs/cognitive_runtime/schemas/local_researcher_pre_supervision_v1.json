@@ -1,0 +1,84 @@
+{
+  "$id": "LOCAL_RESEARCHER_PRE_SUPERVISION_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "api_shadow_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "field_adjudication_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "human_target_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "input_package_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "policy_lineage_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "round_id": {
+      "maxLength": 512,
+      "minLength": 1,
+      "type": "string"
+    },
+    "schema_id": {
+      "const": "LOCAL_RESEARCHER_PRE_SUPERVISION_V1",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    },
+    "supervision_role": {
+      "const": "PRE",
+      "type": "string"
+    },
+    "supervision_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "task_set_manifest_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "training_eligible": {
+      "type": "boolean"
+    },
+    "training_exclusion_reason": {
+      "maxLength": 2048,
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "round_id",
+    "policy_lineage_sha256",
+    "task_set_manifest_sha256",
+    "input_package_sha256",
+    "human_target_sha256",
+    "api_shadow_sha256",
+    "field_adjudication_sha256",
+    "supervision_role",
+    "training_eligible",
+    "training_exclusion_reason",
+    "supervision_sha256"
+  ],
+  "type": "object"
+}

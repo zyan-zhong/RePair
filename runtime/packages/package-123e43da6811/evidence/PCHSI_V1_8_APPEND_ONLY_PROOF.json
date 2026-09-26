@@ -1,0 +1,17 @@
+{
+  "schema_id": "EXACT_PREFIX_APPEND_ONLY_LEDGER_PROOF_V1",
+  "previous": {
+    "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\outputs\\MAX10_V1_8_SUCCESS_GAIN_ENTRY\\ledger\\PCHSI_CANONICAL_STATUS_20260924_FORMAL_MAX10_V1_8_SUCCESS_GAIN_MATERIALIZED_FULL.md",
+    "sha256": "2e04f46d5cd3a0662c9fe3fb3e62d83f6ddc866dca6b055843a3b87bcb196100",
+    "bytes": 4680411
+  },
+  "output": {
+    "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\outputs\\PCHSI_CANONICAL_STATUS_20260924_FORMAL_MAX10_V1_8_EXECUTION_RECORDED_FULL.md",
+    "sha256": "d9723cb4be5e60a23114ad8b4e8bac339a49a93fb451bdad4031ad526a08609e",
+    "bytes": 4699746
+  },
+  "previous_line_count": 167725,
+  "output_line_count": 168090,
+  "prefix_identical": true,
+  "append_sha256": "ed104354c864219d50f24c8dd8930418d1a8a417665c3d3f1e3f2e6f1250d33c"
+}

@@ -1,0 +1,108 @@
+test_all_four_proof_checks_create_append_only_evidence (test_recovery.ProofTests.test_all_four_proof_checks_create_append_only_evidence) ... ERROR
+test_ambiguous_success_keeps_intent_without_receipt (test_recovery.ProofTests.test_ambiguous_success_keeps_intent_without_receipt) ... ok
+test_any_scientific_completion_marker_blocks_recovery (test_recovery.ProofTests.test_any_scientific_completion_marker_blocks_recovery) ... ok
+test_canonical_prefix_changed_refuses_before_accounting (test_recovery.ProofTests.test_canonical_prefix_changed_refuses_before_accounting) ... ok
+test_exact_resume_does_not_resubmit (test_recovery.ProofTests.test_exact_resume_does_not_resubmit) ... STAGE4D_NODE_EXCLUDED_ARRAY_SUBMITTED
+ARRAY_JOB_ID=2000
+EXCLUDED_NODE=d1n41a18g03
+ARRAY_SHARDS=0,1,2,3
+ok
+test_external_job_pointer_prevents_submit (test_recovery.ProofTests.test_external_job_pointer_prevents_submit) ... ok
+test_failed_submission_leaves_intent_and_cannot_retry (test_recovery.ProofTests.test_failed_submission_leaves_intent_and_cannot_retry) ... ok
+test_new_failed_array_never_submits_partial_generation (test_recovery.ProofTests.test_new_failed_array_never_submits_partial_generation) ... STAGE4D_NODE_EXCLUDED_ARRAY_SUBMITTED
+ARRAY_JOB_ID=2000
+EXCLUDED_NODE=d1n41a18g03
+ARRAY_SHARDS=0,1,2,3
+STAGE4E_RECOVERY_ARRAY_STATUS=2000
+failure
+ok
+test_other_shard_log_required_not_assumed_from_first_two (test_recovery.ProofTests.test_other_shard_log_required_not_assumed_from_first_two) ... FAIL
+test_resume_after_partial_generation_does_not_rewind_pointer (test_recovery.ProofTests.test_resume_after_partial_generation_does_not_rewind_pointer) ... STAGE4D_NODE_EXCLUDED_ARRAY_SUBMITTED
+ARRAY_JOB_ID=2000
+EXCLUDED_NODE=d1n41a18g03
+ARRAY_SHARDS=0,1,2,3
+STAGE4D_NODE_EXCLUDED_ARRAY_SUBMITTED
+ARRAY_JOB_ID=2001
+EXCLUDED_NODE=d1n41a18g03
+ARRAY_SHARDS=2
+ok
+test_success_receipt_is_native_compatible_and_excluded (test_recovery.ProofTests.test_success_receipt_is_native_compatible_and_excluded) ... STAGE4D_NODE_EXCLUDED_ARRAY_SUBMITTED
+ARRAY_JOB_ID=2000
+EXCLUDED_NODE=d1n41a18g03
+ARRAY_SHARDS=0,1,2,3
+ok
+test_timeout_never_resubmits (test_recovery.ProofTests.test_timeout_never_resubmits) ... ok
+test_any_partial_attempt_is_preserved_and_rejected (test_recovery.RecoveryTests.test_any_partial_attempt_is_preserved_and_rejected) ... ok
+test_batch_steps_do_not_supply_element (test_recovery.RecoveryTests.test_batch_steps_do_not_supply_element) ... ok
+test_command_only_adds_registered_exclusion (test_recovery.RecoveryTests.test_command_only_adds_registered_exclusion) ... ok
+test_contradictory_memory_evidence_rejected (test_recovery.RecoveryTests.test_contradictory_memory_evidence_rejected) ... ok
+test_different_gpu_utilization_rejected (test_recovery.RecoveryTests.test_different_gpu_utilization_rejected) ... ok
+test_duplicate_element_rejected (test_recovery.RecoveryTests.test_duplicate_element_rejected) ... ok
+test_even_empty_receipt_file_rejected (test_recovery.RecoveryTests.test_even_empty_receipt_file_rejected) ... ok
+test_exact_failed_nodes_and_unique_physical_ids (test_recovery.RecoveryTests.test_exact_failed_nodes_and_unique_physical_ids) ... ok
+test_generic_exit_is_not_memory_evidence (test_recovery.RecoveryTests.test_generic_exit_is_not_memory_evidence) ... ok
+test_missing_element_rejected (test_recovery.RecoveryTests.test_missing_element_rejected) ... ok
+test_missing_or_empty_shards_allowed (test_recovery.RecoveryTests.test_missing_or_empty_shards_allowed) ... ok
+test_native_worker_and_science_not_reimplemented (test_recovery.RecoveryTests.test_native_worker_and_science_not_reimplemented) ... ok
+test_no_arbitrary_command (test_recovery.RecoveryTests.test_no_arbitrary_command) ... ok
+test_no_duplicate_or_external_exclusion (test_recovery.RecoveryTests.test_no_duplicate_or_external_exclusion) ... ok
+test_other_success_rejected (test_recovery.RecoveryTests.test_other_success_rejected) ... ok
+test_running_rejected (test_recovery.RecoveryTests.test_running_rejected) ... ok
+test_specific_startup_memory_error (test_recovery.RecoveryTests.test_specific_startup_memory_error) ... ok
+test_symlink_shard_rejected (test_recovery.RecoveryTests.test_symlink_shard_rejected) ... ok
+test_wrong_node_rejected (test_recovery.RecoveryTests.test_wrong_node_rejected) ... ok
+test_wrong_owner_rejected (test_recovery.RecoveryTests.test_wrong_owner_rejected) ... ok
+test_ambiguous_success_keeps_intent_without_receipt (test_recovery.SubmissionTests.test_ambiguous_success_keeps_intent_without_receipt) ... ok
+test_exact_resume_does_not_resubmit (test_recovery.SubmissionTests.test_exact_resume_does_not_resubmit) ... STAGE4D_NODE_EXCLUDED_ARRAY_SUBMITTED
+ARRAY_JOB_ID=2000
+EXCLUDED_NODE=d1n41a18g03
+ARRAY_SHARDS=0,1,2,3
+ok
+test_external_job_pointer_prevents_submit (test_recovery.SubmissionTests.test_external_job_pointer_prevents_submit) ... ok
+test_failed_submission_leaves_intent_and_cannot_retry (test_recovery.SubmissionTests.test_failed_submission_leaves_intent_and_cannot_retry) ... ok
+test_new_failed_array_never_submits_partial_generation (test_recovery.SubmissionTests.test_new_failed_array_never_submits_partial_generation) ... STAGE4D_NODE_EXCLUDED_ARRAY_SUBMITTED
+ARRAY_JOB_ID=2000
+EXCLUDED_NODE=d1n41a18g03
+ARRAY_SHARDS=0,1,2,3
+STAGE4E_RECOVERY_ARRAY_STATUS=2000
+failure
+ok
+test_resume_after_partial_generation_does_not_rewind_pointer (test_recovery.SubmissionTests.test_resume_after_partial_generation_does_not_rewind_pointer) ... STAGE4D_NODE_EXCLUDED_ARRAY_SUBMITTED
+ARRAY_JOB_ID=2000
+EXCLUDED_NODE=d1n41a18g03
+ARRAY_SHARDS=0,1,2,3
+STAGE4D_NODE_EXCLUDED_ARRAY_SUBMITTED
+ARRAY_JOB_ID=2001
+EXCLUDED_NODE=d1n41a18g03
+ARRAY_SHARDS=2
+ok
+test_success_receipt_is_native_compatible_and_excluded (test_recovery.SubmissionTests.test_success_receipt_is_native_compatible_and_excluded) ... STAGE4D_NODE_EXCLUDED_ARRAY_SUBMITTED
+ARRAY_JOB_ID=2000
+EXCLUDED_NODE=d1n41a18g03
+ARRAY_SHARDS=0,1,2,3
+ok
+test_timeout_never_resubmits (test_recovery.SubmissionTests.test_timeout_never_resubmits) ... ok
+
+======================================================================
+ERROR: test_all_four_proof_checks_create_append_only_evidence (test_recovery.ProofTests.test_all_four_proof_checks_create_append_only_evidence)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/STAGE4E_NODE_EXCLUDED_ARRAY_RECOVERY_V1/tests/test_recovery.py", line 158, in test_all_four_proof_checks_create_append_only_evidence
+    value=m.preflight(self.core,ad,self.cfg,self.state,plan,self.rec)
+  File "/mnt/data/STAGE4E_NODE_EXCLUDED_ARRAY_RECOVERY_V1/recover.py", line 114, in preflight
+    raise RecoveryError('RECOVERY_PROOF_IDENTITY_CHANGED')
+recover.RecoveryError: RECOVERY_PROOF_IDENTITY_CHANGED
+
+======================================================================
+FAIL: test_other_shard_log_required_not_assumed_from_first_two (test_recovery.ProofTests.test_other_shard_log_required_not_assumed_from_first_two)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/STAGE4E_NODE_EXCLUDED_ARRAY_RECOVERY_V1/tests/test_recovery.py", line 167, in test_other_shard_log_required_not_assumed_from_first_two
+    self.assertFalse((self.rec/'RECOVERY_AUTHORIZATION.json').exists())
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: True is not false
+
+----------------------------------------------------------------------
+Ran 40 tests in 0.050s
+
+FAILED (failures=1, errors=1)

@@ -1,0 +1,279 @@
+{
+  "$id": "POLICY_CALL_EVIDENCE_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "admissible_commands": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "admissible_commands_sequence_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "budget_before": {
+      "additionalProperties": false,
+      "properties": {
+        "consecutive_nonexecuted_attempt_count": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "environment_step_count": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "inadmissible_action_count": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "policy_attempt_count": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "protocol_failure_count": {
+          "minimum": 0,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "policy_attempt_count",
+        "environment_step_count",
+        "protocol_failure_count",
+        "inadmissible_action_count",
+        "consecutive_nonexecuted_attempt_count"
+      ],
+      "type": "object"
+    },
+    "client_request_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "completion_token_ids": {
+      "items": {
+        "minimum": 0,
+        "type": "integer"
+      },
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "completion_tokens": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "environment_step_count_before": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "executed_history": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "action": {
+            "type": "string"
+          },
+          "resulting_observation": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "action",
+          "resulting_observation"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "executed_history_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "finish_reason": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "http_status": {
+      "maximum": 599,
+      "minimum": 100,
+      "type": "integer"
+    },
+    "interface_feedback_before": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "latency_ms": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "model_call_index": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "observation": {
+      "type": "string"
+    },
+    "observation_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "prompt_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "prompt_text": {
+      "type": "string"
+    },
+    "prompt_token_ids": {
+      "items": {
+        "minimum": 0,
+        "type": "integer"
+      },
+      "type": "array"
+    },
+    "prompt_tokens": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "provider_request_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "public_task_goal": {
+      "type": "string"
+    },
+    "public_task_goal_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "raw_response_body_base64": {
+      "type": "string"
+    },
+    "raw_response_body_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "raw_response_text": {
+      "type": "string"
+    },
+    "raw_response_text_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "rendered_prompt_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "rendered_prompt_text": {
+      "type": "string"
+    },
+    "rendered_prompt_token_count": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "rendered_prompt_token_ids": {
+      "items": {
+        "minimum": 0,
+        "type": "integer"
+      },
+      "type": "array"
+    },
+    "request_semantics_json": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "request_semantics_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "request_wire_bytes_base64": {
+      "type": "string"
+    },
+    "request_wire_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "response_headers_allowlisted": {
+      "additionalProperties": false,
+      "properties": {
+        "content-length": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "content-type": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "x-request-id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "x-request-id",
+        "content-type",
+        "content-length"
+      ],
+      "type": "object"
+    },
+    "schema_id": {
+      "const": "POLICY_CALL_EVIDENCE_V1",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "model_call_index",
+    "environment_step_count_before",
+    "client_request_id",
+    "provider_request_id",
+    "prompt_text",
+    "prompt_sha256",
+    "rendered_prompt_text",
+    "rendered_prompt_sha256",
+    "rendered_prompt_token_ids",
+    "rendered_prompt_token_count",
+    "request_semantics_json",
+    "request_semantics_sha256",
+    "request_wire_bytes_base64",
+    "request_wire_sha256",
+    "http_status",
+    "response_headers_allowlisted",
+    "raw_response_body_base64",
+    "raw_response_body_sha256",
+    "raw_response_text",
+    "raw_response_text_sha256",
+    "finish_reason",
+    "prompt_tokens",
+    "completion_tokens",
+    "prompt_token_ids",
+    "completion_token_ids",
+    "latency_ms",
+    "public_task_goal",
+    "public_task_goal_sha256",
+    "observation",
+    "observation_sha256",
+    "admissible_commands",
+    "admissible_commands_sequence_sha256",
+    "executed_history",
+    "executed_history_sha256",
+    "interface_feedback_before",
+    "budget_before"
+  ],
+  "type": "object"
+}

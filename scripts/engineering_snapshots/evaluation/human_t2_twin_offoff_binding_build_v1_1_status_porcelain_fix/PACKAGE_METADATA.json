@@ -1,0 +1,60 @@
+{
+  "candidate": {
+    "adapter_bundle_sha256": "908acf081e80008800284653c3340c397353eef0de08ee044f06810cab2a251e",
+    "adapter_path": "/data/run01/scwb204/sdar_repro/badcase/experiments/human_reference_round_pi1_pi2_v1/human_t2_train17_continuation_v1/human-t2-train17-continuation-v1-a000/adapter",
+    "checkpoint_instance_id": "P4-R2-HUMAN-T2-DIAGNOSTIC-TRAIN17",
+    "diagnostic_only": true,
+    "logical_condition_id": "P4-R2-HUMAN-T2-DIAGNOSTIC",
+    "policy_version": "P4-R2-HUMAN-T2-DIAGNOSTIC",
+    "promotion_eligible": false,
+    "training_config_path": "/data/home/scwb204/run/sdar_repro/badcase/pchsi_scripts/round_generic_training_stage_v2_1_hardening_build/profiles/human_reference_t2/ROUND_LOCAL_TRAINING_CONTRACT_V1.json",
+    "training_config_sha256": "d23339bc42f665f88bf4156550a030f5950b75d9d8bf813825a58627830ccf31",
+    "training_seed": 17
+  },
+  "evaluation_execution_authorized": false,
+  "evaluation_execution_count": 0,
+  "generic_select_fixed_head_review_sha256": "842d6e6549ab2de8e9b29ab30fddcd6d34f0d4c5d15436d4360f1a43e30fc4fe",
+  "package_patch": {
+    "evaluation_authorization_changed": false,
+    "failed_v1_output_preserved": true,
+    "generic_select_fixed_head_changed": false,
+    "parent_candidate_identity_changed": false,
+    "parent_package_zip_sha256": "dec6e43248a0032b1981deb652ccf937086e1cb8451d2787f8b4361f9dde0ca6",
+    "patch_id": "V1_1_GIT_STATUS_PORCELAIN_MACHINE_PARSING_FIX",
+    "root_cause": "TWIN_FIXED_HEAD_CHANGED_PATH_CENSUS_USED_HUMAN_READABLE_GIT_STATUS_SHORT_WITH_POSITIONAL_STRING_SLICING",
+    "scientific_contract_changed": false,
+    "task_grid_changed": false
+  },
+  "parent": {
+    "adapter_bundle_sha256": "b296f2254b1fa1f2e141dffd3f6b5af903f839df4790ffcb245fd8dd57773ace",
+    "adapter_path": "/data/run01/scwb204/pchsi/p2/p4_r1_q2_bad_checkpoint_set_v1_frozen/seed_17/adapter",
+    "checkpoint_instance_id": "P4-R1-Q2-BAD-TRAIN17",
+    "logical_condition_id": "P4-R1-Q2-BAD",
+    "policy_version": "PI1_BAD",
+    "training_config_path": "/data/run01/scwb204/pchsi/p2/p4_r1_q2_bad_training_config_v1/training_config.json",
+    "training_config_sha256": "a860a77890e34e4cfcb38dff0acdf35db0a3605d0a494c100f2b74b9f5228f9c",
+    "training_seed": 17
+  },
+  "replicate_seeds": [
+    17,
+    31,
+    47,
+    73,
+    101
+  ],
+  "repository_commit_created": false,
+  "repository_push_executed": false,
+  "schema_id": "HUMAN_T2_TWIN_OFFOFF_BINDING_BUILD_PACKAGE_V1",
+  "schema_version": 1,
+  "source_head": "daef26b9cde45182ada534d96335da3ea451f12f",
+  "target_worktree": "/data/run01/scwb204/sdar_repro/badcase/github_exports/pchsi-wt-generic-select-policy-binding-human-offoff-v1",
+  "task_access_manifest": {
+    "expected_confirmatory_sealed_count": 0,
+    "expected_dev_visible_count": 117,
+    "expected_historically_exposed_count": 0,
+    "expected_record_count": 134,
+    "expected_select_summary_only_count": 17,
+    "path": "/data/home/scwb204/pchsi_evidence/p1b_materialized_access_v1/task_access_manifest.json",
+    "sha256": "5b8859a50478601cc054423af88fb57f5c31d95b96aeb67ab528987274eb9718"
+  }
+}

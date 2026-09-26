@@ -1,0 +1,160 @@
+\section{Experimental Study}
+\label{sec:experimental-setup}
+We examine the path from a tested correction to an unassisted policy in a
+development campaign and a subsequent one-update validation. The campaign
+and validation are sequential diagnostics with implementation changes,
+not randomized comparisons of repair representations.
+
+\subsection{Setting and Comparisons}
+\label{sec:experiment-design}
+\paragraph{Tasks and policy.}
+We use text-based ALFWorld \citep{shridhar2021alfworld} and the
+Qwen2.5-3B-Instruct lineage \citep{qwen2025report}, updated with LoRA
+\citep{hu2021lora}. The 3,553 training games are partitioned into 2,843
+TRAIN\_UPDATE, 355 TRAIN\_SELECT, and 355 TRAIN\_AUDIT games. Only the
+first pool supplies repair and learning evidence. Selection uses the
+second pool. The final benchmark has 134 unseen and 140 seen games,
+kept outside adaptive research and checkpoint selection.
+
+\paragraph{Execution and statistical units.}
+The policy receives the goal, current observation, eight executed
+transitions, interface feedback, and the complete admissible menu. The
+strict interface accepts one JSON action. Episodes allow 30 environment
+steps and 60 policy attempts, with termination after three consecutive
+nonexecuted attempts. Repair verification uses five paired seeds
+(17, 31, 47, 73, 101); the final selection comparison uses one paired seed
+(17) on all 355 tasks. Repetitions at one source are not independent
+tasks. We report exact counts and descriptive differences for one trained
+candidate, without claims of significance or training-seed robustness.
+Appendix~\ref{app:configuration} records the executed configuration.
+
+\paragraph{Scope of the evidence.}
+We report completed intervention tests, native training labels, and paired
+selection outcomes. Matched action-only, equal-compute, filter, hierarchy,
+and memory ablations have not been completed for this update. The released
+checkpoint benchmark supplies external context; it does not isolate
+RePair's components. The RePair candidate has no completed final
+seen/unseen benchmark result.
+
+\subsection{Which Repairs Help the Current Policy?}
+\label{sec:verification-results}
+\input{tables/verification_results}
+Table~\ref{tab:verification} separates the five development rounds from two
+later validations that reuse R5 trajectories and Analyzer outputs. The
+development rounds yield one stable Benefit among 21 tested states;
+the other 20 are neutral failures. The first guarded-strategy validation
+has no stable Benefit among 17 states, although two of its 85 pairs show
+an F1-only success at the same source. The later executable-strategy
+validation yields four stable Benefits among five selected states.
+All five repetitions succeed in F1 and fail in F0 at each beneficial
+state. The higher yield motivates examining what the successful programs do;
+the sequentially selected portfolios leave the effect of each design change unresolved.
+
+The trajectories explain why many valid corrections remain neutral.
+In R3, reaching the fridge enables cooling an egg, but the continuation
+then cools it 25 times instead of placing it. In a CD task, navigation
+reveals the target, but the policy attempts placement three times without
+first acquiring it. In R4, using a lamp is followed by 28 examinations of
+the same side table. The intervention executes; the remaining dependency
+chain fails. Appendix~\ref{app:behavior} records further cases.
+
+The four beneficial programs in the later validation execute two, four,
+six, and four actions, respectively, covering cleaning, placement,
+heating-and-placement, and object-in-light tasks. All 20 successful F1
+branches finish within the registered program, with zero subsequent
+policy calls. The successful behavior therefore comes from the programs at these
+selected states. Whether their verified actions become useful lessons
+for the policy is the next question.
+
+The heated-cup case makes the distinction concrete. From the restored
+state, the program acquires the cup, reaches the microwave, heats it,
+opens the microwave, reaches the cabinet, and places the cup. Completion
+follows this six-action sequence without another policy decision. In
+the remaining neutral case, the program locates and acquires a credit
+card, but the three subsequent policy calls fail to execute and placement
+remains unfinished. A useful intermediate state becomes a completed task
+only when the remaining prerequisites are also resolved. These cases
+locate the handoff that a trained policy would need to learn.
+
+\subsection{What Enters Training?}
+\label{sec:target-results}\label{sec:ablations}
+The four Benefit states contribute four execution views and four strategy
+views. The native-label audit counts 51 action-view and 2,546 strategy-view
+loss-bearing tokens per pass. Four passes produce eight optimizer updates
+and 10,388 supervised token exposures. Prompt and padding tokens are
+masked. The current adapter teaches the initial action and associated strategy
+at each source, leaving the remaining successful actions without
+stepwise execution targets.
+\input{tables/supervision_coverage}
+
+For example, the heated-cup training pair supplies an action target for
+acquiring the cup and a strategy description of the intended plan. The
+five later action positions are exercised by the verifier but are not
+separate action-prediction examples. The auxiliary view may communicate
+the plan, while execution from the intervening observations remains a
+generalization demand. Table~\ref{tab:coverage} makes this coverage gap
+visible without treating each repetition as a new training source.
+
+Thus verification coverage and training coverage differ: a program can
+complete several prerequisites while the action target teaches only its
+first decision. Strategy text supplies most supervised tokens; its gradient influence
+also depends on token losses and accumulation-group composition
+(Appendix~\ref{app:training-details}). The comparison below tests this
+eight-example update as a whole. Isolating the strategy objective would
+require an action-only update from the same four sources.
+
+\subsection{What Remains After the Research Harness Is Removed?}
+\label{sec:main-results}
+\input{tables/training_results}
+On TRAIN\_SELECT, both parent and candidate solve 3 of 355 tasks (0.85\%).
+Two successes are shared; one task improves and one regresses. Mean terminal
+goal-condition completion decreases from 10.845\% to 10.704\%, so the
+registered success-first, progress-on-ties rule retains the parent.
+The comparison comprises 710 completed episodes with memory and
+intervention disabled. It is a selection result, not a final benchmark.
+
+Looking at task identities prevents the equal totals from hiding
+redistribution: 351 tasks fail under both policies, two succeed under
+both, and only two switch outcome. The secondary goal measure improves
+on five tasks, worsens on six, and is unchanged on 344. We therefore find
+neither a net completion gain nor a compensating aggregate progress gain
+under this acceptance rule. The two discordant success outcomes support
+an exact descriptive comparison, rather than a claim about training-seed
+robustness.
+
+Most failures concern execution rather than unavailable observations.
+The parent and candidate terminate 261 and 252 tasks, respectively, after
+consecutive nonexecuted attempts. Their traces contain 1,556 and 1,612
+out-of-menu actions despite visible admissible menus. Fewer early stops
+coexist with more budget-exhausted episodes (91 versus 100), leaving
+terminal success unchanged. In a task requiring an alarm clock to be
+examined with a desk lamp, both policies emit an unavailable examine
+command even though the observation contains the clock and the menu
+offers a take action. The missing step is therefore visible in the
+interface; the policy fails to use it. This example links the aggregate
+execution errors to a prerequisite failure of the same kind observed
+after local repairs.
+
+The existing reference-checkpoint benchmark is retained as task context
+in Appendix~\ref{app:aggregation}; all policy-update conclusions here use
+the paired TRAIN\_SELECT comparison.
+
+\subsection{Research Cost and the Cross-Round Record}
+\label{sec:discovery-results}
+The five development rounds consume 210 completed verification branches
+over 21 tested states. The guarded and executable-strategy validations
+consume 170 and 50 branches, respectively. They reuse R5 collection and
+analysis, so they are neither fresh formal rounds nor independent samples
+of discovery yield. The last portfolio costs 50 branches for four Benefit
+states, or 12.5 branches per Benefit, excluding upstream research and
+earlier unsuccessful portfolios.
+
+The campaign stops after five valid rounds under its three-round
+no-promotion patience rule. One infrastructure-invalid attempt, repeated
+engineering recoveries, and one user-authorized promotion exception remain
+part of the record. The later validation completes training and selection
+but encounters an ownership check during history closeout. We therefore
+report its verified selection decision separately from campaign closure,
+and make no claim of uninterrupted autonomous execution. Full API cost,
+matched discovery efficiency, and further policy improvement remain
+unmeasured in this study.

@@ -1,0 +1,55 @@
+\documentclass{article}
+\usepackage{iclr2027_conference,times}
+% The four style files are byte-identical to the supplied v3 archive.
+% Do not change the official geometry, line spacing, ruler or review header.
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{graphicx,booktabs,array,tabularx,multirow}
+\usepackage{xcolor}
+\usepackage{algorithm,algpseudocode}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,fit}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}
+\input{macros}
+\input{results/results}
+\title{From Plausible Repairs to Policy Capability}
+\author{Anonymous authors}
+\hypersetup{pdftitle={From Plausible Repairs to Policy Capability},pdfauthor={Anonymous authors}}
+% Anonymous submission mode. Do not enable \iclrfinalcopy.
+\begin{document}
+\maketitle
+\input{sections/00_abstract}
+\input{sections/01_introduction}
+\input{sections/02_method}
+\input{sections/03_experiments}
+\input{sections/04_related_work}
+\input{sections/05_discussion}
+\input{sections/06_conclusion}
+\label{maintextend}
+% Keep post-main sections on their own pages. Flush floats at each boundary.
+\clearpage
+\phantomsection
+\pdfbookmark[0]{Statements}{statements}
+\label{statementsstart}
+\input{sections/07_statements}
+\clearpage
+\phantomsection
+\pdfbookmark[0]{References}{references}
+\label{referencesstart}
+\bibliography{references}
+\bibliographystyle{iclr2027_conference}
+\clearpage
+\appendix
+\phantomsection
+\pdfbookmark[0]{Appendix}{appendix}
+\section*{Appendix}
+\label{appendixstart}
+\input{appendices/a_protocol}
+\clearpage
+\input{appendices/b_experiments}
+\input{appendices/c_additional}
+\input{appendices/d_research}
+\end{document}

@@ -1,0 +1,78 @@
+{
+  "completed_reference_round_count": {
+    "candidate_value": 1,
+    "status": "ALREADY_CANONICAL_FROM_HUMAN_R1_CLOSEOUT"
+  },
+  "full_round_go_count": {
+    "candidate_value": 0,
+    "status": "ALREADY_CANONICAL_DIAGNOSTIC_ROLLBACK",
+    "strong_primary_gate_dependency": false
+  },
+  "next_gate": "FREEZE_EXACT_SOURCE_AUTHORITY_AND_ESTIMANDS",
+  "numeric_metric_materialization_authorized": false,
+  "remaining_metric_registration": {
+    "budget_compliance_rate": {
+      "authority": "FROZEN_PRE_BUDGET_AND_EXECUTION_RECEIPTS",
+      "value_materialized": false
+    },
+    "completed_reference_round_count": {
+      "authority": "CLEAN_HUMAN_REFERENCE_CLOSEOUT",
+      "value": 1
+    },
+    "downstream_benefits_per_budget_ratio_vs_human": {
+      "authority": "VERSIONED_ZERO_BASELINE_ESTIMAND_REQUIRED",
+      "value_materialized": false
+    },
+    "evidence_validity_rate": {
+      "authority": "EVIDENCE_GROUNDING_AND_VALIDATION_RECEIPTS",
+      "value_materialized": false
+    },
+    "full_round_go_count": {
+      "authority": "CLEAN_HUMAN_REFERENCE_CLOSEOUT",
+      "strong_primary_gate_dependency": false,
+      "value": 0
+    },
+    "future_outcome_leakage_count": {
+      "authority": "BLIND_INPUT_AND_CALL_LEDGER_AUDIT",
+      "value_materialized": false
+    },
+    "human_field_revision_rate": {
+      "authority": "CLEAN_ADJUDICATION_ONLY",
+      "legacy_pilot_semantics_forbidden": true,
+      "value_materialized": false
+    },
+    "repeated_nogo_avoidance_rate": {
+      "authority": "HISTORICAL_NO_GO_AND_CURRENT_DECISION_LEDGER",
+      "value_materialized": false
+    },
+    "single_change_compliance_rate": {
+      "authority": "PRE_DECISION_AND_VALIDATOR_EVIDENCE",
+      "value_materialized": false
+    },
+    "strong_post_shadow_round_count": {
+      "authority": "EXISTING_STRONG_POST_SHADOW_TRACE",
+      "candidate_value_from_exact_existing_shadow": 1,
+      "post_shadow_discovery_status": "STRONG_POST_SHADOW_EVIDENCE_FOUND",
+      "value_materialized": false
+    },
+    "strong_pre_shadow_round_count": {
+      "authority": "EXISTING_STRONG_PRE_SHADOW_TRACE",
+      "candidate_value_from_exact_existing_shadow": 1,
+      "value_materialized": false
+    }
+  },
+  "schema_id": "TAKEOVER_METRIC_SOURCE_PREBINDING_V1",
+  "source_gap_matrix_path": "/data/run01/scwb204/sdar_repro/badcase/github_exports/pchsi-wt-strong-primary-takeover-prep-v1/docs/project/strong_primary_takeover_v1/audit/TAKEOVER_METRIC_AUTHORITY_GAP_MATRIX_V1.json",
+  "source_gap_matrix_sha256": "a5a4e07d8840964d6eb4347b85334fae728c73a073ecd7549c5396cc608c9243",
+  "strong_post_shadow_round_count": {
+    "candidate_value": 1,
+    "counting_rule": "COUNT_UNIQUE_REFERENCE_ROUND_SHADOW_IDENTITY_NOT_FILE_COPIES",
+    "persisted_occurrence_count": 3,
+    "status": "EXACT_EXISTING_STRONG_POST_SHADOW_IDENTITY_AVAILABLE"
+  },
+  "strong_pre_shadow_round_count": {
+    "candidate_value": 1,
+    "status": "EXACT_EXISTING_STRONG_PRE_SHADOW_IDENTITY_AVAILABLE"
+  },
+  "takeover_gate_execution_authorized": false
+}

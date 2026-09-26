@@ -1,0 +1,9 @@
+{
+  "schema_id": "CURRENT_ENTRY_CPU_VALIDATION_UPLOAD_PLAN_V1",
+  "archive_path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\cpu_validation_0f9df1ba648b.zip",
+  "archive_sha256": "ca4e410159a6ea877df109e377938ee2bae2c6407675193a7e57179cd2e9238c",
+  "remote_root": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/formal_max10_v17_cpu_validation/0f9df1ba648b072aeb5bb6ec9e66bee46d997edfd9c0faa32289a470afa0f758",
+  "python": "/data/home/scwb204/run/sdar_repro/conda_envs/sdar_sft_py312/bin/python",
+  "package_manifest_sha256": "0f9df1ba648b072aeb5bb6ec9e66bee46d997edfd9c0faa32289a470afa0f758",
+  "scientific_execution_authorized_by_upload": false
+}

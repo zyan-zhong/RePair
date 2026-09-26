@@ -1,0 +1,176 @@
+{
+  "schema_id": "FORMAL_ANALYZER_PI1_DATA_ASSET_MANIFEST_V1",
+  "schema_version": 1,
+  "reference_round": "FORMAL_ANALYZER_PI1_REFERENCE_V1",
+  "assets": [
+    {
+      "logical_name": "fresh_pi1_collection",
+      "server_root": "/data/home/scwb204/run/sdar_repro/badcase/pchsi_scripts/formal_analyzer_fresh_pi1_collection_build_v1",
+      "role": "fresh pi1 failure trajectory collection",
+      "scientific_census": {
+        "executed_failures": 48,
+        "frozen_selected": 42,
+        "pilot": 12,
+        "main": 30
+      },
+      "canonical": true,
+      "release_archive_required": true
+    },
+    {
+      "logical_name": "formal_main_a0a1_preparation",
+      "server_root": "/data/home/scwb204/run/sdar_repro/badcase/pchsi_scripts/formal_analyzer_selected42_evidence_a0a1_preparation_v1",
+      "key_path": "_run_state/formal_selected42_prepared/main/runtime_registry_formal_main_a0a1.json",
+      "runtime_registry_sha256": "8a91904f9f264dac9d13ffde2dbe4303120c0a795ffbd463351a902d4a227a40",
+      "canonical": true,
+      "release_archive_required": true
+    },
+    {
+      "logical_name": "formal_main_batch_import",
+      "server_root": "/data/home/scwb204/run/sdar_repro/badcase/pchsi_scripts/formal_batch_transport_v2_round_continuation_v1",
+      "key_paths": [
+        "_run_state/FORMAL_MAIN_LOCAL_RESULTS_HANDOFF_V1.json",
+        "_run_state/main_batch_import/normalized_execution_manifest.json",
+        "_run_state/main_batch_import/"
+      ],
+      "scientific_census": {
+        "accepted_total": 60,
+        "a0": 30,
+        "a1": 30
+      },
+      "canonical": true,
+      "release_archive_required": true
+    },
+    {
+      "logical_name": "formal_main_a1_group_materialization",
+      "server_root": "/data/home/scwb204/run/sdar_repro/badcase/pchsi_scripts/formal_main_a1_group_materialization_v1",
+      "key_path": "_run_state/group_binding_discovery/local_results.json",
+      "role": "exact 30-object A1 identity set consumed by source closure",
+      "canonical": true,
+      "release_archive_required": true
+    },
+    {
+      "logical_name": "formal_source_closure",
+      "server_root": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/formal_act3_registration_hardening_and_source_materialization_v1/_run_state/corrected_source_closure",
+      "key_files": [
+        "FORMAL_ACT3_REGISTRATION_CLOSURE_V2.json",
+        "FORMAL_ACT3_SOURCE_CLOSURE_ROWS_V2.json",
+        "FORMAL_EXACT_SOURCE_BINDINGS_V1.json",
+        "FORMAL_SOURCE_CONTEXTS_V1.json",
+        "ANALYZER_SOURCE_CLOSED_GROUPS_V1.json",
+        "ANALYZER_SOURCE_CLOSED_GROUP_SYNTHESIS_INPUTS_V1.json"
+      ],
+      "scientific_census": {
+        "error_instances": 71,
+        "deterministic_groups": 58,
+        "source_closed_groups": 30,
+        "source_closed_memberships": 37,
+        "unique_source_states": 30
+      },
+      "canonical": true,
+      "release_archive_required": true
+    },
+    {
+      "logical_name": "postmain_exact_a1_path_freeze",
+      "server_path": "/data/home/scwb204/run/sdar_repro/badcase/pchsi_scripts/formal_postlocal_group_x_human_researcher_bridge_v1/_run_state/FORMAL_MAIN_POSTLOCAL_INPUT_FREEZE_V1.json",
+      "role": "binds 30 current Main local_result_sha256 identities to exact validated_artifact paths and file sha256",
+      "scientific_census": {
+        "a1_result_count": 30,
+        "unique_count": 30,
+        "missing": 0,
+        "extra": 0
+      },
+      "canonical": true,
+      "release_archive_required": true
+    },
+    {
+      "logical_name": "failure_memory_snapshot",
+      "server_root": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/failure_memory_token_budget_calibration_v1/active_snapshots/8ebdf8feaa3f52874addcfc6541d1b29cbf5d124ea68fd0da0fc2ba037085189",
+      "snapshot_sha256": "8ebdf8feaa3f52874addcfc6541d1b29cbf5d124ea68fd0da0fc2ba037085189",
+      "role": "frozen validated historical Memory snapshot consumed by A3",
+      "canonical": true,
+      "release_archive_required": true
+    },
+    {
+      "logical_name": "sealed_historical_act3_memory_materializer",
+      "server_path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/formal_act3_exact_old_materializer_seal_and_current_compat_v6/evidence/SEALED_OLD_ACT3_MEMORY_MATERIALIZER_SOURCE.py",
+      "file_sha256": "80a0f2512bde26914ba97b1687e433220b016fc13fec3f012e2179c9b7689658",
+      "role": "historical algorithm reference for memberwise-view -> group-bundle -> one Analyzer role pack semantics",
+      "canonical": true,
+      "release_archive_required": true
+    },
+    {
+      "logical_name": "formal_main_a3_memory_restore",
+      "server_root": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/formal_main_a3_group_memory_semantics_restore_v1_results/fixed_0944e3c5a172f3b30431d142a4b53a9c113bd0a1f9a473c35a38bcfbad16e057",
+      "restore_identity": "0944e3c5a172f3b30431d142a4b53a9c113bd0a1f9a473c35a38bcfbad16e057",
+      "key_contents": [
+        "RESTORE_SUMMARY_V1.json",
+        "ANALYZER_MEMORY_RETRIEVAL_MANIFEST_V1.json",
+        "ANALYZER_MEMBER_MEMORY_VIEWS_V1.jsonl",
+        "group_bundles/",
+        "memory_packs/"
+      ],
+      "scientific_census": {
+        "memory_packs": 30,
+        "member_queries": 37,
+        "singleton_groups": 25,
+        "multi_member_groups": 5
+      },
+      "canonical": true,
+      "release_archive_required": true
+    },
+    {
+      "logical_name": "formal_a2a3_offline_materialization",
+      "server_root": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/formal_main_a2a3_offline_materialization_v1",
+      "key_contents": [
+        "a2_projections/",
+        "a3_projections/",
+        "group_manifests/",
+        "group_synthesis_inputs/",
+        "rendered_requests/",
+        "A2_A3_PAIR_AUDIT.json",
+        "REQUEST_PREFLIGHT.json"
+      ],
+      "scientific_census": {
+        "pair_count": 30,
+        "request_count": 60,
+        "common_input_equal": 30,
+        "a2_memory_exposure": 0,
+        "a3_memory_packs": 30,
+        "max_request_size_bytes": 115513
+      },
+      "canonical": true,
+      "release_archive_required": true
+    },
+    {
+      "logical_name": "formal_analyzer_g_x_candidate_round_evidence_state",
+      "server_root": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/formal_analyzer_to_human_researcher_pre_boundary_v1_1_state",
+      "key_subdirectories": [
+        "01_offline_registry_dag/",
+        "02_formal_g_batch/",
+        "03_formal_x_batch/",
+        "04_candidate_projector/",
+        "05_round_evidence_seal/"
+      ],
+      "formal_dag_sha256": "71b42e8c2a3641c3740978b0598fe30ac7a5ad7b02706b9ed80f42e01abb01a5",
+      "round_evidence_package_sha256": "d38806705cff6a4cc302fad2682d4505ec01f1df1196838120930dadb1be0a83",
+      "canonical": true,
+      "release_archive_required": true
+    },
+    {
+      "logical_name": "formal_analyzer_boundary_orchestration_v1_1",
+      "server_root": "/data/home/scwb204/run/sdar_repro/badcase/pchsi_scripts/formal_analyzer_to_human_researcher_pre_boundary_v1_1",
+      "release_asset_name": "formal_analyzer_to_human_researcher_pre_boundary_v1_1.zip",
+      "release_asset_sha256": "18a165518d498138853dc04b20f1d03ebddd9552797d3301eba2d6aee1750f52",
+      "role": "exact successful orchestration harness used from Formal DAG/G through X/candidate/Round Evidence boundary",
+      "canonical": true,
+      "git_source_import_required": true,
+      "release_archive_required": true
+    }
+  ],
+  "archive_policy": {
+    "git_repository_role": "store readable source, schemas, prompts, protocol, manifests, small canonical evidence, and path/SHA indexes",
+    "release_role": "store the exact byte-level large/reference execution artifact snapshot independent of server paths",
+    "raw_artifacts_are_fully_remote_archived": false,
+    "required_next_action": "import exact V1.1 orchestration source into Git and publish a full byte-level release artifact archive before declaring server-independent archival completeness"
+  }
+}

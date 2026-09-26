@@ -1,0 +1,18 @@
+{
+  "existing_builder": "pchsi.research_intelligence.distillation.build_local_role_supervision_dataset",
+  "local_shadow_execution_authorized": false,
+  "next_action_if_manifest_missing": "close only missing clean reference-manifest identities using exact SHA lineage",
+  "next_action_if_unique_manifest": "materialize LOCAL_ROLE_SUPERVISION_DATASET_V1 then bind existing local trainer",
+  "schema_id": "LOCAL_RI_TRAINING_READINESS_PLAN_V1",
+  "schema_version": 1,
+  "source_status": "CLEAN_REFERENCE_MANIFEST_NOT_YET_MATERIALIZED",
+  "stage4a_policy_adapter_reuse_authorized": false,
+  "target_model_lineage": "Qwen2.5-3B-Instruct",
+  "target_roles": [
+    "ANALYZER",
+    "RESEARCH_PLANNER_PRE",
+    "RESEARCH_PLANNER_POST"
+  ],
+  "training_execution_authorized": false,
+  "training_status": "LOCAL_ROLE_DATASET_NOT_YET_MATERIALIZED"
+}

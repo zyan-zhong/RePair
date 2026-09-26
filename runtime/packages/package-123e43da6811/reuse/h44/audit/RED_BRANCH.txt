@@ -1,0 +1,274 @@
+FFFFFF                                                                   [100%]
+=================================== FAILURES ===================================
+________ test_f1_returns_to_memory_adapter_after_option_not_raw_prompt _________
+
+    def impl():
+>       try:return importlib.import_module('native_branch')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_branch_flow.py:16: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/usr/lib/python3.13/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen importlib._bootstrap>:1387: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:1360: in _find_and_load
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'native_branch', import_ = <function _gcd_import at 0x7f5b625c44a0>
+
+>   ???
+E   ModuleNotFoundError: No module named 'native_branch'
+
+<frozen importlib._bootstrap>:1324: ModuleNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+    def test_f1_returns_to_memory_adapter_after_option_not_raw_prompt():
+>       r,m,e,p,events=run()
+                       ^^^^^
+
+tests/test_branch_flow.py:58: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_branch_flow.py:50: in run
+    result=impl().run_branch_core(arm=arm,option_contract=c,goal='put a mug on a desk',observation='source',menu=('go to desk 1','go to shelf 2','finish'),history=(),
+           ^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def impl():
+        try:return importlib.import_module('native_branch')
+>       except ImportError:pytest.fail('native Memory-aware branch integration is missing')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: native Memory-aware branch integration is missing
+
+tests/test_branch_flow.py:17: Failed
+___________ test_f0_never_executes_candidate_and_uses_source_prompt ____________
+
+    def impl():
+>       try:return importlib.import_module('native_branch')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_branch_flow.py:16: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/usr/lib/python3.13/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen importlib._bootstrap>:1387: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:1360: in _find_and_load
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'native_branch', import_ = <function _gcd_import at 0x7f5b625c44a0>
+
+>   ???
+E   ModuleNotFoundError: No module named 'native_branch'
+
+<frozen importlib._bootstrap>:1324: ModuleNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+    def test_f0_never_executes_candidate_and_uses_source_prompt():
+>       r,m,e,p,events=run('F0')
+                       ^^^^^^^^^
+
+tests/test_branch_flow.py:68: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_branch_flow.py:50: in run
+    result=impl().run_branch_core(arm=arm,option_contract=c,goal='put a mug on a desk',observation='source',menu=('go to desk 1','go to shelf 2','finish'),history=(),
+           ^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def impl():
+        try:return importlib.import_module('native_branch')
+>       except ImportError:pytest.fail('native Memory-aware branch integration is missing')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: native Memory-aware branch integration is missing
+
+tests/test_branch_flow.py:17: Failed
+____________ test_intervention_consumes_env_budget_not_model_budget ____________
+
+    def impl():
+>       try:return importlib.import_module('native_branch')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_branch_flow.py:16: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/usr/lib/python3.13/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen importlib._bootstrap>:1387: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:1360: in _find_and_load
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'native_branch', import_ = <function _gcd_import at 0x7f5b625c44a0>
+
+>   ???
+E   ModuleNotFoundError: No module named 'native_branch'
+
+<frozen importlib._bootstrap>:1324: ModuleNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+    def test_intervention_consumes_env_budget_not_model_budget():
+>       r,m,e,p,events=run()
+                       ^^^^^
+
+tests/test_branch_flow.py:75: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_branch_flow.py:50: in run
+    result=impl().run_branch_core(arm=arm,option_contract=c,goal='put a mug on a desk',observation='source',menu=('go to desk 1','go to shelf 2','finish'),history=(),
+           ^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def impl():
+        try:return importlib.import_module('native_branch')
+>       except ImportError:pytest.fail('native Memory-aware branch integration is missing')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: native Memory-aware branch integration is missing
+
+tests/test_branch_flow.py:17: Failed
+____________ test_source_prompt_mismatch_prevents_all_side_effects _____________
+
+    def impl():
+>       try:return importlib.import_module('native_branch')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_branch_flow.py:16: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/usr/lib/python3.13/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen importlib._bootstrap>:1387: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:1360: in _find_and_load
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'native_branch', import_ = <function _gcd_import at 0x7f5b625c44a0>
+
+>   ???
+E   ModuleNotFoundError: No module named 'native_branch'
+
+<frozen importlib._bootstrap>:1324: ModuleNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+    def test_source_prompt_mismatch_prevents_all_side_effects():
+        with pytest.raises(ValueError,match='SOURCE_PROMPT'):
+>           run(expected='0'*64)
+
+tests/test_branch_flow.py:84: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_branch_flow.py:50: in run
+    result=impl().run_branch_core(arm=arm,option_contract=c,goal='put a mug on a desk',observation='source',menu=('go to desk 1','go to shelf 2','finish'),history=(),
+           ^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def impl():
+        try:return importlib.import_module('native_branch')
+>       except ImportError:pytest.fail('native Memory-aware branch integration is missing')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: native Memory-aware branch integration is missing
+
+tests/test_branch_flow.py:17: Failed
+___________ test_intent_written_before_policy_and_environment_effect ___________
+
+    def impl():
+>       try:return importlib.import_module('native_branch')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_branch_flow.py:16: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/usr/lib/python3.13/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen importlib._bootstrap>:1387: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:1360: in _find_and_load
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'native_branch', import_ = <function _gcd_import at 0x7f5b625c44a0>
+
+>   ???
+E   ModuleNotFoundError: No module named 'native_branch'
+
+<frozen importlib._bootstrap>:1324: ModuleNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+    def test_intent_written_before_policy_and_environment_effect():
+>       r,m,e,p,events=run()
+                       ^^^^^
+
+tests/test_branch_flow.py:88: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_branch_flow.py:50: in run
+    result=impl().run_branch_core(arm=arm,option_contract=c,goal='put a mug on a desk',observation='source',menu=('go to desk 1','go to shelf 2','finish'),history=(),
+           ^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def impl():
+        try:return importlib.import_module('native_branch')
+>       except ImportError:pytest.fail('native Memory-aware branch integration is missing')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: native Memory-aware branch integration is missing
+
+tests/test_branch_flow.py:17: Failed
+______ test_each_arm_uses_own_continuation_state_not_counterfactual_copy _______
+
+    def impl():
+>       try:return importlib.import_module('native_branch')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_branch_flow.py:16: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/usr/lib/python3.13/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen importlib._bootstrap>:1387: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:1360: in _find_and_load
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'native_branch', import_ = <function _gcd_import at 0x7f5b625c44a0>
+
+>   ???
+E   ModuleNotFoundError: No module named 'native_branch'
+
+<frozen importlib._bootstrap>:1324: ModuleNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+    def test_each_arm_uses_own_continuation_state_not_counterfactual_copy():
+>       f0,m0,e0,p0,_=run('F0');f1,m1,e1,p1,_=run('F1')
+                      ^^^^^^^^^
+
+tests/test_branch_flow.py:95: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_branch_flow.py:50: in run
+    result=impl().run_branch_core(arm=arm,option_contract=c,goal='put a mug on a desk',observation='source',menu=('go to desk 1','go to shelf 2','finish'),history=(),
+           ^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def impl():
+        try:return importlib.import_module('native_branch')
+>       except ImportError:pytest.fail('native Memory-aware branch integration is missing')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: native Memory-aware branch integration is missing
+
+tests/test_branch_flow.py:17: Failed
+=========================== short test summary info ============================
+FAILED tests/test_branch_flow.py::test_f1_returns_to_memory_adapter_after_option_not_raw_prompt - Failed: native Memory-aware branch integration is missing
+FAILED tests/test_branch_flow.py::test_f0_never_executes_candidate_and_uses_source_prompt - Failed: native Memory-aware branch integration is missing
+FAILED tests/test_branch_flow.py::test_intervention_consumes_env_budget_not_model_budget - Failed: native Memory-aware branch integration is missing
+FAILED tests/test_branch_flow.py::test_source_prompt_mismatch_prevents_all_side_effects - Failed: native Memory-aware branch integration is missing
+FAILED tests/test_branch_flow.py::test_intent_written_before_policy_and_environment_effect - Failed: native Memory-aware branch integration is missing
+FAILED tests/test_branch_flow.py::test_each_arm_uses_own_continuation_state_not_counterfactual_copy - Failed: native Memory-aware branch integration is missing
+6 failed in 0.14s

@@ -1,0 +1,18 @@
+[
+  {"id":"single","path":"semantic_evidence.json","valid":true,"segments":["semantic_evidence.json"]},
+  {"id":"two_segments","path":"logs/probe-P7.42.txt","valid":true,"segments":["logs","probe-P7.42.txt"]},
+  {"id":"case_sensitive","path":"Logs/A_B-1.txt","valid":true,"segments":["Logs","A_B-1.txt"]},
+  {"id":"empty","path":"","valid":false,"code":"EMPTY"},
+  {"id":"absolute","path":"/absolute","valid":false,"code":"ABSOLUTE"},
+  {"id":"parent","path":"../escape","valid":false,"code":"INVALID_INITIAL_BYTE"},
+  {"id":"dot","path":"./escape","valid":false,"code":"INVALID_INITIAL_BYTE"},
+  {"id":"double_slash","path":"a//b","valid":false,"code":"EMPTY_SEGMENT"},
+  {"id":"trailing_slash","path":"a/","valid":false,"code":"EMPTY_SEGMENT"},
+  {"id":"backslash","path":"a\\b","valid":false,"code":"INVALID_SEGMENT_BYTE"},
+  {"id":"space","path":"space name","valid":false,"code":"INVALID_SEGMENT_BYTE"},
+  {"id":"newline","path":"line\nname","valid":false,"code":"INVALID_SEGMENT_BYTE"},
+  {"id":"three_segments","path":"a/b/c","valid":false,"code":"TOO_MANY_SEGMENTS"},
+  {"id":"segment_too_long","path":"SEGMENT_129","valid":false,"code":"SEGMENT_TOO_LONG"},
+  {"id":"path_too_long","path":"PATH_513","valid":false,"code":"TOO_LONG"},
+  {"id":"non_ascii","path":"café","valid":false,"code":"NON_ASCII"}
+]

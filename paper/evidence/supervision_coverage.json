@@ -1,0 +1,114 @@
+{
+  "schema": "REPAIR_SUPERVISION_COVERAGE_V1",
+  "native_evidence_sha256": "b2405b1a992a163eade85ad02212215585ac7bf89ffa9f721762ef7c0dca4a88",
+  "sources": [
+    {
+      "state_id": "18739065b796acb3a6dbd6d8e6bd709634ebeb21a3555f25b9819c672ad8626c",
+      "task_goal": "put a clean pan in stoveburner.",
+      "program_actions_per_repetition": [
+        2
+      ],
+      "successful_F1_repetitions": 5,
+      "successful_F1_policy_calls": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "native_views": {
+        "I1_EXECUTION_ACTION": 1,
+        "STRATEGY_AUXILIARY": 1
+      },
+      "native_label_token_counts": {
+        "I1_EXECUTION_ACTION": 13,
+        "STRATEGY_AUXILIARY": 644
+      },
+      "native_row_sha256": [
+        "11e1241369033ce24543b49de69ff2dd2ef3507b860db3b93b9aecea4cc85158",
+        "231a7c8702cb4739c022b4f8bf1c495657ad4af0d3d130333a1a125efe25b179"
+      ]
+    },
+    {
+      "state_id": "e03627d14f88920d2f2329aae48bef09abe3b309363af1a26409850152d78bc8",
+      "task_goal": "put a potato in microwave.",
+      "program_actions_per_repetition": [
+        4
+      ],
+      "successful_F1_repetitions": 5,
+      "successful_F1_policy_calls": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "native_views": {
+        "I1_EXECUTION_ACTION": 1,
+        "STRATEGY_AUXILIARY": 1
+      },
+      "native_label_token_counts": {
+        "I1_EXECUTION_ACTION": 12,
+        "STRATEGY_AUXILIARY": 612
+      },
+      "native_row_sha256": [
+        "26d5fed2c11844982526ef49c5ab5e52f52ddc94e82e141ea32e9b6c30173de5",
+        "4c971dc4f286eae903c4c1760a0358af5e154a0e7e394cf0c43dc8ed46a50408"
+      ]
+    },
+    {
+      "state_id": "f5545bdcb157180c1adbae42b42ee10195fbd0bc2c5614302a8ce84099a26bc9",
+      "task_goal": "heat some cup and put it in cabinet.",
+      "program_actions_per_repetition": [
+        6
+      ],
+      "successful_F1_repetitions": 5,
+      "successful_F1_policy_calls": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "native_views": {
+        "I1_EXECUTION_ACTION": 1,
+        "STRATEGY_AUXILIARY": 1
+      },
+      "native_label_token_counts": {
+        "I1_EXECUTION_ACTION": 15,
+        "STRATEGY_AUXILIARY": 662
+      },
+      "native_row_sha256": [
+        "d28d24dab4386fc68ee94541e0bbab8909dc3a934cb6c99b23a1f6dae34e864e",
+        "822f95a0daa4b344fdc5e8a025bd9532a71d8051b5ae88d2d03b4452dbd5e805"
+      ]
+    },
+    {
+      "state_id": "f90dc32bb8f8b9af4337ca3b21af43737e1c66524beffe2943d043de7783026b",
+      "task_goal": "examine the newspaper with the desklamp.",
+      "program_actions_per_repetition": [
+        4
+      ],
+      "successful_F1_repetitions": 5,
+      "successful_F1_policy_calls": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "native_views": {
+        "I1_EXECUTION_ACTION": 1,
+        "STRATEGY_AUXILIARY": 1
+      },
+      "native_label_token_counts": {
+        "I1_EXECUTION_ACTION": 11,
+        "STRATEGY_AUXILIARY": 628
+      },
+      "native_row_sha256": [
+        "52e22d741eb8e4947c434d989ace147751f44650d6df505d588aff90e1eb56e0",
+        "2e18806f7af0f5e6d7f34935cbd95e61488e45b6992451673a1ff5eaea96985b"
+      ]
+    }
+  ]
+}

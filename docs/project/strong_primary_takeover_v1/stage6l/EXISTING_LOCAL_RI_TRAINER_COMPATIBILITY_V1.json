@@ -1,0 +1,67 @@
+{
+  "clean_base_snapshot": "/data/run01/scwb204/sdar_repro/clean_model_snapshots/Qwen2.5-3B-Instruct/aa8e72537993ba99e69dfaafa59ed015b17504d1",
+  "clean_base_snapshot_exists": true,
+  "compatibility_sha256": "1ae80073496fec3b9b5d2752411b1d213e8978406bfb404d036234815452f9e1",
+  "current_distillation_materializes_analyzer_examples": false,
+  "current_distillation_materializes_planner_post_examples": true,
+  "current_distillation_materializes_planner_pre_examples": true,
+  "distillation_module_path": "src/pchsi/research_intelligence/distillation.py",
+  "distillation_module_sha256": "3bc7067bcd77e33546fba63df86d39bb7c28aab5d71864a62a02708bd4ed3547",
+  "existing_entrypoint_declared": "round_training.stage_runner.run_training_stage",
+  "existing_entrypoint_import_status": "PARENT_MODULE_NOT_FOUND_IN_PREP_ENV",
+  "existing_entrypoint_origin": null,
+  "existing_entrypoint_prep_env_probe": {
+    "exception_name": "round_training",
+    "exception_type": "ModuleNotFoundError",
+    "module": "round_training.stage_runner",
+    "origin": null,
+    "status": "PARENT_MODULE_NOT_FOUND_IN_PREP_ENV"
+  },
+  "narrow_trainer_native_serializer_required": true,
+  "new_teacher_corpus_analyzer_example_count": 144,
+  "new_teacher_corpus_planner_example_count": 2,
+  "new_trainer_required": false,
+  "prep_env_importability_is_training_authority": false,
+  "response_only_loss_mask_binding_ready": false,
+  "round_id": "CLEAN-HUMAN-REFERENCE-R1-PI0",
+  "schema_id": "EXISTING_LOCAL_RI_TRAINER_COMPATIBILITY_V1",
+  "schema_version": 1,
+  "stage4a_candidate_handoff_file_sha256": "12843e82af08c1340e043440a658c1cc852322a4c1c0758eec64e7d86a7fd7ff",
+  "stage4a_candidate_handoff_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4a_clean_existing_trainer_v1/1711c5fbc6431f3bd59bda066011ab265837aecfcaf827b073f6a4754ec2f692/CANDIDATE_HANDOFF.json",
+  "stage4a_existing_trainer_root": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4a_clean_existing_trainer_v1/1711c5fbc6431f3bd59bda066011ab265837aecfcaf827b073f6a4754ec2f692",
+  "stage4a_interface_profile_id": "I1_EXECUTION_PROFILE_V1",
+  "stage4a_task_policy_adapter_reuse_authorized": false,
+  "stage4a_training_stage_binding_file_sha256": "6985f3ec970d1b3ce981295c9bca0da2f12e1699333876294c34ac06f4b6d8da",
+  "stage4a_training_stage_binding_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4a_clean_existing_trainer_v1/1711c5fbc6431f3bd59bda066011ab265837aecfcaf827b073f6a4754ec2f692/TRAINING_STAGE_BINDING.json",
+  "stage6a_existing_builder": "pchsi.research_intelligence.distillation.build_local_role_supervision_dataset",
+  "stage6a_target_roles": [
+    "ANALYZER",
+    "RESEARCH_PLANNER_PRE",
+    "RESEARCH_PLANNER_POST"
+  ],
+  "trainer_native_input_ids_labels_ready": false,
+  "trainer_neutral_messages_ready": true,
+  "trainer_sequence_limit_scan": {
+    "candidate_rows": [
+      {
+        "key": "max_sequence_length",
+        "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4a_clean_existing_trainer_v1/1711c5fbc6431f3bd59bda066011ab265837aecfcaf827b073f6a4754ec2f692/ROUND_TRAINING_CONTRACT.unchanged.json",
+        "value": 735
+      },
+      {
+        "key": "max_sequence_length",
+        "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4a_clean_existing_trainer_v1/1711c5fbc6431f3bd59bda066011ab265837aecfcaf827b073f6a4754ec2f692/TRAINING_CONTRACT.json",
+        "value": 735
+      }
+    ],
+    "candidate_values": [
+      735
+    ],
+    "resolved_sequence_limit": 735,
+    "root": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4a_clean_existing_trainer_v1/1711c5fbc6431f3bd59bda066011ab265837aecfcaf827b073f6a4754ec2f692",
+    "scanned_json_file_count": 27,
+    "status": "EXACT_UNIQUE_TRAINER_SEQUENCE_LIMIT_RESOLVED"
+  },
+  "trainer_sequence_policy_required": true,
+  "training_execution_authorized": false
+}

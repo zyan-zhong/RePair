@@ -1,0 +1,14 @@
+{
+  "adapter_implementation_allowed_in_this_package": false,
+  "census_must_extract_ast_field_accesses": true,
+  "census_must_read_exact_frozen_files_by_sha": true,
+  "census_must_report_source_schema_without_invention": true,
+  "census_must_surface_relevant_materializer_source": true,
+  "environment_execution_allowed": false,
+  "model_execution_allowed": false,
+  "reference_takeover_normative_bridge_freeze_allowed": true,
+  "schema_id": "FROZEN_RENDERER_INTERFACE_CENSUS_CONTRACT_V1",
+  "schema_version": 1,
+  "source_materializer_execution_allowed": false,
+  "trainer_execution_allowed": false
+}

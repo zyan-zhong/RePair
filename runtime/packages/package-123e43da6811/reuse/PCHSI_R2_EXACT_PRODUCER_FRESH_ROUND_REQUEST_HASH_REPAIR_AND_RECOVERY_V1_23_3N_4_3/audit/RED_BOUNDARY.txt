@@ -1,0 +1,236 @@
+FFFFFFFFFF                                                               [100%]
+=================================== FAILURES ===================================
+__________________ test_batch_is_parsed_as_argv_not_executed ___________________
+
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-1/test_batch_is_parsed_as_argv_n0')
+
+    def test_batch_is_parsed_as_argv_not_executed(tmp_path):
+>       c=core();p=tmp_path/'run.sh'
+          ^^^^^^
+
+tests/test_recovery_boundary.py:12: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def core():
+>       assert (ROOT/'recovery_core.py').is_file(),'native recovery boundary missing'
+E       AssertionError: native recovery boundary missing
+E       assert False
+E        +  where False = is_file()
+E        +    where is_file = (PosixPath('/mnt/data/r2_n4_build') / 'recovery_core.py').is_file
+
+tests/test_recovery_boundary.py:7: AssertionError
+_______ test_unreviewed_shell_shape_is_rejected[#!/bin/bash\necho bad\n] _______
+
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-1/test_unreviewed_shell_shape_is0')
+text = '#!/bin/bash\necho bad\n'
+
+    @pytest.mark.parametrize('text',['#!/bin/bash\necho bad\n','#!/bin/bash\nexec python x\ntouch y\n'])
+    def test_unreviewed_shell_shape_is_rejected(tmp_path,text):
+        p=tmp_path/'run.sh';p.write_text(text)
+>       with pytest.raises(ValueError):core().parse_runner(p)
+                                       ^^^^^^
+
+tests/test_recovery_boundary.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def core():
+>       assert (ROOT/'recovery_core.py').is_file(),'native recovery boundary missing'
+E       AssertionError: native recovery boundary missing
+E       assert False
+E        +  where False = is_file()
+E        +    where is_file = (PosixPath('/mnt/data/r2_n4_build') / 'recovery_core.py').is_file
+
+tests/test_recovery_boundary.py:7: AssertionError
+_ test_unreviewed_shell_shape_is_rejected[#!/bin/bash\nexec python x\ntouch y\n] _
+
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-1/test_unreviewed_shell_shape_is1')
+text = '#!/bin/bash\nexec python x\ntouch y\n'
+
+    @pytest.mark.parametrize('text',['#!/bin/bash\necho bad\n','#!/bin/bash\nexec python x\ntouch y\n'])
+    def test_unreviewed_shell_shape_is_rejected(tmp_path,text):
+        p=tmp_path/'run.sh';p.write_text(text)
+>       with pytest.raises(ValueError):core().parse_runner(p)
+                                       ^^^^^^
+
+tests/test_recovery_boundary.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def core():
+>       assert (ROOT/'recovery_core.py').is_file(),'native recovery boundary missing'
+E       AssertionError: native recovery boundary missing
+E       assert False
+E        +  where False = is_file()
+E        +    where is_file = (PosixPath('/mnt/data/r2_n4_build') / 'recovery_core.py').is_file
+
+tests/test_recovery_boundary.py:7: AssertionError
+______________ test_exact_missing_capsule_from_real_fatal_message ______________
+
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-1/test_exact_missing_capsule_fro0')
+
+    def test_exact_missing_capsule_from_real_fatal_message(tmp_path):
+>       c=core();p=tmp_path/'missing.zip'
+          ^^^^^^
+
+tests/test_recovery_boundary.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def core():
+>       assert (ROOT/'recovery_core.py').is_file(),'native recovery boundary missing'
+E       AssertionError: native recovery boundary missing
+E       assert False
+E        +  where False = is_file()
+E        +    where is_file = (PosixPath('/mnt/data/r2_n4_build') / 'recovery_core.py').is_file
+
+tests/test_recovery_boundary.py:7: AssertionError
+______________________ test_no_blanket_filenotfound_retry ______________________
+
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-1/test_no_blanket_filenotfound_r0')
+
+    def test_no_blanket_filenotfound_retry(tmp_path):
+>       c=core()
+          ^^^^^^
+
+tests/test_recovery_boundary.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def core():
+>       assert (ROOT/'recovery_core.py').is_file(),'native recovery boundary missing'
+E       AssertionError: native recovery boundary missing
+E       assert False
+E        +  where False = is_file()
+E        +    where is_file = (PosixPath('/mnt/data/r2_n4_build') / 'recovery_core.py').is_file
+
+tests/test_recovery_boundary.py:7: AssertionError
+_______________ test_once_write_adopts_equal_bytes_not_different _______________
+
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-1/test_once_write_adopts_equal_b0')
+
+    def test_once_write_adopts_equal_bytes_not_different(tmp_path):
+>       c=core();p=tmp_path/'receipt.json'
+          ^^^^^^
+
+tests/test_recovery_boundary.py:33: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def core():
+>       assert (ROOT/'recovery_core.py').is_file(),'native recovery boundary missing'
+E       AssertionError: native recovery boundary missing
+E       assert False
+E        +  where False = is_file()
+E        +    where is_file = (PosixPath('/mnt/data/r2_n4_build') / 'recovery_core.py').is_file
+
+tests/test_recovery_boundary.py:7: AssertionError
+___________ test_terminal_states_are_not_inferred_from_missing_rows ____________
+
+    def test_terminal_states_are_not_inferred_from_missing_rows():
+>       c=core()
+          ^^^^^^
+
+tests/test_recovery_boundary.py:39: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def core():
+>       assert (ROOT/'recovery_core.py').is_file(),'native recovery boundary missing'
+E       AssertionError: native recovery boundary missing
+E       assert False
+E        +  where False = is_file()
+E        +    where is_file = (PosixPath('/mnt/data/r2_n4_build') / 'recovery_core.py').is_file
+
+tests/test_recovery_boundary.py:7: AssertionError
+__________________ test_archive_outputs_cannot_become_inputs ___________________
+
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-1/test_archive_outputs_cannot_be0')
+
+    def test_archive_outputs_cannot_become_inputs(tmp_path):
+>       c=core();p=tmp_path/'capsule.zip'
+          ^^^^^^
+
+tests/test_recovery_boundary.py:46: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def core():
+>       assert (ROOT/'recovery_core.py').is_file(),'native recovery boundary missing'
+E       AssertionError: native recovery boundary missing
+E       assert False
+E        +  where False = is_file()
+E        +    where is_file = (PosixPath('/mnt/data/r2_n4_build') / 'recovery_core.py').is_file
+
+tests/test_recovery_boundary.py:7: AssertionError
+________________________ test_zip_path_escape_rejected _________________________
+
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-1/test_zip_path_escape_rejected0')
+
+    def test_zip_path_escape_rejected(tmp_path):
+>       c=core();p=tmp_path/'capsule.zip'
+          ^^^^^^
+
+tests/test_recovery_boundary.py:51: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def core():
+>       assert (ROOT/'recovery_core.py').is_file(),'native recovery boundary missing'
+E       AssertionError: native recovery boundary missing
+E       assert False
+E        +  where False = is_file()
+E        +    where is_file = (PosixPath('/mnt/data/r2_n4_build') / 'recovery_core.py').is_file
+
+tests/test_recovery_boundary.py:7: AssertionError
+__________________ test_squeue_error_does_not_authorize_retry __________________
+
+    def test_squeue_error_does_not_authorize_retry():
+>       assert core().queue_state(1,'','Permission denied')=='UNKNOWN'
+               ^^^^^^
+
+tests/test_recovery_boundary.py:56: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def core():
+>       assert (ROOT/'recovery_core.py').is_file(),'native recovery boundary missing'
+E       AssertionError: native recovery boundary missing
+E       assert False
+E        +  where False = is_file()
+E        +    where is_file = (PosixPath('/mnt/data/r2_n4_build') / 'recovery_core.py').is_file
+
+tests/test_recovery_boundary.py:7: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_recovery_boundary.py::test_batch_is_parsed_as_argv_not_executed - AssertionError: native recovery boundary missing
+assert False
+ +  where False = is_file()
+ +    where is_file = (PosixPath('/mnt/data/r2_n4_build') / 'recovery_core.py').is_file
+FAILED tests/test_recovery_boundary.py::test_unreviewed_shell_shape_is_rejected[#!/bin/bash\necho bad\n] - AssertionError: native recovery boundary missing
+assert False
+ +  where False = is_file()
+ +    where is_file = (PosixPath('/mnt/data/r2_n4_build') / 'recovery_core.py').is_file
+FAILED tests/test_recovery_boundary.py::test_unreviewed_shell_shape_is_rejected[#!/bin/bash\nexec python x\ntouch y\n] - AssertionError: native recovery boundary missing
+assert False
+ +  where False = is_file()
+ +    where is_file = (PosixPath('/mnt/data/r2_n4_build') / 'recovery_core.py').is_file
+FAILED tests/test_recovery_boundary.py::test_exact_missing_capsule_from_real_fatal_message - AssertionError: native recovery boundary missing
+assert False
+ +  where False = is_file()
+ +    where is_file = (PosixPath('/mnt/data/r2_n4_build') / 'recovery_core.py').is_file
+FAILED tests/test_recovery_boundary.py::test_no_blanket_filenotfound_retry - AssertionError: native recovery boundary missing
+assert False
+ +  where False = is_file()
+ +    where is_file = (PosixPath('/mnt/data/r2_n4_build') / 'recovery_core.py').is_file
+FAILED tests/test_recovery_boundary.py::test_once_write_adopts_equal_bytes_not_different - AssertionError: native recovery boundary missing
+assert False
+ +  where False = is_file()
+ +    where is_file = (PosixPath('/mnt/data/r2_n4_build') / 'recovery_core.py').is_file
+FAILED tests/test_recovery_boundary.py::test_terminal_states_are_not_inferred_from_missing_rows - AssertionError: native recovery boundary missing
+assert False
+ +  where False = is_file()
+ +    where is_file = (PosixPath('/mnt/data/r2_n4_build') / 'recovery_core.py').is_file
+FAILED tests/test_recovery_boundary.py::test_archive_outputs_cannot_become_inputs - AssertionError: native recovery boundary missing
+assert False
+ +  where False = is_file()
+ +    where is_file = (PosixPath('/mnt/data/r2_n4_build') / 'recovery_core.py').is_file
+FAILED tests/test_recovery_boundary.py::test_zip_path_escape_rejected - AssertionError: native recovery boundary missing
+assert False
+ +  where False = is_file()
+ +    where is_file = (PosixPath('/mnt/data/r2_n4_build') / 'recovery_core.py').is_file
+FAILED tests/test_recovery_boundary.py::test_squeue_error_does_not_authorize_retry - AssertionError: native recovery boundary missing
+assert False
+ +  where False = is_file()
+ +    where is_file = (PosixPath('/mnt/data/r2_n4_build') / 'recovery_core.py').is_file
+10 failed in 0.16s

@@ -1,0 +1,45 @@
+{
+  "host": "ln01",
+  "rows": [
+    {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4d_existing_select_live_binding_v1/4ab7942b2c66238cb3833bdb04eb7f7ca23b52d10c388575aaf1bd272dfc100d/CLEAN_SELECT_TASK_ACCESS_MANIFEST_V1.json",
+      "sha256": "1672e85beba262fee1b0f572163339dd7343932288043d16e4f35f41f9926787",
+      "local_name": "CLEAN_SELECT_TASK_ACCESS_MANIFEST_V1.json",
+      "authority": "registered Stage4D BINDING_IDENTITY semantic index + OUTPUT_FILES exact byte inventory",
+      "status": "READ",
+      "observed_sha256": "1672e85beba262fee1b0f572163339dd7343932288043d16e4f35f41f9926787",
+      "bytes": 391440
+    },
+    {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4d_existing_select_live_binding_v1/4ab7942b2c66238cb3833bdb04eb7f7ca23b52d10c388575aaf1bd272dfc100d/SELECT_SERVER_RUNTIME_MANIFEST_V1.json",
+      "sha256": "3f9dae22881f9a9138af9fa8f3db3857801def744ada60a4b9c24f0db4e29e79",
+      "local_name": "SELECT_SERVER_RUNTIME_MANIFEST_V1.json",
+      "authority": "registered Stage4D BINDING_IDENTITY semantic index + OUTPUT_FILES exact byte inventory",
+      "status": "READ",
+      "observed_sha256": "3f9dae22881f9a9138af9fa8f3db3857801def744ada60a4b9c24f0db4e29e79",
+      "bytes": 1260
+    },
+    {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4d_existing_select_live_binding_v1/4ab7942b2c66238cb3833bdb04eb7f7ca23b52d10c388575aaf1bd272dfc100d/ALFWORLD_ENVIRONMENT_RUNTIME_MANIFEST_V1.json",
+      "sha256": "3b72bd1995a0f38e391cff086b407d1881dee2f2f67a8933edddbabf4a4c53a7",
+      "local_name": "ALFWORLD_ENVIRONMENT_RUNTIME_MANIFEST_V1.json",
+      "authority": "registered Stage4D BINDING_IDENTITY semantic index + OUTPUT_FILES exact byte inventory",
+      "status": "READ",
+      "observed_sha256": "3b72bd1995a0f38e391cff086b407d1881dee2f2f67a8933edddbabf4a4c53a7",
+      "bytes": 1602
+    },
+    {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4d_existing_select_live_binding_v1/4ab7942b2c66238cb3833bdb04eb7f7ca23b52d10c388575aaf1bd272dfc100d/CLEAN_SELECT_GAMEFILE_IDENTITY_MANIFEST_V1.json",
+      "sha256": "d0657b01c8215aeaaccf4e3c22e4bdea23fc9cd10e4899dbac4b17f840482adb",
+      "local_name": "CLEAN_SELECT_GAMEFILE_IDENTITY_MANIFEST_V1.json",
+      "authority": "registered Stage4D BINDING_IDENTITY semantic index + OUTPUT_FILES exact byte inventory",
+      "status": "READ",
+      "observed_sha256": "d0657b01c8215aeaaccf4e3c22e4bdea23fc9cd10e4899dbac4b17f840482adb",
+      "bytes": 130000
+    }
+  ],
+  "schema_id": "EXACT_REGISTERED_SSH_READ_RECEIPT_V1",
+  "remote_filesystem_mutations": 0,
+  "filesystem_discovery_used": false,
+  "scientific_execution_count": 0
+}

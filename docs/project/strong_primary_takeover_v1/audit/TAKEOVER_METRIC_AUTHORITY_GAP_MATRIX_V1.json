@@ -1,0 +1,84 @@
+{
+  "materialization_authorized": false,
+  "metrics": {
+    "budget_compliance_rate": {
+      "authority": "FROZEN_PRE_BUDGET_AND_EXECUTION_RECEIPTS",
+      "value_materialized": false
+    },
+    "completed_reference_round_count": {
+      "authority": "CLEAN_HUMAN_REFERENCE_CLOSEOUT",
+      "value": 1
+    },
+    "downstream_benefits_per_budget_ratio_vs_human": {
+      "authority": "VERSIONED_ZERO_BASELINE_ESTIMAND_REQUIRED",
+      "value_materialized": false
+    },
+    "evidence_validity_rate": {
+      "authority": "EVIDENCE_GROUNDING_AND_VALIDATION_RECEIPTS",
+      "value_materialized": false
+    },
+    "full_round_go_count": {
+      "authority": "CLEAN_HUMAN_REFERENCE_CLOSEOUT",
+      "strong_primary_gate_dependency": false,
+      "value": 0
+    },
+    "future_outcome_leakage_count": {
+      "authority": "BLIND_INPUT_AND_CALL_LEDGER_AUDIT",
+      "value_materialized": false
+    },
+    "human_field_revision_rate": {
+      "authority": "CLEAN_ADJUDICATION_ONLY",
+      "legacy_pilot_semantics_forbidden": true,
+      "value_materialized": false
+    },
+    "repeated_nogo_avoidance_rate": {
+      "authority": "HISTORICAL_NO_GO_AND_CURRENT_DECISION_LEDGER",
+      "value_materialized": false
+    },
+    "single_change_compliance_rate": {
+      "authority": "PRE_DECISION_AND_VALIDATOR_EVIDENCE",
+      "value_materialized": false
+    },
+    "strong_post_shadow_round_count": {
+      "authority": "EXISTING_STRONG_POST_SHADOW_TRACE",
+      "candidate_value_from_exact_existing_shadow": 1,
+      "post_shadow_discovery_status": "STRONG_POST_SHADOW_EVIDENCE_FOUND",
+      "value_materialized": false
+    },
+    "strong_pre_shadow_round_count": {
+      "authority": "EXISTING_STRONG_PRE_SHADOW_TRACE",
+      "candidate_value_from_exact_existing_shadow": 1,
+      "value_materialized": false
+    }
+  },
+  "next_action": "BIND_EXACT_SOURCES_AND_FREEZE_ESTIMANDS_BEFORE_NUMERIC_GATE",
+  "schema_id": "TAKEOVER_METRIC_AUTHORITY_GAP_MATRIX_V1",
+  "source_registration_sha256": "7e7ae61103d9bf23c69fba541d3c70a4df104b1e149e5218cc231841557c7e50",
+  "strong_post_discovery": {
+    "candidate_round_count_value": 1,
+    "occurrence_count": 3,
+    "occurrences": [
+      {
+        "file_path": "/data/run01/scwb204/sdar_repro/badcase/experiments/human_reference_round_pi1_pi2_v1/human_strong_post_pipeline_v3_postfreeze_continuation/review/handoff/HUMAN_STRONG_POST_ADJUDICATION_INPUT_V1.json",
+        "file_sha256": "294dcad2ba89dce7e9dc010097789b63604af09fb5f6b1e6ed487a3158e69bf2",
+        "json_path": "$.strong_post_shadow_record",
+        "schema_id": "API_RESEARCHER_POST_SHADOW_V1"
+      },
+      {
+        "file_path": "/data/run01/scwb204/sdar_repro/badcase/experiments/human_reference_round_pi1_pi2_v1/strong_researcher_post_shadow_v1/591ca3745d625ee3b8e04e87d499fd2cd22e6ae545638d52722e767ffa0ba4df/validated_artifact.json",
+        "file_sha256": "ae2e7323e54c160a2f224fcca66eef9a3d08ab689e912b86c8451ec6b19fba34",
+        "json_path": "$",
+        "schema_id": "API_RESEARCHER_POST_SHADOW_V1"
+      },
+      {
+        "file_path": "/data/run01/scwb204/sdar_repro/badcase/experiments/human_reference_round_pi1_pi2_v1/human_strong_post_adjudication_and_strong_training_plan_v1_1_route_scope_recovery/strong_training_plan_call/ffd41cbbcda95575b8955aeb89fdaed5f2b6e806e319886b12afb0c9e23b4b97/rendered_request.json",
+        "file_sha256": "83ba69d2aab5a5d23d43cb34497dedfc3647a506e7ce8a2a511994e638fb2b5f",
+        "json_path": "$.input_projection.strong_post_shadow_record",
+        "schema_id": "API_RESEARCHER_POST_SHADOW_V1"
+      }
+    ],
+    "shadow_record_sha256": "b48370deea5ae87f619de374ece9a95a5e1d5c5f076494e8a3c17ffd42c954df",
+    "status": "STRONG_POST_SHADOW_EVIDENCE_FOUND"
+  },
+  "takeover_execution_authorized": false
+}

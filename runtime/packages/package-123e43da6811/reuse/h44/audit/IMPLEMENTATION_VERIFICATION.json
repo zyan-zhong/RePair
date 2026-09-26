@@ -1,0 +1,1067 @@
+{
+  "schema_id": "V1233G_IMPLEMENTATION_VERIFICATION_V1",
+  "python_version": "Python 3.13.5",
+  "test_command": [
+    "python",
+    "-B",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "--tb=short"
+  ],
+  "test_returncode": 1,
+  "package_tests_passed": false,
+  "pytest_summary_lines": [
+    "1 failed, 32 passed in 1.43s"
+  ],
+  "python312_ast_checks": [
+    {
+      "path": "io_utils.py",
+      "status": "PASS"
+    },
+    {
+      "path": "gpu_job.py",
+      "status": "PASS"
+    },
+    {
+      "path": "strong_post.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_branch.py",
+      "status": "PASS"
+    },
+    {
+      "path": "deployment.py",
+      "status": "PASS"
+    },
+    {
+      "path": "round_plan.py",
+      "status": "PASS"
+    },
+    {
+      "path": "structured_output_schema_compatibility.py",
+      "status": "PASS"
+    },
+    {
+      "path": "option_adapter.py",
+      "status": "PASS"
+    },
+    {
+      "path": "independent_verifier.py",
+      "status": "PASS"
+    },
+    {
+      "path": "controller.py",
+      "status": "PASS"
+    },
+    {
+      "path": "source_adapter.py",
+      "status": "PASS"
+    },
+    {
+      "path": "tests/test_native_policy.py",
+      "status": "PASS"
+    },
+    {
+      "path": "tests/test_branch_flow.py",
+      "status": "PASS"
+    },
+    {
+      "path": "tests/test_source_adapter.py",
+      "status": "PASS"
+    },
+    {
+      "path": "tests/test_deployment.py",
+      "status": "PASS"
+    },
+    {
+      "path": "tests/conftest.py",
+      "status": "PASS"
+    },
+    {
+      "path": "tests/test_post.py",
+      "status": "PASS"
+    },
+    {
+      "path": "tests/test_verifier.py",
+      "status": "PASS"
+    },
+    {
+      "path": "tests/test_options.py",
+      "status": "PASS"
+    },
+    {
+      "path": "vendor/round_memory_runtime_authority.py",
+      "status": "PASS"
+    },
+    {
+      "path": "vendor/typed_short_option_f0f1_contracts.py",
+      "status": "PASS"
+    },
+    {
+      "path": "vendor/typed_short_option_f0f1_verifier.py",
+      "status": "PASS"
+    },
+    {
+      "path": "vendor/policy_runtime_slurm_execution.py",
+      "status": "PASS"
+    },
+    {
+      "path": "vendor/policy_runtime_engine_profile.py",
+      "status": "PASS"
+    },
+    {
+      "path": "vendor/policy_runtime_service.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/scripts/memory/materialize_sequence_failure_experience_v1.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/research_intelligence/demonstrations.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/research_intelligence/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/research_intelligence/common.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/research_intelligence/strong_researcher_evidence_hydration.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/research_intelligence/research_planner_reference_trace.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/research_intelligence/round_research_inputs.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/research_intelligence/human_reference_round.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/research_intelligence/records.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/research_intelligence/role_neutral.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/research_intelligence/reference_round.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/research_intelligence/formal_x_lineage.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/research_intelligence/selected_candidate_authority.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/research_intelligence/product_isolation.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/research_intelligence/visibility.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/research_intelligence/planner_portfolio_selection.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/research_intelligence/clean_f0f1_manifest.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/research_intelligence/repair_portfolio.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/research_intelligence/paradigm.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/research_intelligence/benchmark_registry.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/research_intelligence/human_planner_freeze_lineage.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/research_intelligence/canonical_candidate_pool.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/research_intelligence/human_f0f1_runtime.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/research_intelligence/human_pre_schema_completion.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/research_intelligence/canonical_candidate_pool_v2.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/research_intelligence/takeover.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/research_intelligence/distillation.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/research_intelligence/final_two_slot_resolution.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/research_intelligence/human_planner_adjudication.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/round_control/round_manifest.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/round_control/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/round_control/common.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/round_control/orchestrator.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/round_control/role_authority.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/round_control/clean_role_actor_binding.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/round_control/clean_data_gate.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/round_control/local_analyzer_shared_view.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/round_control/clean_execution_binding.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/round_control/scientific_round_governance.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/round_control/rollout_collection.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/round_control/attempt_receipts.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/round_control/concrete_bindings.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/round_control/promotion.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/round_control/analyzer_substage.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/round_control/lifecycle.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/round_control/clean_group_analyzer_binding.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/round_control/benchmark_sealing.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/round_control/retention.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/round_control/clean_analyzer_input_materialization.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/round_control/local_analyzer_training_adapter.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/round_control/trace_handoff.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/round_control/no_training_update.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/round_control/strong_primary_readiness.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/round_control/bindings.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/round_control/execution_plan.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/round_control/next_round.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/cognitive_runtime/response.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/cognitive_runtime/round_evidence.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/cognitive_runtime/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/cognitive_runtime/p2_assets.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/cognitive_runtime/orchestrator.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/cognitive_runtime/output_validation.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/cognitive_runtime/access.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/cognitive_runtime/schema_registry.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/cognitive_runtime/manifest.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/cognitive_runtime/validation.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/cognitive_runtime/identity.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/cognitive_runtime/request_renderer.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/cognitive_runtime/formal_registry.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/cognitive_runtime/researcher_primary.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/cognitive_runtime/p2_bridge.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/cognitive_runtime/researcher.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/cognitive_runtime/formal_registry_v2.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/cognitive_runtime/researcher_hydrated.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/cognitive_runtime/projections.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/cognitive_runtime/ledger.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/security/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/security/orchestrator.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/security/execution_preflight.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/security/execution_gate.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/security/evidence_stream.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/security/trusted_bootstrap.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/security/contracts.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/security/dataset_identity.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/security/manifests.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/security/syscall_table.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/security/canonical.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/security/probe_results.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/security/evidence_path.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/task_manifest.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/artifact_publisher.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/p1b_access_crosswalk.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/p1b_lineage.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/evidence_completeness.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/raw_policy_prompt.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/p1b_access_materializer.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/policy_runtime_manifest.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/interface_isolation_request.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/evidence_visibility.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/clean_full_evidence.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/alfworld_worker.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/episode_sequence.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/condition_run_schedule.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/runtime_core.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/alfworld_adapter.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/public_transition.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/alfworld_worker_protocol.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/rendered_prompt.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/result_audit.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/distillation_governance.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/episode_artifact.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/policy_client.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/alfworld_contracts.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/trace_assembler.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/condition_execution_binding.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/schema_models.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/gamefile_identity.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/episode_evaluator.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/action_trace.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/environment_runtime_manifest.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/canonical_evidence.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/openai_responses_policy.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/policy_execution_profile.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/policy_condition.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/policy_call_evidence.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/schema_contract.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/select_policy_runtime.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/policy_attempt_adapter.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/select_execution_identity.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/run_resolution.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/raw_policy_parser.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/cell_lock.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/policy_response.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/select_result_audit.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/attempt_state.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/budget.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/run_schedule.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/p1b_split.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/policy_request.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/evaluation/distillation_access.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/reference_loop/alfworld_events.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/reference_loop/paired.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/reference_loop/historical_bridge.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/reference_loop/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/reference_loop/task_access.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/reference_loop/mechanical.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/reference_loop/identity.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/reference_loop/historical_rebinding.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/reference_loop/clean_analyzer_evidence.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/reference_loop/rebinding.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/reference_loop/discovery.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/reference_loop/identity_census.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/reference_loop/analyzer_evidence_pack.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/reference_loop/canonical.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/reference_loop/types.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/reference_loop/identity_review.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/reference_loop/bundle_reader.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/reference_loop/approved_materialization.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/memory_augmented_prompt.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/projection_common.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/component_ports.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/formal_b_retrieval.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/scientific_authority.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/policy_projection.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/event_ledger.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/applicability.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/scientific_program.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/task_access.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/source_integrity.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/semantic_recovery.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/policy_view_safety.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/projection_packing.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/exposure_ledger.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/sequence_failure_experience.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/source_collection.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/a0_formal_execution.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/package_a_execution_ledgers.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/procedural_builder.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/retrieval_key.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/applicability_gate.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/source_state_contracts.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/policy_exposure.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/token_budget_calibration.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/matched_raw_view.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/descriptive_eligibility.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/dev_snapshot_loader.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/single_cue_failure_summary.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/scientific_decision.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/dev_descriptive_snapshot.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/a0_replay_session.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/effect_ledger.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/task_access_sha_authority_correction.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/representation_ablation.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/promotion_ledger.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/policy_contract.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/memory_execution_identity.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/dev_descriptive_snapshot_v2.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/memory_runtime_bridge.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/procedural_completeness.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/procedural_record.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/round_maintenance.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/token_budget_contract.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/ledger_common.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/candidate_materialization.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/lifecycle_relations.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/scientific_validation.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/consumer_views.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/memory/source_state_replay.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/analyzer/formal_failure_collection.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/analyzer/supervision_materializer.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/analyzer/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/analyzer/candidate_projector.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/analyzer/metrics.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/analyzer/grouping.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/analyzer/analysis_sampling.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/analyzer/repair_decomposition.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/analyzer/analysis_budget.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/analyzer/gold_panel.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/analyzer/capability_profile.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/analyzer/outcome_router.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/analyzer/role_trace.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/analyzer/success_optimization.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/analyzer/metric_registry.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/analyzer/state_candidate_budget.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/analyzer/schema_contract.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/analyzer/crosscheck.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/analyzer/local_results.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/analyzer/experiment_registry.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/analyzer/authorities.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/analyzer/act3_registration.py",
+      "status": "PASS"
+    },
+    {
+      "path": "native_repo/src/pchsi/analyzer/component_attribution.py",
+      "status": "PASS"
+    }
+  ],
+  "source_fixture_sha256": "b3f56ebe6cdb34db65fb3c71035dfe6d89b116c3ffe0532f50a896c6b5da9152",
+  "actual_provider_calls": 0,
+  "actual_environment_calls": 0,
+  "actual_training_calls": 0,
+  "actual_scheduler_calls": 0,
+  "gpu_service_native_end_to_end_verified": false,
+  "trainer_bound": false,
+  "next_round_resident_bound": false,
+  "full_repository_regression_performed": false,
+  "production_release": false
+}

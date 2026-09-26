@@ -1,0 +1,24 @@
+{
+  "arms_per_pair": 2,
+  "branch_budget_mode": "DERIVE_STATE_COUNT_X_PAIRED_REPETITIONS_X_ARMS",
+  "effect_authority": "INDEPENDENT_ENVIRONMENT_VERIFIER_ONLY",
+  "historical_task_specific_portfolio_reuse": false,
+  "max_branch_runs": null,
+  "max_selected_states": null,
+  "outcome_adaptive_reselection_allowed": false,
+  "paired_repetitions": 5,
+  "paired_seeds": [
+    17,
+    31,
+    47,
+    73,
+    101
+  ],
+  "round_scope": "CLEAN_HUMAN_REFERENCE_ROUND",
+  "schema_id": "CLEAN_REFERENCE_F0F1_BUDGET_V1",
+  "schema_version": 1,
+  "selection_authority": "HUMAN_PRIMARY_PRE_WITH_STRONG_BLIND_SHADOW",
+  "stable_direction_min_pairs": 4,
+  "state_budget_mode": "FROZEN_REGISTERED_UNIVERSE",
+  "training_mixture_freeze_before_f0f1": false
+}

@@ -1,0 +1,23 @@
+{
+  "environment_call_count_before_failure": 0,
+  "failed_assumed_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage6k_strong_c_p_x_live_ri_corpus_v1/b1db69dbc2adb33a2b9b9b93e2fa46dfcfb86a04/STRONG_LOCALIZATION_TEACHER_CALL_CORPUS_V1.json",
+  "failed_command_rc": 1,
+  "failed_package": "STAGE6L_I1_ROLE_TEACHER_SERIALIZER_AND_LOCAL_RI_TRAINING_PREP_V1",
+  "failed_package_sha256": "f1c1d52b927a2b3ee0f44d41eda5bc7ac3c2ed404cdbf3f74d49554bb89135a6",
+  "failure_class": "STAGE6K_AUTHORITY_CONTROL_ROOT_GRANULARITY_MISMATCH",
+  "fix_scope": "EXACT_TWO_LAYOUT_PATH_RESOLVER_ONLY_NO_SCIENTIFIC_CHANGE",
+  "git_commit_created_by_failed_run": false,
+  "provider_call_count_before_failure": 0,
+  "recursive_filesystem_discovery_used": false,
+  "repository_head_after_failed_run": "a6f4fefff95418801fce2e915380c065fb682c32",
+  "resolved_corpus_file_sha256": "37e3afd53acbba82e428b29264a1c21db12222e453efadb648db7cc0cc21905e",
+  "resolved_corpus_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage6k_strong_c_p_x_live_ri_corpus_v1/b1db69dbc2adb33a2b9b9b93e2fa46dfcfb86a04/x_ambiguity_recovery_v1/STRONG_LOCALIZATION_TEACHER_CALL_CORPUS_V1.json",
+  "resolved_corpus_resolution_mode": "RECOVERY_SUBROOT_EXACT",
+  "resolved_corpus_scientific_sha256": "0654fb1c93317500b93dee467f32066a31d968f576b86e849210101a88668bcf",
+  "root_cause": "Stage6K X-ambiguity recovery materialized the final corpus under OUTPUT_ROOT/x_ambiguity_recovery_v1 while its compact authority retained control_root=OUTPUT_ROOT.",
+  "round_id": "CLEAN-HUMAN-REFERENCE-R1-PI0",
+  "schema_id": "STAGE6L_CORPUS_PATH_RECOVERY_PROVENANCE_V1",
+  "schema_version": 1,
+  "stage6k_authority_control_root": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage6k_strong_c_p_x_live_ri_corpus_v1/b1db69dbc2adb33a2b9b9b93e2fa46dfcfb86a04",
+  "training_execution_count_before_failure": 0
+}

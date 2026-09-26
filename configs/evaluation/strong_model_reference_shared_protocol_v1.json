@@ -1,0 +1,74 @@
+{
+  "batch_api_full_episode_policy": "FORBIDDEN_SEQUENTIAL_ENV_DEPENDENCY",
+  "benchmark_stage": "STRONG_MODEL_REFERENCE",
+  "historical_results": "CONTEXT_ONLY_PENDING_SHARED_PROTOCOL_RERUN",
+  "parallel_collection_blinding": {
+    "analyzer_or_planner_may_read_per_task_strong_results": false,
+    "human_pre_may_read_per_task_strong_results": false,
+    "may_run_in_parallel_with_human_reference_round": true,
+    "unseal_condition": "LOCAL_METHOD_AND_PI2_EVALUATION_PROTOCOL_FROZEN",
+    "visible_during_collection": [
+      "operational_status",
+      "completed_count",
+      "failed_count",
+      "aggregate_api_usage"
+    ]
+  },
+  "primary_comparability_scope": "SHARED_TASK_INTERFACE_ENVIRONMENT_PROTOCOL",
+  "registered_model_arms": [
+    {
+      "arm_id": "STRONG_MODEL_REFERENCE_REASONING_HIGH_V1",
+      "automatic_retry_count": 0,
+      "endpoint": "/v1/responses",
+      "max_output_tokens": 32768,
+      "previous_response_id": null,
+      "provider": "OpenAI",
+      "provider_seed_mode": "UNAVAILABLE_RECORDED_NOT_IMPUTED",
+      "reasoning_context": "current_turn",
+      "reasoning_effort": "high",
+      "requested_model": "gpt-5.6-sol",
+      "role": "PRIMARY_STRONG_CEILING_REFERENCE",
+      "store": false,
+      "structured_output": false,
+      "tools": []
+    },
+    {
+      "arm_id": "STRONG_MODEL_REFERENCE_DIRECT_V1",
+      "automatic_retry_count": 0,
+      "endpoint": "/v1/responses",
+      "max_output_tokens": 128,
+      "previous_response_id": null,
+      "provider": "OpenAI",
+      "provider_seed_mode": "UNAVAILABLE_RECORDED_NOT_IMPUTED",
+      "reasoning_context": "current_turn",
+      "reasoning_effort": "none",
+      "requested_model": "gpt-5.6-sol",
+      "role": "OPTIONAL_EFFICIENCY_REFERENCE",
+      "store": false,
+      "structured_output": false,
+      "tools": []
+    }
+  ],
+  "schema_id": "STRONG_MODEL_REFERENCE_SHARED_PROTOCOL_V1",
+  "shared_protocol_requirements": {
+    "same_action_budget": 30,
+    "same_environment_revision": true,
+    "same_full_admissible_menu_original_order": true,
+    "same_harness_condition": "OFF",
+    "same_last_executed_transitions": true,
+    "same_memory_condition": "OFF",
+    "same_observation": true,
+    "same_policy_attempt_budget": 60,
+    "same_public_goal": true,
+    "same_strict_parser": true,
+    "same_success_definition": true,
+    "same_task_panel": true,
+    "sequential_interactive_episode": true
+  },
+  "status": "CODE_REVIEW_CANDIDATE_NOT_EXECUTION_AUTHORIZED",
+  "transport_reuse": {
+    "new_http_client_allowed": false,
+    "required_primitive": "P2_TRANSPORT_PRIMITIVE_ADAPTER_V1",
+    "reuse_existing_p2_transport": true
+  }
+}

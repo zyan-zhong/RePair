@@ -1,0 +1,106 @@
+{
+  "schema_id": "V17_TAIL_OFFOFF_LOCAL_TEST_RESULT_V2",
+  "recorded_utc": "2026-09-24T06:47:34.507014+00:00",
+  "command": "python -B -m pytest -q -p no:cacheprovider work/v17/offoff_binding/tests work/v17/entry/tests work/v17/continuity_binding/tests work/v17/policy_binding/tests",
+  "observed_exit_code": 0,
+  "observed_stdout_summary": "70 passed in 37.16s",
+  "fixture_only": true,
+  "provider_calls": 0,
+  "gpu_jobs_submitted": 0,
+  "live_offoff_or_campaign_executed": false,
+  "formal_promotion_criterion_located": false,
+  "tested_native_pipeline": "accepted Analyzer fixtures -> actual native current source reconstruction/Memory candidate/event -> native snapshot close/publication -> positive-Benefit NO_TRAIN -> native governor/next request; original Stage0 I1 evaluator/publisher -> native Stage4D shard partition -> original Stage4E per-cell audit -> complete native aggregate -> explicit fixture-only registered rule -> native rollback",
+  "source_refs": [
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\continuity_binding\\next_request.py",
+      "sha256": "ffb2b31821bcb5d09f38e13bdfa4869d2bed35fc51090ee0ea7cbb607710182f"
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\entry\\tail.py",
+      "sha256": "262a4a6c8ddc3ea1e587d27e527f58529db4c05584a1592662be961c11d8d0b0"
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\entry\\TAIL_README.md",
+      "sha256": "7c5974ffbc011e3ca10111fed7ebc5ba0d01a8428527cfba170e4a1877f76d68"
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\entry\\tests\\test_tail.py",
+      "sha256": "42410bf12e1a32c0d83ffb66a9b4c273754c78685ddc5cd82918dfb000f6fb12"
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\entry\\tests\\native_tail_case.py",
+      "sha256": "9c0b0e611e08864ddd5fabe95f37c798e9d75dc39f2edabecf1e82dd4ee0c599"
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\offoff_binding\\__init__.py",
+      "sha256": "807a306eeb9d33ee6245aca74709d6377d8c2de240d9f64cf07754bcdabc6616"
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\offoff_binding\\__main__.py",
+      "sha256": "1c91c46b0c05798ac70d9d311d2f7c560d93fb0dcb9cffb5ee9b41d5f73ad0c8"
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\offoff_binding\\native.py",
+      "sha256": "6c5804ecf95658c7a205cd8687d48da6e7b3657e6af120f71430bc6629599be2"
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\offoff_binding\\materialize.py",
+      "sha256": "ef5132d72178bc5072a1ff1025dbf35511ef9bfacb1602528a2b81e864f0816d"
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\offoff_binding\\execute.py",
+      "sha256": "437c66dbc48708f5607ec419a06a4821c72abf996518ee73be0c660eec6ee19f"
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\offoff_binding\\parallel.py",
+      "sha256": "1de230837579e8fa14d49ce0825898adce1a13866935c59ec8c5a67d087e88ed"
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\offoff_binding\\README.md",
+      "sha256": "1337d70b6da50f22eba7d2c99d7b677a43b5071b91d17e873b1305fa0ab29afe"
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\offoff_binding\\tests\\conftest.py",
+      "sha256": "15e146eacea9858d3aed5f7d006f1aa34205cff53652d217fdd26704191c73c0"
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\offoff_binding\\tests\\test_binding.py",
+      "sha256": "4a18341b078d96ac973e0439f728421ba4872ef465acb45b041040a50f7af429"
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\offoff_binding\\tests\\test_native_invocation.py",
+      "sha256": "4f5e46c5377870a951a8d175c28fffdf88c0f556d9407221ad8b009aae642f02"
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\offoff_binding\\tests\\test_parallel.py",
+      "sha256": "4c9384cd56d1fc5beb6b2aa1d5ef0cb4668d20e8a67aa081812862c154a0c28b"
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\offoff_binding\\registered_inputs.py",
+      "sha256": "46ca3eb5f43f2bbb6aac1590b9f4aa6f60f751758ada8a8c92deff4688b6bbc5"
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\offoff_binding\\tests\\test_registered_inputs.py",
+      "sha256": "f58bd6c24755abacf0d63039bddfd2a93f3e29dc528e074e3df702947ed770aa"
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\offoff_binding\\tests\\test_job_owner.py",
+      "sha256": "72aadc9635b7275ed6e8e3e7a2ce1a540574d172d6f776fad3b895cdeb9c0160"
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\entry\\offoff_job.py",
+      "sha256": "1f712e7b0650faa61c4ecade339cb02bf954e572161a4afc7af9d5686e4986e4"
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\entry\\driver.py",
+      "sha256": "1273b750e6f3037068d8c598691622fc94d843ef49f63bd6e871dd1fcff311dd"
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\entry\\training_job.py",
+      "sha256": "ff88bff5fefaebaad8294411deb27108aaee7221e61cbc04d4c56a4a4149f0bf"
+    }
+  ],
+  "scheduler_boundary": "Actual native submit_once intent/receipt code; subprocess scheduler calls and worker result fixtures substituted explicitly. Checks four submissions, one permitted graceful resumption, exact COMPLETED/0:0, failed jobs, watch timeout, persisted STOP reuse, and bootstrap STOP publication. No live Slurm calls.",
+  "registered_assets_boundary": "Actual captured frozen 355-task five-seed protocol and exact server asset refs; metadata fixture policies and explicitly fixture-only frozen rule. No model execution.",
+  "recovery_boundary": "Native full attempt/publication audit replay, immutable aggregate/terminal equality, accepted training-output/current adapter verification; no new episodes or training."
+}

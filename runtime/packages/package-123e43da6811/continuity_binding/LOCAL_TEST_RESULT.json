@@ -1,0 +1,55 @@
+{
+  "schema_id": "V17_CONTINUITY_LOCAL_TEST_RESULT_V1",
+  "started_utc": "2026-09-24T05:32:34.420917+00:00",
+  "command": "python -B -m pytest -q -p no:cacheprovider work/v17/continuity_binding/tests",
+  "exit_code": 0,
+  "elapsed_seconds": 2.077,
+  "stdout": "........................                                                 [100%]\n24 passed in 1.23s\n",
+  "stderr": "",
+  "fixture_only": true,
+  "scientific_execution_started": false,
+  "formal_rounds_contributed": 0,
+  "live_memory_event_producer_proven": false,
+  "source_refs": [
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\continuity_binding\\__init__.py",
+      "sha256": "82e852f651aefc61b52a73dc3a79e209889ddf53943a842440d13f80616abb22"
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\continuity_binding\\api.py",
+      "sha256": "04b115ca513c5549c673aa70076f54ceb88a82722fc74d25a07abcca9950472f"
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\continuity_binding\\no_training_update.py",
+      "sha256": "0f1a9a7951026ecebab629b8916ac4b844f204572f58aa953c755b72299b2c76"
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\continuity_binding\\next_request.py",
+      "sha256": "7e119cfd92d215e8cde42e76ffa0d791475c790c2b05f34e542b9ab12b4ace94"
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\continuity_binding\\memory_materializer.py",
+      "sha256": "3ea67e061cabfc207c22fdbee15121fcf816ace500e9617a04456276551884d8"
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\continuity_binding\\tests\\conftest.py",
+      "sha256": "fc78c0a908eaac58e58d6e9ea866fe9ee33469bffcd00755a40f66ac1a46ef5d"
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\continuity_binding\\tests\\test_api.py",
+      "sha256": "5456aa890a37e8f4a39f2272c5b486cc66726b970b8d0fc97976fdf38f75578c"
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\continuity_binding\\tests\\test_no_training.py",
+      "sha256": "18a49b5b21bc6daf9d94613704ecd8785999b52a57c4bca5d0c9483bba6be1bb"
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\continuity_binding\\tests\\test_next_request.py",
+      "sha256": "9d8904725504a3ba724222b45254fbff0f42faf721ee7fa4273616ab141a029d"
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\continuity_binding\\tests\\test_native_snapshot.py",
+      "sha256": "72e2f46a333d7f03c54d7eca1a5c0046f503ed9cbd5e80766ec3ccadf6a76a71"
+    }
+  ]
+}

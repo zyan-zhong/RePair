@@ -1,0 +1,13 @@
+test_allowed_distinct_push_transport_is_preserved (test_origin_recovery.OriginRecoveryTests.test_allowed_distinct_push_transport_is_preserved) ... ok
+test_does_not_adopt_dirty_partial_clone (test_origin_recovery.OriginRecoveryTests.test_does_not_adopt_dirty_partial_clone) ... ok
+test_existing_stamped_clone_rechecks_pushurl (test_origin_recovery.OriginRecoveryTests.test_existing_stamped_clone_rechecks_pushurl) ... ok
+test_recovers_exact_old_v1_partial_clone_without_reset (test_origin_recovery.OriginRecoveryTests.test_recovers_exact_old_v1_partial_clone_without_reset) ... STAGE4E_EXACT_PARTIAL_CLONE_RECOVERED_NO_RESET
+ok
+test_rejected_origin_leaves_no_partial_clone (test_origin_recovery.OriginRecoveryTests.test_rejected_origin_leaves_no_partial_clone) ... ok
+test_ssh443_exact_repository_forms_are_registered (test_origin_recovery.OriginRecoveryTests.test_ssh443_exact_repository_forms_are_registered) ... ok
+test_unapproved_pushurl_is_rejected_before_clone (test_origin_recovery.OriginRecoveryTests.test_unapproved_pushurl_is_rejected_before_clone) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.696s
+
+OK

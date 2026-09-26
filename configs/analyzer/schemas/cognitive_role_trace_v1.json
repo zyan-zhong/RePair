@@ -1,0 +1,238 @@
+{
+  "$id": "COGNITIVE_ROLE_TRACE_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "access_class": {
+      "maxLength": 256,
+      "minLength": 1,
+      "type": "string"
+    },
+    "adjudicated_output_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "analysis_objective": {
+      "maxLength": 256,
+      "minLength": 1,
+      "type": "string"
+    },
+    "confirmatory_permitted": {
+      "type": "boolean"
+    },
+    "cost_usd": {
+      "minimum": 0,
+      "type": "number"
+    },
+    "crosscheck_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "dataset_split": {
+      "maxLength": 128,
+      "minLength": 1,
+      "type": "string"
+    },
+    "environment_outcome_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "evidence_pack_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "gamefile_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "human_disposition": {
+      "enum": [
+        "ACCEPT",
+        "REVISE",
+        "REJECT",
+        "DEFER"
+      ],
+      "type": "string"
+    },
+    "input_tokens": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "latency_ms": {
+      "minimum": 0,
+      "type": "number"
+    },
+    "memory_pack_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "model": {
+      "maxLength": 256,
+      "minLength": 1,
+      "type": "string"
+    },
+    "model_version": {
+      "maxLength": 256,
+      "minLength": 1,
+      "type": "string"
+    },
+    "output_schema_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "type": "string"
+    },
+    "output_schema_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "output_tokens": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "parse_status": {
+      "enum": [
+        "ACCEPTED",
+        "REJECTED",
+        "REFUSED",
+        "INFRASTRUCTURE_ERROR"
+      ],
+      "type": "string"
+    },
+    "policy_version": {
+      "maxLength": 256,
+      "minLength": 1,
+      "type": "string"
+    },
+    "prompt_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "prompt_template_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "type": "string"
+    },
+    "provider": {
+      "maxLength": 256,
+      "minLength": 1,
+      "type": "string"
+    },
+    "raw_request_pointer": {
+      "maxLength": 4096,
+      "minLength": 1,
+      "type": "string"
+    },
+    "raw_request_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "raw_response_pointer": {
+      "maxLength": 4096,
+      "minLength": 1,
+      "type": "string"
+    },
+    "raw_response_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "reasoning_config_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "request_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "type": "string"
+    },
+    "role": {
+      "enum": [
+        "ANALYZER",
+        "TRAINING_RESEARCHER"
+      ],
+      "type": "string"
+    },
+    "round_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "type": "string"
+    },
+    "schema_id": {
+      "const": "COGNITIVE_ROLE_TRACE_V1",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    },
+    "select_evaluation_permitted": {
+      "type": "boolean"
+    },
+    "task_access_manifest_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "task_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "type": "string"
+    },
+    "trace_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "training_permitted": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "role",
+    "analysis_objective",
+    "round_id",
+    "policy_version",
+    "task_id",
+    "gamefile_sha256",
+    "access_class",
+    "evidence_pack_sha256",
+    "memory_pack_sha256",
+    "provider",
+    "model",
+    "model_version",
+    "prompt_sha256",
+    "raw_response_sha256",
+    "adjudicated_output_sha256",
+    "environment_outcome_sha256",
+    "trace_sha256",
+    "task_access_manifest_sha256",
+    "dataset_split",
+    "training_permitted",
+    "select_evaluation_permitted",
+    "confirmatory_permitted",
+    "request_id",
+    "raw_request_sha256",
+    "raw_request_pointer",
+    "raw_response_pointer",
+    "prompt_template_id",
+    "output_schema_id",
+    "output_schema_sha256",
+    "reasoning_config_sha256",
+    "parse_status",
+    "input_tokens",
+    "output_tokens",
+    "latency_ms",
+    "cost_usd",
+    "human_disposition",
+    "crosscheck_sha256"
+  ],
+  "type": "object"
+}

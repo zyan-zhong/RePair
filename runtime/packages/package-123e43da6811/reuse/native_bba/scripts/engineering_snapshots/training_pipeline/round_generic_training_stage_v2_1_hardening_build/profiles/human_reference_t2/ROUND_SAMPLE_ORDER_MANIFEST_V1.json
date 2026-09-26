@@ -1,0 +1,133 @@
+{
+  "data_seed": 17,
+  "dataloader_num_workers": 0,
+  "dataset_passes": 1,
+  "one_pass_target_loss_token_count": 151,
+  "optimizer_groups": [
+    {
+      "global_step": 1,
+      "ordinals": [
+        8,
+        6,
+        9,
+        7
+      ],
+      "pass_index": 0,
+      "row_sha256s": [
+        "0a83e137bf68bf7e540942d10acb401479e70fab077ad3da5ccc1f1b8460c33d",
+        "a257d43f728db638e332760b01ff285a557dc96b29c4888eadc7826a8eee7a2e",
+        "db941ca982585b8b992b08e437348770c8f1d3c88eee3dd01ba92678da95a12e",
+        "4874b4646a5496395bedd0a69fd3c068ae046e94c7895d70586a2abeb519a72e"
+      ],
+      "source_state_sha256s": [
+        "d82103ce1c80b206dc10fac2a9ea46ba05387397d132d6ab6fd7338f15e1816b",
+        "7d06137bb646753124b6bdd754124014897349ef9455270572a63acc71688b3d",
+        "db25f71c31f0339481c45e8d24b041202896cd4cdc7cbb0cc72a2f1e70c41a55",
+        "bce397c0cc11ed96bb73c0b0e8836921761dfbf4639c04ca6932b137ea4f9910"
+      ],
+      "step_in_pass": 1,
+      "target_loss_tokens": 43
+    },
+    {
+      "global_step": 2,
+      "ordinals": [
+        5,
+        1,
+        0,
+        10
+      ],
+      "pass_index": 0,
+      "row_sha256s": [
+        "741346205f7a2a259f96896426dc0488246c5404b30c723af719e3f4b35ea333",
+        "5e6e61f9a3d154bcdf3009e1d33280be9d708d49ddd82a3d2629fbb07edc9ce2",
+        "c2e4b5b50075d74fcf61c9d2677833f1902f48bc9f8c7576f7d63ca5b6d3d0b1",
+        "7b5a8a8f421735a8413b6a4003e03babf757c0b8e0f9827e78b8a98664fab851"
+      ],
+      "source_state_sha256s": [
+        "759994f5ce0269e5c2200732b2fa850db1e8de03693ec216096c26f0d4779599",
+        "5ddfad7ddc3cef59941bcda78479c87a344792a3338bc1b85f7bac1320e48da0",
+        "4db87eb2d8a9129fd67cf83123da641959296f6ad9764488f4160af5db4b1634",
+        "dc46a99d3b82126d862bdfb39d02826654551ecaa317aab2cc6b15a3aab92aa0"
+      ],
+      "step_in_pass": 2,
+      "target_loss_tokens": 53
+    },
+    {
+      "global_step": 3,
+      "ordinals": [
+        2,
+        4,
+        3,
+        11
+      ],
+      "pass_index": 0,
+      "row_sha256s": [
+        "bfe79f977b0842fda2a8360c32ad84c45e6b80a01eb71f26481d60e6574593c7",
+        "ef30c5876124d9006720ac7d3b6108b0723bc7007107b1c064897db27c521418",
+        "53206789b52d06aa4f54238b838f3ec7ee921d0057ce03475224ba8725902461",
+        "e796fe0ae5f84cfcdc24ec4fc1d0500b67e8f2b963fb4fab1b48b4d9885512c6"
+      ],
+      "source_state_sha256s": [
+        "6bce8a4131b1f0835f0165bd47ad7a0fdc2a6455be0497daa3a41dead0cd4aa1",
+        "72ab8cae78d3f84c2dc6e32573cda8243e6fffbea4047fa906487179c477c251",
+        "702ec04885e1d3564c6fc2d3711a9daa669e594e9b75107dda4af1b2ef41f220",
+        "fe58c34381e9f1a4319612d67148b028bb3924fa70adb804ef3e6764e39b7156"
+      ],
+      "step_in_pass": 3,
+      "target_loss_tokens": 55
+    }
+  ],
+  "ordered_row_sha256s": [
+    "0a83e137bf68bf7e540942d10acb401479e70fab077ad3da5ccc1f1b8460c33d",
+    "a257d43f728db638e332760b01ff285a557dc96b29c4888eadc7826a8eee7a2e",
+    "db941ca982585b8b992b08e437348770c8f1d3c88eee3dd01ba92678da95a12e",
+    "4874b4646a5496395bedd0a69fd3c068ae046e94c7895d70586a2abeb519a72e",
+    "741346205f7a2a259f96896426dc0488246c5404b30c723af719e3f4b35ea333",
+    "5e6e61f9a3d154bcdf3009e1d33280be9d708d49ddd82a3d2629fbb07edc9ce2",
+    "c2e4b5b50075d74fcf61c9d2677833f1902f48bc9f8c7576f7d63ca5b6d3d0b1",
+    "7b5a8a8f421735a8413b6a4003e03babf757c0b8e0f9827e78b8a98664fab851",
+    "bfe79f977b0842fda2a8360c32ad84c45e6b80a01eb71f26481d60e6574593c7",
+    "ef30c5876124d9006720ac7d3b6108b0723bc7007107b1c064897db27c521418",
+    "53206789b52d06aa4f54238b838f3ec7ee921d0057ce03475224ba8725902461",
+    "e796fe0ae5f84cfcdc24ec4fc1d0500b67e8f2b963fb4fab1b48b4d9885512c6"
+  ],
+  "ordered_source_state_sha256s": [
+    "d82103ce1c80b206dc10fac2a9ea46ba05387397d132d6ab6fd7338f15e1816b",
+    "7d06137bb646753124b6bdd754124014897349ef9455270572a63acc71688b3d",
+    "db25f71c31f0339481c45e8d24b041202896cd4cdc7cbb0cc72a2f1e70c41a55",
+    "bce397c0cc11ed96bb73c0b0e8836921761dfbf4639c04ca6932b137ea4f9910",
+    "759994f5ce0269e5c2200732b2fa850db1e8de03693ec216096c26f0d4779599",
+    "5ddfad7ddc3cef59941bcda78479c87a344792a3338bc1b85f7bac1320e48da0",
+    "4db87eb2d8a9129fd67cf83123da641959296f6ad9764488f4160af5db4b1634",
+    "dc46a99d3b82126d862bdfb39d02826654551ecaa317aab2cc6b15a3aab92aa0",
+    "6bce8a4131b1f0835f0165bd47ad7a0fdc2a6455be0497daa3a41dead0cd4aa1",
+    "72ab8cae78d3f84c2dc6e32573cda8243e6fffbea4047fa906487179c477c251",
+    "702ec04885e1d3564c6fc2d3711a9daa669e594e9b75107dda4af1b2ef41f220",
+    "fe58c34381e9f1a4319612d67148b028bb3924fa70adb804ef3e6764e39b7156"
+  ],
+  "ordering_algorithm": "SHA256_DOMAIN_SEED_PASS_INDEX_EXAMPLE_INDEX_V1",
+  "ordering_domain": "HUMAN_T2_TRAIN17_CONTINUATION_ORDER_V1",
+  "pass_orders": [
+    [
+      8,
+      6,
+      9,
+      7,
+      5,
+      1,
+      0,
+      10,
+      2,
+      4,
+      3,
+      11
+    ]
+  ],
+  "profile_id": "HUMAN_T2_UNVERIFIED_REPAIR_DIAGNOSTIC_PROFILE_V1",
+  "round_id": "HUMAN_REFERENCE_ROUND_PI1_PI2_V1",
+  "row_count": 12,
+  "schema_id": "ROUND_SAMPLE_ORDER_MANIFEST_V1",
+  "schema_version": 1,
+  "shuffle_during_training": false,
+  "training_seed": 17
+}

@@ -1,0 +1,53 @@
+{
+  "$id": "P1_B_SPLIT_CONTRACT_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "family_rule": {
+      "const": "E_f=N_f-F_f; require E_f>0; SELECT_TARGET=max(1,floor(E_f/3))",
+      "type": "string"
+    },
+    "forced_dev_flags": {
+      "items": {
+        "enum": [
+          "TRAJECTORY_INSPECTED",
+          "USED_FOR_METHOD_DESIGN"
+        ],
+        "type": "string"
+      },
+      "maxItems": 2,
+      "minItems": 2,
+      "type": "array"
+    },
+    "salt": {
+      "const": "P1_B_ACCESS_SPLIT_V1|effb7c0b25002321a7c123376c53890731ee19a9",
+      "type": "string"
+    },
+    "schema_id": {
+      "const": "P1_B_SPLIT_CONTRACT_V1",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    },
+    "sort_rule": {
+      "const": "split_key_sha256_then_manifest_index",
+      "type": "string"
+    },
+    "split_contract_id": {
+      "const": "P1_B_SPLIT_CONTRACT_V1",
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "split_contract_id",
+    "salt",
+    "family_rule",
+    "sort_rule",
+    "forced_dev_flags"
+  ],
+  "type": "object"
+}

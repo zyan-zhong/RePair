@@ -1,0 +1,116 @@
+{
+  "assets": [
+    {
+      "contains_compact_literal": false,
+      "contains_evidence_pack": true,
+      "contains_hydrat": false,
+      "contains_memory_pack": true,
+      "file_sha256": "1dcd5ac80e7a9456b9967491508d66b1a7478a02f4d061251114685ca85cd6ae",
+      "function_count": 17,
+      "path": "src/pchsi/cognitive_runtime/projections.py",
+      "relevant_functions": [
+        "_typed_evidence_artifact_sha256s",
+        "canonical_group_current_evidence_sha256s",
+        "component_projection",
+        "crosscheck_projection",
+        "crosscheck_projection_v2",
+        "evidence_reference_catalog",
+        "group_projection",
+        "group_projection_v2",
+        "group_projection_v3",
+        "local_projection"
+      ]
+    },
+    {
+      "contains_compact_literal": false,
+      "contains_evidence_pack": false,
+      "contains_hydrat": true,
+      "contains_memory_pack": false,
+      "file_sha256": "143189ca04c135953266c64664c0f11b89df762eefd6f17255870b7feaecd859",
+      "function_count": 7,
+      "path": "src/pchsi/cognitive_runtime/researcher_primary.py",
+      "relevant_functions": [
+        "finalize_strong_researcher_pre_primary_v1"
+      ]
+    },
+    {
+      "contains_compact_literal": false,
+      "contains_evidence_pack": true,
+      "contains_hydrat": false,
+      "contains_memory_pack": true,
+      "file_sha256": "9ea4c2207554c246261e5e58ea62742d542ea113c210ac6124fe14c1e05c084b",
+      "function_count": 12,
+      "path": "src/pchsi/research_intelligence/round_research_inputs.py",
+      "relevant_functions": [
+        "build_human_evidence_binding_candidate_v1",
+        "build_researcher_round_input_package_v1",
+        "build_shared_researcher_pre_projection_v1",
+        "researcher_memory_view_from_dict",
+        "researcher_round_input_package_from_dict",
+        "round_evidence_semantic_sha256"
+      ]
+    },
+    {
+      "contains_compact_literal": false,
+      "contains_evidence_pack": false,
+      "contains_hydrat": false,
+      "contains_memory_pack": false,
+      "file_sha256": "78bc0275984fa369d22934d829bc74c47b9bfca2bfb765e23680f8652000777a",
+      "function_count": 33,
+      "path": "src/pchsi/memory/consumer_views.py",
+      "relevant_functions": [
+        "_collect_evidence_reference_digests",
+        "_eligible_analyzer_member",
+        "audit_analyzer_view_payload_v1",
+        "audit_researcher_view_payload_v1",
+        "build_analyzer_memory_view_v1",
+        "build_policy_memory_view_v1",
+        "build_researcher_memory_view_v1"
+      ]
+    },
+    {
+      "contains_compact_literal": false,
+      "contains_evidence_pack": false,
+      "contains_hydrat": false,
+      "contains_memory_pack": false,
+      "file_sha256": "225a1548e6b03cbcdac11a6152863f9c6683b545b8886d176107c8792ac07758",
+      "function_count": 11,
+      "path": "src/pchsi/round_control/clean_analyzer_input_materialization.py",
+      "relevant_functions": [
+        "build_actor_input_binding",
+        "build_clean_analyzer_task_access_record",
+        "build_round_analyzer_resource_budget",
+        "validate_round_analyzer_resource_budget"
+      ]
+    },
+    {
+      "contains_compact_literal": false,
+      "contains_evidence_pack": true,
+      "contains_hydrat": false,
+      "contains_memory_pack": false,
+      "file_sha256": "3bc7067bcd77e33546fba63df86d39bb7c28aab5d71864a62a02708bd4ed3547",
+      "function_count": 2,
+      "path": "src/pchsi/research_intelligence/distillation.py",
+      "relevant_functions": []
+    },
+    {
+      "contains_compact_literal": false,
+      "contains_evidence_pack": false,
+      "contains_hydrat": false,
+      "contains_memory_pack": true,
+      "file_sha256": "27eb63847ab827b98290ce102d02850650cefc0dc2b3ae74681a5d51645125b9",
+      "function_count": 9,
+      "path": "src/pchsi/cognitive_runtime/request_renderer.py",
+      "relevant_functions": [
+        "_assert_projection"
+      ]
+    }
+  ],
+  "audit_sha256": "6bccb015f28fcb1ab4f2c5f8c363c29f9c8114d13984f433f78738da5eb44c29",
+  "bounded_repo_head": "b806f79f33e8a05d1075f881f154b2607ac4408c",
+  "filesystem_wide_discovery_used": false,
+  "new_compaction_module_created": false,
+  "round_id": "CLEAN-HUMAN-REFERENCE-R1-PI0",
+  "schema_id": "LOCAL_RI_EXISTING_COMPACTION_ASSET_AUDIT_V1",
+  "schema_version": 1
+}

@@ -1,0 +1,31 @@
+\begin{algorithm}[H]
+\caption{RePair research and policy-update procedure}
+\label{alg:repair}
+\begin{algorithmic}[1]
+\Require Initial policy $\pi_0$, history $S_0$, train-side pools, budgets and acceptance rule
+\State $k\gets0$; initialize attempt and cost records
+\While{the stopping rule permits another attempt}
+  \State Fix $\pi_k$, $S_k$, the interface, and the attempt budget
+  \State Collect fresh rollouts and construct evidence $E_k$
+  \State $\mathcal C_k\gets$ failure analysis using the permitted history views
+  \State $\mathcal P_k\gets$ PRE: rank and register a repair portfolio
+  \State Execute paired tests; obtain independent effect labels
+  \If{the attempt is protocol-invalid}
+    \State Record the incident and cost; apply the registered recovery or stop
+    \State \textbf{continue}
+  \EndIf
+  \State $d_k\gets$ POST: interpret outcomes and recommend TRAIN or NO-TRAIN
+  \State Construct $\mathcal D_k^+$ under Eq.~\eqref{eq:eligibility}
+  \If{$d_k=\mathrm{TRAIN}$ and $\mathcal D_k^+\ne\varnothing$}
+    \State Check native labels; stop/recover on a failed label check
+    \State Train $\widetilde\pi_{k+1}$ on the registered dual views
+    \State Retain $\pi_{k+1}$ by Eq.~\eqref{eq:promotion}
+  \Else
+    \State Record NO-TRAIN; $\pi_{k+1}\gets\pi_k$
+  \EndIf
+  \State Close the round and release eligible history into $S_{k+1}$
+  \State Update attempt, patience, and cost records; $k\gets k+1$
+\EndWhile
+\State \Return retained policy and experiment records
+\end{algorithmic}
+\end{algorithm}

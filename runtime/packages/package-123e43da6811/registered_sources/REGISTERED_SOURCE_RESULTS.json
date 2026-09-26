@@ -1,0 +1,276 @@
+{
+  "anchor_results": [
+    {
+      "archive_path": "anchors/PACKAGE_FILES.sha256",
+      "authority": "Verified V14 source export",
+      "bytes": 4442,
+      "sha256": "dc924acb04930a97263049249b94480dc1af066c368fffc6b2ab043b6aff4638",
+      "source_path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/PCHSI_FORMAL_MAX10_TYPED_AUTHORITY_INDEX_REUSE_AND_LAUNCH_V1_4/20260924T022947Z_3771396/PCHSI_FORMAL_MAX10_TYPED_AUTHORITY_INDEX_REUSE_AND_LAUNCH_V1_4/PACKAGE_FILES.sha256",
+      "status": "EXACT_BYTES_VERIFIED"
+    },
+    {
+      "archive_path": "anchors/evidence/FORMAL_MAX10_EXECUTION_ENTRY_SOURCE_CAPTURE_V1.json",
+      "authority": "Verified V14 source export",
+      "bytes": 20439,
+      "sha256": "88807bfa59464bd61bbeca053aa2775ad999900c74a17e38855f2b8316ca57d6",
+      "source_path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/PCHSI_FORMAL_MAX10_TYPED_AUTHORITY_INDEX_REUSE_AND_LAUNCH_V1_4/20260924T022947Z_3771396/PCHSI_FORMAL_MAX10_TYPED_AUTHORITY_INDEX_REUSE_AND_LAUNCH_V1_4/evidence/FORMAL_MAX10_EXECUTION_ENTRY_SOURCE_CAPTURE_V1.json",
+      "status": "EXACT_BYTES_VERIFIED"
+    },
+    {
+      "archive_path": "anchors/evidence/GATE2_SOURCE_CAPTURE_MANIFEST_V2.json",
+      "authority": "Verified V14 source export",
+      "bytes": 16703,
+      "sha256": "27df3d302ca315bab8bbf3ac2b6adea41dc6ed905b0e943915943bf81607f76d",
+      "source_path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/PCHSI_FORMAL_MAX10_TYPED_AUTHORITY_INDEX_REUSE_AND_LAUNCH_V1_4/20260924T022947Z_3771396/PCHSI_FORMAL_MAX10_TYPED_AUTHORITY_INDEX_REUSE_AND_LAUNCH_V1_4/evidence/GATE2_SOURCE_CAPTURE_MANIFEST_V2.json",
+      "status": "EXACT_BYTES_VERIFIED"
+    },
+    {
+      "archive_path": "anchors/entry/source_integrity_registry.py",
+      "authority": "Verified V14 source export",
+      "bytes": 1040,
+      "sha256": "115be380d656e648fab5f50b2467e186c044dfa37a6251ec4ece848f3d04d4b9",
+      "source_path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/PCHSI_FORMAL_MAX10_TYPED_AUTHORITY_INDEX_REUSE_AND_LAUNCH_V1_4/20260924T022947Z_3771396/PCHSI_FORMAL_MAX10_TYPED_AUTHORITY_INDEX_REUSE_AND_LAUNCH_V1_4/entry/source_integrity_registry.py",
+      "status": "EXACT_BYTES_VERIFIED"
+    },
+    {
+      "archive_path": "anchors/LIVE_TYPED_CHAIN.json",
+      "authority": "Supplied export SHA 8dae587... exact live chain",
+      "bytes": 10953,
+      "sha256": "dab12ee2d23940c2604037dde86346befe26518173eb0f5ba36285165679e6f9",
+      "source_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/_production_typed_authority_index_preflight_v1_4/FORMAL_MAX10_TYPED_AUTHORITY_INDEX_CHAIN_V1_4.json",
+      "status": "EXACT_BYTES_VERIFIED"
+    }
+  ],
+  "execution_authority_conferred": false,
+  "filesystem_scan_used": false,
+  "git_operation_count": 0,
+  "historical_commands_executed": false,
+  "missing_or_invalid_count": 0,
+  "no_launch": true,
+  "plan_sha256": "1b96fb79bd3ba1316f659b608cdc4f021b8d12ea8c35540b3fe2e93fc7cb4aeb",
+  "production_materialization_completed": false,
+  "recursive_reference_following": false,
+  "result_scope": "Implementation evidence only; original two operational bindings remain pending",
+  "results": [
+    {
+      "archive_path": "typed_authorities/PRODUCER_AUTHORITY.json",
+      "authority": "LIVE_TYPED_CHAIN.json#/typed_authorities/PRODUCER_AUTHORITY",
+      "bytes": 7006,
+      "purpose": "Direct indexed typed authority bytes; no arbitrary child references",
+      "schema_id": "ROUND_ROLLOUT_PRODUCER_AUTHORITY_V1",
+      "sha256": "9f71330cec5430e1a9e9ac724ef587dd836056ae3116f7d6ac2f9ad4094b4d94",
+      "source_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/paper_critical_native_round/6ad3d219a1aa2417fab469733c6c4ee2fc628a9dde2eea6e1f315faf3eb25f45/mechanical_recovery_attempts/8fc5380364671b4088c5b9134d76ff3d/paired_operational_recovery_attempts/cfb24840294af00eec2c1705b6b0cce3/round_close_next_round_resident/220ee39973b31434b7ad7b8b79e9efaebe2e59457e28891152716f297162eb48/ROUND_ROLLOUT_PRODUCER_AUTHORITY_V1.json",
+      "status": "EXACT_BYTES_VERIFIED"
+    },
+    {
+      "archive_path": "typed_authorities/PRODUCER_MATERIALIZATION.json",
+      "authority": "LIVE_TYPED_CHAIN.json#/typed_authorities/PRODUCER_MATERIALIZATION",
+      "bytes": 1280,
+      "purpose": "Direct indexed typed authority bytes; no arbitrary child references",
+      "schema_id": "R2_PRODUCER_MATERIALIZATION_V1",
+      "sha256": "39680479c8ab2290e77b26ac4c7737ba5e8555dafa2375d8a02455d7ed5f309f",
+      "source_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/paper_critical_native_round/6ad3d219a1aa2417fab469733c6c4ee2fc628a9dde2eea6e1f315faf3eb25f45/mechanical_recovery_attempts/8fc5380364671b4088c5b9134d76ff3d/paired_operational_recovery_attempts/cfb24840294af00eec2c1705b6b0cce3/round_close_next_round_resident/220ee39973b31434b7ad7b8b79e9efaebe2e59457e28891152716f297162eb48/R2_PRODUCER_MATERIALIZATION_V1.json",
+      "status": "EXACT_BYTES_VERIFIED"
+    },
+    {
+      "archive_path": "typed_authorities/PRODUCER_SBATCH_AUTHORITY.json",
+      "authority": "LIVE_TYPED_CHAIN.json#/typed_authorities/PRODUCER_SBATCH_AUTHORITY",
+      "bytes": 1792,
+      "purpose": "Direct indexed typed authority bytes; no arbitrary child references",
+      "schema_id": "R2_PRODUCER_NEW_SBATCH_ARGV_V1",
+      "sha256": "4235d5990f50498a4f1b0d8ca6c3f1c3a1ea967121a7f8ff9175edc65e6f0b09",
+      "source_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/paper_critical_native_round/6ad3d219a1aa2417fab469733c6c4ee2fc628a9dde2eea6e1f315faf3eb25f45/mechanical_recovery_attempts/8fc5380364671b4088c5b9134d76ff3d/paired_operational_recovery_attempts/cfb24840294af00eec2c1705b6b0cce3/round_close_next_round_resident/220ee39973b31434b7ad7b8b79e9efaebe2e59457e28891152716f297162eb48/R2_PRODUCER_NEW_SBATCH_ARGV_V1.json",
+      "status": "EXACT_BYTES_VERIFIED"
+    },
+    {
+      "archive_path": "typed_authorities/RECOVERY_OWNER.json",
+      "authority": "LIVE_TYPED_CHAIN.json#/typed_authorities/RECOVERY_OWNER",
+      "bytes": 3295,
+      "purpose": "Direct indexed typed authority bytes; no arbitrary child references",
+      "schema_id": "R2_NATIVE_RECOVERY_OWNER_V1",
+      "sha256": "bae48abbc6744b8a5344b0b21e6d97b60754537b44f7fa793ea46e3ce527d682",
+      "source_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/paper_critical_native_round/6ad3d219a1aa2417fab469733c6c4ee2fc628a9dde2eea6e1f315faf3eb25f45/mechanical_recovery_attempts/8fc5380364671b4088c5b9134d76ff3d/paired_operational_recovery_attempts/cfb24840294af00eec2c1705b6b0cce3/round_close_next_round_resident/220ee39973b31434b7ad7b8b79e9efaebe2e59457e28891152716f297162eb48/R2_NATIVE_PRODUCER_RECOVERY_OWNER_V1.json",
+      "status": "EXACT_BYTES_VERIFIED"
+    },
+    {
+      "archive_path": "typed_authorities/READY.json",
+      "authority": "LIVE_TYPED_CHAIN.json#/typed_authorities/READY",
+      "bytes": 11029,
+      "purpose": "Direct indexed typed authority bytes; no arbitrary child references",
+      "schema_id": "NATIVE_R2_RECOVERY_READY_V1",
+      "sha256": "057a897391df22334ce5b9fee4baf242673ae72369ddfe36d96868255ed8975a",
+      "source_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/paper_critical_native_round/6ad3d219a1aa2417fab469733c6c4ee2fc628a9dde2eea6e1f315faf3eb25f45/mechanical_recovery_attempts/8fc5380364671b4088c5b9134d76ff3d/paired_operational_recovery_attempts/cfb24840294af00eec2c1705b6b0cce3/round_close_next_round_resident/220ee39973b31434b7ad7b8b79e9efaebe2e59457e28891152716f297162eb48/native_producer_recovery/d289543454632d898f2f0f488524068cc16d9a74838975ee23046afe3519ee22/READY.json",
+      "status": "EXACT_BYTES_VERIFIED"
+    },
+    {
+      "archive_path": "typed_authorities/SUBMISSION_INTENT.json",
+      "authority": "LIVE_TYPED_CHAIN.json#/typed_authorities/SUBMISSION_INTENT",
+      "bytes": 1892,
+      "purpose": "Direct indexed typed authority bytes; no arbitrary child references",
+      "schema_id": "NATIVE_R2_SUBMISSION_INTENT_V1",
+      "sha256": "4af4fb0d6f6054dfe401d94a4f124f0fda2777fb43027913f820a75efce6d594",
+      "source_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/paper_critical_native_round/6ad3d219a1aa2417fab469733c6c4ee2fc628a9dde2eea6e1f315faf3eb25f45/mechanical_recovery_attempts/8fc5380364671b4088c5b9134d76ff3d/paired_operational_recovery_attempts/cfb24840294af00eec2c1705b6b0cce3/round_close_next_round_resident/220ee39973b31434b7ad7b8b79e9efaebe2e59457e28891152716f297162eb48/native_producer_recovery/d289543454632d898f2f0f488524068cc16d9a74838975ee23046afe3519ee22/SUBMISSION_INTENT.json",
+      "status": "EXACT_BYTES_VERIFIED"
+    },
+    {
+      "archive_path": "typed_authorities/SUBMISSION_RECEIPT.json",
+      "authority": "LIVE_TYPED_CHAIN.json#/typed_authorities/SUBMISSION_RECEIPT",
+      "bytes": 176,
+      "purpose": "Direct indexed typed authority bytes; no arbitrary child references",
+      "schema_id": "NATIVE_R2_SUBMISSION_RECEIPT_V1",
+      "sha256": "3001686335026e060246564305beba4d6295c63d30af94256bb9755f98f5bb0b",
+      "source_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/paper_critical_native_round/6ad3d219a1aa2417fab469733c6c4ee2fc628a9dde2eea6e1f315faf3eb25f45/mechanical_recovery_attempts/8fc5380364671b4088c5b9134d76ff3d/paired_operational_recovery_attempts/cfb24840294af00eec2c1705b6b0cce3/round_close_next_round_resident/220ee39973b31434b7ad7b8b79e9efaebe2e59457e28891152716f297162eb48/native_producer_recovery/d289543454632d898f2f0f488524068cc16d9a74838975ee23046afe3519ee22/SUBMISSION_RECEIPT.json",
+      "status": "EXACT_BYTES_VERIFIED"
+    },
+    {
+      "archive_path": "typed_authorities/RECOVERY_STATUS.json",
+      "authority": "LIVE_TYPED_CHAIN.json#/typed_authorities/RECOVERY_STATUS",
+      "bytes": 1678,
+      "purpose": "Direct indexed typed authority bytes; no arbitrary child references",
+      "schema_id": "NATIVE_R2_RECOVERY_TERMINAL_V1",
+      "sha256": "d714f94f42fa38ef2c6fbb2781b181e533c5eb8268b204186710a3145b8305ef",
+      "source_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/paper_critical_native_round/6ad3d219a1aa2417fab469733c6c4ee2fc628a9dde2eea6e1f315faf3eb25f45/mechanical_recovery_attempts/8fc5380364671b4088c5b9134d76ff3d/paired_operational_recovery_attempts/cfb24840294af00eec2c1705b6b0cce3/round_close_next_round_resident/220ee39973b31434b7ad7b8b79e9efaebe2e59457e28891152716f297162eb48/native_producer_recovery/d289543454632d898f2f0f488524068cc16d9a74838975ee23046afe3519ee22/RECOVERY_STATUS.json",
+      "status": "EXACT_BYTES_VERIFIED"
+    },
+    {
+      "archive_path": "canary/request.json",
+      "authority": "FORMAL_MAX10_CANARY_PROVENANCE_REFERENCE_V1.json#/request_path",
+      "bytes": 1276,
+      "purpose": "Verify repaired native lineage; historical canary is not Formal training input",
+      "sha256": "9c6964e2ea700cc4c7f164c7232507f942319e61943e0c0a5fef9cc8173b1952",
+      "source_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/paper_critical_native_round/6ad3d219a1aa2417fab469733c6c4ee2fc628a9dde2eea6e1f315faf3eb25f45/mechanical_recovery_attempts/8fc5380364671b4088c5b9134d76ff3d/paired_operational_recovery_attempts/cfb24840294af00eec2c1705b6b0cce3/round_close_next_round_resident/220ee39973b31434b7ad7b8b79e9efaebe2e59457e28891152716f297162eb48/native_producer_recovery/d289543454632d898f2f0f488524068cc16d9a74838975ee23046afe3519ee22/round_evidence/ROUND_ROLLOUT_COLLECTION_REQUEST_V1.json",
+      "status": "EXACT_BYTES_VERIFIED"
+    },
+    {
+      "archive_path": "canary/binding.json",
+      "authority": "FORMAL_MAX10_CANARY_PROVENANCE_REFERENCE_V1.json#/binding_path",
+      "bytes": 838,
+      "purpose": "Verify repaired native lineage; historical canary is not Formal training input",
+      "sha256": "13d2f6e34994365dd461a5b7fd3456473cc663fa54875a4538c21aa4e72f5b53",
+      "source_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/paper_critical_native_round/6ad3d219a1aa2417fab469733c6c4ee2fc628a9dde2eea6e1f315faf3eb25f45/mechanical_recovery_attempts/8fc5380364671b4088c5b9134d76ff3d/paired_operational_recovery_attempts/cfb24840294af00eec2c1705b6b0cce3/round_close_next_round_resident/220ee39973b31434b7ad7b8b79e9efaebe2e59457e28891152716f297162eb48/native_producer_recovery/d289543454632d898f2f0f488524068cc16d9a74838975ee23046afe3519ee22/round_evidence/ROUND_ROLLOUT_EXECUTION_BINDING_V1.json",
+      "status": "EXACT_BYTES_VERIFIED"
+    },
+    {
+      "archive_path": "canary/handoff.json",
+      "authority": "FORMAL_MAX10_CANARY_PROVENANCE_REFERENCE_V1.json#/handoff_path",
+      "bytes": 3785,
+      "purpose": "Verify repaired native lineage; historical canary is not Formal training input",
+      "sha256": "6a8cdd85eba64d7196805ed41bf1f0f1290224141dbadc0db3a1753399f2ed89",
+      "source_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/paper_critical_native_round/6ad3d219a1aa2417fab469733c6c4ee2fc628a9dde2eea6e1f315faf3eb25f45/mechanical_recovery_attempts/8fc5380364671b4088c5b9134d76ff3d/paired_operational_recovery_attempts/cfb24840294af00eec2c1705b6b0cce3/round_close_next_round_resident/220ee39973b31434b7ad7b8b79e9efaebe2e59457e28891152716f297162eb48/native_producer_recovery/d289543454632d898f2f0f488524068cc16d9a74838975ee23046afe3519ee22/round_evidence/ROUND_ROLLOUT_EVIDENCE_HANDOFF_V1.json",
+      "status": "EXACT_BYTES_VERIFIED"
+    },
+    {
+      "archive_path": "registered_packages/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_REQUEST_HASH_REPAIR_AND_RECOVERY_V1_23_3N_4_3.zip",
+      "authority": "V14 source_capture historical_packages or source_integrity_registry; exact package base from Gate-2 h44 source path",
+      "bytes": 191249,
+      "purpose": "Current native request/schedule producer repair; ledger 159398-159418,159931-159941",
+      "sha256": "cc6aa55fa85f3736338186678d4601efe409a41ff3b24cd30fe884b32547dee4",
+      "source_path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_REQUEST_HASH_REPAIR_AND_RECOVERY_V1_23_3N_4_3.zip",
+      "status": "EXACT_BYTES_VERIFIED"
+    },
+    {
+      "archive_path": "registered_packages/PCHSI_CAMPAIGN_AUTHORITY_DRIVEN_FRESH_MEMORY_AWARE_TRAIN_UPDATE_ROLLOUT_V1_23_2.zip",
+      "authority": "V14 source_capture historical_packages or source_integrity_registry; exact package base from Gate-2 h44 source path",
+      "bytes": 781491,
+      "purpose": "Generic fresh policy/Memory builder selected by V1.4 source_integrity_registry; recovery-only N4 bridge is insufficient after promotion",
+      "sha256": "e11df354548d3c09c1207f2bdf94ccd44c670c3d7f047956389cc94859732f3a",
+      "source_path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/PCHSI_CAMPAIGN_AUTHORITY_DRIVEN_FRESH_MEMORY_AWARE_TRAIN_UPDATE_ROLLOUT_V1_23_2.zip",
+      "status": "EXACT_BYTES_VERIFIED"
+    },
+    {
+      "archive_path": "registered_packages/PCHSI_RECEIPT_DRIVEN_FULL_ROUND_DRIVER_V1_1.zip",
+      "authority": "V14 source_capture historical_packages or source_integrity_registry; exact package base from Gate-2 h44 source path",
+      "bytes": 17258,
+      "purpose": "Existing round control plan implementation and explicit unbound gate map; ledger 164214-164249",
+      "sha256": "16c1230c48768c79e1cfe63b688eb810f54f0ec89515ca911a2fdc60dbd45aaf",
+      "source_path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/PCHSI_RECEIPT_DRIVEN_FULL_ROUND_DRIVER_V1_1.zip",
+      "status": "EXACT_BYTES_VERIFIED"
+    },
+    {
+      "archive_path": "registered_packages/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0.zip",
+      "authority": "V14 source_capture historical_packages or source_integrity_registry; exact package base from Gate-2 h44 source path",
+      "bytes": 53118,
+      "purpose": "Existing next-round upstream launch/native execution contracts consumed by V1.13; source interface registry",
+      "sha256": "918d8cb0e85fbf386b233f2f79dece9acf79bbb684c43592055f629d32025e1d",
+      "source_path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0.zip",
+      "status": "EXACT_BYTES_VERIFIED"
+    },
+    {
+      "archive_path": "registered_packages/PCHSI_CAMPAIGN_DYNAMIC_STRONG_PLANNER_PRE_AUTONOMOUS_INFRA_RECOVERY_AND_F0F1_HANDOFF_V1_23_2W.zip",
+      "authority": "V14 source_capture historical_packages or source_integrity_registry; exact package base from Gate-2 h44 source path",
+      "bytes": 37169,
+      "purpose": "Registered Analyzer/PRE stage chain dependency; ledger 164290-164298; source reuse only",
+      "sha256": "7dda8c357143cba5d8d58a8dcf5b40f98bfd60cec253b70b7bef4c1c5e561155",
+      "source_path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/PCHSI_CAMPAIGN_DYNAMIC_STRONG_PLANNER_PRE_AUTONOMOUS_INFRA_RECOVERY_AND_F0F1_HANDOFF_V1_23_2W.zip",
+      "status": "EXACT_BYTES_VERIFIED"
+    },
+    {
+      "archive_path": "registered_packages/PCHSI_CAMPAIGN_DYNAMIC_STRONG_PLANNER_PRE_RESUME_STABLE_MEMORY_CENSUS_AND_AUTONOMOUS_INFRA_RECOVERY_V1_23_2X.zip",
+      "authority": "V14 source_capture historical_packages or source_integrity_registry; exact package base from Gate-2 h44 source path",
+      "bytes": 39680,
+      "purpose": "Registered Analyzer/PRE stage chain dependency; ledger 164290-164298; source reuse only",
+      "sha256": "50c75d8cb634fd744d815376d198f899f0228be9c3a3aac3145d5df30f1e887d",
+      "source_path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/PCHSI_CAMPAIGN_DYNAMIC_STRONG_PLANNER_PRE_RESUME_STABLE_MEMORY_CENSUS_AND_AUTONOMOUS_INFRA_RECOVERY_V1_23_2X.zip",
+      "status": "EXACT_BYTES_VERIFIED"
+    },
+    {
+      "archive_path": "registered_packages/PCHSI_CAMPAIGN_DYNAMIC_STRONG_PLANNER_PRE_V2_AND_F0F1_HANDOFF_V1_23_2V.zip",
+      "authority": "V14 source_capture historical_packages or source_integrity_registry; exact package base from Gate-2 h44 source path",
+      "bytes": 31743,
+      "purpose": "Registered Analyzer/PRE stage chain dependency; ledger 164290-164298; source reuse only",
+      "sha256": "14d669b8f744ef5caeb8491c7f9417a670bdf8035883aaeeeca7326b74322ffb",
+      "source_path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/PCHSI_CAMPAIGN_DYNAMIC_STRONG_PLANNER_PRE_V2_AND_F0F1_HANDOFF_V1_23_2V.zip",
+      "status": "EXACT_BYTES_VERIFIED"
+    },
+    {
+      "archive_path": "registered_packages/PCHSI_CAMPAIGN_ROLLOUT_HANDOFF_STRONG_ANALYZER_RUNTIME_REGISTRY_AUTHORITY_RECONCILIATION_V1_23_2Q.zip",
+      "authority": "V14 source_capture historical_packages or source_integrity_registry; exact package base from Gate-2 h44 source path",
+      "bytes": 24571,
+      "purpose": "Registered Analyzer/PRE stage chain dependency; ledger 164290-164298; source reuse only",
+      "sha256": "a39343f25ada3769b174404db2610a0379a1ef8dbb9847abc7c1ea594a91a45f",
+      "source_path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/PCHSI_CAMPAIGN_ROLLOUT_HANDOFF_STRONG_ANALYZER_RUNTIME_REGISTRY_AUTHORITY_RECONCILIATION_V1_23_2Q.zip",
+      "status": "EXACT_BYTES_VERIFIED"
+    },
+    {
+      "archive_path": "registered_packages/PCHSI_CAMPAIGN_STRONG_ANALYZER_GROUP_TAIL_GIT_OBJECT_ID_AUTHORITY_RECOVERY_AND_DYNAMIC_PAIR_UNIVERSE_V1_23_2T.zip",
+      "authority": "V14 source_capture historical_packages or source_integrity_registry; exact package base from Gate-2 h44 source path",
+      "bytes": 63177,
+      "purpose": "Registered Analyzer/PRE stage chain dependency; ledger 164290-164298; source reuse only",
+      "sha256": "9af7560b2483b4d7b17b1cb5442556d2ef05a8c605511ee944e9807fcfdaf84e",
+      "source_path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/PCHSI_CAMPAIGN_STRONG_ANALYZER_GROUP_TAIL_GIT_OBJECT_ID_AUTHORITY_RECOVERY_AND_DYNAMIC_PAIR_UNIVERSE_V1_23_2T.zip",
+      "status": "EXACT_BYTES_VERIFIED"
+    },
+    {
+      "archive_path": "registered_packages/PCHSI_CAMPAIGN_STRONG_ANALYZER_G_TERMINAL_ADOPTION_CPX_DYNAMIC_PAIR_UNIVERSE_V1_23_2U.zip",
+      "authority": "V14 source_capture historical_packages or source_integrity_registry; exact package base from Gate-2 h44 source path",
+      "bytes": 22495,
+      "purpose": "Registered Analyzer/PRE stage chain dependency; ledger 164290-164298; source reuse only",
+      "sha256": "2a0bc1ea9feb41e0e112c7a98ead413ab35e3fb1ea963b8b2e4a500d5645692e",
+      "source_path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/PCHSI_CAMPAIGN_STRONG_ANALYZER_G_TERMINAL_ADOPTION_CPX_DYNAMIC_PAIR_UNIVERSE_V1_23_2U.zip",
+      "status": "EXACT_BYTES_VERIFIED"
+    },
+    {
+      "archive_path": "registered_packages/PCHSI_CAMPAIGN_STRONG_ANALYZER_WAVE1_COMPLETE_PAIR_ADOPTION_AND_CANONICAL_ACT3_GROUP_PREP_V1_23_2R.zip",
+      "authority": "V14 source_capture historical_packages or source_integrity_registry; exact package base from Gate-2 h44 source path",
+      "bytes": 10828,
+      "purpose": "Registered Analyzer/PRE stage chain dependency; ledger 164290-164298; source reuse only",
+      "sha256": "dfc7bdd171695f6a6529b54301063b982037e354d0be730d9bf6e359587713ef",
+      "source_path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/PCHSI_CAMPAIGN_STRONG_ANALYZER_WAVE1_COMPLETE_PAIR_ADOPTION_AND_CANONICAL_ACT3_GROUP_PREP_V1_23_2R.zip",
+      "status": "EXACT_BYTES_VERIFIED"
+    },
+    {
+      "archive_path": "registered_packages/PCHSI_CAMPAIGN_STRONG_ANALYZER_WAVE1_TERMINAL_HARDSTOP_ISOLATION_AND_COMPLETE_PAIR_ADOPTION_V1_23_2R1.zip",
+      "authority": "V14 source_capture historical_packages or source_integrity_registry; exact package base from Gate-2 h44 source path",
+      "bytes": 14691,
+      "purpose": "Registered Analyzer/PRE stage chain dependency; ledger 164290-164298; source reuse only",
+      "sha256": "de95721e9b7e10e018767d4e5738891e074d34bc67be013303192772214eec53",
+      "source_path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/PCHSI_CAMPAIGN_STRONG_ANALYZER_WAVE1_TERMINAL_HARDSTOP_ISOLATION_AND_COMPLETE_PAIR_ADOPTION_V1_23_2R1.zip",
+      "status": "EXACT_BYTES_VERIFIED"
+    }
+  ],
+  "schema_id": "FORMAL_MAX10_REGISTERED_SOURCE_RESULTS_V1",
+  "scientific_execution_started": false,
+  "source_paths_chosen_by_operator": false,
+  "staging_only_no_git_mutation": true,
+  "status": "REGISTERED_MATERIALIZATION_SOURCES_COMPLETE_NO_LAUNCH"
+}

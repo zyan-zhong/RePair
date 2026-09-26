@@ -1,0 +1,111 @@
+{
+  "$id": "FORMAL_ANALYZER_DAG_REGISTRY_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "condition_rows": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "a1_local_result_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "abstain_permitted": {
+            "const": true,
+            "type": "boolean"
+          },
+          "candidate_budget": {
+            "const": 1,
+            "type": "integer"
+          },
+          "common_evidence_pack_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "condition_id": {
+            "enum": [
+              "A0",
+              "A1",
+              "A2",
+              "A3"
+            ],
+            "type": "string"
+          },
+          "memory_pack_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source_unit_id": {
+            "maxLength": 512,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "source_unit_id",
+          "condition_id",
+          "common_evidence_pack_sha256",
+          "a1_local_result_sha256",
+          "memory_pack_sha256",
+          "candidate_budget",
+          "abstain_permitted"
+        ],
+        "type": "object"
+      },
+      "minItems": 4,
+      "type": "array"
+    },
+    "formal_dag_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "registered_unit_ids": {
+      "items": {
+        "maxLength": 512,
+        "minLength": 1,
+        "type": "string"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "registered_universe_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "round_id": {
+      "maxLength": 512,
+      "minLength": 1,
+      "type": "string"
+    },
+    "runtime_input_registry_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "schema_id": {
+      "const": "FORMAL_ANALYZER_DAG_REGISTRY_V1",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "round_id",
+    "registered_universe_sha256",
+    "registered_unit_ids",
+    "condition_rows",
+    "runtime_input_registry_sha256",
+    "formal_dag_sha256"
+  ],
+  "type": "object"
+}

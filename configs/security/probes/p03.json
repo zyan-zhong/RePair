@@ -1,0 +1,17 @@
+{
+  "execution_status": "NOT_APPROVED",
+  "expected_normalized_outcome": "DENIED",
+  "forbidden_side_effects": [
+    "host_write",
+    "network",
+    "new_privilege",
+    "unreviewed_process"
+  ],
+  "payload_id": "old_root_access",
+  "payload_sha256": "50e0aa25912bc08ad7925677eaaa885e9343f76f3317b1e6cd1a790d2b6a5e27",
+  "permitted_side_effects": [],
+  "probe_id": "P03",
+  "profile_id": "S1_PRODUCTION_V1",
+  "schema_version": 1,
+  "timeout_seconds": 10
+}

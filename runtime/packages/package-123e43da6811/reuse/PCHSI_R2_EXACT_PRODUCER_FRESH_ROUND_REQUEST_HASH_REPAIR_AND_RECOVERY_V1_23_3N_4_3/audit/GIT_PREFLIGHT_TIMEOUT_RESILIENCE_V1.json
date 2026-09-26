@@ -1,0 +1,13 @@
+{
+  "acceptance_criteria_changed": false,
+  "argv_must_be_identical": true,
+  "historical_precedent": "V181_STRONG_PRIMARY_R1_REPO_PREFLIGHT_TIMEOUT_RESILIENCE_V1_31_0",
+  "initial_timeout_seconds": 120,
+  "maximum_attempts": 2,
+  "notes": "Preserve N4 exact git status argv and clean-worktree acceptance. Retry once only when the first subprocess timed out. Do not retry ordinary git failures.",
+  "retry_condition": "TIMEOUT_ONLY",
+  "retry_timeout_seconds": 180,
+  "schema_id": "GIT_PREFLIGHT_TIMEOUT_RESILIENCE_V1",
+  "scientific_semantics_changed": false,
+  "scope": "N4_1_NATIVE_WORKTREE_STATUS_ONLY"
+}

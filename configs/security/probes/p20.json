@@ -1,0 +1,17 @@
+{
+  "execution_status": "NOT_APPROVED",
+  "expected_normalized_outcome": "CLEANUP_OK",
+  "forbidden_side_effects": [
+    "host_write",
+    "network",
+    "new_privilege",
+    "unreviewed_process"
+  ],
+  "payload_id": "cleanup",
+  "payload_sha256": "f1f8a1c44cc9d3fb8b69a30f25ff82378901a427d0bcda722e9593e2b51d0c3d",
+  "permitted_side_effects": [],
+  "probe_id": "P20",
+  "profile_id": "S1_P20_CLEANUP_V1",
+  "schema_version": 1,
+  "timeout_seconds": 10
+}

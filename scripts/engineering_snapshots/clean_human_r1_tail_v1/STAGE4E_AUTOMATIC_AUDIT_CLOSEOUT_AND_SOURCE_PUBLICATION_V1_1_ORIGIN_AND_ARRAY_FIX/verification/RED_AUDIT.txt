@@ -1,0 +1,88 @@
+test_completion_gate_precedes_receipt_read (test_audit_adapter.AuditAdapterTests.test_completion_gate_precedes_receipt_read) ... FAIL
+test_exact_order_duplicate_missing_and_boolean_outcomes (test_audit_adapter.AuditAdapterTests.test_exact_order_duplicate_missing_and_boolean_outcomes) ... FAIL
+test_loader_source_missing_is_a_hard_error (test_audit_adapter.AuditAdapterTests.test_loader_source_missing_is_a_hard_error) ... FAIL
+test_metadata_only_lineage_does_not_read_unsealed_benchmark (test_audit_adapter.AuditAdapterTests.test_metadata_only_lineage_does_not_read_unsealed_benchmark) ... FAIL
+test_native_audit_and_aggregator_are_imported_not_reimplemented (test_audit_adapter.AuditAdapterTests.test_native_audit_and_aggregator_are_imported_not_reimplemented) ... FAIL
+test_takeover_not_forged_when_metrics_missing (test_audit_adapter.AuditAdapterTests.test_takeover_not_forged_when_metrics_missing) ... FAIL
+test_completion_requires_full_counts_not_just_slurm_zero (test_core.Contracts.test_completion_requires_full_counts_not_just_slurm_zero) ... ok
+test_diagnostic_retention_independent_of_score_direction (test_core.Contracts.test_diagnostic_retention_independent_of_score_direction) ... ok
+test_failed_or_unknown_job_does_not_authorize_audit_or_retry (test_core.Contracts.test_failed_or_unknown_job_does_not_authorize_audit_or_retry) ... ok
+test_inventory_rejects_path_traversal (test_core.Contracts.test_inventory_rejects_path_traversal) ... ok
+test_no_clobber_and_exact_resume (test_core.Contracts.test_no_clobber_and_exact_resume) ... ok
+test_no_guess_for_other_training_arm (test_core.Contracts.test_no_guess_for_other_training_arm) ... ok
+test_nonfinite_json_rejected (test_core.Contracts.test_nonfinite_json_rejected) ... ok
+test_sha_bytes_and_semantics_not_interchanged (test_core.Contracts.test_sha_bytes_and_semantics_not_interchanged) ... ok
+test_strict_duplicate_keys_rejected (test_core.Contracts.test_strict_duplicate_keys_rejected) ... ok
+test_summary_projection_removes_all_per_task_content (test_core.Contracts.test_summary_projection_removes_all_per_task_content) ... ok
+test_symlink_output_rejected (test_core.Contracts.test_symlink_output_rejected) ... ok
+
+======================================================================
+FAIL: test_completion_gate_precedes_receipt_read (test_audit_adapter.AuditAdapterTests.test_completion_gate_precedes_receipt_read)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_audit_adapter.py", line 17, in test_completion_gate_precedes_receipt_read
+    a=self.adapter()
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_audit_adapter.py", line 12, in adapter
+    self.assertIsNotNone(spec, 'MISSING_EXISTING_AUDIT_ADAPTER')
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unexpectedly None : MISSING_EXISTING_AUDIT_ADAPTER
+
+======================================================================
+FAIL: test_exact_order_duplicate_missing_and_boolean_outcomes (test_audit_adapter.AuditAdapterTests.test_exact_order_duplicate_missing_and_boolean_outcomes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_audit_adapter.py", line 23, in test_exact_order_duplicate_missing_and_boolean_outcomes
+    a=self.adapter()
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_audit_adapter.py", line 12, in adapter
+    self.assertIsNotNone(spec, 'MISSING_EXISTING_AUDIT_ADAPTER')
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unexpectedly None : MISSING_EXISTING_AUDIT_ADAPTER
+
+======================================================================
+FAIL: test_loader_source_missing_is_a_hard_error (test_audit_adapter.AuditAdapterTests.test_loader_source_missing_is_a_hard_error)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_audit_adapter.py", line 57, in test_loader_source_missing_is_a_hard_error
+    a=self.adapter()
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_audit_adapter.py", line 12, in adapter
+    self.assertIsNotNone(spec, 'MISSING_EXISTING_AUDIT_ADAPTER')
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unexpectedly None : MISSING_EXISTING_AUDIT_ADAPTER
+
+======================================================================
+FAIL: test_metadata_only_lineage_does_not_read_unsealed_benchmark (test_audit_adapter.AuditAdapterTests.test_metadata_only_lineage_does_not_read_unsealed_benchmark)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_audit_adapter.py", line 51, in test_metadata_only_lineage_does_not_read_unsealed_benchmark
+    a=self.adapter()
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_audit_adapter.py", line 12, in adapter
+    self.assertIsNotNone(spec, 'MISSING_EXISTING_AUDIT_ADAPTER')
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unexpectedly None : MISSING_EXISTING_AUDIT_ADAPTER
+
+======================================================================
+FAIL: test_native_audit_and_aggregator_are_imported_not_reimplemented (test_audit_adapter.AuditAdapterTests.test_native_audit_and_aggregator_are_imported_not_reimplemented)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_audit_adapter.py", line 41, in test_native_audit_and_aggregator_are_imported_not_reimplemented
+    a=self.adapter()
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_audit_adapter.py", line 12, in adapter
+    self.assertIsNotNone(spec, 'MISSING_EXISTING_AUDIT_ADAPTER')
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unexpectedly None : MISSING_EXISTING_AUDIT_ADAPTER
+
+======================================================================
+FAIL: test_takeover_not_forged_when_metrics_missing (test_audit_adapter.AuditAdapterTests.test_takeover_not_forged_when_metrics_missing)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_audit_adapter.py", line 32, in test_takeover_not_forged_when_metrics_missing
+    a=self.adapter()
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_audit_adapter.py", line 12, in adapter
+    self.assertIsNotNone(spec, 'MISSING_EXISTING_AUDIT_ADAPTER')
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unexpectedly None : MISSING_EXISTING_AUDIT_ADAPTER
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.011s
+
+FAILED (failures=6)

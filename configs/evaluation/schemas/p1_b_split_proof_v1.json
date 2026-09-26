@@ -1,0 +1,148 @@
+{
+  "$id": "P1_B_SPLIT_PROOF_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "historical_access_audit_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "record_count": {
+      "minimum": 1,
+      "type": "integer"
+    },
+    "records": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "family_rank": {
+            "minimum": 0,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "family_select_target": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "final_access_class": {
+            "enum": [
+              "DEV_VISIBLE",
+              "SELECT_SUMMARY_ONLY"
+            ],
+            "type": "string"
+          },
+          "forced_dev": {
+            "type": "boolean"
+          },
+          "forced_dev_evidence_sources": {
+            "items": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "forced_dev_reason": {
+            "enum": [
+              null,
+              "TRAJECTORY_INSPECTED",
+              "USED_FOR_METHOD_DESIGN",
+              "TRAJECTORY_INSPECTED+USED_FOR_METHOD_DESIGN"
+            ],
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "gamefile_sha1": {
+            "pattern": "^[0-9a-f]{40}$",
+            "type": "string"
+          },
+          "historical_access_flags": {
+            "items": {
+              "enum": [
+                "NO_KNOWN_PRIOR_ACCESS",
+                "ACCESS_HISTORY_INCOMPLETE",
+                "AGGREGATE_ONLY",
+                "EXECUTED_NOT_INSPECTED",
+                "TRAJECTORY_INSPECTED",
+                "USED_FOR_METHOD_DESIGN",
+                "SENT_TO_EXTERNAL_MODEL"
+              ],
+              "type": "string"
+            },
+            "minItems": 1,
+            "type": "array"
+          },
+          "historical_evidence_sources": {
+            "items": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "minItems": 1,
+            "type": "array"
+          },
+          "manifest_index": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "split_key_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "task_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "task_type": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "manifest_index",
+          "task_id",
+          "task_type",
+          "gamefile_sha1",
+          "historical_access_flags",
+          "historical_evidence_sources",
+          "forced_dev",
+          "forced_dev_reason",
+          "forced_dev_evidence_sources",
+          "split_key_sha256",
+          "family_select_target",
+          "family_rank",
+          "final_access_class"
+        ],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "schema_id": {
+      "const": "P1_B_SPLIT_PROOF_V1",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    },
+    "split_contract_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "split_contract_sha256",
+    "historical_access_audit_sha256",
+    "record_count",
+    "records"
+  ],
+  "type": "object"
+}

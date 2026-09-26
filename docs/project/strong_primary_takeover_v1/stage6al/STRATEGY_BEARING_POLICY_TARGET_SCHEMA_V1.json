@@ -1,0 +1,65 @@
+{
+  "action_field": "action",
+  "i1_training_binding_sha256": "2bf6382dd55eacfffcb4bf204459e2763547d92c2af35d9abcb8baed03ebed9d",
+  "not_chain_of_thought": true,
+  "policy_visibility_boundary": {
+    "future_outcome_leakage_forbidden": true,
+    "memory_off_harness_off_acceptance_compatible": true,
+    "must_be_derivable_from_policy_visible_or_verified_training_context": true,
+    "sealed_benchmark_feedback_forbidden": true
+  },
+  "purpose": "COMPACT_POLICY_VISIBLE_ENVIRONMENT_VERIFIED_STRATEGY_TARGET",
+  "rendering_policy": {
+    "canonical_json": true,
+    "compact_operational_strategy_only": true,
+    "deterministic": true,
+    "free_form_hidden_reasoning_forbidden": true,
+    "verbose_analyzer_or_planner_transcript_dump_forbidden": true
+  },
+  "required_verification": {
+    "harm_allowed_for_training": false,
+    "neutral_allowed_for_training": false,
+    "same_state_f0_f1_or_equivalent": true,
+    "uncertain_allowed_for_training": false,
+    "verification_label": "BENEFIT",
+    "verified_benefit_only": true
+  },
+  "schema_id": "STRATEGY_BEARING_POLICY_TARGET_V1",
+  "schema_sha256": "9fa11cb8c2b4a24bd0303950e936b6ca4b7220d32712eef42e4804e710b94efa",
+  "schema_version": 1,
+  "semantic_constraints": {
+    "action": "EXECUTABLE_POLICY_ACTION",
+    "current_subgoal": "CURRENT_POLICY_RELEVANT_SUBGOAL",
+    "evidence_refs": "CONTENT_ADDRESSED_VERIFICATION_REFERENCES",
+    "expected_next_event": "EXPECTED_ENVIRONMENT_OR_TASK_EVENT",
+    "expected_state_change": "EXPECTED_VERIFIABLE_STATE_TRANSITION",
+    "fallback_condition": "ABSTAIN_OR_FALLBACK_CONDITION",
+    "principal_bottleneck": "COMPACT_OPERATIONAL_FAILURE_OR_BOTTLENECK",
+    "progress_criterion": "OBSERVABLE_PROGRESS_OR_SUCCESS_CHECK",
+    "recovery_trigger": "OBSERVABLE_TRIGGER_TO_REPLAN_OR_RECOVER"
+  },
+  "status": "SCHEMA_FROZEN_NOT_YET_MATERIALIZED",
+  "strategy_fields": [
+    "verified_strategy_sha256",
+    "principal_bottleneck",
+    "current_subgoal",
+    "expected_next_event",
+    "expected_state_change",
+    "progress_criterion",
+    "recovery_trigger",
+    "fallback_condition",
+    "evidence_refs"
+  ],
+  "target_fields_in_canonical_order": [
+    "verified_strategy_sha256",
+    "principal_bottleneck",
+    "current_subgoal",
+    "expected_next_event",
+    "expected_state_change",
+    "progress_criterion",
+    "recovery_trigger",
+    "fallback_condition",
+    "action",
+    "evidence_refs"
+  ]
+}

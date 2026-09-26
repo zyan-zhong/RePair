@@ -1,0 +1,13 @@
+stage,role,cell_count,pack_present_count
+STAGE1B,policy,12,12
+STAGE1B,analyzer,12,12
+STAGE1B,researcher,12,12
+STAGE2,policy,240,240
+STAGE2,analyzer,240,240
+STAGE2,researcher,240,240
+STAGE3,policy,1096,1096
+STAGE3,analyzer,1096,1096
+STAGE3,researcher,1096,1096
+STAGE0,policy,0,0
+STAGE0,analyzer,0,0
+STAGE0,researcher,3,3

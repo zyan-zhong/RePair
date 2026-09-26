@@ -1,0 +1,563 @@
+FFFFFFFFFFFFF                                                            [100%]
+=================================== FAILURES ===================================
+__________ test_compile_preserves_all_actions_and_candidate_identity ___________
+
+    def mod():
+        try:
+>           return importlib.import_module('option_adapter')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_options.py:11: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/usr/lib/python3.13/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen importlib._bootstrap>:1387: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:1360: in _find_and_load
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'option_adapter', import_ = <function _gcd_import at 0x7fe1aa9484a0>
+
+>   ???
+E   ModuleNotFoundError: No module named 'option_adapter'
+
+<frozen importlib._bootstrap>:1324: ModuleNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+    def test_compile_preserves_all_actions_and_candidate_identity():
+>       c=candidate(form1());r=mod().compile_option(c)
+                               ^^^^^
+
+tests/test_options.py:36: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def mod():
+        try:
+            return importlib.import_module('option_adapter')
+        except ImportError:
+>           pytest.fail('Typed option compiler and exact public predicates are not implemented')
+E           Failed: Typed option compiler and exact public predicates are not implemented
+
+tests/test_options.py:13: Failed
+_______ test_unknown_semantics_are_missingness_not_default_intervention ________
+
+    def mod():
+        try:
+>           return importlib.import_module('option_adapter')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_options.py:11: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/usr/lib/python3.13/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen importlib._bootstrap>:1387: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:1360: in _find_and_load
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'option_adapter', import_ = <function _gcd_import at 0x7fe1aa9484a0>
+
+>   ???
+E   ModuleNotFoundError: No module named 'option_adapter'
+
+<frozen importlib._bootstrap>:1324: ModuleNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+    def test_unknown_semantics_are_missingness_not_default_intervention():
+>       r=mod().compile_option(candidate('Try the best route until enough progress has happened.'))
+          ^^^^^
+
+tests/test_options.py:46: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def mod():
+        try:
+            return importlib.import_module('option_adapter')
+        except ImportError:
+>           pytest.fail('Typed option compiler and exact public predicates are not implemented')
+E           Failed: Typed option compiler and exact public predicates are not implemented
+
+tests/test_options.py:13: Failed
+________________ test_each_clause_must_match_no_silent_dropping ________________
+
+    def mod():
+        try:
+>           return importlib.import_module('option_adapter')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_options.py:11: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/usr/lib/python3.13/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen importlib._bootstrap>:1387: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:1360: in _find_and_load
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'option_adapter', import_ = <function _gcd_import at 0x7fe1aa9484a0>
+
+>   ???
+E   ModuleNotFoundError: No module named 'option_adapter'
+
+<frozen importlib._bootstrap>:1324: ModuleNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+    def test_each_clause_must_match_no_silent_dropping():
+>       assert mod().compile_option(candidate(form1()+' Ignore the live menu.'))['status']=='PROTOCOL_MISSINGNESS'
+               ^^^^^
+
+tests/test_options.py:52: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def mod():
+        try:
+            return importlib.import_module('option_adapter')
+        except ImportError:
+>           pytest.fail('Typed option compiler and exact public predicates are not implemented')
+E           Failed: Typed option compiler and exact public predicates are not implemented
+
+tests/test_options.py:13: Failed
+________________________ test_pen_is_not_pencil_or_open ________________________
+
+    def mod():
+        try:
+>           return importlib.import_module('option_adapter')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_options.py:11: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/usr/lib/python3.13/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen importlib._bootstrap>:1387: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:1360: in _find_and_load
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'option_adapter', import_ = <function _gcd_import at 0x7fe1aa9484a0>
+
+>   ???
+E   ModuleNotFoundError: No module named 'option_adapter'
+
+<frozen importlib._bootstrap>:1324: ModuleNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+    def test_pen_is_not_pencil_or_open():
+>       c=mod().compile_option(candidate(form2('pen')))['contract']
+          ^^^^^
+
+tests/test_options.py:56: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def mod():
+        try:
+            return importlib.import_module('option_adapter')
+        except ImportError:
+>           pytest.fail('Typed option compiler and exact public predicates are not implemented')
+E           Failed: Typed option compiler and exact public predicates are not implemented
+
+tests/test_options.py:13: Failed
+_____________________ test_goal_mention_is_not_visibility ______________________
+
+    def mod():
+        try:
+>           return importlib.import_module('option_adapter')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_options.py:11: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/usr/lib/python3.13/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen importlib._bootstrap>:1387: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:1360: in _find_and_load
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'option_adapter', import_ = <function _gcd_import at 0x7fe1aa9484a0>
+
+>   ???
+E   ModuleNotFoundError: No module named 'option_adapter'
+
+<frozen importlib._bootstrap>:1324: ModuleNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+    def test_goal_mention_is_not_visibility():
+>       c=mod().compile_option(candidate(form2('pen')))['contract']
+          ^^^^^
+
+tests/test_options.py:63: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def mod():
+        try:
+            return importlib.import_module('option_adapter')
+        except ImportError:
+>           pytest.fail('Typed option compiler and exact public predicates are not implemented')
+E           Failed: Typed option compiler and exact public predicates are not implemented
+
+tests/test_options.py:13: Failed
+____________ test_positive_visible_instance_stops_before_next_step _____________
+
+    def mod():
+        try:
+>           return importlib.import_module('option_adapter')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_options.py:11: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/usr/lib/python3.13/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen importlib._bootstrap>:1387: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:1360: in _find_and_load
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'option_adapter', import_ = <function _gcd_import at 0x7fe1aa9484a0>
+
+>   ???
+E   ModuleNotFoundError: No module named 'option_adapter'
+
+<frozen importlib._bootstrap>:1324: ModuleNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+    def test_positive_visible_instance_stops_before_next_step():
+>       c=mod().compile_option(candidate(form2('pen')))['contract']
+          ^^^^^
+
+tests/test_options.py:70: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def mod():
+        try:
+            return importlib.import_module('option_adapter')
+        except ImportError:
+>           pytest.fail('Typed option compiler and exact public predicates are not implemented')
+E           Failed: Typed option compiler and exact public predicates are not implemented
+
+tests/test_options.py:13: Failed
+__________ test_take_command_requires_exact_object_type_and_instance ___________
+
+    def mod():
+        try:
+>           return importlib.import_module('option_adapter')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_options.py:11: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/usr/lib/python3.13/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen importlib._bootstrap>:1387: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:1360: in _find_and_load
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'option_adapter', import_ = <function _gcd_import at 0x7fe1aa9484a0>
+
+>   ???
+E   ModuleNotFoundError: No module named 'option_adapter'
+
+<frozen importlib._bootstrap>:1324: ModuleNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+    def test_take_command_requires_exact_object_type_and_instance():
+>       c=mod().compile_option(candidate(form2('key')))['contract']
+          ^^^^^
+
+tests/test_options.py:77: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def mod():
+        try:
+            return importlib.import_module('option_adapter')
+        except ImportError:
+>           pytest.fail('Typed option compiler and exact public predicates are not implemented')
+E           Failed: Typed option compiler and exact public predicates are not implemented
+
+tests/test_options.py:13: Failed
+____________ test_carried_object_is_public_put_action_not_goal_text ____________
+
+    def mod():
+        try:
+>           return importlib.import_module('option_adapter')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_options.py:11: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/usr/lib/python3.13/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen importlib._bootstrap>:1387: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:1360: in _find_and_load
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'option_adapter', import_ = <function _gcd_import at 0x7fe1aa9484a0>
+
+>   ???
+E   ModuleNotFoundError: No module named 'option_adapter'
+
+<frozen importlib._bootstrap>:1324: ModuleNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+    def test_carried_object_is_public_put_action_not_goal_text():
+>       c=mod().compile_option(candidate(form1('mug')))['contract']
+          ^^^^^
+
+tests/test_options.py:84: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def mod():
+        try:
+            return importlib.import_module('option_adapter')
+        except ImportError:
+>           pytest.fail('Typed option compiler and exact public predicates are not implemented')
+E           Failed: Typed option compiler and exact public predicates are not implemented
+
+tests/test_options.py:13: Failed
+____________ test_missing_next_action_does_not_skip_to_later_action ____________
+
+    def mod():
+        try:
+>           return importlib.import_module('option_adapter')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_options.py:11: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/usr/lib/python3.13/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen importlib._bootstrap>:1387: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:1360: in _find_and_load
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'option_adapter', import_ = <function _gcd_import at 0x7fe1aa9484a0>
+
+>   ???
+E   ModuleNotFoundError: No module named 'option_adapter'
+
+<frozen importlib._bootstrap>:1324: ModuleNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+    def test_missing_next_action_does_not_skip_to_later_action():
+>       c=mod().compile_option(candidate(form1()))['contract']
+          ^^^^^
+
+tests/test_options.py:91: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def mod():
+        try:
+            return importlib.import_module('option_adapter')
+        except ImportError:
+>           pytest.fail('Typed option compiler and exact public predicates are not implemented')
+E           Failed: Typed option compiler and exact public predicates are not implemented
+
+tests/test_options.py:13: Failed
+_____________________ test_environment_done_has_precedence _____________________
+
+    def mod():
+        try:
+>           return importlib.import_module('option_adapter')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_options.py:11: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/usr/lib/python3.13/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen importlib._bootstrap>:1387: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:1360: in _find_and_load
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'option_adapter', import_ = <function _gcd_import at 0x7fe1aa9484a0>
+
+>   ???
+E   ModuleNotFoundError: No module named 'option_adapter'
+
+<frozen importlib._bootstrap>:1324: ModuleNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+    def test_environment_done_has_precedence():
+>       c=mod().compile_option(candidate(form1()))['contract']
+          ^^^^^
+
+tests/test_options.py:98: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def mod():
+        try:
+            return importlib.import_module('option_adapter')
+        except ImportError:
+>           pytest.fail('Typed option compiler and exact public predicates are not implemented')
+E           Failed: Typed option compiler and exact public predicates are not implemented
+
+tests/test_options.py:13: Failed
+_____________________ test_out_of_order_prefix_is_rejected _____________________
+
+    def mod():
+        try:
+>           return importlib.import_module('option_adapter')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_options.py:11: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/usr/lib/python3.13/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen importlib._bootstrap>:1387: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:1360: in _find_and_load
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'option_adapter', import_ = <function _gcd_import at 0x7fe1aa9484a0>
+
+>   ???
+E   ModuleNotFoundError: No module named 'option_adapter'
+
+<frozen importlib._bootstrap>:1324: ModuleNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+    def test_out_of_order_prefix_is_rejected():
+>       c=mod().compile_option(candidate(form1()))['contract']
+          ^^^^^
+
+tests/test_options.py:103: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def mod():
+        try:
+            return importlib.import_module('option_adapter')
+        except ImportError:
+>           pytest.fail('Typed option compiler and exact public predicates are not implemented')
+E           Failed: Typed option compiler and exact public predicates are not implemented
+
+tests/test_options.py:13: Failed
+_______________________ test_contract_tampering_rejected _______________________
+
+    def mod():
+        try:
+>           return importlib.import_module('option_adapter')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_options.py:11: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/usr/lib/python3.13/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen importlib._bootstrap>:1387: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:1360: in _find_and_load
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'option_adapter', import_ = <function _gcd_import at 0x7fe1aa9484a0>
+
+>   ???
+E   ModuleNotFoundError: No module named 'option_adapter'
+
+<frozen importlib._bootstrap>:1324: ModuleNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+    def test_contract_tampering_rejected():
+>       c=mod().compile_option(candidate(form1()))['contract'];c['target_object_type']='different'
+          ^^^^^
+
+tests/test_options.py:109: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def mod():
+        try:
+            return importlib.import_module('option_adapter')
+        except ImportError:
+>           pytest.fail('Typed option compiler and exact public predicates are not implemented')
+E           Failed: Typed option compiler and exact public predicates are not implemented
+
+tests/test_options.py:13: Failed
+___________________ test_negation_or_absence_is_not_visible ____________________
+
+    def mod():
+        try:
+>           return importlib.import_module('option_adapter')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_options.py:11: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/usr/lib/python3.13/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen importlib._bootstrap>:1387: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:1360: in _find_and_load
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'option_adapter', import_ = <function _gcd_import at 0x7fe1aa9484a0>
+
+>   ???
+E   ModuleNotFoundError: No module named 'option_adapter'
+
+<frozen importlib._bootstrap>:1324: ModuleNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+    def test_negation_or_absence_is_not_visible():
+>       c=mod().compile_option(candidate(form2('pen')))['contract']
+          ^^^^^
+
+tests/test_options.py:115: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def mod():
+        try:
+            return importlib.import_module('option_adapter')
+        except ImportError:
+>           pytest.fail('Typed option compiler and exact public predicates are not implemented')
+E           Failed: Typed option compiler and exact public predicates are not implemented
+
+tests/test_options.py:13: Failed
+=========================== short test summary info ============================
+FAILED tests/test_options.py::test_compile_preserves_all_actions_and_candidate_identity - Failed: Typed option compiler and exact public predicates are not implemented
+FAILED tests/test_options.py::test_unknown_semantics_are_missingness_not_default_intervention - Failed: Typed option compiler and exact public predicates are not implemented
+FAILED tests/test_options.py::test_each_clause_must_match_no_silent_dropping - Failed: Typed option compiler and exact public predicates are not implemented
+FAILED tests/test_options.py::test_pen_is_not_pencil_or_open - Failed: Typed option compiler and exact public predicates are not implemented
+FAILED tests/test_options.py::test_goal_mention_is_not_visibility - Failed: Typed option compiler and exact public predicates are not implemented
+FAILED tests/test_options.py::test_positive_visible_instance_stops_before_next_step - Failed: Typed option compiler and exact public predicates are not implemented
+FAILED tests/test_options.py::test_take_command_requires_exact_object_type_and_instance - Failed: Typed option compiler and exact public predicates are not implemented
+FAILED tests/test_options.py::test_carried_object_is_public_put_action_not_goal_text - Failed: Typed option compiler and exact public predicates are not implemented
+FAILED tests/test_options.py::test_missing_next_action_does_not_skip_to_later_action - Failed: Typed option compiler and exact public predicates are not implemented
+FAILED tests/test_options.py::test_environment_done_has_precedence - Failed: Typed option compiler and exact public predicates are not implemented
+FAILED tests/test_options.py::test_out_of_order_prefix_is_rejected - Failed: Typed option compiler and exact public predicates are not implemented
+FAILED tests/test_options.py::test_contract_tampering_rejected - Failed: Typed option compiler and exact public predicates are not implemented
+FAILED tests/test_options.py::test_negation_or_absence_is_not_visible - Failed: Typed option compiler and exact public predicates are not implemented
+13 failed in 0.17s

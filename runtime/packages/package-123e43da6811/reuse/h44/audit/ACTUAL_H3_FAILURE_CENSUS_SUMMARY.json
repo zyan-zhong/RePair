@@ -1,0 +1,15 @@
+{
+  "schema_id": "ACTUAL_H3_FAILURE_CENSUS_SUMMARY_V1",
+  "source_census_sha256": "17a137b95f4237188e4c00e0d4c3d54aa05e6a851a65288daa80f934d3e41b42",
+  "planned_branch_count_observation": 20,
+  "pair_count_observation": 10,
+  "missing_branch_terminal_count": 0,
+  "pair_reason_f0_attribute_error_count": 10,
+  "pair_reason_f1_attribute_error_count": 10,
+  "branch_terminal_exact_known_attribute_error_count": 20,
+  "exact_error_type": "AttributeError",
+  "exact_error_message": "'SourceStateReplayReportV1' object has no attribute 'exact_match'",
+  "all_current_branch_terminals_share_exact_known_error": true,
+  "current_branch_count_is_runtime_observation_not_production_constant": true,
+  "budget_derivation_rule": "len(planner_selected_source_state_ids) * paired_repetitions_per_state * branch_arms_per_repetition"
+}

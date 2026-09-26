@@ -1,0 +1,73 @@
+{
+  "final_cognitive_model_target": {
+    "base_lineage": "Qwen2.5-3B-Instruct",
+    "role_modes": [
+      "POLICY",
+      "ANALYZER",
+      "RESEARCH_PLANNER"
+    ],
+    "same_checkpoint_required_at_target_stage": true,
+    "same_tokenizer_required_at_target_stage": true,
+    "same_weights_required_at_target_stage": true
+  },
+  "human_reference_layers": [
+    {
+      "layer_id": "L0_EVIDENCE_INTEGRITY",
+      "questions": [
+        "What evidence is available at the frozen cutoff?",
+        "Which facts are mechanical and which remain uncertain?",
+        "Which splits and task details are forbidden?"
+      ]
+    },
+    {
+      "layer_id": "L1_POLICY_FAILURE_PROFILE",
+      "questions": [
+        "Which capability bottlenecks recur across trajectories and task families?",
+        "Which successes are fragile or low quality?",
+        "Which prior NO-GO route must not be repeated?"
+      ]
+    },
+    {
+      "layer_id": "L2_CANDIDATE_RESEARCH_PORTFOLIO",
+      "questions": [
+        "What candidate bottlenecks are plausible?",
+        "What evidence and counterevidence supports each?",
+        "Which candidate is selected, rejected, or deferred and why?"
+      ]
+    },
+    {
+      "layer_id": "L3_CAUSAL_EXPERIMENT_DESIGN",
+      "questions": [
+        "What is the single falsifiable hypothesis?",
+        "What is the single principal change?",
+        "What baseline, intervention, fixed variables, sample, budgets, and stop rule isolate it?"
+      ]
+    },
+    {
+      "layer_id": "L4_TRAINING_SIGNAL_AND_OBJECTIVE",
+      "questions": [
+        "What verified evidence would become positive, negative, excluded, or unresolved training data?",
+        "Which existing trainer assets are reused?",
+        "What training comparison is fair under fixed budget?"
+      ]
+    },
+    {
+      "layer_id": "L5_EVALUATION_AND_PROMOTION",
+      "questions": [
+        "What is the primary endpoint?",
+        "What regression, family, behavior, cost, and uncertainty diagnostics are required?",
+        "What result supports, refutes, holds, promotes, or rolls back?"
+      ]
+    }
+  ],
+  "human_role": "BOOTSTRAP_REFERENCE_PRIMARY_FOR_PI1_TO_PI2",
+  "memory_authority": "HISTORICAL_SUBSTRATE_ONLY",
+  "promotion_authority": "INDEPENDENT_PROMOTION_ROLLBACK_GATE",
+  "schema_id": "RESEARCH_PLANNER_PARADIGM_V1",
+  "strong_model_transition": {
+    "reference_round_role": "PRE_POST_SHADOW_BLIND_TO_CURRENT_HUMAN_RECORD",
+    "eligible_primary_role": "FRESH_ROUND_AFTER_REFERENCE_AND_QUALITY_GATES",
+    "permanent_role": "TEMPORARY_TEACHER_SHADOW_AUDIT"
+  },
+  "verifier_authority": "BENEFIT_HARM_NEUTRAL_UNCERTAIN_ONLY"
+}

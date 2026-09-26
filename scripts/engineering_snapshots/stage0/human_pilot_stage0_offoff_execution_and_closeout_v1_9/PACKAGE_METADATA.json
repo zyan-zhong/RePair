@@ -1,0 +1,60 @@
+{
+  "explicit_execution_approval_token": "APPROVE_HUMAN_PILOT_STAGE0_OFFOFF_V1",
+  "generic_fixed_head_review_sha256": "842d6e6549ab2de8e9b29ab30fddcd6d34f0d4c5d15436d4360f1a43e30fc4fe",
+  "package_id": "HUMAN_PILOT_STAGE0_OFFOFF_EXECUTION_AND_CLOSEOUT_V1_9",
+  "paired_cell_count": 85,
+  "paper_efficacy_evidence": false,
+  "patch_release": {
+    "attempt_ordinal_recovery_preserved": true,
+    "candidate_a001_expected_recovery_mode": "RELOAD_PUBLISHED_ATTEMPT_AND_APPEND_MISSING_CELL_RECEIPT",
+    "candidate_a001_started_receipt_observed": true,
+    "candidate_a001_terminal_receipt_observed": true,
+    "candidate_cell_receipt_count_before_patch": 0,
+    "candidate_scientific_cell_lock_observed": true,
+    "failed_slurm_job_id": "152173",
+    "from_package_id": "HUMAN_PILOT_STAGE0_OFFOFF_EXECUTION_AND_CLOSEOUT_V1_8",
+    "generic_select_artifact_patch_preserved": true,
+    "model_identity_changed": false,
+    "new_authorization_root": "authorization_v1_9",
+    "new_preflight_root": "preflight_v1_9",
+    "parent_cell_receipt_count_before_patch": 1,
+    "promotion_semantics_changed": false,
+    "reason": "POST_PUBLICATION_ATTEMPT_DIRECTORY_BINDING_FIX",
+    "root_cause": "NEW_ATTEMPT_PATH_WAS_NOT_BOUND_BEFORE_POST_PUBLICATION_RELOAD_AUDIT",
+    "scientific_protocol_changed": false,
+    "task_grid_changed": false,
+    "training_changed": false
+  },
+  "promotion_eligible": false,
+  "replicate_seeds": [
+    17,
+    31,
+    47,
+    73,
+    101
+  ],
+  "repository_commit_created": false,
+  "repository_push_executed": false,
+  "resumption_policy": {
+    "completed_cell_receipts_reused": true,
+    "planned_time_boundary_only_between_matched_pairs": true,
+    "unexpected_mid_cell_crash_requires_artifact_audit": true
+  },
+  "round_role": "PILOT_ENGINEERING_ROUND_V1",
+  "schema_id": "HUMAN_PILOT_STAGE0_PACKAGE_METADATA_V1",
+  "schema_version": 1,
+  "select_task_count": 17,
+  "slurm": {
+    "explicit_cpu_request": false,
+    "explicit_memory_request": false,
+    "gpus": 1,
+    "graceful_stop_after_seconds": 1800,
+    "graceful_stop_reserve_seconds": 900,
+    "partition": "gpu_a800",
+    "time_limit": "00:45:00"
+  },
+  "source_head": "daef26b9cde45182ada534d96335da3ea451f12f",
+  "task_access_manifest_sha256": "5b8859a50478601cc054423af88fb57f5c31d95b96aeb67ab528987274eb9718",
+  "total_condition_cell_count": 170,
+  "twin_review_sha256": "bdbd56c6a5132026f5429b5aa2a46e6907e733f1e8be80b8021f8ee445dad569"
+}

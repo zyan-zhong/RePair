@@ -1,0 +1,22 @@
+\begin{table}[H]
+\caption{\textbf{Unseen ALFWorld reference results.} Success (\%) on 134 games using seed 17. All is task-weighted. These seven reference models use the shared task and environment protocol with model-specific inference settings. They provide task context, not a matched comparison with RePair; its final benchmark evaluation remains incomplete.}
+\label{tab:main}
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\linewidth}{@{}Xrrrrrrr@{}}
+\toprule
+Method & Pick & Clean & Cool & Look & Heat & Pick2 & All\\
+\midrule
+GPT 5.6 sol high & \res{bench-unseen-strong-pick} & \res{bench-unseen-strong-clean} & \res{bench-unseen-strong-cool} & \res{bench-unseen-strong-look} & \res{bench-unseen-strong-heat} & \res{bench-unseen-strong-pick2} & \res{bench-unseen-strong-all}\\
+\midrule
+Qwen2.5-3B-Instruct (base model) & \res{bench-unseen-base-pick} & \res{bench-unseen-base-clean} & \res{bench-unseen-base-cool} & \res{bench-unseen-base-look} & \res{bench-unseen-base-heat} & \res{bench-unseen-base-pick2} & \res{bench-unseen-base-all}\\
+\midrule
+SkillRL & \res{bench-unseen-skillrl-pick} & \res{bench-unseen-skillrl-clean} & \res{bench-unseen-skillrl-cool} & \res{bench-unseen-skillrl-look} & \res{bench-unseen-skillrl-heat} & \res{bench-unseen-skillrl-pick2} & \res{bench-unseen-skillrl-all}\\
+GiGPO & \res{bench-unseen-gigpo-pick} & \res{bench-unseen-gigpo-clean} & \res{bench-unseen-gigpo-cool} & \res{bench-unseen-gigpo-look} & \res{bench-unseen-gigpo-heat} & \res{bench-unseen-gigpo-pick2} & \res{bench-unseen-gigpo-all}\\
+SEED & \res{bench-unseen-seed-pick} & \res{bench-unseen-seed-clean} & \res{bench-unseen-seed-cool} & \res{bench-unseen-seed-look} & \res{bench-unseen-seed-heat} & \res{bench-unseen-seed-pick2} & \res{bench-unseen-seed-all}\\
+Agent\_G2 & \res{bench-unseen-agentg2-pick} & \res{bench-unseen-agentg2-clean} & \res{bench-unseen-agentg2-cool} & \res{bench-unseen-agentg2-look} & \res{bench-unseen-agentg2-heat} & \res{bench-unseen-agentg2-pick2} & \res{bench-unseen-agentg2-all}\\
+OPID & \res{bench-unseen-opid-pick} & \res{bench-unseen-opid-clean} & \res{bench-unseen-opid-cool} & \res{bench-unseen-opid-look} & \res{bench-unseen-opid-heat} & \res{bench-unseen-opid-pick2} & \res{bench-unseen-opid-all}\\
+\bottomrule
+\end{tabularx}
+\end{table}

@@ -1,0 +1,95 @@
+{
+  "a0_request_count": 30,
+  "a1_request_count": 30,
+  "base_head": "2634bd105b6c4ea94942d6def8d02cbf811fb5d8",
+  "benchmark_reference_count": 0,
+  "environment_call_count": 0,
+  "independent_rendered_request_file_count": 244,
+  "local_shadow_execution_authorized": false,
+  "local_training_execution_authorized": false,
+  "model_call_count": 0,
+  "next_gate": "EXECUTE_STRONG_ANALYZER_WAVE1_AND_PLANNER_PRE_TEACHER_COLLECTION",
+  "old_r0_reference_count": 0,
+  "pilot_semantic_reference_count": 0,
+  "planner_post_environment_source_audit": {
+    "candidate_count": 4,
+    "candidates": [
+      {
+        "environment_result_package_sha256": "4366c3f5797dfdcaf74dfb8c2cf1562f615fd48c363e3dfc1aa838814585f247",
+        "file_sha256": "6c3afe075e884a0425ef7c9af57c5285b8eae049eedaab3b7bcf8f203bb23b37",
+        "schema_id": "ENVIRONMENT_RESULT_PACKAGE_V1",
+        "source_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage3x_registered_post_v1/1099e3a418f99b5d6677a9b661d29282f2dafd8df6b054b8d80b53e441de55fb/COMMON_POST_INPUT.json"
+      },
+      {
+        "environment_result_package_sha256": "4366c3f5797dfdcaf74dfb8c2cf1562f615fd48c363e3dfc1aa838814585f247",
+        "file_sha256": "afcfc2872a6966d94f9ad6cdb68024ff326f62583393a87332f82a2b6f13911a",
+        "schema_id": "ENVIRONMENT_RESULT_PACKAGE_V1",
+        "source_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage3x_registered_post_v1/1099e3a418f99b5d6677a9b661d29282f2dafd8df6b054b8d80b53e441de55fb/ENVIRONMENT_RESULT_PACKAGE_V1.json"
+      },
+      {
+        "environment_result_package_sha256": "4366c3f5797dfdcaf74dfb8c2cf1562f615fd48c363e3dfc1aa838814585f247",
+        "file_sha256": "439a8394a3afe981b987e689ad1e91b6f96db0e6cb873bc6e0f1dc3cdaa7ab9e",
+        "schema_id": "ENVIRONMENT_RESULT_PACKAGE_V1",
+        "source_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage3x_registered_post_v1/1099e3a418f99b5d6677a9b661d29282f2dafd8df6b054b8d80b53e441de55fb/STRONG_POST_RENDERED_REQUEST.json"
+      },
+      {
+        "environment_result_package_sha256": "4366c3f5797dfdcaf74dfb8c2cf1562f615fd48c363e3dfc1aa838814585f247",
+        "file_sha256": "439a8394a3afe981b987e689ad1e91b6f96db0e6cb873bc6e0f1dc3cdaa7ab9e",
+        "schema_id": "ENVIRONMENT_RESULT_PACKAGE_V1",
+        "source_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage3x_registered_post_v1/1099e3a418f99b5d6677a9b661d29282f2dafd8df6b054b8d80b53e441de55fb/strong_calls/fa8204c0a619f9ddd783c2e97e1ad41b4ffd0e16e54473229f3fd430c98dd936/rendered_request.json"
+      }
+    ],
+    "expected_environment_result_package_sha256": "4366c3f5797dfdcaf74dfb8c2cf1562f615fd48c363e3dfc1aa838814585f247",
+    "source_ready": true
+  },
+  "planner_post_source_ready_after_pre": true,
+  "planner_pre_teacher_source_ready": true,
+  "previous_u_reg_identity_counts": {
+    "attempt_bundle_sha256": 30,
+    "episode_semantic_sha256": 30,
+    "execution_attempt_id": 30,
+    "gamefile_sha256": 30,
+    "scientific_cell_id": 30,
+    "source_state_sha256": 0,
+    "source_unit_id": 30,
+    "task_id": 30
+  },
+  "provider_exposure_identity_counts": {
+    "attempt_bundle_sha256": 30,
+    "episode_semantic_sha256": 0,
+    "execution_attempt_id": 30,
+    "gamefile_sha256": 30,
+    "scientific_cell_id": 0,
+    "source_state_sha256": 84,
+    "source_unit_id": 30,
+    "task_id": 30
+  },
+  "request_body_sha_unique_count": 60,
+  "round_id": "CLEAN-HUMAN-REFERENCE-R1-PI0",
+  "runtime_one_scientific_unit_per_request": true,
+  "runtime_reasoning_effort": "high",
+  "runtime_requested_model": "gpt-5.6-sol",
+  "runtime_sdk_automatic_retries": 0,
+  "schema_id": "STRONG_TEACHER_WAVE1_FIXED_HEAD_AUDIT_V1",
+  "schema_version": 1,
+  "selected_source_state_count": 30,
+  "selected_state_provider_exposure_failure_count": 0,
+  "source_campaign_sha256": "138d8efe23a6e5eb1a8229ebe562d7688d562a42f346a8580b3bff803f7a4ef1",
+  "stage6e_authority_path": "docs/project/strong_primary_takeover_v1/stage6e/STRONG_ROLE_SUPERVISION_PREPARATION_AUTHORITY_V1.json",
+  "stage6e_control_root": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage6e_fresh_train_only_strong_role_supervision_preparation_v1/42587858ba1b60903af70cc393e5ef0d4fd3b570",
+  "status": "STRONG_TEACHER_WAVE1_FIXED_HEAD_AUDIT_PASS",
+  "strong_analyzer_wave1_execution_authorized": true,
+  "strong_planner_post_teacher_execution_authorized": false,
+  "strong_planner_pre_teacher_execution_authorized": true,
+  "strong_primary_execution_authorized": false,
+  "task_access_audit_count": 60,
+  "training_execution_count": 0,
+  "verified_stage6e_authority_hashes": {
+    "planner_replay_readiness_sha256": "ccfbcb8e779179efc6a5119e68bc387ccebe441910a6ef4211a306b68f53fe2f",
+    "preparation_receipt_sha256": "8ec28d591fe386240a336c70745d66dc6c98b12b192ee171cf43f6a610ac8ccc",
+    "provider_exposure_census_sha256": "4fedc618e2bb9746fb6f918a2ee3f7ba5eacaff1f45620fe3e49851b67a52d70",
+    "request_plan_sha256": "d308743a633004293f2696ef7d858e308868f2d4a572432e3ff3a65812e57f33"
+  },
+  "wave1_memory_off": true,
+  "wave1_request_count": 60
+}

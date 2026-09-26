@@ -1,0 +1,18 @@
+{
+  "binding_mode": "PROFILE_ID_PLUS_SCHEMA_SHA_PLUS_HISTORICAL_I1_TRAINER_PROVENANCE",
+  "binding_sha256": "2bf6382dd55eacfffcb4bf204459e2763547d92c2af35d9abcb8baed03ebed9d",
+  "execution_profile_sha256_invented": false,
+  "historical_execution_profile_sha256": null,
+  "historical_execution_profile_sha256_status": "NO_EXACT_PROFILE_SHA_MATERIALIZED",
+  "interface_profile_id": "I1_EXECUTION_PROFILE_V1",
+  "interface_profile_schema_sha256": "ddca85be85528f1720614e9bfad1fd599f975737a43c51da130a402b312cce6a",
+  "new_execution_profile_created": false,
+  "round_id": "CLEAN-HUMAN-REFERENCE-R1-PI0",
+  "schema_id": "LOCAL_RI_I1_TRAINING_BINDING_V1",
+  "schema_version": 1,
+  "stage4a_candidate_handoff_file_sha256": "12843e82af08c1340e043440a658c1cc852322a4c1c0758eec64e7d86a7fd7ff",
+  "stage4a_candidate_handoff_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4a_clean_existing_trainer_v1/1711c5fbc6431f3bd59bda066011ab265837aecfcaf827b073f6a4754ec2f692/CANDIDATE_HANDOFF.json",
+  "stage4a_training_binding_file_sha256": "6985f3ec970d1b3ce981295c9bca0da2f12e1699333876294c34ac06f4b6d8da",
+  "stage4a_training_binding_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4a_clean_existing_trainer_v1/1711c5fbc6431f3bd59bda066011ab265837aecfcaf827b073f6a4754ec2f692/TRAINING_STAGE_BINDING.json",
+  "stage6l_i1_audit_sha256": "0df1fd5a87b08d896b57f40f779a13b753f24e8cfabff54c86c4ee4dbf6ff10e"
+}

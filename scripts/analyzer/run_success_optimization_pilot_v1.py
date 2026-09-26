@@ -1,0 +1,2 @@
+#!/usr/bin/env python3
+raise SystemExit("SUCCESS_QUALITY_PILOT_LIVE_EXECUTION_NOT_AUTHORIZED")

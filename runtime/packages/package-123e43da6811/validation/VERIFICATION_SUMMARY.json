@@ -1,0 +1,19 @@
+{
+  "schema_id": "CURRENT_ENTRY_VERIFICATION_SUMMARY_V1",
+  "tested_source_manifest_sha256": "601d6f78c31b6b32167fcd13f0a4b2da75ea8448f7df89e9ef51ae7f23626685",
+  "windows_passed": 293,
+  "windows_posix_only_deselected": 8,
+  "linux_passed": 301,
+  "linux_failed": 0,
+  "server_exact_preflight_returncode": 1,
+  "server_preflight_blocker": "FORMAL_PROMOTION_RULE_MATERIALIZATION_MISSING",
+  "scientific_slurm_submission_count": 0,
+  "optimizer_execution_count": 0,
+  "formal_valid_rounds_completed_by_this_work": 0,
+  "production_launch_ready": false,
+  "execution_python_source_count": 94,
+  "execution_python_bytes_match_tested_snapshot": true,
+  "production_git_mutation_count": 0,
+  "fixture_git_metadata_mutations_present": true,
+  "tests_do_not_prove_live_campaign": true
+}

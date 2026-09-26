@@ -1,0 +1,350 @@
+{
+  "schema_id": "FORMAL_V18_ACTUAL_EXECUTION_RECONCILIATION_V1",
+  "delivery_zip": {
+    "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\outputs\\PCHSI_FORMAL_MAX10_V1_8_SUCCESS_GAIN_ENTRY.zip",
+    "sha256": "a7546444673e18355fef94bbe2f92bf3e496c7f71da732623b923f35ee0edd01",
+    "bytes": 33560077
+  },
+  "deployed_manifest_sha256": "3b0bc4c483d893d53126c4b6abc1e0d560d05449737c594642ae78635d514410",
+  "server_validation": {
+    "schema_id": "ACTUAL_SERVER_CURRENT_ENTRY_CPU_VALIDATION_V1",
+    "host": "ln02",
+    "package_manifest_sha256": "3b0bc4c483d893d53126c4b6abc1e0d560d05449737c594642ae78635d514410",
+    "source_root": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/formal_max10_v18_validation/3b0bc4c483d893d53126c4b6abc1e0d560d05449737c594642ae78635d514410/package",
+    "validation_root": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/formal_max10_v18_validation/3b0bc4c483d893d53126c4b6abc1e0d560d05449737c594642ae78635d514410/validation_ln02",
+    "records": [
+      {
+        "stage": "software_fixtures",
+        "returncode": 0,
+        "elapsed_seconds": 389.2440869808197,
+        "stdout_sha256": "e769fcf9250511446bb359937417edd21a7ed381bf0ead99601be220aa7fbf11",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "stage": "exact_server_preflight",
+        "returncode": 0,
+        "elapsed_seconds": 59.00723719596863,
+        "stdout_sha256": "971576b0f85b71fdcc44dd1db993f4a55250cb693796b7686d12351874a20478",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "provider_call_count": 0,
+    "slurm_submission_count": 0,
+    "training_execution_count": 0,
+    "production_launch_claimed": false,
+    "production_server_git_mutation_count": 0,
+    "remote_repository_mutation_count": 0,
+    "server_temporary_fixture_git_mutations_present": true,
+    "isolated_validation_files_written": true,
+    "host_authority": {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\server_current_entry_validation\\601d6f78c31b6b32167fcd13f0a4b2da75ea8448f7df89e9ef51ae7f23626685\\VALIDATION_RECEIPT.json",
+      "sha256": "ba796e11ea7d4a0114d0292140c8d34951e59782e1fc4f9b1605ad8405d71ded"
+    }
+  },
+  "software_test_groups_passed": [
+    75,
+    164,
+    29
+  ],
+  "software_tests_passed_total": 268,
+  "fresh_unzip": {
+    "schema_id": "PCHSI_V18_FRESH_UNZIP_VERIFICATION_V1",
+    "archive_path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\outputs\\PCHSI_FORMAL_MAX10_V1_8_SUCCESS_GAIN_ENTRY.zip",
+    "archive_sha256": "a7546444673e18355fef94bbe2f92bf3e496c7f71da732623b923f35ee0edd01",
+    "extracted_root": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v18\\fresh_unzip\\a7546444673e18355fef94bbe2f92bf3e496c7f71da732623b923f35ee0edd01\\with_native_fixture\\MAX10_V1_8_SUCCESS_GAIN_ENTRY",
+    "records": [
+      {
+        "name": "package_identity",
+        "returncode": 0,
+        "stdout_sha256": "8b8b2e4533b7bdee80878571d2f75b1c73d1a439a6eb8c3ef1bebb2477f68ca5",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "rule_and_registration",
+        "returncode": 0,
+        "stdout_sha256": "b11f7aeaaae1b647821b86c2b544dbe28acd7e22415e0b1d22ce057d807312d4",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "passed": true,
+    "prior_missing_fixture_attempt_receipt": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v18\\fresh_unzip\\a7546444673e18355fef94bbe2f92bf3e496c7f71da732623b923f35ee0edd01\\RECEIPT.json",
+    "scientific_execution_started": false,
+    "git_operation_count": 0
+  },
+  "validation_host_recovery": {
+    "first_host": "ln01",
+    "first_attempt_abort_record": {
+      "schema_id": "OWNED_CPU_VALIDATION_STORAGE_WAIT_ABORT_V1",
+      "host": "ln01",
+      "observed_utc": "2026-09-24T07:56:14.104702+00:00",
+      "reason": "registered CPU test child observed D ceph_mdsc_wait_request for multiple observations; switch to historical successful validation host ln02",
+      "processes": [
+        {
+          "pid": 2702140,
+          "signal": "SIGTERM",
+          "termination_requested": true
+        },
+        {
+          "pid": 2627744,
+          "signal": "SIGTERM",
+          "termination_requested": true
+        },
+        {
+          "pid": 2627449,
+          "signal": "SIGTERM",
+          "termination_requested": true
+        }
+      ],
+      "scientific_jobs_terminated": 0,
+      "process_exit_not_inferred_from_signal": true
+    },
+    "observed_first_host_worker_state": "D ceph_mdsc_wait_request",
+    "cause_inferred": false,
+    "termination_completion_inferred_from_signal": false,
+    "reused_previously_registered_successful_host": "ln02",
+    "scientific_job_cancelled_for_this_validation_recovery": false
+  },
+  "one_command_launch": {
+    "schema_id": "ACTUAL_FORMAL_ONE_COMMAND_INVOCATION_V1",
+    "host": "ln02",
+    "observed_utc": "2026-09-24T08:10:41.620877+00:00",
+    "package_manifest_sha256": "3b0bc4c483d893d53126c4b6abc1e0d560d05449737c594642ae78635d514410",
+    "source_root": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/formal_max10_v18_validation/3b0bc4c483d893d53126c4b6abc1e0d560d05449737c594642ae78635d514410/package",
+    "returncode": 0,
+    "elapsed_seconds": 94.99580192565918,
+    "launch": {
+      "argv": [
+        "/data/home/scwb204/run/sdar_repro/conda_envs/sdar_sft_py312/bin/python",
+        "-B",
+        "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/formal_max10_v18_validation/3b0bc4c483d893d53126c4b6abc1e0d560d05449737c594642ae78635d514410/package/entry/main.py",
+        "--run"
+      ],
+      "entry_source_sha256": "3b0bc4c483d893d53126c4b6abc1e0d560d05449737c594642ae78635d514410",
+      "log_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/launch_receipts/a1e7fef06ddf461abef0734d2561bfc9/resident.log",
+      "owner_root": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner",
+      "pid": 854791,
+      "schema_id": "FORMAL_RESIDENT_PROCESS_LAUNCHED_V1",
+      "scientific_training_started_claimed": false
+    },
+    "stdout_ref": {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/formal_max10_v18_validation/3b0bc4c483d893d53126c4b6abc1e0d560d05449737c594642ae78635d514410/one_command.stdout.log",
+      "sha256": "dd3723d64d74308530f612b2265fe539e28699864b2bc069ba2da682abfcff5f"
+    },
+    "stderr_ref": {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/formal_max10_v18_validation/3b0bc4c483d893d53126c4b6abc1e0d560d05449737c594642ae78635d514410/one_command.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "scientific_optimizer_execution_claimed": false
+  },
+  "resident_observation": {
+    "schema_id": "RECEIPT_OWNED_RESIDENT_OBSERVATION_V1",
+    "observed_utc": "2026-09-24T08:13:23.768617+00:00",
+    "host": "ln02",
+    "pid": 854791,
+    "process_exists": false,
+    "process_argv": [],
+    "expected_argv": [
+      "/data/home/scwb204/run/sdar_repro/conda_envs/sdar_sft_py312/bin/python",
+      "-B",
+      "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/formal_max10_v18_validation/3b0bc4c483d893d53126c4b6abc1e0d560d05449737c594642ae78635d514410/package/entry/main.py",
+      "--run"
+    ],
+    "process_identity_matches": false,
+    "process_state": "    PID    PPID STAT     ELAPSED     TIME WCHAN\n",
+    "rows": [
+      {
+        "name": "resident.log",
+        "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/launch_receipts/a1e7fef06ddf461abef0734d2561bfc9/resident.log",
+        "present": true,
+        "bytes": 1859,
+        "sha256": "94c66953cc2fce0d022de43162fd76d61cdf19e2d930830561ae27198cff6d0e",
+        "local_path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v18\\server_current_entry_validation\\3b0bc4c483d893d53126c4b6abc1e0d560d05449737c594642ae78635d514410\\observations\\20260924T081324266206Z\\resident.log"
+      },
+      {
+        "name": "OWNER_BINDING.json",
+        "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/OWNER_BINDING.json",
+        "present": true,
+        "bytes": 2042,
+        "sha256": "ee8b6de571ebec517e98f9a7ef866b35fe195434a16dbb24f748b40603d5dd8f",
+        "local_path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v18\\server_current_entry_validation\\3b0bc4c483d893d53126c4b6abc1e0d560d05449737c594642ae78635d514410\\observations\\20260924T081324266206Z\\OWNER_BINDING.json"
+      },
+      {
+        "name": "CAMPAIGN_TERMINAL.json",
+        "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/CAMPAIGN_TERMINAL.json",
+        "present": false
+      },
+      {
+        "name": "attempts/000001/INTENT.json",
+        "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/attempts/000001/INTENT.json",
+        "present": true,
+        "bytes": 1522,
+        "sha256": "20852c86dd0e1980152004a09dfcec613dcf31aaca2e15f976fb1e787ce542e4",
+        "local_path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v18\\server_current_entry_validation\\3b0bc4c483d893d53126c4b6abc1e0d560d05449737c594642ae78635d514410\\observations\\20260924T081324266206Z\\attempts\\000001\\INTENT.json"
+      },
+      {
+        "name": "attempts/000001/RESULT.json",
+        "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/attempts/000001/RESULT.json",
+        "present": false
+      },
+      {
+        "name": "attempts/000001/rollout/MATERIALIZED_ROLLOUT.json",
+        "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/attempts/000001/rollout/MATERIALIZED_ROLLOUT.json",
+        "present": true,
+        "bytes": 12040,
+        "sha256": "16c04a048531f6c9a0e972af19a6f4e73e0f467784095c9f378096524b6067ce",
+        "local_path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v18\\server_current_entry_validation\\3b0bc4c483d893d53126c4b6abc1e0d560d05449737c594642ae78635d514410\\observations\\20260924T081324266206Z\\attempts\\000001\\rollout\\MATERIALIZED_ROLLOUT.json"
+      },
+      {
+        "name": "attempts/000001/rollout/SUBMISSION_RECEIPT.json",
+        "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/attempts/000001/rollout/SUBMISSION_RECEIPT.json",
+        "present": false
+      },
+      {
+        "name": "attempts/000001/rollout/RESIDENT_ROLLOUT_OPERATIONAL_STOP.json",
+        "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/attempts/000001/rollout/RESIDENT_ROLLOUT_OPERATIONAL_STOP.json",
+        "present": true,
+        "bytes": 1607,
+        "sha256": "ab75a2ab20b2587c4ec8dc8a6e3687ef86e763741e702a2c7e8c6b24fdca7fdc",
+        "local_path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v18\\server_current_entry_validation\\3b0bc4c483d893d53126c4b6abc1e0d560d05449737c594642ae78635d514410\\observations\\20260924T081324266206Z\\attempts\\000001\\rollout\\RESIDENT_ROLLOUT_OPERATIONAL_STOP.json"
+      },
+      {
+        "name": "attempts/000001/rollout/RESIDENT_ROLLOUT_CONTAINMENT.json",
+        "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/attempts/000001/rollout/RESIDENT_ROLLOUT_CONTAINMENT.json",
+        "present": false
+      }
+    ],
+    "filesystem_discovery_used": false,
+    "scientific_optimizer_execution_claimed": false,
+    "actual_state": "RESIDENT_STOPPED_NATIVE_PREFLIGHT_FAILED_BEFORE_SUBMISSION",
+    "error": "MEMORY_REFERENCE_CHANGED:token_budget_contract",
+    "optimizer_execution_observed": false
+  },
+  "historical_recheck": {
+    "schema_id": "V18_FULL_LEDGER_AND_FROZEN_AUTHORITY_RECHECK_V1",
+    "ledger": {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\outputs\\MAX10_V1_8_SUCCESS_GAIN_ENTRY\\ledger\\PCHSI_CANONICAL_STATUS_20260924_FORMAL_MAX10_V1_8_SUCCESS_GAIN_MATERIALIZED_FULL.md",
+      "sha256": "2e04f46d5cd3a0662c9fe3fb3e62d83f6ddc866dca6b055843a3b87bcb196100",
+      "full_bytes_read": 4680411,
+      "full_line_count": 167725
+    },
+    "method": "Full byte/prefix validation and all-line indexed historical-anchor reconciliation; no claim of live scientific completion.",
+    "historical_anchors": {
+      "aggregate_only_research_access": [
+        37153,
+        37819,
+        37838,
+        43388,
+        167652
+      ],
+      "per_task_select_forbidden": [
+        43386
+      ],
+      "benchmark_feedback_forbidden": [
+        43385,
+        143450
+      ],
+      "no_human_fallback": [
+        42127,
+        43383
+      ],
+      "same_round_memory_exclusion": [
+        76878
+      ],
+      "registered_scientific_commit": [
+        163244,
+        163247,
+        163321,
+        163324,
+        163413,
+        163611,
+        163862,
+        164031,
+        164125,
+        164493,
+        164568,
+        164663,
+        164718,
+        165017,
+        165095,
+        165170,
+        165197,
+        165359,
+        165451,
+        165471,
+        165650,
+        167385,
+        167416
+      ],
+      "prior_secondary_pending_superseded": [
+        167649
+      ],
+      "current_user_no_auxiliary_thresholds": [
+        167648
+      ]
+    },
+    "previous_v17_and_paper_reconciliation_prefixes_identical": true,
+    "historical_pending_rule_materialized": true,
+    "auxiliary_research_summary_reuses_existing_slot": true,
+    "native_scientific_pipeline_replaced": false,
+    "final_134_140_benchmark_feedback_authorized": false,
+    "original_update_select_audit_counts": [
+      2843,
+      355,
+      355
+    ],
+    "canary_formal_denominator_contribution": 0,
+    "native_max_valid_rounds": 10,
+    "native_no_promotion_patience": 3,
+    "native_max_infrastructure_attempt_restarts": 2,
+    "native_force_run_all_rounds": false,
+    "scientific_scope_drift_detected": false,
+    "authority_location_policy_unchanged": true
+  },
+  "optimizer_execution_inferred_from_tests_launch_or_rollout": false,
+  "rule": {
+    "schema_id": "FROZEN_TRAIN_SELECT_PROMOTION_RULE_V1",
+    "frozen_before_outcomes": true,
+    "evidence_access_class": "TRAIN_SELECT",
+    "decision_rule_id": "FORMAL_REGISTERED_SELECT_STRICT_SUCCESS_GAIN_V1",
+    "primary_metric": "total_success_cells",
+    "comparison": "strictly_greater",
+    "secondary_metrics_role": "explanation_only",
+    "expected_task_count": 355,
+    "replicate_seeds": [
+      17,
+      31,
+      47,
+      73,
+      101
+    ],
+    "registered_select_task_access_sha256": "1672e85beba262fee1b0f572163339dd7343932288043d16e4f35f41f9926787",
+    "source_training_select_manifest": {
+      "expected_count": 355,
+      "logical_name": "TRAIN_SELECT",
+      "path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/stage2_clean_train_bootstrap_v1_output/stage2b/TRAIN_SELECT_MANIFEST_V1.jsonl",
+      "retention_class": "SCIENTIFIC_CONFIG",
+      "schema_id": "ALFWORLD_CLEAN_TRAIN_TASK_RECORD_V1",
+      "sha256": "b68f00cf164f0fa38df3506daf1a909a41f972b4b09a4610841a27c2de254400"
+    },
+    "scientific_authority": {
+      "member": "authority/USER_PROMOTION_AUTHORITY.json",
+      "sha256": "db360c5529026c468c9f0d143bb02dac3b4bd8c07398cb0b10a601c4a4336ee2"
+    },
+    "decision_producer": {
+      "source_member": "offoff_binding/promotion_rule.py",
+      "sha256": "e42158c589e7036385dcefdb1c72d705a430b47f35c54495607cf7772c05aa5d",
+      "entrypoint": "decide"
+    },
+    "no_train_retains_parent": true,
+    "incomplete_or_invalid_evidence_is_not_scientific_rollback": true,
+    "minimum_percentage_point_gain": null,
+    "confidence_interval_gate": null,
+    "secondary_metric_numeric_gates": []
+  },
+  "git_scope": {
+    "staging_only": true,
+    "production_checkout_or_index_mutations": 0,
+    "remote_commit_or_push": 0,
+    "server_temporary_test_fixture_git_metadata_mutations_present": true
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "current_optimizer_step_count": 3,
+  "current_profile_id": "HUMAN_T2_UNVERIFIED_REPAIR_DIAGNOSTIC_PROFILE_V1",
+  "current_round_id": "HUMAN_REFERENCE_ROUND_PI1_PI2_V1",
+  "current_target_loss_token_count": 151,
+  "external_authorization_required": true,
+  "files": [
+    {
+      "path": "FIXED_HEAD_REVIEW_FINDINGS_V1.md",
+      "sha256": "ff400a46bbd371e542eafd650c9fb232643a2e1b19c14505615e9462bf4c0e4b",
+      "size": 1024
+    },
+    {
+      "path": "RUN_BUILD_REVIEW.sh",
+      "sha256": "f9e2cad6be74f96dc33f8833d99755c8f4fafd55cf7bc2481c2b287ef685819c",
+      "size": 784
+    },
+    {
+      "path": "build_review.py",
+      "sha256": "986acea54e4b551dbb46b566b41080e5fe28db418d4fe7b3b5620329c51f9235",
+      "size": 4885
+    },
+    {
+      "path": "profiles/human_reference_t2/ROUND_LOCAL_TRAINING_CONTRACT_V1.json",
+      "sha256": "d23339bc42f665f88bf4156550a030f5950b75d9d8bf813825a58627830ccf31",
+      "size": 7677
+    },
+    {
+      "path": "profiles/human_reference_t2/ROUND_SAMPLE_ORDER_MANIFEST_V1.json",
+      "sha256": "524554a8ee0c4eea9f2d4919a178698cb647b4d86189cb437b3f4e35ffe2d940",
+      "size": 5099
+    },
+    {
+      "path": "profiles/human_reference_t2/ROUND_TRAINING_EXECUTION_AUTHORIZATION_TEMPLATE_V1.json",
+      "sha256": "a88e02a195f5aabc140d26a35c5a339fbeb4f1bd8b927047ee306bdd7da3b3d9",
+      "size": 777
+    },
+    {
+      "path": "profiles/human_reference_t2/ROUND_TRAINING_MODEL_INITIALIZATION_SMOKE_REQUEST_V1.json",
+      "sha256": "1a5c8cefeebc66f0972b4c6623c50b47fbf340bec8d62460cf9e12b03faed50f",
+      "size": 648
+    },
+    {
+      "path": "profiles/human_reference_t2/ROUND_TRAINING_STAGE_BINDING_V1.json",
+      "sha256": "3c4b9954e5feea8ef7f682c2df1328f4413f7e4e2e650ce61aea91d8602e379a",
+      "size": 2841
+    },
+    {
+      "path": "profiles/human_reference_t2/TRAINER_ROLE_BINDING_V1.json",
+      "sha256": "0d5d74d2e5d5294dfbe665524328beac402d74ee286c2c19ccde984efe2d3989",
+      "size": 767
+    },
+    {
+      "path": "round_training/__init__.py",
+      "sha256": "bce33bb052f12881246ebc09f735b80569f22abdc926e236cf3b27a042b1768b",
+      "size": 58
+    },
+    {
+      "path": "round_training/adapters/__init__.py",
+      "sha256": "1521936a899b3848756b69ceb74ed80cab74888df647be298b7a86a14d7978b3",
+      "size": 61
+    },
+    {
+      "path": "round_training/adapters/frozen_formal_train_peft.py",
+      "sha256": "166dbaff3845588ff53f0a4306d7116b59ac0026f4de191cf8bb696e9d38a327",
+      "size": 28970
+    },
+    {
+      "path": "round_training/common.py",
+      "sha256": "06cfd297357c804b8512cad5889fe47c53cfadbd3d2b9b68579160784836c03f",
+      "size": 3052
+    },
+    {
+      "path": "round_training/contracts.py",
+      "sha256": "6b4d29d999fbc113d8945baff30eef8308d66b61266592c48e8f410f72ce66d2",
+      "size": 17735
+    },
+    {
+      "path": "round_training/receipts.py",
+      "sha256": "e09688d37cb9a5e8c4aeb8c4442f96f713c02143ae7f9ecd54db037479eec379",
+      "size": 4228
+    },
+    {
+      "path": "round_training/stage_runner.py",
+      "sha256": "42f657bf9bc7b796bfe02612dd1a4d13d8896f0bcbdb69db9fa23cec71a961e1",
+      "size": 11869
+    },
+    {
+      "path": "tests/test_adapter_capabilities.py",
+      "sha256": "8dd96de0a1e7037c095e89ac8a227e7c1bd9141fb814d3bb108379cda93019a1",
+      "size": 2964
+    },
+    {
+      "path": "tests/test_authorization_paths.py",
+      "sha256": "5b0c08c6433680981338c564d501f2698d8fbf4e9e5cdd63f262fa2522fad707",
+      "size": 3910
+    },
+    {
+      "path": "tests/test_current_profile_server.py",
+      "sha256": "ead835bdc02aa00ead0c863074be87aefd2750e5827bd1c0d912aa6b350a8b4b",
+      "size": 1537
+    },
+    {
+      "path": "tests/test_cycle_compatibility.py",
+      "sha256": "f5fbbb274cefaff9ed04ff25158f9c31ba0fe6959b5fcf6f7cddf9275cee3722",
+      "size": 3263
+    },
+    {
+      "path": "tests/test_generic_contracts.py",
+      "sha256": "4c0addb680de387663e1dd086f8f7649eb1f133f598f17b76dfc4df86cd15573",
+      "size": 4972
+    },
+    {
+      "path": "tests/test_stage_lifecycle.py",
+      "sha256": "865fc2e43c34acce14275bb2535c7c73c0a2c1ae5b5b26eecf41b85609447bc6",
+      "size": 5752
+    }
+  ],
+  "generic_artifact_index_enabled": true,
+  "generic_stage_receipts_enabled": true,
+  "model_initialization_smoke_required": true,
+  "model_load_count": 0,
+  "next_gate": "GENERIC_TRAINING_STAGE_V2_1_FIXED_HEAD_REVIEW",
+  "review_status": "READY_FOR_FIXED_HEAD_CODE_REVIEW",
+  "runner_freeze_root_sha256": "c6918c25da0cba986ef80f05f4c144011835bca5592e4c81cc6a58cb198dd37e",
+  "schema_id": "ROUND_GENERIC_TRAINING_STAGE_V2_1_REVIEW_MANIFEST",
+  "schema_version": 1,
+  "slurm_submission_count": 0,
+  "training_execution_authorized": false,
+  "training_execution_count": 0
+}

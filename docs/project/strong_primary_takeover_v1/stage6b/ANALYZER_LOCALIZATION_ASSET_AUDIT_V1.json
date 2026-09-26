@@ -1,0 +1,12 @@
+{
+  "analyzer_supervision_gap": true,
+  "distillation_declares_analyzer_allowed_role": true,
+  "distillation_materializes_analyzer_example": false,
+  "distillation_module": "src/pchsi/research_intelligence/distillation.py",
+  "existing_distillation_reused": true,
+  "explicit_existing_analyzer_supervision_builder_hits": [],
+  "historical_analyzer_json_artifact_count": 319,
+  "local_training_execution_authorized": false,
+  "new_parallel_dataset_format_created": false,
+  "schema_id": "STAGE6B_ANALYZER_LOCALIZATION_ASSET_AUDIT_V1"
+}

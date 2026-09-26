@@ -1,0 +1,79 @@
+{
+  "$id": "ANALYZER_GROUP_SYNTHESIS_INPUT_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "base_memory_exposed": {
+      "const": false,
+      "type": "boolean"
+    },
+    "group_manifest_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "group_synthesis_input_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "member_rows": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "error_instance_id": {
+            "maxLength": 256,
+            "minLength": 1,
+            "type": "string"
+          },
+          "local_result_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "menu_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "proposal_slot_limit": {
+            "const": 1,
+            "type": "integer"
+          },
+          "source_call_index": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "source_state_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "local_result_sha256",
+          "error_instance_id",
+          "source_state_sha256",
+          "menu_sha256",
+          "source_call_index",
+          "proposal_slot_limit"
+        ],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "schema_id": {
+      "const": "ANALYZER_GROUP_SYNTHESIS_INPUT_V1",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "group_manifest_sha256",
+    "member_rows",
+    "base_memory_exposed",
+    "group_synthesis_input_sha256"
+  ],
+  "type": "object"
+}

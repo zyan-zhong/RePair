@@ -1,0 +1,28 @@
+{
+  "candidate_response_loss_token_count_total": 315844,
+  "candidate_response_loss_tokens_by_role": {
+    "ANALYZER": 298203,
+    "RESEARCH_PLANNER_POST": 673,
+    "RESEARCH_PLANNER_PRE": 16968
+  },
+  "candidate_response_loss_tokens_by_stage": {
+    "C": 20198,
+    "G-A2": 40112,
+    "G-A3": 29154,
+    "L-A0": 53994,
+    "L-A1": 130190,
+    "R-POST-PRIMARY-V1": 673,
+    "R-PRE-PRIMARY-V1": 16968,
+    "X": 24555
+  },
+  "example_count": 146,
+  "existing_trainer_mask_binding_verified": false,
+  "full_audit_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage6m_local_ri_native_serializer_sequence_policy_closure_v1_1/2c88b8c681718021c19d03b01f557e691d0e6746/LOCAL_RI_NATIVE_RESPONSE_MASK_AUDIT_V1.json",
+  "full_audit_sha256": "56c3dcc49fc77c150a3909c2a30c041c2b98e4dea9f6d348a92f659b1263ba1d",
+  "loss_bearing_token_claim_authorized": false,
+  "prompt_prefix_failure_count": 0,
+  "response_only_mask_candidate_verified_all_examples": true,
+  "round_id": "CLEAN-HUMAN-REFERENCE-R1-PI0",
+  "schema_id": "LOCAL_RI_NATIVE_RESPONSE_MASK_AUDIT_SUMMARY_V1",
+  "schema_version": 1
+}

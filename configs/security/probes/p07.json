@@ -1,0 +1,17 @@
+{
+  "execution_status": "NOT_APPROVED",
+  "expected_normalized_outcome": "KILLED",
+  "forbidden_side_effects": [
+    "host_write",
+    "network",
+    "new_privilege",
+    "unreviewed_process"
+  ],
+  "payload_id": "syscall_case",
+  "payload_sha256": "a9b5a2fc0e30815a77587f796e48a18821bbedf32ef0ecfc3f31f5fc49d1db5c",
+  "permitted_side_effects": [],
+  "probe_id": "P07",
+  "profile_id": "S1_P7_SYSCALL_CASE_V1",
+  "schema_version": 1,
+  "timeout_seconds": 2
+}

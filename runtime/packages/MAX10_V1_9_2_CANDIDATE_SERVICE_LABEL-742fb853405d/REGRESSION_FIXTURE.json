@@ -1,0 +1,62 @@
+{
+  "candidate": {
+    "adapter_rank": 16,
+    "artifact_manifest": {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/attempts/000003/training/native/outputs/5cf26b8115c2a5381ce81651612fede0d5b1166b76d84e6b62e20a56d72aa258/adapter_artifact_manifest.json",
+      "sha256": "adec8099eb0155083f685f12a7cf392b0b04e90e9ca597755dc9ae9bc2a437e9"
+    },
+    "artifact_root": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/attempts/000003/training/native/outputs/5cf26b8115c2a5381ce81651612fede0d5b1166b76d84e6b62e20a56d72aa258/adapter",
+    "artifact_sha256": "b993150a15946d8a0210a83a06ac5ba3cc8e612d6a28ebfa42d0d546d9633270",
+    "base_model_repository": "Qwen/Qwen2.5-3B-Instruct",
+    "base_model_revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+    "checkpoint_instance_id": "CURRENT-TRAINED-c8082c05d302438ef3ba3ec1655996be5977538f4ddc89f09c1c06efb3acfa79",
+    "current_parent_context": {
+      "execution_authorization_ref": {
+        "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/attempts/000003/training/native/materialized/ROUND_TRAINING_EXECUTION_AUTHORIZATION_V1.json",
+        "sha256": "976363db243ab0f38cf8fb50cf52679452e4a90a6f66c7c151a448a6d66feace"
+      },
+      "output_artifact_index_ref": {
+        "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/attempts/000003/training/native/attempts/5cf26b8115c2a5381ce81651612fede0d5b1166b76d84e6b62e20a56d72aa258/output_artifact_index.json",
+        "sha256": "fdef3e6c2798f8c879c57d54bdf112683c5d5411a24feb7f210f185f1fb2462d"
+      },
+      "schema_id": "CURRENT_ACCEPTED_TRAINING_PARENT_CONTEXT_V1",
+      "stage_binding_ref": {
+        "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/attempts/000003/training/native/materialized/ROUND_TRAINING_STAGE_BINDING_V1.json",
+        "sha256": "a005b9fdca8aeee6f98c6d1ad0580433c702994595dfe24acbbf08391942ae9d"
+      },
+      "stage_receipt_ref": {
+        "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/attempts/000003/training/native/attempts/5cf26b8115c2a5381ce81651612fede0d5b1166b76d84e6b62e20a56d72aa258/terminal_stage_receipt.json",
+        "sha256": "706f3c66e4229ebcbea5543194e4482fb78e7073149612db86257a91b8a1bc8c"
+      },
+      "training_contract_ref": {
+        "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/attempts/000003/training/native/materialized/ROUND_LOCAL_TRAINING_CONTRACT_V2.json",
+        "sha256": "baab007fe0f8e1ee53f7091f6b3fc44a2a2d1f4150fd68d57bf7f1b548f38763"
+      }
+    },
+    "execution_attempt_id": "5cf26b8115c2a5381ce81651612fede0d5b1166b76d84e6b62e20a56d72aa258",
+    "final_trainable_parameter_sha256": "2ae091e1c6e954b595bbc0992e1fd625979d0ee90f5751a03518342acd6f8a53",
+    "kind": "LORA_ADAPTER",
+    "logical_condition_id": "CURRENT-TRAINED-c8082c05d302438ef3ba3ec1655996be5977538f4ddc89f09c1c06efb3acfa79",
+    "parent_policy_artifact_sha256": "4093cd9a635a4a2f068e89f9739dc854221dfa16fe3f6cb145f2508fee448552",
+    "parent_policy_id": "PI0_CLEAN",
+    "policy_id": "CURRENT-TRAINED-c8082c05d302438ef3ba3ec1655996be5977538f4ddc89f09c1c06efb3acfa79",
+    "request_sha256": "243b84a4aa14094e27782732209d6fc30ae6ebd0e3a5e834a13eb5418b6bc59f",
+    "round_id": "FORMAL-R2-5cf26b8115c2a538",
+    "schema_id": "CURRENT_OFFOFF_POLICY_BINDING_V1",
+    "training_config_ref": {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/attempts/000003/training/native/materialized/ROUND_LOCAL_TRAINING_CONTRACT_V2.json",
+      "sha256": "baab007fe0f8e1ee53f7091f6b3fc44a2a2d1f4150fd68d57bf7f1b548f38763"
+    },
+    "training_result_ref": {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/attempts/000003/training/native/CURRENT_NATIVE_TRAINING_EXECUTION_RESULT.json",
+      "sha256": "4ccde69c11a59958fb7e189e88f629e90067b9e10072a68532a680409a0e299b"
+    },
+    "training_run_id": "5cf26b8115c2a5381ce81651612fede0d5b1166b76d84e6b62e20a56d72aa258",
+    "training_seed": 17
+  },
+  "schema": {
+    "minLength": 1,
+    "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,63}$",
+    "type": "string"
+  }
+}

@@ -1,0 +1,9 @@
+31 package tests PASS.
+3 available native integration tests PASS.
+2 full episode native integration tests BLOCKED locally by absent exported E1 episode schema.
+Full 5 native integration tests and complete repository suite REQUIRED on server, no skips.
+Upstream executable-source file hashes checked: 59
+Python AST PASS. Bash syntax PASS.
+Current Slurm job not accessed or modified.
+No real GitHub write performed.
+No real environment/model/SELECT execution performed.

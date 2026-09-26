@@ -1,0 +1,81 @@
+{
+  "$id": "ANALYZER_CROSSCHECK_RESULT_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "contradiction_evidence_sha256s": {
+      "items": {
+        "pattern": "^[0-9a-f]{64}$",
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "crosscheck_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "current_evidence_sha256s": {
+      "items": {
+        "pattern": "^[0-9a-f]{64}$",
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "disposition": {
+      "enum": [
+        "ACCEPT",
+        "DOWNGRADE_SCOPE",
+        "REQUIRE_ABSTENTION",
+        "REJECT"
+      ],
+      "type": "string"
+    },
+    "historical_evidence_sha256s": {
+      "items": {
+        "pattern": "^[0-9a-f]{64}$",
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "residual_case_ids": {
+      "items": {
+        "maxLength": 256,
+        "minLength": 1,
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "schema_id": {
+      "const": "ANALYZER_CROSSCHECK_RESULT_V1",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    },
+    "supporting_evidence_sha256s": {
+      "items": {
+        "pattern": "^[0-9a-f]{64}$",
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "target_artifact_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "target_artifact_sha256",
+    "disposition",
+    "supporting_evidence_sha256s",
+    "contradiction_evidence_sha256s",
+    "residual_case_ids",
+    "current_evidence_sha256s",
+    "historical_evidence_sha256s",
+    "crosscheck_sha256"
+  ],
+  "type": "object"
+}

@@ -1,0 +1,38 @@
+{
+  "schema": "REPAIR_MANUSCRIPT_BENCHMARK_TABLE_V4",
+  "title": "From Plausible Repairs to Policy Capability",
+  "columns": [
+    "Method",
+    "Pick",
+    "Clean",
+    "Cool",
+    "Look",
+    "Heat",
+    "Pick2",
+    "All"
+  ],
+  "display_methods": [
+    "GPT 5.6 sol high",
+    "Qwen2.5-3B-Instruct (base model)",
+    "RePair (ours)",
+    "SkillRL",
+    "GiGPO",
+    "SEED",
+    "Agent_G2",
+    "OPID"
+  ],
+  "main_split": "valid_unseen",
+  "main_tasks": 134,
+  "supplement_split": "valid_seen",
+  "supplement_tasks": 140,
+  "primary_seed_slots": [
+    17
+  ],
+  "episodes_per_task": 1,
+  "aggregation": "task-weighted within each split",
+  "pooled_seen_unseen": false,
+  "baseline_rows_complete": true,
+  "repair_row_complete": false,
+  "not_same_backbone_algorithm_comparison": true,
+  "controlled_repair_comparisons": "same-parent Qwen2.5-3B-Instruct internal conditions"
+}

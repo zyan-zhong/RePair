@@ -1,0 +1,39 @@
+{
+  "action_only_policy_gradient_problem_claimed_fixed": false,
+  "base_head": "4a50f7538e53f4f4618cbb690d3fe8108e307c6c",
+  "dual_view_authority_sha256": "e7bc7e0fdd324b6894bedd500bdbf4ba96e7123074eded089e6a89ffd84ac76a",
+  "environment_call_count": 0,
+  "fresh_verified_benefit_required_before_native_label_census": true,
+  "local_analyzer_checkpoint_authority_sha256": "445c6be257271d7719aff057f3987e88edb88f7c2baa66db63476ff1f55056d6",
+  "local_analyzer_result_authority_sha256": "b66db57f7e8fb4d8c7a35544086a432c648dc64bbf78c8c5a78af55d3f598a9a",
+  "local_analyzer_shadow_failure_blocks_strong_primary": false,
+  "local_analyzer_shadow_readiness_gate_authorized": true,
+  "local_analyzer_shadow_scientific_lane_required": true,
+  "local_analyzer_takeover_authorized": false,
+  "local_planner_bootstrap_hold": true,
+  "local_planner_takeover_authorized": false,
+  "local_shadow_roles": [
+    "ANALYZER"
+  ],
+  "next_gate": "EXECUTE_FRESH_STRONG_PRIMARY_TRAIN_UPDATE_RESEARCH_ROUND;RUN_LOCAL_ANALYZER_BLIND_SHADOW_ON_SAME_AUTHORIZED_ANALYZER_INPUTS;ON_FIRST_FRESH_VERIFIED_BENEFIT_RUN_DUAL_VIEW_NATIVE_LABEL_CENSUS",
+  "provider_call_count": 0,
+  "recovery_revision": "STAGE6AO_V1_1",
+  "role_authority_fixed_head_blob": "5a833f5b973ef8b72548105a124fba33a3941923",
+  "role_authority_target_sha256": "25d45d3e69b540fb242e8c136020488fc5c6eee512baecd15f22b0d3976f6bc0",
+  "schema_id": "ROLE_SCOPED_STRONG_PRIMARY_FRESH_ROUND_AUTHORITY_V1",
+  "schema_version": 1,
+  "scientific_attempt_consumed": false,
+  "status": "ROLE_SCOPED_STRONG_PRIMARY_FRESH_ROUND_READY",
+  "strong_primary_fresh_round_execution_authorized": true,
+  "strong_primary_launch_blocking_by_local_roles": false,
+  "strong_primary_readiness_fixed_head_blob": "61093c607857d41c0839865fb7df3e645fea1e6b",
+  "strong_primary_readiness_target_sha256": "a310cff724ac67ace79ffbc01a0f307e27ce92bff7ac25eeb3d1809f9c7efcec",
+  "strong_primary_roles": [
+    "ANALYZER",
+    "RESEARCH_PLANNER_PRE",
+    "RESEARCH_PLANNER_POST"
+  ],
+  "task_policy_optimizer_execution_authorized": false,
+  "training_execution_count": 0,
+  "v1_failure_class": "MATERIALIZER_EXISTING_TRACKED_FILE_WRITE_SEMANTICS_BUG"
+}

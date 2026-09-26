@@ -1,0 +1,153 @@
+{
+  "$id": "ANALYZER_GROUP_MANIFEST_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "group_id": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "group_manifest_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "inference_cluster_unit": {
+      "const": "TASK_GAMEFILE",
+      "type": "string"
+    },
+    "lifecycle_signature": {
+      "maxLength": 256,
+      "minLength": 1,
+      "type": "string"
+    },
+    "mechanical_signature_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "membership_records": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "error_instance_id": {
+            "maxLength": 256,
+            "minLength": 1,
+            "type": "string"
+          },
+          "gamefile_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "group_id": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "inference_cluster_unit": {
+            "const": "TASK_GAMEFILE",
+            "type": "string"
+          },
+          "local_result_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "membership_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "primary_group_key_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "schema_id": {
+            "const": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+            "type": "string"
+          },
+          "schema_version": {
+            "const": 1,
+            "type": "integer"
+          },
+          "task_family": {
+            "maxLength": 256,
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "task_id": {
+            "maxLength": 256,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "schema_id",
+          "schema_version",
+          "local_result_sha256",
+          "error_instance_id",
+          "task_id",
+          "gamefile_sha256",
+          "task_family",
+          "group_id",
+          "primary_group_key_sha256",
+          "inference_cluster_unit",
+          "membership_sha256"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "membership_sha256s": {
+      "items": {
+        "pattern": "^[0-9a-f]{64}$",
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "progress_signature_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "schema_id": {
+      "const": "ANALYZER_GROUP_MANIFEST_V1",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    },
+    "source_local_result_sha256s": {
+      "items": {
+        "pattern": "^[0-9a-f]{64}$",
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "task_family": {
+      "maxLength": 256,
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "terminal_footprint_class": {
+      "maxLength": 256,
+      "minLength": 1,
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "group_id",
+    "task_family",
+    "mechanical_signature_sha256",
+    "progress_signature_sha256",
+    "lifecycle_signature",
+    "terminal_footprint_class",
+    "membership_sha256s",
+    "source_local_result_sha256s",
+    "inference_cluster_unit",
+    "group_manifest_sha256",
+    "membership_records"
+  ],
+  "type": "object"
+}

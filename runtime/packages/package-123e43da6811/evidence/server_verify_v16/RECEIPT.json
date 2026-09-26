@@ -1,0 +1,9 @@
+{
+  "command": "/data/home/scwb204/run/sdar_repro/conda_envs/sdar_sft_py312/bin/python -B /data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/max10_v16_verify.d3NbMcJ3/MAX10_V1_6_BINDING_CANDIDATE/VERIFY.py",
+  "ssh_rc": 0,
+  "seconds": 38.15600000000268,
+  "stdout_sha256": "16217531e70ea3245414111e88927e74154de67c8b0659e1225108e61069809e",
+  "stderr_sha256": "db1e4ca2d76191285166fd27af91925b7bf4e9572733192aaedf8ca6dc910702",
+  "slurm_submitted": false,
+  "training_started": false
+}

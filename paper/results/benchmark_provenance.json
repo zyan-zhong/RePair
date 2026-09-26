@@ -1,0 +1,173 @@
+{
+  "schema": "REPAIR_BASELINE_TABLE_PROVENANCE_V4",
+  "source": "BASELINE_BENCHMARK_MASTER_REGISTRY_V2 supplied 2026-09-23",
+  "status": "seven reference/baseline rows complete; RePair row pending",
+  "primary_split": "valid_unseen",
+  "primary_tasks": 134,
+  "secondary_split": "valid_seen",
+  "secondary_tasks": 140,
+  "primary_environment_seed": 17,
+  "columns": [
+    "Method",
+    "Pick",
+    "Clean",
+    "Cool",
+    "Look",
+    "Heat",
+    "Pick2",
+    "All"
+  ],
+  "reporting_description": "Official released checkpoints evaluated under a shared ALFWorld task/environment protocol, with method-faithful inference adapters and published method decode profiles.",
+  "project_memory": "OFF",
+  "project_harness": "OFF",
+  "notes": [
+    "Baseline rows use released/project-frozen checkpoints under the shared ALFWorld task/environment protocol.",
+    "Method-faithful inference adapters and published decode profiles are retained.",
+    "SkillRL retains its frozen official SkillBank as part of its released inference definition; benchmark-time writeback and dynamic updating are disabled.",
+    "RePair scores remain pending and are not estimated."
+  ],
+  "valid_unseen_134": [
+    {
+      "All": 81.3,
+      "Clean": 80.6,
+      "Cool": 90.5,
+      "Heat": 78.3,
+      "Look": 83.3,
+      "Method": "GPT-5.6-sol strong reference",
+      "Pick": 83.3,
+      "Pick2": 70.6
+    },
+    {
+      "All": 0.7,
+      "Clean": 0.0,
+      "Cool": 0.0,
+      "Heat": 4.3,
+      "Look": 0.0,
+      "Method": "Qwen2.5-3B-Instruct (π0 Clean)",
+      "Pick": 0.0,
+      "Pick2": 0.0
+    },
+    {
+      "All": "41.0",
+      "Clean": "41.9",
+      "Cool": "61.9",
+      "Heat": "43.5",
+      "Look": "44.4",
+      "Method": "SkillRL",
+      "Pick": "37.5",
+      "Pick2": "11.8"
+    },
+    {
+      "All": "91.0",
+      "Clean": "87.1",
+      "Cool": "95.2",
+      "Heat": "95.7",
+      "Look": "88.9",
+      "Method": "GiGPO",
+      "Pick": "87.5",
+      "Pick2": "94.1"
+    },
+    {
+      "All": "69.4",
+      "Clean": "83.9",
+      "Cool": "71.4",
+      "Heat": "95.7",
+      "Look": "11.1",
+      "Method": "SEED",
+      "Pick": "91.7",
+      "Pick2": "35.3"
+    },
+    {
+      "All": "79.9",
+      "Clean": "87.1",
+      "Cool": "85.7",
+      "Heat": "78.3",
+      "Look": "50.0",
+      "Method": "Agent_G2",
+      "Pick": "79.2",
+      "Pick2": "94.1"
+    },
+    {
+      "All": "29.1",
+      "Clean": "22.6",
+      "Cool": "19.0",
+      "Heat": "52.2",
+      "Look": "11.1",
+      "Method": "OPID",
+      "Pick": "54.2",
+      "Pick2": "5.9"
+    }
+  ],
+  "valid_seen_140": [
+    {
+      "All": 75.0,
+      "Clean": 59.3,
+      "Cool": 72.0,
+      "Heat": 93.8,
+      "Look": 84.6,
+      "Method": "GPT-5.6-sol strong reference",
+      "Pick": 88.6,
+      "Pick2": 58.3
+    },
+    {
+      "All": 0.7,
+      "Clean": 0.0,
+      "Cool": 0.0,
+      "Heat": 0.0,
+      "Look": 0.0,
+      "Method": "Qwen2.5-3B-Instruct (π0 Clean)",
+      "Pick": 0.0,
+      "Pick2": 4.2
+    },
+    {
+      "All": "50.7",
+      "Clean": "51.9",
+      "Cool": "68.0",
+      "Heat": "50.0",
+      "Look": "46.2",
+      "Method": "SkillRL",
+      "Pick": "60.0",
+      "Pick2": "20.8"
+    },
+    {
+      "All": "95.7",
+      "Clean": "96.3",
+      "Cool": "88.0",
+      "Heat": "100.0",
+      "Look": "92.3",
+      "Method": "GiGPO",
+      "Pick": "100.0",
+      "Pick2": "95.8"
+    },
+    {
+      "All": "78.6",
+      "Clean": "100.0",
+      "Cool": "64.0",
+      "Heat": "81.2",
+      "Look": "46.2",
+      "Method": "SEED",
+      "Pick": "100.0",
+      "Pick2": "54.2"
+    },
+    {
+      "All": "87.9",
+      "Clean": "96.3",
+      "Cool": "84.0",
+      "Heat": "62.5",
+      "Look": "76.9",
+      "Method": "Agent_G2",
+      "Pick": "97.1",
+      "Pick2": "91.7"
+    },
+    {
+      "All": "35.7",
+      "Clean": "51.9",
+      "Cool": "20.0",
+      "Heat": "43.8",
+      "Look": "15.4",
+      "Method": "OPID",
+      "Pick": "42.9",
+      "Pick2": "29.2"
+    }
+  ]
+}

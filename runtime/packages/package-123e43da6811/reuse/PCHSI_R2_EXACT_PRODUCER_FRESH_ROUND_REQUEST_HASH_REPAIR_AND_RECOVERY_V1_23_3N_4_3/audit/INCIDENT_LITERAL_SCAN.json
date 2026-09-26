@@ -1,0 +1,17 @@
+{
+  "schema_id": "CURRENT_RUNTIME_LITERAL_SCAN_V1",
+  "scoped_paths": [
+    "verify_package.py",
+    "native_preflight.py",
+    "supervise.py",
+    "analyzer_preflight.py",
+    "recovery_core.py",
+    "recover.py",
+    "status.py",
+    "producer/fresh_round_contract.py",
+    "producer/shard_worker.py",
+    "producer/global_finalize.py"
+  ],
+  "matches": [],
+  "limitation": "No claim that all unchanged legacy/vendor code is free of constants; schema names and declared engineering limits are permitted."
+}

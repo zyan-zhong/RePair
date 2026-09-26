@@ -1,0 +1,11 @@
+--- original/stage4e/driver.py
++++ in_memory_adapter/stage4e/driver.py
+@@ -235,7 +235,7 @@
+     base_gate(cfg)
+     output=control/'results'
+     # Run native imports against the isolated integration checkout in a fresh interpreter.
+-    run([cfg['python'],'-m','stage4e.driver','audit-once','--control',str(control),
++    run([cfg['python'],str(_HASH_BRIDGE_ROOT/'resume.py'),'audit-once','--control',str(control),
+          '--repo',str(repo)],cwd=ROOT,timeout=14400)
+     closeout=read_json(output/'CLEAN_HUMAN_REFERENCE_CLOSEOUT.json')
+     if closeout['status']!='EVALUATION_AND_DISPOSITION_CLOSED':raise GateError('CLOSEOUT_NOT_COMPLETE')

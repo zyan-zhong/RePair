@@ -1,0 +1,132 @@
+{
+  "$id": "ANALYZER_OUTCOME_ROUTE_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "analysis_objective": {
+      "enum": [
+        "FAILURE_DIAGNOSIS",
+        "SUCCESS_QUALITY",
+        null
+      ],
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "analysis_time_information_boundary": {
+      "const": "POST_EPISODE_DEV_ONLY",
+      "type": "string"
+    },
+    "evidence_pack_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "gamefile_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "incident_flags": {
+      "additionalProperties": false,
+      "properties": {
+        "evidence_incomplete": {
+          "type": "boolean"
+        },
+        "infrastructure_unavailable": {
+          "type": "boolean"
+        },
+        "protocol_invalid": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "protocol_invalid",
+        "evidence_incomplete",
+        "infrastructure_unavailable"
+      ],
+      "type": "object"
+    },
+    "outcome_authority": {
+      "const": "ENVIRONMENT_AND_PROTOCOL_EVIDENCE_ONLY",
+      "type": "string"
+    },
+    "reason_codes": {
+      "items": {
+        "maxLength": 256,
+        "minLength": 1,
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "route_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "route_status": {
+      "enum": [
+        "SCIENTIFIC_OUTCOME_AVAILABLE",
+        "PROTOCOL_INVALID",
+        "EVIDENCE_INCOMPLETE",
+        "INFRASTRUCTURE_UNAVAILABLE"
+      ],
+      "type": "string"
+    },
+    "schema_id": {
+      "const": "ANALYZER_OUTCOME_ROUTE_V1",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    },
+    "scientific_use": {
+      "const": "PRIVILEGED_OFFLINE_ANALYSIS",
+      "type": "string"
+    },
+    "semantic_lane_eligible": {
+      "type": "boolean"
+    },
+    "task_family": {
+      "maxLength": 256,
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "task_id": {
+      "maxLength": 512,
+      "minLength": 1,
+      "type": "string"
+    },
+    "trajectory_outcome": {
+      "enum": [
+        "SUCCESS",
+        "FAILURE",
+        null
+      ],
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "evidence_pack_sha256",
+    "task_id",
+    "gamefile_sha256",
+    "task_family",
+    "scientific_use",
+    "analysis_time_information_boundary",
+    "route_status",
+    "semantic_lane_eligible",
+    "trajectory_outcome",
+    "analysis_objective",
+    "incident_flags",
+    "reason_codes",
+    "outcome_authority",
+    "route_sha256"
+  ],
+  "type": "object"
+}

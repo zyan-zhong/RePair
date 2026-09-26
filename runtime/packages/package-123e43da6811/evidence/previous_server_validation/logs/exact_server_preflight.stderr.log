@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/formal_max10_v17_cpu_validation/0f9df1ba648b072aeb5bb6ec9e66bee46d997edfd9c0faa32289a470afa0f758/package/entry/main.py", line 45, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/formal_max10_v17_cpu_validation/0f9df1ba648b072aeb5bb6ec9e66bee46d997edfd9c0faa32289a470afa0f758/package/entry/main.py", line 29, in main
+    validate_deployment(deployment, formal_root=formal, bundle_root=ROOT)
+  File "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/formal_max10_v17_cpu_validation/0f9df1ba648b072aeb5bb6ec9e66bee46d997edfd9c0faa32289a470afa0f758/package/entry/preflight.py", line 66, in validate_deployment
+    raise ValueError('FORMAL_PROMOTION_RULE_MATERIALIZATION_MISSING:registered native promotion.py '
+ValueError: FORMAL_PROMOTION_RULE_MATERIALIZATION_MISSING:registered native promotion.py freezes a provided decision; the old diagnostic rollback rule is not a Formal criterion

@@ -1,0 +1,17 @@
+{
+  "execution_status": "NOT_APPROVED",
+  "expected_normalized_outcome": "DENIED",
+  "forbidden_side_effects": [
+    "host_write",
+    "network",
+    "new_privilege",
+    "unreviewed_process"
+  ],
+  "payload_id": "write_repo",
+  "payload_sha256": "508d0e7262cce19aba2c7ba7dea6c35f40b62ad5d85557000c65c2e2279b2a0c",
+  "permitted_side_effects": [],
+  "probe_id": "P04",
+  "profile_id": "S1_PRODUCTION_V1",
+  "schema_version": 1,
+  "timeout_seconds": 10
+}

@@ -1,0 +1,203 @@
+{
+  "sha256": "2e0acc451ecc2d5c66390e09f2cf20af70bb5e69c2f9753f8af33457c67c7bac",
+  "members": [
+    {
+      "bytes": 934,
+      "compressed_bytes": 595,
+      "crc": 1283892377,
+      "name": "CLEAN_PI0_LIVE_RUNTIME_BINDING_V2.json"
+    },
+    {
+      "bytes": 883,
+      "compressed_bytes": 549,
+      "crc": 1452361679,
+      "name": "ENGINE_PROFILE_AUTHORITY_V1.json"
+    },
+    {
+      "bytes": 1900,
+      "compressed_bytes": 857,
+      "crc": 4048093799,
+      "name": "FINAL_RUNTIME_IDENTITY_V1.json"
+    },
+    {
+      "bytes": 2529,
+      "compressed_bytes": 1126,
+      "crc": 1863716485,
+      "name": "PCHSI_V123133_RECEIPT_RUNTIME_AUTHORITY_V1.json"
+    },
+    {
+      "bytes": 917,
+      "compressed_bytes": 478,
+      "crc": 2723002402,
+      "name": "PCHSI_V123133_TRAIN_UPDATE_EXECUTION_AUTHORITY_V1.json"
+    },
+    {
+      "bytes": 4415,
+      "compressed_bytes": 1323,
+      "crc": 3089266806,
+      "name": "PCHSI_V1232H_REPAIRED_IMPLEMENTATION_AUTHORITY_V1.json"
+    },
+    {
+      "bytes": 862,
+      "compressed_bytes": 494,
+      "crc": 436691599,
+      "name": "ROUND_MEMORY_AWARE_GENERIC_ROLLOUT_ALLOCATION_PREFLIGHT_V1.json"
+    },
+    {
+      "bytes": 6705,
+      "compressed_bytes": 2537,
+      "crc": 1403411047,
+      "name": "ROUND_MEMORY_AWARE_GENERIC_ROLLOUT_EXECUTION_BINDING_V1.json"
+    },
+    {
+      "bytes": 1086,
+      "compressed_bytes": 597,
+      "crc": 2901578394,
+      "name": "ROUND_MEMORY_AWARE_GENERIC_ROLLOUT_SLURM_RESOURCE_PLAN_V1.json"
+    },
+    {
+      "bytes": 961,
+      "compressed_bytes": 527,
+      "crc": 2972566387,
+      "name": "SHARED_TRAIN_UPDATE_DIRECT_DATA_AUTHORITY_V1.json"
+    },
+    {
+      "bytes": 4142853,
+      "compressed_bytes": 695949,
+      "crc": 3213780472,
+      "name": "TRAIN_UPDATE.jsonl"
+    },
+    {
+      "bytes": 489,
+      "compressed_bytes": 314,
+      "crc": 1584224069,
+      "name": "TRAIN_UPDATE_AUTHORITY_V1.json"
+    },
+    {
+      "bytes": 4756,
+      "compressed_bytes": 1413,
+      "crc": 3819879227,
+      "name": "allocation_preflight.py"
+    },
+    {
+      "bytes": 20718,
+      "compressed_bytes": 10127,
+      "crc": 1515886270,
+      "name": "policy_runtime_lifecycle_source/PACKAGE_FILES.sha256"
+    },
+    {
+      "bytes": 991,
+      "compressed_bytes": 625,
+      "crc": 2698891319,
+      "name": "policy_runtime_lifecycle_source/POLICY_RUNTIME_SLURM_CLUSTER_EXECUTION_POLICY_V1.json"
+    },
+    {
+      "bytes": 1966,
+      "compressed_bytes": 849,
+      "crc": 2835485250,
+      "name": "policy_runtime_lifecycle_source/materialize_policy_runtime_service_launch_contract.py"
+    },
+    {
+      "bytes": 1660,
+      "compressed_bytes": 716,
+      "crc": 334278050,
+      "name": "policy_runtime_lifecycle_source/materialize_policy_runtime_service_launch_contract_from_profile.py"
+    },
+    {
+      "bytes": 3777,
+      "compressed_bytes": 1341,
+      "crc": 1064565863,
+      "name": "policy_runtime_lifecycle_source/materialize_policy_runtime_slurm_execution.py"
+    },
+    {
+      "bytes": 12741,
+      "compressed_bytes": 3551,
+      "crc": 1600793517,
+      "name": "policy_runtime_lifecycle_source/policy_runtime_engine_profile.py"
+    },
+    {
+      "bytes": 1333,
+      "compressed_bytes": 633,
+      "crc": 375143512,
+      "name": "policy_runtime_lifecycle_source/policy_runtime_engine_profile_discovery.py"
+    },
+    {
+      "bytes": 2743,
+      "compressed_bytes": 900,
+      "crc": 1331169612,
+      "name": "policy_runtime_lifecycle_source/policy_runtime_engine_profile_receipt.py"
+    },
+    {
+      "bytes": 21882,
+      "compressed_bytes": 5805,
+      "crc": 1136426345,
+      "name": "policy_runtime_lifecycle_source/policy_runtime_service.py"
+    },
+    {
+      "bytes": 1706,
+      "compressed_bytes": 854,
+      "crc": 3372292109,
+      "name": "policy_runtime_lifecycle_source/policy_runtime_service_launch_contract_precheck.py"
+    },
+    {
+      "bytes": 739,
+      "compressed_bytes": 391,
+      "crc": 481343784,
+      "name": "policy_runtime_lifecycle_source/policy_runtime_service_precheck.py"
+    },
+    {
+      "bytes": 10774,
+      "compressed_bytes": 2834,
+      "crc": 743334484,
+      "name": "policy_runtime_lifecycle_source/policy_runtime_slurm_execution.py"
+    },
+    {
+      "bytes": 1275,
+      "compressed_bytes": 701,
+      "crc": 1917579271,
+      "name": "policy_runtime_lifecycle_source/policy_runtime_slurm_status.py"
+    },
+    {
+      "bytes": 1883,
+      "compressed_bytes": 806,
+      "crc": 2358093773,
+      "name": "policy_runtime_lifecycle_source/precheck_policy_runtime_slurm_execution.py"
+    },
+    {
+      "bytes": 2877,
+      "compressed_bytes": 1191,
+      "crc": 14047992,
+      "name": "policy_runtime_lifecycle_source/slurm_policy_runtime_f0f1_job.py"
+    },
+    {
+      "bytes": 47705,
+      "compressed_bytes": 7913,
+      "crc": 54223590,
+      "name": "repo_source/src/pchsi/evaluation/episode_evaluator.py"
+    },
+    {
+      "bytes": 12180,
+      "compressed_bytes": 3152,
+      "crc": 3831508126,
+      "name": "repo_source/src/pchsi/evaluation/policy_attempt_adapter.py"
+    },
+    {
+      "bytes": 5100,
+      "compressed_bytes": 1348,
+      "crc": 2603641066,
+      "name": "repo_source/src/pchsi/round_control/attempt_receipts.py"
+    },
+    {
+      "bytes": 12519,
+      "compressed_bytes": 2837,
+      "crc": 3057768874,
+      "name": "repo_source/src/pchsi/round_control/clean_execution_binding.py"
+    },
+    {
+      "bytes": 16046,
+      "compressed_bytes": 3314,
+      "crc": 3281412114,
+      "name": "repo_source/src/pchsi/round_control/rollout_collection.py"
+    }
+  ]
+}

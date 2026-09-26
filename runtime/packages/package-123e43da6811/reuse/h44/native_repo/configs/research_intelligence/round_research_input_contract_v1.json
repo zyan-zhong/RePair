@@ -1,0 +1,24 @@
+{
+  "automatic_future_round_source": "ROUND_ARTIFACT_INDEX_V1",
+  "benchmark_per_task_results_visible": false,
+  "causal_authority": "INDEPENDENT_ENVIRONMENT_VERIFIER_ONLY",
+  "consumer_roles": [
+    "HUMAN_REFERENCE",
+    "STRONG_API_SHADOW",
+    "LOCAL_SHADOW",
+    "LOCAL_PRIMARY"
+  ],
+  "current_future_f0f1_visible": false,
+  "current_round_adapter": "LEGACY_FROZEN_ASSET_IMPORT_ONLY",
+  "human_pre_visible_to_shadow": false,
+  "promotion_authority": "DETERMINISTIC_INDEPENDENT_GATE_ONLY",
+  "required_lanes": [
+    "CURRENT_POLICY_SCORECARD",
+    "ANALYZER_EVIDENCE",
+    "HISTORICAL_FAILURE_EXPERIENCE",
+    "EXPERIMENT_HISTORY",
+    "RESOURCE_AND_COST"
+  ],
+  "same_visible_evidence_for_pre_comparison": true,
+  "schema_id": "ROUND_RESEARCH_INPUT_CONTRACT_V1"
+}

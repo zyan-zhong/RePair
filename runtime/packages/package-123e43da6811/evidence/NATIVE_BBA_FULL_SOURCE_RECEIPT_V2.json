@@ -1,0 +1,31 @@
+{
+  "schema": "REGISTERED_EXACT_GIT_BLOB_SOURCE_CACHE_V2",
+  "registered_commit": "bba400738a7a53d0402552ecc3576f736ca0eec8",
+  "tree_sha256_not_claimed": true,
+  "tree_git_sha1": "953f5c900b085af97e41fc84d4e75583446cac38",
+  "archive_path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\native_bba_full_blob_exact.zip",
+  "archive_sha256": "47585cbb74cecec46b2306df259ff5b13d03c545813df6a0474f78b4c6b99a02",
+  "exact_blob_verified_file_count": 1753,
+  "missing_tracked_paths": [],
+  "previous_archive_rejected_for_crlf_transformation": true,
+  "original_archive_preserved": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\native_bba_full.zip",
+  "extracted_root": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\native_bba_full",
+  "git_argv": [
+    "git",
+    "-c",
+    "core.autocrlf=false",
+    "-c",
+    "core.eol=lf",
+    "-C",
+    "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\registered_git_cache",
+    "archive",
+    "--format=zip",
+    "--prefix=native_bba_full/",
+    "--output=C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\native_bba_full_blob_exact.zip",
+    "bba400738a7a53d0402552ecc3576f736ca0eec8"
+  ],
+  "production_repository_mutations": 0,
+  "remote_mutations": 0,
+  "local_object_cache_exists": true,
+  "scientific_execution_started": false
+}

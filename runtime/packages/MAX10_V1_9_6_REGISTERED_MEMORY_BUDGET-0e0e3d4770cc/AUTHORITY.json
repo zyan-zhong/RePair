@@ -1,0 +1,112 @@
+{
+  "predecessor_source_root": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/formal_max10_v187_validation/588cfd41a7133d3f83ef2b55a551202e53494b9beb8845cc90a442225c80342c/MAX10_V1_8_7_CURRENT_SOURCE_BINDING",
+  "base_source_root": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/formal_max10_v182_validation/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/package",
+  "host": "ln02",
+  "registered_python": "/data/home/scwb204/run/sdar_repro/conda_envs/sdar_sft_py312/bin/python",
+  "owner_root": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359",
+  "schema_id": "REGISTERED_MEMORY_CALIBRATED_BUDGET_REUSE_AUTHORITY_V1",
+  "promotion_source_root": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/formal_max10_v194_validation/5c82f6c32d95d5b475dc11e7b3642c66df1629cddd6f52d88202205e8f8b1b3e/MAX10_V1_9_4_SINGLE_SEED_PARENT_REUSE",
+  "promotion_manifest_sha256": "5c82f6c32d95d5b475dc11e7b3642c66df1629cddd6f52d88202205e8f8b1b3e",
+  "authorization_ref": {
+    "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/runtime_extensions/5c82f6c32d95d5b475dc11e7b3642c66df1629cddd6f52d88202205e8f8b1b3e/USER_CANDIDATE_PROMOTION_EXCEPTION_REQUEST.json",
+    "sha256": "98631d4e332c04466a450579d21a5b765bb2312d91347cba059efd1dff52ba02"
+  },
+  "prior_launch": {
+    "argv": [
+      "/data/home/scwb204/run/sdar_repro/conda_envs/sdar_sft_py312/bin/python",
+      "-B",
+      "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/formal_max10_v195_validation/e71a5bddce853c462ede7e167e047ac5a41d37367902df42266674e67472a921/MAX10_V1_9_5_USER_PROMOTION_EXCEPTION/exception_entry.py",
+      "--run",
+      "--invocation",
+      "76cce8a29db34045930224c63a73e96e"
+    ],
+    "base_source_sha256": "123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359",
+    "extension_root": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/runtime_extensions/251d67deea109147336cfac84e48fb2b7c02e7f46a1447299019a3132f2a9cec",
+    "extension_sha256": "251d67deea109147336cfac84e48fb2b7c02e7f46a1447299019a3132f2a9cec",
+    "host": "ln02",
+    "invocation_id": "76cce8a29db34045930224c63a73e96e",
+    "invocation_root": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/runtime_extensions/251d67deea109147336cfac84e48fb2b7c02e7f46a1447299019a3132f2a9cec/invocations/76cce8a29db34045930224c63a73e96e",
+    "log_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/runtime_extensions/251d67deea109147336cfac84e48fb2b7c02e7f46a1447299019a3132f2a9cec/launch_receipts/76cce8a29db34045930224c63a73e96e/resident.log",
+    "memory_index_entry_manifest_sha256": "515fd323ea3a0f490f2140c7e640b3c649402d929faca81e4c6bef30b4b6f791",
+    "owner_root": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359",
+    "pid": 1599134,
+    "planner_context_entry_manifest_sha256": "d2fb38807fcb5f52bee91725ff9dc9a14c60df243a9af1b35282dd6e2a626be9",
+    "provider_success_claimed": false,
+    "runtime_root": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/attempts/000002/analyzer/local/strong_local_runtime/registered_credential_continuations/576da204ad3d56f0a9222a52a229ab88f8ba341915dc2ceacf8594c715dff54d/registered_credential_continuations/b08380cf695378534a0feed3caf718149ddea907967383c0e2985be1d3dc302e/registered_durable_continuations/251d67deea109147336cfac84e48fb2b7c02e7f46a1447299019a3132f2a9cec",
+    "schema_id": "REGISTERED_PLANNER_CONTEXT_RESIDENT_LAUNCHED_V1",
+    "source_condition_entry_manifest_sha256": "588cfd41a7133d3f83ef2b55a551202e53494b9beb8845cc90a442225c80342c",
+    "typed_option_entry_manifest_sha256": "987977467be6e1886ee6c487dd912d2539aa3685fea4a006305c49cce1057fd9",
+    "recipe_contract_entry_manifest_sha256": "9fdda452b29458907c95bdbc3687a1e3a57c412b7b01fd18ae38f0e13fee34cc",
+    "candidate_label_entry_manifest_sha256": "742fb853405d444692697da8a1b097fbcd5aaa588c9829627bdfbeefb3ec1ecb",
+    "promotion_entry_manifest_sha256": "5c82f6c32d95d5b475dc11e7b3642c66df1629cddd6f52d88202205e8f8b1b3e",
+    "promotion_exception_entry_manifest_sha256": "e71a5bddce853c462ede7e167e047ac5a41d37367902df42266674e67472a921"
+  },
+  "native_overlay_source_refs": [
+    {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/formal_max10_v182_validation/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/package/entry/tail.py",
+      "sha256": "262a4a6c8ddc3ea1e587d27e527f58529db4c05584a1592662be961c11d8d0b0"
+    },
+    {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/formal_max10_v182_validation/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/package/entry/campaign_owner.py",
+      "sha256": "dfb429415cf3b7c3ec2840a46cf70c8e27a950dff094f21077bb92ed307a943b"
+    },
+    {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/formal_max10_v182_validation/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/package/entry/paper_export.py",
+      "sha256": "3f4feed3f4461048499029836ae9cbe17bfbd7f0a24988525c3c37a899e43a4d"
+    }
+  ],
+  "authorized_round_result_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/attempts/000003/RESULT.json",
+  "research_memory_activation_after_round_index": 2,
+  "research_memory_bootstrap_closed_result_ref": {
+    "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/attempts/000002/RESULT.json",
+    "sha256": "d5b067b8b569ce1f4eb8c94dadd3e4aaedd1f0a08b25727cf7f6442e2b0a3d81"
+  },
+  "budget_predecessor_root": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/formal_max10_v195_validation/e71a5bddce853c462ede7e167e047ac5a41d37367902df42266674e67472a921/MAX10_V1_9_5_USER_PROMOTION_EXCEPTION",
+  "budget_predecessor_manifest_sha256": "e71a5bddce853c462ede7e167e047ac5a41d37367902df42266674e67472a921",
+  "budget_native_source_refs": [
+    {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/github_exports/pchsi-wt-strong-primary-takeover-prep-v1/src/pchsi/memory/descriptive_eligibility.py",
+      "sha256": "1506457e6308618968b277d04ca3178d6e49a44f96f848311823d36a8c7fcada"
+    },
+    {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/github_exports/pchsi-wt-strong-primary-takeover-prep-v1/src/pchsi/memory/candidate_materialization.py",
+      "sha256": "ab1cd1c8f61cdf11e8162d8ff67b934ec02fbc0fc802ee54564c06db64d5120b"
+    }
+  ],
+  "preserved_closed_requests": [
+    "7447fce44f216303d22bd8f1f31b3c05428881848e52f9e671e999f3dd92b937",
+    "243b84a4aa14094e27782732209d6fc30ae6ebd0e3a5e834a13eb5418b6bc59f"
+  ],
+  "diagnostic_binding_ref": {
+    "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/attempts/000003/CURRENT_ANALYZER_BINDING.json",
+    "sha256": "1ca4a40d942552f8dde344ee634eb0d89a23de425aac7d8bfa83a22eb779d27c"
+  },
+  "diagnostic_memory_receipt_ref": {
+    "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/attempts/000003/tail/memory_producer/MEMORY_MATERIALIZATION_RESULT.json",
+    "sha256": "a9fa418aeb008656a0a2501914ea49409eef749c0211ff1e17e2f96fa3e2f741"
+  },
+  "diagnostic_result_ref": {
+    "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/attempts/000003/RESULT.json",
+    "sha256": "b426440c6b3f96afccb64f56f7e9e9b8ff34ff760b1a0da4e32194f224b9e27c"
+  },
+  "activation_request": {
+    "benchmark_feedback_authorized": false,
+    "execution_attempt_id": "12e5404de2470a26451a641318ac31b093a528aaae251efb1ffcaf5ee5ed6cac",
+    "execution_namespace": "12e5404de2470a26451a641318ac31b093a528aaae251efb1ffcaf5ee5ed6cac",
+    "execution_profile_sha256": "201786d6a9f9d2ff164186b06cc07cee4437fd6df560847d534e3e882b9618b1",
+    "invalid_attempt_adaptive_evidence_reuse_authorized": false,
+    "parent_policy_artifact_sha256": "b993150a15946d8a0210a83a06ac5ba3cc8e612d6a28ebfa42d0d546d9633270",
+    "parent_policy_id": "CURRENT-TRAINED-c8082c05d302438ef3ba3ec1655996be5977538f4ddc89f09c1c06efb3acfa79",
+    "policy_runtime_binding_sha256": "9e28315aa7ec808a9d21faa27a7f9662e115d59572f8127756166912a5c5f23f",
+    "request_sha256": "6da84448602df3199cda3a441e1e1ad6681c32c43940bf70980949a69d4f9093",
+    "rollout_seed": 17,
+    "round_id": "FORMAL-R3-12e5404de2470a26",
+    "round_memory_runtime_authority_sha256": "f650cbd20fb1a4a7ad0be3be3cd10700982df016c0942cc0ceddaab594780f47",
+    "round_start_memory_snapshot_sha256": "8ebdf8feaa3f52874addcfc6541d1b29cbf5d124ea68fd0da0fc2ba037085189",
+    "schema_id": "ROUND_ROLLOUT_COLLECTION_REQUEST_V1",
+    "schema_version": 1,
+    "selection_rule": "FULL_FROZEN_TRAIN_UPDATE_UNIVERSE",
+    "token_budget_contract_sha256": "613166c9f092795cb03c892ee0046f0af5bf7fc13ba44f7fccb950027c329262",
+    "train_update_manifest_sha256": "07221cbfa374e5ac100443079aee5940ca6227ffc42600c49c75d1d69de074cb"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "schema_id": "FROZEN_TRAIN_SELECT_PROMOTION_RULE_V1",
+  "frozen_before_outcomes": true,
+  "evidence_access_class": "TRAIN_SELECT",
+  "decision_rule_id": "FORMAL_REGISTERED_SELECT_STRICT_SUCCESS_GAIN_V1",
+  "primary_metric": "total_success_cells",
+  "comparison": "strictly_greater",
+  "secondary_metrics_role": "explanation_only",
+  "expected_task_count": 355,
+  "replicate_seeds": [
+    17,
+    31,
+    47,
+    73,
+    101
+  ],
+  "registered_select_task_access_sha256": "1672e85beba262fee1b0f572163339dd7343932288043d16e4f35f41f9926787",
+  "source_training_select_manifest": {
+    "expected_count": 355,
+    "logical_name": "TRAIN_SELECT",
+    "path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/stage2_clean_train_bootstrap_v1_output/stage2b/TRAIN_SELECT_MANIFEST_V1.jsonl",
+    "retention_class": "SCIENTIFIC_CONFIG",
+    "schema_id": "ALFWORLD_CLEAN_TRAIN_TASK_RECORD_V1",
+    "sha256": "b68f00cf164f0fa38df3506daf1a909a41f972b4b09a4610841a27c2de254400"
+  },
+  "scientific_authority": {
+    "member": "authority/USER_PROMOTION_AUTHORITY.json",
+    "sha256": "db360c5529026c468c9f0d143bb02dac3b4bd8c07398cb0b10a601c4a4336ee2"
+  },
+  "decision_producer": {
+    "source_member": "offoff_binding/promotion_rule.py",
+    "sha256": "e42158c589e7036385dcefdb1c72d705a430b47f35c54495607cf7772c05aa5d",
+    "entrypoint": "decide"
+  },
+  "no_train_retains_parent": true,
+  "incomplete_or_invalid_evidence_is_not_scientific_rollback": true,
+  "minimum_percentage_point_gain": null,
+  "confidence_interval_gate": null,
+  "secondary_metric_numeric_gates": []
+}

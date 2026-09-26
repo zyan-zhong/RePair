@@ -1,0 +1,35 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "dynamic_linker_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "python_binary_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "runtime_manifest_v1",
+      "type": "string"
+    },
+    "shared_library_manifest_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "stdlib_tree_semantics_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "python_binary_sha256",
+    "stdlib_tree_semantics_sha256",
+    "dynamic_linker_sha256",
+    "shared_library_manifest_sha256"
+  ],
+  "schema_version": 1,
+  "title": "Runtime Manifest V1",
+  "type": "object"
+}

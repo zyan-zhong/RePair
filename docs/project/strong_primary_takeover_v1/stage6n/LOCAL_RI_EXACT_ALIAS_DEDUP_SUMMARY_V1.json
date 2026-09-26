@@ -1,0 +1,22 @@
+{
+  "candidate_materialization_authorized": false,
+  "exact_alias_dedup_sufficient": false,
+  "full_audit_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage6n_stage_specific_lossless_compaction_closure_v1/b806f79f33e8a05d1075f881f154b2607ac4408c/LOCAL_RI_EXACT_ALIAS_DEDUP_AUDIT_V1.json",
+  "full_audit_sha256": "b027f3cf3aac15f9f37a7f51811b742386caf29ecf829197cb5a8bd91850d66b",
+  "remaining_overlength_example_count": 22,
+  "remaining_overlength_examples_by_stage": {
+    "L-A0": 10,
+    "L-A1": 11,
+    "R-PRE-PRIMARY-V1": 1
+  },
+  "removed_alias_counts_by_stage_field": {
+    "L-A0::evidence_pack_sha256": 10,
+    "L-A1::evidence_pack_sha256": 11,
+    "R-PRE-PRIMARY-V1::blind_input_sha256": 1,
+    "R-PRE-PRIMARY-V1::evidence_hydration_manifest_sha256": 1
+  },
+  "round_id": "CLEAN-HUMAN-REFERENCE-R1-PI0",
+  "schema_id": "LOCAL_RI_EXACT_ALIAS_DEDUP_SUMMARY_V1",
+  "schema_version": 1,
+  "source_overlength_example_count": 22
+}

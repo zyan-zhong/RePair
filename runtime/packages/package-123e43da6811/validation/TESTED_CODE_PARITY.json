@@ -1,0 +1,2969 @@
+{
+  "schema_id": "TESTED_CODE_TO_FINAL_DELIVERY_BYTE_PARITY_V1",
+  "tested_package_manifest_sha256": "601d6f78c31b6b32167fcd13f0a4b2da75ea8448f7df89e9ef51ae7f23626685",
+  "compared_file_count": 740,
+  "mismatch_count": 0,
+  "files": [
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/schema_models.py",
+      "sha256": "004d4b42ef3dd9dec59c28111e3cc32b837c0e22cd4487f32a8925ed0eea6b27"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/schema_models.py",
+      "sha256": "004d4b42ef3dd9dec59c28111e3cc32b837c0e22cd4487f32a8925ed0eea6b27"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_human_t2_pretraining_handoff_authorization_v1/tests/test_contract.py",
+      "sha256": "007d79bbcf4fb744969aa2a4c72c7a6855a56a07c8cda2a0de3d3544e94c0492"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/qwen25_3b_schema_aware_renderer_adapter_and_trainer_native_preflight_v1_7_2/50_BUILD_REVIEW.sh",
+      "sha256": "00c0428b5c1cc90e8fdc37c5f9573c7b1e87a35f96c83324250b222287bc3bd2"
+    },
+    {
+      "member": "reuse/h44/vendor/typed_short_option_f0f1_contracts.py",
+      "sha256": "00c98a271ab07ed9848eb1ea45cad500d29e0163dde81027db250c48fb991288"
+    },
+    {
+      "member": "reuse/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0/v110_post_adoption.py",
+      "sha256": "01027295ca73f07308d79cb1578221be0e27d647bfd4694b136ba695ec9bd535"
+    },
+    {
+      "member": "training_binding/clean_base.py",
+      "sha256": "011c9d17d8d20be27c234b8b49e580c6b039ca2f4f0144128c91d38c2d2160d4"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/research_intelligence/formal_x_lineage.py",
+      "sha256": "016e29a35834c90275c2a5466327db33a2f122ebd52c47fdfff2e9952316d11e"
+    },
+    {
+      "member": "post_binding/tests/test_context.py",
+      "sha256": "01b003a38997ee54ca518974f7803c34aca60874781bf62305c336c0cb14c315"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/round_control/clean_data_gate.py",
+      "sha256": "01c4650efa0cf58564bfe5fc48281fd8a8c7d4b0a3fd111eb829a39c6d178231"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/round_control/clean_data_gate.py",
+      "sha256": "01c4650efa0cf58564bfe5fc48281fd8a8c7d4b0a3fd111eb829a39c6d178231"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/single_cue_failure_summary.py",
+      "sha256": "01e82ba12b3c6cc5100863110c2de4a80667917182c023c4a13e6a82736bef34"
+    },
+    {
+      "member": "reuse/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_REQUEST_HASH_REPAIR_AND_RECOVERY_V1_23_3N_4_3/verify_package.py",
+      "sha256": "01f4dd816cc12688616b9ae308d41b28771a4fdd98c69a952f971770367af287"
+    },
+    {
+      "member": "reuse/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0/v110_boundary.py",
+      "sha256": "02589664ee5050e35be3ff00f44a8dafc49c55f64d8e48f1ba951f0ef37481ee"
+    },
+    {
+      "member": "reuse/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0/tests/test_governance_adapter.py",
+      "sha256": "0285687be6b2e7f98fbb107a1c08742122f270b71e212b573ace0918fb314939"
+    },
+    {
+      "member": "reuse/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_REQUEST_HASH_REPAIR_AND_RECOVERY_V1_23_3N_4_3/RUN_RECOVER.sh",
+      "sha256": "0295f6f342f85ee681eeccf45eb3a5728d830fb1d9fa1a36e9a563e9a4a96b64"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_AUTHORITY_DRIVEN_FRESH_MEMORY_AWARE_TRAIN_UPDATE_ROLLOUT_V1_23_2/STATUS_V1232.sh",
+      "sha256": "02b2a70b22d911f49a3cd80dfd85bba38cb85c63b83c4663f9eddedabc182951"
+    },
+    {
+      "member": "training_binding/native_labels.py",
+      "sha256": "02f6dd00457cc49895ae92d6a3184b4a99f0dbf7d8c3ac4770f9b97c8099cd4b"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/qwen25_3b_schema_aware_renderer_adapter_and_trainer_native_preflight_v1_7_2/tests/test_strategy_dual_view_adapter.py",
+      "sha256": "03021f82401dc8ed920d7317cf8863cd64ba97682d017b0951b614b8658c111a"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/openai_responses_policy.py",
+      "sha256": "036ea984d9bae75d57bcdb6898f3512f7456d098cbd1d36e0c57ff62e90ff67c"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/openai_responses_policy.py",
+      "sha256": "036ea984d9bae75d57bcdb6898f3512f7456d098cbd1d36e0c57ff62e90ff67c"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_STRONG_ANALYZER_GROUP_TAIL_GIT_OBJECT_ID_AUTHORITY_RECOVERY_AND_DYNAMIC_PAIR_UNIVERSE_V1_23_2T/STATUS_V1232T.sh",
+      "sha256": "03b6672eacdd36fea68c93ba7c6fcbad48586fbc520524097a9e39473dec4136"
+    },
+    {
+      "member": "reuse/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0/supervisor_policy.py",
+      "sha256": "040fd5dfc632cde6cade71ffddddeec984af179c64ab86c23a03b73625c2df8c"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/reference_loop/bundle_reader.py",
+      "sha256": "043b59c956eb8c46b03dbfdc1ba9113eb605956f9b55aa2c61abeb73c58d1180"
+    },
+    {
+      "member": "continuity_binding/api.py",
+      "sha256": "04b115ca513c5549c673aa70076f54ceb88a82722fc74d25a07abcca9950472f"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/round_control/scientific_round_governance.py",
+      "sha256": "06a816797bc4e483c3da0e21514e7c1f3289858b8d900b9a98d216955df48c91"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_generic_training_stage_v2_1_hardening_build/round_training/common.py",
+      "sha256": "06cfd297357c804b8512cad5889fe47c53cfadbd3d2b9b68579160784836c03f"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/cognitive_runtime/runtime_disposition.py",
+      "sha256": "076c67462c09380c79e6585a815623835c188bc9c09d360e64db53a5944d11fe"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/raw_policy_prompt.py",
+      "sha256": "076da310cceaf617fd2efdcf1750ddedec2439e2f009205c933e68c992393590"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/raw_policy_prompt.py",
+      "sha256": "076da310cceaf617fd2efdcf1750ddedec2439e2f009205c933e68c992393590"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/qwen25_3b_schema_aware_renderer_adapter_and_trainer_native_preflight_v1_7_2/tools/materialize_current_t2_trainer_native.py",
+      "sha256": "07f4bac201b04e2fa5f42dcd182543da21cd23aab7a40633110d5b19e49e02bd"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/research_intelligence/planner_portfolio_selection.py",
+      "sha256": "084bee8cbd40f6ba082b8a036fe434559fde76c9b42682f1a1b904512bbd0962"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/projection_common.py",
+      "sha256": "088c3c874e00a148f842567f9cc9c08c391a8aecc054fb641a943019671dbac0"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_human_t2_formal_training_execution_v1_2_preflight_summary_fix/30_BUILD_FORMAL_TRAINING_REVIEW.py",
+      "sha256": "08be770f4f9ccff7c7eb70b95a7d1dcfc65ee8fc0eca79d6794b36e84f904d75"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_STRONG_ANALYZER_WAVE1_TERMINAL_HARDSTOP_ISOLATION_AND_COMPLETE_PAIR_ADOPTION_V1_23_2R1/tests/test_package.py",
+      "sha256": "0977325100d11554b220f8ff9b2a639018d3792a3d1670a18ee065705dbf0d97"
+    },
+    {
+      "member": "reuse/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_REQUEST_HASH_REPAIR_AND_RECOVERY_V1_23_3N_4_3/reviewed_original/shard_worker.py",
+      "sha256": "097c22c827ed835c788764a941902646a938048458de0d72c6339f1d0d2a1888"
+    },
+    {
+      "member": "reuse/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_REQUEST_HASH_REPAIR_AND_RECOVERY_V1_23_3N_4_3/tests/test_control_lifecycle.py",
+      "sha256": "0a1544378c2607786f035a260c25466f813874dc075f5215c2fe5d1d418ba68d"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/qwen25_3b_schema_aware_renderer_adapter_and_trainer_native_preflight_v1_7_2/30_MATERIALIZE_CURRENT_T2_TRAINER_NATIVE.sh",
+      "sha256": "0ae3eeb92dcfe464816705c61222372d6ef9717107221d9fd8c5c091e9d1e27e"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/cognitive_runtime/output_validation.py",
+      "sha256": "0b468a3401fcd2c5ff2a90884200a01d76de88029124a91429e9c6b3b37d7f22"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/cognitive_runtime/output_validation.py",
+      "sha256": "0b468a3401fcd2c5ff2a90884200a01d76de88029124a91429e9c6b3b37d7f22"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/round_control/promotion.py",
+      "sha256": "0b563091a03a0257bce23eb9bf00fa38c8ce1091ac38f6aa54b1a12c8138a765"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/round_control/promotion.py",
+      "sha256": "0b563091a03a0257bce23eb9bf00fa38c8ce1091ac38f6aa54b1a12c8138a765"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_STRONG_ANALYZER_GROUP_TAIL_GIT_OBJECT_ID_AUTHORITY_RECOVERY_AND_DYNAMIC_PAIR_UNIVERSE_V1_23_2T/tests/test_contracts.py",
+      "sha256": "0b5ed59eb03c82e4c78a6423a134df96f2c5e2ad372267dd7725ce2f7cef0796"
+    },
+    {
+      "member": "analyzer_binding/tests/test_source_binding.py",
+      "sha256": "0be26c07c2b7f925a4c7d981e54650571161f9f4f387362b62b2f82a430d8bd5"
+    },
+    {
+      "member": "reuse/h44/vendor/typed_short_option_f0f1_verifier.py",
+      "sha256": "0c392f2a0a33b64e8f5dc4e59bf2ea27009569ba5f1a88dc967e8dee1976e9d0"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_AUTHORITY_DRIVEN_FRESH_MEMORY_AWARE_TRAIN_UPDATE_ROLLOUT_V1_23_2/live_rollout_job.py",
+      "sha256": "0c6a522a207566b77398e5dfa8c052b0d224998c5a5733bf74e2fd4bae5917ec"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/round_control/benchmark_sealing.py",
+      "sha256": "0ce0a3d76d8f40c964a3a49c66c6d71a33156ee5cc65c048016a61fd11fc9aff"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/round_control/benchmark_sealing.py",
+      "sha256": "0ce0a3d76d8f40c964a3a49c66c6d71a33156ee5cc65c048016a61fd11fc9aff"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/reference_loop/paired.py",
+      "sha256": "0d29272c6154405f65b2ef1bd8755c1ce39e8ab3991aeb1fd129d21f56a97943"
+    },
+    {
+      "member": "evidence/server_select_sources_05/native_stage4d/RUN_AUTHORIZE_AND_SUBMIT.sh",
+      "sha256": "0d2b19eff4cfed3617299e1bce7d878b562b771f0364a07072fd73b38b52532d"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/qwen25_3b_schema_aware_renderer_adapter_and_trainer_native_preflight_v1_7_2/tools/materialize_verified_strategy_dual_view_native.py",
+      "sha256": "0e0494845b5d3316308ed5719beccbadec6bc3ede3a0ff81c3130c1495faff12"
+    },
+    {
+      "member": "evidence/server_select_sources_05/native_stage4d/stage4d_full/authorize.py",
+      "sha256": "0e29fa28d962a83b5970bf4777580740f5dc6611458efb808d7a232abcc2b64d"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_generic_training_model_init_smoke_v1_3_cluster_resource_policy_fix/smoke/smoke_runner.py",
+      "sha256": "0e374b4e491ad5b0ac8c9d586b3dc363498656e357f3cb20d89fc4dff6e50e2f"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_AUTHORITY_DRIVEN_FRESH_MEMORY_AWARE_TRAIN_UPDATE_ROLLOUT_V1_23_2/tests/test_rollout_classification.py",
+      "sha256": "0e47f266c0f3af4116009c6de3b68654db87387f695374e7e703b9e93360846a"
+    },
+    {
+      "member": "continuity_binding/no_training_update.py",
+      "sha256": "0f1a9a7951026ecebab629b8916ac4b844f204572f58aa953c755b72299b2c76"
+    },
+    {
+      "member": "policy_binding/tests/test_publication.py",
+      "sha256": "0fb079afe01cc2ed05a5f337fa78587a80056b2359366d752b0a8ffcb23cbd5d"
+    },
+    {
+      "member": "analyzer_binding/source_binding.py",
+      "sha256": "0fb0eee46e326b573f66cb0ffbfb14dcc10a743ba55082a59ee4213136005c6b"
+    },
+    {
+      "member": "post_binding/source_overlay.py",
+      "sha256": "106e84d973815e4133b05978483c1e312e2b86f340eebfb154a71cbb372d3254"
+    },
+    {
+      "member": "entry/tests/native_driver_case.py",
+      "sha256": "1097c1b0eaffc04de6a573f3663db6b4eab92a6e848904e839d7779f85100692"
+    },
+    {
+      "member": "reuse/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_REQUEST_HASH_REPAIR_AND_RECOVERY_V1_23_3N_4_3/tests/test_native_producer_integration.py",
+      "sha256": "10ed6c96ed050cf2fbd6ad4ca80abb825b77b16bc72d93610d1aa3ffc5b3e0d4"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/round_control/orchestrator.py",
+      "sha256": "1104eee1aee099a716b522558798354edc5bf7c3f24adef792eba019257b0246"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/round_control/orchestrator.py",
+      "sha256": "1104eee1aee099a716b522558798354edc5bf7c3f24adef792eba019257b0246"
+    },
+    {
+      "member": "registered_sources/anchors/entry/source_integrity_registry.py",
+      "sha256": "115be380d656e648fab5f50b2467e186c044dfa37a6251ec4ece848f3d04d4b9"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/reference_loop/identity_review.py",
+      "sha256": "1182f9b258cb2b69896bbfad97dd8a58bd86f5827664f3373ab5b347d4773e96"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_DYNAMIC_STRONG_PLANNER_PRE_AUTONOMOUS_INFRA_RECOVERY_AND_F0F1_HANDOFF_V1_23_2W/dynamic_pre_v2_semantic_normalization.py",
+      "sha256": "1214cc8c298ed319e159e35edd0980cb1909e91787ef8ea27a3f47839d28d695"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_DYNAMIC_STRONG_PLANNER_PRE_RESUME_STABLE_MEMORY_CENSUS_AND_AUTONOMOUS_INFRA_RECOVERY_V1_23_2X/dynamic_pre_v2_semantic_normalization.py",
+      "sha256": "1214cc8c298ed319e159e35edd0980cb1909e91787ef8ea27a3f47839d28d695"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_DYNAMIC_STRONG_PLANNER_PRE_V2_AND_F0F1_HANDOFF_V1_23_2V/dynamic_pre_v2_semantic_normalization.py",
+      "sha256": "1214cc8c298ed319e159e35edd0980cb1909e91787ef8ea27a3f47839d28d695"
+    },
+    {
+      "member": "entry/driver.py",
+      "sha256": "1273b750e6f3037068d8c598691622fc94d843ef49f63bd6e871dd1fcff311dd"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_DYNAMIC_STRONG_PLANNER_PRE_RESUME_STABLE_MEMORY_CENSUS_AND_AUTONOMOUS_INFRA_RECOVERY_V1_23_2X/tests/test_v1232x_contracts.py",
+      "sha256": "12df3db419e30d948b1c7b3075e9ee5d10e8f3198344d496a8ffba97467dda8c"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/reference_loop/identity.py",
+      "sha256": "13160efe67820b2323f16c88210fb081d9b5fc908ce42c800492634df75113c5"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/security/trusted_bootstrap.py",
+      "sha256": "136abc108b84e496a37625349ae3aa62f48b0ce79ad443745e1840af6cf5df74"
+    },
+    {
+      "member": "evidence/server_select_sources_05/native_stage4d/stage4d_full/live.py",
+      "sha256": "1419854de8945b28840ff86d3282a53600af4b11b56aa373396966b9943bf8db"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/cognitive_runtime/researcher_primary.py",
+      "sha256": "143189ca04c135953266c64664c0f11b89df762eefd6f17255870b7feaecd859"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/cognitive_runtime/researcher_primary.py",
+      "sha256": "143189ca04c135953266c64664c0f11b89df762eefd6f17255870b7feaecd859"
+    },
+    {
+      "member": "reuse/h44/native_branch.py",
+      "sha256": "144d4c699e4f6a81730673f21a1292a29e3b6c8c3b1e8e7e8017e347177d82b3"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/descriptive_eligibility.py",
+      "sha256": "1506457e6308618968b277d04ca3178d6e49a44f96f848311823d36a8c7fcada"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_generic_training_stage_v2_1_hardening_build/round_training/adapters/__init__.py",
+      "sha256": "1521936a899b3848756b69ceb74ed80cab74888df647be298b7a86a14d7978b3"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/memory_execution_identity.py",
+      "sha256": "1550b467bc7986880ed59f9bf4b415fa7d1cdd04b6a5743c6494d827352746ce"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_STRONG_ANALYZER_WAVE1_COMPLETE_PAIR_ADOPTION_AND_CANONICAL_ACT3_GROUP_PREP_V1_23_2R/RUN_V1232R.sh",
+      "sha256": "159e113f9fa5f3f383ff80ce53687fdc0d7fa365d2e72c7b21f2fc07572066d7"
+    },
+    {
+      "member": "offoff_binding/tests/conftest.py",
+      "sha256": "15e146eacea9858d3aed5f7d006f1aa34205cff53652d217fdd26704191c73c0"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/interface_isolation_request.py",
+      "sha256": "163d8c62e8359afa7efcc2e8032dd018d67e4b30f0facbe413c1fc697188d38b"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/interface_isolation_request.py",
+      "sha256": "163d8c62e8359afa7efcc2e8032dd018d67e4b30f0facbe413c1fc697188d38b"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_generic_training_stage_v2_1_hardening_build/round_training/adapters/frozen_formal_train_peft.py",
+      "sha256": "166dbaff3845588ff53f0a4306d7116b59ac0026f4de191cf8bb696e9d38a327"
+    },
+    {
+      "member": "reuse/h44/strong_post.py",
+      "sha256": "172c74c09d22980f6cd033af5bafca248e6c047475311bf71c99c2e346af7e1b"
+    },
+    {
+      "member": "VERIFY.sh",
+      "sha256": "1736dad36d3fdebb65771069b2247cde310151a4c2d92fdf8706633510dd3157"
+    },
+    {
+      "member": "reuse/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_REQUEST_HASH_REPAIR_AND_RECOVERY_V1_23_3N_4_3/producer/runtime_surface_preflight.py",
+      "sha256": "17843c5a99b0f00c5a7a9062498996ee5247351d9ddfb4c14b529b8f0377cb3d"
+    },
+    {
+      "member": "reuse/h44/tests/test_native_policy.py",
+      "sha256": "17fcf408195b1232af914fb5ca1d69aa9c3cb2a667368c890702e14b078ac0f0"
+    },
+    {
+      "member": "training_binding/materializer.py",
+      "sha256": "184550613586f1fc75788b270396cb9b340452b5665edba6ce94ea94527c5814"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/human_t2_training_result_audit_offoff_reuse_census_v1/auditlib/__init__.py",
+      "sha256": "18541b3fc7d09dcc7ea576b631839a558f46b617b034d6a91c43e69dfa5ff833"
+    },
+    {
+      "member": "continuity_binding/tests/test_no_training.py",
+      "sha256": "18a49b5b21bc6daf9d94613704ecd8785999b52a57c4bca5d0c9483bba6be1bb"
+    },
+    {
+      "member": "reuse/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_REQUEST_HASH_REPAIR_AND_RECOVERY_V1_23_3N_4_3/producer/request_hash_repair.py",
+      "sha256": "18bb48aa976bbc1b09e9aa982ba568f74de5aac8264d96ba2a08db38ce99df93"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_human_t2_formal_training_execution_v1_2_preflight_summary_fix/tests/test_package_contract.py",
+      "sha256": "192c27e5247fed3725b0b84df943bf08b8f826752bcd899bba483e1770ae237b"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/qwen25_3b_frozen_renderer_interface_census_and_reference_takeover_bridge_v1_6/tools/common.py",
+      "sha256": "1937d7529bfc969e42975220acbaeb080956d856d8ccb68feb2f98b90d796970"
+    },
+    {
+      "member": "live_adapter/adapter.py",
+      "sha256": "1a3a6661d97bbadf82fbd59b05aba5a9b8b226766d993acd7b367cd8f9c7ce35"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/qwen25_3b_frozen_renderer_interface_census_and_reference_takeover_bridge_v1_6/tools/census_frozen_q2_renderer_interface.py",
+      "sha256": "1b0ee1ec694d8fab31f5e45f800436b0c7d657cb35f26370a7d8a5353e1b61e3"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/qwen25_3b_frozen_renderer_interface_census_and_reference_takeover_bridge_v1_6/PACKAGE_ENV.sh",
+      "sha256": "1b11d6c280fd25605dd7fbb1d105ee2d6f4ec90a9a3e759688efb3c820887c4c"
+    },
+    {
+      "member": "reuse/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_REQUEST_HASH_REPAIR_AND_RECOVERY_V1_23_3N_4_3/tests/fixtures/clean_execution_binding.py",
+      "sha256": "1b602201ec3228dcbcc1e75c280aea49d15487e39a4955706cc5782006d7ad7a"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/round_control/clean_execution_binding.py",
+      "sha256": "1b602201ec3228dcbcc1e75c280aea49d15487e39a4955706cc5782006d7ad7a"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/round_control/clean_execution_binding.py",
+      "sha256": "1b602201ec3228dcbcc1e75c280aea49d15487e39a4955706cc5782006d7ad7a"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/qwen25_3b_schema_aware_renderer_adapter_and_trainer_native_preflight_v1_7_2/RUN_SCHEMA_AWARE_RENDERER_AND_TRAINER_NATIVE_PREFLIGHT.sh",
+      "sha256": "1b745ffb5a03b5e055a289e29798e3aefeb3918d770bb198060155313965e025"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/policy_exposure.py",
+      "sha256": "1c79e1930c714a8f423b4b01c1f31306cb62a362c6a0d84cad1ed659804dc045"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/analyzer/gold_panel.py",
+      "sha256": "1c7ea603851fa3ffe00859fd71e3b01b64288c879400dc4bf1b5755a7d6c1749"
+    },
+    {
+      "member": "offoff_binding/__main__.py",
+      "sha256": "1c91c46b0c05798ac70d9d311d2f7c560d93fb0dcb9cffb5ee9b41d5f73ad0c8"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/package_a_execution_ledgers.py",
+      "sha256": "1d252b7e8934c17f4114d7260a35abbe0b20a55cd9c149b710009dfa96654931"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/cognitive_runtime/projections.py",
+      "sha256": "1dcd5ac80e7a9456b9967491508d66b1a7478a02f4d061251114685ca85cd6ae"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/cognitive_runtime/projections.py",
+      "sha256": "1dcd5ac80e7a9456b9967491508d66b1a7478a02f4d061251114685ca85cd6ae"
+    },
+    {
+      "member": "offoff_binding/parallel.py",
+      "sha256": "1de230837579e8fa14d49ce0825898adce1a13866935c59ec8c5a67d087e88ed"
+    },
+    {
+      "member": "reuse/PCHSI_RECEIPT_DRIVEN_FULL_ROUND_DRIVER_V1_1/tests/test_plans.py",
+      "sha256": "1e27bf00d0a16bd170f7a6d0347756649c21ea64422b36da971f20c076a63783"
+    },
+    {
+      "member": "TEST_FIXTURE_REGISTRY.json",
+      "sha256": "1e5af425f9ffa4edcfbf8b388cd6332f5382b3385689e38ae3a97f20fbc7de57"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/condition_run_schedule.py",
+      "sha256": "1eac1306540417d4794fa98ca338198206826590f50236187c6563ec6dbaf2a6"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/condition_run_schedule.py",
+      "sha256": "1eac1306540417d4794fa98ca338198206826590f50236187c6563ec6dbaf2a6"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_AUTHORITY_DRIVEN_FRESH_MEMORY_AWARE_TRAIN_UPDATE_ROLLOUT_V1_23_2/submission_contract.py",
+      "sha256": "1ebc328058a70b57f8d0db40455e14ec9b183ca51f4ff3b0d9021335323a0163"
+    },
+    {
+      "member": "entry/offoff_job.py",
+      "sha256": "1f712e7b0650faa61c4ecade339cb02bf954e572161a4afc7af9d5686e4986e4"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_generic_training_model_init_smoke_v1_3_cluster_resource_policy_fix/tests/test_path_alias_binding.py",
+      "sha256": "201edf2e57fef0d9ae7347c49ec9a28723785f755410a0fbda4f55b9bea017ca"
+    },
+    {
+      "member": "reuse/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0/post_route_recovery.py",
+      "sha256": "20cc4991f6b992822f359db7c549ff31790789fa3ec6aa81bd14e7354e8ca3de"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/policy_condition.py",
+      "sha256": "20ed04159621451363c87c32134fc0ce4b38bd7caa2279727203c7f3cd6066c7"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/policy_condition.py",
+      "sha256": "20ed04159621451363c87c32134fc0ce4b38bd7caa2279727203c7f3cd6066c7"
+    },
+    {
+      "member": "live_adapter/h44_input.py",
+      "sha256": "2138196ee7c5153c47fba920fadb706684efeb1ad2882ce6b5e1c200ad4bbfd7"
+    },
+    {
+      "member": "reuse/h44/option_adapter.py",
+      "sha256": "2225e03d62a8ddd86b4559b9efe88ec67b47c648aa5f9f6f3a3323d69f58ee26"
+    },
+    {
+      "member": "reuse/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_REQUEST_HASH_REPAIR_AND_RECOVERY_V1_23_3N_4_3/reviewed_original/global_finalize.py",
+      "sha256": "2244c17d42b1249fabe9e920c7bc50b527ae89f488220c48719eed5641b2b1af"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/round_control/clean_analyzer_input_materialization.py",
+      "sha256": "225a1548e6b03cbcdac11a6152863f9c6683b545b8886d176107c8792ac07758"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/round_control/clean_analyzer_input_materialization.py",
+      "sha256": "225a1548e6b03cbcdac11a6152863f9c6683b545b8886d176107c8792ac07758"
+    },
+    {
+      "member": "RUN.sh",
+      "sha256": "232e7b01b2999fa36e3386584ce245924969078a6ccc938533426ae7d1bccf07"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/reference_loop/__init__.py",
+      "sha256": "232f2ee469eb163b883991db2f03e99ef3bc6f90ea191e9d11d3d9c433ffa4b1"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/token_budget_calibration.py",
+      "sha256": "23a87de89efa990c28a35d9be02f8f5bed718d0ff57de857f206b34149ee6af5"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/qwen25_3b_schema_aware_renderer_adapter_and_trainer_native_preflight_v1_7_2/tools/reproduce_historical_renderer_84.py",
+      "sha256": "23d11b38c74fe768e21b58c03d16149dd629c373bbb8c1e0db1ad78c84cdc7b3"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/research_intelligence/paradigm.py",
+      "sha256": "245fd647e4dc1fb6ca9ae1ff4503ef547b64a7ff3c3cf1f8dfa874df3c15d5ab"
+    },
+    {
+      "member": "reuse/h44/source_adapter.py",
+      "sha256": "2593f3ef20f962d785e7886e697e0afa7ee4c589d4119ff0158ca0a0aa6a6133"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/round_control/role_authority.py",
+      "sha256": "25d45d3e69b540fb242e8c136020488fc5c6eee512baecd15f22b0d3976f6bc0"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/round_control/role_authority.py",
+      "sha256": "25d45d3e69b540fb242e8c136020488fc5c6eee512baecd15f22b0d3976f6bc0"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/ledger_common.py",
+      "sha256": "26150fdc1510396e901d032ee4c7a916b7c4786518f8c5cc54253d77144d6450"
+    },
+    {
+      "member": "entry/tail.py",
+      "sha256": "262a4a6c8ddc3ea1e587d27e527f58529db4c05584a1592662be961c11d8d0b0"
+    },
+    {
+      "member": "reuse/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_REQUEST_HASH_REPAIR_AND_RECOVERY_V1_23_3N_4_3/tests/test_git_timeout_resilience.py",
+      "sha256": "262eddfb1d1db06f1e4adde4c389f22f61f81aba5c80abcdb2ec526119cc0f6a"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/round_control/lifecycle.py",
+      "sha256": "2632a3c8aac3316450e9f8c92c8a1edf8542e6440391700557f16e22845b00e3"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/round_control/lifecycle.py",
+      "sha256": "2632a3c8aac3316450e9f8c92c8a1edf8542e6440391700557f16e22845b00e3"
+    },
+    {
+      "member": "training_binding/tests/test_clean_base.py",
+      "sha256": "267f764bb973393744392499ffbb983a469702415f25388a63b638e3c040cd71"
+    },
+    {
+      "member": "reuse/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0/safe_io.py",
+      "sha256": "26e49de366608f62b78a5cba2e301885b1038e7172fa65dd3b1e00868d06f9d8"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/human_t2_training_result_audit_offoff_reuse_census_v1/tests/test_package_contract.py",
+      "sha256": "273197ba982acc511dbf696834224b333b5c6ded7d2f12c2611c70cc19ade770"
+    },
+    {
+      "member": "reuse/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0/tests/test_training_acceptance.py",
+      "sha256": "279d3e1a652b4ca0ca85cc53f2687cd1dbe9849ade091aa518c0e68a3e28d74d"
+    },
+    {
+      "member": "reuse/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0/tests/test_runtime_inheritance.py",
+      "sha256": "27e8ebe866fbe0da93af580ce4791e6e44be6990f9fc1b5f24abd8dd3591e09f"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/cognitive_runtime/request_renderer.py",
+      "sha256": "27eb63847ab827b98290ce102d02850650cefc0dc2b3ae74681a5d51645125b9"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/cognitive_runtime/request_renderer.py",
+      "sha256": "27eb63847ab827b98290ce102d02850650cefc0dc2b3ae74681a5d51645125b9"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/research_intelligence/selected_candidate_authority.py",
+      "sha256": "280901f0b25b1553727f4691a8953bbd4d8a4c19af5a2149e1a55468abd39d36"
+    },
+    {
+      "member": "reuse/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_REQUEST_HASH_REPAIR_AND_RECOVERY_V1_23_3N_4_3/supervise.py",
+      "sha256": "28c6c84d4f8377ce82ad7ede20ca467dd5723cb16e1dc42d2a721eaa42c5f8ea"
+    },
+    {
+      "member": "memory_binding/__init__.py",
+      "sha256": "291e5ae7961dea40f48e44404f3b32eb39999e39ef2c42dc5bb25a48f87fe00e"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/a0_replay_session.py",
+      "sha256": "296734519c105dab8bd2de109957656d603a0a43db26ebb449a3fd44783c53ef"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_DYNAMIC_STRONG_PLANNER_PRE_RESUME_STABLE_MEMORY_CENSUS_AND_AUTONOMOUS_INFRA_RECOVERY_V1_23_2X/RUN_V1232X.sh",
+      "sha256": "297340da7d0d9ec0b39f09a1dfa7d131e55c9854ba6c696d61d317f7d3110238"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/security/execution_gate.py",
+      "sha256": "299533ff187e11365c7c9b6bf6e09d2fb16dd93be808a718f998ace47aa8382a"
+    },
+    {
+      "member": "training_binding/tests/test_strategy_source.py",
+      "sha256": "29d829af00774be6f95a01129105f21f3063f7fe2e6833663df55c8c0c7f1e2d"
+    },
+    {
+      "member": "reuse/h44/vendor/policy_runtime_slurm_execution.py",
+      "sha256": "29f986bb0dd7055d9f83588caa474917cc29bc31afcee27b2e41ea696a52bee4"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/action_trace.py",
+      "sha256": "2a49abf6b3797652a53da573999b3436796207fa9fd638f0e78ffde25059dffa"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/action_trace.py",
+      "sha256": "2a49abf6b3797652a53da573999b3436796207fa9fd638f0e78ffde25059dffa"
+    },
+    {
+      "member": "reuse/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_REQUEST_HASH_REPAIR_AND_RECOVERY_V1_23_3N_4_3/analyzer_preflight.py",
+      "sha256": "2a64ca1235e335e978ce6d4827d54e7d2d4f832d96905c4dbabc91e933cc6db0"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/cognitive_runtime/round_evidence.py",
+      "sha256": "2acf66adb9c124263ab8c4d819522518b21ffac6e18e6a22865ffdbe14463cb2"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/cognitive_runtime/round_evidence.py",
+      "sha256": "2acf66adb9c124263ab8c4d819522518b21ffac6e18e6a22865ffdbe14463cb2"
+    },
+    {
+      "member": "reuse/native_bba/scripts/cognitive_runtime/audit_assets_and_manifest_v1.py",
+      "sha256": "2c49fb7146b8e794981ca520673dd5902a9c2823035c4b86f275f6e109b7a574"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_human_t2_formal_training_execution_v1_2_preflight_summary_fix/tests/test_no_unintended_execution_surface.py",
+      "sha256": "2cbe9e5f3baa2f74a33c3a7404600bfbb44b8e3a188a91a434f5f71971a2dcd0"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_generic_training_stage_v2_1_hardening_build/tests/test_contract_v2_and_local_analyzer_ddp_runtime_v1.py",
+      "sha256": "2cf9432c30fc0fb4b53ebc1dc71f5044988d4244db87597517748fc33e74d77a"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_AUTHORITY_DRIVEN_FRESH_MEMORY_AWARE_TRAIN_UPDATE_ROLLOUT_V1_23_2/verify_package.py",
+      "sha256": "2d1f5221719048e7b69343d41087a008d8fad75419a8c1fcbdd71885def63631"
+    },
+    {
+      "member": "reuse/native_bba/scripts/cognitive_runtime/materialize_runtime_input_registry_v1.py",
+      "sha256": "2ddbac5fbf2bdf661f16dd71d5b9d0757310751255b351973d99c6288e87c5ca"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_generic_training_model_init_smoke_v1_3_cluster_resource_policy_fix/smoke/model_init_adapter.py",
+      "sha256": "2ddc245aa75099146e8796f4770bb5e8896b3181eb88b376179ea504914d70a2"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/alfworld_worker.py",
+      "sha256": "2e079313791130d3905d1824cd29f52b799b5bde3a8dd589e196f3e0d378d80b"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/alfworld_worker.py",
+      "sha256": "2e079313791130d3905d1824cd29f52b799b5bde3a8dd589e196f3e0d378d80b"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/source_integrity.py",
+      "sha256": "2e32b8460f007c468d9db4f374488585eeacb6196c8a23d6661d4989da0c838d"
+    },
+    {
+      "member": "reuse/h44/vendor/round_memory_runtime_authority.py",
+      "sha256": "2e3bad440f4abdd21a5489f3f76083b1dafebd99c6006bf9db1ea9e2dff6725c"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/analyzer/authorities.py",
+      "sha256": "2e4d50f7cf9608da4f1dec372f7c7d60726933a4cff780e1e55cdf146d33c8c4"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/cognitive_runtime/response.py",
+      "sha256": "2e8b1effabbeac262402ee004ed6792ef5355e657654b42eadb0aa3976d76694"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/cognitive_runtime/response.py",
+      "sha256": "2e8b1effabbeac262402ee004ed6792ef5355e657654b42eadb0aa3976d76694"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/reference_loop/mechanical.py",
+      "sha256": "2f63163b41159038c9512acd56d2bd51be06fe70494f6205f20ce5c598a4d0bb"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/reference_loop/identity_census.py",
+      "sha256": "308e0361f3a96dbd9c77023eaa92d24e864eac6f0ceee68b07308e2b22142d76"
+    },
+    {
+      "member": "training_binding/capture.py",
+      "sha256": "30b039d473004d5b5342ce6b956a7ac081e98a52ea937d67ae14b97978bacd8f"
+    },
+    {
+      "member": "reuse/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_REQUEST_HASH_REPAIR_AND_RECOVERY_V1_23_3N_4_3/native_preflight.py",
+      "sha256": "312bb0b8e4f5a64e9949ed1997fdbd6f4e60862d24b0046c65c929983d496673"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/security/evidence_stream.py",
+      "sha256": "3175f0eb9d2738e3871ea470641d6cfdf6b8db452af53502b17b150388031642"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/qwen25_3b_schema_aware_renderer_adapter_and_trainer_native_preflight_v1_7_2/PACKAGE_ENV.sh",
+      "sha256": "31f7d9cbe1bb26c870df2cedce0ba165d1ac8fc4910180297aceb65ba9a0186d"
+    },
+    {
+      "member": "evidence/server_select_sources_05/native_stage4d/stage4d_full/shard_worker.py",
+      "sha256": "328e29d1e93c28bb7cb1721ff4a025297511095c9fe8b7fdd0c5017c378b0d13"
+    },
+    {
+      "member": "reuse/h44/tests/test_h4_replay_report_recovery.py",
+      "sha256": "3294f0425d1d0095ab349c441076c164f915ec7bc1455e6586a2c02bbc44dfc3"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/round_control/analyzer_substage.py",
+      "sha256": "32f79122a13d757948d3a47fb3741f74f233cc160a06a0976a51398b6be9fc64"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/round_control/analyzer_substage.py",
+      "sha256": "32f79122a13d757948d3a47fb3741f74f233cc160a06a0976a51398b6be9fc64"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/budget.py",
+      "sha256": "3381e47beb1b568d7b88460d0a18e1b2aaa370f50d85a7503f1a1a9adc972453"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/budget.py",
+      "sha256": "3381e47beb1b568d7b88460d0a18e1b2aaa370f50d85a7503f1a1a9adc972453"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/analyzer/formal_failure_collection.py",
+      "sha256": "343789b40888801588fd036e0339b182368aa58f597a99ace337cc1ef9714734"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/reference_loop/rebinding.py",
+      "sha256": "3487c2193877acb7a301047afb0f708916139faaa651f4b717d97b7973a7b183"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/retrieval_key.py",
+      "sha256": "354a5283e2c685b01be1a449754ecf06a57735d46501ccc3f2afe020fd2c43cc"
+    },
+    {
+      "member": "reuse/h44/tests/test_runtime_profile_recovery.py",
+      "sha256": "358e3f289ce49c84b2a53b6cd87f29af366d2221dd4c1dd5a005593646058b65"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/source_state_contracts.py",
+      "sha256": "359e42a965b0d6c07d04bc638ae9a29510f8357ac93e1ef66a82cfd683ab8ed5"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_human_t2_pretraining_handoff_authorization_v1/handoff/smoke_review_audit.py",
+      "sha256": "36aa20076df5e92958badf9e4d4db9ad84ce7b72fcfd407de1b2a0acca218a25"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/analyzer/capability_profile.py",
+      "sha256": "36ada6b6066ae54e2049d16e2203bbc22ffd7dedda2a47014da4c0fa5ad3cb2a"
+    },
+    {
+      "member": "reuse/h44/tests/test_post.py",
+      "sha256": "36c624437b7a48ebb44fb900ee2af24931d0a224ab77b5c6215b5075e92c5ae4"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/research_intelligence/repair_portfolio.py",
+      "sha256": "36da258a86d0e00f06ed10fae835607c99f5fb25b8b0fc3285fff1afd0009953"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_human_t2_formal_training_execution_v1_2_preflight_summary_fix/tests/test_preflight_environment_sanitization.py",
+      "sha256": "371d7d94a5e049392a5752ee00ba0301f008a45b19056aa30c71a7494dce6900"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/qwen25_3b_frozen_renderer_interface_census_and_reference_takeover_bridge_v1_6/20_FREEZE_REFERENCE_TAKEOVER_NORMATIVE_BRIDGE.sh",
+      "sha256": "37242813758b1b07c796972fb62117b3f6680066c8ef3f079347ff37752aab79"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_human_t2_formal_training_execution_v1_2_preflight_summary_fix/formal_exec/common.py",
+      "sha256": "37ff9dce65ba021b6c55fe7b81c97955b1786571dbe22866629268598b11a20c"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/procedural_completeness.py",
+      "sha256": "38bd5330f6d8ad410c16de9a2b0128299f28467115c1232fc17b43c4e65bc955"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_STRONG_ANALYZER_WAVE1_TERMINAL_HARDSTOP_ISOLATION_AND_COMPLETE_PAIR_ADOPTION_V1_23_2R1/verify_package.py",
+      "sha256": "39a142c462a9564631fa5cb1e965923206918cc99743575cd80e326440da7e84"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_ROLLOUT_HANDOFF_STRONG_ANALYZER_RUNTIME_REGISTRY_AUTHORITY_RECONCILIATION_V1_23_2Q/tests/test_package.py",
+      "sha256": "39aa440f349cb67b3ec139a58d692a6989e487dd8eca0bc9a3f687fc45cb2402"
+    },
+    {
+      "member": "reuse/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_REQUEST_HASH_REPAIR_AND_RECOVERY_V1_23_3N_4_3/vendor/V1232Q/tests/test_package.py",
+      "sha256": "39aa440f349cb67b3ec139a58d692a6989e487dd8eca0bc9a3f687fc45cb2402"
+    },
+    {
+      "member": "reuse/h44/round_plan.py",
+      "sha256": "3b5d9534087b6324a4fa7f482167626e45708fabe1bc4c1e71f271ca3ae8a625"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/research_intelligence/visibility.py",
+      "sha256": "3b6da85849a17bba9212275dbdc6bf5bd51072abcc3ae24d8344b3f48e2b9561"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/research_intelligence/distillation.py",
+      "sha256": "3bc7067bcd77e33546fba63df86d39bb7c28aab5d71864a62a02708bd4ed3547"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/research_intelligence/clean_f0f1_manifest.py",
+      "sha256": "3bc91c83ae2cc63ab204c7e68dc06cf10f21eeb1c0d9f8c4ea79ec7a43f501f6"
+    },
+    {
+      "member": "reuse/h44/RUN_RECOVER_CONTEXT_OVERFLOW_POST.sh",
+      "sha256": "3c16375ec3c90374b91af1f8aad9beac7c48853b9055ec27915317f3a76b3da6"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/promotion_ledger.py",
+      "sha256": "3c196b0c3c58e740e8c0d92c82ec0bd30a8f409ae480b0c0f44af240c296987a"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/source_state_replay.py",
+      "sha256": "3c4f92e84c8c4cfef3ea5379a2ef628aca97d3c2dc8c43e137625721db4f1d4f"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/analyzer/metric_registry.py",
+      "sha256": "3d5b9cc3fc463c04427944d9eadda2e2a8eeb96d212470d103022b108c113677"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_human_t2_formal_training_execution_v1_2_preflight_summary_fix/tests/test_submission_idempotency.py",
+      "sha256": "3d68121c9d4207ac3e40aa91b7b0f6eea9752b227db9df8d58e527e8d7c577b1"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_human_t2_formal_training_execution_v1_2_preflight_summary_fix/tests/test_authorization_semantics.py",
+      "sha256": "3ddda791b71bf5113271a80f227ec23ddab8c88794f7968fa75104359cdbfcab"
+    },
+    {
+      "member": "reuse/h44/deployment.py",
+      "sha256": "3de83ae1ca44af986140dae766211f366fd44d0601cccd6043d6c32a1e39a36f"
+    },
+    {
+      "member": "continuity_binding/memory_materializer.py",
+      "sha256": "3ea67e061cabfc207c22fdbee15121fcf816ace500e9617a04456276551884d8"
+    },
+    {
+      "member": "training_binding/accepted_output.py",
+      "sha256": "3ef183d42a19d6bba9483866b3ab6de12603560b20a7e9132c39ced103594e9d"
+    },
+    {
+      "member": "reuse/h44/tests/test_h44_context_overflow_recovery.py",
+      "sha256": "3f1b663bf91aea71560a3c7d45ec4e5e52063ceb998162d6e92dc992c9f19e56"
+    },
+    {
+      "member": "reuse/h44/post_settlement.py",
+      "sha256": "3fe29e7ef6e50f73023ed067cb37139131fe64ad8ab2f868725e12c4d026d517"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/round_control/execution_plan.py",
+      "sha256": "3fea15a04e737561f3e3d620169eff483ac51965adcd9ab0bdcfd423053bfcb3"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/round_control/execution_plan.py",
+      "sha256": "3fea15a04e737561f3e3d620169eff483ac51965adcd9ab0bdcfd423053bfcb3"
+    },
+    {
+      "member": "entry/bootstrap.py",
+      "sha256": "40a26bd24cb907856df2f8e0cb08f2c68c080ab9b6d4d956776c69549d20be5c"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/analyzer/component_attribution.py",
+      "sha256": "411b294f852f5525cc5e6bb6cbb2bd3a99a13522869713c5de469e57612cd3b2"
+    },
+    {
+      "member": "entry/tests/test_tail.py",
+      "sha256": "42410bf12e1a32c0d83ffb66a9b4c273754c78685ddc5cd82918dfb000f6fb12"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_generic_training_stage_v2_1_hardening_build/round_training/stage_runner.py",
+      "sha256": "42f657bf9bc7b796bfe02612dd1a4d13d8896f0bcbdb69db9fa23cec71a961e1"
+    },
+    {
+      "member": "reuse/PCHSI_RECEIPT_DRIVEN_FULL_ROUND_DRIVER_V1_1/VERIFY_PACKAGE.sh",
+      "sha256": "4312b2cb33350d659a556f1c5ca38a0452b0e542df0547e808361c09eff24174"
+    },
+    {
+      "member": "offoff_binding/execute.py",
+      "sha256": "437c66dbc48708f5607ec419a06a4821c72abf996518ee73be0c660eec6ee19f"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_generic_training_stage_v2_1_hardening_build/round_training/contracts.py",
+      "sha256": "4389b05d11f0da09340c8e46bf393e8cc4daf684ea57f7bd00c73cfa76391bcf"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/security/dataset_identity.py",
+      "sha256": "43a949348bb3117a495ea2c33d538411ac1c7bce41e60151471137d65cf88df1"
+    },
+    {
+      "member": "rollout_adapter/lifecycle.py",
+      "sha256": "43b88d9f0f358c5c16c6eef99a193c1f0eaa42d72fe75d86526947c2a82ba195"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/qwen25_3b_schema_aware_renderer_adapter_and_trainer_native_preflight_v1_7_2/20_REPRODUCE_HISTORICAL_RENDERER_84.sh",
+      "sha256": "43db2855b920521b6ae1c76560db72d1e70c404f9b9f5faa7616f8bb21a8bdc9"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_STRONG_ANALYZER_GROUP_TAIL_GIT_OBJECT_ID_AUTHORITY_RECOVERY_AND_DYNAMIC_PAIR_UNIVERSE_V1_23_2T/source_context_equivalence.py",
+      "sha256": "44032d5a256e59836fe876870cd794e13f7f00c285604743e9619182fc1fb996"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_STRONG_ANALYZER_G_TERMINAL_ADOPTION_CPX_DYNAMIC_PAIR_UNIVERSE_V1_23_2U/source_context_equivalence.py",
+      "sha256": "44032d5a256e59836fe876870cd794e13f7f00c285604743e9619182fc1fb996"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/token_budget_contract.py",
+      "sha256": "44b437cd28a61533e435a3a6a9e5f7454b13de14d421dfddd6cd7f18244b4402"
+    },
+    {
+      "member": "reuse/h44/post_resume.py",
+      "sha256": "44e665442bbd2879088134ae6cd335cc141c402d3320eb6dbf1c347d3c1791cc"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/research_intelligence/common.py",
+      "sha256": "461610714ee8fa97558326c82e3425d2ae7fb12d2b719d5387cd28526a495959"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/rendered_prompt.py",
+      "sha256": "46bef5f98ae54350bfdc3c7c7593747ebee5d859f0724687fa4c1ad863eaf8c4"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/rendered_prompt.py",
+      "sha256": "46bef5f98ae54350bfdc3c7c7593747ebee5d859f0724687fa4c1ad863eaf8c4"
+    },
+    {
+      "member": "offoff_binding/registered_inputs.py",
+      "sha256": "46ca3eb5f43f2bbb6aac1590b9f4aa6f60f751758ada8a8c92deff4688b6bbc5"
+    },
+    {
+      "member": "evidence/server_training_sources_04/formal_train.py",
+      "sha256": "4709c32d34b437d2884fa83d4967f4d898e4cd17d5a56ce0b9e72a250f0ad9e7"
+    },
+    {
+      "member": "rollout_adapter/materializer.py",
+      "sha256": "4789a374d53b31a46d7b68bcaebbf1b11e9d997a3534ed8171c9e32c7d8230b8"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_AUTHORITY_DRIVEN_FRESH_MEMORY_AWARE_TRAIN_UPDATE_ROLLOUT_V1_23_2/tests/test_submission_contract.py",
+      "sha256": "47933a618f4a0a1b7a5fbddb5ee4f77c789c2bd5363f6e1e628e3aab8024937e"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/round_control/common.py",
+      "sha256": "47df7037836cbce8a244686d9428a6b7fa00e07a2b6fb514b3c5cd9f5e09ab63"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/round_control/common.py",
+      "sha256": "47df7037836cbce8a244686d9428a6b7fa00e07a2b6fb514b3c5cd9f5e09ab63"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/security/probe_results.py",
+      "sha256": "48cd917b172d1e788d7ea6974a8ef8bacc0bd3df06f9a43b21343703facac860"
+    },
+    {
+      "member": "live_adapter/local_stage.py",
+      "sha256": "491279b87b6bf6c3d3956aa28c74bde93fac87b4ea0d034cd3626eed8477377f"
+    },
+    {
+      "member": "offoff_binding/tests/test_binding.py",
+      "sha256": "4a18341b078d96ac973e0439f728421ba4872ef465acb45b041040a50f7af429"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/round_control/next_round.py",
+      "sha256": "4a886b8342e031d326a805e623dde673f8570b00733b4e94dc486075cef1ad2f"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/round_control/next_round.py",
+      "sha256": "4a886b8342e031d326a805e623dde673f8570b00733b4e94dc486075cef1ad2f"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/analyzer/metrics.py",
+      "sha256": "4aa520e0a7717cc12bbe427460a41205047cd32795771661e05eea705418610f"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/policy_view_safety.py",
+      "sha256": "4aa650ad4acac03910a19b5bf8b79ed108bd8dff9dc068c472269533ffe0ac6c"
+    },
+    {
+      "member": "memory_binding/worker_startup/sitecustomize.py",
+      "sha256": "4b5957e917298a246a573fc26bc0b52bbcace182531e1b12ff70609915b9bf11"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_human_t2_formal_training_execution_v1_2_preflight_summary_fix/10_PREPARE_FORMAL_AUTHORIZATION.py",
+      "sha256": "4beb3f76158ad29fb133ccb4a53f8e290d3dafb6619f72f508a1a78f022b9925"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_generic_training_stage_v2_1_hardening_build/tests/test_generic_contracts.py",
+      "sha256": "4c0addb680de387663e1dd086f8f7649eb1f133f598f17b76dfc4df86cd15573"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/condition_execution_binding.py",
+      "sha256": "4c0c74a3016d951978fb9b7485dac3786ccfdf47405a09b7e74a5a3a01c1bef3"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/condition_execution_binding.py",
+      "sha256": "4c0c74a3016d951978fb9b7485dac3786ccfdf47405a09b7e74a5a3a01c1bef3"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_DYNAMIC_STRONG_PLANNER_PRE_AUTONOMOUS_INFRA_RECOVERY_AND_F0F1_HANDOFF_V1_23_2W/RUN_V1232W.sh",
+      "sha256": "4c1c82b29f02efa6b721309e4a4d02e035532014ac585e978866bdae8098e80f"
+    },
+    {
+      "member": "offoff_binding/tests/test_parallel.py",
+      "sha256": "4c9384cd56d1fc5beb6b2aa1d5ef0cb4668d20e8a67aa081812862c154a0c28b"
+    },
+    {
+      "member": "entry/candidate_runtime.py",
+      "sha256": "4cae387a331990542ceaf92606ea2cdb583bad7c7154e23959630062d130a771"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/policy_client.py",
+      "sha256": "4cb27a33f29c3b9c5a9f252aa21557d1ac86ee9505de8e0b05d6a4df616aedbf"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/policy_client.py",
+      "sha256": "4cb27a33f29c3b9c5a9f252aa21557d1ac86ee9505de8e0b05d6a4df616aedbf"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/research_intelligence/human_reference_round.py",
+      "sha256": "4cfdf7e2e0c88cd75f17f43f1a4ec0287589a04b6029352cdb8ac68b3a42740d"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/effect_ledger.py",
+      "sha256": "4d1931f5bde06bb7125dbb795672adbc95771fe56ade2285e5f5529868dc84bd"
+    },
+    {
+      "member": "post_binding/tests/test_source_overlay.py",
+      "sha256": "4d2575a1effd2bae49aa40d50606f120d66cea2c18938fe23ccf4ba49793de66"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_human_t2_pretraining_handoff_authorization_v1/handoff/handoff_builder.py",
+      "sha256": "4d65af6f683bf779a774fb743a43a9fd08dd80063508db1a95632c20f6832878"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/security/__init__.py",
+      "sha256": "4d985f629a4bc4645dcd6e3786750a6d8b48df6cde797eebc9845ab2aa3bd6e0"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/research_intelligence/final_two_slot_resolution.py",
+      "sha256": "4db4d623f418f53ca63c80c459f05005e3694af78d36d68b57699b14019363f3"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/cognitive_runtime/ledger.py",
+      "sha256": "4e24f4b22b641dacd67116a2417ad9a085124ce571b49df1e735edd1855ddb38"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/cognitive_runtime/ledger.py",
+      "sha256": "4e24f4b22b641dacd67116a2417ad9a085124ce571b49df1e735edd1855ddb38"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_generic_training_model_init_smoke_v1_3_cluster_resource_policy_fix/tests/test_smoke_contract.py",
+      "sha256": "4e41513d3e868341399b8948c34dcd7705eedf501ab289d6aac216d8f1fbc0e2"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/cognitive_runtime/identity.py",
+      "sha256": "4e43e8697bf0d5ff6b820acf25dc68569f907e31ca66f9ef08f7d4adf8b99e90"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/cognitive_runtime/identity.py",
+      "sha256": "4e43e8697bf0d5ff6b820acf25dc68569f907e31ca66f9ef08f7d4adf8b99e90"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/policy_contract.py",
+      "sha256": "4e84869ae035ad9db34ef984b8fd42824c3167aced70203ce2da6559a5608b0a"
+    },
+    {
+      "member": "post_binding/tests/test_same_call.py",
+      "sha256": "4f1faa0f6223ce25ee36e7e3182611ce9218624144c5e2a5e871274f87649007"
+    },
+    {
+      "member": "offoff_binding/tests/test_native_invocation.py",
+      "sha256": "4f5e46c5377870a951a8d175c28fffdf88c0f556d9407221ad8b009aae642f02"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/qwen25_3b_frozen_renderer_interface_census_and_reference_takeover_bridge_v1_6/tests/test_contract.py",
+      "sha256": "4f8ff8422ad490a4f870c44b2c8261ab45d8255891fb45ca2851f75fb80ed152"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_STRONG_ANALYZER_G_TERMINAL_ADOPTION_CPX_DYNAMIC_PAIR_UNIVERSE_V1_23_2U/RUN_V1232U.sh",
+      "sha256": "4ff5c43eccb1d6da198f8039bd4285508bcb229c290e4f32651ce34d83f12683"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_STRONG_ANALYZER_G_TERMINAL_ADOPTION_CPX_DYNAMIC_PAIR_UNIVERSE_V1_23_2U/tests/test_contracts.py",
+      "sha256": "50009515395b6f552d252e6853a14e6f75cda014f4c1c3cd966758fa9d73accc"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/clean_full_evidence.py",
+      "sha256": "509b06d1ef6b9cdac35f425928683634fe0461c4f06fb129656b5fb7b617fced"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/clean_full_evidence.py",
+      "sha256": "509b06d1ef6b9cdac35f425928683634fe0461c4f06fb129656b5fb7b617fced"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/reference_loop/types.py",
+      "sha256": "50c00c1209b1036e7e39390030d45653ec2f3e5154a1054f77afda81ae0aaa46"
+    },
+    {
+      "member": "reuse/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0/VERIFY_PACKAGE.sh",
+      "sha256": "5121110994fd343cf7d8e4d59b91d5c93997293e1227a09b7807c50caa6552f8"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/public_transition.py",
+      "sha256": "51223595c8a6a5b28aac7a1fae5f7a821704600cfc44e3f133c1f7cb335f14a0"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/public_transition.py",
+      "sha256": "51223595c8a6a5b28aac7a1fae5f7a821704600cfc44e3f133c1f7cb335f14a0"
+    },
+    {
+      "member": "reuse/native_bba/scripts/cognitive_runtime/materialize_formal_dag_registry_v1.py",
+      "sha256": "5135bba470aab9ec1deb5355d14be6dfe78985d561c57e1ff5d55c8aa6432a36"
+    },
+    {
+      "member": "reuse/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0/tests/test_post_route_recovery.py",
+      "sha256": "51584716c6559fa36d02d36317ed728858c0455a5f5fccb53542153532a8d6cf"
+    },
+    {
+      "member": "reuse/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0/tests/test_receipt_chain.py",
+      "sha256": "5184626a9c59865e28d393bd5a2dd33430930af829c7d2602dc03bd2195d315d"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/applicability.py",
+      "sha256": "51bcd3325dad2146420190c738ec0792b378360814c1525436d869b08009df1a"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_DYNAMIC_STRONG_PLANNER_PRE_AUTONOMOUS_INFRA_RECOVERY_AND_F0F1_HANDOFF_V1_23_2W/infra_recovery_disposition.py",
+      "sha256": "52a523db140c91ecbfc588b68351b46e7d1a3050d75800c63b2373be57321e91"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_DYNAMIC_STRONG_PLANNER_PRE_RESUME_STABLE_MEMORY_CENSUS_AND_AUTONOMOUS_INFRA_RECOVERY_V1_23_2X/infra_recovery_disposition.py",
+      "sha256": "52a523db140c91ecbfc588b68351b46e7d1a3050d75800c63b2373be57321e91"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_STRONG_ANALYZER_G_TERMINAL_ADOPTION_CPX_DYNAMIC_PAIR_UNIVERSE_V1_23_2U/verify_package.py",
+      "sha256": "53930a43edb7d0009ee4aaded64b4feeabe9ab570c8e47ee76492dc53ffad7dd"
+    },
+    {
+      "member": "reuse/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0/tests/test_supervisor_policy.py",
+      "sha256": "542cc77c7066081146178160869e32dd428159c09bc2257f6d387df246ee775e"
+    },
+    {
+      "member": "continuity_binding/tests/test_api.py",
+      "sha256": "5456aa890a37e8f4a39f2272c5b486cc66726b970b8d0fc97976fdf38f75578c"
+    },
+    {
+      "member": "reuse/h44/post_context_recovery.py",
+      "sha256": "5472cf1c9412d831d3c29b2021a293dfdfb7df07dc68309f121e01870880039b"
+    },
+    {
+      "member": "entry/campaign_owner.py",
+      "sha256": "557351d51ac62c0cfdd8a928f05bab65274091f8944d4b73125ec5840a116054"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/qwen25_3b_schema_aware_renderer_adapter_and_trainer_native_preflight_v1_7_2/tools/renderer_adapter_core.py",
+      "sha256": "57c47de191f15860e3d1feb896421b4916cd79602ea489cd5ae5dedbe5d5af30"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/run_schedule.py",
+      "sha256": "58057f356c9e93ce45b13abe269bd1551d5659e82ca25a059803b2d6d94281fc"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/run_schedule.py",
+      "sha256": "58057f356c9e93ce45b13abe269bd1551d5659e82ca25a059803b2d6d94281fc"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/cognitive_runtime/access.py",
+      "sha256": "58e2c9e0dc71af570cf8f60b87e8877a13f728fbc0ed275f5ba3ccfec013eb30"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/cognitive_runtime/access.py",
+      "sha256": "58e2c9e0dc71af570cf8f60b87e8877a13f728fbc0ed275f5ba3ccfec013eb30"
+    },
+    {
+      "member": "reuse/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_REQUEST_HASH_REPAIR_AND_RECOVERY_V1_23_3N_4_3/producer/fresh_round_contract.py",
+      "sha256": "5a64c272033b2c96157df06ba1a3185ffb243cd0957ce666d9348437becbb4bf"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_generic_training_stage_v2_1_hardening_build/tests/test_authorization_paths.py",
+      "sha256": "5b0c08c6433680981338c564d501f2698d8fbf4e9e5cdd63f262fa2522fad707"
+    },
+    {
+      "member": "reuse/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0/tests/test_dual_view_training_adapter.py",
+      "sha256": "5b4b6cb27af5d9f40d8acb60d3dc94092343a00761a7a55a32d3a93e8a097427"
+    },
+    {
+      "member": "reuse/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0/tests/test_v110_runtime_bridge.py",
+      "sha256": "5b73d8ab1e39fd93bc65b0fd8b3b0f8af87890040830704e4633edd8c1c96c6d"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/analyzer/experiment_registry.py",
+      "sha256": "5bc2c4b60a66bf1f49ce1893e143727dc3ef6a094d4a84149de90433c1e27720"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_STRONG_ANALYZER_GROUP_TAIL_GIT_OBJECT_ID_AUTHORITY_RECOVERY_AND_DYNAMIC_PAIR_UNIVERSE_V1_23_2T/v1232t_driver.py",
+      "sha256": "5c0a9251e91341eb6becdfe2999102d7b4aa3c633745a593266acbfa5e3b66e4"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/reference_loop/historical_bridge.py",
+      "sha256": "5c1e5263678233d06c478d3c1bbaa505f26a3a3707ef4cd36b6805bd2985ace3"
+    },
+    {
+      "member": "reuse/h44/tests/test_controller.py",
+      "sha256": "5cd09a2fd8d1339fe9a599c67373b8c3c9439d635bfc8c5de7a09e195a7fe67e"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/reference_loop/alfworld_events.py",
+      "sha256": "5d3cc272965da17adaeb58714e115529686241153d0e652983b8233c9cf4e695"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/alfworld_adapter.py",
+      "sha256": "5d836fbcffbc774fd5a9bc7405aa84c08edd59a7074b4d020b0d6bb456c0c163"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/alfworld_adapter.py",
+      "sha256": "5d836fbcffbc774fd5a9bc7405aa84c08edd59a7074b4d020b0d6bb456c0c163"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/cell_lock.py",
+      "sha256": "5de828dc7069987d11ec2e56691d16c801f44e4a345dedb4cab0dda29714afc6"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/cell_lock.py",
+      "sha256": "5de828dc7069987d11ec2e56691d16c801f44e4a345dedb4cab0dda29714afc6"
+    },
+    {
+      "member": "reuse/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0/next_round_driver.py",
+      "sha256": "5e1055d6739570b62df124fd86689f8eb2b0dc7177299d7112f8c8b9bc0a53a8"
+    },
+    {
+      "member": "reuse/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0/tests/test_round_entry_binding.py",
+      "sha256": "5eb03e1a4ddff3dc43b8d0cee74d7eadd3f994a73df0eb7b0f22b2f23200a737"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/cognitive_runtime/orchestrator.py",
+      "sha256": "5f27a4feee6fade16dd5b10df9764b25277c56d8e8fad2818b64824726223c6d"
+    },
+    {
+      "member": "live_adapter/h44_worker.py",
+      "sha256": "5f93850f4862851efbe19636d058602998091ae432c06a3528c39bae930aae18"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/schema_contract.py",
+      "sha256": "5fe9386a5371e7b5b126936dc63d287d4a476ef7c9f4ad20caa3317691dcfe2b"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/schema_contract.py",
+      "sha256": "5fe9386a5371e7b5b126936dc63d287d4a476ef7c9f4ad20caa3317691dcfe2b"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/research_intelligence/role_neutral.py",
+      "sha256": "60056d7fdb8f0e8f7c4e3e52be5c5436e790a2a3c27b76fa8fb77746daaedf90"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/cognitive_runtime/formal_registry_v2.py",
+      "sha256": "6091e95827bdeb19d02eda872b7d1b79c5170fdb857f82390363da42d377a403"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/cognitive_runtime/formal_registry_v2.py",
+      "sha256": "6091e95827bdeb19d02eda872b7d1b79c5170fdb857f82390363da42d377a403"
+    },
+    {
+      "member": "reuse/h44/tests/__init__.py",
+      "sha256": "6110095a9425968d1e0278e83c22f64a93849551d8484aef0a7c8dbeaf32ecca"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/research_intelligence/human_f0f1_runtime.py",
+      "sha256": "6160b6da6658687130229bc006e23d377c74e1eddfaf56681ecf677d0d942791"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/qwen25_3b_schema_aware_renderer_adapter_and_trainer_native_preflight_v1_7_2/tests/test_package_contract.py",
+      "sha256": "621aaebc4065392077dbe126e12d2f874c39810aa4168d3bbdfba80d686e0d82"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/qwen25_3b_frozen_renderer_interface_census_and_reference_takeover_bridge_v1_6/30_BUILD_REVIEW.sh",
+      "sha256": "6278c4b0386467626a6e5e43416d65a1e850fecc8a717565d10246ac55e1647b"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/round_control/no_training_update.py",
+      "sha256": "6302982d8954edd486c3fa6d7a50b9cc00ea35944dda6cd22f24ff9e828d09a9"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/round_control/no_training_update.py",
+      "sha256": "6302982d8954edd486c3fa6d7a50b9cc00ea35944dda6cd22f24ff9e828d09a9"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/policy_response.py",
+      "sha256": "6395e87696b71830f55ce74a9eb0b9d451aa0a95f1fc70a7eeee2acec609da6a"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/policy_response.py",
+      "sha256": "6395e87696b71830f55ce74a9eb0b9d451aa0a95f1fc70a7eeee2acec609da6a"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_human_t2_formal_training_execution_v1_2_preflight_summary_fix/00_VERIFY_PACKAGE.sh",
+      "sha256": "63a377d1967c98b6237aa45a4faabef3b7c4aa6086fc577777e2209ad426f5a7"
+    },
+    {
+      "member": "reuse/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0/run_campaign_worker.sh",
+      "sha256": "643f949ef90891011fbed932f5336c594167fea15a0b5638236c367ebe929904"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/select_policy_runtime.py",
+      "sha256": "64dbfc73957d58d058b8b13a6bcd6627f835ac57da6a3d74f78878c741487486"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/select_policy_runtime.py",
+      "sha256": "64dbfc73957d58d058b8b13a6bcd6627f835ac57da6a3d74f78878c741487486"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_STRONG_ANALYZER_WAVE1_TERMINAL_HARDSTOP_ISOLATION_AND_COMPLETE_PAIR_ADOPTION_V1_23_2R1/v1232r1_driver.py",
+      "sha256": "6524998a9806d3f11073673795ebbf830ec80e213e4067ca9608aff877ea1866"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/qwen25_3b_schema_aware_renderer_adapter_and_trainer_native_preflight_v1_7_2/10_VERIFY_UPSTREAM_AUTHORITIES.sh",
+      "sha256": "654a9a097b3d7d50914783ccf3c326eb9162ca09d9a0a0cf151ec2aad0958ab3"
+    },
+    {
+      "member": "reuse/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_REQUEST_HASH_REPAIR_AND_RECOVERY_V1_23_3N_4_3/tests/fixtures/rollout_collection.py",
+      "sha256": "6555f9a24e0b0a23314af380beef604690888ac39c23c447d7f80187c403f69c"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/round_control/rollout_collection.py",
+      "sha256": "6555f9a24e0b0a23314af380beef604690888ac39c23c447d7f80187c403f69c"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/round_control/rollout_collection.py",
+      "sha256": "6555f9a24e0b0a23314af380beef604690888ac39c23c447d7f80187c403f69c"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/round_maintenance.py",
+      "sha256": "65c860667587869533f0a570b694c5b14bb28eb4dc33bb03f9ab99fcf61ecd6e"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/cognitive_runtime/researcher.py",
+      "sha256": "6677238a8cac88bc52b882f3be3ceb612b3b419725287ad2fe3d2d9e9d0b450d"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/cognitive_runtime/researcher.py",
+      "sha256": "6677238a8cac88bc52b882f3be3ceb612b3b419725287ad2fe3d2d9e9d0b450d"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/research_intelligence/demonstrations.py",
+      "sha256": "692f11740536d723f1b8757568996834045f24b5721057b06c6111f905dde3da"
+    },
+    {
+      "member": "reuse/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0/tests/test_binding_resolver.py",
+      "sha256": "6933412d17080669078ae2762759556fbea2eac00a6f9f8af2a16f33ac59a705"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/research_intelligence/human_pre_schema_completion.py",
+      "sha256": "694d45b49c29d0d68aa1804088b54184e90e89ff10d1e53a3e2869b35192f940"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/task_access.py",
+      "sha256": "697b586081879e415b574ef9d970f3ac1b51ed389033b36b77a3a7fb663e84fd"
+    },
+    {
+      "member": "reuse/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0/tests/test_campaign_contract.py",
+      "sha256": "69da28bba0488b18ad13338d4a007f41e9e2fa8932ff2f64ef5f15c5bdb020fd"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/event_ledger.py",
+      "sha256": "69f19fa596e3a9105fb332b4753c08171180d2a0f452bde44fb935975481f158"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/analyzer/grouping.py",
+      "sha256": "6a06553020931bc9bf4eccaa7ec22a4e2deb64dfa387ddd7159cf3277bf1dabd"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_ROLLOUT_HANDOFF_STRONG_ANALYZER_RUNTIME_REGISTRY_AUTHORITY_RECONCILIATION_V1_23_2Q/RUN_V1232Q.sh",
+      "sha256": "6a5d3b139663f549d1ffbb428d819e4759ea31a3c402da818480207f98352b23"
+    },
+    {
+      "member": "reuse/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_REQUEST_HASH_REPAIR_AND_RECOVERY_V1_23_3N_4_3/vendor/V1232Q/RUN_V1232Q.sh",
+      "sha256": "6a5d3b139663f549d1ffbb428d819e4759ea31a3c402da818480207f98352b23"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/memory_augmented_prompt.py",
+      "sha256": "6a8073475f94d5cdfbff3233a69f92b8c54479e1477d739906c94c7ce29609f7"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/p1b_split.py",
+      "sha256": "6ac63f9ef99676fd798b91c60a65624cf821ed3d84f1f6849cabc1feb78f57ae"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/p1b_split.py",
+      "sha256": "6ac63f9ef99676fd798b91c60a65624cf821ed3d84f1f6849cabc1feb78f57ae"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_DYNAMIC_STRONG_PLANNER_PRE_V2_AND_F0F1_HANDOFF_V1_23_2V/RUN_V1232V.sh",
+      "sha256": "6b1bba903dceede44bff3774b58211ac21f059fa4eb638e87e7b7074f6366f17"
+    },
+    {
+      "member": "reuse/h44/vendor/policy_runtime_service.py",
+      "sha256": "6b7b83f9417ca1988f95560e25ad4621bf3a029f5835889c71d2c37a89622245"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/policy_execution_profile.py",
+      "sha256": "6bdf20389c86513ef084081772139f952610214e566856fd91f3c7fe6138d989"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/policy_execution_profile.py",
+      "sha256": "6bdf20389c86513ef084081772139f952610214e566856fd91f3c7fe6138d989"
+    },
+    {
+      "member": "reuse/native_bba/scripts/cognitive_runtime/freeze_round_evidence_v1.py",
+      "sha256": "6c0ef2cbc42c3d9d3fd7e9277ed264c3c1b9291005be4271ddbc4e687d8581d1"
+    },
+    {
+      "member": "offoff_binding/native.py",
+      "sha256": "6c5804ecf95658c7a205cd8687d48da6e7b3657e6af120f71430bc6629599be2"
+    },
+    {
+      "member": "policy_binding/__init__.py",
+      "sha256": "6c9e53449997ec0a98ebaee7899285b099b6ee788ea1bd333570ecf7746a8d58"
+    },
+    {
+      "member": "reuse/h44/controller.py",
+      "sha256": "6d03dfe3b826485ca1f275bdc1b1ae887e2712e1ba5b523bbe2e5cdb1df7ab77"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/raw_policy_parser.py",
+      "sha256": "6d06ed0311a4bd8ea137d296f8d859312ef537ac1a9c1cb835b258143ece8c81"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/raw_policy_parser.py",
+      "sha256": "6d06ed0311a4bd8ea137d296f8d859312ef537ac1a9c1cb835b258143ece8c81"
+    },
+    {
+      "member": "reuse/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0/campaign_supervisor.py",
+      "sha256": "6d6f3466a9b91d53583da5d9cc60049a7c8c23b8edf38572512fad543a58eff5"
+    },
+    {
+      "member": "reuse/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0/tests/conftest.py",
+      "sha256": "6dea3614877b7d8f125bb564d053085db2ad5bb5cf418a5eb28cefcc711c81cb"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/scientific_decision.py",
+      "sha256": "7019a4d96cd2839ff694751c258c5415b84a7ca1da73754b7cdf50f04231469c"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_generic_training_model_init_smoke_v1_3_cluster_resource_policy_fix/smoke/common.py",
+      "sha256": "7060aac14d56c4349e8c9f0bb7774da1227b7de4271532c9d72310d7d8baa6ad"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/qwen25_3b_frozen_renderer_interface_census_and_reference_takeover_bridge_v1_6/tools/build_review.py",
+      "sha256": "70c2ccc2be0d1c3679ca2919b9bb8fbdda234921812f704477583e6fe885654a"
+    },
+    {
+      "member": "entry/training_job.py",
+      "sha256": "71d8011ad45397819183422b92764edca6c0b06a2f926afdb43a13d4895189e0"
+    },
+    {
+      "member": "offoff_binding/tests/test_job_owner.py",
+      "sha256": "72aadc9635b7275ed6e8e3e7a2ce1a540574d172d6f776fad3b895cdeb9c0160"
+    },
+    {
+      "member": "continuity_binding/tests/test_native_snapshot.py",
+      "sha256": "72e2f46a333d7f03c54d7eca1a5c0046f503ed9cbd5e80766ec3ccadf6a76a71"
+    },
+    {
+      "member": "live_adapter/pre_stage.py",
+      "sha256": "735ec2c424cc9b580323cfe1a7634828e673174a8142a8304667e4fb4d41d514"
+    },
+    {
+      "member": "training_binding/strategy_source.py",
+      "sha256": "745dc14dc3f4f3d9b1794be64f88777d25cbf31469549539b135acbd905ae97f"
+    },
+    {
+      "member": "post_binding/runtime.py",
+      "sha256": "74b270c579c045a757adccb1d734bffe48d1f61a0a28aa3c72ac878dd04e00b7"
+    },
+    {
+      "member": "reuse/h44/tests/test_deployment.py",
+      "sha256": "750a76024ee6e287185dc2b7d91eabf167c7f837899cc24896c210abdc49c482"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_DYNAMIC_STRONG_PLANNER_PRE_AUTONOMOUS_INFRA_RECOVERY_AND_F0F1_HANDOFF_V1_23_2W/verify_package.py",
+      "sha256": "75bc2f590f5cae08a0408c3b71ffe64f8df9ba2a8af1cfa743e62b6e00c03379"
+    },
+    {
+      "member": "reuse/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0/current_round_driver.py",
+      "sha256": "760bb69b9c0b87cf521d110ac1c24049797ab74c353073e1cea1dec095d277d5"
+    },
+    {
+      "member": "reuse/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_REQUEST_HASH_REPAIR_AND_RECOVERY_V1_23_3N_4_3/tests/test_analyzer_preflight.py",
+      "sha256": "7619b57e8b6429f8511d04def63ae2b24de8018272f7b6747d278687a16386b9"
+    },
+    {
+      "member": "EXECUTION_SOURCE_REGISTRY.json",
+      "sha256": "7641765fc904276cad83d3f234af51bbce273ba911c0ee23ee34768bf4241b57"
+    },
+    {
+      "member": "reuse/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0/tests/test_no_training_recovery.py",
+      "sha256": "76660ce4f3a058da0c3fab465cc89158f595a4cd6c352b4744bfd11a94da8983"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/analyzer/schema_contract.py",
+      "sha256": "7741ef049bb7b4956f82899f60704468f441b126b5ab2e9556019152288c90a4"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/qwen25_3b_schema_aware_renderer_adapter_and_trainer_native_preflight_v1_7_2/tools/strategy_dual_view_adapter.py",
+      "sha256": "77809dcd7a68b89907fa0a27b756b84dc8b273a88734e2a2d9da93bffba43a3d"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/security/manifests.py",
+      "sha256": "77d03b015205ac75ab9d7f5a9352fa5be5cf1e51a5f2f57c726cabc3fc11ab23"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/consumer_views.py",
+      "sha256": "78bc0275984fa369d22934d829bc74c47b9bfca2bfb765e23680f8652000777a"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/reference_loop/historical_rebinding.py",
+      "sha256": "78bf2168f80e9b19a53d869becad89071be69e5a6ad53882a3cbbefb76122fcd"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/cognitive_runtime/researcher_hydrated.py",
+      "sha256": "7a12157c55203e2d0407488ae697fdb2848e435811dd34106c89750b7d8afdfd"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/cognitive_runtime/researcher_hydrated.py",
+      "sha256": "7a12157c55203e2d0407488ae697fdb2848e435811dd34106c89750b7d8afdfd"
+    },
+    {
+      "member": "reuse/h44/tests/test_h43_post_settlement.py",
+      "sha256": "7ad82928b25dd9adcbad045668be0bbded10adc2697fe7db48b1c1e96fb0fd40"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/qwen25_3b_schema_aware_renderer_adapter_and_trainer_native_preflight_v1_7_2/tools/verify_upstream_authorities.py",
+      "sha256": "7b48794dd353146fda05eddffccca40c800170c0c429eb933745e2e4bbc65f4d"
+    },
+    {
+      "member": "reuse/native_bba/scripts/cognitive_runtime/materialize_projection_v1.py",
+      "sha256": "7b497ec49c1ee7ec52f0e21b5bf083ff716d191add748f8119d085caeade8166"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/reference_loop/clean_analyzer_evidence.py",
+      "sha256": "7b5bf22b7ea9984c4a0a994635a6558042274d7631a4d3b05f04947d55d26dcd"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/analyzer/success_optimization.py",
+      "sha256": "7bb192faa2ba7d7988f73f6367210919a7eca82b5f4fd668a9f0758c1c944596"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/applicability_gate.py",
+      "sha256": "7d9df6ae6e43d27d586d43df2d8b94c58b5dfcf71aba385f4fe9f99bcc5ca429"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_AUTHORITY_DRIVEN_FRESH_MEMORY_AWARE_TRAIN_UPDATE_ROLLOUT_V1_23_2/RUN_V1232.sh",
+      "sha256": "7df722bcdb2199034cc8e989a159e8af153e912873bb97e68bb178e07b6eca03"
+    },
+    {
+      "member": "memory_binding/tests/native_end_to_end_case.py",
+      "sha256": "7e165d7c400a07beffcfaf03469cba1271c693ed4989ace5f4a39f21e6ef0295"
+    },
+    {
+      "member": "reuse/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0/tests/test_safe_io_hardening.py",
+      "sha256": "7e75247baeaaa8580175f9585f67fda95ca0aa33589aa9badf9c803147b158e8"
+    },
+    {
+      "member": "evidence/server_select_sources_05/native_stage4d/slurm_template.sh",
+      "sha256": "7ea7524feb136376b5279fe01ae28b7f823682398cc5d552db69b287329c3ac8"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/security/contracts.py",
+      "sha256": "7eeba9afd99088ad4825b5fa889b522a32c52060eba1ae152c888eae0ddc9cd4"
+    },
+    {
+      "member": "reuse/native_bba/scripts/cognitive_runtime/run_act0_offline_v1.py",
+      "sha256": "7f2d126b7989400c1621bee93bb13e7f8c645fcdde8313e29007880a77c69a06"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/run_resolution.py",
+      "sha256": "7f8503d27ce27a94e2a507533287d844cf19117e49db20d929a93071b1028171"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/run_resolution.py",
+      "sha256": "7f8503d27ce27a94e2a507533287d844cf19117e49db20d929a93071b1028171"
+    },
+    {
+      "member": "reuse/h44/RUN_SETTLE_CURRENT_POST.sh",
+      "sha256": "7fe494ccf70b6e5d3436256e928a6c4679079560eb594f3fc26d4313e5b6a88e"
+    },
+    {
+      "member": "reuse/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_REQUEST_HASH_REPAIR_AND_RECOVERY_V1_23_3N_4_3/VERIFY_PACKAGE.sh",
+      "sha256": "8013ed7a62abafeefa09199a885d7ecca6961c5701283ef8ce773a1eb3daf6c1"
+    },
+    {
+      "member": "offoff_binding/__init__.py",
+      "sha256": "807a306eeb9d33ee6245aca74709d6377d8c2de240d9f64cf07754bcdabc6616"
+    },
+    {
+      "member": "reuse/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0/tests/test_next_round.py",
+      "sha256": "80a0872d115757c2bf0e3dcf72dede7d5c69847ef086ed085842026935bbb5aa"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/lifecycle_relations.py",
+      "sha256": "81231a30eeb6410ee56e52993abb57c5ca435b0f01d5575b26465b3ab27ec3d7"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_human_t2_pretraining_handoff_authorization_v1/tests/test_domain_hash.py",
+      "sha256": "8199a61a92ee75623a83cc85fac1ff9891b66d1dcbcccf2df6cba43559cf2f38"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/analyzer/act3_registration.py",
+      "sha256": "81b69613e3666be06820570a739effc8e422462ffa0d7d92b14b0b2b793f9046"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/attempt_state.py",
+      "sha256": "82539c3daab730695fa57819376292116d1fb28b150637d3a29a52675f8ba51b"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/attempt_state.py",
+      "sha256": "82539c3daab730695fa57819376292116d1fb28b150637d3a29a52675f8ba51b"
+    },
+    {
+      "member": "continuity_binding/__init__.py",
+      "sha256": "82e852f651aefc61b52a73dc3a79e209889ddf53943a842440d13f80616abb22"
+    },
+    {
+      "member": "reuse/PCHSI_RECEIPT_DRIVEN_FULL_ROUND_DRIVER_V1_1/full_round_driver.py",
+      "sha256": "83e5de263b0fba997fa13d1ef811b7c416eae00e2554e842c5fce854d9ee79a9"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/procedural_builder.py",
+      "sha256": "845f6dc391fc019aeb00f26d7b7a5cb78d1e93b024312bb2bffe32068da09f3b"
+    },
+    {
+      "member": "entry/launch.py",
+      "sha256": "849fec035ae8ef274f196883e7fb2b8c3ff9836c8f90ed159cba039e8411927f"
+    },
+    {
+      "member": "memory_binding/worker_bootstrap.py",
+      "sha256": "84ede710e5a33ee18e6f4f8a27ec484aead31dab54103c82c004dfb525a9d3ad"
+    },
+    {
+      "member": "reuse/native_bba/scripts/cognitive_runtime/materialize_formal_dag_registry_v2.py",
+      "sha256": "84f6c496fd509bbe3678755e0d78c85a5fef552058fd03027e4760380f8641aa"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/analyzer/local_results.py",
+      "sha256": "855e4f17c25f074271d8916e51ff36431b95b571b356036b687ad9bab5af7e57"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_ROLLOUT_HANDOFF_STRONG_ANALYZER_RUNTIME_REGISTRY_AUTHORITY_RECONCILIATION_V1_23_2Q/v1232q_driver.py",
+      "sha256": "85e084ff3c1f525057c4f85347853c544ba591fe9b31dd6098b418f5fcc69983"
+    },
+    {
+      "member": "reuse/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_REQUEST_HASH_REPAIR_AND_RECOVERY_V1_23_3N_4_3/vendor/V1232Q/v1232q_driver.py",
+      "sha256": "85e084ff3c1f525057c4f85347853c544ba591fe9b31dd6098b418f5fcc69983"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_generic_training_stage_v2_1_hardening_build/tests/test_stage_lifecycle.py",
+      "sha256": "865fc2e43c34acce14275bb2535c7c73c0a2c1ae5b5b26eecf41b85609447bc6"
+    },
+    {
+      "member": "reuse/native_bba/scripts/cognitive_runtime/validate_formal_dag_v1.py",
+      "sha256": "869e8f3b8d2c4a5d1cfac3cd0a52924409354cf874ba19e2905079947e1d7294"
+    },
+    {
+      "member": "reuse/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0/training_acceptance.py",
+      "sha256": "86b3f242e6ef63529f294666addf3b97cc64f5e9d6e989f8b149bc4177ded9e3"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/round_control/concrete_bindings.py",
+      "sha256": "874943475ed9874afb058f32aea7ea77cc0d369ba2d3c650a1b58e8c76464b16"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/round_control/concrete_bindings.py",
+      "sha256": "874943475ed9874afb058f32aea7ea77cc0d369ba2d3c650a1b58e8c76464b16"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_STRONG_ANALYZER_G_TERMINAL_ADOPTION_CPX_DYNAMIC_PAIR_UNIVERSE_V1_23_2U/v1232u_driver.py",
+      "sha256": "87a47e8d3a2da8507d36d941137a725ff5650fbccaf0377b09531e27051d13e3"
+    },
+    {
+      "member": "reuse/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_REQUEST_HASH_REPAIR_AND_RECOVERY_V1_23_3N_4_3/tests/test_recovery_boundary.py",
+      "sha256": "884b04b0193a5d9e3a30fe566e10a148aa0d53bcae2ca63cb27bcd97af871cde"
+    },
+    {
+      "member": "reuse/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_REQUEST_HASH_REPAIR_AND_RECOVERY_V1_23_3N_4_3/tests/test_fresh_contract.py",
+      "sha256": "88c414eea92339408b04ec044204f923eac0dd1e04800cfc715366dbb030dac7"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_human_t2_pretraining_handoff_authorization_v1/10_BUILD_HANDOFF_REVIEW.py",
+      "sha256": "8944c6df7660215e3ce577f582588b978a0a3f45a855655c160bedd35c5af84d"
+    },
+    {
+      "member": "reuse/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0/v110_runtime_bridge.py",
+      "sha256": "8aab08ce979f2779f2e769b0e03f9b439038f0be71f3305a0388262b2f148d26"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/__init__.py",
+      "sha256": "8abd58686050482cd53b8696dfe236e1ee6ca817550a9c3c6fee1486da38362a"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/security/evidence_path.py",
+      "sha256": "8b190dfca9d97c36083277492cf7f37a9833bde9b424ca6d09ded5548144db76"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/p1b_lineage.py",
+      "sha256": "8b528775952b070f469b921c9f7538ff4473ece28c7d2a81ac6606a680801310"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/p1b_lineage.py",
+      "sha256": "8b528775952b070f469b921c9f7538ff4473ece28c7d2a81ac6606a680801310"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/qwen25_3b_frozen_renderer_interface_census_and_reference_takeover_bridge_v1_6/tools/freeze_reference_takeover_normative_bridge.py",
+      "sha256": "8c29839965a3a6c22d23430e3908ff320bf113789789d18cefad7ebf522b7fac"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_generic_training_model_init_smoke_v1_3_cluster_resource_policy_fix/tests/test_cluster_resource_policy.py",
+      "sha256": "8c7011a8cfbad30bbd0494ab6b541cdfcac2f5f3ea0ea802d95e01522d3f7d74"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/scientific_program.py",
+      "sha256": "8da9041280202d937e50c1d5c72479698d4f0934a8d288b555a914d1c374956d"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_generic_training_stage_v2_1_hardening_build/tests/test_adapter_capabilities.py",
+      "sha256": "8dd96de0a1e7037c095e89ac8a227e7c1bd9141fb814d3bb108379cda93019a1"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_DYNAMIC_STRONG_PLANNER_PRE_RESUME_STABLE_MEMORY_CENSUS_AND_AUTONOMOUS_INFRA_RECOVERY_V1_23_2X/verify_package.py",
+      "sha256": "8e0f2220b5e1bd6f3d4ca317ec290450c99de62d3e912facda74739f350f4028"
+    },
+    {
+      "member": "reuse/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_REQUEST_HASH_REPAIR_AND_RECOVERY_V1_23_3N_4_3/tests/test_rollout_classifier.py",
+      "sha256": "8e793f36eb57d36a8ea83522fadeea6251245bf7c7ece0be84b9ddef70a8c729"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/dev_descriptive_snapshot_v2.py",
+      "sha256": "8ead072c54ca52cd30210b42b70e4cddc48ef757551ff30398ba85aaad2b5109"
+    },
+    {
+      "member": "reuse/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0/governance_adapter.py",
+      "sha256": "8ee0dd49566a2a60c8ba7c74b455343d35e067da0e7be23ae994c978180c4fe9"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_DYNAMIC_STRONG_PLANNER_PRE_RESUME_STABLE_MEMORY_CENSUS_AND_AUTONOMOUS_INFRA_RECOVERY_V1_23_2X/v1232x_driver.py",
+      "sha256": "8fcd7b2d721fbb859b3171d4b1f6e60a1cf3744789367a83fda772a13b589d5d"
+    },
+    {
+      "member": "reuse/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0/RUN_DETACHED.sh",
+      "sha256": "900ca9463fa846463ae35b2b1157d2c046c8d1767589bc55a253c65d90199898"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_generic_training_model_init_smoke_v1_3_cluster_resource_policy_fix/tests/test_submission_boundary.py",
+      "sha256": "9077c82a413d868e61e39971c9e9d38b95ee2bf6d23bfc660c53bf581ec4fc6e"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/policy_runtime_manifest.py",
+      "sha256": "912c1b1beebd119d8d80f7f1c0c2ca8c8f111d75b1295e80707290e059a46bc2"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/policy_runtime_manifest.py",
+      "sha256": "912c1b1beebd119d8d80f7f1c0c2ca8c8f111d75b1295e80707290e059a46bc2"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_STRONG_ANALYZER_WAVE1_COMPLETE_PAIR_ADOPTION_AND_CANONICAL_ACT3_GROUP_PREP_V1_23_2R/verify_package.py",
+      "sha256": "91cf27bd513970dd84e308b82c859987d3ac8507286d20f860672883f8dcbd2b"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/procedural_record.py",
+      "sha256": "92102adbf41569553b9190d953cbe93ce7154725d36e79735ff22513d446e6d0"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/analyzer/role_trace.py",
+      "sha256": "926417d3c786b7a330f0ffa18cdd33af78b11637724a4aa1e45bdf4bf1f1c752"
+    },
+    {
+      "member": "reuse/PCHSI_RECEIPT_DRIVEN_FULL_ROUND_DRIVER_V1_1/RUN_FULL_ROUND.sh",
+      "sha256": "9276d7966fb9772af94ef658ef486355459c729e20943630bdd00f80d97013a6"
+    },
+    {
+      "member": "evidence/server_select_sources_05/native_stage4d/stage4d_full/parallel.py",
+      "sha256": "92d26d6183e191ed35ca944d2038179826a1f44671f27c4953f5ff671b6f4bd4"
+    },
+    {
+      "member": "post_binding/__init__.py",
+      "sha256": "9328bc1c475ff33772d7da4d620713f48d6ee86c3dd52b0fcf1a4400913ed6e3"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_DYNAMIC_STRONG_PLANNER_PRE_AUTONOMOUS_INFRA_RECOVERY_AND_F0F1_HANDOFF_V1_23_2W/v1232w_driver.py",
+      "sha256": "9387f98914b9df511405d48352ccf4a887a212c19937e26461f1aae057d68f0e"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/qwen25_3b_frozen_renderer_interface_census_and_reference_takeover_bridge_v1_6/RUN_RENDERER_INTERFACE_CENSUS_AND_REFERENCE_BRIDGE.sh",
+      "sha256": "94375c81d6a59344b8836a773ee6eccda85c6c829566ff09458e3f842cd5dc66"
+    },
+    {
+      "member": "entry/tests/test_rollout_watch.py",
+      "sha256": "94da9a3951f02ea519b6c9e2bc961d7fac453502ceb4429638658a8d82796e5c"
+    },
+    {
+      "member": "reuse/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0/tests/test_campaign_supervisor_recovery.py",
+      "sha256": "94fc0bfcb8f2f96d5bbee62163dc2708d8b59ba0a7b598ac8118cfebe8d29c6e"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/round_control/round_manifest.py",
+      "sha256": "95e90802447a95878e2fe6a9449926e12943d4ad532a08d09e4142e1036a3712"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/round_control/round_manifest.py",
+      "sha256": "95e90802447a95878e2fe6a9449926e12943d4ad532a08d09e4142e1036a3712"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/policy_call_evidence.py",
+      "sha256": "96ec73c9a7bbcb8419b35a052a09f47ce731b8dbff89b85cfed6569ceaeeb867"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/policy_call_evidence.py",
+      "sha256": "96ec73c9a7bbcb8419b35a052a09f47ce731b8dbff89b85cfed6569ceaeeb867"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/runtime_core.py",
+      "sha256": "96fd04939d751f1e555bf33408fddb6a47f1ff23e05daa097cc14cfdc70db40f"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/runtime_core.py",
+      "sha256": "96fd04939d751f1e555bf33408fddb6a47f1ff23e05daa097cc14cfdc70db40f"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/environment_runtime_manifest.py",
+      "sha256": "977e7208f8f6f9f1060f1ac3657ad9a8413a46368451d5460485b3c0b611968d"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/environment_runtime_manifest.py",
+      "sha256": "977e7208f8f6f9f1060f1ac3657ad9a8413a46368451d5460485b3c0b611968d"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/alfworld_worker_protocol.py",
+      "sha256": "9791c35e517e5026b5d7a558e8e7f069f95e3ba976e0a095cd05d1289bd2ff3b"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/alfworld_worker_protocol.py",
+      "sha256": "9791c35e517e5026b5d7a558e8e7f069f95e3ba976e0a095cd05d1289bd2ff3b"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/analyzer/analysis_budget.py",
+      "sha256": "9839d6049cdf329bf371be4e08b30447d65a9d8966441a0be2b4a43e6487d1d0"
+    },
+    {
+      "member": "reuse/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_REQUEST_HASH_REPAIR_AND_RECOVERY_V1_23_3N_4_3/producer/submission_contract.py",
+      "sha256": "9861a3f7ad80741397ca2c7bd0a278114d9149e135c28c7ce1c53bb0f78cf8ed"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_generic_training_stage_v2_1_hardening_build/build_review.py",
+      "sha256": "986acea54e4b551dbb46b566b41080e5fe28db418d4fe7b3b5620329c51f9235"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/cognitive_runtime/__init__.py",
+      "sha256": "988c6b6d8278b86cdc5af2bcd2f75216177e04bb8f9842243bbb75b7bb4ad835"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/cognitive_runtime/__init__.py",
+      "sha256": "988c6b6d8278b86cdc5af2bcd2f75216177e04bb8f9842243bbb75b7bb4ad835"
+    },
+    {
+      "member": "entry/tests/test_training_job.py",
+      "sha256": "99df5c6784e5d852caa0dcbb5a992fb5a1c9c8967b09f54a1032061378a6986f"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/dev_descriptive_snapshot.py",
+      "sha256": "99f0bd8ce14ad84990ee27dca165892af857de10001c86aece291130af78c70e"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/research_intelligence/benchmark_registry.py",
+      "sha256": "9b5400cf45a6d5fe0a27297e67a01d741084e32af1b0af646dc80aaf52c54f4a"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_DYNAMIC_STRONG_PLANNER_PRE_V2_AND_F0F1_HANDOFF_V1_23_2V/v1232v_driver.py",
+      "sha256": "9b683e646d87a81a87039680efa5c0121c3bfc72b31cc9c8fdb537ab4fbc96f4"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/research_intelligence/canonical_candidate_pool.py",
+      "sha256": "9bb86c3d10d11238ac76232fa7d805fdf39515fbdc22efe54341c5cdc4c824ce"
+    },
+    {
+      "member": "entry/tests/native_tail_case.py",
+      "sha256": "9c0b0e611e08864ddd5fabe95f37c798e9d75dc39f2edabecf1e82dd4ee0c599"
+    },
+    {
+      "member": "reuse/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_REQUEST_HASH_REPAIR_AND_RECOVERY_V1_23_3N_4_3/producer/formal_rollout_support.py",
+      "sha256": "9c0c0d61a9bc7031c665a33cf66487b8d56b69e56b27d4f20b406d6fd136ef27"
+    },
+    {
+      "member": "reuse/h44/RUN_RECOVER_ZERO_PAIR_ROUND.sh",
+      "sha256": "9c1e23a852c6ef12cc5b2d8df9ac58ecc47198eb79d1686561ce53719aed4738"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/source_collection.py",
+      "sha256": "9ce491198834bc05e16141c40f8dd5f4e8c7d55bef170c4bf5f3b0c9ce73c1ed"
+    },
+    {
+      "member": "reuse/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_REQUEST_HASH_REPAIR_AND_RECOVERY_V1_23_3N_4_3/tests/test_runtime_surface_preflight.py",
+      "sha256": "9d1b39b2d315ec5b664c5afe4f9ed086139bc12821324ab66c802af0ac8fb4fc"
+    },
+    {
+      "member": "continuity_binding/tests/test_next_request.py",
+      "sha256": "9d8904725504a3ba724222b45254fbff0f42faf721ee7fa4273616ab141a029d"
+    },
+    {
+      "member": "entry/registration.py",
+      "sha256": "9ea404ac8ec1f8878c866e7aecf342eb23356f83a9894e00abd524c6f687fabb"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/research_intelligence/round_research_inputs.py",
+      "sha256": "9ea4c2207554c246261e5e58ea62742d542ea113c210ac6124fe14c1e05c084b"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/episode_artifact.py",
+      "sha256": "9ec17c00505e220b13ff73c52ba5650234b0c8a311204083b8f642594e7669ad"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/episode_artifact.py",
+      "sha256": "9ec17c00505e220b13ff73c52ba5650234b0c8a311204083b8f642594e7669ad"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/qwen25_3b_schema_aware_renderer_adapter_and_trainer_native_preflight_v1_7_2/tools/build_chinese_mainline_and_preflight.py",
+      "sha256": "9f5924da4e2d3491592bf85121c6c42ca5d52677137fab2f768a1e629f87c04c"
+    },
+    {
+      "member": "training_binding/tests/live_pre_fixture.py",
+      "sha256": "9f8c6501c4432a7b989898ad1d2630e76152ef7056c2eb9c94dfa8d91fd56149"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/analyzer/candidate_projector.py",
+      "sha256": "a0a4419fda674bb9b3fa40ea70518502afae3d4d6d765cc6c99ceea82d9bb1eb"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/policy_request.py",
+      "sha256": "a0edd1091b57224b70f3f403838e9f166ea8af0358da0661f1e636252bd0fc3a"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/policy_request.py",
+      "sha256": "a0edd1091b57224b70f3f403838e9f166ea8af0358da0661f1e636252bd0fc3a"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/distillation_access.py",
+      "sha256": "a10bdc77bbddc6ee0c49cedc71f62f67bceb7720666df0f64dd8a1e6e2a35901"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/distillation_access.py",
+      "sha256": "a10bdc77bbddc6ee0c49cedc71f62f67bceb7720666df0f64dd8a1e6e2a35901"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/research_intelligence/human_planner_freeze_lineage.py",
+      "sha256": "a16f0776e7513d874d296b437a07e513ce5dc9ca34379a38f0ab5551c3350bf9"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/episode_sequence.py",
+      "sha256": "a1862046f9cf57489f7d15fc2bea9f26fbf634b5cc9b73de86a4762c12a23e08"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/episode_sequence.py",
+      "sha256": "a1862046f9cf57489f7d15fc2bea9f26fbf634b5cc9b73de86a4762c12a23e08"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/scientific_authority.py",
+      "sha256": "a25e3047b3a64a81e78c6aa64da9dee02b0194c4129774a289eea8c86da4162d"
+    },
+    {
+      "member": "entry/main.py",
+      "sha256": "a295e835493c4981a553bb3bd5f03bbafdc6526cfebacfb7cad5ef0e304c64c6"
+    },
+    {
+      "member": "reuse/h44/structured_output_schema_compatibility.py",
+      "sha256": "a2ae05f929328d64f4a51fa3d95914d07991d97f99d85adc66c06a3be5a480f1"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/round_control/strong_primary_readiness.py",
+      "sha256": "a310cff724ac67ace79ffbc01a0f307e27ce92bff7ac25eeb3d1809f9c7efcec"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/round_control/strong_primary_readiness.py",
+      "sha256": "a310cff724ac67ace79ffbc01a0f307e27ce92bff7ac25eeb3d1809f9c7efcec"
+    },
+    {
+      "member": "reuse/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_REQUEST_HASH_REPAIR_AND_RECOVERY_V1_23_3N_4_3/RUN_STATUS.sh",
+      "sha256": "a391e507ac6b3067407c5e2822a20690c975babf5126f23b7bf5db8698c25bb7"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/matched_raw_view.py",
+      "sha256": "a3caecd9e3b551a3ab64e8319a47a6118b92b47891b42080451979d9213b03b8"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/cognitive_runtime/manifest.py",
+      "sha256": "a3e0719cee006d6a8a3b776fe8fca276f75eabddd45c8ce7545482b8f1a7ea17"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/cognitive_runtime/manifest.py",
+      "sha256": "a3e0719cee006d6a8a3b776fe8fca276f75eabddd45c8ce7545482b8f1a7ea17"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/round_control/clean_role_actor_binding.py",
+      "sha256": "a535c4f19ec0e2c7e92d962ad1d83603672db59876d72fe602e16676b61f1954"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/round_control/clean_role_actor_binding.py",
+      "sha256": "a535c4f19ec0e2c7e92d962ad1d83603672db59876d72fe602e16676b61f1954"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/reference_loop/discovery.py",
+      "sha256": "a637f603ab9bc64a68197ad36a25434fd31eadfc8407bbb4e252f39e826ce187"
+    },
+    {
+      "member": "reuse/h44/gpu_job.py",
+      "sha256": "a6da78cd22c8c394fcfb6dc3abb66c93cdaa2c5ca70a1c990c22d9e2280014ea"
+    },
+    {
+      "member": "reuse/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0/STATUS.sh",
+      "sha256": "a79efe2b63871458aedaae2737d693f7fd2840a7c46aee27a4276fd101920020"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/security/syscall_table.py",
+      "sha256": "a8b37a337156d21ab0f702ee173f1c5d587473d901671e90e9bfed2247d9e43c"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/round_control/trace_handoff.py",
+      "sha256": "a93905ef47b752c81db333a5079aa173f675be4f8a8505f649240c5d9060c0f1"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/round_control/trace_handoff.py",
+      "sha256": "a93905ef47b752c81db333a5079aa173f675be4f8a8505f649240c5d9060c0f1"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/semantic_recovery.py",
+      "sha256": "aa0406c5beb76e85d7e342e3b6eab237f5157531ed8916d69c98fe6f42508260"
+    },
+    {
+      "member": "reuse/h44/tests/test_h42_post_resume.py",
+      "sha256": "aa0f3eb1aa8f11edd4628f45255093c0e258975e9700bd8d398c9903f0332815"
+    },
+    {
+      "member": "reuse/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_REQUEST_HASH_REPAIR_AND_RECOVERY_V1_23_3N_4_3/tests/test_original_regressions.py",
+      "sha256": "aacf8051642bbd177cbcbee1403edeb419f029bcb15425217573183da03bc736"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/round_control/formal_campaign_startup.py",
+      "sha256": "aaeeabb5eacd34b3d459f1fbb2ee0df531e9a75756678c6039c9221203ecab03"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/candidate_materialization.py",
+      "sha256": "ab1cd1c8f61cdf11e8162d8ff67b934ec02fbc0fc802ee54564c06db64d5120b"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/reference_loop/analyzer_evidence_pack.py",
+      "sha256": "ab77511f6a79898a9d7a393710b174f293e2deff44f0fde5ba54ff21f2425930"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/policy_projection.py",
+      "sha256": "ab8587be3e082be5c357bf9f4a0fc7b4f1352f91246e5102939d2121f3bb6281"
+    },
+    {
+      "member": "reuse/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0/tests/test_v110_boundary_takeover.py",
+      "sha256": "ac0e3946efb061759a3f1c98d5097ca0619e768a8df54a454cdd9517fea0fe67"
+    },
+    {
+      "member": "reuse/h44/tests/test_verifier.py",
+      "sha256": "ac6ab44646572f1a003672cf8e43b3f829a5a9d2a5590eb5573a9db427bb8496"
+    },
+    {
+      "member": "memory_binding/source_overlay.py",
+      "sha256": "acff263bbd95268de966be16046962a194f459c1baca0e6b9a8136f2da0e0cdd"
+    },
+    {
+      "member": "live_adapter/group_stage.py",
+      "sha256": "ad149a99bb6b8ad0c639c43d69d00c31dd30886c557299390a8f3454c53b5adf"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_AUTHORITY_DRIVEN_FRESH_MEMORY_AWARE_TRAIN_UPDATE_ROLLOUT_V1_23_2/safe_io.py",
+      "sha256": "ad6e3b05603af3c8a9c444fe35947de7e485ed8ad08111745f708be06a8ff9a2"
+    },
+    {
+      "member": "reuse/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_REQUEST_HASH_REPAIR_AND_RECOVERY_V1_23_3N_4_3/producer/safe_io.py",
+      "sha256": "ad6e3b05603af3c8a9c444fe35947de7e485ed8ad08111745f708be06a8ff9a2"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_generic_training_model_init_smoke_v1_3_cluster_resource_policy_fix/tests/test_packaging_hygiene.py",
+      "sha256": "adf53a9af99e6b3f82fe9fe1c162a078cfe987748a2eeb39e0578d4443d1f08c"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/cognitive_runtime/p2_bridge.py",
+      "sha256": "aead73cbecf6b0dabee8ee5e978aa921897de498bd3b4915e2caa9341ba10978"
+    },
+    {
+      "member": "reuse/h44/verify_package.py",
+      "sha256": "af483b9b8f1ef89d13689740e3f1c6b30ad6dea94a3ee0b9f266a17739e1913e"
+    },
+    {
+      "member": "reuse/h44/tests/conftest.py",
+      "sha256": "b0187f31b801e9ed196a0a266a8cbd6c494cfe1bfe96513306e3bff1aea384d8"
+    },
+    {
+      "member": "training_binding/clean_dual_runtime.py",
+      "sha256": "b029196b74ff691a0451c30521729aa9f30f9ff09805b08097f95cdbbd05daec"
+    },
+    {
+      "member": "reuse/h44/native_repo/scripts/memory/materialize_sequence_failure_experience_v1.py",
+      "sha256": "b04d3976da429490cf03184245bc447e33b2877d8d6753a52a7b048408307055"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_human_t2_formal_training_execution_v1_2_preflight_summary_fix/RUN_PREPARE_AND_SUBMIT_FORMAL_TRAINING.sh",
+      "sha256": "b0a8e656b652ca6e2cd307f69cc6f124d25f2df2d63aa7ffc597c8aac57e7129"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_DYNAMIC_STRONG_PLANNER_PRE_AUTONOMOUS_INFRA_RECOVERY_AND_F0F1_HANDOFF_V1_23_2W/current_round_researcher_memory_v1.py",
+      "sha256": "b163202d95bc899d177653ff598a25655b6c3fbf3716ecb6f6a751019c7c4128"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_DYNAMIC_STRONG_PLANNER_PRE_RESUME_STABLE_MEMORY_CENSUS_AND_AUTONOMOUS_INFRA_RECOVERY_V1_23_2X/current_round_researcher_memory_v1.py",
+      "sha256": "b163202d95bc899d177653ff598a25655b6c3fbf3716ecb6f6a751019c7c4128"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_DYNAMIC_STRONG_PLANNER_PRE_V2_AND_F0F1_HANDOFF_V1_23_2V/current_round_researcher_memory_v1.py",
+      "sha256": "b163202d95bc899d177653ff598a25655b6c3fbf3716ecb6f6a751019c7c4128"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_human_t2_pretraining_handoff_authorization_v1/handoff/__init__.py",
+      "sha256": "b195b50b26e702fe30075313dee0afad01b701d0807e115bb971485865c00e9b"
+    },
+    {
+      "member": "post_binding/context.py",
+      "sha256": "b37e7c8309a6d97f266f4522849817fe52b33e7613f4efb28c4f8ab88349e780"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/security/canonical.py",
+      "sha256": "b3869eb3204d604c7504bb09b4ce935ac7482412408b5695514a8ce14b357e2c"
+    },
+    {
+      "member": "reuse/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0/tests/test_campaign_supervisor_current_round.py",
+      "sha256": "b38f43601dad67e24646c1c7aabfa7366eac69f76c8329ab646b234ae843770b"
+    },
+    {
+      "member": "training_binding/__init__.py",
+      "sha256": "b3ec783c71588c2c81b0cd6e207dfa46d43422c2e338f5d8754db0d730b87ae1"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_STRONG_ANALYZER_G_TERMINAL_ADOPTION_CPX_DYNAMIC_PAIR_UNIVERSE_V1_23_2U/STATUS_V1232U.sh",
+      "sha256": "b3f8d3b80a7cdcf7d8c364587e80c1bfc1a9cf8265389cb8578444c34f2db985"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/task_manifest.py",
+      "sha256": "b4177854344b0f78e3535335c708c3fdc61f3a7863921d894cf1462e53196582"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/task_manifest.py",
+      "sha256": "b4177854344b0f78e3535335c708c3fdc61f3a7863921d894cf1462e53196582"
+    },
+    {
+      "member": "reuse/h44/tests/test_branch_flow.py",
+      "sha256": "b447c7f75bfed504c19be0f29f4753700f197a903da9ce103e3c288552968c9e"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/analyzer/supervision_materializer.py",
+      "sha256": "b5715d98b12804d85a89ef43e8949555c17436b48d897c4bd6f6a37be40a5523"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/trace_assembler.py",
+      "sha256": "b5747360e8ff5b9df28d2e787c9c8f1bd894c9c90cd3cf6c1e3822cb6b3239a2"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/trace_assembler.py",
+      "sha256": "b5747360e8ff5b9df28d2e787c9c8f1bd894c9c90cd3cf6c1e3822cb6b3239a2"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_AUTHORITY_DRIVEN_FRESH_MEMORY_AWARE_TRAIN_UPDATE_ROLLOUT_V1_23_2/tests/test_package_policy.py",
+      "sha256": "b5d1d392ae8c25fc899453f7a7d81a6014dc16db93a12080b56e2e9f7eb591bf"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/research_intelligence/records.py",
+      "sha256": "b6a26deae07eeffaf94c31b9983c898731fa43d6fa8b376ff604010d6cef4853"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/qwen25_3b_schema_aware_renderer_adapter_and_trainer_native_preflight_v1_7_2/tools/common.py",
+      "sha256": "b7047d10197bc9f7ab15fbd776291fe51c885e94995762f0196e8c90d5ae9f13"
+    },
+    {
+      "member": "reuse/h44/vendor/policy_runtime_engine_profile.py",
+      "sha256": "b72888cd5d323a8acd657cd77e1938235a8ed5bdf395a6e6261ffea5baa44a4d"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/research_intelligence/research_planner_reference_trace.py",
+      "sha256": "b729b84f810b426bb953e68ae30f1bf2ef439e58a1bdb209946fe8eec10ad5c8"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/analyzer/repair_decomposition.py",
+      "sha256": "b731803e73ea488388e58180eabc3fb4362e72fcfd527e3a8f5beccdda06f24f"
+    },
+    {
+      "member": "entry/training.py",
+      "sha256": "b73833315391d776e6aa1d064415d4da066ec16ffc6a46bf2660efec13d4559d"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/dev_snapshot_loader.py",
+      "sha256": "b73b46ce328c1b4ed9676cb142c6e457ff6e693e8190cf6b8f4216e1e264854f"
+    },
+    {
+      "member": "reuse/h44/tests/test_h3_recovery.py",
+      "sha256": "b7c51b96ebac60fe4e374ed4664ab949c9602ae821f4fa68d83847ddcfe123e0"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/a0_formal_execution.py",
+      "sha256": "b7dce82eb48f48ed7caf18a296d85c90dcc33160011aa8d55b5081185cae98ab"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/formal_b_retrieval.py",
+      "sha256": "b815d1ad127393c98830831d94d45c233eb151de0f0178ee1fe231da04f4b3a6"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/policy_attempt_adapter.py",
+      "sha256": "b892ec2846d6d4de4dc1857bc6578abea44ed295b1ad643ce03a40a425d20ba6"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/policy_attempt_adapter.py",
+      "sha256": "b892ec2846d6d4de4dc1857bc6578abea44ed295b1ad643ce03a40a425d20ba6"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/select_result_audit.py",
+      "sha256": "b8b1e7452a2dc57b6e85036b4958ab7718c34d5438f68e238e513d7f2c51ddc3"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/select_result_audit.py",
+      "sha256": "b8b1e7452a2dc57b6e85036b4958ab7718c34d5438f68e238e513d7f2c51ddc3"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/sequence_failure_experience.py",
+      "sha256": "b949b83c10ecbb0bf521431fec5d32b363c46847c9bb487fb47514097f3dad58"
+    },
+    {
+      "member": "memory_binding/current_source.py",
+      "sha256": "b972080496300512065052c45256dd410a2236ca40343e2c3f959c728978a4f4"
+    },
+    {
+      "member": "reuse/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_REQUEST_HASH_REPAIR_AND_RECOVERY_V1_23_3N_4_3/producer/shard_worker.py",
+      "sha256": "b9a9c367eb0f8d2dd86f487aeb6abe25947773a61065d5fa2aa269a475453214"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/memory_runtime_bridge.py",
+      "sha256": "ba7f1ee64fa82542c755ab4ac5067e06e5e417ce23c6824b2cff67d8abe190ad"
+    },
+    {
+      "member": "reuse/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0/dual_view_training_adapter.py",
+      "sha256": "bab091b7f0f744ddc79e40b752ed0558a514e68f4a39ffbd2eef67fbc3ef59de"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_human_t2_formal_training_execution_v1_2_preflight_summary_fix/tests/test_preflight_summary_contract.py",
+      "sha256": "baf1bdac545d84fd05f3c6b8e54cb7f9724226e6b8921c9287915395638b6ac0"
+    },
+    {
+      "member": "live_adapter/reuse.py",
+      "sha256": "bb9c63b58dc45540dca0efdecba911d6db76bfdc5b87c458ad0dabf43b69020d"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/round_control/campaign_authority.py",
+      "sha256": "bc2f9850de2e72821d723e97aae2ef947107a923ae2796d992dbf4dbc6d08235"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_human_t2_pretraining_handoff_authorization_v1/00_VERIFY_AND_BUILD_REVIEW.sh",
+      "sha256": "bc33b573a1b00e4fa4aea0d99b46d077cb931296aa5b6b9739b851d8f69c12ef"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_generic_training_stage_v2_1_hardening_build/round_training/__init__.py",
+      "sha256": "bce33bb052f12881246ebc09f735b80569f22abdc926e236cf3b27a042b1768b"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/human_t2_training_result_audit_offoff_reuse_census_v1/00_VERIFY_AND_RUN.sh",
+      "sha256": "bd185a0d057440f49b4b53d9885c069feb520f6d7cd8bdcae9dc676fea454f28"
+    },
+    {
+      "member": "reuse/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0/round_entry_binding.py",
+      "sha256": "bd9aac6eb4b9109ea0116b7231d3a67490d09b02b7e49fb9334b4f1351abc68a"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/episode_evaluator.py",
+      "sha256": "bdfd359f8cd5c0764fe8439d405987dd392e2215a8a565f1ebf526f02ca0cc55"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/episode_evaluator.py",
+      "sha256": "bdfd359f8cd5c0764fe8439d405987dd392e2215a8a565f1ebf526f02ca0cc55"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_generic_training_model_init_smoke_v1_3_cluster_resource_policy_fix/RUN_PREPARE_AND_SUBMIT_SMOKE.sh",
+      "sha256": "be8f8064ba2d91614b9f690d9247058fcef60d0b075492e2c02b5a5795a5c5c3"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/canonical_evidence.py",
+      "sha256": "bf10af9121281d53ccf7a0bd6f83434e361ba2c5bfa5cf788f119a044d1aa6a9"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/canonical_evidence.py",
+      "sha256": "bf10af9121281d53ccf7a0bd6f83434e361ba2c5bfa5cf788f119a044d1aa6a9"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/research_intelligence/takeover.py",
+      "sha256": "bf22cca2e5a088b966420e8756a6c9b0fcbd61a47f441c4100686ad019394d34"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/round_control/attempt_receipts.py",
+      "sha256": "c01266611ca35753076651397d772cd2c00783ffdd812fb487270e0e0980e004"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/round_control/attempt_receipts.py",
+      "sha256": "c01266611ca35753076651397d772cd2c00783ffdd812fb487270e0e0980e004"
+    },
+    {
+      "member": "reuse/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0/autonomy_binding.py",
+      "sha256": "c06737c4cfaea4e6e43b9dd2f2e6d321f191b53e7a4cba03869351bda26152b4"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_ROLLOUT_HANDOFF_STRONG_ANALYZER_RUNTIME_REGISTRY_AUTHORITY_RECONCILIATION_V1_23_2Q/verify_package.py",
+      "sha256": "c07f802ffadc6addbc07ca2b0ebcb8f4b39658becfc6c0f29648b7cb948aed57"
+    },
+    {
+      "member": "reuse/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_REQUEST_HASH_REPAIR_AND_RECOVERY_V1_23_3N_4_3/vendor/V1232Q/verify_package.py",
+      "sha256": "c07f802ffadc6addbc07ca2b0ebcb8f4b39658becfc6c0f29648b7cb948aed57"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_generic_training_model_init_smoke_v1_3_cluster_resource_policy_fix/tests/test_review_manifest.py",
+      "sha256": "c0fd87d47c9b8ed71d94407f672ab71122e17f6cf1e784f290886626dbea50a6"
+    },
+    {
+      "member": "reuse/native_bba/scripts/cognitive_runtime/run_registry_v1.py",
+      "sha256": "c1327442238731b596a6043071980a4ef778ddb25a4cd0b34b5ef0571b003a72"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/round_control/scientific_round_governance.py",
+      "sha256": "c1e69e76cc9df19698fa0bd76625e19a8490a5806020167fbd7e9f6afcf09e4a"
+    },
+    {
+      "member": "reuse/h44/RUN_RESUME_VERIFIED_POST.sh",
+      "sha256": "c2328798e4861d1d88ce1e8822939d00679b5fd0194d29d3b47d7c1c8e5fdce9"
+    },
+    {
+      "member": "entry/preflight.py",
+      "sha256": "c338c428f3e1e005043bac7ad96294f041613fb9c447533d2526950e123a64df"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_STRONG_ANALYZER_GROUP_TAIL_GIT_OBJECT_ID_AUTHORITY_RECOVERY_AND_DYNAMIC_PAIR_UNIVERSE_V1_23_2T/RUN_V1232T.sh",
+      "sha256": "c42302adb409df69d6af8314fb8473608d637f666f6b5ccbd217836aec17bf02"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/exposure_ledger.py",
+      "sha256": "c479e3d0906a137c619b23cc4ce50349159bf198928a4de5c80e7763016a40ef"
+    },
+    {
+      "member": "reuse/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0/campaign_contract.py",
+      "sha256": "c5b5f70ef9a3913c290883210616d871011d3517e181e26db6a32a2e901a9ad9"
+    },
+    {
+      "member": "entry/tests/test_driver.py",
+      "sha256": "c5cd9ac45d0e4349b70fe5995b5561892c1e3ec12335be0cbc9c2e69005c2aab"
+    },
+    {
+      "member": "reuse/h44/STATUS_CURRENT_ROUND.sh",
+      "sha256": "c81a665327421b34523b9858096b4e9437fa858983ba74acd11e035ae37f1580"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_human_t2_formal_training_execution_v1_2_preflight_summary_fix/formal_exec/__init__.py",
+      "sha256": "c83b24bfc9266cc9ce56482d47a1c8236dfb437b91a9a4cd012171bf3c3f099f"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/analyzer/outcome_router.py",
+      "sha256": "c90e2c258e82aeb8a67c2934727381fe4b7b35ca9740bfb1427be146359ad772"
+    },
+    {
+      "member": "evidence/server_select_sources_05/native_stage4d/stage4d_full/contract.py",
+      "sha256": "c97e02310bfcc8d04b24ece35ad0e5dde676e911386329c8945e36ab953a40d3"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_DYNAMIC_STRONG_PLANNER_PRE_V2_AND_F0F1_HANDOFF_V1_23_2V/verify_package.py",
+      "sha256": "c9985fa7c2a4b60a96d92718da3ff3ee0bb8ea1606461950019e1cd5caba3262"
+    },
+    {
+      "member": "policy_binding/launch.py",
+      "sha256": "c99ce4e84f68db1fbc95420bd3b890da47245bb36dc1819b616be52823bf1836"
+    },
+    {
+      "member": "memory_binding/api.py",
+      "sha256": "c9f849182019fbcaf77e0aa6bbb8c6ac173ce97e376a52ff42611c4069b09d5d"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_generic_training_model_init_smoke_v1_3_cluster_resource_policy_fix/20_BUILD_SMOKE_REVIEW.py",
+      "sha256": "caa4e6951964b1fffe616ca6f09646646d3393cf121f2c0a5e6adf051a6f989d"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/p1b_access_crosswalk.py",
+      "sha256": "cb88a0bd601735965f409100e2086ccec849c20f1572ecde22d17eac10357a29"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/p1b_access_crosswalk.py",
+      "sha256": "cb88a0bd601735965f409100e2086ccec849c20f1572ecde22d17eac10357a29"
+    },
+    {
+      "member": "reuse/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0/tests/test_shell_and_secret.py",
+      "sha256": "cb8e2cd4ee8fca587b870327910155d67b9482891a6ea7622524a7d2ca7d9691"
+    },
+    {
+      "member": "policy_binding/h44_overlay.py",
+      "sha256": "cbcbeaa80bb8cc7f5dd53e3daa2ca6a8dc5919e0e3bd450773d3143fcd88c0c8"
+    },
+    {
+      "member": "evidence/server_select_sources_05/native_stage4d/00_VERIFY_PACKAGE.sh",
+      "sha256": "cd0d9825861037376b2c0924138de0d80696e121ce5c492929ad2f6cf3c49a13"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/artifact_publisher.py",
+      "sha256": "cd329e5b619b66963f413ad3bc81626d8abb03ec0677f31b3677d76b3cf53f93"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/artifact_publisher.py",
+      "sha256": "cd329e5b619b66963f413ad3bc81626d8abb03ec0677f31b3677d76b3cf53f93"
+    },
+    {
+      "member": "VERIFY.py",
+      "sha256": "cd572c00b08ef4a7636abcfffc179fb06a7ea2886461499529ad972c170ae1fc"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/reference_loop/task_access.py",
+      "sha256": "cdd7f115ede3a53d2631498a5241efd6b7d018bbeeab60998c30fdd13a86220c"
+    },
+    {
+      "member": "memory_binding/same_call.py",
+      "sha256": "ce0bce592097be21eb19fd0fc0132466f540c584e6d0b446a30fa20d516f6386"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/round_control/local_analyzer_training_adapter.py",
+      "sha256": "ce39d92fdee5366b1da705bed46aee14b562ba9934d874d477d27e4784dad25a"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/round_control/local_analyzer_training_adapter.py",
+      "sha256": "ce39d92fdee5366b1da705bed46aee14b562ba9934d874d477d27e4784dad25a"
+    },
+    {
+      "member": "reuse/h44/tests/test_round_plan.py",
+      "sha256": "ce546d357c6cb90275011aabe109285c325d8124dca8bb85f951c33458fac1de"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/round_control/bindings.py",
+      "sha256": "cecc09b39bfd7a4bcd601869b21b0fb7ebe0005df7844462d69765e5cdb61115"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/round_control/bindings.py",
+      "sha256": "cecc09b39bfd7a4bcd601869b21b0fb7ebe0005df7844462d69765e5cdb61115"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/research_intelligence/canonical_candidate_pool_v2.py",
+      "sha256": "cf1ba98c0e5312d84a85e217491c2a21536244e649ce2c4461a751ed63843201"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/cognitive_runtime/orchestrator.py",
+      "sha256": "cf4ed346539df80a9060f9d85ead45f570b3bca82b7c8b8e8144dbc35f6a6030"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/cognitive_runtime/formal_registry.py",
+      "sha256": "cf9284f633122a11c8137d168386bd09d598c984d11de1772468a533586552aa"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/cognitive_runtime/formal_registry.py",
+      "sha256": "cf9284f633122a11c8137d168386bd09d598c984d11de1772468a533586552aa"
+    },
+    {
+      "member": "live_adapter/exact_bindings.py",
+      "sha256": "cfb8dc60a154a3b034267217e7793521bf28b13c1ffa6d4e5484dd0094969fba"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/qwen25_3b_frozen_renderer_interface_census_and_reference_takeover_bridge_v1_6/10_CENSUS_FROZEN_Q2_RENDERER_INTERFACE.sh",
+      "sha256": "d00b7c3eea0b385306d114155a96904cca091392862d77885ddd4803e827ec20"
+    },
+    {
+      "member": "training_binding/tests/test_live_pre.py",
+      "sha256": "d072fba8b9c3aa768ee21cca99790ebd0e214ceb102f74ad023de1c2b7636879"
+    },
+    {
+      "member": "reuse/h44/RUN_CURRENT_ROUND.sh",
+      "sha256": "d0b8fd284dda1986aedf5925d4f709a08c82ace36bf5d599fa0eb19071df03a7"
+    },
+    {
+      "member": "reuse/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0/binding_resolver.py",
+      "sha256": "d0d87ef1ce98ca8477cb8ef9fd1f45e9ed8e30661d1b425a630bf90d87ca9fdc"
+    },
+    {
+      "member": "rollout_adapter/__init__.py",
+      "sha256": "d1221b0bbed2860560c23e432f3cad56ca5c582789236efac9ea218c98bdf043"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/qwen25_3b_schema_aware_renderer_adapter_and_trainer_native_preflight_v1_7_2/40_BUILD_CHINESE_MAINLINE_AND_PREFLIGHT.sh",
+      "sha256": "d240679986533b91e5724a73047460c7d092e85f2dc37aa49379b89666bef865"
+    },
+    {
+      "member": "entry/authority_bundle.py",
+      "sha256": "d242373c65904e421a76b77665aa733b0bfef636fcdaa4436b221bc28d322720"
+    },
+    {
+      "member": "reuse/h44/recovery.py",
+      "sha256": "d2b4495096a31bfdda455d44fbf5f6460c83101ed4b3a75d5192258356010b3e"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/evidence_completeness.py",
+      "sha256": "d436f445739f20907acf1b5a3aaa7f434a4c53eb6137c38e4594879bd0818394"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/evidence_completeness.py",
+      "sha256": "d436f445739f20907acf1b5a3aaa7f434a4c53eb6137c38e4594879bd0818394"
+    },
+    {
+      "member": "reuse/h44/io_utils.py",
+      "sha256": "d57bcb98cb7c6adf955e5fac00a07f7fa5b028b0e028afe8fa9592837f7cb327"
+    },
+    {
+      "member": "reuse/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0/tests/test_current_round_driver.py",
+      "sha256": "d5cee812aeb554b686b4acca24add146e2a966564de54f52647a52f4c19c29e7"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/select_execution_identity.py",
+      "sha256": "d63e7e7d5d5c10c4964f3c2a166effc83f1b3c6d43b5d4b7b44761dba449dc89"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/select_execution_identity.py",
+      "sha256": "d63e7e7d5d5c10c4964f3c2a166effc83f1b3c6d43b5d4b7b44761dba449dc89"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/projection_packing.py",
+      "sha256": "d66373bd1f513427f2c385bbe9cb3902a06ee6625cd2d883326f476f5dd3485a"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_AUTHORITY_DRIVEN_FRESH_MEMORY_AWARE_TRAIN_UPDATE_ROLLOUT_V1_23_2/submit_v1232.py",
+      "sha256": "d780fc6cae4c8a4480b2e96d3c906420be3ab4ac610e5edaa516f1e1182f8175"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/reference_loop/canonical.py",
+      "sha256": "d8693dc075d049a101b68f98e9b8ca892fc8ee0383a9180bd12a081733483d52"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/cognitive_runtime/p2_bridge.py",
+      "sha256": "d8f768569ea02083594c31460ca92b5c64b2fac82b5aa2f4f87b5a058b969e5f"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/reference_loop/approved_materialization.py",
+      "sha256": "d94e3130debf6b26ba58a92968161d867e8dd0015204757d33deab4f449b48ca"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_DYNAMIC_STRONG_PLANNER_PRE_V2_AND_F0F1_HANDOFF_V1_23_2V/tests/test_v1232v_contracts.py",
+      "sha256": "d96552c5b69e4bdc1113c97ca79e8dcbdf147fd60771327effd5ad301ff68313"
+    },
+    {
+      "member": "reuse/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0/strategy_input_adapter.py",
+      "sha256": "da2ab6a6e359cf9be3b1a931e00a46edbd5e8c9789f144f5efc1b1ac92215a72"
+    },
+    {
+      "member": "reuse/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_REQUEST_HASH_REPAIR_AND_RECOVERY_V1_23_3N_4_3/tests/test_request_hash_repair.py",
+      "sha256": "db0472bc9ef0b6bb4e734b1430d1b2cd541f732c15f845a01275d83ad384cc6c"
+    },
+    {
+      "member": "reuse/PCHSI_RECEIPT_DRIVEN_FULL_ROUND_DRIVER_V1_1/tests/test_full_round_driver.py",
+      "sha256": "db10470edb3881cc0a004e892338acff1da2c82d429abf45119715e0349b2dbb"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/cognitive_runtime/validation.py",
+      "sha256": "db1c533cf97f75d70ff1ed3642c3661997874922ef6a14b2868c4d0b6103e171"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/cognitive_runtime/validation.py",
+      "sha256": "db1c533cf97f75d70ff1ed3642c3661997874922ef6a14b2868c4d0b6103e171"
+    },
+    {
+      "member": "reuse/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_REQUEST_HASH_REPAIR_AND_RECOVERY_V1_23_3N_4_3/recover.py",
+      "sha256": "db220451bd603748c02fd3ff43c45cd0b74cc6b1932b75610ce045151bcebf61"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/round_control/local_analyzer_shared_view.py",
+      "sha256": "db7dd4d8d26530fbd8d013a7c11092b564f15e62e47096863db0814b41cbc6e2"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/round_control/local_analyzer_shared_view.py",
+      "sha256": "db7dd4d8d26530fbd8d013a7c11092b564f15e62e47096863db0814b41cbc6e2"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_generic_training_model_init_smoke_v1_3_cluster_resource_policy_fix/00_VERIFY_PACKAGE.sh",
+      "sha256": "dbeeb96d866cc1a1c44085eaa30d917c7ce15dcb95111a0e97210e8056a9f3d8"
+    },
+    {
+      "member": "memory_binding/tests/test_binding.py",
+      "sha256": "dcda8308bb5b457fd4e8973cb411a1d912f271eb6e4a386abfac86db3b05af48"
+    },
+    {
+      "member": "reuse/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_REQUEST_HASH_REPAIR_AND_RECOVERY_V1_23_3N_4_3/status.py",
+      "sha256": "dd035c662e2984548cf93bea44d30afaeddf898f58c0eebf27782bb7230cd552"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/cognitive_runtime/registry_runner.py",
+      "sha256": "ddae94f9bb127bdd55a9112f6d6a8bf943aa942e8efe618a7b8f1bc59762e8dd"
+    },
+    {
+      "member": "reuse/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0/receipt_chain.py",
+      "sha256": "ddb08a870d4cfac4878a4c2f3dff0f185c9144b75f49e269cbde7a7e5fe571c0"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/round_control/__init__.py",
+      "sha256": "dde6ad71b316f88d6aad6115bfc6e59663024cb7f7367feb14d75611e9878be0"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/round_control/__init__.py",
+      "sha256": "dde6ad71b316f88d6aad6115bfc6e59663024cb7f7367feb14d75611e9878be0"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/human_t2_training_result_audit_offoff_reuse_census_v1/auditlib/common.py",
+      "sha256": "de7a0059c3e9d4fba429495d066e8c8a93214f5ddcd62576b6a58c24b4ec48e3"
+    },
+    {
+      "member": "reuse/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0/tests/test_v110_post_adoption.py",
+      "sha256": "de9f2f3ad96f1fe8dc7c7446116d642f8ce8a235782d8e2c9fbba7d2e2ad43a4"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/analyzer/state_candidate_budget.py",
+      "sha256": "dfe92fad48721eab6a53bea5f17eebe593b727af6a95e27c47528167c55a66c0"
+    },
+    {
+      "member": "reuse/h44/independent_verifier.py",
+      "sha256": "e0636064b1c485d476b02c35866a38292d96423a2f4263cf5f8e1094d7bc3929"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_generic_training_stage_v2_1_hardening_build/round_training/receipts.py",
+      "sha256": "e09688d37cb9a5e8c4aeb8c4442f96f713c02143ae7f9ecd54db037479eec379"
+    },
+    {
+      "member": "reuse/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0/no_training_recovery.py",
+      "sha256": "e0bcbe70dab1a99119b79476f749d319e4bf6b3ffa048d4ffe1bc2c2cf048742"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/research_intelligence/strong_researcher_evidence_hydration.py",
+      "sha256": "e24c7a692f6d524031e693fd791c6c3959aa381bcc6ef0a47e401676c2fbbe50"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/research_intelligence/__init__.py",
+      "sha256": "e34ed0dc7e35c1b2a5734a73571e334b87456500fb891457d4504e2b3183e152"
+    },
+    {
+      "member": "evidence/server_select_sources_05/native_stage4d/stage4d_full/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/result_audit.py",
+      "sha256": "e3b44b52b12f95005bf74da1f2dbcdd7944b2fa4374421f0b6c8f165e24b8675"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/result_audit.py",
+      "sha256": "e3b44b52b12f95005bf74da1f2dbcdd7944b2fa4374421f0b6c8f165e24b8675"
+    },
+    {
+      "member": "training_binding/tests/test_training_entry.py",
+      "sha256": "e597ac51338aaeafc807025fa27fac81088b2267b07381ed60d1f0877377d547"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/analyzer/__init__.py",
+      "sha256": "e5ed0ae7d9afafa65776381b377d8c03f4e205c1b81136354aa7ef97ceac0935"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/p1b_access_materializer.py",
+      "sha256": "e715fe2667a7f8a5b18ac449bbf94345c8333e6d6c6bcc9fcb258b15e8a9567b"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/p1b_access_materializer.py",
+      "sha256": "e715fe2667a7f8a5b18ac449bbf94345c8333e6d6c6bcc9fcb258b15e8a9567b"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/round_control/retention.py",
+      "sha256": "e7535ab782b7b4f86205449ea17b76b4b138ae4de957e62283dc2d1471d57a26"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/round_control/retention.py",
+      "sha256": "e7535ab782b7b4f86205449ea17b76b4b138ae4de957e62283dc2d1471d57a26"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/qwen25_3b_frozen_renderer_interface_census_and_reference_takeover_bridge_v1_6/00_VERIFY_PACKAGE.sh",
+      "sha256": "e7597d2f930429deef61ecb5ba4e78d0596d81d4f43a5690e90b5299fca26380"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/qwen25_3b_schema_aware_renderer_adapter_and_trainer_native_preflight_v1_7_2/00_VERIFY_PACKAGE.sh",
+      "sha256": "e75c747fb77434ad2a2cb34def96573e2a0dba280bac48372682a3de8034b359"
+    },
+    {
+      "member": "memory_binding/tests/run_native_compatibility.py",
+      "sha256": "e7f0701b4a70ca3cb539082f87a625b6e295130ac8a78092c2e19cc5b27f6a0f"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/qwen25_3b_schema_aware_renderer_adapter_and_trainer_native_preflight_v1_7_2/tools/build_review.py",
+      "sha256": "e8f5388dad2def3fcf1ec62c7dfc2b1ebb2bc7e0dcdde488eb4e9eee16130bad"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/analyzer/analysis_sampling.py",
+      "sha256": "e9103859629b865c27bc29658ddbcbe165974fc9eaf9f55bb203081caa9e251b"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/representation_ablation.py",
+      "sha256": "e9dd6902fd50ef464f7f8693424a8978df84f3e5c5ca2ded43d7bd99e3a6c26d"
+    },
+    {
+      "member": "memory_binding/producer.py",
+      "sha256": "e9ea560b3decbe86f00e9ac557f8b555f0b7fc479a6a572e81b1720716cb5362"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_generic_training_stage_v2_1_hardening_build/tests/test_current_profile_server.py",
+      "sha256": "ead835bdc02aa00ead0c863074be87aefd2750e5827bd1c0d912aa6b350a8b4b"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/gamefile_identity.py",
+      "sha256": "eb01f4b6563b344517356bc120c04338fc89cb48d8701ccc30c2e8ae88451202"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/gamefile_identity.py",
+      "sha256": "eb01f4b6563b344517356bc120c04338fc89cb48d8701ccc30c2e8ae88451202"
+    },
+    {
+      "member": "reuse/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_REQUEST_HASH_REPAIR_AND_RECOVERY_V1_23_3N_4_3/producer/global_finalize.py",
+      "sha256": "eb2e6d33d93670fd9adf6f9858468d94bd10ca3e082cbae928e273940d0a3e04"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_STRONG_ANALYZER_GROUP_TAIL_GIT_OBJECT_ID_AUTHORITY_RECOVERY_AND_DYNAMIC_PAIR_UNIVERSE_V1_23_2T/verify_package.py",
+      "sha256": "ebc2c2a3142e9a20681e152bcc2ef953c919bdb659dc71069f1f45df14ad73c9"
+    },
+    {
+      "member": "evidence/server_select_sources_05/native_stage4d/stage4d_full/slurm_entry.py",
+      "sha256": "ec06301334fa6f3bd41280617813e41544ab2574b96f9147e22864df55bbd564"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/qwen25_3b_schema_aware_renderer_adapter_and_trainer_native_preflight_v1_7_2/tests/test_adapter_contract.py",
+      "sha256": "ec0edb2968e6d62eafa4adbe752b01e113aeb6aa8b4c79ec1566e3212b1b35ab"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/alfworld_contracts.py",
+      "sha256": "ec2d3a4b950ddd3ea99bfe077348dbd3c83f9898b35aae1d068d2c029ab376fd"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/alfworld_contracts.py",
+      "sha256": "ec2d3a4b950ddd3ea99bfe077348dbd3c83f9898b35aae1d068d2c029ab376fd"
+    },
+    {
+      "member": "training_binding/tests/test_materializer.py",
+      "sha256": "ee32417a8686fd009c40b41c06e19a1db88d02072b8e9cce0a3f9f1ca54da9a7"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_generic_training_model_init_smoke_v1_3_cluster_resource_policy_fix/10_OFFLINE_PREFLIGHT.py",
+      "sha256": "eeccaa85f087b8cf303808d1d8502853937d7eafea3fbda67950a1e842df6aa0"
+    },
+    {
+      "member": "offoff_binding/materialize.py",
+      "sha256": "ef5132d72178bc5072a1ff1025dbf35511ef9bfacb1602528a2b81e864f0816d"
+    },
+    {
+      "member": "reuse/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0/signal_gate.py",
+      "sha256": "f078da44a57c0c2e1b5f4dce9fa4024907054aa5dbf71a76261149b052e47f07"
+    },
+    {
+      "member": "reuse/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0/tests/test_signal_gate.py",
+      "sha256": "f07e06a1ee5e2630fdd248f2cab58893aa076354c46e132f77ea57eabeea1a55"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/security/orchestrator.py",
+      "sha256": "f190d60bd1edb146d295fe806b52d5b969acd7ba83757635b7f1ceefc2e7f1f2"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/research_intelligence/product_isolation.py",
+      "sha256": "f1adc05946406272ca04ffcd7c2e647eab133d0308d67983e84003bfcf4d7416"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_human_t2_formal_training_execution_v1_2_preflight_summary_fix/20_OFFLINE_FORMAL_TRAINING_PREFLIGHT.py",
+      "sha256": "f2fcd30470ad87fc6ce0c573d0396d22f73d3d30cc3cf3e5fa4e043dbb87aad6"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/security/execution_preflight.py",
+      "sha256": "f3404372e2e2e1f937fc4eb7c56f7ff9d248a95d0649c2586572f6af6bb5e06c"
+    },
+    {
+      "member": "reuse/STRONG_PRIMARY_AUTONOMOUS_CAMPAIGN_DRIVER_V1_11_0/runtime_inheritance.py",
+      "sha256": "f406e02efa7c520864a92b25f76152aeb301b8ea3fc37668a47e6389c9d7758b"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_DYNAMIC_STRONG_PLANNER_PRE_AUTONOMOUS_INFRA_RECOVERY_AND_F0F1_HANDOFF_V1_23_2W/tests/test_v1232w_contracts.py",
+      "sha256": "f40b73fdeeefda9bad3616be0a2b225bdae938729b153abbdf7865f497c3b6a5"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_generic_training_stage_v2_1_hardening_build/round_training/adapters/local_analyzer_ddp_runtime.py",
+      "sha256": "f48d5861aad5944a688e2238efff9e29a41ec0cd8c6675dccb0516e4a78f2c00"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/research_intelligence/human_planner_adjudication.py",
+      "sha256": "f4fd9e1954172d9e5bb8c23a5dc921951d28dbc118b8d35f1755ba72a44588d4"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/scientific_validation.py",
+      "sha256": "f51e14cc4b90a71dc72345206afeedcbcc61d948d6f3248537834e312d59fc50"
+    },
+    {
+      "member": "entry/rollout.py",
+      "sha256": "f52912a6b2e0ed37668190e65e8c8a706dde228d941ed05139bf89aa21f24322"
+    },
+    {
+      "member": "offoff_binding/tests/test_registered_inputs.py",
+      "sha256": "f58bd6c24755abacf0d63039bddfd2a93f3e29dc528e074e3df702947ed770aa"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/human_t2_training_result_audit_offoff_reuse_census_v1/10_AUDIT_AND_DISCOVER.py",
+      "sha256": "f598740015c154ef1160c3f0faea91cb06849084d4dd0ee88214b37814e83eed"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_human_t2_pretraining_handoff_authorization_v1/tests/test_no_execution_surface.py",
+      "sha256": "f5e502ab79cc4cc03176734df59e5fa2de06c869b4daacafb1dc8b9887b8332b"
+    },
+    {
+      "member": "reuse/h44/tests/test_options.py",
+      "sha256": "f5fabf8443604141a6aa257f3bfad591f28a4e4dab2cbc74bb22d47e4dcbd82e"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_generic_training_stage_v2_1_hardening_build/tests/test_cycle_compatibility.py",
+      "sha256": "f5fbbb274cefaff9ed04ff25158f9c31ba0fe6959b5fcf6f7cddf9275cee3722"
+    },
+    {
+      "member": "TESTS.py",
+      "sha256": "f64992861976a47fb7691d8137c3868494629bdeda39512e743a67646a28edf7"
+    },
+    {
+      "member": "reuse/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_REQUEST_HASH_REPAIR_AND_RECOVERY_V1_23_3N_4_3/recovery_core.py",
+      "sha256": "f6efcef0f007b687407e040243e15a4086a7f4bc9d97d3a1e732a37596dc5fb8"
+    },
+    {
+      "member": "training_binding/tests/test_native_labels.py",
+      "sha256": "f793855e955be6a805fd948ff33dcca6efb369950fb4e386f74073c1a6e6ae69"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/evidence_visibility.py",
+      "sha256": "f816d351afe6b27a78b045206c0685559572fd1f67a6a43229eebebae2a0a218"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/evidence_visibility.py",
+      "sha256": "f816d351afe6b27a78b045206c0685559572fd1f67a6a43229eebebae2a0a218"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/evaluation/distillation_governance.py",
+      "sha256": "f9168176e186fee7830054b22f114994159db139672b153423b3c11fd9764209"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/evaluation/distillation_governance.py",
+      "sha256": "f9168176e186fee7830054b22f114994159db139672b153423b3c11fd9764209"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_human_t2_pretraining_handoff_authorization_v1/handoff/common.py",
+      "sha256": "f92c3b80b8c483ae0eaa45a0f3981652585e0ce14adff1263fa8c0dc31565716"
+    },
+    {
+      "member": "reuse/h44/tests/test_mechanical_retry_root.py",
+      "sha256": "f99b1f2571129b5f931ef51d500a1fbd74b4ccc3117bfe2e3d13a7ed9e821d54"
+    },
+    {
+      "member": "reuse/h44/tests/test_source_adapter.py",
+      "sha256": "f9ac83664e86da6d2e7e837b172ed83467c3fb791dd8a0f263ef4469ec294531"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/research_intelligence/reference_round.py",
+      "sha256": "f9dc23489fb6e2e9ca04f60cad98d2c4b635c9e21363769da54f054aa8e011b7"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_generic_training_stage_v2_1_hardening_build/RUN_BUILD_REVIEW.sh",
+      "sha256": "f9e2cad6be74f96dc33f8833d99755c8f4fafd55cf7bc2481c2b287ef685819c"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_STRONG_ANALYZER_WAVE1_COMPLETE_PAIR_ADOPTION_AND_CANONICAL_ACT3_GROUP_PREP_V1_23_2R/v1232r_driver.py",
+      "sha256": "f9e40c149e6f3291bff03b24bccfe7aaf4e992a12fb004ec1b8445ab22fb97cc"
+    },
+    {
+      "member": "reuse/native_bba/scripts/engineering_snapshots/training_pipeline/round_generic_training_model_init_smoke_v1_3_cluster_resource_policy_fix/smoke/__init__.py",
+      "sha256": "fa066539f9ddc350fa7dd9d222c08adebbe578007513cb40fd6ed546268501d2"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_DYNAMIC_STRONG_PLANNER_PRE_AUTONOMOUS_INFRA_RECOVERY_AND_F0F1_HANDOFF_V1_23_2W/dynamic_primary_pre_v2.py",
+      "sha256": "fa0d2c34915fac9e77a71b37eed67eb45de7eff8bf9bbdd816d86dbae5a25ff0"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_DYNAMIC_STRONG_PLANNER_PRE_RESUME_STABLE_MEMORY_CENSUS_AND_AUTONOMOUS_INFRA_RECOVERY_V1_23_2X/dynamic_primary_pre_v2.py",
+      "sha256": "fa0d2c34915fac9e77a71b37eed67eb45de7eff8bf9bbdd816d86dbae5a25ff0"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_DYNAMIC_STRONG_PLANNER_PRE_V2_AND_F0F1_HANDOFF_V1_23_2V/dynamic_primary_pre_v2.py",
+      "sha256": "fa0d2c34915fac9e77a71b37eed67eb45de7eff8bf9bbdd816d86dbae5a25ff0"
+    },
+    {
+      "member": "evidence/server_select_sources_05/native_stage4d/tests/test_stage4d_full_contract.py",
+      "sha256": "fa17a2d39ef74361a4ff0231c5f3c2c931a272a7fa121c0f4fa9c0cc1f53d4f8"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/cognitive_runtime/schema_registry.py",
+      "sha256": "fa9195bdc7233823a8986e95e5e0992fc976d77db716858ad7d926b3e778e6fe"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/cognitive_runtime/schema_registry.py",
+      "sha256": "fa9195bdc7233823a8986e95e5e0992fc976d77db716858ad7d926b3e778e6fe"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/round_control/clean_group_analyzer_binding.py",
+      "sha256": "fb60c48bb4af04938aa7bad3aee5182b254e26eae9bab27ca05f6f11add04a89"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/round_control/clean_group_analyzer_binding.py",
+      "sha256": "fb60c48bb4af04938aa7bad3aee5182b254e26eae9bab27ca05f6f11add04a89"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/cognitive_runtime/p2_assets.py",
+      "sha256": "fb6da4c25a74695d3473d07abb69754917d738bb14c2805a37048a828ab4ec91"
+    },
+    {
+      "member": "reuse/native_bba/src/pchsi/cognitive_runtime/p2_assets.py",
+      "sha256": "fb6da4c25a74695d3473d07abb69754917d738bb14c2805a37048a828ab4ec91"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_STRONG_ANALYZER_WAVE1_TERMINAL_HARDSTOP_ISOLATION_AND_COMPLETE_PAIR_ADOPTION_V1_23_2R1/RUN_V1232R1.sh",
+      "sha256": "fb9e49b072fb0e0303c6eb6a6b06254e1ff9cdb02cabc80f160ecb86b73870ff"
+    },
+    {
+      "member": "memory_binding/verifier_event.py",
+      "sha256": "fba94bbed134ab811f54108db975911035b50b75decda2ada6662160951cacef"
+    },
+    {
+      "member": "reuse/PCHSI_CAMPAIGN_STRONG_ANALYZER_WAVE1_COMPLETE_PAIR_ADOPTION_AND_CANONICAL_ACT3_GROUP_PREP_V1_23_2R/tests/test_package.py",
+      "sha256": "fbd78962bfdd0a2901458e12ee049518d05dac4d1123b2510e452cb2caf7b01b"
+    },
+    {
+      "member": "continuity_binding/tests/conftest.py",
+      "sha256": "fc78c0a908eaac58e58d6e9ea866fe9ee33469bffcd00755a40f66ac1a46ef5d"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/task_access_sha_authority_correction.py",
+      "sha256": "fcdcdb398378a6b82434fb72ef51b52fcb7c7000f7c6c855ac87107fa7960143"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/memory/component_ports.py",
+      "sha256": "fef4f74e4098dc2847e59617cabe84595af37118db23bf8099b758d906bdfa57"
+    },
+    {
+      "member": "continuity_binding/next_request.py",
+      "sha256": "ffb2b31821bcb5d09f38e13bdfa4869d2bed35fc51090ee0ea7cbb607710182f"
+    },
+    {
+      "member": "reuse/h44/native_repo/src/pchsi/analyzer/crosscheck.py",
+      "sha256": "ffc1b75f30152bfc5653fbe28a7a3f1ffe92539ccbfb1e12551a4aa00041c892"
+    },
+    {
+      "member": "reuse/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_REQUEST_HASH_REPAIR_AND_RECOVERY_V1_23_3N_4_3/producer/shard_math.py",
+      "sha256": "ffc3f2f7851e348edc268d9df1dfe095a6cbb9edc8ed9597fcbd4bc25689e49c"
+    }
+  ],
+  "final_changes_are_append_only_documentation_and_verification_evidence": true
+}

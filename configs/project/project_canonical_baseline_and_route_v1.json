@@ -1,0 +1,66 @@
+{
+  "benchmark_lineage": [
+    "RAW_BASE_PI0",
+    "PILOT_DISTILLED_PI1",
+    "PI2_HUMAN_REFERENCE",
+    "PI_STAR_AUTONOMOUS_FINAL",
+    "RELATED_WORK_REPRODUCED",
+    "STRONG_MODEL_REFERENCE"
+  ],
+  "canonical_chain": [
+    "POLICY_FAILURE_EVIDENCE",
+    "MECHANICAL_EVIDENCE",
+    "HIERARCHICAL_ANALYZER",
+    "PERSISTENT_FAILURE_EXPERIENCE",
+    "TRAINING_RESEARCHER_HIGH_VALUE_REPAIR_DISCOVERY",
+    "SAME_STATE_F0_F1",
+    "ENVIRONMENT_EFFECT_AUTHORITY",
+    "VERIFIED_TRAINING_EVIDENCE",
+    "POLICY_UPDATE",
+    "MEMORY_OFF_HARNESS_OFF_EVALUATION",
+    "PROMOTE_OR_ROLLBACK"
+  ],
+  "causal_authority": "ENVIRONMENT_VERIFIER_ONLY",
+  "change_authority": "EXPLICIT_PROJECT_OWNER_INSTRUCTION_ONLY",
+  "current_round": {
+    "analyzer_primary": "STRONG_API_HIERARCHICAL_ANALYZER",
+    "parent": "PILOT_DISTILLED_PI1",
+    "policy": "LOCAL_QWEN2_5_3B_LINEAGE",
+    "researcher_primary": "HUMAN_REFERENCE",
+    "researcher_shadow": "STRONG_API_AFTER_HUMAN_PRE_FREEZE",
+    "target": "PI2_HUMAN_REFERENCE"
+  },
+  "effective_date": "2026-08-28",
+  "engineering_rules": [
+    "REUSE_EXISTING_ASSETS_FIRST",
+    "MINIMAL_TARGETED_CHANGE",
+    "NO_PARALLEL_REIMPLEMENTATION",
+    "FOCUSED_TESTS_BY_DEFAULT",
+    "FULL_REGRESSION_ONLY_AT_INTEGRATION_GATE"
+  ],
+  "final_role_modes": [
+    "ROLE_POLICY",
+    "ROLE_ANALYZER",
+    "ROLE_RESEARCH_PLANNER"
+  ],
+  "final_routine_human_decisions": 0,
+  "final_routine_strong_model_calls": 0,
+  "final_system_route": [
+    "HUMAN_REFERENCE",
+    "STRONG_API_TEACHER_REFERENCE",
+    "LOCAL_ANALYZER_PLANNER_SHADOW",
+    "LOCAL_PRIMARY",
+    "ONE_QWEN2_5_3B_CHECKPOINT_THREE_ROLE_MODES",
+    "FRESH_AUTONOMOUS_ROUND"
+  ],
+  "research_planner_role": [
+    "ROUND_LEVEL_BOTTLENECK_IDENTIFICATION",
+    "KEY_REPAIR_HYPOTHESIS_DISCOVERY_OR_SYNTHESIS",
+    "FIXED_BUDGET_PORTFOLIO_PRIORITIZATION",
+    "ONE_PRINCIPAL_SCIENTIFIC_CHANGE",
+    "PRE_POST_RESEARCH_INTERPRETATION"
+  ],
+  "schema_id": "PROJECT_CANONICAL_BASELINE_AND_ROUTE_V1",
+  "scientific_mainline": "RESEARCH_GUIDED_POLICY_SELF_IMPROVEMENT",
+  "server_scripts_root": "/data/home/scwb204/run/sdar_repro/badcase/pchsi_scripts"
+}

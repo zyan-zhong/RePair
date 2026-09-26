@@ -1,0 +1,25 @@
+{
+  "formal_training_authorization_changed": false,
+  "model_execution_scope_changed": false,
+  "package_patch_id": "ROUND_GENERIC_TRAINING_MODEL_INIT_SMOKE_V1_3_CLUSTER_RESOURCE_POLICY_FIX",
+  "packaging_hygiene_fix_preserved": true,
+  "parent_package_zip_sha256": "66aad7975261a553552f9a6c5d9a7eae63a62630fd20eee2a06c6f20b2c50ae0",
+  "parent_patch_id": "ROUND_GENERIC_TRAINING_MODEL_INIT_SMOKE_V1_2_PACKAGING_HYGIENE_FIX",
+  "patch_scope": "CLUSTER_GPU_RESOURCE_REQUEST_POLICY_ONLY",
+  "path_alias_fix_preserved": true,
+  "reviewed_training_stage_freeze_root_changed": false,
+  "root_cause": "GPU_PARTITION_REJECTS_EXPLICIT_MEMORY_REQUEST_AND_CLUSTER_AUTO_ALLOCATES_CPU_MEMORY",
+  "schema_id": "MODEL_INIT_SMOKE_PACKAGE_PATCH_METADATA_V1",
+  "schema_version": 1,
+  "scientific_contract_changed": false,
+  "slurm_policy": {
+    "cpu_request_explicit": false,
+    "gpus": 1,
+    "memory_request_explicit": false,
+    "partition": "gpu_a800",
+    "reason": "CLUSTER_MANAGED_CPU_MEMORY_AND_SHORT_BACKFILL_FRIENDLY_SMOKE_WINDOW",
+    "time_limit": "00:10:00"
+  },
+  "smoke_authorization_changed": false,
+  "smoke_binding_changed": false
+}

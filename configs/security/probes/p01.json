@@ -1,0 +1,17 @@
+{
+  "execution_status": "NOT_APPROVED",
+  "expected_normalized_outcome": "OBSERVED",
+  "forbidden_side_effects": [
+    "host_write",
+    "network",
+    "new_privilege",
+    "unreviewed_process"
+  ],
+  "payload_id": "observer",
+  "payload_sha256": "bf1d68aab9ce1ba88743c6a985fad3443906d5e9e7b522b95045918cc10bb850",
+  "permitted_side_effects": [],
+  "probe_id": "P01",
+  "profile_id": "S1_PRODUCTION_V1",
+  "schema_version": 1,
+  "timeout_seconds": 10
+}

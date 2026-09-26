@@ -1,0 +1,32 @@
+test_bound_bridge_satisfies_actual_native_validator_for_full_grid (test_hash_bridge.NativeDigestTests.test_bound_bridge_satisfies_actual_native_validator_for_full_grid) ... ok
+test_changed_identity_and_hashes_not_self_authorized (test_hash_bridge.NativeDigestTests.test_changed_identity_and_hashes_not_self_authorized) ... ok
+test_changed_model_not_self_authorized (test_hash_bridge.NativeDigestTests.test_changed_model_not_self_authorized) ... ok
+test_duplicate_json_keys_and_nonfinite_still_rejected (test_hash_bridge.NativeDigestTests.test_duplicate_json_keys_and_nonfinite_still_rejected) ... ok
+test_missing_registered_name_rejected (test_hash_bridge.NativeDigestTests.test_missing_registered_name_rejected) ... ok
+test_mutated_runtime_model_name_rejected (test_hash_bridge.NativeDigestTests.test_mutated_runtime_model_name_rejected) ... ok
+test_native_cross_condition_grid_mismatch_still_rejected (test_hash_bridge.NativeDigestTests.test_native_cross_condition_grid_mismatch_still_rejected) ... ok
+test_native_duplicate_cell_check_not_removed (test_hash_bridge.NativeDigestTests.test_native_duplicate_cell_check_not_removed) ... ok
+test_old_bytes_and_native_checker_never_modified (test_hash_bridge.NativeDigestTests.test_old_bytes_and_native_checker_never_modified) ... ok
+test_original_mapping_reproduces_exact_server_failure (test_hash_bridge.NativeDigestTests.test_original_mapping_reproduces_exact_server_failure) ... ok
+test_runtime_uses_same_bridge_not_manifest_digest (test_hash_bridge.NativeDigestTests.test_runtime_uses_same_bridge_not_manifest_digest) ... ok
+test_same_digests_after_canonical_storage_roundtrip (test_hash_bridge.NativeDigestTests.test_same_digests_after_canonical_storage_roundtrip) ... ok
+test_two_existing_canonical_functions_differ_only_by_lf (test_hash_bridge.NativeDigestTests.test_two_existing_canonical_functions_differ_only_by_lf) ... ok
+test_unknown_audit_source_rejected (test_hash_bridge.NativeDigestTests.test_unknown_audit_source_rejected) ... ok
+test_exact_existing_completion_handoff_accepted (test_resume.CompletionHandoffTests.test_exact_existing_completion_handoff_accepted) ... ok
+test_missing_predecessor_handoff_is_not_invented (test_resume.CompletionHandoffTests.test_missing_predecessor_handoff_is_not_invented) ... ok
+test_mutated_ledger_stops_before_audit (test_resume.CompletionHandoffTests.test_mutated_ledger_stops_before_audit) ... ok
+test_partial_completion_still_refused (test_resume.CompletionHandoffTests.test_partial_completion_still_refused) ... ok
+test_wrong_experiment_is_not_adopted (test_resume.CompletionHandoffTests.test_wrong_experiment_is_not_adopted) ... ok
+test_driver_adapter_changes_only_audit_subprocess_entry (test_resume.ResumeTests.test_driver_adapter_changes_only_audit_subprocess_entry) ... ok
+test_driver_lock_symlink_is_refused (test_resume.ResumeTests.test_driver_lock_symlink_is_refused) ... ok
+test_existing_driver_lock_is_respected_not_deleted (test_resume.ResumeTests.test_existing_driver_lock_is_respected_not_deleted) ... ok
+test_loaded_driver_keeps_old_root_and_original_publication (test_resume.ResumeTests.test_loaded_driver_keeps_old_root_and_original_publication) ... ok
+test_no_new_scheduler_submission_consolidation_or_model_calls (test_resume.ResumeTests.test_no_new_scheduler_submission_consolidation_or_model_calls) ... ok
+test_original_finalize_launches_corrected_audit_child (test_resume.ResumeTests.test_original_finalize_launches_corrected_audit_child) ... ok
+test_unknown_control_or_repo_never_used (test_resume.ResumeTests.test_unknown_control_or_repo_never_used) ... ok
+test_unknown_driver_bytes_not_adopted (test_resume.ResumeTests.test_unknown_driver_bytes_not_adopted) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 0.879s
+
+OK

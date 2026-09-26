@@ -1,0 +1,150 @@
+{
+  "$id": "SELECT_SERVER_RUNTIME_MANIFEST_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "base_model_repository": {
+      "const": "Qwen/Qwen2.5-3B-Instruct",
+      "type": "string"
+    },
+    "base_model_revision": {
+      "const": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+      "type": "string"
+    },
+    "chat_template_content_format": {
+      "const": "string",
+      "type": "string"
+    },
+    "chat_template_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "dtype": {
+      "const": "bfloat16",
+      "type": "string"
+    },
+    "enable_lora": {
+      "const": true,
+      "type": "boolean"
+    },
+    "generation_config_mode": {
+      "const": "vllm",
+      "type": "string"
+    },
+    "lora_dtype": {
+      "const": "auto",
+      "type": "string"
+    },
+    "manifest_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "max_cpu_loras": {
+      "minimum": 1,
+      "type": "integer"
+    },
+    "max_lora_rank": {
+      "const": 16,
+      "type": "integer"
+    },
+    "max_loras": {
+      "const": 1,
+      "type": "integer"
+    },
+    "runtime_dynamic_lora_updates": {
+      "const": false,
+      "type": "boolean"
+    },
+    "schema_id": {
+      "const": "SELECT_SERVER_RUNTIME_MANIFEST_V1",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    },
+    "static_lora_registry": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "adapter_bundle_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "adapter_path": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "adapter_rank": {
+            "const": 16,
+            "type": "integer"
+          },
+          "checkpoint_instance_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "logical_condition_id": {
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,63}$",
+            "type": "string"
+          },
+          "served_model_name": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "training_seed": {
+            "minimum": 0,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "logical_condition_id",
+          "checkpoint_instance_id",
+          "training_seed",
+          "served_model_name",
+          "adapter_path",
+          "adapter_bundle_sha256",
+          "adapter_rank"
+        ],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "tensor_parallel_size": {
+      "const": 1,
+      "type": "integer"
+    },
+    "tokenizer_identity_manifest_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "vllm_version": {
+      "const": "0.11.0",
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "manifest_id",
+    "vllm_version",
+    "base_model_repository",
+    "base_model_revision",
+    "tokenizer_identity_manifest_sha256",
+    "chat_template_sha256",
+    "dtype",
+    "tensor_parallel_size",
+    "generation_config_mode",
+    "chat_template_content_format",
+    "enable_lora",
+    "max_lora_rank",
+    "max_loras",
+    "max_cpu_loras",
+    "lora_dtype",
+    "runtime_dynamic_lora_updates",
+    "static_lora_registry"
+  ],
+  "title": "P4 SELECT shared vLLM server runtime manifest",
+  "type": "object"
+}

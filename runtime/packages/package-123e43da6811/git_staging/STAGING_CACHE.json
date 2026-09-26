@@ -1,0 +1,16 @@
+{
+  "schema_id": "PCHSI_V17_GIT_STAGING_CACHE_V1",
+  "ledger_name": "PCHSI_CANONICAL_STATUS_20260924_FORMAL_MAX10_V1_7_EXECUTION_ENTRY_FULL.md",
+  "ledger_sha256": "bb560f04cde2dc0fe1d611c5d0e9fa66aab080e5fdb29083dbd906fa1444a8bc",
+  "predecessor_cache_sha256": "71eb8332dd579784fbabf0945aabf8338ebfaebf2bedf4480731cfedd432f474",
+  "delta_sha256": "ab34be255dad26ea5bae06f51cdfb9a74c37d0fb462fdebd2cc4a645d13e1605",
+  "staging_only": true,
+  "production_git_mutation_count": 0,
+  "remote_git_mutation_count": 0,
+  "local_object_cache_git_mutations_present": true,
+  "scientific_execution_started": false,
+  "production_launch_ready": false,
+  "missing_materialization": [
+    "FROZEN_FORMAL_TRAIN_SELECT_PROMOTION_RULE"
+  ]
+}

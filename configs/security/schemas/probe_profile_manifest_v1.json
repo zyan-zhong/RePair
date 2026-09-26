@@ -1,0 +1,30 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "contract_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "profile_id": {
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "probe_profile_manifest_v1",
+      "type": "string"
+    },
+    "seccomp_filter_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "profile_id",
+    "contract_sha256",
+    "seccomp_filter_sha256"
+  ],
+  "schema_version": 1,
+  "title": "Probe Profile Manifest V1",
+  "type": "object"
+}

@@ -1,0 +1,9 @@
+{
+  "schema_id": "REGISTERED_MONITOR_VIEW_AUTHORITY_V1",
+  "base_root": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/formal_max10_v200_validation/4b9651c1a01b8df5fd33cec8cbb84973d835d63fc35e8dd1414eeb596567f366/status_views/dd7387297af81d1a92ca2a908d9efa49fc8e8ae0ca9c6be5047b5f64a91c7ed7/MAX10_STAGE_STATUS_V5_9",
+  "base_manifest_sha256": "dd7387297af81d1a92ca2a908d9efa49fc8e8ae0ca9c6be5047b5f64a91c7ed7",
+  "active_validation_index": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/FORMAL_MAX10_ACTIVE_VALIDATION.json",
+  "formal_owner_root": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359",
+  "registered_python": "/data/home/scwb204/run/sdar_repro/conda_envs/sdar_sft_py312/bin/python",
+  "refresh_seconds": 5
+}

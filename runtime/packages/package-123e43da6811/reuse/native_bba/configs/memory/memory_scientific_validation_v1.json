@@ -1,0 +1,77 @@
+{
+  "schema_id": "MEMORY_SCIENTIFIC_VALIDATION_V1",
+  "schema_version": 1,
+  "status": "DESIGN_APPROVED_TARGETED_HARDENING",
+  "engineering_base_head": "112ba5d3ccc0a3f3c3a9fdd143ec4c69fa525229",
+  "package_a0": {
+    "role": "SOURCE_STATE_LOCAL_REPRESENTATION_PROBE",
+    "source_state_count": 3,
+    "arm_order": ["M0", "M1", "M2", "M3"],
+    "m3_semantics": "STRUCTURED_DESCRIPTIVE_FM2",
+    "effect_labels": ["Benefit", "Harm", "Neutral", "Uncertain"],
+    "effect_scope": "SOURCE_STATE_LOCAL_PAIRED",
+    "paper_main_representation_claim_authorized": false
+  },
+  "package_a1": {
+    "status": "OPTIONAL_CONDITIONAL",
+    "blocks_package_b": false,
+    "blocks_package_c": false,
+    "blocks_policy_internalization": false,
+    "token_compression_control_required_if_executed": true
+  },
+  "package_b": {
+    "grouping_unit": "TASK_GAMEFILE_GROUP",
+    "stages": [
+      "RETRIEVER_CALIBRATION_DEV",
+      "RETRIEVER_SELECTION_VALIDATION",
+      "REGISTERED_SAFETY_STRESS"
+    ],
+    "applicability_gold_role": "DIAGNOSTIC_SAFETY_AUTHORITY_ONLY",
+    "valid_seen_allowed": false,
+    "valid_unseen_allowed": false
+  },
+  "package_c": {
+    "conditions": ["C0_SINGLE_REFLECTION", "C1_HIERARCHICAL_ANALYZER", "C2_HIERARCHICAL_ANALYZER_WITH_HISTORY"],
+    "query_isolation_unit": "TASK_GAMEFILE_GROUP",
+    "c2_requires_frozen_package_b_retriever": true,
+    "pre_result_infrastructure_failure": "RETRY_EXACT_SAME_FROZEN_CELL",
+    "effect_scope": "SOURCE_STATE_LOCAL_PAIRED",
+    "efficiency_estimands": [
+      "VERIFIED_BENEFIT_YIELD",
+      "REPAIR_DISCOVERY_RATE",
+      "CANDIDATES_TO_FIRST_BENEFIT",
+      "ENVIRONMENT_VERIFICATION_COST_PER_BENEFIT",
+      "HARM_EXPOSURE_RATE",
+      "ABSTENTION_RATE",
+      "ANALYZER_MODEL_CALLS",
+      "ANALYZER_TOKENS"
+    ]
+  },
+  "outcome_guided_redesign": {
+    "allowed": false,
+    "versioned_amendment_triggers": [
+      "PROTOCOL_DEFECT",
+      "CONTAMINATION",
+      "CRITICAL_SAFETY_FAILURE",
+      "INVALID_SCIENTIFIC_IDENTITY"
+    ]
+  },
+  "policy_internalization_prefreeze": {
+    "required_before_large_package_c_unblind": true,
+    "actual_training_execution_authorized": false,
+    "required_fields": [
+      "TRAINING_ELIGIBILITY_RULE",
+      "TRAINING_ARMS",
+      "MODEL_INITIALIZATION",
+      "DATA_DEDUPLICATION_RULE",
+      "HYPERPARAMETER_SELECTION_AUTHORITY",
+      "OFF_OFF_EVALUATION_PANEL",
+      "PRIMARY_METRIC",
+      "PROMOTION_ROLLBACK_RULE"
+    ]
+  },
+  "visual_reporting": {
+    "adverse_null_contradictory_results_must_not_be_omitted": true
+  },
+  "scientific_execution_authorized": false
+}

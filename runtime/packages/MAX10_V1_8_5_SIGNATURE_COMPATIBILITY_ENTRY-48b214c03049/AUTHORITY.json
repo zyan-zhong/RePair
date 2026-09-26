@@ -1,0 +1,55 @@
+{
+  "schema_id": "REGISTERED_SIGNATURE_COMPATIBILITY_ENTRY_V1",
+  "base_source_root": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/formal_max10_v185_validation/251d67deea109147336cfac84e48fb2b7c02e7f46a1447299019a3132f2a9cec/MAX10_V1_8_5_DURABLE_ANALYZER_CONTINUATION",
+  "base_manifest_sha256": "251d67deea109147336cfac84e48fb2b7c02e7f46a1447299019a3132f2a9cec",
+  "registered_python": "/data/home/scwb204/run/sdar_repro/conda_envs/sdar_sft_py312/bin/python",
+  "host": "ln02",
+  "owner_root": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359",
+  "preserved_runtime_root": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/attempts/000002/analyzer/local/strong_local_runtime/registered_credential_continuations/576da204ad3d56f0a9222a52a229ab88f8ba341915dc2ceacf8594c715dff54d/registered_credential_continuations/b08380cf695378534a0feed3caf718149ddea907967383c0e2985be1d3dc302e/registered_durable_continuations/251d67deea109147336cfac84e48fb2b7c02e7f46a1447299019a3132f2a9cec",
+  "previous_launch": {
+    "schema_id": "V185_ACTUAL_RUNTIME_EXTENSION_INVOCATION_V1",
+    "host": "ln02",
+    "source_root": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/formal_max10_v185_validation/251d67deea109147336cfac84e48fb2b7c02e7f46a1447299019a3132f2a9cec/MAX10_V1_8_5_DURABLE_ANALYZER_CONTINUATION",
+    "observed_utc": "2026-09-24T13:24:32.061600+00:00",
+    "returncode": 0,
+    "launch": {
+      "schema_id": "REGISTERED_RUNTIME_EXTENSION_RESIDENT_LAUNCHED_V1",
+      "pid": 2205947,
+      "argv": [
+        "/data/home/scwb204/run/sdar_repro/conda_envs/sdar_sft_py312/bin/python",
+        "-B",
+        "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/formal_max10_v185_validation/251d67deea109147336cfac84e48fb2b7c02e7f46a1447299019a3132f2a9cec/MAX10_V1_8_5_DURABLE_ANALYZER_CONTINUATION/continuation.py",
+        "--run",
+        "--invocation",
+        "1ad1ae47415541fb83cecca6c3bfe8ba"
+      ],
+      "owner_root": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359",
+      "log_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/runtime_extensions/251d67deea109147336cfac84e48fb2b7c02e7f46a1447299019a3132f2a9cec/launch_receipts/1ad1ae47415541fb83cecca6c3bfe8ba/resident.log",
+      "runtime_root": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/attempts/000002/analyzer/local/strong_local_runtime/registered_credential_continuations/576da204ad3d56f0a9222a52a229ab88f8ba341915dc2ceacf8594c715dff54d/registered_credential_continuations/b08380cf695378534a0feed3caf718149ddea907967383c0e2985be1d3dc302e/registered_durable_continuations/251d67deea109147336cfac84e48fb2b7c02e7f46a1447299019a3132f2a9cec",
+      "extension_root": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/runtime_extensions/251d67deea109147336cfac84e48fb2b7c02e7f46a1447299019a3132f2a9cec",
+      "extension_sha256": "251d67deea109147336cfac84e48fb2b7c02e7f46a1447299019a3132f2a9cec",
+      "invocation_id": "1ad1ae47415541fb83cecca6c3bfe8ba",
+      "invocation_root": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/runtime_extensions/251d67deea109147336cfac84e48fb2b7c02e7f46a1447299019a3132f2a9cec/invocations/1ad1ae47415541fb83cecca6c3bfe8ba",
+      "base_source_sha256": "123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359",
+      "provider_success_claimed": false
+    },
+    "extension_manifest_sha256": "251d67deea109147336cfac84e48fb2b7c02e7f46a1447299019a3132f2a9cec",
+    "stdout_ref": {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/formal_max10_v185_validation/251d67deea109147336cfac84e48fb2b7c02e7f46a1447299019a3132f2a9cec/launch.stdout.log",
+      "sha256": "d2e432fc574d3f7433046fab9dc86e4b41261e0f4adac1895e0786b0cd192555"
+    },
+    "stderr_ref": {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/formal_max10_v185_validation/251d67deea109147336cfac84e48fb2b7c02e7f46a1447299019a3132f2a9cec/launch.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "new_rollout_submission_claimed": false,
+    "optimizer_execution_claimed": false
+  },
+  "startup_stop_ref": {
+    "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/runtime_extensions/251d67deea109147336cfac84e48fb2b7c02e7f46a1447299019a3132f2a9cec/invocations/1ad1ae47415541fb83cecca6c3bfe8ba/RESIDENT_RUNTIME_STOP.json",
+    "sha256": "a010c03d052fdf4cb5edaf3e11bab2d8c6d5b31989e726011bea09769a784632"
+  },
+  "new_provider_budget": 0,
+  "same_G3_authority_and_remediation_identity": true,
+  "fix": "Preserve native execute_one callable signature via functools.update_wrapper on the observational wrapper only"
+}

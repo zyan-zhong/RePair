@@ -1,0 +1,28 @@
+........................................................................ [ 98%]
+.                                                                        [100%]
+73 passed in 305.25s (0:05:05)
+................................................................         [100%]
+64 passed in 128.74s (0:02:08)
+...F......                                                               [100%]
+=================================== FAILURES ===================================
+_________ test_next_rollout_materializer_embeds_published_lora_launch __________
+work/v17/policy_binding/tests/test_publication.py:133: in test_next_rollout_materializer_embeds_published_lora_launch
+    spec=fixture_module.fixture(tmp_path/'rollout_inputs')
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+work/v16/rollout_adapter/tests/test_adapter.py:63: in fixture
+    spec[key]['sha256'] = sha(spec[key]['path'])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+work/v16/rollout_adapter/tests/test_adapter.py:23: in sha
+    return hashlib.sha256(Path(p).read_bytes()).hexdigest()
+                          ^^^^^^^^^^^^^^^^^^^^
+/data/home/scwb204/run/sdar_repro/conda_envs/sdar_sft_py312/lib/python3.12/pathlib.py:1019: in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+/data/home/scwb204/run/sdar_repro/conda_envs/sdar_sft_py312/lib/python3.12/pathlib.py:1013: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: '/tmp/pchsi_v17_fresh_fixture_iwf34a4r/work/v14_live_export/current_v14/authority/ROUND_ROLLOUT_EXECUTION_BINDING_V1.json'
+=========================== short test summary info ============================
+FAILED work/v17/policy_binding/tests/test_publication.py::test_next_rollout_materializer_embeds_published_lora_launch
+1 failed, 9 passed in 75.17s (0:01:15)
+{"groups": [{"returncode": 0, "tests": ["work/v17/training_binding/tests", "work/v17/post_binding/tests"]}, {"returncode": 0, "tests": ["work/v17/continuity_binding/tests", "work/v17/offoff_binding/tests", "work/v17/entry/tests"]}, {"returncode": 1, "tests": ["work/v17/policy_binding/tests", "work/v17/memory_binding/tests"]}], "production_readiness_inferred": false, "provider_call_count": 0, "schema_id": "FRESH_UNZIP_CURRENT_ENTRY_SOFTWARE_VERIFICATION_V1", "slurm_submission_count": 0, "training_execution_count": 0}

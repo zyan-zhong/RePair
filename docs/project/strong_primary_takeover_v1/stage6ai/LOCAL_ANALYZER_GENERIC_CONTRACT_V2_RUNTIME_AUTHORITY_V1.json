@@ -1,0 +1,53 @@
+{
+  "base_head": "4446ae0cf86004ce7ec9b66eed039a2b7a83f30a",
+  "fake_gradient_accumulation_world_size_alias_used": false,
+  "full_bootstrap_training_authorized": false,
+  "generic_contracts_path": "scripts/engineering_snapshots/training_pipeline/round_generic_training_stage_v2_1_hardening_build/round_training/contracts.py",
+  "generic_contracts_post_patch_sha256": "4389b05d11f0da09340c8e46bf393e8cc4daf684ea57f7bd00c73cfa76391bcf",
+  "generic_contracts_pre_patch_sha256": "6b4d29d999fbc113d8945baff30eef8308d66b61266592c48e8f410f72ce66d2",
+  "generic_receipts_modified": false,
+  "generic_stage_runner_modified": false,
+  "gradient_checkpointing": "NON_REENTRANT",
+  "new_trainer_required": false,
+  "one_optimizer_step_gpu_smoke_authorized_after_repo_regression": true,
+  "peft_load_order": "LOAD_BASE_AND_PEFT_BEFORE_PROCESS_GROUP_INIT_THEN_WRAP_DDP",
+  "policy_optimizer_execution_authorized": false,
+  "runtime_adapter_interface": [
+    "validate_profile_without_model_load",
+    "input_artifact_refs",
+    "execute_training_stage"
+  ],
+  "runtime_adapter_path": "scripts/engineering_snapshots/training_pipeline/round_generic_training_stage_v2_1_hardening_build/round_training/adapters/local_analyzer_ddp_runtime.py",
+  "runtime_adapter_sha256": "f48d5861aad5944a688e2238efff9e29a41ec0cd8c6675dccb0516e4a78f2c00",
+  "runtime_architecture": "GENERIC_STAGE_PARENT_PROCESS_SPAWNS_TORCHRUN_WORKERS;PARENT_RETAINS_SINGLE_RECEIPT_WRITER",
+  "schema_id": "LOCAL_ANALYZER_GENERIC_CONTRACT_V2_RUNTIME_AUTHORITY_V1",
+  "schema_version": 1,
+  "source_example_source_state_alias_used": false,
+  "stage6ah_decision_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage6ah_generic_stage_ddp_contract_gap_freeze_v1/4446ae0cf86004ce7ec9b66eed039a2b7a83f30a/LOCAL_ANALYZER_GENERIC_STAGE_DDP_CONTRACT_GAP_DECISION_V1.json",
+  "stage6ah_decision_sha256": "57bcc053ce56d3eaff953dd59fb4d7bca1be3caa1d3441f00cc0269be98deada",
+  "stage6ah_summary_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage6ah_generic_stage_ddp_contract_gap_freeze_v1/4446ae0cf86004ce7ec9b66eed039a2b7a83f30a/STAGE6AH_SUMMARY_V1.json",
+  "stage6ah_summary_sha256": "b442cde8b22e098799da0d785f132b56690fc102c8d131fbbc0c99badea2a1ac",
+  "stage6ai_v1_1_partial_worktree_recovery": {
+    "broad_git_clean_used": false,
+    "broad_git_reset_used": false,
+    "corrected_v1_1_test_sha256": "2cf9432c30fc0fb4b53ebc1dc71f5044988d4244db87597517748fc33e74d77a",
+    "failed_v1_runtime_sha256": "f48d5861aad5944a688e2238efff9e29a41ec0cd8c6675dccb0516e4a78f2c00",
+    "failed_v1_test_sha256": "664399a490095aa2e82bf564598b3c0680232c1fbc895b928532424e544a6a6f",
+    "partial_v1_1_cleanup_executed": true,
+    "partial_v1_1_detected": true,
+    "recovery_scope": [
+      "scripts/engineering_snapshots/training_pipeline/round_generic_training_stage_v2_1_hardening_build/round_training/contracts.py",
+      "scripts/engineering_snapshots/training_pipeline/round_generic_training_stage_v2_1_hardening_build/round_training/adapters/local_analyzer_ddp_runtime.py",
+      "scripts/engineering_snapshots/training_pipeline/round_generic_training_stage_v2_1_hardening_build/tests/test_contract_v2_and_local_analyzer_ddp_runtime_v1.py",
+      "docs/project/strong_primary_takeover_v1/stage6ai/LOCAL_ANALYZER_GENERIC_CONTRACT_V2_RUNTIME_AUTHORITY_V1.json"
+    ],
+    "worktree_clean_after_recovery": true
+  },
+  "status": "REPO_MATERIALIZATION_CANDIDATE",
+  "strong_primary_execution_authorized": false,
+  "v1_validator_preserved_as": "_validate_training_contract_v1",
+  "v2_contract_schema": "ROUND_LOCAL_TRAINING_CONTRACT_V2",
+  "v2_effective_batch_formula": "micro_batch_size*gradient_accumulation_steps*world_size",
+  "v2_identity_domain": "SOURCE_EXAMPLE_SHA256",
+  "v2_sample_order_schema": "ROUND_SAMPLE_ORDER_MANIFEST_V2"
+}

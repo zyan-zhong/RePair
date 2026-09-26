@@ -1,0 +1,64 @@
+{
+  "$id": "E1_GAMEFILE_SHA256_PREFLIGHT_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "manifest_id": {
+      "const": "E1_GAMEFILE_SHA256_PREFLIGHT_V1",
+      "type": "string"
+    },
+    "record_count": {
+      "minimum": 1,
+      "type": "integer"
+    },
+    "records": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "gamefile_sha1": {
+            "pattern": "^[0-9a-f]{40}$",
+            "type": "string"
+          },
+          "gamefile_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "index": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "task_id": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "index",
+          "task_id",
+          "gamefile_sha1",
+          "gamefile_sha256"
+        ],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "schema_id": {
+      "const": "E1_GAMEFILE_SHA256_PREFLIGHT_V1",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "manifest_id",
+    "record_count",
+    "records"
+  ],
+  "title": "E1 gamefile SHA-256 preflight",
+  "type": "object"
+}

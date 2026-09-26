@@ -1,0 +1,13 @@
+$ /data/home/scwb204/run/sdar_repro/conda_envs/sdar_sft_py312/bin/python -m unittest discover -s native_tests -v
+test_actual_authorization_contract_file_and_signatures (test_reused_integration.NativeIntegrationTests.test_actual_authorization_contract_file_and_signatures) ... ok
+test_existing_i1_wire_checks_real_evaluator_artifacts (test_reused_integration.NativeIntegrationTests.test_existing_i1_wire_checks_real_evaluator_artifacts) ... ok
+test_native_aggregator_then_clean_projection (test_reused_integration.NativeIntegrationTests.test_native_aggregator_then_clean_projection) ... ok
+test_native_disposition_and_next_round_keep_parent (test_reused_integration.NativeIntegrationTests.test_native_disposition_and_next_round_keep_parent) ... ok
+test_stage4e_uses_actual_native_identity_chain (test_reused_integration.NativeIntegrationTests.test_stage4e_uses_actual_native_identity_chain) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 1.283s
+
+OK
+
+EXIT_CODE=0

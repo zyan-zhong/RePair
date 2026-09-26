@@ -1,0 +1,16 @@
+{
+  "schema_id": "V1233I_REQUEST_HASH_ROOT_CAUSE_V1",
+  "schema_version": 1,
+  "historical_builder_file_sha256": "6346499fadc75b90208a4deba1fd4d5ea56f5b0d27b55c1ffb64d92a19a2c78b",
+  "historical_builder_behavior": "request_sha256=SHA256(canonical_json_without_request_sha256)",
+  "native_contract_behavior": "request_sha256=SHA256('ROUND_ROLLOUT_COLLECTION_REQUEST_V1\\0' || canonical_json_without_request_sha256)",
+  "observed_invalid_request_file_sha256": "b8f76953d65df83dca187afeab2cb4d7b58e98eb9caac98607fdb59ad3384e60",
+  "observed_embedded_request_sha256": "243cb9bb3b6333d131026234cf7c56afb6078f54a4b9ce7db03907ce510999a1",
+  "observed_native_expected_request_sha256": "f3dc7a37e7dc1e6e81a17b8ac30dcfac44abc5f384f2e4ae1a6770ae99bbc94d",
+  "observed_repaired_canonical_file_sha256": "9c6964e2ea700cc4c7f164c7232507f942319e61943e0c0a5fef9cc8173b1952",
+  "previous_valid_request_file_sha256": "901b9222c5afdab7ddb6a29a7e4a60de14405e1f365c48ebc372441ab8717642",
+  "repair_scope": "REQUEST_SHA256_ONLY_IF_EXACT_V1233I_LEGACY_PLAIN_HASH_PATTERN",
+  "scientific_semantics_changed": false,
+  "original_invalid_request_mutated": false,
+  "durable_consolidation_requirement": "FUTURE_NEXT_ROUND_REQUESTS_MUST_BE_CREATED_BY_NATIVE_ROUND_ROLLOUT_COLLECTION_REQUEST_V1_CONTRACT"
+}

@@ -1,0 +1,18 @@
+========== R132 PRIMARY117 IDENTITY AUDIT ==========
+primary_case_manifest_count = 117
+primary_request_manifest_count = 117
+run_case_directory_count = 117
+q2_binding_count = 351
+q2_cases = 117
+q2_bindings_per_case = {3: 117}
+teacher_output_count = 91
+rejection_count = 26
+raw_response_count = 99
+call_evidence_count = 117
+blocker_count = 0
+warning_count = 0
+status = PASS
+
+terminal_counts = {'UNRESOLVED_TERMINAL_LABEL': 117}
+
+R132_PRIMARY117_IDENTITY_AUDIT_V1_PASS

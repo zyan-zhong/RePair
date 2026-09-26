@@ -1,0 +1,17 @@
+{
+  "applied_in_this_stage": [
+    "validated artifact identity resolver by stage self-hash",
+    "takeover metric type/range validation",
+    "canonical takeover report rebuild validation",
+    "role authority rejects hand-written eligibility flags"
+  ],
+  "environment_calls": 0,
+  "model_calls": 0,
+  "reason_for_defer": "Local role checkpoint is not yet bound; retention call-site provenance will be hardened together with the localization source binding rather than changing an unrelated interface prematurely.",
+  "reviewed_but_deferred_until_localization_binding": [
+    "retention TRAIN_UPDATE-only localization hardening"
+  ],
+  "schema_id": "PRE_LIVE_TAKEOVER_HARDENING_SCOPE_V1",
+  "schema_version": 1,
+  "training_executions": 0
+}

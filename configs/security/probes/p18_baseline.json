@@ -1,0 +1,17 @@
+{
+  "execution_status": "NOT_APPROVED",
+  "expected_normalized_outcome": "BASELINE_OK",
+  "forbidden_side_effects": [
+    "host_write",
+    "network",
+    "new_privilege",
+    "unreviewed_process"
+  ],
+  "payload_id": "landlock_baseline",
+  "payload_sha256": "48cb52a23a78b1955662e5a4ad871e3fbe852ea794cd3af658c623315f7af9c7",
+  "permitted_side_effects": [],
+  "probe_id": "P18_BASELINE",
+  "profile_id": "S1_P18_LANDLOCK_ATTRIBUTION_V1",
+  "schema_version": 1,
+  "timeout_seconds": 10
+}

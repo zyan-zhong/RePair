@@ -1,0 +1,47 @@
+{
+  "access_mode": "TRUSTED_MANIFEST_DIRECT_V1",
+  "dataset": {
+    "directory_scan_selects_tasks": false,
+    "logical_root_id": "ALFWORLD_DATASET_LOGICAL_ROOT_V1",
+    "required_split": "valid_unseen",
+    "version": "json_2.1.1",
+    "writes_allowed": false
+  },
+  "execution_boundaries": {
+    "alfworld_evaluator": "not_implemented",
+    "backend_probe_execution": "not_approved",
+    "e1_confirmatory_execution": "not_approved",
+    "e1_dev_execution": "not_approved",
+    "read_only_inventory_execution": "not_approved"
+  },
+  "external_identity_evidence": {
+    "dataset_preflight_decision_id": "cdb7a6de952f648eb83e37947f8d00090f5fb0fb44df29d22699a7fa276911a0",
+    "dataset_preflight_manifest_sha256": "f21ec29cc44b029c6d0412c7565596790eabe28424a2fc0c2e8da27a4723af6c",
+    "decision": "NOT_GRANTED",
+    "execution_enablement_source_commit": null,
+    "input_contract_sha256": "7be24bc2d1bb5a9a0328445f69efb23bd84358ae23a52eddaa4fcb9e4ae76979",
+    "legacy_manifest_sha256": "cc08cf1f437548dd6b81411e567cfc9b743488ee49ef1dff8173860fce1d9d56"
+  },
+  "protocol_id": "SPLIT_AND_ACCESS_V1",
+  "schema_version": 1,
+  "scope_reduction": {
+    "backend_probe_execution_required_for_e1": false,
+    "backend_probe_status": "deferred_optional_hardening",
+    "hostile_collector_required_for_e1": false,
+    "inventory_collection_required_for_e1": false,
+    "p1_p20_required_for_e1": false
+  },
+  "status": "frozen_pending_evaluator_and_execution_approval",
+  "task_manifest": {
+    "deduplication_allowed": false,
+    "manifest_id": "ALFWORLD_STRICT_VALID_UNSEEN_ALL134_V1",
+    "path": "data/manifests/alfworld_strict_valid_unseen_all134_v1.jsonl",
+    "path_binding": "server_local_absolute_gamefile_paths",
+    "preserve_order": true,
+    "records": 134,
+    "relocation_requires_regeneration_and_refreeze": true,
+    "sha256": "6e480bb663a6f17207aa2c7a6e1b504adad8448f6e8a2615c5e62fea0b64c0f4",
+    "substitution_allowed": false,
+    "unique_tasks": 134
+  }
+}

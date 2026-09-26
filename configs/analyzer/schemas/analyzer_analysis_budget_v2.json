@@ -1,0 +1,138 @@
+{
+  "$id": "ANALYZER_ANALYSIS_BUDGET_V2",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "approval_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "budget_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "census_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "failure_family_rows": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "eligible_failure_count": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "selected_failure_count": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "task_family": {
+            "maxLength": 256,
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "task_family",
+          "eligible_failure_count",
+          "selected_failure_count"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "failure_quota": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "failure_share": {
+      "maximum": 1,
+      "minimum": 0.5,
+      "type": "number"
+    },
+    "failure_shortfall_reallocated": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "formal_a0_a3_u_reg_unchanged": {
+      "const": true,
+      "type": "boolean"
+    },
+    "regime": {
+      "enum": [
+        "FAILURE_CRITICAL",
+        "MIXED_PERFORMANCE",
+        "HIGH_SUCCESS_REFINEMENT"
+      ],
+      "type": "string"
+    },
+    "research_priority_authority": {
+      "const": "NOT_AUTHORIZED",
+      "type": "string"
+    },
+    "scheduler_role": {
+      "const": "MECHANICAL_SAMPLING_ONLY",
+      "type": "string"
+    },
+    "schema_id": {
+      "const": "ANALYZER_ANALYSIS_BUDGET_V2",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 2,
+      "type": "integer"
+    },
+    "scientific_role": {
+      "const": "SECONDARY_COST_AND_COVERAGE_INFRASTRUCTURE",
+      "type": "string"
+    },
+    "selected_failure_unit_ids": {
+      "items": {
+        "maxLength": 256,
+        "minLength": 1,
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "selected_success_unit_ids": {
+      "items": {
+        "maxLength": 256,
+        "minLength": 1,
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "success_quota": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "total_analysis_budget": {
+      "minimum": 0,
+      "type": "integer"
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "scientific_role",
+    "scheduler_role",
+    "research_priority_authority",
+    "formal_a0_a3_u_reg_unchanged",
+    "regime",
+    "approval_sha256",
+    "census_sha256",
+    "total_analysis_budget",
+    "failure_share",
+    "failure_quota",
+    "success_quota",
+    "selected_failure_unit_ids",
+    "selected_success_unit_ids",
+    "failure_family_rows",
+    "failure_shortfall_reallocated",
+    "budget_sha256"
+  ],
+  "type": "object"
+}

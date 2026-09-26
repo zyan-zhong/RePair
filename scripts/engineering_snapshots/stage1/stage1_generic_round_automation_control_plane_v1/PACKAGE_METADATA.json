@@ -1,0 +1,23 @@
+{
+  "approval_token": "APPROVE_STAGE1_GENERIC_ROUND_CONTROL_PLANE_V1",
+  "benchmark_execution_authorized": false,
+  "environment_execution_authorized": false,
+  "model_execution_authorized": false,
+  "next_gate": "STAGE1_CONCRETE_COMPONENT_RUNNER_BINDING_AND_HUMAN_STRONG_LOCAL_DRY_RUN",
+  "package_id": "STAGE1_GENERIC_ROUND_AUTOMATION_CONTROL_PLANE_V1",
+  "repository_commit_authorized": false,
+  "repository_push_authorized": false,
+  "schema_id": "STAGE1_GENERIC_ROUND_AUTOMATION_CONTROL_PLANE_PACKAGE_METADATA_V1",
+  "schema_version": 1,
+  "source_head": "daef26b9cde45182ada534d96335da3ea451f12f",
+  "stage0_candidate_success_cells": 0,
+  "stage0_closeout_sha256": "02beba4f0d7377742da10cd67460ce0df9cb919f01dc0b1acd524d20717953c0",
+  "stage0_closeout_zip_sha256": "7d29e40bf7c5f7df8869382071529a90fc2a44c1f3acc29d0e0b367d941bdba3",
+  "stage0_handoff_sha256": "cbfce1f127e6bdad4313073cc4a0998164d573d200bf6e33c82a9ff3d04bdbe5",
+  "stage0_mean_task_success_rate_delta": 0.0,
+  "stage0_paper_efficacy_evidence": false,
+  "stage0_parent_success_cells": 0,
+  "stage0_promotion_eligible": false,
+  "stage1_scope": "CONTROL_PLANE_FOUNDATION",
+  "training_execution_authorized": false
+}

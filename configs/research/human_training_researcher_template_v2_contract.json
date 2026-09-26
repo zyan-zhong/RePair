@@ -1,0 +1,37 @@
+{
+  "human_primary_for_pi1_to_pi2":true,
+  "pre_and_post_are_separate_immutable_artifacts":true,
+  "record_rejected_and_deferred_candidates":true,
+  "required_post_sections":[
+    "linkage",
+    "protocol_integrity",
+    "results",
+    "interpretation",
+    "training_and_promotion_recommendation",
+    "learning"
+  ],
+  "required_pre_sections":[
+    "identity_and_cutoff",
+    "observed_facts",
+    "uncertainties",
+    "candidate_bottlenecks",
+    "selected_principal_bottleneck",
+    "rejected_and_deferred_alternatives",
+    "experiment_portfolio",
+    "frozen_protocol",
+    "training_plan",
+    "hash_and_approval"
+  ],
+  "researcher_effect_authority":false,
+  "researcher_promotion_authority":false,
+  "schema_id":"HUMAN_TRAINING_RESEARCHER_TEMPLATE_V2_CONTRACT",
+  "schema_version":2,
+  "selection_conditions":[
+    "R0_FIFO",
+    "R1_FREQUENCY_ONLY",
+    "R2_HUMAN_TEMPLATE_V2",
+    "R3_STRONG_API_SHADOW"
+  ],
+  "single_principal_change_required":true,
+  "strong_api_researcher_mode":"SHADOW_AFTER_HUMAN_PRE_FREEZE"
+}

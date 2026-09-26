@@ -1,0 +1,76 @@
+{
+  "$id": "P1_B_EVIDENCE_COMPLETENESS_REPORT_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "report_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "requirement_count": {
+      "minimum": 1,
+      "type": "integer"
+    },
+    "requirements": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "critical": {
+            "type": "boolean"
+          },
+          "justification": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "requirement_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "source_reference": {
+            "minLength": 1,
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "status": {
+            "enum": [
+              "PRESENT_AND_VALIDATED",
+              "PRESENT_BUT_UNVALIDATED",
+              "PARTIAL",
+              "MISSING",
+              "NOT_APPLICABLE_WITH_JUSTIFICATION"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "requirement_id",
+          "status",
+          "critical",
+          "source_reference",
+          "justification"
+        ],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "schema_id": {
+      "const": "P1_B_EVIDENCE_COMPLETENESS_REPORT_V1",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "report_id",
+    "requirement_count",
+    "requirements"
+  ],
+  "type": "object"
+}

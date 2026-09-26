@@ -1,0 +1,1897 @@
+{
+  "groups": [
+    {
+      "group_id": "006de89cd06ad1d2a9070ef67c95863354b8ebbbb224b3848e432e1b828b763e",
+      "group_manifest_sha256": "6cce5283cb1a81f91214a5f2607bc70cfa894c69567de9d41380bd8dc2b09abe",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "ACTIVE",
+      "mechanical_signature_sha256": "61342b22b0908737dea33ae4425d0c15e4bd9f9a779441af96cbcb1d2c01bea2",
+      "membership_records": [
+        {
+          "error_instance_id": "E1_IRRELEVANT_OBJECT_ACQUISITION",
+          "gamefile_sha256": "e461315318ac70a4fa0ed657cba7f35608a6f17c4221b5468428ef23d7f2406b",
+          "group_id": "006de89cd06ad1d2a9070ef67c95863354b8ebbbb224b3848e432e1b828b763e",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "3978bad8c019dad3bd4aa4abc7b890d0f5bac791ebd31337093147e0b2685b12",
+          "membership_sha256": "c1063a3dd4933b9130b313bf8e7bea6ce9365debea4c5ee34c6b12ec8f5b053c",
+          "primary_group_key_sha256": "006de89cd06ad1d2a9070ef67c95863354b8ebbbb224b3848e432e1b828b763e",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_cool_then_place_in_recep",
+          "task_id": "alfworld_train_all3553_1999"
+        }
+      ],
+      "membership_sha256s": [
+        "c1063a3dd4933b9130b313bf8e7bea6ce9365debea4c5ee34c6b12ec8f5b053c"
+      ],
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "3978bad8c019dad3bd4aa4abc7b890d0f5bac791ebd31337093147e0b2685b12"
+      ],
+      "task_family": "pick_cool_then_place_in_recep",
+      "terminal_footprint_class": "UNCERTAIN"
+    },
+    {
+      "group_id": "02643e8ff3240968316a5cbc3114b4c3fdbfd2c28d6924671a05f492dbbab9f3",
+      "group_manifest_sha256": "889fba3f51400a9ef8dfae7be33274667758b89971e36c156f0e5d7c0207e7ae",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "ACTIVE",
+      "mechanical_signature_sha256": "0b640459b66105e17772240c94e3cc914af0bb89418ddf649f2c97f808efc572",
+      "membership_records": [
+        {
+          "error_instance_id": "E1-SEARCH-STAGNATION",
+          "gamefile_sha256": "369ac860856a3102ee6a7995d1317c60f409550bb2cf695ad29909cc11854bf5",
+          "group_id": "02643e8ff3240968316a5cbc3114b4c3fdbfd2c28d6924671a05f492dbbab9f3",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "cc936c5ffaed4602cb04374efa9b01ad346fe9cb6b4547a527789b64e58f92a3",
+          "membership_sha256": "3058c925cd64948dd92b6d1da84c4fcfd60deeafdc67a743f0fedd20e0a7031d",
+          "primary_group_key_sha256": "02643e8ff3240968316a5cbc3114b4c3fdbfd2c28d6924671a05f492dbbab9f3",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_heat_then_place_in_recep",
+          "task_id": "alfworld_train_all3553_2576"
+        }
+      ],
+      "membership_sha256s": [
+        "3058c925cd64948dd92b6d1da84c4fcfd60deeafdc67a743f0fedd20e0a7031d"
+      ],
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "cc936c5ffaed4602cb04374efa9b01ad346fe9cb6b4547a527789b64e58f92a3"
+      ],
+      "task_family": "pick_heat_then_place_in_recep",
+      "terminal_footprint_class": "BUDGET_ONLY_IMPACT"
+    },
+    {
+      "group_id": "07eeb07547af8cfe049219608a33707f0e76b9a34b535784f284b476209d83d4",
+      "group_manifest_sha256": "e562454b4dfd2cbfe2e2bc2ded6372154fdf2af101930d9f4c33832952d7de09",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "ACTIVE",
+      "mechanical_signature_sha256": "406e106f8a812bae2c618cca2ac0a793eb350494062c0c316a319b357734a8b4",
+      "membership_records": [
+        {
+          "error_instance_id": "E2_FAILURE_TO_RECOVER_FROM_INVALID_FEEDBACK",
+          "gamefile_sha256": "69af44d70056656fbeb7448b3d30452d991b9966ef79c2b103611be84086a1e0",
+          "group_id": "07eeb07547af8cfe049219608a33707f0e76b9a34b535784f284b476209d83d4",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "6b5db4cf77078a7c80dd2a2a65878bc1e1307fca4be32a1b6896b3b1ff095214",
+          "membership_sha256": "86ce31656c7efd4eedfc8620566784c97b97e4d1ab4cbaa8fc65178844180393",
+          "primary_group_key_sha256": "07eeb07547af8cfe049219608a33707f0e76b9a34b535784f284b476209d83d4",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "look_at_obj_in_light",
+          "task_id": "alfworld_train_all3553_0298"
+        }
+      ],
+      "membership_sha256s": [
+        "86ce31656c7efd4eedfc8620566784c97b97e4d1ab4cbaa8fc65178844180393"
+      ],
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "6b5db4cf77078a7c80dd2a2a65878bc1e1307fca4be32a1b6896b3b1ff095214"
+      ],
+      "task_family": "look_at_obj_in_light",
+      "terminal_footprint_class": "DIRECT_TERMINAL_IMPACT"
+    },
+    {
+      "group_id": "0ef1a3db3b5a0a02e8e8c49862fb8e74092d293c0b2f3e5a6d6469163759fb98",
+      "group_manifest_sha256": "0db7595cde64facf8d0fc4d37533ae0961c5e2e22d16d0799bc7c0ca5b9e2659",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "DOWNSTREAM_SYMPTOM",
+      "mechanical_signature_sha256": "f70bc54d93939fa069e639c13d7387dc032ce4179e23a19109045bccb4b4a317",
+      "membership_records": [
+        {
+          "error_instance_id": "E4_POT_TAKE_PLACE_OSCILLATION",
+          "gamefile_sha256": "8f5d434e25d1c91f7a718aed30c38605415f2353d71cdeae616c896fd0deb627",
+          "group_id": "0ef1a3db3b5a0a02e8e8c49862fb8e74092d293c0b2f3e5a6d6469163759fb98",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "53b5bc7a2c7d66fd69a3ad68e26e71c321257839fa46d1026e8a9da14c2c8be9",
+          "membership_sha256": "9d30beb8615a9465271b788053e31940d9090438fd398c0a0bc99db9e8c27b7d",
+          "primary_group_key_sha256": "0ef1a3db3b5a0a02e8e8c49862fb8e74092d293c0b2f3e5a6d6469163759fb98",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_cool_then_place_in_recep",
+          "task_id": "alfworld_train_all3553_2157"
+        }
+      ],
+      "membership_sha256s": [
+        "9d30beb8615a9465271b788053e31940d9090438fd398c0a0bc99db9e8c27b7d"
+      ],
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "53b5bc7a2c7d66fd69a3ad68e26e71c321257839fa46d1026e8a9da14c2c8be9"
+      ],
+      "task_family": "pick_cool_then_place_in_recep",
+      "terminal_footprint_class": "DIRECT_TERMINAL_IMPACT"
+    },
+    {
+      "group_id": "1dad3ee80b5ff12b283c68901eb7d2f7b1c90410f7075e69376dd8f41feca3e3",
+      "group_manifest_sha256": "ebda12897d785def6b3a25ecc2b1e59a035510fe070da39d0a2879cad49af39a",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "DOWNSTREAM_SYMPTOM",
+      "mechanical_signature_sha256": "8ce1b58fe58a4a23b94e100ef8861861653f50152be9d63b355a9e845f17eabc",
+      "membership_records": [
+        {
+          "error_instance_id": "error-3-terminal-inadmissible-repeat",
+          "gamefile_sha256": "cd1103f397224ace5a48cd2ec29a1352b7148d6df088a0f194ddd0f5bf71cfdf",
+          "group_id": "1dad3ee80b5ff12b283c68901eb7d2f7b1c90410f7075e69376dd8f41feca3e3",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "71595694a62552d1d5f75e74b2e784ca0c5b1839e120b0446913e07f4660a5af",
+          "membership_sha256": "dac5775c5ead0d50ada74a7632a773684158db8120b77a739fad1df054dc520c",
+          "primary_group_key_sha256": "1dad3ee80b5ff12b283c68901eb7d2f7b1c90410f7075e69376dd8f41feca3e3",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_two_obj_and_place",
+          "task_id": "alfworld_train_all3553_3375"
+        }
+      ],
+      "membership_sha256s": [
+        "dac5775c5ead0d50ada74a7632a773684158db8120b77a739fad1df054dc520c"
+      ],
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "71595694a62552d1d5f75e74b2e784ca0c5b1839e120b0446913e07f4660a5af"
+      ],
+      "task_family": "pick_two_obj_and_place",
+      "terminal_footprint_class": "DIRECT_TERMINAL_IMPACT"
+    },
+    {
+      "group_id": "1dcf036cf1a91bfd1d2ab8e6979f5a8f20fa6f9173485ec09753b3bb4af3d38f",
+      "group_manifest_sha256": "bf896c36134709842c0bd57e9035186e2569609e2c95a24d52fff11526d79bab",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "ACTIVE",
+      "mechanical_signature_sha256": "7d652f8b2467cc195f65bcf8bb2932e11e81127da1f8baa9d5d2fc9e0bb9987e",
+      "membership_records": [
+        {
+          "error_instance_id": "E3_RECURRENT_INADMISSIBLE_ACTIONS",
+          "gamefile_sha256": "3d0326a76807b1bfbe7c84d1d0f8799eb455b577b6d9b4439d6100c8808a634f",
+          "group_id": "1dcf036cf1a91bfd1d2ab8e6979f5a8f20fa6f9173485ec09753b3bb4af3d38f",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "831c70e9736c36721d34568c1b6cbed5fe3894961c141df8cf2ea366d17d0ae7",
+          "membership_sha256": "53568d31a6ff319bbe4fc6d13500f1c967be38597ff78409ebaeaab7156b860b",
+          "primary_group_key_sha256": "1dcf036cf1a91bfd1d2ab8e6979f5a8f20fa6f9173485ec09753b3bb4af3d38f",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_and_place_simple",
+          "task_id": "alfworld_train_all3553_0399"
+        }
+      ],
+      "membership_sha256s": [
+        "53568d31a6ff319bbe4fc6d13500f1c967be38597ff78409ebaeaab7156b860b"
+      ],
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "831c70e9736c36721d34568c1b6cbed5fe3894961c141df8cf2ea366d17d0ae7"
+      ],
+      "task_family": "pick_and_place_simple",
+      "terminal_footprint_class": "BUDGET_ONLY_IMPACT"
+    },
+    {
+      "group_id": "2127729d402db1692b90b8749f34ca038e28c1eece12dd553c116ec77f852a3d",
+      "group_manifest_sha256": "f9619427fd088648a370b6e62290f1c9e9375b6313b1c7dd6c8664b34f50d197",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "ACTIVE",
+      "mechanical_signature_sha256": "689416d3ea220825116a9dd822ff650c93c0f9aaa549fcc3d38e89761b0da844",
+      "membership_records": [
+        {
+          "error_instance_id": "error_repetitive_examine_loop",
+          "gamefile_sha256": "42625c9a74dfed0327d0ae19d392d4cfb1e0b06f44a955d76713985e93839039",
+          "group_id": "2127729d402db1692b90b8749f34ca038e28c1eece12dd553c116ec77f852a3d",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "aa48a34ad31eaf6f80fa517845c77241731a2228803bdede2f0904a20f01a620",
+          "membership_sha256": "45619186742bc6082f4db2cc6f717133b35bde92448bfd750fee7aad9f0f3b8a",
+          "primary_group_key_sha256": "2127729d402db1692b90b8749f34ca038e28c1eece12dd553c116ec77f852a3d",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "look_at_obj_in_light",
+          "task_id": "alfworld_train_all3553_0176"
+        }
+      ],
+      "membership_sha256s": [
+        "45619186742bc6082f4db2cc6f717133b35bde92448bfd750fee7aad9f0f3b8a"
+      ],
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "aa48a34ad31eaf6f80fa517845c77241731a2228803bdede2f0904a20f01a620"
+      ],
+      "task_family": "look_at_obj_in_light",
+      "terminal_footprint_class": "DIRECT_TERMINAL_IMPACT"
+    },
+    {
+      "group_id": "28ae7e7318dbb05d55e7b31adf813698b766354f45a366d533861b1fee1a181b",
+      "group_manifest_sha256": "66429703fd7c5be420bba55208b48dfc35a2209613ea974ba5e651334ced36f4",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "ACTIVE",
+      "mechanical_signature_sha256": "fa2aa74443125d2bd15c4be7a8b3c5cf34ba6bbe3b9ee76bd43636abf330ccfd",
+      "membership_records": [
+        {
+          "error_instance_id": "E5-TERMINAL-INADMISSIBLE-PERSEVERATION",
+          "gamefile_sha256": "369ac860856a3102ee6a7995d1317c60f409550bb2cf695ad29909cc11854bf5",
+          "group_id": "28ae7e7318dbb05d55e7b31adf813698b766354f45a366d533861b1fee1a181b",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "cc936c5ffaed4602cb04374efa9b01ad346fe9cb6b4547a527789b64e58f92a3",
+          "membership_sha256": "3c95d4194a197bdf48e1378ea49d0b28110cec0575429623691d5e1bc88f69e5",
+          "primary_group_key_sha256": "28ae7e7318dbb05d55e7b31adf813698b766354f45a366d533861b1fee1a181b",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_heat_then_place_in_recep",
+          "task_id": "alfworld_train_all3553_2576"
+        }
+      ],
+      "membership_sha256s": [
+        "3c95d4194a197bdf48e1378ea49d0b28110cec0575429623691d5e1bc88f69e5"
+      ],
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "cc936c5ffaed4602cb04374efa9b01ad346fe9cb6b4547a527789b64e58f92a3"
+      ],
+      "task_family": "pick_heat_then_place_in_recep",
+      "terminal_footprint_class": "DIRECT_TERMINAL_IMPACT"
+    },
+    {
+      "group_id": "2a9c52860cf47bd0bc8c42d5fac39e14ba807cfd3d228865a29029d37cdb8fba",
+      "group_manifest_sha256": "667d58be49108f1f4c90101cac74b203442d029b8e3046bb8c3a9acd102dd20d",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "DOWNSTREAM_SYMPTOM",
+      "mechanical_signature_sha256": "95eb5fc892d2b65095270248af9afed1a2a57b5ff4b058d57978b801b8fd9c85",
+      "membership_records": [
+        {
+          "error_instance_id": "E4_GOAL_WORKFLOW_NOT_INITIATED",
+          "gamefile_sha256": "e461315318ac70a4fa0ed657cba7f35608a6f17c4221b5468428ef23d7f2406b",
+          "group_id": "2a9c52860cf47bd0bc8c42d5fac39e14ba807cfd3d228865a29029d37cdb8fba",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "3978bad8c019dad3bd4aa4abc7b890d0f5bac791ebd31337093147e0b2685b12",
+          "membership_sha256": "3682a65c50c914884bf17da2e18cb3358bce97a045eb87343c946f32ec3c8d5e",
+          "primary_group_key_sha256": "2a9c52860cf47bd0bc8c42d5fac39e14ba807cfd3d228865a29029d37cdb8fba",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_cool_then_place_in_recep",
+          "task_id": "alfworld_train_all3553_1999"
+        }
+      ],
+      "membership_sha256s": [
+        "3682a65c50c914884bf17da2e18cb3358bce97a045eb87343c946f32ec3c8d5e"
+      ],
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "3978bad8c019dad3bd4aa4abc7b890d0f5bac791ebd31337093147e0b2685b12"
+      ],
+      "task_family": "pick_cool_then_place_in_recep",
+      "terminal_footprint_class": "UNCERTAIN"
+    },
+    {
+      "group_id": "2d2263cba63336338845392647a2378048b0bf5c61ef4646e7bfe5f38ba64655",
+      "group_manifest_sha256": "07fa1b662631d94d56f5d2862f6b963e477fa672314f86d930f3a9c51ae17811",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "DOWNSTREAM_SYMPTOM",
+      "mechanical_signature_sha256": "61342b22b0908737dea33ae4425d0c15e4bd9f9a779441af96cbcb1d2c01bea2",
+      "membership_records": [
+        {
+          "error_instance_id": "E4-REDUNDANT-APPLIANCE-EXAMINATION",
+          "gamefile_sha256": "369ac860856a3102ee6a7995d1317c60f409550bb2cf695ad29909cc11854bf5",
+          "group_id": "2d2263cba63336338845392647a2378048b0bf5c61ef4646e7bfe5f38ba64655",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "cc936c5ffaed4602cb04374efa9b01ad346fe9cb6b4547a527789b64e58f92a3",
+          "membership_sha256": "d1d222a24621e35828726407c4bd2e63ceb8685a5893d1026fba15b0c0cc7736",
+          "primary_group_key_sha256": "2d2263cba63336338845392647a2378048b0bf5c61ef4646e7bfe5f38ba64655",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_heat_then_place_in_recep",
+          "task_id": "alfworld_train_all3553_2576"
+        }
+      ],
+      "membership_sha256s": [
+        "d1d222a24621e35828726407c4bd2e63ceb8685a5893d1026fba15b0c0cc7736"
+      ],
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "cc936c5ffaed4602cb04374efa9b01ad346fe9cb6b4547a527789b64e58f92a3"
+      ],
+      "task_family": "pick_heat_then_place_in_recep",
+      "terminal_footprint_class": "BUDGET_ONLY_IMPACT"
+    },
+    {
+      "group_id": "34273aff0ac48ed0392f73357ae74ad467ec625111e304eb2aa6990746efacde",
+      "group_manifest_sha256": "723d246acdd7ef6d01a270565b56bec912d42a7f153fab2c838fb9c3470a46aa",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "RESOLVED",
+      "mechanical_signature_sha256": "3d8933208949f4ebd077094e620857bcf1230fbb6f1e0a4a39c45f9dbb630351",
+      "membership_records": [
+        {
+          "error_instance_id": "E2_OUTPUT_PROTOCOL_FAILURES",
+          "gamefile_sha256": "3d0326a76807b1bfbe7c84d1d0f8799eb455b577b6d9b4439d6100c8808a634f",
+          "group_id": "34273aff0ac48ed0392f73357ae74ad467ec625111e304eb2aa6990746efacde",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "831c70e9736c36721d34568c1b6cbed5fe3894961c141df8cf2ea366d17d0ae7",
+          "membership_sha256": "543e190a714265b81eed9d61cadb1cd00ec8ee731a60c066770dbff81a54f2a0",
+          "primary_group_key_sha256": "34273aff0ac48ed0392f73357ae74ad467ec625111e304eb2aa6990746efacde",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_and_place_simple",
+          "task_id": "alfworld_train_all3553_0399"
+        }
+      ],
+      "membership_sha256s": [
+        "543e190a714265b81eed9d61cadb1cd00ec8ee731a60c066770dbff81a54f2a0"
+      ],
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "831c70e9736c36721d34568c1b6cbed5fe3894961c141df8cf2ea366d17d0ae7"
+      ],
+      "task_family": "pick_and_place_simple",
+      "terminal_footprint_class": "BUDGET_ONLY_IMPACT"
+    },
+    {
+      "group_id": "37d3a9f9d57de8c0c3dcefe82563694a6be4e81d408289d4ebea9e41ed16a8f3",
+      "group_manifest_sha256": "66506b76eb8034e4153df9ccaea437b58861394486ae97828fd2e4898632737d",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "ACTIVE",
+      "mechanical_signature_sha256": "509491af41fe521621d9ec081a2cf13ecad9a122fbaf73e334b295105e31ac01",
+      "membership_records": [
+        {
+          "error_instance_id": "error-initial-inadmissible-command",
+          "gamefile_sha256": "ee2a98a4af02f4546c932745e77aa0ff85f0dfe1f59d28aa025d95fd83462abd",
+          "group_id": "37d3a9f9d57de8c0c3dcefe82563694a6be4e81d408289d4ebea9e41ed16a8f3",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "856749aa36e54688b928ec7a2811c381ce0b155bea5a5ac96fba119892e6506b",
+          "membership_sha256": "7948793b5bf629afd18e505dee2ed0c4aac2ddc89c9f935f1bd0618f32807826",
+          "primary_group_key_sha256": "37d3a9f9d57de8c0c3dcefe82563694a6be4e81d408289d4ebea9e41ed16a8f3",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "look_at_obj_in_light",
+          "task_id": "alfworld_train_all3553_0121"
+        },
+        {
+          "error_instance_id": "ERR_MENU_NONCOMPLIANCE_INITIAL",
+          "gamefile_sha256": "b7fd597c8603faea9755827382517d6970120b3f0f8805ed7f8060b26c5c9fd6",
+          "group_id": "37d3a9f9d57de8c0c3dcefe82563694a6be4e81d408289d4ebea9e41ed16a8f3",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "f69da5f566fc9627828738f4adba4ee484dafdbd3965807ff07d4ab1d07e6884",
+          "membership_sha256": "ed262a36249788481f63f432e199e8ecb43acdba9d701fc96c145f68c2c89d66",
+          "primary_group_key_sha256": "37d3a9f9d57de8c0c3dcefe82563694a6be4e81d408289d4ebea9e41ed16a8f3",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "look_at_obj_in_light",
+          "task_id": "alfworld_train_all3553_0225"
+        }
+      ],
+      "membership_sha256s": [
+        "7948793b5bf629afd18e505dee2ed0c4aac2ddc89c9f935f1bd0618f32807826",
+        "ed262a36249788481f63f432e199e8ecb43acdba9d701fc96c145f68c2c89d66"
+      ],
+      "progress_signature_sha256": "fa53842c1ffedd1c5260e51156892d0ef4d1918d5d8d2fa22664300e37d9976a",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "856749aa36e54688b928ec7a2811c381ce0b155bea5a5ac96fba119892e6506b",
+        "f69da5f566fc9627828738f4adba4ee484dafdbd3965807ff07d4ab1d07e6884"
+      ],
+      "task_family": "look_at_obj_in_light",
+      "terminal_footprint_class": "BUDGET_ONLY_IMPACT"
+    },
+    {
+      "group_id": "4501a77811e2347125b0906f9a213ac1ffc58facc2b00f0ee943372a33b77ec5",
+      "group_manifest_sha256": "dabdc82221a57b048ea64a6e61a868294b7a38aeead921cf4db10e338599b3ad",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "ACTIVE",
+      "mechanical_signature_sha256": "7c3ed92834b29e15fd2cc3367e5a8349b19ce24f4502246d13818da4df007df0",
+      "membership_records": [
+        {
+          "error_instance_id": "E2_GOAL_OBJECT_SEARCH_AND_IDENTITY_DRIFT",
+          "gamefile_sha256": "7340690be29dc17912d639e93b954e80ac785cc65a6d36ee34f4b579e272a9af",
+          "group_id": "4501a77811e2347125b0906f9a213ac1ffc58facc2b00f0ee943372a33b77ec5",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "c66bfeca7485d653c12da2017d5ccf68730b1b86708f6b0e7fdb504c1a90eb04",
+          "membership_sha256": "713652a0294959b7dd4991644cc7da40ea620d45b2390d7dce194c1e7bdea49c",
+          "primary_group_key_sha256": "4501a77811e2347125b0906f9a213ac1ffc58facc2b00f0ee943372a33b77ec5",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_and_place_simple",
+          "task_id": "alfworld_train_all3553_1030"
+        }
+      ],
+      "membership_sha256s": [
+        "713652a0294959b7dd4991644cc7da40ea620d45b2390d7dce194c1e7bdea49c"
+      ],
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "c66bfeca7485d653c12da2017d5ccf68730b1b86708f6b0e7fdb504c1a90eb04"
+      ],
+      "task_family": "pick_and_place_simple",
+      "terminal_footprint_class": "UNCERTAIN"
+    },
+    {
+      "group_id": "4a66f59018137fa981b056f651e2f84713f66c6b12f7fe9183d93cfe06351535",
+      "group_manifest_sha256": "970c6a36956fca96209a5ce6d29d71df16ad4da9c564806fa458e969774d0f26",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "ACTIVE",
+      "mechanical_signature_sha256": "509491af41fe521621d9ec081a2cf13ecad9a122fbaf73e334b295105e31ac01",
+      "membership_records": [
+        {
+          "error_instance_id": "E1_INITIAL_INADMISSIBLE_ACTION",
+          "gamefile_sha256": "69af44d70056656fbeb7448b3d30452d991b9966ef79c2b103611be84086a1e0",
+          "group_id": "4a66f59018137fa981b056f651e2f84713f66c6b12f7fe9183d93cfe06351535",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "6b5db4cf77078a7c80dd2a2a65878bc1e1307fca4be32a1b6896b3b1ff095214",
+          "membership_sha256": "c642ec21219d6a250a426714cd1cf0a2353fbaab0a4fbf1a7655da55185dd00d",
+          "primary_group_key_sha256": "4a66f59018137fa981b056f651e2f84713f66c6b12f7fe9183d93cfe06351535",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "look_at_obj_in_light",
+          "task_id": "alfworld_train_all3553_0298"
+        }
+      ],
+      "membership_sha256s": [
+        "c642ec21219d6a250a426714cd1cf0a2353fbaab0a4fbf1a7655da55185dd00d"
+      ],
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "6b5db4cf77078a7c80dd2a2a65878bc1e1307fca4be32a1b6896b3b1ff095214"
+      ],
+      "task_family": "look_at_obj_in_light",
+      "terminal_footprint_class": "BUDGET_ONLY_IMPACT"
+    },
+    {
+      "group_id": "50af562c22223fe4ed3f891d138c2a4a1ae7a712d329d4a746c1e772ab675af0",
+      "group_manifest_sha256": "432991ad2a46df68a27297fdce2ed897c2b7915d86b225f79795a7b99a0a102e",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "RESOLVED",
+      "mechanical_signature_sha256": "76737709ad31199ce97300d719bcf69aa34c74fdf578defe3e533161ef7013ec",
+      "membership_records": [
+        {
+          "error_instance_id": "E2_CLOSED_DRAWER_EXAMINATION_LOOP",
+          "gamefile_sha256": "d3520e1974584c294781adafcc3dea6ea6aa005c8c7db128bf2f4d9a1c260534",
+          "group_id": "50af562c22223fe4ed3f891d138c2a4a1ae7a712d329d4a746c1e772ab675af0",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "30f23ca3f30dcbbec40587639ffef271cd32b86e2b7a8b677baa16bda31972b6",
+          "membership_sha256": "fd2e24b39afd760a189f300eb35e19a7b6400aa484fa7a64b32d9fceb0b3cacc",
+          "primary_group_key_sha256": "50af562c22223fe4ed3f891d138c2a4a1ae7a712d329d4a746c1e772ab675af0",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_clean_then_place_in_recep",
+          "task_id": "alfworld_train_all3553_1605"
+        }
+      ],
+      "membership_sha256s": [
+        "fd2e24b39afd760a189f300eb35e19a7b6400aa484fa7a64b32d9fceb0b3cacc"
+      ],
+      "progress_signature_sha256": "8945e9d7ad8faacc421ed8528ea7d261beb85c6b5850536065d2da90bf866a11",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "30f23ca3f30dcbbec40587639ffef271cd32b86e2b7a8b677baa16bda31972b6"
+      ],
+      "task_family": "pick_clean_then_place_in_recep",
+      "terminal_footprint_class": "BUDGET_ONLY_IMPACT"
+    },
+    {
+      "group_id": "515f918311593f9a9dba2f4cbfdf0cbceeec06a0a8168e523bf888425d698d37",
+      "group_manifest_sha256": "85bad78b88a25f81607f1cb03ff0dedf3f76f8d3ea7699b3aa4482c543acdd36",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "ACTIVE",
+      "mechanical_signature_sha256": "556238e3137843aedbfbe31b7928083c4105606004d7834dfaddd401e4e264ad",
+      "membership_records": [
+        {
+          "error_instance_id": "E2_OPEN_ALREADY_OPEN_CABINET",
+          "gamefile_sha256": "1770bffdd172ab91e60f55b9e5fbef516182f077a8258e0b5ba588ef15e307b2",
+          "group_id": "515f918311593f9a9dba2f4cbfdf0cbceeec06a0a8168e523bf888425d698d37",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "5c2fc4b144e92271938ec8475229c6c7ca415400a8eb5c190f8bea4d4635bd6a",
+          "membership_sha256": "af25d14e21877c77880ba65b233eb5f23484c79bafee18095ad03ee4bc23fb85",
+          "primary_group_key_sha256": "515f918311593f9a9dba2f4cbfdf0cbceeec06a0a8168e523bf888425d698d37",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_two_obj_and_place",
+          "task_id": "alfworld_train_all3553_3200"
+        }
+      ],
+      "membership_sha256s": [
+        "af25d14e21877c77880ba65b233eb5f23484c79bafee18095ad03ee4bc23fb85"
+      ],
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "5c2fc4b144e92271938ec8475229c6c7ca415400a8eb5c190f8bea4d4635bd6a"
+      ],
+      "task_family": "pick_two_obj_and_place",
+      "terminal_footprint_class": "BUDGET_ONLY_IMPACT"
+    },
+    {
+      "group_id": "5832d4f31bb06aae0d41d64da54eafa1ac66ecc53c15cbb62592e45d18d74888",
+      "group_manifest_sha256": "7b1aef7129bc24aa2321a38d73532763d1da36078989ce5f7be54dc4bf90f8a8",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "ACTIVE",
+      "mechanical_signature_sha256": "fa2aa74443125d2bd15c4be7a8b3c5cf34ba6bbe3b9ee76bd43636abf330ccfd",
+      "membership_records": [
+        {
+          "error_instance_id": "error-1-repeated-inadmissible-current-location-navigation",
+          "gamefile_sha256": "16f89491ee2cd9499a476b69535b8e1fd1832468d6c2e7c330a1112a8c9ad0ab",
+          "group_id": "5832d4f31bb06aae0d41d64da54eafa1ac66ecc53c15cbb62592e45d18d74888",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "bd7a708d04f85a425b205265fc898fa850a189d1ba7fd7cece9b5be95c27eeb1",
+          "membership_sha256": "8e3c8e15efb708ea6591954b598611d72aa805f72a7ff173195b20aa3d71167a",
+          "primary_group_key_sha256": "5832d4f31bb06aae0d41d64da54eafa1ac66ecc53c15cbb62592e45d18d74888",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_heat_then_place_in_recep",
+          "task_id": "alfworld_train_all3553_2315"
+        }
+      ],
+      "membership_sha256s": [
+        "8e3c8e15efb708ea6591954b598611d72aa805f72a7ff173195b20aa3d71167a"
+      ],
+      "progress_signature_sha256": "8945e9d7ad8faacc421ed8528ea7d261beb85c6b5850536065d2da90bf866a11",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "bd7a708d04f85a425b205265fc898fa850a189d1ba7fd7cece9b5be95c27eeb1"
+      ],
+      "task_family": "pick_heat_then_place_in_recep",
+      "terminal_footprint_class": "DIRECT_TERMINAL_IMPACT"
+    },
+    {
+      "group_id": "621dc319b5df22e7c91e87a2839bb19fb1f6b9c58dd503ec9404e37e330e3549",
+      "group_manifest_sha256": "026d1379fb25041d4984dbcf74be297b8152837725c74267c554fd7bbbdd1a98",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "DOWNSTREAM_SYMPTOM",
+      "mechanical_signature_sha256": "fa2aa74443125d2bd15c4be7a8b3c5cf34ba6bbe3b9ee76bd43636abf330ccfd",
+      "membership_records": [
+        {
+          "error_instance_id": "E5_TERMINAL_OPEN_CABINET_REPEAT",
+          "gamefile_sha256": "7340690be29dc17912d639e93b954e80ac785cc65a6d36ee34f4b579e272a9af",
+          "group_id": "621dc319b5df22e7c91e87a2839bb19fb1f6b9c58dd503ec9404e37e330e3549",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "c66bfeca7485d653c12da2017d5ccf68730b1b86708f6b0e7fdb504c1a90eb04",
+          "membership_sha256": "6527090db63bbaae5ea2f72e11d111752bed530965dd5e749e882ae6f15d041b",
+          "primary_group_key_sha256": "621dc319b5df22e7c91e87a2839bb19fb1f6b9c58dd503ec9404e37e330e3549",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_and_place_simple",
+          "task_id": "alfworld_train_all3553_1030"
+        }
+      ],
+      "membership_sha256s": [
+        "6527090db63bbaae5ea2f72e11d111752bed530965dd5e749e882ae6f15d041b"
+      ],
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "c66bfeca7485d653c12da2017d5ccf68730b1b86708f6b0e7fdb504c1a90eb04"
+      ],
+      "task_family": "pick_and_place_simple",
+      "terminal_footprint_class": "DIRECT_TERMINAL_IMPACT"
+    },
+    {
+      "group_id": "639e45e25176cfe77be4dbb3f81812dc21c28b84a6662b73f93f211aeeff978b",
+      "group_manifest_sha256": "645f35774fc04e64c52e9894d4eb76d5f86acb30d479c090ddc3eb07393af1dc",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "ACTIVE",
+      "mechanical_signature_sha256": "e310a7fb46f706a1f6f69b5336ae470a93ffb8661f1ef37f271f6df207eadbc6",
+      "membership_records": [
+        {
+          "error_instance_id": "error-terminal-inadmissible-run-calls-6-8",
+          "gamefile_sha256": "894fc4d092706c672410ffdf3ef602d6756a09252a1029661e15b7021bbae6ab",
+          "group_id": "639e45e25176cfe77be4dbb3f81812dc21c28b84a6662b73f93f211aeeff978b",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "a947f66b1c77a06d17233b1a018b410f6024590160bc453c3c07a73507c15ba9",
+          "membership_sha256": "b6b510f8da87622a6a71e59a6ecc718d167ae1ae1cc5104edaf47d3f881cae9a",
+          "primary_group_key_sha256": "639e45e25176cfe77be4dbb3f81812dc21c28b84a6662b73f93f211aeeff978b",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_clean_then_place_in_recep",
+          "task_id": "alfworld_train_all3553_1136"
+        }
+      ],
+      "membership_sha256s": [
+        "b6b510f8da87622a6a71e59a6ecc718d167ae1ae1cc5104edaf47d3f881cae9a"
+      ],
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "a947f66b1c77a06d17233b1a018b410f6024590160bc453c3c07a73507c15ba9"
+      ],
+      "task_family": "pick_clean_then_place_in_recep",
+      "terminal_footprint_class": "DIRECT_TERMINAL_IMPACT"
+    },
+    {
+      "group_id": "71e87e9f49f2a754df59c5b28a290c5bbe93bfc4c50fa9c79eb668a8c06648d2",
+      "group_manifest_sha256": "50c9319a4e849cfa0bf35f3ac8eec80a3a870e69666e9682cd2fbb52d17e0121",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "DOWNSTREAM_SYMPTOM",
+      "mechanical_signature_sha256": "b31900085ddef8d93f4f16a1f1c62fae2fd0cd1fc0fa9d41bdcb4c07a3088dff",
+      "membership_records": [
+        {
+          "error_instance_id": "ERR_RECIPROCAL_ACTION_LOOP",
+          "gamefile_sha256": "edf376d21dffdbe8441e295c61b4a52ebc4478a306af01e0f9c9c492465126ce",
+          "group_id": "71e87e9f49f2a754df59c5b28a290c5bbe93bfc4c50fa9c79eb668a8c06648d2",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "8c77ee2d2df95c24b76b646fc960c63898c84b8a45e1f9f30cb2bc64131dd8ba",
+          "membership_sha256": "9147ef0d5149f797ac03173b6dcf31be440c46a3a052df5ae08e9a65454f53c5",
+          "primary_group_key_sha256": "71e87e9f49f2a754df59c5b28a290c5bbe93bfc4c50fa9c79eb668a8c06648d2",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_clean_then_place_in_recep",
+          "task_id": "alfworld_train_all3553_1510"
+        }
+      ],
+      "membership_sha256s": [
+        "9147ef0d5149f797ac03173b6dcf31be440c46a3a052df5ae08e9a65454f53c5"
+      ],
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "8c77ee2d2df95c24b76b646fc960c63898c84b8a45e1f9f30cb2bc64131dd8ba"
+      ],
+      "task_family": "pick_clean_then_place_in_recep",
+      "terminal_footprint_class": "BUDGET_ONLY_IMPACT"
+    },
+    {
+      "group_id": "802bba85537945a9f79101f35d6914fc17c4c8b9e8ac45e4302c028c43775f4c",
+      "group_manifest_sha256": "58ae9b5ac688ce7623f4690e8b9b02216b9b31b99860db3f7f87ecddceb60ca2",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "DOWNSTREAM_SYMPTOM",
+      "mechanical_signature_sha256": "0bef64cf4bef3f178aef29096cdb0ce67a109a8de88121f2d8ed00afce75482c",
+      "membership_records": [
+        {
+          "error_instance_id": "E5_ENVIRONMENT_BUDGET_EXHAUSTION",
+          "gamefile_sha256": "3d0326a76807b1bfbe7c84d1d0f8799eb455b577b6d9b4439d6100c8808a634f",
+          "group_id": "802bba85537945a9f79101f35d6914fc17c4c8b9e8ac45e4302c028c43775f4c",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "831c70e9736c36721d34568c1b6cbed5fe3894961c141df8cf2ea366d17d0ae7",
+          "membership_sha256": "4d24888d7698aca4122f7019f55660a938cae7b613e4a17e4a2d321b1a8afff1",
+          "primary_group_key_sha256": "802bba85537945a9f79101f35d6914fc17c4c8b9e8ac45e4302c028c43775f4c",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_and_place_simple",
+          "task_id": "alfworld_train_all3553_0399"
+        }
+      ],
+      "membership_sha256s": [
+        "4d24888d7698aca4122f7019f55660a938cae7b613e4a17e4a2d321b1a8afff1"
+      ],
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "831c70e9736c36721d34568c1b6cbed5fe3894961c141df8cf2ea366d17d0ae7"
+      ],
+      "task_family": "pick_and_place_simple",
+      "terminal_footprint_class": "DIRECT_TERMINAL_IMPACT"
+    },
+    {
+      "group_id": "8a530203909caa605f5e1cc0eef000c5a4ea4fcb1bf842070bf04507a6b2fc38",
+      "group_manifest_sha256": "51b2b52dc76a356ee040f9b8687e7c96d9fd4bf1cf713a629df58c5306798ada",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "DOWNSTREAM_SYMPTOM",
+      "mechanical_signature_sha256": "f226f06a8b910b8181e2bfaab0bdac48fc6db56779a4ed1b4d03152416c72b3f",
+      "membership_records": [
+        {
+          "error_instance_id": "E4_LATE_NO_PROGRESS_EXAMINATION_AND_REVISIT_LOOP",
+          "gamefile_sha256": "d3520e1974584c294781adafcc3dea6ea6aa005c8c7db128bf2f4d9a1c260534",
+          "group_id": "8a530203909caa605f5e1cc0eef000c5a4ea4fcb1bf842070bf04507a6b2fc38",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "30f23ca3f30dcbbec40587639ffef271cd32b86e2b7a8b677baa16bda31972b6",
+          "membership_sha256": "1890dd4aa8d1eea3b5267d8c0958dd24ca710fd812f6c67ae7cbb200da751255",
+          "primary_group_key_sha256": "8a530203909caa605f5e1cc0eef000c5a4ea4fcb1bf842070bf04507a6b2fc38",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_clean_then_place_in_recep",
+          "task_id": "alfworld_train_all3553_1605"
+        }
+      ],
+      "membership_sha256s": [
+        "1890dd4aa8d1eea3b5267d8c0958dd24ca710fd812f6c67ae7cbb200da751255"
+      ],
+      "progress_signature_sha256": "8945e9d7ad8faacc421ed8528ea7d261beb85c6b5850536065d2da90bf866a11",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "30f23ca3f30dcbbec40587639ffef271cd32b86e2b7a8b677baa16bda31972b6"
+      ],
+      "task_family": "pick_clean_then_place_in_recep",
+      "terminal_footprint_class": "DIRECT_TERMINAL_IMPACT"
+    },
+    {
+      "group_id": "8ee19636340ce7f0846517ccfbf0a93a01f136a1900dbf6ad35210c43b77eeab",
+      "group_manifest_sha256": "7d85e08759480460d715ffe6fccb78cfecf2401722d7cef2da2b0e3e72503d97",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "ACTIVE",
+      "mechanical_signature_sha256": "8ce1b58fe58a4a23b94e100ef8861861653f50152be9d63b355a9e845f17eabc",
+      "membership_records": [
+        {
+          "error_instance_id": "E3_CURRENT_LOCATION_RENAVIGATION",
+          "gamefile_sha256": "1770bffdd172ab91e60f55b9e5fbef516182f077a8258e0b5ba588ef15e307b2",
+          "group_id": "8ee19636340ce7f0846517ccfbf0a93a01f136a1900dbf6ad35210c43b77eeab",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "5c2fc4b144e92271938ec8475229c6c7ca415400a8eb5c190f8bea4d4635bd6a",
+          "membership_sha256": "10e70c6ef05b2f944384527c562da1baa342b8c98b4383d9042188a4459fb087",
+          "primary_group_key_sha256": "8ee19636340ce7f0846517ccfbf0a93a01f136a1900dbf6ad35210c43b77eeab",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_two_obj_and_place",
+          "task_id": "alfworld_train_all3553_3200"
+        }
+      ],
+      "membership_sha256s": [
+        "10e70c6ef05b2f944384527c562da1baa342b8c98b4383d9042188a4459fb087"
+      ],
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "5c2fc4b144e92271938ec8475229c6c7ca415400a8eb5c190f8bea4d4635bd6a"
+      ],
+      "task_family": "pick_two_obj_and_place",
+      "terminal_footprint_class": "DIRECT_TERMINAL_IMPACT"
+    },
+    {
+      "group_id": "96a086e03cf2682e7d2c2b469c2d797c29f6293c187a1d15512f31d8763b9b54",
+      "group_manifest_sha256": "6e7d2acfcf7d2eb786916a99456812b0324d080c9ea2875e82927af568bf5e5d",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "RESOLVED",
+      "mechanical_signature_sha256": "509491af41fe521621d9ec081a2cf13ecad9a122fbaf73e334b295105e31ac01",
+      "membership_records": [
+        {
+          "error_instance_id": "error-compound-action-call-4",
+          "gamefile_sha256": "894fc4d092706c672410ffdf3ef602d6756a09252a1029661e15b7021bbae6ab",
+          "group_id": "96a086e03cf2682e7d2c2b469c2d797c29f6293c187a1d15512f31d8763b9b54",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "a947f66b1c77a06d17233b1a018b410f6024590160bc453c3c07a73507c15ba9",
+          "membership_sha256": "ce5ab34e1efc91dcf22005cb69d517cd5bcc4c2e64040aa13001b0379252465a",
+          "primary_group_key_sha256": "96a086e03cf2682e7d2c2b469c2d797c29f6293c187a1d15512f31d8763b9b54",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_clean_then_place_in_recep",
+          "task_id": "alfworld_train_all3553_1136"
+        }
+      ],
+      "membership_sha256s": [
+        "ce5ab34e1efc91dcf22005cb69d517cd5bcc4c2e64040aa13001b0379252465a"
+      ],
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "a947f66b1c77a06d17233b1a018b410f6024590160bc453c3c07a73507c15ba9"
+      ],
+      "task_family": "pick_clean_then_place_in_recep",
+      "terminal_footprint_class": "RECOVERED_NO_TERMINAL_IMPACT"
+    },
+    {
+      "group_id": "9c90667d85c89f52bbcd0db59d75891f947d37a6df97115033bedfc2999bd3ec",
+      "group_manifest_sha256": "4e9d282cb5c9aad59d57488f08e3e95febcabef133a037b46137b221a1a11b4b",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "ACTIVE",
+      "mechanical_signature_sha256": "0b640459b66105e17772240c94e3cc914af0bb89418ddf649f2c97f808efc572",
+      "membership_records": [
+        {
+          "error_instance_id": "E3_COOLING_STAGE_OMITTED",
+          "gamefile_sha256": "8f5d434e25d1c91f7a718aed30c38605415f2353d71cdeae616c896fd0deb627",
+          "group_id": "9c90667d85c89f52bbcd0db59d75891f947d37a6df97115033bedfc2999bd3ec",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "53b5bc7a2c7d66fd69a3ad68e26e71c321257839fa46d1026e8a9da14c2c8be9",
+          "membership_sha256": "4c0aa3c53ad3f43b607a77dc4030be29a6577d8a2e90c9224a8fbf0996c0f686",
+          "primary_group_key_sha256": "9c90667d85c89f52bbcd0db59d75891f947d37a6df97115033bedfc2999bd3ec",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_cool_then_place_in_recep",
+          "task_id": "alfworld_train_all3553_2157"
+        }
+      ],
+      "membership_sha256s": [
+        "4c0aa3c53ad3f43b607a77dc4030be29a6577d8a2e90c9224a8fbf0996c0f686"
+      ],
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "53b5bc7a2c7d66fd69a3ad68e26e71c321257839fa46d1026e8a9da14c2c8be9"
+      ],
+      "task_family": "pick_cool_then_place_in_recep",
+      "terminal_footprint_class": "UNCERTAIN"
+    },
+    {
+      "group_id": "9e3f5124daefa1106e48a021d93e61452e635830531eec1f69c65beee845e7a7",
+      "group_manifest_sha256": "63b91d972b51e436171a5a1bf5b10108e6e2b400118946ed9c884b5029e36bb2",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "DOWNSTREAM_SYMPTOM",
+      "mechanical_signature_sha256": "8e8e00f81774d574be536c1d57fee6e8a9d4fe0aecc81d574218c262980d18f4",
+      "membership_records": [
+        {
+          "error_instance_id": "ERR-NO-REGISTERED-TASK-WORKFLOW-PROGRESS",
+          "gamefile_sha256": "a67c6b05be6b77f5e97153cc272ccdc8d3e24e978845e79a736a2cf11f09f575",
+          "group_id": "9e3f5124daefa1106e48a021d93e61452e635830531eec1f69c65beee845e7a7",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "56b319c7d3b4f1d507e17271aa0b854a5e0808c2b5da10c2257f86446d76a55e",
+          "membership_sha256": "b701d7dbd208b7995830911a9afae0bb7f3607fb7c2209ea31e693d7435f35e4",
+          "primary_group_key_sha256": "9e3f5124daefa1106e48a021d93e61452e635830531eec1f69c65beee845e7a7",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_heat_then_place_in_recep",
+          "task_id": "alfworld_train_all3553_2566"
+        }
+      ],
+      "membership_sha256s": [
+        "b701d7dbd208b7995830911a9afae0bb7f3607fb7c2209ea31e693d7435f35e4"
+      ],
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "56b319c7d3b4f1d507e17271aa0b854a5e0808c2b5da10c2257f86446d76a55e"
+      ],
+      "task_family": "pick_heat_then_place_in_recep",
+      "terminal_footprint_class": "UNCERTAIN"
+    },
+    {
+      "group_id": "9e40ea6f98a6bf475b23b8e24e8eaa43c824c312d1a64a4df69211c5da7db0f4",
+      "group_manifest_sha256": "641de0230a046295e8a8c03e7b875f6822a38c357fa06e922c15bf0306538167",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "ACTIVE",
+      "mechanical_signature_sha256": "406e106f8a812bae2c618cca2ac0a793eb350494062c0c316a319b357734a8b4",
+      "membership_records": [
+        {
+          "error_instance_id": "ERR_FEEDBACK_NONADAPTATION",
+          "gamefile_sha256": "c8577cad98c9098b89f371cc1cba2dd1e2a7eae709c1dfc982c4d53135d3d158",
+          "group_id": "9e40ea6f98a6bf475b23b8e24e8eaa43c824c312d1a64a4df69211c5da7db0f4",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "ea5560eca15ba8d5639f3660d1a63854ecea61e494e012ae5b7af52f5419e32b",
+          "membership_sha256": "d127298544898f00deac4783f34b3359b8645476db641e8a22af0ec456e8bcdd",
+          "primary_group_key_sha256": "9e40ea6f98a6bf475b23b8e24e8eaa43c824c312d1a64a4df69211c5da7db0f4",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_heat_then_place_in_recep",
+          "task_id": "alfworld_train_all3553_2673"
+        }
+      ],
+      "membership_sha256s": [
+        "d127298544898f00deac4783f34b3359b8645476db641e8a22af0ec456e8bcdd"
+      ],
+      "progress_signature_sha256": "8945e9d7ad8faacc421ed8528ea7d261beb85c6b5850536065d2da90bf866a11",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "ea5560eca15ba8d5639f3660d1a63854ecea61e494e012ae5b7af52f5419e32b"
+      ],
+      "task_family": "pick_heat_then_place_in_recep",
+      "terminal_footprint_class": "DIRECT_TERMINAL_IMPACT"
+    },
+    {
+      "group_id": "9eaea007029c8a7587358e3b73ef0a96a5278b7e2ac4ecf5660a2353678b6143",
+      "group_manifest_sha256": "68348974cc7c72d24271ce867feaeb330103cb6050da4080ed10e8958a884b91",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "DOWNSTREAM_SYMPTOM",
+      "mechanical_signature_sha256": "35e7cd7987ed7b3c4d930de59c89c0dc7ca567d2e41f80b664b8373a4902cb5d",
+      "membership_records": [
+        {
+          "error_instance_id": "E4_PILLOW_MANIPULATION_LOOP",
+          "gamefile_sha256": "3d0326a76807b1bfbe7c84d1d0f8799eb455b577b6d9b4439d6100c8808a634f",
+          "group_id": "9eaea007029c8a7587358e3b73ef0a96a5278b7e2ac4ecf5660a2353678b6143",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "831c70e9736c36721d34568c1b6cbed5fe3894961c141df8cf2ea366d17d0ae7",
+          "membership_sha256": "07c545c4c533393c6d47daae2b27cc251f8690c95105d4f3c567d40d7803d9f4",
+          "primary_group_key_sha256": "9eaea007029c8a7587358e3b73ef0a96a5278b7e2ac4ecf5660a2353678b6143",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_and_place_simple",
+          "task_id": "alfworld_train_all3553_0399"
+        }
+      ],
+      "membership_sha256s": [
+        "07c545c4c533393c6d47daae2b27cc251f8690c95105d4f3c567d40d7803d9f4"
+      ],
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "831c70e9736c36721d34568c1b6cbed5fe3894961c141df8cf2ea366d17d0ae7"
+      ],
+      "task_family": "pick_and_place_simple",
+      "terminal_footprint_class": "DIRECT_TERMINAL_IMPACT"
+    },
+    {
+      "group_id": "a374faa6d98a2a856bfba639ff998bff9604252544b8d753c46f0d60da38fd2e",
+      "group_manifest_sha256": "136c033d2763bd856f3ecb29b0f6bba2ff6cde88c6519025ecdb643b09ff2c53",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "RESOLVED",
+      "mechanical_signature_sha256": "10db38f3f598c0e69869e440d1dfba7503e2aa82011144a57d9a134b65a2c601",
+      "membership_records": [
+        {
+          "error_instance_id": "E1_DESTINATION_EXAMINE_PERSEVERATION",
+          "gamefile_sha256": "7340690be29dc17912d639e93b954e80ac785cc65a6d36ee34f4b579e272a9af",
+          "group_id": "a374faa6d98a2a856bfba639ff998bff9604252544b8d753c46f0d60da38fd2e",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "c66bfeca7485d653c12da2017d5ccf68730b1b86708f6b0e7fdb504c1a90eb04",
+          "membership_sha256": "a71b6e4514259f1f52e4530e45191aadfc37263fdabe2aa501f003e4e0f41edc",
+          "primary_group_key_sha256": "a374faa6d98a2a856bfba639ff998bff9604252544b8d753c46f0d60da38fd2e",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_and_place_simple",
+          "task_id": "alfworld_train_all3553_1030"
+        }
+      ],
+      "membership_sha256s": [
+        "a71b6e4514259f1f52e4530e45191aadfc37263fdabe2aa501f003e4e0f41edc"
+      ],
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "c66bfeca7485d653c12da2017d5ccf68730b1b86708f6b0e7fdb504c1a90eb04"
+      ],
+      "task_family": "pick_and_place_simple",
+      "terminal_footprint_class": "BUDGET_ONLY_IMPACT"
+    },
+    {
+      "group_id": "a96bad19bd6650ecdedb2aa94a906633f06131aaa556bcd75d0fb5b01cb308ae",
+      "group_manifest_sha256": "95eab4e1fc714db0c086ce14c7b1e71644e9adc96c80656f7553ecedc63b4ef6",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "RESOLVED",
+      "mechanical_signature_sha256": "509491af41fe521621d9ec081a2cf13ecad9a122fbaf73e334b295105e31ac01",
+      "membership_records": [
+        {
+          "error_instance_id": "ERR-1-COMPOSITE-INADMISSIBLE-ACTION",
+          "gamefile_sha256": "5cfb85dcd26bebdaadcf9fd051c1cd0841cdbc9f161c47209d6e58a4d5729601",
+          "group_id": "a96bad19bd6650ecdedb2aa94a906633f06131aaa556bcd75d0fb5b01cb308ae",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "f9df42a955607a1f7dfe082c42cc3acc18b8d69fbe515a14ce08288253a4de5e",
+          "membership_sha256": "ed8f996a8e111576587e82597e1e77491222a1e84f3026df9c1eaa2dd7253517",
+          "primary_group_key_sha256": "a96bad19bd6650ecdedb2aa94a906633f06131aaa556bcd75d0fb5b01cb308ae",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_two_obj_and_place",
+          "task_id": "alfworld_train_all3553_2774"
+        }
+      ],
+      "membership_sha256s": [
+        "ed8f996a8e111576587e82597e1e77491222a1e84f3026df9c1eaa2dd7253517"
+      ],
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "f9df42a955607a1f7dfe082c42cc3acc18b8d69fbe515a14ce08288253a4de5e"
+      ],
+      "task_family": "pick_two_obj_and_place",
+      "terminal_footprint_class": "RECOVERED_NO_TERMINAL_IMPACT"
+    },
+    {
+      "group_id": "a9e3178b4057faab2550458fc948b88a6943aaee83dcca26e5a5a647064e83de",
+      "group_manifest_sha256": "e735a7391b5f99bee8fb05333608dbb9dffc1bebbae5d93d836a0b01af023cbd",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "RESOLVED",
+      "mechanical_signature_sha256": "191b7544b5492cd72ecc9be62fe04c05e53a3dfd1bb3fdc31d90f46869b9c0ce",
+      "membership_records": [
+        {
+          "error_instance_id": "E3_RECURRING_MENU_MEMBERSHIP_VIOLATIONS",
+          "gamefile_sha256": "d3520e1974584c294781adafcc3dea6ea6aa005c8c7db128bf2f4d9a1c260534",
+          "group_id": "a9e3178b4057faab2550458fc948b88a6943aaee83dcca26e5a5a647064e83de",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "30f23ca3f30dcbbec40587639ffef271cd32b86e2b7a8b677baa16bda31972b6",
+          "membership_sha256": "26a3e7fd7b3c6ba3bd832ee41aab55d99de12573e660bd8033b77f7f087c770b",
+          "primary_group_key_sha256": "a9e3178b4057faab2550458fc948b88a6943aaee83dcca26e5a5a647064e83de",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_clean_then_place_in_recep",
+          "task_id": "alfworld_train_all3553_1605"
+        }
+      ],
+      "membership_sha256s": [
+        "26a3e7fd7b3c6ba3bd832ee41aab55d99de12573e660bd8033b77f7f087c770b"
+      ],
+      "progress_signature_sha256": "8945e9d7ad8faacc421ed8528ea7d261beb85c6b5850536065d2da90bf866a11",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "30f23ca3f30dcbbec40587639ffef271cd32b86e2b7a8b677baa16bda31972b6"
+      ],
+      "task_family": "pick_clean_then_place_in_recep",
+      "terminal_footprint_class": "UNCERTAIN"
+    },
+    {
+      "group_id": "add3cd26e155dcfe85f03c85cabd91e60b5b5cabf0b76e8a5e654eebe947e76a",
+      "group_manifest_sha256": "e2d77496134944bd71b96640bed0d1a4c3c951bb391abdf6ee98c28104310efa",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "DOWNSTREAM_SYMPTOM",
+      "mechanical_signature_sha256": "556238e3137843aedbfbe31b7928083c4105606004d7834dfaddd401e4e264ad",
+      "membership_records": [
+        {
+          "error_instance_id": "error-2-failed-first-recovery",
+          "gamefile_sha256": "cd1103f397224ace5a48cd2ec29a1352b7148d6df088a0f194ddd0f5bf71cfdf",
+          "group_id": "add3cd26e155dcfe85f03c85cabd91e60b5b5cabf0b76e8a5e654eebe947e76a",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "71595694a62552d1d5f75e74b2e784ca0c5b1839e120b0446913e07f4660a5af",
+          "membership_sha256": "f9b7978f54132173874bd6686205ceed0754082497b13f012bb8023f61d00950",
+          "primary_group_key_sha256": "add3cd26e155dcfe85f03c85cabd91e60b5b5cabf0b76e8a5e654eebe947e76a",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_two_obj_and_place",
+          "task_id": "alfworld_train_all3553_3375"
+        }
+      ],
+      "membership_sha256s": [
+        "f9b7978f54132173874bd6686205ceed0754082497b13f012bb8023f61d00950"
+      ],
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "71595694a62552d1d5f75e74b2e784ca0c5b1839e120b0446913e07f4660a5af"
+      ],
+      "task_family": "pick_two_obj_and_place",
+      "terminal_footprint_class": "BUDGET_ONLY_IMPACT"
+    },
+    {
+      "group_id": "b15eeb06e045414a28017d3443afdffe5182856a8465014694d94b6ddf66f61a",
+      "group_manifest_sha256": "0459f4aa1494dd63c2d110a1495cd2d2824c50ca3bf7945d613a973a821c27fd",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "RESOLVED",
+      "mechanical_signature_sha256": "0b640459b66105e17772240c94e3cc914af0bb89418ddf649f2c97f808efc572",
+      "membership_records": [
+        {
+          "error_instance_id": "ERR_EXPLORATORY_DETOUR",
+          "gamefile_sha256": "c8577cad98c9098b89f371cc1cba2dd1e2a7eae709c1dfc982c4d53135d3d158",
+          "group_id": "b15eeb06e045414a28017d3443afdffe5182856a8465014694d94b6ddf66f61a",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "ea5560eca15ba8d5639f3660d1a63854ecea61e494e012ae5b7af52f5419e32b",
+          "membership_sha256": "97071b5d701414fbe9ed7367d05e35dc66340f9ac9bceaeca90fb949f6072aca",
+          "primary_group_key_sha256": "b15eeb06e045414a28017d3443afdffe5182856a8465014694d94b6ddf66f61a",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_heat_then_place_in_recep",
+          "task_id": "alfworld_train_all3553_2673"
+        }
+      ],
+      "membership_sha256s": [
+        "97071b5d701414fbe9ed7367d05e35dc66340f9ac9bceaeca90fb949f6072aca"
+      ],
+      "progress_signature_sha256": "bd578687560b737ff6f32d063fd0b6e65471570b485c08879a4a9929cb41ea54",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "ea5560eca15ba8d5639f3660d1a63854ecea61e494e012ae5b7af52f5419e32b"
+      ],
+      "task_family": "pick_heat_then_place_in_recep",
+      "terminal_footprint_class": "RECOVERED_NO_TERMINAL_IMPACT"
+    },
+    {
+      "group_id": "b32acb5ef6c39c465a3898c56c5af9e519db1b8320b3f6113bf595dc788cc955",
+      "group_manifest_sha256": "e2ea0344976976daf082f6f3c5325b6d5d5dc19b7dca87d07a252f850aa0dc87",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "RESOLVED",
+      "mechanical_signature_sha256": "e2d1787b06ecd2d3c9af51e258011402fb3660d90f071c24652a01ef716ca779",
+      "membership_records": [
+        {
+          "error_instance_id": "ERR-1-REPEATED-BREAD-EXAMINATION",
+          "gamefile_sha256": "d898a97ab5b5e44f006e565155c20ff464051d2d15645f88080e8482153ecee9",
+          "group_id": "b32acb5ef6c39c465a3898c56c5af9e519db1b8320b3f6113bf595dc788cc955",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "b1e6ff320b538ded90a43385be1fc025be03235f25175526872d2bdb39832fe1",
+          "membership_sha256": "70c9ef52667e390fd5ef85595e230ba24a50076864b10a7d6b66939dc94b5c6d",
+          "primary_group_key_sha256": "b32acb5ef6c39c465a3898c56c5af9e519db1b8320b3f6113bf595dc788cc955",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_cool_then_place_in_recep",
+          "task_id": "alfworld_train_all3553_1844"
+        }
+      ],
+      "membership_sha256s": [
+        "70c9ef52667e390fd5ef85595e230ba24a50076864b10a7d6b66939dc94b5c6d"
+      ],
+      "progress_signature_sha256": "e65d5d6f9e39e314e82b8041ea78cf3e907c1f47b7cd9fe2f7f34b1662e34b2c",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "b1e6ff320b538ded90a43385be1fc025be03235f25175526872d2bdb39832fe1"
+      ],
+      "task_family": "pick_cool_then_place_in_recep",
+      "terminal_footprint_class": "BUDGET_ONLY_IMPACT"
+    },
+    {
+      "group_id": "b59c67396e45afbaab030437002865fa9440eaa72e3d0dbc04045fb065347568",
+      "group_manifest_sha256": "a1e9e8f150d41ad5953bce8db534b45b5d540c7e7c9f26d831c9475b83ce73c9",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "ACTIVE",
+      "mechanical_signature_sha256": "ef50232c9af189a10c2857c3c9339b3cb25eb7184c59a8514d5334775b27408f",
+      "membership_records": [
+        {
+          "error_instance_id": "ERR_PREREQUISITE_OMISSION",
+          "gamefile_sha256": "edf376d21dffdbe8441e295c61b4a52ebc4478a306af01e0f9c9c492465126ce",
+          "group_id": "b59c67396e45afbaab030437002865fa9440eaa72e3d0dbc04045fb065347568",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "8c77ee2d2df95c24b76b646fc960c63898c84b8a45e1f9f30cb2bc64131dd8ba",
+          "membership_sha256": "1334415ed3ea4759ae36053c4b5814f9a2f44c13002e2ab1ff9f3f7c57567335",
+          "primary_group_key_sha256": "b59c67396e45afbaab030437002865fa9440eaa72e3d0dbc04045fb065347568",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_clean_then_place_in_recep",
+          "task_id": "alfworld_train_all3553_1510"
+        }
+      ],
+      "membership_sha256s": [
+        "1334415ed3ea4759ae36053c4b5814f9a2f44c13002e2ab1ff9f3f7c57567335"
+      ],
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "8c77ee2d2df95c24b76b646fc960c63898c84b8a45e1f9f30cb2bc64131dd8ba"
+      ],
+      "task_family": "pick_clean_then_place_in_recep",
+      "terminal_footprint_class": "UNCERTAIN"
+    },
+    {
+      "group_id": "b94aa0840d0d282aad25fa118872aaa9d5d3c2d070451ed1cbe46a1d0d55ccf0",
+      "group_manifest_sha256": "ee29e2bcdd1823826fc6556ff510b39044a627c0b4f757747689c6b5dead8064",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "RESOLVED",
+      "mechanical_signature_sha256": "d32645f5ebadadf4f1d7d8ce9dc63996024940e51a5459505bfcb068b9625495",
+      "membership_records": [
+        {
+          "error_instance_id": "ERR_MULTILINE_PROTOCOL_FAILURE",
+          "gamefile_sha256": "edf376d21dffdbe8441e295c61b4a52ebc4478a306af01e0f9c9c492465126ce",
+          "group_id": "b94aa0840d0d282aad25fa118872aaa9d5d3c2d070451ed1cbe46a1d0d55ccf0",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "8c77ee2d2df95c24b76b646fc960c63898c84b8a45e1f9f30cb2bc64131dd8ba",
+          "membership_sha256": "ef09713e456010186f15c8ea7393d9a90946d731a51ebbf010cf377bae54d683",
+          "primary_group_key_sha256": "b94aa0840d0d282aad25fa118872aaa9d5d3c2d070451ed1cbe46a1d0d55ccf0",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_clean_then_place_in_recep",
+          "task_id": "alfworld_train_all3553_1510"
+        }
+      ],
+      "membership_sha256s": [
+        "ef09713e456010186f15c8ea7393d9a90946d731a51ebbf010cf377bae54d683"
+      ],
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "8c77ee2d2df95c24b76b646fc960c63898c84b8a45e1f9f30cb2bc64131dd8ba"
+      ],
+      "task_family": "pick_clean_then_place_in_recep",
+      "terminal_footprint_class": "RECOVERED_NO_TERMINAL_IMPACT"
+    },
+    {
+      "group_id": "bd201ee550dab2ebe679a812963c96d37ad4cdfb0d3e8d1a9a697adc3a687664",
+      "group_manifest_sha256": "23d8f79e49e1999ae4dbd07f6a3796a1a329ee84206582eb3f63384bb893d72c",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "ACTIVE",
+      "mechanical_signature_sha256": "61342b22b0908737dea33ae4425d0c15e4bd9f9a779441af96cbcb1d2c01bea2",
+      "membership_records": [
+        {
+          "error_instance_id": "error-wrong-object-pickup-call-5",
+          "gamefile_sha256": "894fc4d092706c672410ffdf3ef602d6756a09252a1029661e15b7021bbae6ab",
+          "group_id": "bd201ee550dab2ebe679a812963c96d37ad4cdfb0d3e8d1a9a697adc3a687664",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "a947f66b1c77a06d17233b1a018b410f6024590160bc453c3c07a73507c15ba9",
+          "membership_sha256": "26935030000ddf673df85e199f2e644a6b1548ac7a755f908870a580c833d1be",
+          "primary_group_key_sha256": "bd201ee550dab2ebe679a812963c96d37ad4cdfb0d3e8d1a9a697adc3a687664",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_clean_then_place_in_recep",
+          "task_id": "alfworld_train_all3553_1136"
+        }
+      ],
+      "membership_sha256s": [
+        "26935030000ddf673df85e199f2e644a6b1548ac7a755f908870a580c833d1be"
+      ],
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "a947f66b1c77a06d17233b1a018b410f6024590160bc453c3c07a73507c15ba9"
+      ],
+      "task_family": "pick_clean_then_place_in_recep",
+      "terminal_footprint_class": "UNCERTAIN"
+    },
+    {
+      "group_id": "bf9377712340989100afca11696a9422cf91a251cef2c7aaaafe3ece75b96c93",
+      "group_manifest_sha256": "fc874759c87f5b95a8621f8ae0adcd968e63f32800616751efa25db1c7e31d55",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "ACTIVE",
+      "mechanical_signature_sha256": "fa2aa74443125d2bd15c4be7a8b3c5cf34ba6bbe3b9ee76bd43636abf330ccfd",
+      "membership_records": [
+        {
+          "error_instance_id": "ERR-3-REPEATED-INADMISSIBLE-NAVIGATION",
+          "gamefile_sha256": "5cfb85dcd26bebdaadcf9fd051c1cd0841cdbc9f161c47209d6e58a4d5729601",
+          "group_id": "bf9377712340989100afca11696a9422cf91a251cef2c7aaaafe3ece75b96c93",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "f9df42a955607a1f7dfe082c42cc3acc18b8d69fbe515a14ce08288253a4de5e",
+          "membership_sha256": "57b53a6ba40d7b4b5ed6a638761032cd9a79f551c8ca67ec407173237a2ce720",
+          "primary_group_key_sha256": "bf9377712340989100afca11696a9422cf91a251cef2c7aaaafe3ece75b96c93",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_two_obj_and_place",
+          "task_id": "alfworld_train_all3553_2774"
+        }
+      ],
+      "membership_sha256s": [
+        "57b53a6ba40d7b4b5ed6a638761032cd9a79f551c8ca67ec407173237a2ce720"
+      ],
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "f9df42a955607a1f7dfe082c42cc3acc18b8d69fbe515a14ce08288253a4de5e"
+      ],
+      "task_family": "pick_two_obj_and_place",
+      "terminal_footprint_class": "DIRECT_TERMINAL_IMPACT"
+    },
+    {
+      "group_id": "c1c8dfd11640e1f96a5cbf755bf197991274e91981afafffcbd5d2ac03ef29a0",
+      "group_manifest_sha256": "16cae16c3b0ae8111fb4938426b4dc8fc0c9370ab14cd3df86e25e18f88592db",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "DOWNSTREAM_SYMPTOM",
+      "mechanical_signature_sha256": "61342b22b0908737dea33ae4425d0c15e4bd9f9a779441af96cbcb1d2c01bea2",
+      "membership_records": [
+        {
+          "error_instance_id": "error_budget_exhaustion",
+          "gamefile_sha256": "42625c9a74dfed0327d0ae19d392d4cfb1e0b06f44a955d76713985e93839039",
+          "group_id": "c1c8dfd11640e1f96a5cbf755bf197991274e91981afafffcbd5d2ac03ef29a0",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "aa48a34ad31eaf6f80fa517845c77241731a2228803bdede2f0904a20f01a620",
+          "membership_sha256": "76fba7cba50195cd66e9d968bf7a6f4677f535e5bd9fb6675d8ad108a73cf6bb",
+          "primary_group_key_sha256": "c1c8dfd11640e1f96a5cbf755bf197991274e91981afafffcbd5d2ac03ef29a0",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "look_at_obj_in_light",
+          "task_id": "alfworld_train_all3553_0176"
+        }
+      ],
+      "membership_sha256s": [
+        "76fba7cba50195cd66e9d968bf7a6f4677f535e5bd9fb6675d8ad108a73cf6bb"
+      ],
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "aa48a34ad31eaf6f80fa517845c77241731a2228803bdede2f0904a20f01a620"
+      ],
+      "task_family": "look_at_obj_in_light",
+      "terminal_footprint_class": "DIRECT_TERMINAL_IMPACT"
+    },
+    {
+      "group_id": "c57dcac2a83438cd2442f2b01c31590c81012687425e8a762b5bd9b3f15c8f5e",
+      "group_manifest_sha256": "5aa86647eced231f923948eec80f44d0cb2635083d6f89b580c3a4692f1e2274",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "RESOLVED",
+      "mechanical_signature_sha256": "2e7b26a55a80ad3c97fea73e9b2bb80a588f5bea245561ae310391f919f9049a",
+      "membership_records": [
+        {
+          "error_instance_id": "E3_INTERMITTENT_MENU_MISMATCHES",
+          "gamefile_sha256": "7340690be29dc17912d639e93b954e80ac785cc65a6d36ee34f4b579e272a9af",
+          "group_id": "c57dcac2a83438cd2442f2b01c31590c81012687425e8a762b5bd9b3f15c8f5e",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "c66bfeca7485d653c12da2017d5ccf68730b1b86708f6b0e7fdb504c1a90eb04",
+          "membership_sha256": "8ba2760f56a271d346fc1c8dde417314634bc3577a75665dbfb0c03b69c31283",
+          "primary_group_key_sha256": "c57dcac2a83438cd2442f2b01c31590c81012687425e8a762b5bd9b3f15c8f5e",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_and_place_simple",
+          "task_id": "alfworld_train_all3553_1030"
+        }
+      ],
+      "membership_sha256s": [
+        "8ba2760f56a271d346fc1c8dde417314634bc3577a75665dbfb0c03b69c31283"
+      ],
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "c66bfeca7485d653c12da2017d5ccf68730b1b86708f6b0e7fdb504c1a90eb04"
+      ],
+      "task_family": "pick_and_place_simple",
+      "terminal_footprint_class": "BUDGET_ONLY_IMPACT"
+    },
+    {
+      "group_id": "c7df488713c2b9d7ec5312ed6a9d2153320c8ef2432c7a56040cd4d688fe7bcd",
+      "group_manifest_sha256": "31e5afd4ea22ccc4402b6b762b7c7fcabddcc0c4510d4675bdcc18b60aaaad5f",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "ACTIVE",
+      "mechanical_signature_sha256": "61342b22b0908737dea33ae4425d0c15e4bd9f9a779441af96cbcb1d2c01bea2",
+      "membership_records": [
+        {
+          "error_instance_id": "ERR-2-WRONG-GOAL-OBJECT-ACQUISITION",
+          "gamefile_sha256": "5cfb85dcd26bebdaadcf9fd051c1cd0841cdbc9f161c47209d6e58a4d5729601",
+          "group_id": "c7df488713c2b9d7ec5312ed6a9d2153320c8ef2432c7a56040cd4d688fe7bcd",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "f9df42a955607a1f7dfe082c42cc3acc18b8d69fbe515a14ce08288253a4de5e",
+          "membership_sha256": "30b2e76c26c83fa4c62ccdd5bebd5ff6ac558825b7088d471b5e3ff638598eec",
+          "primary_group_key_sha256": "c7df488713c2b9d7ec5312ed6a9d2153320c8ef2432c7a56040cd4d688fe7bcd",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_two_obj_and_place",
+          "task_id": "alfworld_train_all3553_2774"
+        }
+      ],
+      "membership_sha256s": [
+        "30b2e76c26c83fa4c62ccdd5bebd5ff6ac558825b7088d471b5e3ff638598eec"
+      ],
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "f9df42a955607a1f7dfe082c42cc3acc18b8d69fbe515a14ce08288253a4de5e"
+      ],
+      "task_family": "pick_two_obj_and_place",
+      "terminal_footprint_class": "UNCERTAIN"
+    },
+    {
+      "group_id": "cbc1a5f61b01575b12b2fdc2f36a29053655d1f74ac7fa9a661feaf1cccfbf5e",
+      "group_manifest_sha256": "df6184c4ca4fc09582eb9aae1ba1abf09ac9a2663202ed658e35a4a978609f82",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "RESOLVED",
+      "mechanical_signature_sha256": "e005206dfceab91441f345dbc9051b07ac011e7307d8141a5016b70dc6f38db0",
+      "membership_records": [
+        {
+          "error_instance_id": "E1_INADMISSIBLE_LOCATION_REPEAT",
+          "gamefile_sha256": "8f5d434e25d1c91f7a718aed30c38605415f2353d71cdeae616c896fd0deb627",
+          "group_id": "cbc1a5f61b01575b12b2fdc2f36a29053655d1f74ac7fa9a661feaf1cccfbf5e",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "53b5bc7a2c7d66fd69a3ad68e26e71c321257839fa46d1026e8a9da14c2c8be9",
+          "membership_sha256": "2249efafd34642db57987f7da9b9e74a58fff581a2ebda8c5f39b864bae3e4ea",
+          "primary_group_key_sha256": "cbc1a5f61b01575b12b2fdc2f36a29053655d1f74ac7fa9a661feaf1cccfbf5e",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_cool_then_place_in_recep",
+          "task_id": "alfworld_train_all3553_2157"
+        }
+      ],
+      "membership_sha256s": [
+        "2249efafd34642db57987f7da9b9e74a58fff581a2ebda8c5f39b864bae3e4ea"
+      ],
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "53b5bc7a2c7d66fd69a3ad68e26e71c321257839fa46d1026e8a9da14c2c8be9"
+      ],
+      "task_family": "pick_cool_then_place_in_recep",
+      "terminal_footprint_class": "RECOVERED_NO_TERMINAL_IMPACT"
+    },
+    {
+      "group_id": "ce70bbe38be49460f3b8e743dd7b87570d38bf99fd12fb66fbcf165f75cf80f8",
+      "group_manifest_sha256": "3fe3c5b62418ce1fa4b986f0fd5813d77b1346b189493289fe530028e952d7fe",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "ACTIVE",
+      "mechanical_signature_sha256": "509491af41fe521621d9ec081a2cf13ecad9a122fbaf73e334b295105e31ac01",
+      "membership_records": [
+        {
+          "error_instance_id": "ERR_INITIAL_INADMISSIBLE_NAVIGATION",
+          "gamefile_sha256": "c8577cad98c9098b89f371cc1cba2dd1e2a7eae709c1dfc982c4d53135d3d158",
+          "group_id": "ce70bbe38be49460f3b8e743dd7b87570d38bf99fd12fb66fbcf165f75cf80f8",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "ea5560eca15ba8d5639f3660d1a63854ecea61e494e012ae5b7af52f5419e32b",
+          "membership_sha256": "9e0cca4e2d2109620066b94a843a6c593eff0242e988e5f9d405f47dc7647310",
+          "primary_group_key_sha256": "ce70bbe38be49460f3b8e743dd7b87570d38bf99fd12fb66fbcf165f75cf80f8",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_heat_then_place_in_recep",
+          "task_id": "alfworld_train_all3553_2673"
+        }
+      ],
+      "membership_sha256s": [
+        "9e0cca4e2d2109620066b94a843a6c593eff0242e988e5f9d405f47dc7647310"
+      ],
+      "progress_signature_sha256": "8945e9d7ad8faacc421ed8528ea7d261beb85c6b5850536065d2da90bf866a11",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "ea5560eca15ba8d5639f3660d1a63854ecea61e494e012ae5b7af52f5419e32b"
+      ],
+      "task_family": "pick_heat_then_place_in_recep",
+      "terminal_footprint_class": "BUDGET_ONLY_IMPACT"
+    },
+    {
+      "group_id": "da8018bf6aebf67a16efda010d673c0722e842079b2cdec7020edf96ddfd975e",
+      "group_manifest_sha256": "b8da99e89a182fef7f96fc7da768dac4c151f0860074819d31fd655c6066155a",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "RESOLVED",
+      "mechanical_signature_sha256": "11e1181ba549f59276ad799b0b01ef87717605f2680f55da8945c1a217b1b16d",
+      "membership_records": [
+        {
+          "error_instance_id": "ERR-INADMISSIBLE-COUNTERTOP-NAVIGATION",
+          "gamefile_sha256": "a67c6b05be6b77f5e97153cc272ccdc8d3e24e978845e79a736a2cf11f09f575",
+          "group_id": "da8018bf6aebf67a16efda010d673c0722e842079b2cdec7020edf96ddfd975e",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "56b319c7d3b4f1d507e17271aa0b854a5e0808c2b5da10c2257f86446d76a55e",
+          "membership_sha256": "cc24f7d3dc7c3a8dc0e01e74191c7af2b6909fab0b6a5d0a21885d5967b84996",
+          "primary_group_key_sha256": "da8018bf6aebf67a16efda010d673c0722e842079b2cdec7020edf96ddfd975e",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_heat_then_place_in_recep",
+          "task_id": "alfworld_train_all3553_2566"
+        }
+      ],
+      "membership_sha256s": [
+        "cc24f7d3dc7c3a8dc0e01e74191c7af2b6909fab0b6a5d0a21885d5967b84996"
+      ],
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "56b319c7d3b4f1d507e17271aa0b854a5e0808c2b5da10c2257f86446d76a55e"
+      ],
+      "task_family": "pick_heat_then_place_in_recep",
+      "terminal_footprint_class": "RECOVERED_NO_TERMINAL_IMPACT"
+    },
+    {
+      "group_id": "dba2a9650778e33501cefbae4d6a2e864688ca021c13f2dc1a4713b4142100c8",
+      "group_manifest_sha256": "751e921fb8ceb53ae1c4d09ce6f9785a3b71b8d036ca3176d3e42fcdda708562",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "RESOLVED",
+      "mechanical_signature_sha256": "d32645f5ebadadf4f1d7d8ce9dc63996024940e51a5459505bfcb068b9625495",
+      "membership_records": [
+        {
+          "error_instance_id": "E1_MULTILINE_PROTOCOL_FAILURE",
+          "gamefile_sha256": "1770bffdd172ab91e60f55b9e5fbef516182f077a8258e0b5ba588ef15e307b2",
+          "group_id": "dba2a9650778e33501cefbae4d6a2e864688ca021c13f2dc1a4713b4142100c8",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "5c2fc4b144e92271938ec8475229c6c7ca415400a8eb5c190f8bea4d4635bd6a",
+          "membership_sha256": "c97f54fb718760276465b31b4e2d9a363e5b599c4d638957a058369d95f5d581",
+          "primary_group_key_sha256": "dba2a9650778e33501cefbae4d6a2e864688ca021c13f2dc1a4713b4142100c8",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_two_obj_and_place",
+          "task_id": "alfworld_train_all3553_3200"
+        }
+      ],
+      "membership_sha256s": [
+        "c97f54fb718760276465b31b4e2d9a363e5b599c4d638957a058369d95f5d581"
+      ],
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "5c2fc4b144e92271938ec8475229c6c7ca415400a8eb5c190f8bea4d4635bd6a"
+      ],
+      "task_family": "pick_two_obj_and_place",
+      "terminal_footprint_class": "BUDGET_ONLY_IMPACT"
+    },
+    {
+      "group_id": "dbee0e9e92d0f601e23c6445a552c53e4260a5ce5d0ce3684f202a4ce3b307cd",
+      "group_manifest_sha256": "f6e8c9d7a4b720757dc664a24dfb1b8fd4df45141606797079059ef8878b6e04",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "ACTIVE",
+      "mechanical_signature_sha256": "406e106f8a812bae2c618cca2ac0a793eb350494062c0c316a319b357734a8b4",
+      "membership_records": [
+        {
+          "error_instance_id": "ERR_FEEDBACK_NONADAPTATION",
+          "gamefile_sha256": "b7fd597c8603faea9755827382517d6970120b3f0f8805ed7f8060b26c5c9fd6",
+          "group_id": "dbee0e9e92d0f601e23c6445a552c53e4260a5ce5d0ce3684f202a4ce3b307cd",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "f69da5f566fc9627828738f4adba4ee484dafdbd3965807ff07d4ab1d07e6884",
+          "membership_sha256": "065a6d53296b8c62f744971b52e627bc8c6bcea6bdf936e01158d5ffe490d1b0",
+          "primary_group_key_sha256": "dbee0e9e92d0f601e23c6445a552c53e4260a5ce5d0ce3684f202a4ce3b307cd",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "look_at_obj_in_light",
+          "task_id": "alfworld_train_all3553_0225"
+        },
+        {
+          "error_instance_id": "error-post-feedback-perseveration",
+          "gamefile_sha256": "ee2a98a4af02f4546c932745e77aa0ff85f0dfe1f59d28aa025d95fd83462abd",
+          "group_id": "dbee0e9e92d0f601e23c6445a552c53e4260a5ce5d0ce3684f202a4ce3b307cd",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "856749aa36e54688b928ec7a2811c381ce0b155bea5a5ac96fba119892e6506b",
+          "membership_sha256": "a814cc3086fbf7e1bdc9065cafc8117f0518f545f8849bfd182643192ff6e3bf",
+          "primary_group_key_sha256": "dbee0e9e92d0f601e23c6445a552c53e4260a5ce5d0ce3684f202a4ce3b307cd",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "look_at_obj_in_light",
+          "task_id": "alfworld_train_all3553_0121"
+        }
+      ],
+      "membership_sha256s": [
+        "065a6d53296b8c62f744971b52e627bc8c6bcea6bdf936e01158d5ffe490d1b0",
+        "a814cc3086fbf7e1bdc9065cafc8117f0518f545f8849bfd182643192ff6e3bf"
+      ],
+      "progress_signature_sha256": "fa53842c1ffedd1c5260e51156892d0ef4d1918d5d8d2fa22664300e37d9976a",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "856749aa36e54688b928ec7a2811c381ce0b155bea5a5ac96fba119892e6506b",
+        "f69da5f566fc9627828738f4adba4ee484dafdbd3965807ff07d4ab1d07e6884"
+      ],
+      "task_family": "look_at_obj_in_light",
+      "terminal_footprint_class": "DIRECT_TERMINAL_IMPACT"
+    },
+    {
+      "group_id": "e2ffc9712dc22b4fbef2cb6954d74d20a837dc2acfa2c80545cf92e0293f6712",
+      "group_manifest_sha256": "b544afe10beed8b2b17974b82a674d1f9c6d192e1731c8c24a97046ad9a1f2e8",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "RESOLVED",
+      "mechanical_signature_sha256": "d32645f5ebadadf4f1d7d8ce9dc63996024940e51a5459505bfcb068b9625495",
+      "membership_records": [
+        {
+          "error_instance_id": "E4_MULTILINE_ACTION_PROTOCOL_FAILURE",
+          "gamefile_sha256": "7340690be29dc17912d639e93b954e80ac785cc65a6d36ee34f4b579e272a9af",
+          "group_id": "e2ffc9712dc22b4fbef2cb6954d74d20a837dc2acfa2c80545cf92e0293f6712",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "c66bfeca7485d653c12da2017d5ccf68730b1b86708f6b0e7fdb504c1a90eb04",
+          "membership_sha256": "61eff997d68c9a9970489ecd06e05dc5369b5e3e14c4e13a71e9b6bf4ca9d4b9",
+          "primary_group_key_sha256": "e2ffc9712dc22b4fbef2cb6954d74d20a837dc2acfa2c80545cf92e0293f6712",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_and_place_simple",
+          "task_id": "alfworld_train_all3553_1030"
+        }
+      ],
+      "membership_sha256s": [
+        "61eff997d68c9a9970489ecd06e05dc5369b5e3e14c4e13a71e9b6bf4ca9d4b9"
+      ],
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "c66bfeca7485d653c12da2017d5ccf68730b1b86708f6b0e7fdb504c1a90eb04"
+      ],
+      "task_family": "pick_and_place_simple",
+      "terminal_footprint_class": "BUDGET_ONLY_IMPACT"
+    },
+    {
+      "group_id": "ea24ff6451106b1632761bf31b1a99c979654643e8cc37386b539a46e688a84e",
+      "group_manifest_sha256": "c6e31908658011c9aee5b7bf1419876f44413e1626c117ead005161a6880f9c5",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "ACTIVE",
+      "mechanical_signature_sha256": "d31d5d2d3b575846e8a4638184a97f174e34b39fe3b56fb485fddc36a79a93ea",
+      "membership_records": [
+        {
+          "error_instance_id": "ERR-REPEATED-NO-EFFECT-EXAMINATION",
+          "gamefile_sha256": "a67c6b05be6b77f5e97153cc272ccdc8d3e24e978845e79a736a2cf11f09f575",
+          "group_id": "ea24ff6451106b1632761bf31b1a99c979654643e8cc37386b539a46e688a84e",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "56b319c7d3b4f1d507e17271aa0b854a5e0808c2b5da10c2257f86446d76a55e",
+          "membership_sha256": "d2c5c3df753b90167df9f960272139647ea9478f59d471a99268dd7983d66827",
+          "primary_group_key_sha256": "ea24ff6451106b1632761bf31b1a99c979654643e8cc37386b539a46e688a84e",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_heat_then_place_in_recep",
+          "task_id": "alfworld_train_all3553_2566"
+        }
+      ],
+      "membership_sha256s": [
+        "d2c5c3df753b90167df9f960272139647ea9478f59d471a99268dd7983d66827"
+      ],
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "56b319c7d3b4f1d507e17271aa0b854a5e0808c2b5da10c2257f86446d76a55e"
+      ],
+      "task_family": "pick_heat_then_place_in_recep",
+      "terminal_footprint_class": "DIRECT_TERMINAL_IMPACT"
+    },
+    {
+      "group_id": "ea62e6046a29eb41f053a8ed8a2619f3ba3a30dc718612f13ae54f17cd7c7209",
+      "group_manifest_sha256": "c02e27b5d189666f6bbdba96fbb73926bad836208bf2e5ed6717d36e1523dafb",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "ACTIVE",
+      "mechanical_signature_sha256": "10db38f3f598c0e69869e440d1dfba7503e2aa82011144a57d9a134b65a2c601",
+      "membership_records": [
+        {
+          "error_instance_id": "ERR-2-REPEATED-COOLING-AFTER-TREATMENT",
+          "gamefile_sha256": "d898a97ab5b5e44f006e565155c20ff464051d2d15645f88080e8482153ecee9",
+          "group_id": "ea62e6046a29eb41f053a8ed8a2619f3ba3a30dc718612f13ae54f17cd7c7209",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "b1e6ff320b538ded90a43385be1fc025be03235f25175526872d2bdb39832fe1",
+          "membership_sha256": "5a9cd16d6c28bff892decbcad717db183a7499d12d8a13cabe4ebd7d6d71d688",
+          "primary_group_key_sha256": "ea62e6046a29eb41f053a8ed8a2619f3ba3a30dc718612f13ae54f17cd7c7209",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_cool_then_place_in_recep",
+          "task_id": "alfworld_train_all3553_1844"
+        }
+      ],
+      "membership_sha256s": [
+        "5a9cd16d6c28bff892decbcad717db183a7499d12d8a13cabe4ebd7d6d71d688"
+      ],
+      "progress_signature_sha256": "e65d5d6f9e39e314e82b8041ea78cf3e907c1f47b7cd9fe2f7f34b1662e34b2c",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "b1e6ff320b538ded90a43385be1fc025be03235f25175526872d2bdb39832fe1"
+      ],
+      "task_family": "pick_cool_then_place_in_recep",
+      "terminal_footprint_class": "DIRECT_TERMINAL_IMPACT"
+    },
+    {
+      "group_id": "ea7ab3f220d29f46c31f7dc4edda8902a4bd100a80775561c248d5e4f6c7b875",
+      "group_manifest_sha256": "7e2fa5f5d0c95cfaba5fa567677de293251d2d56565f7ffe811f0e35b64210d2",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "ACTIVE",
+      "mechanical_signature_sha256": "e2e1ad410f21b2df9ceb1e26b5f2c784fa5c3380c2d75133ebfb433b97b55ffd",
+      "membership_records": [
+        {
+          "error_instance_id": "E3_NO_EFFECT_EXAMINATION_PERSEVERATION",
+          "gamefile_sha256": "e461315318ac70a4fa0ed657cba7f35608a6f17c4221b5468428ef23d7f2406b",
+          "group_id": "ea7ab3f220d29f46c31f7dc4edda8902a4bd100a80775561c248d5e4f6c7b875",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "3978bad8c019dad3bd4aa4abc7b890d0f5bac791ebd31337093147e0b2685b12",
+          "membership_sha256": "d360c905daa00fc0adca3c0ea6e4ac591733281a98189bea91d7c3e84a45c1d6",
+          "primary_group_key_sha256": "ea7ab3f220d29f46c31f7dc4edda8902a4bd100a80775561c248d5e4f6c7b875",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_cool_then_place_in_recep",
+          "task_id": "alfworld_train_all3553_1999"
+        }
+      ],
+      "membership_sha256s": [
+        "d360c905daa00fc0adca3c0ea6e4ac591733281a98189bea91d7c3e84a45c1d6"
+      ],
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "3978bad8c019dad3bd4aa4abc7b890d0f5bac791ebd31337093147e0b2685b12"
+      ],
+      "task_family": "pick_cool_then_place_in_recep",
+      "terminal_footprint_class": "DIRECT_TERMINAL_IMPACT"
+    },
+    {
+      "group_id": "ecca1769b9b1d0ef52d89c219f5288753804d1aa540215fd7631bec5419b0471",
+      "group_manifest_sha256": "6dd2e71540bf87614ddd04fb0a6ab63305d693a598f14e5fd3477011aaed3d64",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "RESOLVED",
+      "mechanical_signature_sha256": "e005206dfceab91441f345dbc9051b07ac011e7307d8141a5016b70dc6f38db0",
+      "membership_records": [
+        {
+          "error_instance_id": "E2-FIRST-CURRENT-LOCATION-INVALID-ACTION",
+          "gamefile_sha256": "369ac860856a3102ee6a7995d1317c60f409550bb2cf695ad29909cc11854bf5",
+          "group_id": "ecca1769b9b1d0ef52d89c219f5288753804d1aa540215fd7631bec5419b0471",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "cc936c5ffaed4602cb04374efa9b01ad346fe9cb6b4547a527789b64e58f92a3",
+          "membership_sha256": "3cc407b282ba4de3cd288c17b705b89acf78965f849bc61d23ebac7c8a339dd0",
+          "primary_group_key_sha256": "ecca1769b9b1d0ef52d89c219f5288753804d1aa540215fd7631bec5419b0471",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_heat_then_place_in_recep",
+          "task_id": "alfworld_train_all3553_2576"
+        },
+        {
+          "error_instance_id": "E3-SECOND-CURRENT-LOCATION-INVALID-ACTION",
+          "gamefile_sha256": "369ac860856a3102ee6a7995d1317c60f409550bb2cf695ad29909cc11854bf5",
+          "group_id": "ecca1769b9b1d0ef52d89c219f5288753804d1aa540215fd7631bec5419b0471",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "cc936c5ffaed4602cb04374efa9b01ad346fe9cb6b4547a527789b64e58f92a3",
+          "membership_sha256": "e888fb4ebcbd9f0b29b3530a56433634cb00b52830ae9116dc6a2252d4ce85be",
+          "primary_group_key_sha256": "ecca1769b9b1d0ef52d89c219f5288753804d1aa540215fd7631bec5419b0471",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_heat_then_place_in_recep",
+          "task_id": "alfworld_train_all3553_2576"
+        }
+      ],
+      "membership_sha256s": [
+        "3cc407b282ba4de3cd288c17b705b89acf78965f849bc61d23ebac7c8a339dd0",
+        "e888fb4ebcbd9f0b29b3530a56433634cb00b52830ae9116dc6a2252d4ce85be"
+      ],
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "cc936c5ffaed4602cb04374efa9b01ad346fe9cb6b4547a527789b64e58f92a3"
+      ],
+      "task_family": "pick_heat_then_place_in_recep",
+      "terminal_footprint_class": "BUDGET_ONLY_IMPACT"
+    },
+    {
+      "group_id": "ecde331c83130af95bb60da472b48972817f9bf1c7e1298ebcb8e688c905637c",
+      "group_manifest_sha256": "8ced118050ddae48d793979b32e8dd3f661988cae5394aebb9477c9e9f6a63a7",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "ACTIVE",
+      "mechanical_signature_sha256": "ce3feb5270c1b62158663799158c0398c406ca1c4fc7254187f2854e78063094",
+      "membership_records": [
+        {
+          "error_instance_id": "E1_POST_ACQUISITION_TREATMENT_OMISSION",
+          "gamefile_sha256": "d3520e1974584c294781adafcc3dea6ea6aa005c8c7db128bf2f4d9a1c260534",
+          "group_id": "ecde331c83130af95bb60da472b48972817f9bf1c7e1298ebcb8e688c905637c",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "30f23ca3f30dcbbec40587639ffef271cd32b86e2b7a8b677baa16bda31972b6",
+          "membership_sha256": "4b9077681d8a2788b82b70b4820a4f85ab64dfd53682e972fad4e4c36c9a5425",
+          "primary_group_key_sha256": "ecde331c83130af95bb60da472b48972817f9bf1c7e1298ebcb8e688c905637c",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_clean_then_place_in_recep",
+          "task_id": "alfworld_train_all3553_1605"
+        }
+      ],
+      "membership_sha256s": [
+        "4b9077681d8a2788b82b70b4820a4f85ab64dfd53682e972fad4e4c36c9a5425"
+      ],
+      "progress_signature_sha256": "8945e9d7ad8faacc421ed8528ea7d261beb85c6b5850536065d2da90bf866a11",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "30f23ca3f30dcbbec40587639ffef271cd32b86e2b7a8b677baa16bda31972b6"
+      ],
+      "task_family": "pick_clean_then_place_in_recep",
+      "terminal_footprint_class": "DIRECT_TERMINAL_IMPACT"
+    },
+    {
+      "group_id": "f03c209a86a11a0eea7ee622a3131a7c9c604ff914c9ace263a80fef00d065af",
+      "group_manifest_sha256": "2ececc2df8cf70e632eeb40166403539b142503df0ad92ac6a18e8289b2aee8e",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "RESOLVED",
+      "mechanical_signature_sha256": "871bde16d8e5af43a2841f27c14372fcb5b3f3a96be87d7f5709285b6b134939",
+      "membership_records": [
+        {
+          "error_instance_id": "E2_IRRELEVANT_TOOL_DETOUR",
+          "gamefile_sha256": "8f5d434e25d1c91f7a718aed30c38605415f2353d71cdeae616c896fd0deb627",
+          "group_id": "f03c209a86a11a0eea7ee622a3131a7c9c604ff914c9ace263a80fef00d065af",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "53b5bc7a2c7d66fd69a3ad68e26e71c321257839fa46d1026e8a9da14c2c8be9",
+          "membership_sha256": "e5704dacaa7b2011100e995423f74135f6bd9d34ccef04cb67333c3af33839c5",
+          "primary_group_key_sha256": "f03c209a86a11a0eea7ee622a3131a7c9c604ff914c9ace263a80fef00d065af",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_cool_then_place_in_recep",
+          "task_id": "alfworld_train_all3553_2157"
+        }
+      ],
+      "membership_sha256s": [
+        "e5704dacaa7b2011100e995423f74135f6bd9d34ccef04cb67333c3af33839c5"
+      ],
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "53b5bc7a2c7d66fd69a3ad68e26e71c321257839fa46d1026e8a9da14c2c8be9"
+      ],
+      "task_family": "pick_cool_then_place_in_recep",
+      "terminal_footprint_class": "BUDGET_ONLY_IMPACT"
+    },
+    {
+      "group_id": "f129df812abe9afd00dd13033261d9b066c7b440ccb5445467a7cf2e11de2066",
+      "group_manifest_sha256": "3c8b297f152c63921f203b91afdc7223d16def24a00a22d6b1c2e0f18bee7d70",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "RESOLVED",
+      "mechanical_signature_sha256": "c1a9f094951cdd6abedbaf57c000dcfd9f3b0478c8b90c4855a0bcc937e20a39",
+      "membership_records": [
+        {
+          "error_instance_id": "E2_RECURRENT_CURRENT_LOCATION_NAVIGATION",
+          "gamefile_sha256": "e461315318ac70a4fa0ed657cba7f35608a6f17c4221b5468428ef23d7f2406b",
+          "group_id": "f129df812abe9afd00dd13033261d9b066c7b440ccb5445467a7cf2e11de2066",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "3978bad8c019dad3bd4aa4abc7b890d0f5bac791ebd31337093147e0b2685b12",
+          "membership_sha256": "0afbc4cc67de07c568daa7fb24619b567520a8e52313137f500ebd7dd03e9f75",
+          "primary_group_key_sha256": "f129df812abe9afd00dd13033261d9b066c7b440ccb5445467a7cf2e11de2066",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_cool_then_place_in_recep",
+          "task_id": "alfworld_train_all3553_1999"
+        }
+      ],
+      "membership_sha256s": [
+        "0afbc4cc67de07c568daa7fb24619b567520a8e52313137f500ebd7dd03e9f75"
+      ],
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "3978bad8c019dad3bd4aa4abc7b890d0f5bac791ebd31337093147e0b2685b12"
+      ],
+      "task_family": "pick_cool_then_place_in_recep",
+      "terminal_footprint_class": "UNCERTAIN"
+    },
+    {
+      "group_id": "f4b37b03cd34b80c08b1b4264311d2fc5b8866651869a076512a4ea9ca2c8d1a",
+      "group_manifest_sha256": "61fce68463d898eba8f08500919db6ade5226e2ad64ad7a0f23beac0127fc034",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "ACTIVE",
+      "mechanical_signature_sha256": "3e3114965456d7f2b79b05a83174e0c9d8280a55f61d5aab5b1b8fd09b1d34dd",
+      "membership_records": [
+        {
+          "error_instance_id": "E1_GOAL_OBJECT_MISMATCH",
+          "gamefile_sha256": "3d0326a76807b1bfbe7c84d1d0f8799eb455b577b6d9b4439d6100c8808a634f",
+          "group_id": "f4b37b03cd34b80c08b1b4264311d2fc5b8866651869a076512a4ea9ca2c8d1a",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "831c70e9736c36721d34568c1b6cbed5fe3894961c141df8cf2ea366d17d0ae7",
+          "membership_sha256": "a731428942fa545ed8d39ba2909e36d6f89e7e0dd4de5ca6910ba48eb67fb529",
+          "primary_group_key_sha256": "f4b37b03cd34b80c08b1b4264311d2fc5b8866651869a076512a4ea9ca2c8d1a",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_and_place_simple",
+          "task_id": "alfworld_train_all3553_0399"
+        }
+      ],
+      "membership_sha256s": [
+        "a731428942fa545ed8d39ba2909e36d6f89e7e0dd4de5ca6910ba48eb67fb529"
+      ],
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "831c70e9736c36721d34568c1b6cbed5fe3894961c141df8cf2ea366d17d0ae7"
+      ],
+      "task_family": "pick_and_place_simple",
+      "terminal_footprint_class": "DIRECT_TERMINAL_IMPACT"
+    },
+    {
+      "group_id": "f95cb1b80b026e3ff9d07881c879ea1e56f182726e4b9caa85242c7d515ffb7f",
+      "group_manifest_sha256": "a32a96a374a98891b95d2eb12ad71ba251636d9ff3182df22166a4ef8907b38b",
+      "inference_cluster_unit": "TASK_GAMEFILE",
+      "lifecycle_signature": "ACTIVE",
+      "mechanical_signature_sha256": "509491af41fe521621d9ec081a2cf13ecad9a122fbaf73e334b295105e31ac01",
+      "membership_records": [
+        {
+          "error_instance_id": "error-1-initial-unsupported-take",
+          "gamefile_sha256": "cd1103f397224ace5a48cd2ec29a1352b7148d6df088a0f194ddd0f5bf71cfdf",
+          "group_id": "f95cb1b80b026e3ff9d07881c879ea1e56f182726e4b9caa85242c7d515ffb7f",
+          "inference_cluster_unit": "TASK_GAMEFILE",
+          "local_result_sha256": "71595694a62552d1d5f75e74b2e784ca0c5b1839e120b0446913e07f4660a5af",
+          "membership_sha256": "45d3bf79986f61acb2e935bbc85be892a87c21673d5fc5898b097e330b64f606",
+          "primary_group_key_sha256": "f95cb1b80b026e3ff9d07881c879ea1e56f182726e4b9caa85242c7d515ffb7f",
+          "schema_id": "ANALYZER_ERROR_INSTANCE_MEMBERSHIP_V1",
+          "schema_version": 1,
+          "task_family": "pick_two_obj_and_place",
+          "task_id": "alfworld_train_all3553_3375"
+        }
+      ],
+      "membership_sha256s": [
+        "45d3bf79986f61acb2e935bbc85be892a87c21673d5fc5898b097e330b64f606"
+      ],
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "schema_id": "ANALYZER_GROUP_MANIFEST_V1",
+      "schema_version": 1,
+      "source_local_result_sha256s": [
+        "71595694a62552d1d5f75e74b2e784ca0c5b1839e120b0446913e07f4660a5af"
+      ],
+      "task_family": "pick_two_obj_and_place",
+      "terminal_footprint_class": "BUDGET_ONLY_IMPACT"
+    }
+  ],
+  "schema_id": "ANALYZER_GROUP_COLLECTION_V1"
+}

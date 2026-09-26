@@ -1,0 +1,137 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "MEMORY_A0_SCIENTIFIC_MANIFEST_V1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_id",
+    "schema_version",
+    "engineering_base_head",
+    "effect_scope",
+    "authority",
+    "paper_main_representation_claim_authorized",
+    "a1_status",
+    "scientific_execution_authorized",
+    "sources",
+    "cells",
+    "manifest_sha256"
+  ],
+  "properties": {
+    "schema_id": {"const": "MEMORY_A0_SCIENTIFIC_MANIFEST_V1"},
+    "schema_version": {"const": 1},
+    "engineering_base_head": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "effect_scope": {"const": "SOURCE_STATE_LOCAL_PAIRED"},
+    "authority": {"const": "LOCAL_MECHANISM_REPRESENTATION_PROBE_ONLY"},
+    "paper_main_representation_claim_authorized": {"const": false},
+    "a1_status": {"const": "OPTIONAL_CONDITIONAL"},
+    "scientific_execution_authorized": {"const": false},
+    "sources": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {"$ref": "#/$defs/source"}
+    },
+    "cells": {
+      "type": "array",
+      "minItems": 12,
+      "maxItems": 12,
+      "items": {"$ref": "#/$defs/cell"}
+    },
+    "manifest_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "$defs": {
+    "arm": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "arm_id",
+        "representation_class",
+        "availability",
+        "artifact_sha256",
+        "policy_payload_sha256",
+        "token_count",
+        "retrieval_mode"
+      ],
+      "properties": {
+        "arm_id": {"enum": ["M0", "M1", "M2", "M3"]},
+        "representation_class": {"type": "string", "minLength": 1},
+        "availability": {"const": "AVAILABLE"},
+        "artifact_sha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+        "policy_payload_sha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+        "token_count": {"type": "integer", "minimum": 0},
+        "retrieval_mode": {"const": "DIRECT_FIXED_RECORD_NO_RETRIEVAL"}
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_state_id",
+        "source_task_id",
+        "task_gamefile_group_id",
+        "source_fingerprint_sha256",
+        "source_bundle_sha256",
+        "memory_lineage_id",
+        "record_version",
+        "snapshot_sha256",
+        "representation_template_sha256",
+        "continuation_seed",
+        "arms"
+      ],
+      "properties": {
+        "source_state_id": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "source_task_id": {"type": "string", "minLength": 1},
+        "task_gamefile_group_id": {"type": "string", "minLength": 1},
+        "source_fingerprint_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "source_bundle_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "memory_lineage_id": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "record_version": {"type": "integer", "minimum": 1},
+        "snapshot_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "representation_template_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "continuation_seed": {"type": "integer", "minimum": 0},
+        "arms": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 4,
+          "items": {"$ref": "#/$defs/arm"}
+        }
+      }
+    },
+    "cell": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_state_id",
+        "source_task_id",
+        "task_gamefile_group_id",
+        "source_fingerprint_sha256",
+        "source_bundle_sha256",
+        "memory_lineage_id",
+        "record_version",
+        "snapshot_sha256",
+        "representation_template_sha256",
+        "continuation_seed",
+        "arm",
+        "effect_scope",
+        "scientific_execution_authorized",
+        "cell_id"
+      ],
+      "properties": {
+        "source_state_id": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "source_task_id": {"type": "string", "minLength": 1},
+        "task_gamefile_group_id": {"type": "string", "minLength": 1},
+        "source_fingerprint_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "source_bundle_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "memory_lineage_id": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "record_version": {"type": "integer", "minimum": 1},
+        "snapshot_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "representation_template_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "continuation_seed": {"type": "integer", "minimum": 0},
+        "arm": {"$ref": "#/$defs/arm"},
+        "effect_scope": {"const": "SOURCE_STATE_LOCAL_PAIRED"},
+        "scientific_execution_authorized": {"const": false},
+        "cell_id": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    }
+  }
+}

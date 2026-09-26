@@ -1,0 +1,45 @@
+{
+  "host": "ln02",
+  "rows": [
+    {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/formal_max10_v17_cpu_validation/0f9df1ba648b072aeb5bb6ec9e66bee46d997edfd9c0faa32289a470afa0f758/software_fixtures.stdout.log",
+      "sha256": "56b2e866abd4c8c0a6618349253a169a693f04c5bec1f291668d7789778037da",
+      "local_name": "software_fixtures.stdout.log",
+      "authority": "exact current CPU validation receipt",
+      "status": "READ",
+      "observed_sha256": "56b2e866abd4c8c0a6618349253a169a693f04c5bec1f291668d7789778037da",
+      "bytes": 2458
+    },
+    {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/formal_max10_v17_cpu_validation/0f9df1ba648b072aeb5bb6ec9e66bee46d997edfd9c0faa32289a470afa0f758/software_fixtures.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_name": "software_fixtures.stderr.log",
+      "authority": "exact current CPU validation receipt",
+      "status": "READ",
+      "observed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/formal_max10_v17_cpu_validation/0f9df1ba648b072aeb5bb6ec9e66bee46d997edfd9c0faa32289a470afa0f758/exact_server_preflight.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_name": "exact_server_preflight.stdout.log",
+      "authority": "exact current CPU validation receipt",
+      "status": "READ",
+      "observed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/formal_max10_v17_cpu_validation/0f9df1ba648b072aeb5bb6ec9e66bee46d997edfd9c0faa32289a470afa0f758/exact_server_preflight.stderr.log",
+      "sha256": "e6bc352c98d33073d4cceaf55b66ebd9a4bc987c61cee52a5f839c846a97a100",
+      "local_name": "exact_server_preflight.stderr.log",
+      "authority": "exact current CPU validation receipt",
+      "status": "READ",
+      "observed_sha256": "e6bc352c98d33073d4cceaf55b66ebd9a4bc987c61cee52a5f839c846a97a100",
+      "bytes": 1104
+    }
+  ],
+  "schema_id": "EXACT_REGISTERED_SSH_READ_RECEIPT_V1",
+  "remote_filesystem_mutations": 0,
+  "filesystem_discovery_used": false,
+  "scientific_execution_count": 0
+}

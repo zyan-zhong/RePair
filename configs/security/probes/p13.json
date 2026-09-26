@@ -1,0 +1,17 @@
+{
+  "execution_status": "NOT_APPROVED",
+  "expected_normalized_outcome": "DENIED",
+  "forbidden_side_effects": [
+    "host_write",
+    "network",
+    "new_privilege",
+    "unreviewed_process"
+  ],
+  "payload_id": "magiclink_escape",
+  "payload_sha256": "716c8de998e1d527f930f2c8eeef4d9296557cffd7607ceb2ed0679d789d2242",
+  "permitted_side_effects": [],
+  "probe_id": "P13",
+  "profile_id": "S1_PRODUCTION_V1",
+  "schema_version": 1,
+  "timeout_seconds": 10
+}

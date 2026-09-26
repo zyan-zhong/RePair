@@ -1,0 +1,100 @@
+{
+  "$id": "E1_RUN_SCHEDULE_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "cell_count": {
+      "const": 670,
+      "type": "integer"
+    },
+    "cells": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "scheduled_cell_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "seed": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "task_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "task_index": {
+            "minimum": 0,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "scheduled_cell_id",
+          "task_index",
+          "task_id",
+          "seed"
+        ],
+        "type": "object"
+      },
+      "maxItems": 670,
+      "minItems": 670,
+      "type": "array"
+    },
+    "order": {
+      "const": "seed-major",
+      "type": "string"
+    },
+    "pooled_670_iid_headline_result": {
+      "const": "forbidden",
+      "type": "string"
+    },
+    "primary_statistical_unit": {
+      "const": "unique_task",
+      "type": "string"
+    },
+    "replicate_seeds": {
+      "items": {
+        "minimum": 0,
+        "type": "integer"
+      },
+      "maxItems": 5,
+      "minItems": 5,
+      "type": "array"
+    },
+    "replicates_are_not_independent_tasks": {
+      "const": true,
+      "type": "boolean"
+    },
+    "schedule_id": {
+      "const": "E1_RUN_SCHEDULE_V1",
+      "type": "string"
+    },
+    "schema_id": {
+      "const": "E1_RUN_SCHEDULE_V1",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    },
+    "task_manifest_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "schedule_id",
+    "task_manifest_sha256",
+    "replicate_seeds",
+    "order",
+    "cell_count",
+    "primary_statistical_unit",
+    "replicates_are_not_independent_tasks",
+    "pooled_670_iid_headline_result",
+    "cells"
+  ],
+  "title": "E1 run schedule",
+  "type": "object"
+}

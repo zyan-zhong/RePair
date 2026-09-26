@@ -1,0 +1,20 @@
+{
+  "base_head": "760ed924b4cc6b443de83d45a1ae33bfbb276458",
+  "effect_authority": "INDEPENDENT_ENVIRONMENT_VERIFIER_ONLY",
+  "environment_call_count": 0,
+  "existing_analyzer_runtime_reused": true,
+  "existing_orchestrator_reused": true,
+  "existing_p2_transport_reused": true,
+  "human_gate_dependency_absent": true,
+  "local_shadow_execution_authorized": false,
+  "local_training_execution_authorized": false,
+  "model_call_count": 0,
+  "post_binds_primary_pre_not_human_pre": true,
+  "post_stage_id": "R-POST-PRIMARY-V1",
+  "pre_stage_id": "R-PRE-PRIMARY-V1",
+  "promotion_authority": "DETERMINISTIC_INDEPENDENT_GATE_ONLY",
+  "schema_id": "STAGE6B_STRONG_PRIMARY_TRANSPORT_FIXED_HEAD_V1",
+  "shadow_stages_retained": true,
+  "strong_primary_execution_authorized": false,
+  "training_execution_count": 0
+}

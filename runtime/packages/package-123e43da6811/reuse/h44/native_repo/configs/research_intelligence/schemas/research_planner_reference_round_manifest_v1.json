@@ -1,0 +1,27 @@
+{
+  "$id": "RESEARCH_PLANNER_REFERENCE_ROUND_MANIFEST_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "access_class": {"enum": ["TRAIN_REFERENCE_ROUND", "TRAIN_RESEARCH_INTELLIGENCE"], "type": "string"},
+    "environment_result_package_sha256": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+    "go_nogo_status": {"enum": ["GO", "NO_GO", "HOLD"], "type": "string"},
+    "human_post_record_sha256": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+    "human_pre_record_sha256": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+    "policy_evaluation_result_sha256": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+    "policy_lineage_sha256": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+    "post_adjudication_sha256": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+    "pre_adjudication_sha256": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+    "promotion_result": {"enum": ["PROMOTE", "ROLLBACK", "HOLD"], "type": "string"},
+    "reference_round_manifest_sha256": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+    "round_evidence_package_sha256": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+    "round_id": {"minLength": 1, "type": "string"},
+    "schema_id": {"const": "RESEARCH_PLANNER_REFERENCE_ROUND_MANIFEST_V1", "type": "string"},
+    "schema_version": {"const": 1, "type": "integer"},
+    "strong_post_shadow_sha256": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+    "strong_pre_shadow_sha256": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+    "verified_training_evidence_sha256": {"pattern": "^[0-9a-f]{64}$", "type": "string"}
+  },
+  "required": ["schema_id", "schema_version", "round_id", "policy_lineage_sha256", "round_evidence_package_sha256", "human_pre_record_sha256", "strong_pre_shadow_sha256", "pre_adjudication_sha256", "environment_result_package_sha256", "human_post_record_sha256", "strong_post_shadow_sha256", "post_adjudication_sha256", "verified_training_evidence_sha256", "policy_evaluation_result_sha256", "promotion_result", "go_nogo_status", "access_class", "reference_round_manifest_sha256"],
+  "type": "object"
+}

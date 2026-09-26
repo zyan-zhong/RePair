@@ -1,0 +1,1321 @@
+{
+  "$id": "ANALYZER_LOCAL_RESULT_V2",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "abstain_reason": {
+      "maxLength": 2048,
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "abstained": {
+      "type": "boolean"
+    },
+    "analysis_objective": {
+      "enum": [
+        "FAILURE_DIAGNOSIS",
+        "SUCCESS_QUALITY"
+      ],
+      "type": "string"
+    },
+    "analysis_time_information_boundary": {
+      "const": "POST_EPISODE_DEV_ONLY",
+      "type": "string"
+    },
+    "analyzer_run_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "type": "string"
+    },
+    "condition_id": {
+      "enum": [
+        "A0_ONE_SHOT_LOCAL",
+        "A1_MULTI_HYPOTHESIS_LOCAL"
+      ],
+      "type": "string"
+    },
+    "error_instances": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "candidate_principal": {
+            "type": "boolean"
+          },
+          "counterevidence_refs": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "artifact_sha256": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "authority": {
+                  "enum": [
+                    "DETERMINISTIC_FACT",
+                    "SEMANTIC_HYPOTHESIS"
+                  ],
+                  "type": "string"
+                },
+                "evidence_kind": {
+                  "enum": [
+                    "TRAJECTORY_CALL",
+                    "MECHANICAL_FACT",
+                    "COUNTEREXAMPLE"
+                  ],
+                  "type": "string"
+                },
+                "local_selector": {
+                  "maxLength": 512,
+                  "minLength": 1,
+                  "type": "string"
+                }
+              },
+              "required": [
+                "artifact_sha256",
+                "evidence_kind",
+                "local_selector",
+                "authority"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "critical_window_end_call_index": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "critical_window_start_call_index": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "error_instance_id": {
+            "maxLength": 256,
+            "minLength": 1,
+            "type": "string"
+          },
+          "mechanism_hypotheses": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "alternative_explanation_ids": {
+                  "items": {
+                    "maxLength": 256,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "type": "array"
+                },
+                "confidence": {
+                  "maximum": 1,
+                  "minimum": 0,
+                  "type": "number"
+                },
+                "counterevidence_refs": {
+                  "items": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "artifact_sha256": {
+                        "pattern": "^[0-9a-f]{64}$",
+                        "type": "string"
+                      },
+                      "authority": {
+                        "enum": [
+                          "DETERMINISTIC_FACT",
+                          "SEMANTIC_HYPOTHESIS"
+                        ],
+                        "type": "string"
+                      },
+                      "evidence_kind": {
+                        "enum": [
+                          "TRAJECTORY_CALL",
+                          "MECHANICAL_FACT",
+                          "COUNTEREXAMPLE"
+                        ],
+                        "type": "string"
+                      },
+                      "local_selector": {
+                        "maxLength": 512,
+                        "minLength": 1,
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "artifact_sha256",
+                      "evidence_kind",
+                      "local_selector",
+                      "authority"
+                    ],
+                    "type": "object"
+                  },
+                  "type": "array"
+                },
+                "counterevidence_status": {
+                  "enum": [
+                    "PRESENT",
+                    "NONE_FOUND_WITHIN_VISIBLE_EVIDENCE"
+                  ],
+                  "type": "string"
+                },
+                "hypothesis_id": {
+                  "maxLength": 256,
+                  "minLength": 1,
+                  "type": "string"
+                },
+                "mechanism_family": {
+                  "maxLength": 256,
+                  "minLength": 1,
+                  "type": "string"
+                },
+                "rank": {
+                  "maximum": 3,
+                  "minimum": 1,
+                  "type": "integer"
+                },
+                "statement": {
+                  "maxLength": 4096,
+                  "minLength": 1,
+                  "type": "string"
+                },
+                "supporting_evidence_refs": {
+                  "items": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "artifact_sha256": {
+                        "pattern": "^[0-9a-f]{64}$",
+                        "type": "string"
+                      },
+                      "authority": {
+                        "enum": [
+                          "DETERMINISTIC_FACT",
+                          "SEMANTIC_HYPOTHESIS"
+                        ],
+                        "type": "string"
+                      },
+                      "evidence_kind": {
+                        "enum": [
+                          "TRAJECTORY_CALL",
+                          "MECHANICAL_FACT",
+                          "COUNTEREXAMPLE"
+                        ],
+                        "type": "string"
+                      },
+                      "local_selector": {
+                        "maxLength": 512,
+                        "minLength": 1,
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "artifact_sha256",
+                      "evidence_kind",
+                      "local_selector",
+                      "authority"
+                    ],
+                    "type": "object"
+                  },
+                  "minItems": 1,
+                  "type": "array"
+                },
+                "uncertainty": {
+                  "maxLength": 2048,
+                  "minLength": 1,
+                  "type": "string"
+                }
+              },
+              "required": [
+                "hypothesis_id",
+                "rank",
+                "mechanism_family",
+                "statement",
+                "supporting_evidence_refs",
+                "counterevidence_refs",
+                "counterevidence_status",
+                "alternative_explanation_ids",
+                "confidence",
+                "uncertainty"
+              ],
+              "type": "object"
+            },
+            "maxItems": 3,
+            "type": "array"
+          },
+          "relevant_start_call_index": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "resolution_status": {
+            "enum": [
+              "ACTIVE",
+              "RESOLVED",
+              "LATENT",
+              "DOWNSTREAM_SYMPTOM"
+            ],
+            "type": "string"
+          },
+          "supporting_evidence_refs": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "artifact_sha256": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "authority": {
+                  "enum": [
+                    "DETERMINISTIC_FACT",
+                    "SEMANTIC_HYPOTHESIS"
+                  ],
+                  "type": "string"
+                },
+                "evidence_kind": {
+                  "enum": [
+                    "TRAJECTORY_CALL",
+                    "MECHANICAL_FACT",
+                    "COUNTEREXAMPLE"
+                  ],
+                  "type": "string"
+                },
+                "local_selector": {
+                  "maxLength": 512,
+                  "minLength": 1,
+                  "type": "string"
+                }
+              },
+              "required": [
+                "artifact_sha256",
+                "evidence_kind",
+                "local_selector",
+                "authority"
+              ],
+              "type": "object"
+            },
+            "minItems": 1,
+            "type": "array"
+          },
+          "terminal_footprint": {
+            "enum": [
+              "DIRECT_TERMINAL_IMPACT",
+              "BUDGET_ONLY_IMPACT",
+              "RECOVERED_NO_TERMINAL_IMPACT",
+              "UNCERTAIN"
+            ],
+            "type": "string"
+          },
+          "trigger_call_index": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "uncertainty": {
+            "maxLength": 2048,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "error_instance_id",
+          "trigger_call_index",
+          "relevant_start_call_index",
+          "critical_window_start_call_index",
+          "critical_window_end_call_index",
+          "resolution_status",
+          "terminal_footprint",
+          "supporting_evidence_refs",
+          "counterevidence_refs",
+          "mechanism_hypotheses",
+          "candidate_principal",
+          "uncertainty"
+        ],
+        "type": "object"
+      },
+      "maxItems": 8,
+      "type": "array"
+    },
+    "evidence_pack_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "gamefile_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "local_repairs": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "decision_call_index": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "exact_action": {
+            "maxLength": 256,
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "known_risks": {
+            "items": {
+              "maxLength": 2048,
+              "minLength": 1,
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "local_repair_id": {
+            "maxLength": 256,
+            "minLength": 1,
+            "type": "string"
+          },
+          "option_actions": {
+            "items": {
+              "maxLength": 256,
+              "minLength": 1,
+              "type": "string"
+            },
+            "maxItems": 4,
+            "type": "array"
+          },
+          "rank": {
+            "maximum": 3,
+            "minimum": 1,
+            "type": "integer"
+          },
+          "repair_kind": {
+            "enum": [
+              "EXACT_ACTION",
+              "SHORT_OPTION",
+              "TRAINABLE_RULE"
+            ],
+            "type": "string"
+          },
+          "requires_environment_verification": {
+            "const": true,
+            "type": "boolean"
+          },
+          "supporting_evidence_refs": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "artifact_sha256": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "authority": {
+                  "enum": [
+                    "DETERMINISTIC_FACT",
+                    "SEMANTIC_HYPOTHESIS"
+                  ],
+                  "type": "string"
+                },
+                "evidence_kind": {
+                  "enum": [
+                    "TRAJECTORY_CALL",
+                    "MECHANICAL_FACT",
+                    "COUNTEREXAMPLE"
+                  ],
+                  "type": "string"
+                },
+                "local_selector": {
+                  "maxLength": 512,
+                  "minLength": 1,
+                  "type": "string"
+                }
+              },
+              "required": [
+                "artifact_sha256",
+                "evidence_kind",
+                "local_selector",
+                "authority"
+              ],
+              "type": "object"
+            },
+            "minItems": 1,
+            "type": "array"
+          },
+          "supporting_hypothesis_ids": {
+            "items": {
+              "maxLength": 256,
+              "minLength": 1,
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "termination_condition": {
+            "maxLength": 2048,
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "trainable_rule": {
+            "maxLength": 4096,
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "local_repair_id",
+          "rank",
+          "repair_kind",
+          "decision_call_index",
+          "exact_action",
+          "option_actions",
+          "termination_condition",
+          "trainable_rule",
+          "supporting_hypothesis_ids",
+          "supporting_evidence_refs",
+          "known_risks",
+          "requires_environment_verification"
+        ],
+        "type": "object"
+      },
+      "maxItems": 3,
+      "type": "array"
+    },
+    "local_result_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "raw_response_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "route_status": {
+      "const": "SCIENTIFIC_OUTCOME_AVAILABLE",
+      "type": "string"
+    },
+    "schema_id": {
+      "const": "ANALYZER_LOCAL_RESULT_V2",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 2,
+      "type": "integer"
+    },
+    "scientific_use": {
+      "const": "PRIVILEGED_OFFLINE_ANALYSIS",
+      "type": "string"
+    },
+    "success_analysis": {
+      "additionalProperties": false,
+      "properties": {
+        "critical_success_transitions": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "end_call_index": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "event_id": {
+                "maxLength": 256,
+                "minLength": 1,
+                "type": "string"
+              },
+              "requires_environment_verification": {
+                "type": "boolean"
+              },
+              "start_call_index": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "statement": {
+                "maxLength": 4096,
+                "minLength": 1,
+                "type": "string"
+              },
+              "supporting_evidence_refs": {
+                "items": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "artifact_sha256": {
+                      "pattern": "^[0-9a-f]{64}$",
+                      "type": "string"
+                    },
+                    "authority": {
+                      "enum": [
+                        "DETERMINISTIC_FACT",
+                        "SEMANTIC_HYPOTHESIS"
+                      ],
+                      "type": "string"
+                    },
+                    "evidence_kind": {
+                      "enum": [
+                        "TRAJECTORY_CALL",
+                        "MECHANICAL_FACT",
+                        "COUNTEREXAMPLE"
+                      ],
+                      "type": "string"
+                    },
+                    "local_selector": {
+                      "maxLength": 512,
+                      "minLength": 1,
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "artifact_sha256",
+                    "evidence_kind",
+                    "local_selector",
+                    "authority"
+                  ],
+                  "type": "object"
+                },
+                "minItems": 1,
+                "type": "array"
+              },
+              "uncertainty": {
+                "maxLength": 2048,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "event_id",
+              "start_call_index",
+              "end_call_index",
+              "statement",
+              "supporting_evidence_refs",
+              "uncertainty",
+              "requires_environment_verification"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "efficiency_candidates": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "end_call_index": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "event_id": {
+                "maxLength": 256,
+                "minLength": 1,
+                "type": "string"
+              },
+              "requires_environment_verification": {
+                "const": true,
+                "type": "boolean"
+              },
+              "start_call_index": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "statement": {
+                "maxLength": 4096,
+                "minLength": 1,
+                "type": "string"
+              },
+              "supporting_evidence_refs": {
+                "items": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "artifact_sha256": {
+                      "pattern": "^[0-9a-f]{64}$",
+                      "type": "string"
+                    },
+                    "authority": {
+                      "enum": [
+                        "DETERMINISTIC_FACT",
+                        "SEMANTIC_HYPOTHESIS"
+                      ],
+                      "type": "string"
+                    },
+                    "evidence_kind": {
+                      "enum": [
+                        "TRAJECTORY_CALL",
+                        "MECHANICAL_FACT",
+                        "COUNTEREXAMPLE"
+                      ],
+                      "type": "string"
+                    },
+                    "local_selector": {
+                      "maxLength": 512,
+                      "minLength": 1,
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "artifact_sha256",
+                    "evidence_kind",
+                    "local_selector",
+                    "authority"
+                  ],
+                  "type": "object"
+                },
+                "minItems": 1,
+                "type": "array"
+              },
+              "uncertainty": {
+                "maxLength": 2048,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "event_id",
+              "start_call_index",
+              "end_call_index",
+              "statement",
+              "supporting_evidence_refs",
+              "uncertainty",
+              "requires_environment_verification"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "necessary_decisions": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "end_call_index": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "event_id": {
+                "maxLength": 256,
+                "minLength": 1,
+                "type": "string"
+              },
+              "requires_environment_verification": {
+                "type": "boolean"
+              },
+              "start_call_index": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "statement": {
+                "maxLength": 4096,
+                "minLength": 1,
+                "type": "string"
+              },
+              "supporting_evidence_refs": {
+                "items": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "artifact_sha256": {
+                      "pattern": "^[0-9a-f]{64}$",
+                      "type": "string"
+                    },
+                    "authority": {
+                      "enum": [
+                        "DETERMINISTIC_FACT",
+                        "SEMANTIC_HYPOTHESIS"
+                      ],
+                      "type": "string"
+                    },
+                    "evidence_kind": {
+                      "enum": [
+                        "TRAJECTORY_CALL",
+                        "MECHANICAL_FACT",
+                        "COUNTEREXAMPLE"
+                      ],
+                      "type": "string"
+                    },
+                    "local_selector": {
+                      "maxLength": 512,
+                      "minLength": 1,
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "artifact_sha256",
+                    "evidence_kind",
+                    "local_selector",
+                    "authority"
+                  ],
+                  "type": "object"
+                },
+                "minItems": 1,
+                "type": "array"
+              },
+              "uncertainty": {
+                "maxLength": 2048,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "event_id",
+              "start_call_index",
+              "end_call_index",
+              "statement",
+              "supporting_evidence_refs",
+              "uncertainty",
+              "requires_environment_verification"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "progress_instances": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "end_call_index": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "event_id": {
+                "maxLength": 256,
+                "minLength": 1,
+                "type": "string"
+              },
+              "requires_environment_verification": {
+                "type": "boolean"
+              },
+              "start_call_index": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "statement": {
+                "maxLength": 4096,
+                "minLength": 1,
+                "type": "string"
+              },
+              "supporting_evidence_refs": {
+                "items": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "artifact_sha256": {
+                      "pattern": "^[0-9a-f]{64}$",
+                      "type": "string"
+                    },
+                    "authority": {
+                      "enum": [
+                        "DETERMINISTIC_FACT",
+                        "SEMANTIC_HYPOTHESIS"
+                      ],
+                      "type": "string"
+                    },
+                    "evidence_kind": {
+                      "enum": [
+                        "TRAJECTORY_CALL",
+                        "MECHANICAL_FACT",
+                        "COUNTEREXAMPLE"
+                      ],
+                      "type": "string"
+                    },
+                    "local_selector": {
+                      "maxLength": 512,
+                      "minLength": 1,
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "artifact_sha256",
+                    "evidence_kind",
+                    "local_selector",
+                    "authority"
+                  ],
+                  "type": "object"
+                },
+                "minItems": 1,
+                "type": "array"
+              },
+              "uncertainty": {
+                "maxLength": 2048,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "event_id",
+              "start_call_index",
+              "end_call_index",
+              "statement",
+              "supporting_evidence_refs",
+              "uncertainty",
+              "requires_environment_verification"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "redundancy_candidates": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "end_call_index": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "event_id": {
+                "maxLength": 256,
+                "minLength": 1,
+                "type": "string"
+              },
+              "requires_environment_verification": {
+                "const": true,
+                "type": "boolean"
+              },
+              "start_call_index": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "statement": {
+                "maxLength": 4096,
+                "minLength": 1,
+                "type": "string"
+              },
+              "supporting_evidence_refs": {
+                "items": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "artifact_sha256": {
+                      "pattern": "^[0-9a-f]{64}$",
+                      "type": "string"
+                    },
+                    "authority": {
+                      "enum": [
+                        "DETERMINISTIC_FACT",
+                        "SEMANTIC_HYPOTHESIS"
+                      ],
+                      "type": "string"
+                    },
+                    "evidence_kind": {
+                      "enum": [
+                        "TRAJECTORY_CALL",
+                        "MECHANICAL_FACT",
+                        "COUNTEREXAMPLE"
+                      ],
+                      "type": "string"
+                    },
+                    "local_selector": {
+                      "maxLength": 512,
+                      "minLength": 1,
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "artifact_sha256",
+                    "evidence_kind",
+                    "local_selector",
+                    "authority"
+                  ],
+                  "type": "object"
+                },
+                "minItems": 1,
+                "type": "array"
+              },
+              "uncertainty": {
+                "maxLength": 2048,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "event_id",
+              "start_call_index",
+              "end_call_index",
+              "statement",
+              "supporting_evidence_refs",
+              "uncertainty",
+              "requires_environment_verification"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "regression_guards": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "end_call_index": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "event_id": {
+                "maxLength": 256,
+                "minLength": 1,
+                "type": "string"
+              },
+              "requires_environment_verification": {
+                "type": "boolean"
+              },
+              "start_call_index": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "statement": {
+                "maxLength": 4096,
+                "minLength": 1,
+                "type": "string"
+              },
+              "supporting_evidence_refs": {
+                "items": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "artifact_sha256": {
+                      "pattern": "^[0-9a-f]{64}$",
+                      "type": "string"
+                    },
+                    "authority": {
+                      "enum": [
+                        "DETERMINISTIC_FACT",
+                        "SEMANTIC_HYPOTHESIS"
+                      ],
+                      "type": "string"
+                    },
+                    "evidence_kind": {
+                      "enum": [
+                        "TRAJECTORY_CALL",
+                        "MECHANICAL_FACT",
+                        "COUNTEREXAMPLE"
+                      ],
+                      "type": "string"
+                    },
+                    "local_selector": {
+                      "maxLength": 512,
+                      "minLength": 1,
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "artifact_sha256",
+                    "evidence_kind",
+                    "local_selector",
+                    "authority"
+                  ],
+                  "type": "object"
+                },
+                "minItems": 1,
+                "type": "array"
+              },
+              "uncertainty": {
+                "maxLength": 2048,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "event_id",
+              "start_call_index",
+              "end_call_index",
+              "statement",
+              "supporting_evidence_refs",
+              "uncertainty",
+              "requires_environment_verification"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "self_recovery_events": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "end_call_index": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "event_id": {
+                "maxLength": 256,
+                "minLength": 1,
+                "type": "string"
+              },
+              "requires_environment_verification": {
+                "type": "boolean"
+              },
+              "start_call_index": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "statement": {
+                "maxLength": 4096,
+                "minLength": 1,
+                "type": "string"
+              },
+              "supporting_evidence_refs": {
+                "items": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "artifact_sha256": {
+                      "pattern": "^[0-9a-f]{64}$",
+                      "type": "string"
+                    },
+                    "authority": {
+                      "enum": [
+                        "DETERMINISTIC_FACT",
+                        "SEMANTIC_HYPOTHESIS"
+                      ],
+                      "type": "string"
+                    },
+                    "evidence_kind": {
+                      "enum": [
+                        "TRAJECTORY_CALL",
+                        "MECHANICAL_FACT",
+                        "COUNTEREXAMPLE"
+                      ],
+                      "type": "string"
+                    },
+                    "local_selector": {
+                      "maxLength": 512,
+                      "minLength": 1,
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "artifact_sha256",
+                    "evidence_kind",
+                    "local_selector",
+                    "authority"
+                  ],
+                  "type": "object"
+                },
+                "minItems": 1,
+                "type": "array"
+              },
+              "uncertainty": {
+                "maxLength": 2048,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "event_id",
+              "start_call_index",
+              "end_call_index",
+              "statement",
+              "supporting_evidence_refs",
+              "uncertainty",
+              "requires_environment_verification"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "useful_exploration": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "end_call_index": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "event_id": {
+                "maxLength": 256,
+                "minLength": 1,
+                "type": "string"
+              },
+              "requires_environment_verification": {
+                "type": "boolean"
+              },
+              "start_call_index": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "statement": {
+                "maxLength": 4096,
+                "minLength": 1,
+                "type": "string"
+              },
+              "supporting_evidence_refs": {
+                "items": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "artifact_sha256": {
+                      "pattern": "^[0-9a-f]{64}$",
+                      "type": "string"
+                    },
+                    "authority": {
+                      "enum": [
+                        "DETERMINISTIC_FACT",
+                        "SEMANTIC_HYPOTHESIS"
+                      ],
+                      "type": "string"
+                    },
+                    "evidence_kind": {
+                      "enum": [
+                        "TRAJECTORY_CALL",
+                        "MECHANICAL_FACT",
+                        "COUNTEREXAMPLE"
+                      ],
+                      "type": "string"
+                    },
+                    "local_selector": {
+                      "maxLength": 512,
+                      "minLength": 1,
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "artifact_sha256",
+                    "evidence_kind",
+                    "local_selector",
+                    "authority"
+                  ],
+                  "type": "object"
+                },
+                "minItems": 1,
+                "type": "array"
+              },
+              "uncertainty": {
+                "maxLength": 2048,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "event_id",
+              "start_call_index",
+              "end_call_index",
+              "statement",
+              "supporting_evidence_refs",
+              "uncertainty",
+              "requires_environment_verification"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "workflow_references": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "end_call_index": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "event_id": {
+                "maxLength": 256,
+                "minLength": 1,
+                "type": "string"
+              },
+              "requires_environment_verification": {
+                "type": "boolean"
+              },
+              "start_call_index": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "statement": {
+                "maxLength": 4096,
+                "minLength": 1,
+                "type": "string"
+              },
+              "supporting_evidence_refs": {
+                "items": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "artifact_sha256": {
+                      "pattern": "^[0-9a-f]{64}$",
+                      "type": "string"
+                    },
+                    "authority": {
+                      "enum": [
+                        "DETERMINISTIC_FACT",
+                        "SEMANTIC_HYPOTHESIS"
+                      ],
+                      "type": "string"
+                    },
+                    "evidence_kind": {
+                      "enum": [
+                        "TRAJECTORY_CALL",
+                        "MECHANICAL_FACT",
+                        "COUNTEREXAMPLE"
+                      ],
+                      "type": "string"
+                    },
+                    "local_selector": {
+                      "maxLength": 512,
+                      "minLength": 1,
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "artifact_sha256",
+                    "evidence_kind",
+                    "local_selector",
+                    "authority"
+                  ],
+                  "type": "object"
+                },
+                "minItems": 1,
+                "type": "array"
+              },
+              "uncertainty": {
+                "maxLength": 2048,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "event_id",
+              "start_call_index",
+              "end_call_index",
+              "statement",
+              "supporting_evidence_refs",
+              "uncertainty",
+              "requires_environment_verification"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "progress_instances",
+        "necessary_decisions",
+        "critical_success_transitions",
+        "useful_exploration",
+        "self_recovery_events",
+        "redundancy_candidates",
+        "workflow_references",
+        "regression_guards",
+        "efficiency_candidates"
+      ],
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "task_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "type": "string"
+    },
+    "trajectory_outcome": {
+      "enum": [
+        "SUCCESS",
+        "FAILURE"
+      ],
+      "type": "string"
+    },
+    "validated_result_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "analyzer_run_id",
+    "condition_id",
+    "evidence_pack_sha256",
+    "task_id",
+    "gamefile_sha256",
+    "route_status",
+    "trajectory_outcome",
+    "analysis_objective",
+    "error_instances",
+    "success_analysis",
+    "local_repairs",
+    "abstained",
+    "abstain_reason",
+    "raw_response_sha256",
+    "validated_result_sha256",
+    "local_result_sha256",
+    "scientific_use",
+    "analysis_time_information_boundary"
+  ],
+  "type": "object"
+}

@@ -1,0 +1,17 @@
+\newcommand{\method}{RePair}
+\newcommand{\offoff}{Memory-OFF/Harness-OFF}
+\newcommand{\ind}{\mathbf{1}}
+\newcommand{\SR}{\operatorname{SR}}
+\newcommand{\EVRY}{\operatorname{EVRY}}
+\newcommand{\Benefit}{\mathsf{B}}
+\newcommand{\Harm}{\mathsf{H}}
+\newcommand{\NeutralS}{\mathsf{NS}}
+\newcommand{\NeutralF}{\mathsf{NF}}
+\newcommand{\Uncertain}{\mathsf{U}}
+\newcommand{\pending}[1]{\textbf{[PENDING: #1]}}
+\newcommand{\NA}{\textnormal{---}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\makeatletter
+\newcommand{\setresult}[2]{\expandafter\gdef\csname result@#1\endcsname{#2}}
+\newcommand{\res}[1]{\ifcsname result@#1\endcsname\csname result@#1\endcsname\else\pending{#1}\fi}
+\makeatother

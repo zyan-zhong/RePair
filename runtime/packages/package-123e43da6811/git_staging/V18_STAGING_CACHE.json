@@ -1,0 +1,14 @@
+{
+  "staging_only": true,
+  "ledger": {
+    "member": "ledger/PCHSI_CANONICAL_STATUS_20260924_FORMAL_MAX10_V1_8_SUCCESS_GAIN_MATERIALIZED_FULL.md",
+    "sha256": "2e04f46d5cd3a0662c9fe3fb3e62d83f6ddc866dca6b055843a3b87bcb196100"
+  },
+  "delta": {
+    "member": "git_staging/V18_EXECUTION_DELTA.json",
+    "sha256": "41b49b9c99ed53bfdf693e7821d3a69c7e51a3d3790d90230b5a4f757b0ba925"
+  },
+  "production_git_mutation_count": 0,
+  "remote_git_mutation_count": 0,
+  "state": "USER_ACCEPTANCE_RULE_MATERIALIZED_PENDING_DEPLOYMENT_VALIDATION"
+}

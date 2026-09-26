@@ -1,0 +1,133 @@
+{
+  "$id": "LEGACY_CURRENT_TASK_CROSSWALK_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "crosswalk_id": {
+      "maxLength": 128,
+      "minLength": 1,
+      "type": "string"
+    },
+    "current_task_manifest_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "record_count": {
+      "minimum": 1,
+      "type": "integer"
+    },
+    "records": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "confidence_class": {
+            "enum": [
+              "HIGH",
+              "MEDIUM",
+              "LOW"
+            ],
+            "type": "string"
+          },
+          "current_gamefile": {
+            "maxLength": 4096,
+            "minLength": 1,
+            "type": "string"
+          },
+          "current_gamefile_sha1": {
+            "pattern": "^[0-9a-f]{40}$",
+            "type": "string"
+          },
+          "current_manifest_index": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "current_task_id": {
+            "maxLength": 512,
+            "minLength": 1,
+            "type": "string"
+          },
+          "evidence_source": {
+            "maxLength": 4096,
+            "minLength": 1,
+            "type": "string"
+          },
+          "legacy_gamefile": {
+            "maxLength": 4096,
+            "minLength": 1,
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "legacy_gamefile_sha1": {
+            "pattern": "^[0-9a-f]{40}$",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "legacy_source": {
+            "maxLength": 512,
+            "minLength": 1,
+            "type": "string"
+          },
+          "legacy_task_id": {
+            "maxLength": 512,
+            "minLength": 1,
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "manual_same_gamefile_confirmed": {
+            "type": "boolean"
+          },
+          "match_status": {
+            "enum": [
+              "EXACT_GAMEFILE_SHA1_MATCH",
+              "EXACT_TASK_ID_AND_PATH_MATCH",
+              "TASK_ID_ONLY_INSUFFICIENT",
+              "NO_MATCH",
+              "LEGACY_RECORD_INCOMPLETE"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "legacy_source",
+          "legacy_task_id",
+          "legacy_gamefile",
+          "legacy_gamefile_sha1",
+          "current_manifest_index",
+          "current_task_id",
+          "current_gamefile",
+          "current_gamefile_sha1",
+          "manual_same_gamefile_confirmed",
+          "match_status",
+          "evidence_source",
+          "confidence_class"
+        ],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "schema_id": {
+      "const": "LEGACY_CURRENT_TASK_CROSSWALK_V1",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "crosswalk_id",
+    "current_task_manifest_sha256",
+    "record_count",
+    "records"
+  ],
+  "type": "object"
+}

@@ -1,0 +1,16 @@
+\begin{table}[!htbp]
+\caption{\textbf{Scaffold-free selection after the dual-view update.}
+TRAIN\_SELECT only: 355 paired tasks, seed 17, one trained candidate.
+Counts concern episodes except where marked as calls. Goal completion
+is the mean terminal fraction of satisfied environment goal conditions.}
+\label{tab:ablations}\centering
+\begin{tabularx}{\linewidth}{Xrr}\toprule
+Measure & Parent & Candidate\\\midrule
+Task successes & 3 / 355 & 3 / 355\\
+Mean goal-condition completion (\%) & 10.845 & 10.704\\
+Consecutive-nonexecution terminations & 261 & 252\\
+Environment-budget terminations & 91 & 100\\
+Out-of-menu actions (calls) & 1,556 & 1,612\\
+Format failures (calls) & 135 & 119\\\bottomrule
+\end{tabularx}
+\end{table}

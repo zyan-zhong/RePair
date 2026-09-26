@@ -1,0 +1,38 @@
+{
+  "schema": "REPAIR_PUBLIC_COMPONENT_MAP_V1",
+  "execution_authority": false,
+  "components": {
+    "strategy_validation": {
+      "path": "runtime/packages/MAX10_V2_1_1_EXECUTABLE_PLANNER_VALIDATION-0c20fc82ebc2",
+      "manifest_sha256": "0c20fc82ebc29e2bc80016c6437f22338c570a1ed696c7ba41bffc5623c7189f"
+    },
+    "selection": {
+      "path": "runtime/packages/MAX10_V1_9_4_SINGLE_SEED_PARENT_REUSE-5c82f6c32d95",
+      "manifest_sha256": "5c82f6c32d95d5b475dc11e7b3642c66df1629cddd6f52d88202205e8f8b1b3e"
+    },
+    "single_seed_recovery": {
+      "path": "runtime/packages/MAX10_SINGLE_SEED_RECOVERY-adf6aa2c2f79",
+      "manifest_sha256": "adf6aa2c2f79e93eb97c54ee039904286a921522af78e8288a86b62abd83c48a"
+    },
+    "native_campaign_core": {
+      "path": "runtime/packages/package-123e43da6811",
+      "manifest_sha256": "123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359"
+    },
+    "progress_window": {
+      "path": "runtime/packages/MAX10_PROGRESS_WINDOW_V212-07b6d1047fb3",
+      "manifest_sha256": "07b6d1047fb3eb0eddd00499e67c5d5e1f1c9d8e19d88ae5c1c3980efd41b893"
+    },
+    "analyzer_concurrency": {
+      "path": "runtime/packages/MAX10_V2_0_5_TWO_SOURCE_ANALYZER-75b4e9a31415",
+      "manifest_sha256": "75b4e9a314151bc2102da593c0a5a00cbb9a5f23bc00daa4f0fc644c4ba0deaa"
+    },
+    "pre_context_pool": {
+      "path": "runtime/packages/MAX10_V2_0_6_PRE_STRING_POOL-da2552aa0904",
+      "manifest_sha256": "da2552aa0904f75bb5acf9e56d2f636ba5624c9b233f65ba019f4885e178081c"
+    },
+    "memory_budget": {
+      "path": "runtime/packages/MAX10_V1_9_6_REGISTERED_MEMORY_BUDGET-0e0e3d4770cc",
+      "manifest_sha256": "0e0e3d4770cc356b985b203fd09c40c7a534722ae46ec771c84b07ea51c07056"
+    }
+  }
+}

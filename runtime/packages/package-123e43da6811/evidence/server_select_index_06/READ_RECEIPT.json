@@ -1,0 +1,27 @@
+{
+  "host": "ln02",
+  "rows": [
+    {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4d_existing_select_live_binding_v1/4ab7942b2c66238cb3833bdb04eb7f7ca23b52d10c388575aaf1bd272dfc100d/BINDING_IDENTITY.json",
+      "sha256": null,
+      "local_name": "BINDING_IDENTITY.json",
+      "authority": "Stage4E config exact binding_root + Stage4D verify_binding_inventory fixed index names; semantic identity validated before asset use",
+      "status": "READ",
+      "observed_sha256": "f8f6ac7f684cd86427316c7946c9a041c0e182bf04f39c1a882972751b704292",
+      "bytes": 1769
+    },
+    {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4d_existing_select_live_binding_v1/4ab7942b2c66238cb3833bdb04eb7f7ca23b52d10c388575aaf1bd272dfc100d/OUTPUT_FILES.sha256",
+      "sha256": null,
+      "local_name": "OUTPUT_FILES.sha256",
+      "authority": "Stage4E config exact binding_root + Stage4D verify_binding_inventory fixed index names; semantic identity validated before asset use",
+      "status": "READ",
+      "observed_sha256": "3f2b8ef28e007df87646d1283fb199bdd0849755545546ece9dc5910a6457c55",
+      "bytes": 1763
+    }
+  ],
+  "schema_id": "EXACT_REGISTERED_SSH_READ_RECEIPT_V1",
+  "remote_filesystem_mutations": 0,
+  "filesystem_discovery_used": false,
+  "scientific_execution_count": 0
+}

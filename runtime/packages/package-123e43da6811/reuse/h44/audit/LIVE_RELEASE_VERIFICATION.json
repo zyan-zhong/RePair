@@ -1,0 +1,26 @@
+{
+  "schema_id": "PAPER_CRITICAL_CAUSAL_ROUND_RELEASE_VERIFICATION_V1",
+  "release_scope": "CURRENT_ACCEPTED_PRE_CAUSAL_ROUND_ONLY",
+  "pytest_command": "python -B -m pytest -q -p no:cacheprovider --tb=short",
+  "pytest_passed_count": 37,
+  "pytest_exit_code": 0,
+  "python312_ast_syntax_checked": true,
+  "bash_syntax_checked": [
+    "RUN_CURRENT_ROUND.sh",
+    "STATUS_CURRENT_ROUND.sh"
+  ],
+  "live_provider_executed_during_delivery": false,
+  "live_environment_executed_during_delivery": false,
+  "live_training_executed_during_delivery": false,
+  "server_full_repository_regression_performed": false,
+  "training_execution_authorized": false,
+  "next_round_launch_authorized": false,
+  "max10_released": false,
+  "known_corrected_defects": [
+    "controller passed undefined verifier variable instead of persisted verification receipt",
+    "controller inspected nonexistent training_decision instead of training_recommendation",
+    "NO_TRAIN test expected fields not present in frozen NO_TRAINING_UPDATE_V1 schema",
+    "package tests previously depended on external evidence-root environment variable"
+  ],
+  "train_route_output": "CURRENT_VERIFIED_TRAINING_HANDOFF_V1 only; optimizer not executed"
+}

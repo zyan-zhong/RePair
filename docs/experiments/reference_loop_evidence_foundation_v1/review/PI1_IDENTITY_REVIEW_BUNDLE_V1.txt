@@ -1,0 +1,80 @@
+PI1 IDENTITY SLOT REVIEW V1
+==============================================================================
+logical_policy_id = P4-R1-Q2-BAD
+checkpoint_instance_id = P4-R1-Q2-BAD-TRAIN17
+review_sha256 = 6798ad2412aede7bcc85074dc6e01489386e8133551e3a9be46e3c03cbbaf176
+all_required_slots_unique = True
+
+ARTIFACT SLOTS
+------------------------------------------------------------------------------
+base_model_artifact: status=UNIQUE candidates=1
+  - id=f38a644773ae8676211ca566db088730b39eb45ebffa5fd0362189033425c7b9 kind=MANIFEST_VALUE_SHA256 sha=a2e285e6b6161adb3ec7889466d8f1c0b384abdda3035f8b1630d457dcf66175
+    path=/data/run01/scwb204/pchsi/p2/d_q2_bad_training_materialization_v1_frozen/provenance/model_artifact_manifest.json
+    source=/data/run01/scwb204/pchsi/p2/d_q2_bad_training_materialization_v1_frozen/final_materialization_manifest.json $.weights_bundle_sha256
+    reason=FROZEN_MODEL_ARTIFACT_MANIFEST_WEIGHTS_BUNDLE_SHA
+adapter_artifact: status=UNIQUE candidates=1
+  - id=16ba210d6f0663097d6b0a38fb270369176bd776b10720be8d59a1a890cdbaff kind=MANIFEST_VALUE_SHA256 sha=b296f2254b1fa1f2e141dffd3f6b5af903f839df4790ffcb245fd8dd57773ace
+    path=/data/run01/scwb204/pchsi/p2/p4_r1_q2_bad_checkpoint_set_v1_frozen/seed_17/adapter_artifact_manifest.json
+    source=/data/run01/scwb204/pchsi/p2/p4_r1_q2_bad_checkpoint_set_v1_frozen/seed_17/adapter_artifact_manifest.json $.adapter_bundle_sha256
+    reason=FROZEN_ADAPTER_ARTIFACT_MANIFEST_BUNDLE_SHA
+tokenizer_artifact: status=UNIQUE candidates=1
+  - id=dbe3fe19231af9294d7a89eaf8c14c928d7f2f6fefeceeeecbeabc12d4c36ea0 kind=MANIFEST_VALUE_SHA256 sha=8fba154872aa8982e9556cb6cbdd35f3f6e83b8c3c41d782caf6fbf5931c8e0c
+    path=/data/run01/scwb204/pchsi/p2/d_q2_bad_training_materialization_v1_frozen/provenance/model_artifact_manifest.json
+    source=/data/run01/scwb204/pchsi/p2/d_q2_bad_training_materialization_v1_frozen/final_materialization_manifest.json $.tokenizer_bundle_sha256
+    reason=FROZEN_MODEL_ARTIFACT_MANIFEST_TOKENIZER_BUNDLE_SHA
+chat_template: status=UNIQUE candidates=1
+  - id=581ba0317a87b495142b1c8e64f26b4f6b30764b14dd0c47d05ef3e73d855cff kind=FILE sha=cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f
+    path=/data/run01/scwb204/pchsi/p2/d_q2_bad_training_materialization_v1_frozen/provenance/chat_template.jinja
+    source=/data/run01/scwb204/pchsi/p2/d_q2_bad_training_materialization_v1_frozen/final_materialization_manifest.json $.chat_template_sha256
+    reason=FROZEN_CHAT_TEMPLATE_FILE_EXACT_SHA
+policy_runtime_manifest: status=UNIQUE candidates=1
+  - id=d3daa73327a7b0c6dc1e27ade4070fea820d1dcf59ec593a989086c7d2f9325b kind=FILE sha=215bbe3981668181c8b2eb51c4568af944512f7c20c4504ad75faa012cc83faa
+    path=/data/run01/scwb204/pchsi/p2/p4_harness_off_select_v2_frozen/policy_runtime_r1_train17.json
+    source=/data/run01/scwb204/pchsi/p2/p4_harness_off_select_v2_frozen/policy_runtime_r1_train17.json 
+    reason=UNIQUE_SELECT_RUNTIME_SHA_MATCH
+decoding_contract: status=UNIQUE candidates=1
+  - id=bbbeff6dbe87b59645005eb1551208eb98964978f99a1e5d14c467f4fe1447e8 kind=FILE sha=7a95985000ac80895fe194a240d50301ea1ab51a914eddedec501b3261812e37
+    path=/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/memory_scientific_validation_formal_package_a_code_approval_runtime_freeze_v1/FORMAL_A0_DECODING_CONTRACT_V1.json
+    source=/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/memory_scientific_validation_v1/formal_a_runtime_freeze/b38b7a83af706faa29089f1e0077af9438209e29/FORMAL_A0_RUNTIME_BINDING_V1.json $.decoding*_sha256
+    reason=EXACT_SHA_MATCH_FROM_FORMAL_A_RUNTIME_BINDING
+raw_policy_prompt_protocol: status=UNIQUE candidates=1
+  - id=8512e18643ea9bc52e98c271e50798ed46da0aab3f0b2a00c0facd45090589eb kind=FILE sha=23529298dde2d518cfd05be7e1b97d75ba7865040bf4f159d13744ff39c26866
+    path=/data/run01/scwb204/sdar_repro/badcase/github_exports/pchsi-wt-reference-loop-evidence-materialization-v1/configs/protocols/raw_with_menu_v1.json
+    source=/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/reference_loop_historical_lineage_bridge_v1/fixed_ad550b1dcaf2262632f0cb96147135a0f64686d0/SOURCE_COLLECTION_PI1_LINEAGE_BRIDGE_V1.json $.rows[*].source_bundle_path->attempt.raw_protocol_sha256
+    reason=REPOSITORY_FILE_EXACTLY_MATCHES_SOURCE_EPISODE_RAW_PROTOCOL_SHA
+training_config: status=UNIQUE candidates=1
+  - id=eacd69b607a1931f7c68e5b1b38421cb17229124d893196aface2e637e83d506 kind=FILE sha=a860a77890e34e4cfcb38dff0acdf35db0a3605d0a494c100f2b74b9f5228f9c
+    path=/data/run01/scwb204/pchsi/p2/p4_r1_q2_bad_training_config_v1/training_config.json
+    source=/data/run01/scwb204/pchsi/p2/p4_r1_q2_bad_checkpoint_set_v1_frozen/seed_17/formal_run_manifest.json $.training_config_sha256
+    reason=EXACT_TRAINING_CONFIG_SHA_FROM_SEED17_FORMAL_RUN
+training_data_manifest: status=UNIQUE candidates=1
+  - id=92d2a9098848b37329e8d4328136d51f8a16454cc7f5f7963895d20300cc2d97 kind=FILE sha=445c99c5219c1a537ab9b8820d97ebbcbbc329dd305f40db6a296aa6d30393c8
+    path=/data/run01/scwb204/pchsi/p2/d_q2_bad_v1_frozen/final_dataset_manifest.json
+    source=/data/run01/scwb204/pchsi/p2/p4_r1_q2_bad_checkpoint_set_v1_frozen/seed_17/formal_run_manifest.json $.dataset_freeze_root_sha256
+    reason=FROZEN_D_Q2_BAD_V1_FINAL_DATASET_MANIFEST
+reference_evaluation_manifest: status=UNIQUE candidates=1
+  - id=c4111d7e3f6eecaf3f8990b610bea6e51a2d35874d2453df98a1f1e975d2a506 kind=FILE sha=fa2effb344970e980103c242371c3e57591fa1d9f1bb153c901609e9fa4b347f
+    path=/data/run01/scwb204/pchsi/p2/p4_harness_off_select_v2_formal/_mechanical/r1_train17.json
+    source=/data/run01/scwb204/pchsi/p2/p4_harness_off_select_v2_formal/_mechanical/r1_train17.json 
+    reason=FORMAL_HARNESS_OFF_TRAIN17_REFERENCE_EVALUATION_IDENTITY
+
+SCALAR SLOTS
+------------------------------------------------------------------------------
+base_model_id: status=UNIQUE candidates=1
+  - Qwen/Qwen2.5-3B-Instruct@aa8e72537993ba99e69dfaafa59ed015b17504d1
+adapter_id: status=UNIQUE candidates=1
+  - P4-R1-Q2-BAD-TRAIN17
+tokenizer_identity: status=UNIQUE candidates=1
+  - Qwen/Qwen2.5-3B-Instruct@aa8e72537993ba99e69dfaafa59ed015b17504d1#tokenizer_bundle_sha256=8fba154872aa8982e9556cb6cbdd35f3f6e83b8c3c41d782caf6fbf5931c8e0c
+runtime_core_commit: status=UNIQUE candidates=1
+  - 85e102b46a9bb09b92f1d8d39edcaee5bd9aa7d7
+evaluator_commit: status=UNIQUE candidates=1
+  - 114f953e0878dde4e6ed7ad9efa12cc37a5124aa
+training_seed: status=UNIQUE candidates=1
+  - 17
+
+HUMAN GATE
+------------------------------------------------------------------------------
+No PI1_REFERENCE_IDENTITY_V1 has been created.
+No trajectory rebinding or Analyzer Evidence Pack has been materialized.
+The next phase requires an approval artifact bound to this review_sha256.

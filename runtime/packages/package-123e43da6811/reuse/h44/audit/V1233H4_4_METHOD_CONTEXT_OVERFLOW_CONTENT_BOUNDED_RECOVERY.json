@@ -1,0 +1,82 @@
+{
+  "schema_id": "V1233H4_4_METHOD_CONTEXT_OVERFLOW_CONTENT_BOUNDED_RECOVERY_V1",
+  "schema_version": 1,
+  "observed_live_failure": {
+    "initial_logical_call_id": "aace488e9549aedb19674274556b9b151a16f59d66b1eb8da8f327405429bacb",
+    "method_status": "SEMANTIC_INVALID",
+    "failure_class": "METHOD_CONTEXT_OVERFLOW",
+    "retry_class": "NO_RETRY",
+    "bytes_transmission_state": "CONFIRMED_SENT",
+    "same_logical_call_resend_authorized": false,
+    "provider_calls_in_settlement": 0,
+    "training_execution_count": 0,
+    "plan_sha256": "7faa2d7d19e0ee44c33dd5995a3887cefd8a823b1c79f196045834e0789a2301",
+    "environment_result_package_sha256": "8e3a47902368dafc4140fa5f138e8f61927868c32f8778ed99f2c11d3b6d3381",
+    "independent_verifier_status": "VERIFIED_COMPLETE"
+  },
+  "root_cause": {
+    "component": "STRONG_RESEARCHER_POST_PRIMARY_INPUT_PROJECTION",
+    "original_projection_included_full_environment_result_package": true,
+    "full_environment_result_package_contains_raw_branch_records": true,
+    "original_projection_also_duplicated_state_results": true,
+    "original_projection_also_duplicated_pair_results": true,
+    "request_renderer_serializes_entire_projection": true,
+    "provider_truncation_policy": "disabled",
+    "interpretation": "Full raw branch payload plus duplicate state/pair evidence caused the Planner POST method input to exceed the provider model context. The original failure remains a method failure and is not reclassified as infrastructure."
+  },
+  "recovery_contract": {
+    "new_scientific_unit_required": true,
+    "same_logical_call_resend_allowed": false,
+    "max_new_context_bounded_logical_calls": 1,
+    "native_f0f1_rerun": false,
+    "environment_verifier_rerun": false,
+    "original_method_failure_preserved": true,
+    "projection_policy": "ALL_STATE_AND_PAIR_RESULTS_PLUS_CONTENT_ADDRESSED_BRANCH_INDEX",
+    "raw_policy_calls_in_projection": false,
+    "raw_environment_transitions_in_projection": false,
+    "all_state_results_included": true,
+    "all_pair_results_included": true,
+    "full_environment_result_package_sha_bound": true,
+    "provider_truncation_policy": "DISABLED",
+    "max_provider_request_body_bytes_authority": 524288
+  },
+  "identity_and_auditability": {
+    "context_recovery_unit_bound_to": [
+      "original_scientific_unit_identity_sha256",
+      "original_logical_call_id",
+      "original_attempt_sha256",
+      "original_request_body_sha256",
+      "original_failure_class",
+      "environment_result_package_sha256",
+      "compact_projection_sha256",
+      "context_budget_policy_sha256"
+    ],
+    "branch_index_preserves_content_addresses": true,
+    "omitted_raw_payload_bound_by_branch_evidence_sha256": true
+  },
+  "changed_files": {
+    "post_context_recovery.py": "5472cf1c9412d831d3c29b2021a293dfdfb7df07dc68309f121e01870880039b",
+    "RUN_RECOVER_CONTEXT_OVERFLOW_POST.sh": "3c16375ec3c90374b91af1f8aad9beac7c48853b9055ec27915317f3a76b3da6",
+    "assets/POST_CONTEXT_BUDGET_POLICY_V1.json": "3f0ad4a40daed5392479198e28ce0869eb7118acc6b32eaaa5e482f3a797f5e4",
+    "assets/RESEARCHER_POST_PRIMARY_CONTEXT_BOUNDED_V1.txt": "c1aa02710386c45da4a5386172072169c25f53305beed202e15c28cc98d1b6f3",
+    "tests/test_h44_context_overflow_recovery.py": "3f1b663bf91aea71560a3c7d45ec4e5e52063ceb998162d6e92dc992c9f19e56",
+    "verify_package.py": "af483b9b8f1ef89d13689740e3f1c6b30ad6dea94a3ee0b9f266a17739e1913e",
+    "PACKAGE_IDENTITY.json": "4f672205467e46428b719fabf310d7b22750820232e0293f0156c61880809984"
+  },
+  "tdd_evidence": {
+    "initial_module_red": "ModuleNotFoundError: post_context_recovery",
+    "raw_payload_omission_test_false_positive_fixed": "String-level assertion replaced with structural branch-index key assertions.",
+    "package_verifier_runner_coverage_red": "1 failed because new runner was not included in Bash syntax verification.",
+    "package_identity_lineage_red": "1 failed because supersedes_package_name still pointed to H4.2.",
+    "context_policy_red": "2 failed because context policy validator did not yet exist.",
+    "latest_focused_green": "9 passed",
+    "latest_full_green_before_manifest": "76 passed"
+  },
+  "claim_boundary": {
+    "strong_planner_post_typed_terminal_live_proven": false,
+    "training_execution_live_proven": false,
+    "memory_off_harness_off_live_proven": false,
+    "r1_to_r2_live_proven": false,
+    "full_max10_released": false
+  }
+}

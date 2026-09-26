@@ -1,0 +1,36 @@
+{
+  "schema_id": "V1233H4_4_DYNAMIC_HARDCODE_AUDIT_V1",
+  "production_files_scanned": [
+    "post_context_recovery.py",
+    "RUN_RECOVER_CONTEXT_OVERFLOW_POST.sh",
+    "assets/POST_CONTEXT_BUDGET_POLICY_V1.json",
+    "assets/RESEARCHER_POST_PRIMARY_CONTEXT_BOUNDED_V1.txt"
+  ],
+  "current_identity_literal_hits": {
+    "current_plan_sha": [],
+    "current_verifier_sha": [],
+    "current_post_logical_call_id": [],
+    "current_state_0": [],
+    "current_state_1": [],
+    "server_root": []
+  },
+  "all_current_identity_literal_hit_counts": {
+    "current_plan_sha": 0,
+    "current_verifier_sha": 0,
+    "current_post_logical_call_id": 0,
+    "current_state_0": 0,
+    "current_state_1": 0,
+    "server_root": 0
+  },
+  "literal_20_hits": [
+    {
+      "path": "post_context_recovery.py",
+      "line": 444,
+      "text": "return 0 if result.get('training_recommendation') in ('TRAIN','NO_TRAIN') else 20"
+    }
+  ],
+  "literal_20_classification": "Only process return-code 20 is permitted in production Python; current branch denominator is not encoded as 20.",
+  "cardinality_rule": "All current state/pair/branch counts are read from plan/verifier authority. No current state count, pair count, or branch count is compiled into H4.4 production logic.",
+  "provider_budget_classification": "524288 bytes and one-shot call limit are frozen method budget-policy values, not current-round cardinalities.",
+  "passed": true
+}

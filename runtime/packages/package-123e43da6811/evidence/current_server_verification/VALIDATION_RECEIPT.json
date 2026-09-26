@@ -1,0 +1,30 @@
+{
+  "schema_id": "ACTUAL_SERVER_CURRENT_ENTRY_CPU_VALIDATION_V1",
+  "host": "ln02",
+  "package_manifest_sha256": "601d6f78c31b6b32167fcd13f0a4b2da75ea8448f7df89e9ef51ae7f23626685",
+  "source_root": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/formal_max10_v17_cpu_validation/601d6f78c31b6b32167fcd13f0a4b2da75ea8448f7df89e9ef51ae7f23626685/package",
+  "records": [
+    {
+      "stage": "software_fixtures",
+      "returncode": 0,
+      "elapsed_seconds": 155.90838408470154,
+      "stdout_sha256": "fc627af3b8651d84bb69e687d8b0de7a742f2281560de57dbbab4700af158585",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "stage": "exact_server_preflight",
+      "returncode": 1,
+      "elapsed_seconds": 6.739051342010498,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "b9d7297c1d00be6878b460fbd6910e3e36f37dcd3bf54ac40da88a503b37b21a"
+    }
+  ],
+  "provider_call_count": 0,
+  "slurm_submission_count": 0,
+  "training_execution_count": 0,
+  "production_launch_claimed": false,
+  "production_server_git_mutation_count": 0,
+  "remote_repository_mutation_count": 0,
+  "server_temporary_fixture_git_mutations_present": true,
+  "isolated_validation_files_written": true
+}

@@ -1,0 +1,23 @@
+{
+  "schema_id": "PCHSI_STAGING_CACHE_V1",
+  "staging_only": true,
+  "predecessor_cache_member": "evidence/PCHSI_V1_8_GIT_STAGING_CACHE.json",
+  "delta": {
+    "schema_id": "PCHSI_V181_REGISTERED_SOURCE_DELTA_V1",
+    "operation": "STAGING_CACHE_ONLY",
+    "predecessor_source_sha256": "3b0bc4c483d893d53126c4b6abc1e0d560d05449737c594642ae78635d514410",
+    "changed_members": {
+      "rollout_adapter/materializer.py": "cfb287fecf0d23593e34cf04ac1bf14ba5775510b6547922573c8ee8346b61e8",
+      "entry/main.py": "c383be04abdcec0f576588f474fdc2b945b0e3034112e717a0fa6f7962323193",
+      "entry/launch.py": "daf265e613647c5fb908b52f0ce0dd206adc6e3923ececace11fd1d9ea0a5367",
+      "entry/pre_submit_recovery.py": "c63c2191b320b338bcbd7e0fa01626d8aabcf97aa5dbbb5ae282490fc7cf4359",
+      "entry/tests/test_memory_digest.py": "1858f80c483f8eeb42224c2970df6471a94d1b209a43f610384767d1aca5fd57",
+      "entry/tests/test_pre_submit_recovery.py": "178577b6fd3544148262a2d605fbe1ae3fd963c2ec3148160c804e2651b960c6"
+    },
+    "recovery_registration_sha256": "d777173219a272d516cff168f351a9b93ab1e092769b53475c05c268f129f672",
+    "production_git_mutation_count": 0,
+    "remote_commit_or_push": false
+  },
+  "ledger_member": "ledger/PCHSI_CANONICAL_STATUS_20260924_FORMAL_MAX10_V1_8_1_NATIVE_MEMORY_FIX_FULL.md",
+  "ledger_sha256": "3267b832fb630e0d548b5c2b0be4518b31bfa31b76597e2aea05a9a91829cf17"
+}

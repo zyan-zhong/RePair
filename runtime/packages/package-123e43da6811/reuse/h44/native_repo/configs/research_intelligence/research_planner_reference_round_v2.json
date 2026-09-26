@@ -1,0 +1,28 @@
+{
+  "schema_version": "RESEARCH_PLANNER_REFERENCE_ROUND_CONFIG_V2",
+  "current_round": "PI1_TO_PI2_HUMAN_REFERENCE",
+  "human_researcher_role": "PRIMARY",
+  "strong_api_researcher_role": "SHADOW_AFTER_HUMAN_PRE_FREEZE",
+  "local_research_planner_role": "SUPERVISION_TARGET_NOT_PRIMARY",
+  "research_planner_responsibilities": [
+    "POLICY_FAILURE_PROFILE",
+    "BOTTLENECK_DISCOVERY",
+    "RESEARCH_PORTFOLIO",
+    "HIGH_VALUE_REPAIR_DISCOVERY",
+    "LINEAGED_REPAIR_PROGRAM_COMPOSITION",
+    "SINGLE_PRINCIPAL_CHANGE",
+    "VERIFICATION_BUDGET",
+    "TRAINING_PLAN",
+    "STOP_RULE",
+    "POST_RESULT_INTERPRETATION"
+  ],
+  "causal_authority": "INDEPENDENT_ENVIRONMENT_VERIFIER_ONLY",
+  "promotion_authority": "DETERMINISTIC_INDEPENDENT_GATE_ONLY",
+  "final_cognitive_target": {
+    "model_family": "Qwen2.5-3B",
+    "same_checkpoint_for_policy_analyzer_planner": true,
+    "mandatory_final_system_target": true,
+    "immediate_reference_round_blocker": false
+  },
+  "live_execution_authorized": false
+}

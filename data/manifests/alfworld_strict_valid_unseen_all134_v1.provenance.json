@@ -1,0 +1,14 @@
+{
+  "active_path": "data/manifests/alfworld_strict_valid_unseen_all134_v1.jsonl",
+  "controls_menu_exposure": false,
+  "manifest_id": "ALFWORLD_STRICT_VALID_UNSEEN_ALL134_V1",
+  "menu_exposure_note": "This manifest selects tasks and gamefiles only. The evaluator protocol determines whether and how admissible commands are exposed.",
+  "records": 134,
+  "semantic_role": "task_selection_only",
+  "sha256": "6e480bb663a6f17207aa2c7a6e1b504adad8448f6e8a2615c5e62fea0b64c0f4",
+  "source_commit": "206be4fce0c853754f353374bd89cda954190e14",
+  "source_path": "data/diagnostic_subsets/all134_valid_unseen_tasks.jsonl",
+  "source_repository": "alfworld-api-model-trajectory-analysis",
+  "split": "valid_unseen",
+  "unique_ids": 134
+}

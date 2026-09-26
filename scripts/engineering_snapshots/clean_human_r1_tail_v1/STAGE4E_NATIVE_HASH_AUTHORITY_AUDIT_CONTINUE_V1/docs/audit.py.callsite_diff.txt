@@ -1,0 +1,20 @@
+--- original/stage4e/audit.py
++++ in_memory_adapter/stage4e/audit.py
+@@ -178,7 +178,7 @@
+         rows[label] = native['load_receipts'](ledger)
+         check_receipt_grid(rows[label], read_json(binding / f'{label}_CONDITION_RUN_SCHEDULE_V1.json')['cells'],
+                            condition_id=conditions[label].policy_condition_id)
+-    allowed_schedule_hashes = {label:identity['artifacts'][f'{label}_CONDITION_RUN_SCHEDULE_V1.json'] for label in ('T0','T2')}
++    allowed_schedule_hashes = {label:_registered_native_hash(schedules[label], identity, f'{label}_CONDITION_RUN_SCHEDULE_V1.json', cfg['binding_sha256'], native) for label in ('T0','T2')}
+     expected = native['derive_expected_select_cells_from_master_schedules'](schedules=schedules,authorized_schedule_sha256=allowed_schedule_hashes)
+     by_expected = {(e.schedule_name,e.condition_cell_id):e for e in expected}
+     access_path = binding / 'CLEAN_SELECT_TASK_ACCESS_MANIFEST_V1.json'
+@@ -204,7 +204,7 @@
+             e=by_expected[(label,row['condition_cell_id'])]
+             audit_loaded_cell(native=native,loaded=loaded,row=row,expected=e,
+                 condition=conditions[label],runtime=runtimes[label],
+-                runtime_sha=identity['artifacts'][f'{label}_SELECT_POLICY_RUNTIME_MANIFEST_V1.json'],
++                runtime_sha=_registered_native_hash(runtimes[label], identity, f'{label}_SELECT_POLICY_RUNTIME_MANIFEST_V1.json', cfg['binding_sha256'], native),
+                 request_sha=cfg['request_schema_sha256'])
+             ep=loaded.episode_artifact; task=by_access[ep.task_index]
+             for key,value in {

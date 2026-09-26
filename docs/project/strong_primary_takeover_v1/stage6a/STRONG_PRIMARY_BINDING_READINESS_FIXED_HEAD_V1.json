@@ -1,0 +1,15 @@
+{
+  "analyzer_existing_runtime_reused": true,
+  "current_post_transport_primary_ready": false,
+  "current_post_transport_stage": "R-POST-SHADOW",
+  "current_pre_transport_has_human_reference_gate": true,
+  "current_pre_transport_primary_ready": false,
+  "current_pre_transport_stage": "R-PRE-SHADOW-HYDRATED-V2",
+  "execution_authorized": false,
+  "parent_integration_head": "2c13cc7dcd8f4fdd756221d1f85ad16b8959ec69",
+  "primary_transport_requirement": "new primary transport/finalizer must preserve blind input and independent verifier/promotion authority while removing Human-reference gate dependency",
+  "readiness_module_source_sha256": "fd4219df8d9cd24579e3e92cbe77a494f354a6401d97316d225a2b6bc25b2944",
+  "role_neutral_contract_reused": true,
+  "schema_id": "STRONG_PRIMARY_BINDING_READINESS_FIXED_HEAD_V1",
+  "schema_version": 1
+}

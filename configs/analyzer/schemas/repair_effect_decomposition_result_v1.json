@@ -1,0 +1,48 @@
+{
+  "$id": "REPAIR_EFFECT_DECOMPOSITION_RESULT_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "formal_benefit_unchanged": {
+      "const": true,
+      "type": "boolean"
+    },
+    "mechanism_label": {
+      "enum": [
+        "SPECIFIC_SINGLE_ACTION_EFFECT",
+        "SHORTEST_TESTED_SUFFICIENT_PREFIX",
+        "COMPOSITIONAL_OPTION_EFFECT",
+        "HISTORY_CONTEXT_DEPENDENT",
+        "NONSPECIFIC_PERTURBATION_EFFECT",
+        "BUDGET_OR_EXTRA_OBSERVATION_CONFOUNDED",
+        "UNRESOLVED_MULTI_CHANNEL_EFFECT"
+      ],
+      "type": "string"
+    },
+    "result_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "schema_id": {
+      "const": "REPAIR_EFFECT_DECOMPOSITION_RESULT_V1",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    },
+    "trace_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "trace_sha256",
+    "mechanism_label",
+    "formal_benefit_unchanged",
+    "result_sha256"
+  ],
+  "type": "object"
+}

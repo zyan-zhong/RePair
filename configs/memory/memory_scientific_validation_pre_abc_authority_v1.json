@@ -1,0 +1,32 @@
+{
+  "schema_id": "MEMORY_SCIENTIFIC_VALIDATION_PRE_ABC_AUTHORITY_V1",
+  "schema_version": 1,
+  "engineering_base_head": "112ba5d3ccc0a3f3c3a9fdd143ec4c69fa525229",
+  "fixed_code_head": "2d0c38cbbae511d2f05b3375ff2e2f48e16427b0",
+  "code_approval_head": "aa0fad1b66a022405079383b61c146124de438df",
+  "a0_code_approval": "CODE_APPROVED_MEMORY_SCIENTIFIC_VALIDATION_A0_CONTRACTS_V1",
+  "package_a": {
+    "role": "LOCAL_REPRESENTATION_MECHANISM_PROBE",
+    "state": "READY_FOR_FORMAL_PACKAGE_DESIGN_AND_EXECUTION_MANIFEST",
+    "scientific_execution_authorized": false,
+    "effect_authority": "UNTESTED",
+    "a1_expanded_representation": "OPTIONAL_CONDITIONAL"
+  },
+  "package_b": {
+    "role": "RETRIEVAL_AND_APPLICABILITY_SAFETY",
+    "state": "CONTRACT_FROZEN_DEPENDENCY_HOLD",
+    "scientific_execution_authorized": false
+  },
+  "package_c": {
+    "role": "ANALYZER_HISTORY_TO_VERIFIED_REPAIR",
+    "state": "CONTRACT_FROZEN_DEPENDENCY_HOLD",
+    "scientific_execution_authorized": false
+  },
+  "policy_internalization": {
+    "state": "PREFREEZE_REQUIRED_BEFORE_LARGE_PACKAGE_C_UNBLIND",
+    "training_execution_authorized": false,
+    "final_authority": "MEMORY_OFF_AND_HARNESS_OFF"
+  },
+  "outcome_guided_redesign_allowed": false,
+  "scientific_outcome_produced": false
+}

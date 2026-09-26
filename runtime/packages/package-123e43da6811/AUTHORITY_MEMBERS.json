@@ -1,0 +1,53 @@
+{
+  "files": [
+    {
+      "name": "CAMPAIGN_STARTUP_AUTHORITY_V1.json",
+      "sha256": "262cfb0698a67d65eb0a78193cb434505bf23f83bd840acdbee10e0dcfedbdee"
+    },
+    {
+      "name": "FORMAL_MAX10_CAMPAIGN_STARTUP_RECEIPT_V1.json",
+      "sha256": "b3c96ef3f9703a6ee91a2193b6945f95d695ce477eba23a4bf799a5c64bf90a1"
+    },
+    {
+      "name": "FORMAL_MAX10_CANARY_PROVENANCE_REFERENCE_V1.json",
+      "sha256": "e70618543ec4197bd0ddad5104f284cbf69eb2c0221d6a6ba268e540367074ed"
+    },
+    {
+      "name": "FORMAL_MAX10_FIRST_ROUND_EXECUTION_BINDING_V1.json",
+      "sha256": "f800ab61599ab72aa8e06c2474ab6928c8b0e3ed3f4eb81abcb208510020665e"
+    },
+    {
+      "name": "FORMAL_MAX10_PAPER_TELEMETRY_BINDING_V1.json",
+      "sha256": "c73e81c926efd3e7b3027a509c3a5606716b38393e422e36de3925bf7bbff572"
+    },
+    {
+      "name": "FORMAL_MAX10_PRELAUNCH_AUTHORITY_V1.json",
+      "sha256": "42fd408b16434121fe460be87433938a4b3b9c0a0c4d3055c995018fc47b02a3"
+    },
+    {
+      "name": "FORMAL_MAX10_RUNTIME_SOURCE_RECONCILE_AND_PRELAUNCH_TERMINAL_V1.json",
+      "sha256": "3cccd13f3432d50ffc3045521c33a14f0a99486f90d8d9c8b9ff2427536503d4"
+    },
+    {
+      "name": "FORMAL_MAX10_RUNTIME_SOURCE_RECONCILIATION_PUBLICATION_V1.json",
+      "sha256": "e61c4443dd7bc2e48f9a1d5099ef8c831adb6117bc5ff9508e9be6ea5e44f91b"
+    },
+    {
+      "name": "PCHSI_PAPER_ROUND_EXPORT_CONTRACT_V1.json",
+      "sha256": "68639f32a3df5853aebe97379f3ff1f7be0bf8857f2858ef246ceec2e524d48a"
+    },
+    {
+      "name": "ROUND_ROLLOUT_COLLECTION_REQUEST_V1.json",
+      "sha256": "9b604443464f26cd930662bb3a36582c2a1b17d39964c6fd4c47e142de2a6966"
+    },
+    {
+      "name": "ROUND_ROLLOUT_EXECUTION_BINDING_V1.json",
+      "sha256": "bda7b7f4c31688b54d5aa774c5a6ee4baf2db09bf839a7679bcd8c7907a70bdf"
+    },
+    {
+      "name": "SCIENTIFIC_ROUND_GOVERNANCE_V1.json",
+      "sha256": "8a7ffd92f016ea7b82fff4997a19aad3b3408e096d880646d8c5f0d34ca95dff"
+    }
+  ],
+  "schema_id": "CAPTURED_FORMAL_AUTHORITY_MEMBERS_V1"
+}

@@ -1,0 +1,32 @@
+{
+  "schema_id": "RESEARCH_PRODUCT_DOMAIN_ISOLATION_V1",
+  "human_reference_round": {
+    "product_id": "HUMAN_REFERENCE_ROUND_PI1_PI2_V1",
+    "forbidden_result_schema_ids": [
+      "STRONG_MODEL_REFERENCE_CELL_RESULT_V1",
+      "STRONG_MODEL_PROVIDER_SIDECAR_MANIFEST_V1",
+      "STRONG_MODEL_REFERENCE_COLLECTION_SEAL_V1"
+    ],
+    "may_read_strong_benchmark_per_task_results": false,
+    "may_read_strong_benchmark_aggregate_results_before_pre_freeze": false
+  },
+  "strong_model_benchmark": {
+    "product_id": "STRONG_MODEL_REFERENCE_SHARED_PROTOCOL_V1",
+    "forbidden_result_schema_ids": [
+      "HUMAN_RESEARCHER_PRE_V1",
+      "HUMAN_RESEARCHER_POST_V1",
+      "RESEARCH_REPAIR_PORTFOLIO_V1",
+      "VERIFIED_TRAINING_EVIDENCE_V1"
+    ],
+    "may_read_human_pre_or_post": false,
+    "may_read_analyzer_or_memory_repair_outputs": false,
+    "may_read_local_training_data": false
+  },
+  "allowed_cross_product_binding": [
+    "shared_evaluation_protocol_sha256",
+    "task_manifest_sha256",
+    "environment_runtime_manifest_sha256",
+    "success_definition_sha256"
+  ],
+  "results_must_use_separate_roots": true
+}

@@ -1,0 +1,42 @@
+\section{Related Work}
+\label{sec:related}
+\paragraph{From failure to a tested correction.}
+Reflexion uses linguistic feedback in later attempts
+\citep{shinn2023reflexion}, and Re-ReST uses reflection and external feedback
+to improve self-training data \citep{dou2024rerest}. AgentRx and TrajDebug
+localize failures from execution evidence \citep{barke2026agentrx,qi2026trajdebug};
+SAGE considers multiple failure hypotheses for research recovery
+\citep{ma2026sage}. CSO goes from diagnosis to intervention, testing
+alternative actions through policy continuation and learning verified
+preferences \citep{li2026cso}. \method{} also tests corrections in the
+environment, then traces which parts of the verified intervention enter training and
+whether the resulting policy improves. This follows the correction beyond its local effect to the behavior
+retained after training.
+
+\paragraph{From guidance to policy learning.}
+GiGPO addresses credit assignment in agent RL \citep{feng2025gigpo}, while
+Agent-G$^2$ adapts the expert-prefix guidance used to start training rollouts
+\citep{wang2026agentg2}. SkillRL develops a hierarchical skill library
+\citep{xia2026skillrl}; SIRI tests skills and distills useful skill-guided
+actions into an unassisted policy \citep{he2026siri}. OPID and SEED use the
+probability shifts induced by hindsight skills as a dense learning signal
+\citep{yang2026opid,wu2026seed}. Rationale supervision can also complement
+ordinary task targets \citep{hsieh2023distilling}. Our formulation focuses on
+state-bound failure repairs: the same tested actions supply either ordinary
+action targets or those targets plus a training-only strategy view.
+The distinction is in the supervision given to a shared learner while its
+deployment interface stays fixed.
+
+\paragraph{What carries across improvement rounds.}
+Self-Harness and Recuris retain changes in external execution and memory
+mechanisms \citep{zhang2026selfharness,yu2026recuris}. EvoTrainer couples
+training-harness adaptation with policy learning \citep{chen2026evotrainer},
+and Frontis-MA1 learns program-evolution operators from executable feedback
+\citep{yang2026frontis}. HELIX organizes matched harness outcomes into
+verified model-update records \citep{fan2026helix}. Aspire and PAST-Bench
+examine whether updates and retained experience produce supported gains
+\citep{wu2026aspire,xue2026past}. \method{} studies the passage into the task
+policy: proposals are tested, their supervision is audited, and the updated
+model is evaluated after the research assistance is removed. Its research
+history can guide later experiments, while OFF/OFF evaluation measures
+what each update leaves in the learner.

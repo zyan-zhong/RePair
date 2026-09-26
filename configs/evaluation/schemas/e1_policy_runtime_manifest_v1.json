@@ -1,0 +1,106 @@
+{
+  "$id": "E1_POLICY_RUNTIME_MANIFEST_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "chat_template_content_format": {
+      "const": "string",
+      "type": "string"
+    },
+    "chat_template_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "dtype": {
+      "const": "bfloat16",
+      "type": "string"
+    },
+    "generation_config_mode": {
+      "const": "vllm",
+      "type": "string"
+    },
+    "manifest_id": {
+      "const": "E1_POLICY_RUNTIME_MANIFEST_V1",
+      "type": "string"
+    },
+    "model_repository": {
+      "const": "Qwen/Qwen2.5-3B-Instruct",
+      "type": "string"
+    },
+    "model_revision": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "prompt_token_ids_supported": {
+      "const": true,
+      "type": "boolean"
+    },
+    "request_id_headers_enabled": {
+      "const": true,
+      "type": "boolean"
+    },
+    "return_token_ids_supported": {
+      "const": true,
+      "type": "boolean"
+    },
+    "schema_id": {
+      "const": "E1_POLICY_RUNTIME_MANIFEST_V1",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    },
+    "served_model_name": {
+      "const": "Qwen2.5-3B-Instruct-E1",
+      "type": "string"
+    },
+    "special_tokens_map_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "tensor_parallel_size": {
+      "const": 1,
+      "type": "integer"
+    },
+    "tokenizer_config_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "tokenizer_manifest_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "tokenizer_revision": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "vllm_version": {
+      "const": "0.11.0",
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "manifest_id",
+    "vllm_version",
+    "model_repository",
+    "model_revision",
+    "tokenizer_revision",
+    "served_model_name",
+    "dtype",
+    "tensor_parallel_size",
+    "generation_config_mode",
+    "chat_template_content_format",
+    "request_id_headers_enabled",
+    "return_token_ids_supported",
+    "prompt_token_ids_supported",
+    "tokenizer_manifest_sha256",
+    "tokenizer_config_sha256",
+    "special_tokens_map_sha256",
+    "chat_template_sha256"
+  ],
+  "title": "E1 policy runtime manifest",
+  "type": "object"
+}

@@ -1,0 +1,31 @@
+{
+  "blocker_count": 0,
+  "blockers": [],
+  "call_evidence_count": 117,
+  "expected_package_freeze_root": "794727df6157715d3c8e04156f97e53300ef9107ca793d215caec447cab964b5",
+  "package_freeze_marker_present": true,
+  "primary_case_manifest_count": 117,
+  "primary_request_manifest_count": 117,
+  "q2_binding_count": 351,
+  "q2_bindings_per_case": {
+    "3": 117
+  },
+  "q2_cases": 117,
+  "r132_log": "/data/run01/scwb204/pchsi/p2/logs/p2_r132_primary117/primary117.log",
+  "r132_log_sha256": "315236e71249dc9f8fd37617b9f426356dfc2c810ad5d3dafb2769aed92652e9",
+  "r132_package": "/data/run01/scwb204/pchsi/p2/p2_strong_offline_proposer_openai_v1_r1_3_2",
+  "r132_run": "/data/run01/scwb204/pchsi/p2/p2_strong_offline_proposer_openai_v1_run_r1_3_2",
+  "raw_response_count": 99,
+  "rejection_count": 26,
+  "run_case_directory_count": 117,
+  "schema_id": "R132_PRIMARY117_IDENTITY_AUDIT_V1",
+  "schema_version": 1,
+  "status": "PASS",
+  "teacher_output_count": 91,
+  "terminal_counts": {
+    "UNRESOLVED_TERMINAL_LABEL": 117
+  },
+  "transport_attempt_metadata_count": 135,
+  "warning_count": 0,
+  "warnings": []
+}

@@ -1,0 +1,76 @@
+{
+  "$id": "ANALYZER_CAPABILITY_PROFILE_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "attributed_group_count": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "component_rows": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "component_id": {
+            "maxLength": 256,
+            "minLength": 1,
+            "type": "string"
+          },
+          "group_sha256s": {
+            "items": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "principal_count": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "secondary_count": {
+            "minimum": 0,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "component_id",
+          "principal_count",
+          "secondary_count",
+          "group_sha256s"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "profile_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "registered_group_count": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "schema_id": {
+      "const": "ANALYZER_CAPABILITY_PROFILE_V1",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    },
+    "zero_claim_group_count": {
+      "minimum": 0,
+      "type": "integer"
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "registered_group_count",
+    "attributed_group_count",
+    "zero_claim_group_count",
+    "component_rows",
+    "profile_sha256"
+  ],
+  "type": "object"
+}

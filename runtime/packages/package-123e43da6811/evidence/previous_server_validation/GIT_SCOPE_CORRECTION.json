@@ -1,0 +1,9 @@
+{
+  "schema_id": "APPEND_ONLY_VALIDATION_GIT_SCOPE_CORRECTION_V1",
+  "original_receipt_sha256": "b4c2672ff58afdab495d3b50dd07ba67aaf162323fde0ca076b4264fb639f987",
+  "original_receipt_preserved": true,
+  "correction": "Original server_git_mutation_count=0 was scoped too broadly. TESTS.py performed git init/index-pack in an isolated server temporary fixture. Production checkout/branch/index and remote repository were not mutated.",
+  "production_server_git_mutation_count": 0,
+  "remote_repository_mutation_count": 0,
+  "server_temporary_fixture_git_mutations_present": true
+}

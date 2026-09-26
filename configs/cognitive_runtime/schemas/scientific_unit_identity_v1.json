@@ -1,0 +1,89 @@
+{
+  "$id": "SCIENTIFIC_UNIT_IDENTITY_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "gamefile_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "group_manifest_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "identity_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "round_evidence_package_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "schema_id": {
+      "const": "SCIENTIFIC_UNIT_IDENTITY_V1",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    },
+    "scientific_unit_id": {
+      "maxLength": 512,
+      "minLength": 1,
+      "type": "string"
+    },
+    "scientific_unit_type": {
+      "enum": [
+        "EPISODE",
+        "ERROR_INSTANCE",
+        "GROUP",
+        "COMPONENT_BATCH",
+        "POLICY_PROFILE",
+        "CROSSCHECK_TARGET",
+        "ROUND"
+      ],
+      "type": "string"
+    },
+    "source_unit_manifest_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "task_id": {
+      "maxLength": 8192,
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "task_set_manifest_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "scientific_unit_type",
+    "scientific_unit_id",
+    "source_unit_manifest_sha256",
+    "task_set_manifest_sha256",
+    "task_id",
+    "gamefile_sha256",
+    "group_manifest_sha256",
+    "round_evidence_package_sha256",
+    "identity_sha256"
+  ],
+  "type": "object"
+}

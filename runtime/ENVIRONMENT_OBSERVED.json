@@ -1,0 +1,19 @@
+{
+  "python": "3.12.13",
+  "packages": {
+    "pytest": "9.0.3",
+    "torch": "2.8.0",
+    "transformers": "4.57.3",
+    "peft": "0.19.1",
+    "accelerate": "1.13.0",
+    "safetensors": "0.7.0",
+    "tokenizers": "0.22.2",
+    "numpy": "2.2.6",
+    "alfworld": "0.4.2",
+    "textworld": "1.7.0",
+    "gym": "0.26.2",
+    "gymnasium": "0.29.1",
+    "openai": "2.43.0"
+  },
+  "scope": "Observed registered Python environment at publication; not a complete historical dependency lock."
+}

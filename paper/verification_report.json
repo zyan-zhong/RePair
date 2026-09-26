@@ -1,0 +1,29 @@
+{
+  "main_text_pages": 9,
+  "total_pages": 22,
+  "checks": {
+    "main_text_at_most_9_pages": true,
+    "no_overfull_boxes": true,
+    "no_undefined_references_or_citations": true,
+    "no_duplicate_labels": true,
+    "no_visible_placeholders": true,
+    "result_keys_defined": true,
+    "anonymous_author": true,
+    "figure_metadata_anonymous": true,
+    "no_known_private_identity": true,
+    "official_style_unchanged": true,
+    "all_24_reference_urls_clickable_in_pdf": true,
+    "AI_statement_present": true,
+    "negative_selection_reported": true,
+    "numerical_reproduction": true,
+    "appendix_after_references": true
+  },
+  "failed": [],
+  "scientific_limitations": [
+    "Final RePair benchmark absent",
+    "Matched component ablations absent",
+    "One candidate and one selection seed",
+    "Campaign required human recovery and contains one promotion exception"
+  ],
+  "formal_submission_uploaded": false
+}

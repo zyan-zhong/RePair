@@ -1,0 +1,153 @@
+{
+  "host": "ln01",
+  "rows": [
+    {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4c_existing_select_freeze_v1/65c7aa120baae98471deb20796927f4adfa5be5c2920d4ed31749308908bad5b/SELECT_EVALUATION_PROTOCOL_V1.json",
+      "sha256": "71890898f3c3ce66b860fcd634f98146c58eb346d3a89daec7537503c74289c1",
+      "local_name": "protocol.json",
+      "authority": "registered bba Stage4E config /protocol historical source reuse only",
+      "status": "READ",
+      "observed_sha256": "71890898f3c3ce66b860fcd634f98146c58eb346d3a89daec7537503c74289c1",
+      "bytes": 238267
+    },
+    {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4c_existing_select_freeze_v1/65c7aa120baae98471deb20796927f4adfa5be5c2920d4ed31749308908bad5b/NEXT_STAGE_BINDING.json",
+      "sha256": "3bdfb902260abba8df52c685d2b178e179c9167e2b30f0f46a73a7d2a7e5bbcb",
+      "local_name": "stage4c_handoff.json",
+      "authority": "registered bba Stage4E config /stage4c_handoff historical source reuse only",
+      "status": "READ",
+      "observed_sha256": "3bdfb902260abba8df52c685d2b178e179c9167e2b30f0f46a73a7d2a7e5bbcb",
+      "bytes": 3476
+    },
+    {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/STAGE4D_FULL_SELECT_EXECUTION_AUTHORIZATION_AND_RESUMABLE_LIVE_V1_3_4GPU_PARALLEL_SHARDING/REVIEW_FINDINGS.md",
+      "sha256": "764f373cf91fd3b706e3cd4a9ab66872d3cc03fba6b1d1f36b47d19494f54f66",
+      "local_name": "native_stage4d/REVIEW_FINDINGS.md",
+      "authority": "registered bba Stage4E config/source_packages exact Stage4D executor",
+      "status": "READ",
+      "observed_sha256": "764f373cf91fd3b706e3cd4a9ab66872d3cc03fba6b1d1f36b47d19494f54f66",
+      "bytes": 2322
+    },
+    {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/STAGE4D_FULL_SELECT_EXECUTION_AUTHORIZATION_AND_RESUMABLE_LIVE_V1_3_4GPU_PARALLEL_SHARDING/slurm_template.sh",
+      "sha256": "7ea7524feb136376b5279fe01ae28b7f823682398cc5d552db69b287329c3ac8",
+      "local_name": "native_stage4d/slurm_template.sh",
+      "authority": "registered bba Stage4E config/source_packages exact Stage4D executor",
+      "status": "READ",
+      "observed_sha256": "7ea7524feb136376b5279fe01ae28b7f823682398cc5d552db69b287329c3ac8",
+      "bytes": 1595
+    },
+    {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/STAGE4D_FULL_SELECT_EXECUTION_AUTHORIZATION_AND_RESUMABLE_LIVE_V1_3_4GPU_PARALLEL_SHARDING/00_VERIFY_PACKAGE.sh",
+      "sha256": "cd0d9825861037376b2c0924138de0d80696e121ce5c492929ad2f6cf3c49a13",
+      "local_name": "native_stage4d/00_VERIFY_PACKAGE.sh",
+      "authority": "registered bba Stage4E config/source_packages exact Stage4D executor",
+      "status": "READ",
+      "observed_sha256": "cd0d9825861037376b2c0924138de0d80696e121ce5c492929ad2f6cf3c49a13",
+      "bytes": 1470
+    },
+    {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/STAGE4D_FULL_SELECT_EXECUTION_AUTHORIZATION_AND_RESUMABLE_LIVE_V1_3_4GPU_PARALLEL_SHARDING/README_CN.md",
+      "sha256": "58fa4f4fee400b30cfd8455a4756155f4c19b621bdd570a2cb869b112bcd1fac",
+      "local_name": "native_stage4d/README_CN.md",
+      "authority": "registered bba Stage4E config/source_packages exact Stage4D executor",
+      "status": "READ",
+      "observed_sha256": "58fa4f4fee400b30cfd8455a4756155f4c19b621bdd570a2cb869b112bcd1fac",
+      "bytes": 3845
+    },
+    {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/STAGE4D_FULL_SELECT_EXECUTION_AUTHORIZATION_AND_RESUMABLE_LIVE_V1_3_4GPU_PARALLEL_SHARDING/RUN_AUTHORIZE_AND_SUBMIT.sh",
+      "sha256": "0d2b19eff4cfed3617299e1bce7d878b562b771f0364a07072fd73b38b52532d",
+      "local_name": "native_stage4d/RUN_AUTHORIZE_AND_SUBMIT.sh",
+      "authority": "registered bba Stage4E config/source_packages exact Stage4D executor",
+      "status": "READ",
+      "observed_sha256": "0d2b19eff4cfed3617299e1bce7d878b562b771f0364a07072fd73b38b52532d",
+      "bytes": 2141
+    },
+    {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/STAGE4D_FULL_SELECT_EXECUTION_AUTHORIZATION_AND_RESUMABLE_LIVE_V1_3_4GPU_PARALLEL_SHARDING/tests/test_stage4d_full_contract.py",
+      "sha256": "fa17a2d39ef74361a4ff0231c5f3c2c931a272a7fa121c0f4fa9c0cc1f53d4f8",
+      "local_name": "native_stage4d/tests/test_stage4d_full_contract.py",
+      "authority": "registered bba Stage4E config/source_packages exact Stage4D executor",
+      "status": "READ",
+      "observed_sha256": "fa17a2d39ef74361a4ff0231c5f3c2c931a272a7fa121c0f4fa9c0cc1f53d4f8",
+      "bytes": 8811
+    },
+    {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/STAGE4D_FULL_SELECT_EXECUTION_AUTHORIZATION_AND_RESUMABLE_LIVE_V1_3_4GPU_PARALLEL_SHARDING/stage4d_full/contract.py",
+      "sha256": "c97e02310bfcc8d04b24ece35ad0e5dde676e911386329c8945e36ab953a40d3",
+      "local_name": "native_stage4d/stage4d_full/contract.py",
+      "authority": "registered bba Stage4E config/source_packages exact Stage4D executor",
+      "status": "READ",
+      "observed_sha256": "c97e02310bfcc8d04b24ece35ad0e5dde676e911386329c8945e36ab953a40d3",
+      "bytes": 14006
+    },
+    {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/STAGE4D_FULL_SELECT_EXECUTION_AUTHORIZATION_AND_RESUMABLE_LIVE_V1_3_4GPU_PARALLEL_SHARDING/stage4d_full/live.py",
+      "sha256": "1419854de8945b28840ff86d3282a53600af4b11b56aa373396966b9943bf8db",
+      "local_name": "native_stage4d/stage4d_full/live.py",
+      "authority": "registered bba Stage4E config/source_packages exact Stage4D executor",
+      "status": "READ",
+      "observed_sha256": "1419854de8945b28840ff86d3282a53600af4b11b56aa373396966b9943bf8db",
+      "bytes": 24873
+    },
+    {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/STAGE4D_FULL_SELECT_EXECUTION_AUTHORIZATION_AND_RESUMABLE_LIVE_V1_3_4GPU_PARALLEL_SHARDING/stage4d_full/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_name": "native_stage4d/stage4d_full/__init__.py",
+      "authority": "registered bba Stage4E config/source_packages exact Stage4D executor",
+      "status": "READ",
+      "observed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/STAGE4D_FULL_SELECT_EXECUTION_AUTHORIZATION_AND_RESUMABLE_LIVE_V1_3_4GPU_PARALLEL_SHARDING/stage4d_full/authorize.py",
+      "sha256": "0e29fa28d962a83b5970bf4777580740f5dc6611458efb808d7a232abcc2b64d",
+      "local_name": "native_stage4d/stage4d_full/authorize.py",
+      "authority": "registered bba Stage4E config/source_packages exact Stage4D executor",
+      "status": "READ",
+      "observed_sha256": "0e29fa28d962a83b5970bf4777580740f5dc6611458efb808d7a232abcc2b64d",
+      "bytes": 2963
+    },
+    {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/STAGE4D_FULL_SELECT_EXECUTION_AUTHORIZATION_AND_RESUMABLE_LIVE_V1_3_4GPU_PARALLEL_SHARDING/stage4d_full/slurm_entry.py",
+      "sha256": "ec06301334fa6f3bd41280617813e41544ab2574b96f9147e22864df55bbd564",
+      "local_name": "native_stage4d/stage4d_full/slurm_entry.py",
+      "authority": "registered bba Stage4E config/source_packages exact Stage4D executor",
+      "status": "READ",
+      "observed_sha256": "ec06301334fa6f3bd41280617813e41544ab2574b96f9147e22864df55bbd564",
+      "bytes": 8022
+    },
+    {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/STAGE4D_FULL_SELECT_EXECUTION_AUTHORIZATION_AND_RESUMABLE_LIVE_V1_3_4GPU_PARALLEL_SHARDING/stage4d_full/parallel.py",
+      "sha256": "92d26d6183e191ed35ca944d2038179826a1f44671f27c4953f5ff671b6f4bd4",
+      "local_name": "native_stage4d/stage4d_full/parallel.py",
+      "authority": "registered bba Stage4E config/source_packages exact Stage4D executor",
+      "status": "READ",
+      "observed_sha256": "92d26d6183e191ed35ca944d2038179826a1f44671f27c4953f5ff671b6f4bd4",
+      "bytes": 3163
+    },
+    {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/STAGE4D_FULL_SELECT_EXECUTION_AUTHORIZATION_AND_RESUMABLE_LIVE_V1_3_4GPU_PARALLEL_SHARDING/stage4d_full/shard_worker.py",
+      "sha256": "328e29d1e93c28bb7cb1721ff4a025297511095c9fe8b7fdd0c5017c378b0d13",
+      "local_name": "native_stage4d/stage4d_full/shard_worker.py",
+      "authority": "registered bba Stage4E config/source_packages exact Stage4D executor",
+      "status": "READ",
+      "observed_sha256": "328e29d1e93c28bb7cb1721ff4a025297511095c9fe8b7fdd0c5017c378b0d13",
+      "bytes": 5111
+    },
+    {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/STAGE4D_FULL_SELECT_EXECUTION_AUTHORIZATION_AND_RESUMABLE_LIVE_V1_3_4GPU_PARALLEL_SHARDING/PACKAGE_FILES.sha256",
+      "sha256": "7c84bc60a027fd4074ed232730762072ff1770302a19ab9a5f8a85b8c62db3ea",
+      "local_name": "native_stage4d/PACKAGE_FILES.sha256",
+      "authority": "registered bba Stage4E config/source_packages exact Stage4D executor",
+      "status": "READ",
+      "observed_sha256": "7c84bc60a027fd4074ed232730762072ff1770302a19ab9a5f8a85b8c62db3ea",
+      "bytes": 1172
+    }
+  ],
+  "schema_id": "EXACT_REGISTERED_SSH_READ_RECEIPT_V1",
+  "remote_filesystem_mutations": 0,
+  "filesystem_discovery_used": false,
+  "scientific_execution_count": 0
+}

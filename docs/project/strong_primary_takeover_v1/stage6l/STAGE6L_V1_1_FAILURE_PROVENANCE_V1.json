@@ -1,0 +1,23 @@
+{
+  "automatic_truncation_used": false,
+  "environment_call_count_before_failure": 0,
+  "failed_command_rc": 1,
+  "failed_package": "STAGE6L_I1_ROLE_TEACHER_SERIALIZER_AND_LOCAL_RI_TRAINING_PREP_V1_1",
+  "failed_package_sha256": "afa18cbcefb1f1abcb1e0b4bc293eb960b869337759ff9c020f50ee832a37acb",
+  "failure_class": "PREP_ENV_OPTIONAL_TRAINER_IMPORT_PROBE_ABORTED",
+  "failure_message": "ModuleNotFoundError: No module named 'round_training'",
+  "fix_scope": "OPTIONAL_IMPORT_PROBE_PLUS_NO_TRUNCATION_SEQUENCE_POLICY_AUDIT",
+  "git_commit_created_by_failed_run": false,
+  "observed_sequence_length_warning": "145981 > 131072",
+  "provider_call_count_before_failure": 0,
+  "repository_head_after_failed_run": "a6f4fefff95418801fce2e915380c065fb682c32",
+  "root_causes": [
+    "find_spec on dotted optional module imports its parent and may raise ModuleNotFoundError",
+    "token audit detected at least one full serialized sequence beyond tokenizer model_max_length"
+  ],
+  "round_id": "CLEAN-HUMAN-REFERENCE-R1-PI0",
+  "schema_id": "STAGE6L_V1_1_FAILURE_PROVENANCE_V1",
+  "schema_version": 1,
+  "teacher_corpus_regenerated": false,
+  "training_execution_count_before_failure": 0
+}

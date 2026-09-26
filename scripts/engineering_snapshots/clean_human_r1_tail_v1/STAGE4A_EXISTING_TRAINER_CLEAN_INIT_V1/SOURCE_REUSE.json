@@ -1,0 +1,12 @@
+{
+  "fixed_head": "629895d8ca9a7e5be2c9f2991c5e8c71d9ca3df3",
+  "read_only_sources": {
+    "scripts/engineering_snapshots/training_pipeline/round_generic_training_stage_v2_1_hardening_build/round_training/adapters/frozen_formal_train_peft.py": "166dbaff3845588ff53f0a4306d7116b59ac0026f4de191cf8bb696e9d38a327",
+    "scripts/engineering_snapshots/training_pipeline/round_generic_training_stage_v2_1_hardening_build/round_training/contracts.py": "6b4d29d999fbc113d8945baff30eef8308d66b61266592c48e8f410f72ce66d2",
+    "scripts/engineering_snapshots/training_pipeline/round_generic_training_stage_v2_1_hardening_build/round_training/receipts.py": "e09688d37cb9a5e8c4aeb8c4442f96f713c02143ae7f9ecd54db037479eec379",
+    "scripts/engineering_snapshots/training_pipeline/round_generic_training_stage_v2_1_hardening_build/round_training/stage_runner.py": "42f657bf9bc7b796bfe02612dd1a4d13d8896f0bcbdb69db9fa23cec71a961e1",
+    "src/pchsi/round_control/role_authority.py": "5b2eded4c29aa29b0fac0b4257c5c0ebc3212dfc3b14d408d3f346e36b4b97ac",
+    "uploaded_engineering_source/formal_train.py": "4709c32d34b437d2884fa83d4967f4d898e4cd17d5a56ce0b9e72a250f0ad9e7"
+  },
+  "source_review_sha256": "ec4b2396208f71dad21bc3b2bdb4b29d05a3c2d3ecdf17ab14695a6ac99d8596"
+}

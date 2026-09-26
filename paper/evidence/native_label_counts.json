@@ -1,0 +1,20 @@
+{
+  "ACTION_LOSS_BEARING_TOKEN_COUNT": 51,
+  "ACTION_ONLY_STRATEGY_ROW_COUNT": 0,
+  "ACTION_TARGET_TOKEN_COUNT": 51,
+  "NON_VERIFIED_STRATEGY_ROW_COUNT": 0,
+  "PROMPT_MASKED_TOKEN_COUNT": 4096,
+  "STRATEGY_LOSS_BEARING_TOKEN_COUNT": 2546,
+  "STRATEGY_ROW_COUNT": 4,
+  "STRATEGY_TARGET_TOKEN_COUNT": 2546,
+  "TOTAL_LOSS_BEARING_TOKEN_COUNT": 2597,
+  "VERIFIED_BENEFIT_ROW_COUNT": 4,
+  "deployment_i1_parser_changed": false,
+  "future_outcome_visible_to_policy": false,
+  "native_example_count": 8,
+  "schema_version": 1,
+  "task_policy_optimizer_execution_authorized": false,
+  "training_execution_count": 0,
+  "training_token_fairness_required_for_ablation": true,
+  "views_per_strategy_row": 2
+}

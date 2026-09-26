@@ -1,0 +1,90 @@
+{
+  "access": {
+    "benchmark_feedback_authorized": false,
+    "consumer": "ROLE_TAKEOVER_AUDIT",
+    "per_task_select_data_authorized": false,
+    "split": "ALFWORLD_TRAIN",
+    "train_pool": "TRAIN_AUDIT"
+  },
+  "automatic_retry_authorized": false,
+  "candidate_replacement_after_outcomes": false,
+  "environment_effect_authority": "INDEPENDENT_ENVIRONMENT_VERIFIER_ONLY",
+  "environment_execution_authorized": false,
+  "frozen_strong_shadow_source": {
+    "selected_candidate_sha256s": [
+      "16c7937734dd6b6cc3f736d485d3bfefce86703a25f8698163d59ef5609f458f",
+      "571c666fbfc62e416b306c79c7d69ec24799856ba49aec624db6678bf8d47b57",
+      "7607fb5b2d9a5add0b4961993872c0019eadfacfda8688a848bf594cb46fd500",
+      "f75c6931859e6b99338d21657aeb016db4d50e5280e77f5efc2319729f481949",
+      "0038bc9e86919af6a09c50df91cf5dbc15cbcbe086da78bb109f00f6c64e4dd9",
+      "cccd9923e1f95ae86e65b9a3e6683fd1a78c866d5ea4c7a5ea95ff24af392914",
+      "f631426d6db74fda36c797ba6c30445cb420b64ae328b6ea892f840ee1321eca",
+      "53fdbbaf175567d8238d18b8445824165a637721d94f36d41ce340105e0ba7ed",
+      "16fcb78ea841481a96d72e4f20cb30b5e05afdfd699963ff2683fa835e7736d4",
+      "4128d8eacf104cf3b5f8434aea2148fb32a1dce15abf1536d1fb41e5220415fb",
+      "d705b29be82595323c7e3e483407572c7e57b66454379a210e20cc7e3da72b7e",
+      "4cb8357aaa0327de1dd0ba8703887a24e19535bd9b021d8a41da5e887b0d48dd"
+    ],
+    "selected_source_state_sha256s": [
+      "07c24188830acfc5f610773e0d88a7b871039daed6447ff3b4da0a6256cbbf83",
+      "2a64a9a04d1cdbf12030c541c231523430e7d364bf6f4b69d5b63bbebfed68d4",
+      "4db87eb2d8a9129fd67cf83123da641959296f6ad9764488f4160af5db4b1634",
+      "5ddfad7ddc3cef59941bcda78479c87a344792a3338bc1b85f7bac1320e48da0",
+      "702ec04885e1d3564c6fc2d3711a9daa669e594e9b75107dda4af1b2ef41f220",
+      "7d06137bb646753124b6bdd754124014897349ef9455270572a63acc71688b3d",
+      "7d3a5ced22911253dc645c021022f3e353989e7e34635a101b0426cb6779768c",
+      "917b2fec597328835123648c9045b5f5efe4a101de61de6cdf73247d2507941f",
+      "cacd0cfb4b04ccaeb4eaed742a803dae2d5cfa3210bbc7276d7ead3c4702d8e3",
+      "d82103ce1c80b206dc10fac2a9ea46ba05387397d132d6ab6fd7338f15e1816b",
+      "dc46a99d3b82126d862bdfb39d02826654551ecaa317aab2cc6b15a3aab92aa0",
+      "fe58c34381e9f1a4319612d67148b028bb3924fa70adb804ef3e6764e39b7156"
+    ],
+    "selected_state_count": 12,
+    "shadow_record_sha256": "f6053675a8738299adb9f8383e75a071d2fd722dabd868aabfb837be54b321ec"
+  },
+  "model_execution_authorized": false,
+  "parent_policy_id": "PI0_CLEAN",
+  "promotion_authority": "DETERMINISTIC_INDEPENDENT_GATE_ONLY",
+  "required_calibration_outputs": [
+    "exact executed audit portfolio identity",
+    "model/environment budget receipts",
+    "Benefit/Harm/Neutral/Uncertain outcome package",
+    "future-outcome leakage audit",
+    "evidence-grounding audit",
+    "zero-baseline strict-superiority disposition"
+  ],
+  "resource_budget_source": {
+    "frozen_for_execution": false,
+    "resource_plan": {
+      "expected_additional_model_logical_calls": 0,
+      "expected_api_cost_usd": null,
+      "expected_environment_branch_runs": 120,
+      "expected_gpu_hours": null,
+      "resource_basis": "Frozen plan: 12 selected source states multiplied by 5 paired repetitions and 2 branch arms equals 120 environment branch runs; no adaptive replacement or additional model-planning calls are budgeted."
+    },
+    "source": "REUSE_FROZEN_STRONG_PRE_VERIFICATION_AND_RESOURCE_PLAN",
+    "source_shadow_record_sha256": "f6053675a8738299adb9f8383e75a071d2fd722dabd868aabfb837be54b321ec",
+    "verification_plan": {
+      "branch_arms_per_repetition": 2,
+      "branch_runs_per_state": 10,
+      "outcome_adaptive_budget_change_allowed": false,
+      "paired_repetitions_per_state": 5,
+      "primary_endpoint": "For each selected state, the paired difference between candidate and frozen comparator arms in verifier-recorded registered task progress, with task completion as the highest-priority progress event and invalid/nonexecuted repetition as a prespecified secondary diagnostic.",
+      "refutation_criterion": "Refute the portfolio hypothesis if fewer than eight states achieve at least three candidate-arm paired progress wins, or if aggregate paired wins do not exceed aggregate paired losses across the 60 repetitions.",
+      "selected_branch_run_budget": 120,
+      "selected_state_budget_ceiling": 12,
+      "stop_condition": "Execute exactly the frozen 120 branch runs unless an arm reaches its registered episode terminal condition; do not add, replace, or reallocate states based on observed outcomes. After all scheduled runs or registered terminal events are recorded, stop and seal the F0/F1 manifest.",
+      "support_criterion": "Support the hypothesis only if at least eight of 12 states show candidate-arm registered task progress in at least three of five paired repetitions and aggregate paired wins exceed paired losses, with no increase in aggregate invalid or nonexecuted repeated actions.",
+      "total_branch_run_budget_ceiling": 120,
+      "unfavorable_candidate_replacement_allowed": false
+    }
+  },
+  "results_enter_failure_memory": false,
+  "results_enter_localization_supervision": false,
+  "results_enter_policy_training": false,
+  "schema_id": "TRAIN_AUDIT_TAKEOVER_CALIBRATION_PROTOCOL_V1",
+  "schema_version": 1,
+  "takeover_execution_authorized": false,
+  "target_round_id": "CLEAN-STRONG-REFERENCE-R2-PI0",
+  "training_execution_authorized": false
+}

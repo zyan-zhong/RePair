@@ -1,0 +1,80 @@
+{
+  "schema_id": "RECEIPT_OWNED_RESIDENT_OBSERVATION_V1",
+  "observed_utc": "2026-09-24T08:13:23.768617+00:00",
+  "host": "ln02",
+  "pid": 854791,
+  "process_exists": false,
+  "process_argv": [],
+  "expected_argv": [
+    "/data/home/scwb204/run/sdar_repro/conda_envs/sdar_sft_py312/bin/python",
+    "-B",
+    "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/formal_max10_v18_validation/3b0bc4c483d893d53126c4b6abc1e0d560d05449737c594642ae78635d514410/package/entry/main.py",
+    "--run"
+  ],
+  "process_identity_matches": false,
+  "process_state": "    PID    PPID STAT     ELAPSED     TIME WCHAN\n",
+  "rows": [
+    {
+      "name": "resident.log",
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/launch_receipts/a1e7fef06ddf461abef0734d2561bfc9/resident.log",
+      "present": true,
+      "bytes": 1859,
+      "sha256": "94c66953cc2fce0d022de43162fd76d61cdf19e2d930830561ae27198cff6d0e",
+      "local_path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v18\\server_current_entry_validation\\3b0bc4c483d893d53126c4b6abc1e0d560d05449737c594642ae78635d514410\\observations\\20260924T081324266206Z\\resident.log"
+    },
+    {
+      "name": "OWNER_BINDING.json",
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/OWNER_BINDING.json",
+      "present": true,
+      "bytes": 2042,
+      "sha256": "ee8b6de571ebec517e98f9a7ef866b35fe195434a16dbb24f748b40603d5dd8f",
+      "local_path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v18\\server_current_entry_validation\\3b0bc4c483d893d53126c4b6abc1e0d560d05449737c594642ae78635d514410\\observations\\20260924T081324266206Z\\OWNER_BINDING.json"
+    },
+    {
+      "name": "CAMPAIGN_TERMINAL.json",
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/CAMPAIGN_TERMINAL.json",
+      "present": false
+    },
+    {
+      "name": "attempts/000001/INTENT.json",
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/attempts/000001/INTENT.json",
+      "present": true,
+      "bytes": 1522,
+      "sha256": "20852c86dd0e1980152004a09dfcec613dcf31aaca2e15f976fb1e787ce542e4",
+      "local_path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v18\\server_current_entry_validation\\3b0bc4c483d893d53126c4b6abc1e0d560d05449737c594642ae78635d514410\\observations\\20260924T081324266206Z\\attempts\\000001\\INTENT.json"
+    },
+    {
+      "name": "attempts/000001/RESULT.json",
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/attempts/000001/RESULT.json",
+      "present": false
+    },
+    {
+      "name": "attempts/000001/rollout/MATERIALIZED_ROLLOUT.json",
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/attempts/000001/rollout/MATERIALIZED_ROLLOUT.json",
+      "present": true,
+      "bytes": 12040,
+      "sha256": "16c04a048531f6c9a0e972af19a6f4e73e0f467784095c9f378096524b6067ce",
+      "local_path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v18\\server_current_entry_validation\\3b0bc4c483d893d53126c4b6abc1e0d560d05449737c594642ae78635d514410\\observations\\20260924T081324266206Z\\attempts\\000001\\rollout\\MATERIALIZED_ROLLOUT.json"
+    },
+    {
+      "name": "attempts/000001/rollout/SUBMISSION_RECEIPT.json",
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/attempts/000001/rollout/SUBMISSION_RECEIPT.json",
+      "present": false
+    },
+    {
+      "name": "attempts/000001/rollout/RESIDENT_ROLLOUT_OPERATIONAL_STOP.json",
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/attempts/000001/rollout/RESIDENT_ROLLOUT_OPERATIONAL_STOP.json",
+      "present": true,
+      "bytes": 1607,
+      "sha256": "ab75a2ab20b2587c4ec8dc8a6e3687ef86e763741e702a2c7e8c6b24fdca7fdc",
+      "local_path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v18\\server_current_entry_validation\\3b0bc4c483d893d53126c4b6abc1e0d560d05449737c594642ae78635d514410\\observations\\20260924T081324266206Z\\attempts\\000001\\rollout\\RESIDENT_ROLLOUT_OPERATIONAL_STOP.json"
+    },
+    {
+      "name": "attempts/000001/rollout/RESIDENT_ROLLOUT_CONTAINMENT.json",
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/attempts/000001/rollout/RESIDENT_ROLLOUT_CONTAINMENT.json",
+      "present": false
+    }
+  ],
+  "filesystem_discovery_used": false,
+  "scientific_optimizer_execution_claimed": false
+}

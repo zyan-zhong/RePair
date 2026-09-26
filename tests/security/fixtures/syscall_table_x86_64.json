@@ -1,0 +1,103 @@
+{
+  "architecture": "x86_64",
+  "audit_arch": 3221225534,
+  "entries": [
+    {
+      "name": "read",
+      "number": 0
+    },
+    {
+      "name": "write",
+      "number": 1
+    },
+    {
+      "name": "open",
+      "number": 2
+    },
+    {
+      "name": "close",
+      "number": 3
+    },
+    {
+      "name": "stat",
+      "number": 4
+    },
+    {
+      "name": "fstat",
+      "number": 5
+    },
+    {
+      "name": "mmap",
+      "number": 9
+    },
+    {
+      "name": "rt_sigreturn",
+      "number": 15
+    },
+    {
+      "name": "nanosleep",
+      "number": 35
+    },
+    {
+      "name": "clone",
+      "number": 56
+    },
+    {
+      "name": "fork",
+      "number": 57
+    },
+    {
+      "name": "vfork",
+      "number": 58
+    },
+    {
+      "name": "execve",
+      "number": 59
+    },
+    {
+      "name": "exit",
+      "number": 60
+    },
+    {
+      "name": "kill",
+      "number": 62
+    },
+    {
+      "name": "uname",
+      "number": 63
+    },
+    {
+      "name": "fcntl",
+      "number": 72
+    },
+    {
+      "name": "getdents64",
+      "number": 217
+    },
+    {
+      "name": "exit_group",
+      "number": 231
+    },
+    {
+      "name": "openat",
+      "number": 257
+    },
+    {
+      "name": "unshare",
+      "number": 272
+    },
+    {
+      "name": "setns",
+      "number": 308
+    },
+    {
+      "name": "execveat",
+      "number": 322
+    },
+    {
+      "name": "clone3",
+      "number": 435
+    }
+  ],
+  "schema_version": "s1_syscall_table_v1"
+}

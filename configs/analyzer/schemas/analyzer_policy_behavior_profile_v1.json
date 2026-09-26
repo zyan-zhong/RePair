@@ -1,0 +1,49 @@
+{
+  "$id": "ANALYZER_POLICY_BEHAVIOR_PROFILE_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "candidate_bottleneck_components": {
+      "items": {
+        "maxLength": 256,
+        "minLength": 1,
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "capability_profile_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "policy_profile_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "principal_bottleneck_selected": {
+      "const": false,
+      "type": "boolean"
+    },
+    "schema_id": {
+      "const": "ANALYZER_POLICY_BEHAVIOR_PROFILE_V1",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    },
+    "training_method_selected": {
+      "const": false,
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "capability_profile_sha256",
+    "candidate_bottleneck_components",
+    "principal_bottleneck_selected",
+    "training_method_selected",
+    "policy_profile_sha256"
+  ],
+  "type": "object"
+}

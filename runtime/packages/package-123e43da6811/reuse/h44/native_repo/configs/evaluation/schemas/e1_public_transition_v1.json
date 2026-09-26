@@ -1,0 +1,110 @@
+{
+  "$id": "E1_PUBLIC_TRANSITION_RECORD_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "done": {
+      "type": "boolean"
+    },
+    "environment_step_index": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "execution_attempt_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "model_call_index": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "pre_action_admissible_commands": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "pre_action_admissible_commands_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "pre_action_observation": {
+      "type": "string"
+    },
+    "pre_action_observation_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "pre_action_visibility": {
+      "const": "POLICY_VISIBLE_BEFORE_ACTION",
+      "type": "string"
+    },
+    "resulting_admissible_commands": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "resulting_admissible_commands_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "resulting_observation": {
+      "type": "string"
+    },
+    "resulting_observation_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "resulting_visibility": {
+      "const": "POST_ACTION_PUBLIC_AUDIT_ONLY",
+      "type": "string"
+    },
+    "scheduled_cell_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "schema_id": {
+      "const": "E1_PUBLIC_TRANSITION_RECORD_V1",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    },
+    "score": {
+      "type": "number"
+    },
+    "submitted_action": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "won": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "scheduled_cell_id",
+    "execution_attempt_id",
+    "model_call_index",
+    "environment_step_index",
+    "submitted_action",
+    "pre_action_observation",
+    "pre_action_observation_sha256",
+    "pre_action_admissible_commands",
+    "pre_action_admissible_commands_sha256",
+    "resulting_observation",
+    "resulting_observation_sha256",
+    "resulting_admissible_commands",
+    "resulting_admissible_commands_sha256",
+    "done",
+    "won",
+    "score",
+    "pre_action_visibility",
+    "resulting_visibility"
+  ],
+  "title": "E1 public transition record",
+  "type": "object"
+}

@@ -1,0 +1,156 @@
+test_driver_adapter_changes_only_audit_subprocess_entry (test_resume.ResumeTests.test_driver_adapter_changes_only_audit_subprocess_entry) ... ERROR
+test_driver_lock_symlink_is_refused (test_resume.ResumeTests.test_driver_lock_symlink_is_refused) ... ERROR
+test_existing_driver_lock_is_respected_not_deleted (test_resume.ResumeTests.test_existing_driver_lock_is_respected_not_deleted) ... ERROR
+test_loaded_driver_keeps_old_root_and_original_publication (test_resume.ResumeTests.test_loaded_driver_keeps_old_root_and_original_publication) ... ERROR
+test_no_new_scheduler_submission_consolidation_or_model_calls (test_resume.ResumeTests.test_no_new_scheduler_submission_consolidation_or_model_calls) ... ERROR
+test_original_finalize_launches_corrected_audit_child (test_resume.ResumeTests.test_original_finalize_launches_corrected_audit_child) ... ERROR
+test_unknown_control_or_repo_never_used (test_resume.ResumeTests.test_unknown_control_or_repo_never_used) ... ERROR
+test_unknown_driver_bytes_not_adopted (test_resume.ResumeTests.test_unknown_driver_bytes_not_adopted) ... ERROR
+
+======================================================================
+ERROR: test_driver_adapter_changes_only_audit_subprocess_entry (test_resume.ResumeTests.test_driver_adapter_changes_only_audit_subprocess_entry)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/STAGE4E_NATIVE_HASH_AUTHORITY_AUDIT_CONTINUE_V1/tests/test_resume.py", line 31, in test_driver_adapter_changes_only_audit_subprocess_entry
+    out=r().corrected_driver_source(raw)
+        ~^^
+  File "/mnt/data/STAGE4E_NATIVE_HASH_AUTHORITY_AUDIT_CONTINUE_V1/tests/test_resume.py", line 21, in r
+    def r():return importlib.import_module('resume')
+                   ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/importlib/__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'resume'
+
+======================================================================
+ERROR: test_driver_lock_symlink_is_refused (test_resume.ResumeTests.test_driver_lock_symlink_is_refused)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/STAGE4E_NATIVE_HASH_AUTHORITY_AUDIT_CONTINUE_V1/tests/test_resume.py", line 91, in test_driver_lock_symlink_is_refused
+    with r().driver_mutex(p):pass
+         ~^^
+  File "/mnt/data/STAGE4E_NATIVE_HASH_AUTHORITY_AUDIT_CONTINUE_V1/tests/test_resume.py", line 21, in r
+    def r():return importlib.import_module('resume')
+                   ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/importlib/__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'resume'
+
+======================================================================
+ERROR: test_existing_driver_lock_is_respected_not_deleted (test_resume.ResumeTests.test_existing_driver_lock_is_respected_not_deleted)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/STAGE4E_NATIVE_HASH_AUTHORITY_AUDIT_CONTINUE_V1/tests/test_resume.py", line 79, in test_existing_driver_lock_is_respected_not_deleted
+    with r().driver_mutex(p):
+         ~^^
+  File "/mnt/data/STAGE4E_NATIVE_HASH_AUTHORITY_AUDIT_CONTINUE_V1/tests/test_resume.py", line 21, in r
+    def r():return importlib.import_module('resume')
+                   ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/importlib/__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'resume'
+
+======================================================================
+ERROR: test_loaded_driver_keeps_old_root_and_original_publication (test_resume.ResumeTests.test_loaded_driver_keeps_old_root_and_original_publication)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/STAGE4E_NATIVE_HASH_AUTHORITY_AUDIT_CONTINUE_V1/tests/test_resume.py", line 40, in test_loaded_driver_keeps_old_root_and_original_publication
+    driver=r().load_corrected_driver(OLD,audit)
+           ~^^
+  File "/mnt/data/STAGE4E_NATIVE_HASH_AUTHORITY_AUDIT_CONTINUE_V1/tests/test_resume.py", line 21, in r
+    def r():return importlib.import_module('resume')
+                   ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/importlib/__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'resume'
+
+======================================================================
+ERROR: test_no_new_scheduler_submission_consolidation_or_model_calls (test_resume.ResumeTests.test_no_new_scheduler_submission_consolidation_or_model_calls)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/STAGE4E_NATIVE_HASH_AUTHORITY_AUDIT_CONTINUE_V1/tests/test_resume.py", line 68, in test_no_new_scheduler_submission_consolidation_or_model_calls
+    source=(ROOT/'resume.py').read_text()
+  File "/usr/lib/python3.13/pathlib/_local.py", line 548, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/pathlib/_local.py", line 539, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/data/STAGE4E_NATIVE_HASH_AUTHORITY_AUDIT_CONTINUE_V1/resume.py'
+
+======================================================================
+ERROR: test_original_finalize_launches_corrected_audit_child (test_resume.ResumeTests.test_original_finalize_launches_corrected_audit_child)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/STAGE4E_NATIVE_HASH_AUTHORITY_AUDIT_CONTINUE_V1/tests/test_resume.py", line 48, in test_original_finalize_launches_corrected_audit_child
+    driver=r().load_corrected_driver(OLD,load_corrected_audit(OLD))
+           ~^^
+  File "/mnt/data/STAGE4E_NATIVE_HASH_AUTHORITY_AUDIT_CONTINUE_V1/tests/test_resume.py", line 21, in r
+    def r():return importlib.import_module('resume')
+                   ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/importlib/__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'resume'
+
+======================================================================
+ERROR: test_unknown_control_or_repo_never_used (test_resume.ResumeTests.test_unknown_control_or_repo_never_used)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/STAGE4E_NATIVE_HASH_AUTHORITY_AUDIT_CONTINUE_V1/tests/test_resume.py", line 64, in test_unknown_control_or_repo_never_used
+    r().validate_requested_paths(cfg,control,repo)
+    ~^^
+  File "/mnt/data/STAGE4E_NATIVE_HASH_AUTHORITY_AUDIT_CONTINUE_V1/tests/test_resume.py", line 21, in r
+    def r():return importlib.import_module('resume')
+                   ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/importlib/__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'resume'
+
+======================================================================
+ERROR: test_unknown_driver_bytes_not_adopted (test_resume.ResumeTests.test_unknown_driver_bytes_not_adopted)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/STAGE4E_NATIVE_HASH_AUTHORITY_AUDIT_CONTINUE_V1/tests/test_resume.py", line 27, in test_unknown_driver_bytes_not_adopted
+    r().corrected_driver_source((OLD/'stage4e/driver.py').read_bytes()+b'\n')
+    ~^^
+  File "/mnt/data/STAGE4E_NATIVE_HASH_AUTHORITY_AUDIT_CONTINUE_V1/tests/test_resume.py", line 21, in r
+    def r():return importlib.import_module('resume')
+                   ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/importlib/__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'resume'
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.039s
+
+FAILED (errors=8)

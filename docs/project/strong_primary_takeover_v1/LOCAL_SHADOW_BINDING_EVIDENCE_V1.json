@@ -1,0 +1,511 @@
+{
+  "governed_train_reference_index_verified": true,
+  "source_artifacts": [
+    {
+      "file_sha256": "12843e82af08c1340e043440a658c1cc852322a4c1c0758eec64e7d86a7fd7ff",
+      "identity_fields": {
+        "adapter": [
+          {
+            "json_path": "$.adapter_path",
+            "key": "adapter_path",
+            "value": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4a_clean_existing_trainer_v1/1711c5fbc6431f3bd59bda066011ab265837aecfcaf827b073f6a4754ec2f692/training_outputs/train_5223d537392ee5f54b5f/adapter"
+          },
+          {
+            "json_path": "$.run_manifest.adapter_bundle_sha256",
+            "key": "adapter_bundle_sha256",
+            "value": "d1785b530043a1314d873bdfadd2c889bd1c073067d91a31a8429f52f6b60593"
+          },
+          {
+            "json_path": "$.run_manifest.parent_adapter_bundle_sha256",
+            "key": "parent_adapter_bundle_sha256",
+            "value": "852bd17d7be026220d48c6dc3053311d44585b85dbf2559fdba13a31fc111457"
+          }
+        ],
+        "checkpoint": [
+          {
+            "json_path": "$.run_manifest.checkpoint_rule",
+            "key": "checkpoint_rule",
+            "value": "FINAL_STEP_ONLY"
+          },
+          {
+            "json_path": "$.run_manifest.intermediate_scientific_checkpoint_used",
+            "key": "intermediate_scientific_checkpoint_used",
+            "value": false
+          },
+          {
+            "json_path": "$.run_manifest.optimizer.resume_from_checkpoint",
+            "key": "resume_from_checkpoint",
+            "value": false
+          },
+          {
+            "json_path": "$.run_manifest.resume_from_checkpoint_used",
+            "key": "resume_from_checkpoint_used",
+            "value": false
+          }
+        ],
+        "path": [
+          {
+            "json_path": "$.adapter_path",
+            "key": "adapter_path",
+            "value": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4a_clean_existing_trainer_v1/1711c5fbc6431f3bd59bda066011ab265837aecfcaf827b073f6a4754ec2f692/training_outputs/train_5223d537392ee5f54b5f/adapter"
+          },
+          {
+            "json_path": "$.formal_run_manifest_path",
+            "key": "formal_run_manifest_path",
+            "value": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4a_clean_existing_trainer_v1/1711c5fbc6431f3bd59bda066011ab265837aecfcaf827b073f6a4754ec2f692/training_outputs/train_5223d537392ee5f54b5f/formal_run_manifest.json"
+          }
+        ],
+        "policy": [
+          {
+            "json_path": "$.run_manifest.parent_policy_id",
+            "key": "parent_policy_id",
+            "value": "PI0_CLEAN"
+          }
+        ],
+        "sha256": [
+          {
+            "json_path": "$.run_manifest.adapter_bundle_sha256",
+            "key": "adapter_bundle_sha256",
+            "value": "d1785b530043a1314d873bdfadd2c889bd1c073067d91a31a8429f52f6b60593"
+          },
+          {
+            "json_path": "$.run_manifest.final_trainable_parameter_sha256",
+            "key": "final_trainable_parameter_sha256",
+            "value": "5e58bc91a2a6548978c1c8837eba2107448f83d2d4666050cca26e8a6f163018"
+          },
+          {
+            "json_path": "$.run_manifest.initial_trainable_parameter_sha256",
+            "key": "initial_trainable_parameter_sha256",
+            "value": "a569be91b9e37d78b03c2c3229312986055fe6dc6a42a8c9a91a56168a616475"
+          },
+          {
+            "json_path": "$.run_manifest.initialization_receipt_sha256",
+            "key": "initialization_receipt_sha256",
+            "value": "eb4493d35bf9d60eebb0794a03bc665969cfd3e5494008cfc0100c24b5df7eed"
+          },
+          {
+            "json_path": "$.run_manifest.parent_adapter_bundle_sha256",
+            "key": "parent_adapter_bundle_sha256",
+            "value": "852bd17d7be026220d48c6dc3053311d44585b85dbf2559fdba13a31fc111457"
+          },
+          {
+            "json_path": "$.run_manifest.parent_final_trainable_parameter_sha256",
+            "key": "parent_final_trainable_parameter_sha256",
+            "value": "a569be91b9e37d78b03c2c3229312986055fe6dc6a42a8c9a91a56168a616475"
+          },
+          {
+            "json_path": "$.run_manifest.research_planner_training_plan_domain_sha256",
+            "key": "research_planner_training_plan_domain_sha256",
+            "value": "ac04690c3cf665058b24b2c53af8ed9e35d2fdbb4a5771f771625772edfebb9e"
+          },
+          {
+            "json_path": "$.run_manifest.runner_freeze_root_sha256",
+            "key": "runner_freeze_root_sha256",
+            "value": "2945d402ee43ea86ecdd9002a951354ced44f0bd9986fc56d71be535c3f68e15"
+          },
+          {
+            "json_path": "$.run_manifest.sample_order_manifest_file_sha256",
+            "key": "sample_order_manifest_file_sha256",
+            "value": "962cb701e603144ce7eaa28354b055267a7e6ad2b881988c00ad96a711fec187"
+          },
+          {
+            "json_path": "$.run_manifest.stage_binding_sha256",
+            "key": "stage_binding_sha256",
+            "value": "5223d537392ee5f54b5f92fc8cb1404ab7c4349cac92b5c850181d8ebeec3d92"
+          },
+          {
+            "json_path": "$.run_manifest.trainer_native_dataset_manifest_domain_sha256",
+            "key": "trainer_native_dataset_manifest_domain_sha256",
+            "value": "5e252657adb640ff233af32da3410db04d6a4a47d53925d8b16e90554f75e366"
+          },
+          {
+            "json_path": "$.run_manifest.trainer_native_dataset_sha256",
+            "key": "trainer_native_dataset_sha256",
+            "value": "2584370dfc409d473fb28967e1dceda28f8d493e88a4f3428c1981ee47b8dd8f"
+          },
+          {
+            "json_path": "$.run_manifest.training_contract_file_sha256",
+            "key": "training_contract_file_sha256",
+            "value": "fa0c49b9d86ab603969e3ccb852e2ec7ef0811483bfa31ae8815aba37d4df005"
+          },
+          {
+            "json_path": "$.training_plan_sha256",
+            "key": "training_plan_sha256",
+            "value": "ac04690c3cf665058b24b2c53af8ed9e35d2fdbb4a5771f771625772edfebb9e"
+          }
+        ]
+      },
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4a_clean_existing_trainer_v1/1711c5fbc6431f3bd59bda066011ab265837aecfcaf827b073f6a4754ec2f692/CANDIDATE_HANDOFF.json",
+      "schema_id": "CLEAN_DIAGNOSTIC_CANDIDATE_HANDOFF_V1"
+    },
+    {
+      "file_sha256": "6985f3ec970d1b3ce981295c9bca0da2f12e1699333876294c34ac06f4b6d8da",
+      "identity_fields": {
+        "base": [
+          {
+            "json_path": "$.output_policy.require_basename_equals_execution_attempt_id",
+            "key": "require_basename_equals_execution_attempt_id",
+            "value": true
+          }
+        ],
+        "path": [
+          {
+            "json_path": "$.runtime_adapter_ref.path",
+            "key": "path",
+            "value": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/STAGE4A_EXISTING_TRAINER_CLEAN_INIT_V1/clean_adapter.py"
+          },
+          {
+            "json_path": "$.sample_order_ref.path",
+            "key": "path",
+            "value": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage3z_plan_handoff_v1/66cacb65558d14428ca1e990203a3dd36336a16d31562402a437e8e4e12e104b/ROUND_SAMPLE_ORDER_MANIFEST_V1.json"
+          },
+          {
+            "json_path": "$.trainer_role_binding_ref.path",
+            "key": "path",
+            "value": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4a_clean_existing_trainer_v1/1711c5fbc6431f3bd59bda066011ab265837aecfcaf827b073f6a4754ec2f692/TRAINER_ROLE_BINDING.json"
+          },
+          {
+            "json_path": "$.training_contract_ref.path",
+            "key": "path",
+            "value": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4a_clean_existing_trainer_v1/1711c5fbc6431f3bd59bda066011ab265837aecfcaf827b073f6a4754ec2f692/TRAINING_CONTRACT.json"
+          },
+          {
+            "json_path": "$.upstream_artifact_refs[0].path",
+            "key": "path",
+            "value": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage3z_plan_handoff_v1/66cacb65558d14428ca1e990203a3dd36336a16d31562402a437e8e4e12e104b/CLEAN_DATA_ACCESS_AUDIT.json"
+          },
+          {
+            "json_path": "$.upstream_artifact_refs[1].path",
+            "key": "path",
+            "value": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage3z_plan_handoff_v1/66cacb65558d14428ca1e990203a3dd36336a16d31562402a437e8e4e12e104b/POLICY_T2_TRAINER_NATIVE_DATASET_MANIFEST_V1.json"
+          },
+          {
+            "json_path": "$.upstream_artifact_refs[2].path",
+            "key": "path",
+            "value": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage3z_plan_handoff_v1/66cacb65558d14428ca1e990203a3dd36336a16d31562402a437e8e4e12e104b/POLICY_T2_TRAINER_NATIVE_V1.jsonl"
+          },
+          {
+            "json_path": "$.upstream_artifact_refs[3].path",
+            "key": "path",
+            "value": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage3z_plan_handoff_v1/66cacb65558d14428ca1e990203a3dd36336a16d31562402a437e8e4e12e104b/POST_FIELD_ADJUDICATION.json"
+          },
+          {
+            "json_path": "$.upstream_artifact_refs[4].path",
+            "key": "path",
+            "value": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage3z_plan_handoff_v1/66cacb65558d14428ca1e990203a3dd36336a16d31562402a437e8e4e12e104b/PRIMARY_PLAN_APPROVAL_RECEIPT.json"
+          },
+          {
+            "json_path": "$.upstream_artifact_refs[5].path",
+            "key": "path",
+            "value": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage3z_plan_handoff_v1/66cacb65558d14428ca1e990203a3dd36336a16d31562402a437e8e4e12e104b/RESEARCH_PLANNER_TRAINING_PLAN_V1.json"
+          },
+          {
+            "json_path": "$.upstream_artifact_refs[6].path",
+            "key": "path",
+            "value": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage3z_plan_handoff_v1/66cacb65558d14428ca1e990203a3dd36336a16d31562402a437e8e4e12e104b/ROUND_LOCAL_TRAINING_CONTRACT_V1.json"
+          },
+          {
+            "json_path": "$.upstream_artifact_refs[7].path",
+            "key": "path",
+            "value": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage3z_plan_handoff_v1/66cacb65558d14428ca1e990203a3dd36336a16d31562402a437e8e4e12e104b/ROUND_SAMPLE_ORDER_MANIFEST_V1.json"
+          }
+        ],
+        "sha256": [
+          {
+            "json_path": "$.previous_stage_receipt_sha256",
+            "key": "previous_stage_receipt_sha256",
+            "value": null
+          },
+          {
+            "json_path": "$.runtime_adapter_ref.sha256",
+            "key": "sha256",
+            "value": "329c749d39fef22b62d38ad5a212f6ce6c0443ad12b60a3a6733332d651edacc"
+          },
+          {
+            "json_path": "$.sample_order_ref.sha256",
+            "key": "sha256",
+            "value": "962cb701e603144ce7eaa28354b055267a7e6ad2b881988c00ad96a711fec187"
+          },
+          {
+            "json_path": "$.stage_binding_sha256",
+            "key": "stage_binding_sha256",
+            "value": "5223d537392ee5f54b5f92fc8cb1404ab7c4349cac92b5c850181d8ebeec3d92"
+          },
+          {
+            "json_path": "$.trainer_role_binding_ref.sha256",
+            "key": "sha256",
+            "value": "caff540181ec6a54e9c49bba7545f27d33b8f3558bebdbc150437f510f57d262"
+          },
+          {
+            "json_path": "$.training_contract_ref.sha256",
+            "key": "sha256",
+            "value": "fa0c49b9d86ab603969e3ccb852e2ec7ef0811483bfa31ae8815aba37d4df005"
+          },
+          {
+            "json_path": "$.upstream_artifact_refs[0].sha256",
+            "key": "sha256",
+            "value": "36f6439c724006907f82e104816ac18ac9e2e310a1027c9ac73eff0594eef1d9"
+          },
+          {
+            "json_path": "$.upstream_artifact_refs[1].sha256",
+            "key": "sha256",
+            "value": "6df69251a71a5898fb3342f5d7bfd0378fe0c2026aeb99d2d74fad62d7fc1eb5"
+          },
+          {
+            "json_path": "$.upstream_artifact_refs[2].sha256",
+            "key": "sha256",
+            "value": "2584370dfc409d473fb28967e1dceda28f8d493e88a4f3428c1981ee47b8dd8f"
+          },
+          {
+            "json_path": "$.upstream_artifact_refs[3].sha256",
+            "key": "sha256",
+            "value": "c6aaa5e9dc4d85290427a3a48bf5261759b4a0a9c322ad5673fb01f8fb5d073d"
+          },
+          {
+            "json_path": "$.upstream_artifact_refs[4].sha256",
+            "key": "sha256",
+            "value": "6dfb6de88e616c9d540169d0e02f8ace9bbea8998c05946cfda2d30c1e4a29f9"
+          },
+          {
+            "json_path": "$.upstream_artifact_refs[5].sha256",
+            "key": "sha256",
+            "value": "2da89d57195ddf4ff6425cdad97a2c0516d9c17d0618689a9d62bba7385cfc29"
+          },
+          {
+            "json_path": "$.upstream_artifact_refs[6].sha256",
+            "key": "sha256",
+            "value": "9549e9e76cd73a3932536db946d3635da2b1f0c973a8e4c30e37ebf62985ccd9"
+          },
+          {
+            "json_path": "$.upstream_artifact_refs[7].sha256",
+            "key": "sha256",
+            "value": "962cb701e603144ce7eaa28354b055267a7e6ad2b881988c00ad96a711fec187"
+          }
+        ]
+      },
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4a_clean_existing_trainer_v1/1711c5fbc6431f3bd59bda066011ab265837aecfcaf827b073f6a4754ec2f692/TRAINING_STAGE_BINDING.json",
+      "schema_id": "ROUND_TRAINING_STAGE_BINDING_V1"
+    },
+    {
+      "file_sha256": "caff540181ec6a54e9c49bba7545f27d33b8f3558bebdbc150437f510f57d262",
+      "identity_fields": {
+        "adapter": [
+          {
+            "json_path": "$.checkpoint_or_adapter_sha256",
+            "key": "checkpoint_or_adapter_sha256",
+            "value": "852bd17d7be026220d48c6dc3053311d44585b85dbf2559fdba13a31fc111457"
+          }
+        ],
+        "checkpoint": [
+          {
+            "json_path": "$.checkpoint_or_adapter_sha256",
+            "key": "checkpoint_or_adapter_sha256",
+            "value": "852bd17d7be026220d48c6dc3053311d44585b85dbf2559fdba13a31fc111457"
+          }
+        ],
+        "model": [
+          {
+            "json_path": "$.model_or_human_identity",
+            "key": "model_or_human_identity",
+            "value": "EXISTING_GENERIC_STAGE_CLEAN_ZERO_STEP_ADAPTER"
+          }
+        ],
+        "role": [
+          {
+            "json_path": "$.role_id",
+            "key": "role_id",
+            "value": "TRAINER"
+          },
+          {
+            "json_path": "$.role_kind",
+            "key": "role_kind",
+            "value": "TRAINING_EXECUTOR"
+          }
+        ],
+        "sha256": [
+          {
+            "json_path": "$.checkpoint_or_adapter_sha256",
+            "key": "checkpoint_or_adapter_sha256",
+            "value": "852bd17d7be026220d48c6dc3053311d44585b85dbf2559fdba13a31fc111457"
+          },
+          {
+            "json_path": "$.prompt_bundle_sha256",
+            "key": "prompt_bundle_sha256",
+            "value": null
+          },
+          {
+            "json_path": "$.runtime_manifest_sha256",
+            "key": "runtime_manifest_sha256",
+            "value": "2945d402ee43ea86ecdd9002a951354ced44f0bd9986fc56d71be535c3f68e15"
+          },
+          {
+            "json_path": "$.schema_bundle_sha256",
+            "key": "schema_bundle_sha256",
+            "value": "fa0c49b9d86ab603969e3ccb852e2ec7ef0811483bfa31ae8815aba37d4df005"
+          }
+        ]
+      },
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4a_clean_existing_trainer_v1/1711c5fbc6431f3bd59bda066011ab265837aecfcaf827b073f6a4754ec2f692/TRAINER_ROLE_BINDING.json",
+      "schema_id": "ROUND_ROLE_BINDING_MANIFEST_V1"
+    },
+    {
+      "file_sha256": "2d3526db1b1b0f0d02b76370e61e7d0be24b39ef5619b2e2d2c6de7a80964de0",
+      "identity_fields": {
+        "adapter": [
+          {
+            "json_path": "$.adapter_bundle_sha256",
+            "key": "adapter_bundle_sha256",
+            "value": "852bd17d7be026220d48c6dc3053311d44585b85dbf2559fdba13a31fc111457"
+          },
+          {
+            "json_path": "$.adapter_manifest_path",
+            "key": "adapter_manifest_path",
+            "value": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4a_clean_existing_trainer_v1/1711c5fbc6431f3bd59bda066011ab265837aecfcaf827b073f6a4754ec2f692/SEED_ZERO_ADAPTER_MANIFEST.json"
+          },
+          {
+            "json_path": "$.adapter_manifest_sha256",
+            "key": "adapter_manifest_sha256",
+            "value": "27a28297472b225cba8d0ecde3f8e51427aa2f7d656ebff18c2d3ac5918ec37f"
+          },
+          {
+            "json_path": "$.adapter_path",
+            "key": "adapter_path",
+            "value": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4a_clean_existing_trainer_v1/1711c5fbc6431f3bd59bda066011ab265837aecfcaf827b073f6a4754ec2f692/seed_zero_adapter"
+          },
+          {
+            "json_path": "$.saved_adapter_reload_hash_equal",
+            "key": "saved_adapter_reload_hash_equal",
+            "value": true
+          }
+        ],
+        "base": [
+          {
+            "json_path": "$.base_parameters_frozen",
+            "key": "base_parameters_frozen",
+            "value": true
+          }
+        ],
+        "checkpoint": [
+          {
+            "json_path": "$.new_trained_checkpoint_created",
+            "key": "new_trained_checkpoint_created",
+            "value": false
+          }
+        ],
+        "path": [
+          {
+            "json_path": "$.adapter_manifest_path",
+            "key": "adapter_manifest_path",
+            "value": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4a_clean_existing_trainer_v1/1711c5fbc6431f3bd59bda066011ab265837aecfcaf827b073f6a4754ec2f692/SEED_ZERO_ADAPTER_MANIFEST.json"
+          },
+          {
+            "json_path": "$.adapter_path",
+            "key": "adapter_path",
+            "value": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4a_clean_existing_trainer_v1/1711c5fbc6431f3bd59bda066011ab265837aecfcaf827b073f6a4754ec2f692/seed_zero_adapter"
+          },
+          {
+            "json_path": "$.base_binding.manifest_path",
+            "key": "manifest_path",
+            "value": "/data/run01/scwb204/pchsi/p2/d_q2_bad_training_materialization_v1_frozen/provenance/model_artifact_manifest.json"
+          },
+          {
+            "json_path": "$.base_binding.snapshot_path",
+            "key": "snapshot_path",
+            "value": "/data/run01/scwb204/sdar_repro/clean_model_snapshots/Qwen2.5-3B-Instruct/aa8e72537993ba99e69dfaafa59ed015b17504d1"
+          }
+        ],
+        "sha256": [
+          {
+            "json_path": "$.adapter_bundle_sha256",
+            "key": "adapter_bundle_sha256",
+            "value": "852bd17d7be026220d48c6dc3053311d44585b85dbf2559fdba13a31fc111457"
+          },
+          {
+            "json_path": "$.adapter_manifest_sha256",
+            "key": "adapter_manifest_sha256",
+            "value": "27a28297472b225cba8d0ecde3f8e51427aa2f7d656ebff18c2d3ac5918ec37f"
+          },
+          {
+            "json_path": "$.base_binding.manifest_sha256",
+            "key": "manifest_sha256",
+            "value": "0d2673f685e0a3d7638d6973954f6d0758bb3951991a974d75d6a1183a391be2"
+          },
+          {
+            "json_path": "$.initial_trainable_parameter_sha256",
+            "key": "initial_trainable_parameter_sha256",
+            "value": "a569be91b9e37d78b03c2c3229312986055fe6dc6a42a8c9a91a56168a616475"
+          },
+          {
+            "json_path": "$.initialization_receipt_sha256",
+            "key": "initialization_receipt_sha256",
+            "value": "eb4493d35bf9d60eebb0794a03bc665969cfd3e5494008cfc0100c24b5df7eed"
+          },
+          {
+            "json_path": "$.reloaded_trainable_parameter_sha256",
+            "key": "reloaded_trainable_parameter_sha256",
+            "value": "a569be91b9e37d78b03c2c3229312986055fe6dc6a42a8c9a91a56168a616475"
+          },
+          {
+            "json_path": "$.repeat_initial_trainable_parameter_sha256",
+            "key": "repeat_initial_trainable_parameter_sha256",
+            "value": "a569be91b9e37d78b03c2c3229312986055fe6dc6a42a8c9a91a56168a616475"
+          },
+          {
+            "json_path": "$.request_sha256",
+            "key": "request_sha256",
+            "value": "f8913fc3da6a0c5395bc55b751185293833759d0fd1cc9dc331904841865e3af"
+          },
+          {
+            "json_path": "$.source_code_root_sha256",
+            "key": "source_code_root_sha256",
+            "value": "2945d402ee43ea86ecdd9002a951354ced44f0bd9986fc56d71be535c3f68e15"
+          },
+          {
+            "json_path": "$.training_plan_sha256",
+            "key": "training_plan_sha256",
+            "value": "ac04690c3cf665058b24b2c53af8ed9e35d2fdbb4a5771f771625772edfebb9e"
+          }
+        ]
+      },
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4a_clean_existing_trainer_v1/1711c5fbc6431f3bd59bda066011ab265837aecfcaf827b073f6a4754ec2f692/INITIALIZATION_RECEIPT.json",
+      "schema_id": "CLEAN_SEEDED_LORA_INITIALIZATION_RECEIPT_V1"
+    },
+    {
+      "file_sha256": "ccd14a6e5a47dfcb331a65fc9073b5396fe16850fd1158eba558646d3ecbdfdf",
+      "identity_fields": {
+        "path": [
+          {
+            "json_path": "$.artifacts[0].path",
+            "key": "path",
+            "value": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage3v_live_f0f1_v1/f9c731c9d3798eb3f9a6b0e11b0e046268a3dd6837cb4a06742d2835f3aa4f00/CORRECTED_F0F1_REVIEW.zip"
+          },
+          {
+            "json_path": "$.artifacts[1].path",
+            "key": "path",
+            "value": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage3x_registered_post_v1/1099e3a418f99b5d6677a9b661d29282f2dafd8df6b054b8d80b53e441de55fb/REGISTERED_POST_REVIEW_ffd70188d4a3.zip"
+          }
+        ],
+        "sha256": [
+          {
+            "json_path": "$.artifact_index_sha256",
+            "key": "artifact_index_sha256",
+            "value": "1b1c8b83b339fc0a779af89480b56169e3e9f526fffe6073e046b681b4cedb4c"
+          },
+          {
+            "json_path": "$.artifacts[0].sha256",
+            "key": "sha256",
+            "value": "8831af88dba963a8a28dce0d920afe4e8da75938acdaee7c2996ae0622eb69d9"
+          },
+          {
+            "json_path": "$.artifacts[1].sha256",
+            "key": "sha256",
+            "value": "067cdc392cd86228071f9bd95a7bc17971542ec6d4eebbb6fcaa03b1eccc88cc"
+          }
+        ]
+      },
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage3y_existing_training_preparation_v1/5c042850c1b926c3805a64f1f4b16d3688abf327af1db1eb34444b483baa5997/INPUT_ARTIFACT_INDEX.json",
+      "schema_id": "ROUND_ARTIFACT_INDEX_V1"
+    }
+  ],
+  "status": "NEEDS_UNIQUE_LOCAL_SHADOW_MODEL_CHECKPOINT_BINDING"
+}

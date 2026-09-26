@@ -1,0 +1,64 @@
+{
+  "$id": "E1_SCIENTIFIC_CELL_LOCK_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "attempt_bundle_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "episode_semantic_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "evaluator_commit": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "execution_attempt_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "run_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "run_schedule_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "scheduled_cell_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "schema_id": {
+      "const": "E1_SCIENTIFIC_CELL_LOCK_V1",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    },
+    "scientific_outcome_status": {
+      "enum": [
+        "SCIENTIFIC_OUTCOME_COMPLETE_SUCCESS",
+        "SCIENTIFIC_OUTCOME_COMPLETE_TASK_FAILURE"
+      ],
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "run_id",
+    "scheduled_cell_id",
+    "execution_attempt_id",
+    "run_schedule_sha256",
+    "episode_semantic_sha256",
+    "attempt_bundle_sha256",
+    "scientific_outcome_status",
+    "evaluator_commit"
+  ],
+  "title": "E1 scientific cell lock",
+  "type": "object"
+}

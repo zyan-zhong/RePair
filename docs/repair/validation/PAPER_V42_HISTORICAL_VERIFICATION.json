@@ -1,0 +1,42 @@
+{
+  "revision": "v4.2-final-user-figure-and-style",
+  "main_pages": 9,
+  "full_pages": 21,
+  "visual_review_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "fresh_unzip_build_passed": true,
+  "fresh_unzip_pdf_text_identical": true,
+  "source_hash_entries_verified": 47,
+  "figure_vector_crop": true,
+  "figure_metadata_removed": true,
+  "anonymous_repository_url_included": false,
+  "github_publication_deferred_by_user": true,
+  "openreview_submitted": false,
+  "scientific_results_changed_by_final_style_pass": false,
+  "remaining_evidence_gaps": [
+    "final RePair benchmark",
+    "matched component ablations",
+    "multiple training seeds"
+  ]
+}

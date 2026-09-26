@@ -1,0 +1,29 @@
+test_false_native_validator_is_rejection (test_execution_boundary.DispatchStateTests.test_false_native_validator_is_rejection) ... ok
+test_owner_intent_without_dispatch_marker_can_finish_preparation (test_execution_boundary.DispatchStateTests.test_owner_intent_without_dispatch_marker_can_finish_preparation) ... ok
+test_spawn_failure_is_recorded_as_known_unsent (test_execution_boundary.DispatchStateTests.test_spawn_failure_is_recorded_as_known_unsent) ... ok
+test_unknown_post_marker_failure_never_resends (test_execution_boundary.DispatchStateTests.test_unknown_post_marker_failure_never_resends) ... ok
+test_valid_terminal_wins_over_late_nonzero_exit (test_execution_boundary.DispatchStateTests.test_valid_terminal_wins_over_late_nonzero_exit) ... ok
+test_wait_oserror_is_not_known_unsent (test_execution_boundary.DispatchStateTests.test_wait_oserror_is_not_known_unsent) ... ok
+test_all_historical_template_spellings_share_runtime_renderer (test_execution_boundary.ExecutionBoundaryTests.test_all_historical_template_spellings_share_runtime_renderer) ... ok
+test_changed_policy_route_missing_prevents_release (test_execution_boundary.ExecutionBoundaryTests.test_changed_policy_route_missing_prevents_release) ... ok
+test_direct_argv_and_round_name_only_are_not_fresh_bindings (test_execution_boundary.ExecutionBoundaryTests.test_direct_argv_and_round_name_only_are_not_fresh_bindings) ... ok
+test_driver_source_tamper_detected (test_execution_boundary.ExecutionBoundaryTests.test_driver_source_tamper_detected) ... ok
+test_duplicate_keys_cannot_hide_authority (test_execution_boundary.ExecutionBoundaryTests.test_duplicate_keys_cannot_hide_authority) ... ok
+test_export_receipt_is_not_implementation_validation (test_execution_boundary.ExecutionBoundaryTests.test_export_receipt_is_not_implementation_validation) ... ok
+test_generation_preserves_old_failed_preflight (test_execution_boundary.ExecutionBoundaryTests.test_generation_preserves_old_failed_preflight) ... ok
+test_historical_job_dependency_rejected (test_execution_boundary.ExecutionBoundaryTests.test_historical_job_dependency_rejected) ... ok
+test_immutable_write_preserves_prior_bytes (test_execution_boundary.ExecutionBoundaryTests.test_immutable_write_preserves_prior_bytes) ... ok
+test_literal_json_argument_preserved (test_execution_boundary.ExecutionBoundaryTests.test_literal_json_argument_preserved) ... ok
+test_new_round_changes_both_path_and_sha (test_execution_boundary.ExecutionBoundaryTests.test_new_round_changes_both_path_and_sha) ... ok
+test_python_c_cannot_hide_unused_driver_source (test_execution_boundary.ExecutionBoundaryTests.test_python_c_cannot_hide_unused_driver_source) ... ok
+test_rollout_scope_never_becomes_whole_round (test_execution_boundary.ExecutionBoundaryTests.test_rollout_scope_never_becomes_whole_round) ... ok
+test_self_attestation_never_enables_production_profile (test_execution_boundary.ExecutionBoundaryTests.test_self_attestation_never_enables_production_profile) ... ok
+test_unknown_placeholder_rejected_without_effects (test_execution_boundary.ExecutionBoundaryTests.test_unknown_placeholder_rejected_without_effects) ... ok
+test_unsupported_base_placeholder_rejected_in_preflight (test_execution_boundary.ExecutionBoundaryTests.test_unsupported_base_placeholder_rejected_in_preflight) ... ok
+test_validator_must_belong_to_source_identity (test_execution_boundary.ExecutionBoundaryTests.test_validator_must_belong_to_source_identity) ... ok
+test_real_driver_execute_then_restart_never_rewrites_executed_receipt (test_execution_boundary.FullRoundReceiptReuseTests.test_real_driver_execute_then_restart_never_rewrites_executed_receipt) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.280s
+
+OK

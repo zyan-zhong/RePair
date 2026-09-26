@@ -1,0 +1,131 @@
+{
+  "$id": "ROUND_EVIDENCE_PACKAGE_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "analyzer_formal_result_manifest_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "analyzer_metric_report_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "code_config_diff_manifest_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "forbidden_future_outcomes_absent": {
+      "const": true,
+      "type": "boolean"
+    },
+    "historical_f0f1_summary_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "historical_go_nogo_ledger_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "mechanical_failure_census_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "policy_checkpoint_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "policy_config_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "policy_lineage_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "previous_researcher_decisions_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "researcher_memory_pack_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "resource_budget_manifest_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "rollout_census_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "round_evidence_package_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "round_id": {
+      "maxLength": 512,
+      "minLength": 1,
+      "type": "string"
+    },
+    "schema_id": {
+      "const": "ROUND_EVIDENCE_PACKAGE_V1",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    },
+    "sealed_test_details_absent": {
+      "const": true,
+      "type": "boolean"
+    },
+    "task_set_manifest_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "training_history_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "round_id",
+    "policy_lineage_sha256",
+    "policy_checkpoint_sha256",
+    "policy_config_sha256",
+    "task_set_manifest_sha256",
+    "rollout_census_sha256",
+    "mechanical_failure_census_sha256",
+    "analyzer_formal_result_manifest_sha256",
+    "analyzer_metric_report_sha256",
+    "researcher_memory_pack_sha256",
+    "historical_f0f1_summary_sha256",
+    "historical_go_nogo_ledger_sha256",
+    "previous_researcher_decisions_sha256",
+    "training_history_sha256",
+    "resource_budget_manifest_sha256",
+    "code_config_diff_manifest_sha256",
+    "forbidden_future_outcomes_absent",
+    "sealed_test_details_absent",
+    "round_evidence_package_sha256"
+  ],
+  "type": "object"
+}

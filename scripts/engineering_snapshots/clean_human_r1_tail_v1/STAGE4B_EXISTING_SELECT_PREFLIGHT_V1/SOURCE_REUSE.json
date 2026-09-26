@@ -1,0 +1,45 @@
+{
+  "base_head": "629895d8ca9a7e5be2c9f2991c5e8c71d9ca3df3",
+  "files": {
+    "src/pchsi/evaluation/select_policy_runtime.py": {
+      "original_file_sha256": "64dbfc73957d58d058b8b13a6bcd6627f835ac57da6a3d74f78878c741487486",
+      "modified_in_offline_worktree": false
+    },
+    "src/pchsi/evaluation/select_execution_identity.py": {
+      "original_file_sha256": "1fcce2aaa9a5d5739bee3e886eb38ed2d1290a83497dee938129de0dfe2d2802",
+      "modified_in_offline_worktree": true
+    },
+    "src/pchsi/evaluation/condition_run_schedule.py": {
+      "original_file_sha256": "1eac1306540417d4794fa98ca338198206826590f50236187c6563ec6dbaf2a6",
+      "modified_in_offline_worktree": false
+    },
+    "src/pchsi/evaluation/episode_evaluator.py": {
+      "original_file_sha256": "81084dac4ee5d68def2541cb7ed2820094c65a623807aaebb1220818a2b2c101",
+      "modified_in_offline_worktree": true
+    },
+    "src/pchsi/evaluation/select_result_audit.py": {
+      "original_file_sha256": "91ee59498029702bdd820a812f0967647652fbe8248d7329591545e3e992fce9",
+      "modified_in_offline_worktree": true
+    },
+    "src/pchsi/evaluation/raw_policy_prompt.py": {
+      "original_file_sha256": "076da310cceaf617fd2efdcf1750ddedec2439e2f009205c933e68c992393590",
+      "modified_in_offline_worktree": false
+    },
+    "src/pchsi/evaluation/runtime_core.py": {
+      "original_file_sha256": "96fd04939d751f1e555bf33408fddb6a47f1ff23e05daa097cc14cfdc70db40f",
+      "modified_in_offline_worktree": false
+    },
+    "src/pchsi/evaluation/policy_client.py": {
+      "original_file_sha256": "4cb27a33f29c3b9c5a9f252aa21557d1ac86ee9505de8e0b05d6a4df616aedbf",
+      "modified_in_offline_worktree": false
+    },
+    "src/pchsi/round_control/clean_execution_binding.py": {
+      "original_file_sha256": "1b602201ec3228dcbcc1e75c280aea49d15487e39a4955706cc5782006d7ad7a",
+      "modified_in_offline_worktree": false
+    },
+    "src/pchsi/round_control/clean_data_gate.py": {
+      "original_file_sha256": "01c4650efa0cf58564bfe5fc48281fd8a8c7d4b0a3fd111eb829a39c6d178231",
+      "modified_in_offline_worktree": false
+    }
+  }
+}

@@ -1,0 +1,115 @@
+\section{Research Procedure and Cross-Round Evidence}
+\label{app:research}
+The main text follows one repair into the policy. The full procedure in
+Figure~\ref{fig:framework} chooses those repairs, allocates tests, and
+carries completed evidence into later rounds.
+
+\subsection{Hierarchical Failure Analysis}
+\label{sec:analysis-memory}
+The evidence package $E_k$ contains policy actions, observations, feedback,
+mechanically computed progress events, budgets, termination, and checkpoint
+provenance. Local analysis $L$ identifies error lifecycles and recovery
+opportunities. Deterministic grouping supplies related trajectories to $G$
+for recurring-mechanism analysis. Stage $C$ aggregates component and
+capability hypotheses. Stage $P$ assembles the global policy-behavior profile
+deterministically, and $X$ checks its support, contradictions, and unresolved
+alternatives. Here $P$ denotes the profile stage; the task policy and the
+planner's bottleneck choice have separate roles.
+
+A0 uses simple local analysis, A1 structured local hypotheses, A2 the
+cross-trajectory hierarchy, and A3 the hierarchy plus historical experience.
+A2--A1 and A3--A2 define hierarchy and history comparisons, respectively.
+No matched effect estimate for these contrasts is reported in this study.
+The reused R5 analysis includes 60 local slots, 44 completed G pairs,
+88 C terminals, and 87 X terminals. These are analysis records, not
+independent successful repair experiments.
+
+\subsection{Procedural Experience across Rounds}
+The round-start snapshot $S_k$ stores starting conditions, actions and
+feedback, state changes, a wrong branch and its consequence, repair
+applicability, counterexamples, and effect provenance. Policy, Analyzer, and
+Planner views expose the parts appropriate to each role. A past repair
+can enter a new proposal as an analogy or counterexample; current paired
+execution determines the new effect.
+
+Writes produced within the round enter a shadow store. Historical reads
+throughout round $k$ use the fixed snapshot $S_k$. Only after round closure
+do admitted records become part of $S_{k+1}$, which is first readable in
+round $k+1$. R3 PRE receives closed R1/R2 lessons, and R4 PRE receives R1--R3 lessons;
+repeated local proposals therefore cannot be explained solely by absent
+history access. Matched history and ranking comparisons remain unexecuted.
+The read/write arrows in Figure~\ref{fig:framework} depict these
+mediated interfaces. Current verdicts reach POST directly as experiment
+outcomes. This timing keeps current results distinguishable from earlier
+experience.
+
+\subsection{Research Planning before and after a Test}
+\label{sec:planning}
+PRE receives the failure profile, candidate proposals, history, and available
+resources. It selects a principal bottleneck, ranks a bounded portfolio,
+and fixes the intervention, endpoints, stopping conditions, and budget.
+A principal change can be evaluated at several registered states. The
+main training portfolio and the discovery-comparison portfolios retain
+separate experiment identities.
+
+POST receives the fixed PRE decision and independent verification outcomes
+and costs. It considers alternative explanations, recommends TRAIN or
+NO-TRAIN, selects eligible supervision, and records the next research
+question. Effect labels remain the verifier's output; candidate acceptance
+uses the predeclared rule below.
+
+\subsection{Policy Selection and the Next Round}
+\label{app:round-procedure}
+Let $A_k\in\{0,1\}$ be the predeclared scaffold-free acceptance result on
+$\mathcal D_{\mathrm{select}}$. The retained policy for the next round is
+\begin{equation}
+\pi_{k+1}=\begin{cases}
+\widetilde\pi_{k+1},&A_k=1,\\
+\pi_k,&A_k=0.
+\end{cases}
+\label{eq:promotion}
+\end{equation}
+For the reported final validation, integrity must pass, and the candidate
+is accepted if its selection success count increases, or if success ties
+and mean terminal goal-condition completion increases. Otherwise the
+parent is retained. Goal-condition evaluation is separate from policy
+input and does not alter causal Benefit labels. A NO-TRAIN decision also retains $\pi_k$.
+Algorithm~\ref{alg:repair} connects this selection to collection and research.
+\input{figures/algorithm}
+
+The campaign permits at most ten scientifically valid attempts and stops
+after three consecutive valid attempts without promotion, subject to its
+additional integrity and resource stops. Invalid attempts follow the
+registered recovery procedure; their costs and human recovery actions
+remain in the campaign record. The observed stop is the three-valid-round no-promotion patience limit.
+The five-round record includes one earlier user-authorized promotion
+exception; it is not represented as an automatic acceptance decision.
+Strong research models can run this sequence after initial configuration;
+its unattended execution is measured separately from policy improvement.
+
+\subsection{Cross-Round Outcomes}
+\label{sec:round-results}
+
+The development campaign records five valid rounds and one invalid
+attempt. R1, R3, R4, and R5 yield no training update; R2 contains the
+beneficial intervention and the user-authorized promotion exception.
+Consequently, the sequence is not evidence of five successful updates
+or five rounds of uninterrupted automatic improvement. Engineering
+recoveries are documented separately and are not erased by resuming.
+
+The later validations reuse R5 trajectories and Analyzer outputs because
+the retained parent identity is unchanged. The guarded validation ends
+without a training update. The executable-strategy validation trains one
+candidate and completes selection with a rollback decision. A subsequent
+closed-history ownership check stops its bookkeeping closeout; this does
+not change the already completed episode outcomes or turn the run into
+a closed new formal round.
+
+The selection entry initially scheduled five seed slots through a legacy
+path. An explicit correction retains the prescribed seed 17, after
+episode publication, and stops the additional jobs. Both arms have all
+355 seed-17 tasks. The supplementary record discloses this amendment;
+extra-seed work is not counted as additional evidence or represented as
+having never occurred. Goal fractions are recomputed by replaying the
+recorded actions with no new policy calls.
+

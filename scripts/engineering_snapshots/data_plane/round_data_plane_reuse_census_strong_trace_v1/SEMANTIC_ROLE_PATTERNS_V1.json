@@ -1,0 +1,83 @@
+{
+  "ANALYZER_RUNTIME": [
+    "ANALYZER_REPAIR_CANDIDATE_V1",
+    "A0",
+    "A1",
+    "A2",
+    "A3",
+    "candidate_principal",
+    "error_instances"
+  ],
+  "EVIDENCE_PACKAGE": [
+    "PolicyCallEvidenceV1",
+    "ActionTrace",
+    "PublicTransitionRecordV1",
+    "EpisodeArtifact",
+    "ROUND_EVIDENCE_PACKAGE_V1"
+  ],
+  "LOCALIZATION_DISTILLATION": [
+    "DISTILLATION_ELIGIBLE",
+    "teacher corpus",
+    "local analyzer",
+    "local research planner",
+    "role localization",
+    "shadow"
+  ],
+  "MEMORY_SUBSTRATE": [
+    "POLICY_MEMORY_PACK_V1",
+    "ANALYZER_MEMORY_PACK_V1",
+    "RESEARCHER_MEMORY_PACK_V1",
+    "ProceduralFailureMemory",
+    "FailureExperience",
+    "quarantine",
+    "snapshot"
+  ],
+  "POLICY_LINEAGE": [
+    "POLICY_ARTIFACT_NODE_V1",
+    "POLICY_EVALUATION_BINDING_V1",
+    "POLICY_DISPOSITION_EDGE_V1"
+  ],
+  "RESEARCH_PLANNER": [
+    "HUMAN_TRAINING_RESEARCHER",
+    "RESEARCHER_PRE_DECISION_V1",
+    "RESEARCHER_POST_INTERPRETATION_V1",
+    "RESEARCH_REPAIR_PORTFOLIO_V1",
+    "RESEARCH_REPAIR_PROGRAM_V1"
+  ],
+  "ROUND_DATA_PLANE": [
+    "ROUND_ARTIFACT_REGISTRY_V1",
+    "STAGE_RECEIPT",
+    "TRAINING_EXECUTION_REQUEST_V1",
+    "TRAINING_EXECUTION_RECEIPT_V1",
+    "ROUND_ACCOUNTING_SUMMARY_V1",
+    "ROUND_CLOSEOUT_V1",
+    "HUMAN_T2_ROUND_BINDING_V1"
+  ],
+  "STRONG_ANALYZER_TRACE": [
+    "STRONG_ANALYZER",
+    "raw_request",
+    "raw_response",
+    "logical_call_id",
+    "transport_attempt_id",
+    "validated_structured_output",
+    "transport_censored"
+  ],
+  "STRONG_RESEARCH_PLANNER_TRACE": [
+    "STRONG_RESEARCH_PLANNER",
+    "strong_pre",
+    "strong_post",
+    "field_level_adjudication",
+    "selected",
+    "rejected",
+    "deferred"
+  ],
+  "VERIFIER": [
+    "Benefit",
+    "Harm",
+    "Neutral",
+    "Uncertain",
+    "F0",
+    "F1",
+    "same-state"
+  ]
+}

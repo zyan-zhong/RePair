@@ -1,0 +1,144 @@
+{
+  "audit_sha256": "e464e8bbb345215674e83aaa10a53203e9de2a0c5df276a725c572338cf8a9d7",
+  "bounded_trainer_asset_scan": {
+    "filesystem_wide_discovery_used": false,
+    "matching_file_count": 5,
+    "matching_files": [
+      {
+        "file_sha256": "405de7624a06c7249f6d9deb4026ab78b414ea0fdcb2c57389e8ffcfa073d77a",
+        "keywords": [
+          "pack",
+          "round_training.stage_runner",
+          "run_training_stage"
+        ],
+        "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4a_clean_existing_trainer_v1/1711c5fbc6431f3bd59bda066011ab265837aecfcaf827b073f6a4754ec2f692/INITIALIZATION_REQUEST.json"
+      },
+      {
+        "file_sha256": "4e181e8588227d5199a8a68d55e6b326c541159dc32ffe9a513870e126b1b5c6",
+        "keywords": [
+          "round_training.stage_runner",
+          "run_training_stage"
+        ],
+        "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4a_clean_existing_trainer_v1/1711c5fbc6431f3bd59bda066011ab265837aecfcaf827b073f6a4754ec2f692/NEXT_STAGE_BINDING.json"
+      },
+      {
+        "file_sha256": "9549e9e76cd73a3932536db946d3635da2b1f0c973a8e4c30e37ebf62985ccd9",
+        "keywords": [
+          "input_ids",
+          "labels",
+          "max_seq",
+          "max_sequence",
+          "pack",
+          "sequence_length",
+          "truncat"
+        ],
+        "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4a_clean_existing_trainer_v1/1711c5fbc6431f3bd59bda066011ab265837aecfcaf827b073f6a4754ec2f692/ROUND_TRAINING_CONTRACT.unchanged.json"
+      },
+      {
+        "file_sha256": "fa0c49b9d86ab603969e3ccb852e2ec7ef0811483bfa31ae8815aba37d4df005",
+        "keywords": [
+          "input_ids",
+          "labels",
+          "max_seq",
+          "max_sequence",
+          "pack",
+          "sequence_length",
+          "truncat"
+        ],
+        "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4a_clean_existing_trainer_v1/1711c5fbc6431f3bd59bda066011ab265837aecfcaf827b073f6a4754ec2f692/TRAINING_CONTRACT.json"
+      },
+      {
+        "file_sha256": "6985f3ec970d1b3ce981295c9bca0da2f12e1699333876294c34ac06f4b6d8da",
+        "keywords": [
+          "pack"
+        ],
+        "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4a_clean_existing_trainer_v1/1711c5fbc6431f3bd59bda066011ab265837aecfcaf827b073f6a4754ec2f692/TRAINING_STAGE_BINDING.json"
+      }
+    ],
+    "root": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4a_clean_existing_trainer_v1/1711c5fbc6431f3bd59bda066011ab265837aecfcaf827b073f6a4754ec2f692",
+    "scanned_file_count": 29,
+    "training_source_candidate_count": 0,
+    "training_source_candidates": []
+  },
+  "contract_rows": [
+    {
+      "file_sha256": "fa0c49b9d86ab603969e3ccb852e2ec7ef0811483bfa31ae8815aba37d4df005",
+      "max_sequence_length_contexts": [
+        {
+          "json_path": [
+            "dataset",
+            "max_sequence_length"
+          ],
+          "sibling_keys": [
+            "dataset_id",
+            "manifest_domain_sha256",
+            "manifest_domain_sha_field",
+            "manifest_file_sha256",
+            "manifest_path",
+            "max_sequence_length",
+            "one_pass_target_loss_token_count",
+            "packing",
+            "path",
+            "prompt_label_value",
+            "reapply_chat_template",
+            "required_manifest_flags",
+            "research_planner_training_plan_domain_sha256",
+            "retokenization",
+            "row_adapter",
+            "row_count",
+            "sequence_lengths",
+            "sha256",
+            "trained_region",
+            "truncation"
+          ],
+          "value": 735
+        }
+      ],
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4a_clean_existing_trainer_v1/1711c5fbc6431f3bd59bda066011ab265837aecfcaf827b073f6a4754ec2f692/TRAINING_CONTRACT.json"
+    },
+    {
+      "file_sha256": "9549e9e76cd73a3932536db946d3635da2b1f0c973a8e4c30e37ebf62985ccd9",
+      "max_sequence_length_contexts": [
+        {
+          "json_path": [
+            "dataset",
+            "max_sequence_length"
+          ],
+          "sibling_keys": [
+            "dataset_id",
+            "manifest_domain_sha256",
+            "manifest_domain_sha_field",
+            "manifest_file_sha256",
+            "manifest_path",
+            "max_sequence_length",
+            "one_pass_target_loss_token_count",
+            "packing",
+            "path",
+            "prompt_label_value",
+            "reapply_chat_template",
+            "required_manifest_flags",
+            "research_planner_training_plan_domain_sha256",
+            "retokenization",
+            "row_adapter",
+            "row_count",
+            "sequence_lengths",
+            "sha256",
+            "trained_region",
+            "truncation"
+          ],
+          "value": 735
+        }
+      ],
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4a_clean_existing_trainer_v1/1711c5fbc6431f3bd59bda066011ab265837aecfcaf827b073f6a4754ec2f692/ROUND_TRAINING_CONTRACT.unchanged.json"
+    }
+  ],
+  "filesystem_wide_discovery_used": false,
+  "observed_max_sequence_length_values": [
+    735
+  ],
+  "round_id": "CLEAN-HUMAN-REFERENCE-R1-PI0",
+  "schema_id": "STAGE4A_SEQUENCE_CONTRACT_CONTEXT_AUDIT_V1",
+  "schema_version": 1,
+  "semantic_interpretation": "HISTORICAL_STAGE4A_CONTRACT_VALUE_REQUIRES_TRAINER_NATIVE_BINDING_BEFORE_REUSE_AS_LOCAL_RI_LIMIT",
+  "value_735_automatically_reused_as_local_ri_cap": false
+}

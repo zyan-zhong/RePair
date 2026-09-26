@@ -1,0 +1,17 @@
+{
+  "execution_status": "NOT_APPROVED",
+  "expected_normalized_outcome": "LIMIT_ENFORCED",
+  "forbidden_side_effects": [
+    "host_write",
+    "network",
+    "new_privilege",
+    "unreviewed_process"
+  ],
+  "payload_id": "rlimit_limited",
+  "payload_sha256": "ab9d2b7fb737240a56b7669c988d416ea0102a91fc3ec73b5087a733d0e795b8",
+  "permitted_side_effects": [],
+  "probe_id": "P15_LIMITED",
+  "profile_id": "S1_P15_RLIMIT_ATTRIBUTION_V1",
+  "schema_version": 1,
+  "timeout_seconds": 10
+}

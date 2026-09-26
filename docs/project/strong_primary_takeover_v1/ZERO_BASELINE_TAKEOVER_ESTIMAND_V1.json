@@ -1,0 +1,28 @@
+{
+  "gate_bridge_authorized": false,
+  "legacy_metric": "downstream_benefits_per_budget_ratio_vs_human",
+  "legacy_numeric_metric_materialized": false,
+  "legacy_numeric_metric_substitute_forbidden": [
+    0,
+    1,
+    "EPSILON_SMOOTHING",
+    "INFINITY",
+    "TRAIN_SELECT_T2_DELTA",
+    "STRONG_HUMAN_C_PRINCIPAL_MATCH"
+  ],
+  "old_v1_gate_modified": false,
+  "preregistered_qualification_predicate": {
+    "budget_compliance_required": true,
+    "evidence_validity_required": true,
+    "future_outcome_leakage_count_equals": 0,
+    "human_verified_benefit_efficiency_equals_zero": true,
+    "single_change_compliance_required": true,
+    "strong_harm_count_lte_human_harm_count": true,
+    "strong_verification_budget_lte_human_budget": true,
+    "strong_verified_benefit_count_gte": 1
+  },
+  "requires_versioned_gate_bridge_review_after_calibration": true,
+  "rule_id": "ZERO_BASELINE_STRICT_SUPERIORITY_V1",
+  "schema_id": "ZERO_BASELINE_TAKEOVER_ESTIMAND_V1",
+  "schema_version": 1
+}

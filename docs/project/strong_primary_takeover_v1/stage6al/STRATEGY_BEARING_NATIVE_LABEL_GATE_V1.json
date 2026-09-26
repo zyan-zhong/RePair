@@ -1,0 +1,42 @@
+{
+  "gate_sha256": "dd19a0317c835c5f4c7749ce7b5250c2a9145cc9410c251e2099eaa60334c105",
+  "hard_gates": {
+    "ACTION_LOSS_BEARING_TOKEN_COUNT": ">0",
+    "ACTION_ONLY_STRATEGY_ROW_COUNT": "==0",
+    "ACTION_TARGET_TOKEN_COUNT": ">0",
+    "NON_VERIFIED_STRATEGY_ROW_COUNT": "==0",
+    "PROMPT_MASKED_TOKEN_COUNT": ">0",
+    "STRATEGY_LOSS_BEARING_TOKEN_COUNT": ">0",
+    "STRATEGY_ROW_COUNT": ">0",
+    "STRATEGY_TARGET_TOKEN_COUNT": ">0",
+    "TOTAL_LOSS_BEARING_TOKEN_COUNT": ">0",
+    "VERIFIED_BENEFIT_ROW_COUNT": "==STRATEGY_ROW_COUNT"
+  },
+  "masking_semantics": {
+    "assistant_target_tokens_contribute_to_loss": true,
+    "prompt_mask_value": -100,
+    "prompt_tokens_contribute_to_loss": false
+  },
+  "per_row_required": {
+    "action_loss_bearing_token_count": ">0",
+    "prompt_prefix_fully_masked": true,
+    "strategy_loss_bearing_token_count": ">0",
+    "verified_benefit": true
+  },
+  "required_census_fields": [
+    "STRATEGY_ROW_COUNT",
+    "VERIFIED_BENEFIT_ROW_COUNT",
+    "STRATEGY_TARGET_TOKEN_COUNT",
+    "STRATEGY_LOSS_BEARING_TOKEN_COUNT",
+    "ACTION_TARGET_TOKEN_COUNT",
+    "ACTION_LOSS_BEARING_TOKEN_COUNT",
+    "PROMPT_MASKED_TOKEN_COUNT",
+    "TOTAL_LOSS_BEARING_TOKEN_COUNT",
+    "ACTION_ONLY_STRATEGY_ROW_COUNT",
+    "NON_VERIFIED_STRATEGY_ROW_COUNT"
+  ],
+  "schema_id": "STRATEGY_BEARING_NATIVE_LABEL_GATE_V1",
+  "schema_version": 1,
+  "status": "GATE_FROZEN_NOT_YET_SATISFIED",
+  "task_policy_optimizer_execution_authorized_on_schema_alone": false
+}

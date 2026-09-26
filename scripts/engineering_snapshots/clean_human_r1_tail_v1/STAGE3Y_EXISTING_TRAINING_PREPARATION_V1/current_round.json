@@ -1,0 +1,21 @@
+{
+  "schema_id": "EXISTING_TRAINING_PREPARATION_INPUT_BINDING_V1",
+  "repo": "/data/run01/scwb204/sdar_repro/badcase/github_exports/pchsi-wt-stage3u-planner-derived-budget-v1",
+  "fixed_head": "629895d8ca9a7e5be2c9f2991c5e8c71d9ca3df3",
+  "existing_post_package": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/STAGE3X_REGISTERED_PLANNER_POST_V1",
+  "existing_post_code_sha256": {
+    "post_round.py": "ee44cee6418f1d24d666cae18901b601578c12502d65ab37ee0ed19bd2cd5cba",
+    "vendor/post_evidence.py": "e7fb9edc07fddac9290b067287c68ae5fc7f83061e5f8d1882e6ea290122eb6d"
+  },
+  "f0f1_review": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage3v_live_f0f1_v1/f9c731c9d3798eb3f9a6b0e11b0e046268a3dd6837cb4a06742d2835f3aa4f00/CORRECTED_F0F1_REVIEW.zip",
+  "f0f1_review_sha256": "8831af88dba963a8a28dce0d920afe4e8da75938acdaee7c2996ae0622eb69d9",
+  "registered_post_review": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage3x_registered_post_v1/1099e3a418f99b5d6677a9b661d29282f2dafd8df6b054b8d80b53e441de55fb/REGISTERED_POST_REVIEW_ffd70188d4a3.zip",
+  "registered_post_review_sha256": "067cdc392cd86228071f9bd95a7bc17971542ec6d4eebbb6fcaa03b1eccc88cc",
+  "output_root": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage3y_existing_training_preparation_v1",
+  "diagnostic_proposal": {
+    "epochs": 1,
+    "training_seed": 17,
+    "gradient_accumulation_steps": 1,
+    "approval_status": "PROPOSED_NOT_AUTHORIZED"
+  }
+}

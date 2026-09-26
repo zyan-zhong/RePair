@@ -1,0 +1,26 @@
+{
+  "assistant_target_action_json_only": true,
+  "current_policy_t2_sample_count": 12,
+  "environment_execution_allowed": false,
+  "f0f1_outcome_visible_to_policy": false,
+  "hindsight_visible_to_policy": false,
+  "historical_input_fields": [
+    "input.prompt_text",
+    "input.prompt_sha256"
+  ],
+  "historical_input_ids_exact_match_required": 84,
+  "historical_labels_exact_match_required": 84,
+  "historical_reproduction_sample_count": 84,
+  "historical_source_schema": "D_Q2_BAD_V1_TRAINING_EXAMPLE",
+  "historical_target_fields": [
+    "target.action_json",
+    "target.exact_action",
+    "target.target_sha256"
+  ],
+  "model_execution_allowed": false,
+  "policy_input_prefix_only": true,
+  "schema_id": "SCHEMA_AWARE_RENDERER_ADAPTER_CONTRACT_V1",
+  "schema_version": 1,
+  "trainer_execution_allowed": false,
+  "training_route_visible_to_policy": false
+}

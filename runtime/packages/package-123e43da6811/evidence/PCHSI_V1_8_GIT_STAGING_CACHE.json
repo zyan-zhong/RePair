@@ -1,0 +1,31 @@
+{
+  "schema_id": "PCHSI_STAGING_CACHE_V1",
+  "predecessor_cache": {
+    "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\outputs\\PCHSI_PAPER_SELECT_GIT_STAGING_CACHE.json",
+    "sha256": "2b950d230dc574b9d85c1677c21e1065bb9be179298788526937a24d27b986be",
+    "bytes": 1664
+  },
+  "ledger": {
+    "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\outputs\\PCHSI_CANONICAL_STATUS_20260924_FORMAL_MAX10_V1_8_EXECUTION_RECORDED_FULL.md",
+    "sha256": "d9723cb4be5e60a23114ad8b4e8bac339a49a93fb451bdad4031ad526a08609e",
+    "bytes": 4699746
+  },
+  "proof": {
+    "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\outputs\\PCHSI_V1_8_APPEND_ONLY_PROOF.json",
+    "sha256": "87185e2f697c5e1ac4ec997b7b1d2dd2d8fa93e5eb30ea8f471766422ca855b0",
+    "bytes": 932
+  },
+  "delta": {
+    "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\outputs\\PCHSI_V1_8_GIT_DELTA.json",
+    "sha256": "1d44790c001df154c578ec0f0bd25dfd6021f623196ad89d211f3ba4282f473b",
+    "bytes": 2248
+  },
+  "execution_evidence": {
+    "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\outputs\\PCHSI_V1_8_ACTUAL_EXECUTION_RECONCILIATION.json",
+    "sha256": "d416aaf057f40a9d2e87d234ee53c9a93353930402b912e8e55a3306bddca976",
+    "bytes": 18059
+  },
+  "staging_only": true,
+  "production_git_mutation_count": 0,
+  "remote_git_mutation_count": 0
+}

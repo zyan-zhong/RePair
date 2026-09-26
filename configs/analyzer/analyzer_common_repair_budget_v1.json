@@ -1,0 +1,8 @@
+{
+  "all_intervention_actions_count_against_environment_budget": true,
+  "analyzer_prose_in_policy_prompt": false,
+  "max_candidate_count_per_unit": 1,
+  "max_option_actions": 4,
+  "schema_id": "ANALYZER_COMMON_REPAIR_BUDGET_V1",
+  "schema_version": 1
+}

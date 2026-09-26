@@ -1,0 +1,21 @@
+{
+  "control_root": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage6e_fresh_train_only_strong_role_supervision_preparation_v1/42587858ba1b60903af70cc393e5ef0d4fd3b570",
+  "environment_call_count": 0,
+  "live_execution_authorized": false,
+  "model_call_count": 0,
+  "next_gate": "CODE_AND_INPUT_AUDIT_BEFORE_STRONG_TEACHER_LIVE_COLLECTION",
+  "planner_replay_readiness_sha256": "ccfbcb8e779179efc6a5119e68bc387ccebe441910a6ef4211a306b68f53fe2f",
+  "preparation_receipt_sha256": "8ec28d591fe386240a336c70745d66dc6c98b12b192ee171cf43f6a610ac8ccc",
+  "provider_exposure_census_sha256": "4fedc618e2bb9746fb6f918a2ee3f7ba5eacaff1f45620fe3e49851b67a52d70",
+  "request_plan_sha256": "d308743a633004293f2696ef7d858e308868f2d4a572432e3ff3a65812e57f33",
+  "resource_budget_sha256": "02431cfb85e4746fcbf69dc181be63d9c3fe40951979202fda57ac6d2cf36138",
+  "round_id": "CLEAN-HUMAN-REFERENCE-R1-PI0",
+  "runtime_registry_sha256": "1c3fd3e436a44ab232ca4797bf8efad65c9787e59f5c7cf5b5683095fe3b6d5f",
+  "schema_id": "STAGE6E_STRONG_ROLE_SUPERVISION_PREPARATION_AUTHORITY_V1",
+  "schema_version": 1,
+  "selected_source_state_count": 30,
+  "source_campaign_sha256": "138d8efe23a6e5eb1a8229ebe562d7688d562a42f346a8580b3bff803f7a4ef1",
+  "status": "STRONG_ROLE_SUPERVISION_INPUTS_PREPARED_FOR_FIXED_HEAD_REVIEW",
+  "training_execution_count": 0,
+  "wave1_request_count": 60
+}

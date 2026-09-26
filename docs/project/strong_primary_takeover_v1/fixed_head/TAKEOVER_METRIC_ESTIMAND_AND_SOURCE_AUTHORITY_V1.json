@@ -1,0 +1,132 @@
+{
+  "canonical_main_head": "4fb1f124aa25325e6e62dfdb284c60c520c74c0b",
+  "integration_parent_head": "010292389f288aabd2fecd0d08c83f2a2406f4b1",
+  "metrics": {
+    "budget_compliance_rate": {
+      "estimand": "executed eligible takeover-audit portfolios whose actual model/environment usage does not exceed the frozen PRE budget divided by executed eligible portfolios",
+      "materialization_status": "REQUIRES_TRAIN_AUDIT_EXECUTION",
+      "required_sources": [
+        "frozen verification/resource plan",
+        "attempt/environment receipts",
+        "no-adaptive-replacement audit"
+      ]
+    },
+    "completed_reference_round_count": {
+      "estimand": "count of canonical completed reference rounds",
+      "materialization_status": "MATERIALIZED",
+      "source_authority": "CLEAN_HUMAN_REFERENCE_CLOSEOUT",
+      "value": 1
+    },
+    "downstream_benefits_per_budget_ratio_vs_human": {
+      "estimand": "legacy V1 numeric ratio; Human verified-Benefit baseline is zero",
+      "gate_bridge_authorized": false,
+      "materialization_status": "UNMEASURED_ZERO_BASELINE",
+      "numeric_substitution_forbidden": true,
+      "requires": "TRAIN_AUDIT zero-baseline strict-superiority calibration then separate bridge review",
+      "versioned_zero_baseline_rule": {
+        "gate_bridge_authorized": false,
+        "legacy_metric": "downstream_benefits_per_budget_ratio_vs_human",
+        "legacy_numeric_metric_materialized": false,
+        "legacy_numeric_metric_substitute_forbidden": [
+          0,
+          1,
+          "EPSILON_SMOOTHING",
+          "INFINITY",
+          "TRAIN_SELECT_T2_DELTA",
+          "STRONG_HUMAN_C_PRINCIPAL_MATCH"
+        ],
+        "old_v1_gate_modified": false,
+        "preregistered_qualification_predicate": {
+          "budget_compliance_required": true,
+          "evidence_validity_required": true,
+          "future_outcome_leakage_count_equals": 0,
+          "human_verified_benefit_efficiency_equals_zero": true,
+          "single_change_compliance_required": true,
+          "strong_harm_count_lte_human_harm_count": true,
+          "strong_verification_budget_lte_human_budget": true,
+          "strong_verified_benefit_count_gte": 1
+        },
+        "requires_versioned_gate_bridge_review_after_calibration": true,
+        "rule_id": "ZERO_BASELINE_STRICT_SUPERIORITY_V1",
+        "schema_id": "ZERO_BASELINE_TAKEOVER_ESTIMAND_V1",
+        "schema_version": 1
+      }
+    },
+    "evidence_validity_rate": {
+      "estimand": "eligible Strong decision evidence citations accepted by their registered evidence allowlists divided by all eligible citations",
+      "materialization_status": "NEEDS_EXACT_SOURCE_MATERIALIZER",
+      "required_sources": [
+        "Strong PRE/POST validated artifacts",
+        "blind/evidence hydration authority",
+        "grounding validation receipts"
+      ]
+    },
+    "full_round_go_count": {
+      "estimand": "count of completed reference rounds with full-round GO",
+      "materialization_status": "MATERIALIZED",
+      "source_authority": "CLEAN_HUMAN_REFERENCE_CLOSEOUT_AND_POLICY_DISPOSITION",
+      "strong_primary_gate_dependency": false,
+      "value": 0
+    },
+    "future_outcome_leakage_count": {
+      "estimand": "count eligible Strong PRE/POST decision calls whose frozen visible input contains forbidden future outcome or sealed evaluation information",
+      "materialization_status": "NEEDS_EXACT_SOURCE_AUDIT",
+      "required_sources": [
+        "blind-input / visibility gate receipts",
+        "rendered request",
+        "logical-call / provider ledger"
+      ]
+    },
+    "human_field_revision_rate": {
+      "estimand": "clean bootstrap adjudication fields revised by Human divided by all comparable Strong-vs-Human fields; archival pilot fields are forbidden",
+      "materialization_status": "BLOCKED_PENDING_CLEAN_ADJUDICATION_IDENTITY",
+      "required_sources": [
+        "clean field-level adjudication authority",
+        "Strong shadow and Human reference records"
+      ],
+      "routine_round_remeasurement_required": false
+    },
+    "repeated_nogo_avoidance_rate": {
+      "estimand": "historical registered NO-GO opportunities that Strong explicitly rejects/defers rather than re-proposes, divided by all eligible repeated-NO-GO opportunities",
+      "materialization_status": "NEEDS_EXACT_SOURCE_MATERIALIZER",
+      "required_sources": [
+        "historical NO-GO registry",
+        "Strong PRE rejected/deferred decisions"
+      ],
+      "zero_opportunity_behavior": "UNMEASURED_NOT_AUTO_PASS"
+    },
+    "single_change_compliance_rate": {
+      "estimand": "eligible Strong PRE decisions satisfying the frozen exactly-one-principal-change contract divided by all eligible Strong PRE decisions",
+      "materialization_status": "NEEDS_EXACT_SOURCE_MATERIALIZER",
+      "required_sources": [
+        "validated Strong PRE decision",
+        "registered candidate universe",
+        "pre-outcome decision validator"
+      ]
+    },
+    "strong_post_shadow_round_count": {
+      "candidate_value": 1,
+      "estimand": "count unique reference rounds with one validated Strong POST shadow identity",
+      "file_copy_count_is_not_round_count": true,
+      "identity_sha256": "b48370deea5ae87f619de374ece9a95a5e1d5c5f076494e8a3c17ffd42c954df",
+      "materialization_status": "SOURCE_BOUND_CANDIDATE",
+      "source_authority": "STRONG_RESEARCHER_POST_SHADOW"
+    },
+    "strong_pre_shadow_round_count": {
+      "candidate_value": 1,
+      "estimand": "count unique reference rounds with one validated Strong PRE shadow identity",
+      "file_copy_count_is_not_round_count": true,
+      "identity_sha256": "f6053675a8738299adb9f8383e75a071d2fd722dabd868aabfb837be54b321ec",
+      "materialization_status": "SOURCE_BOUND_CANDIDATE",
+      "source_authority": "STRONG_RESEARCHER_PRE_SHADOW_V2"
+    }
+  },
+  "numeric_takeover_evaluation_ready": false,
+  "purpose": "INITIAL_STRONG_PRIMARY_QUALIFICATION_ONLY",
+  "routine_round_human_remeasurement_required": false,
+  "schema_id": "TAKEOVER_METRIC_ESTIMAND_AND_SOURCE_AUTHORITY_V1",
+  "schema_version": 1,
+  "strong_primary_execution_authorized": false,
+  "takeover_gate_execution_authorized": false,
+  "target_round_id": "CLEAN-STRONG-REFERENCE-R2-PI0"
+}

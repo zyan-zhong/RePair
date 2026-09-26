@@ -1,0 +1,76 @@
+{
+  "$id": "EVIDENCE_VISIBILITY_MATRIX_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "matrix_id": {
+      "const": "EVIDENCE_VISIBILITY_MATRIX_V1",
+      "type": "string"
+    },
+    "record_count": {
+      "minimum": 1,
+      "type": "integer"
+    },
+    "records": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "field_name": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "q2_replay_required": {
+            "type": "boolean"
+          },
+          "select_export_permitted": {
+            "type": "boolean"
+          },
+          "student_input_eligible": {
+            "type": "boolean"
+          },
+          "teacher_input_eligible": {
+            "type": "boolean"
+          },
+          "visibility_class": {
+            "enum": [
+              "POLICY_VISIBLE_AT_DECISION",
+              "POST_ACTION_PUBLIC_AUDIT",
+              "EPISODE_TERMINAL_OUTCOME",
+              "OFFLINE_TEACHER_VISIBLE_DEV_ONLY",
+              "OPERATIONAL_PROVENANCE_ONLY",
+              "SEALED_ORACLE_AUDIT_ONLY"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "field_name",
+          "visibility_class",
+          "student_input_eligible",
+          "teacher_input_eligible",
+          "q2_replay_required",
+          "select_export_permitted"
+        ],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "schema_id": {
+      "const": "EVIDENCE_VISIBILITY_MATRIX_V1",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "matrix_id",
+    "record_count",
+    "records"
+  ],
+  "type": "object"
+}

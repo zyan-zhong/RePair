@@ -1,0 +1,25 @@
+{
+  "schema_id": "REGISTERED_SINGLE_SEED_RECOVERY_AUTHORITY_V1",
+  "validation_package": {
+    "root": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/formal_max10_v211_validation/0c20fc82ebc29e2bc80016c6437f22338c570a1ed696c7ba41bffc5623c7189f/MAX10_V2_1_1_EXECUTABLE_PLANNER_VALIDATION",
+    "manifest_sha256": "0c20fc82ebc29e2bc80016c6437f22338c570a1ed696c7ba41bffc5623c7189f"
+  },
+  "promotion_package": {
+    "root": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/formal_max10_v194_validation/5c82f6c32d95d5b475dc11e7b3642c66df1629cddd6f52d88202205e8f8b1b3e/MAX10_V1_9_4_SINGLE_SEED_PARENT_REUSE",
+    "manifest_sha256": "5c82f6c32d95d5b475dc11e7b3642c66df1629cddd6f52d88202205e8f8b1b3e"
+  },
+  "promotion_authority_ref": {
+    "path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/formal_max10_v194_validation/5c82f6c32d95d5b475dc11e7b3642c66df1629cddd6f52d88202205e8f8b1b3e/MAX10_V1_9_4_SINGLE_SEED_PARENT_REUSE/AUTHORITY.json",
+    "sha256": "5cad81dd4ed6af4a1f20a5821cca379125af4f89476a15c032a1dc3eea5d0dde"
+  },
+  "source_parallel_ref": {
+    "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/validation_experiments/guarded-execution-validation-0b446853ceb0ec72b64a/offoff/parallel/CURRENT_NATIVE_OFFOFF_PARALLEL_BINDING.json",
+    "sha256": "8c8514a965c477dcf030639f991f2db4483e64c8f2364e71502e6ab2b17142f1"
+  },
+  "stop_receipt_ref": {
+    "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/validation_experiments/guarded-execution-validation-0b446853ceb0ec72b64a/offoff/registered_single_seed_recovery/STOP_RECEIPT.json",
+    "sha256": "1886219597e63c18c41314cc48562e0b1afac162009740b8499ba0d5409dc323"
+  },
+  "recovery_root": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/validation_experiments/guarded-execution-validation-0b446853ceb0ec72b64a/offoff/registered_single_seed_recovery",
+  "source_design": "Restore preexisting single seed and goal tie rule; no new model episodes."
+}

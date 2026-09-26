@@ -1,0 +1,178 @@
+{
+  "automatic_field_drop_authorized": false,
+  "full_audit_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage6n_stage_specific_lossless_compaction_closure_v1/b806f79f33e8a05d1075f881f154b2607ac4408c/LOCAL_RI_OVERLENGTH_FIELD_AGGREGATE_V1.json",
+  "full_audit_sha256": "f79698eb4a5ff3baabe4b2094c26df545f345d4938f84e15e2ca995932248fbc",
+  "overlength_example_count": 22,
+  "round_id": "CLEAN-HUMAN-REFERENCE-R1-PI0",
+  "schema_id": "LOCAL_RI_OVERLENGTH_FIELD_AGGREGATE_SUMMARY_V1",
+  "schema_version": 1,
+  "top_global_field_rows": [
+    {
+      "example_count": 21,
+      "field": "evidence_pack",
+      "max_leave_one_field_out_prompt_token_delta": 127735,
+      "sum_leave_one_field_out_prompt_token_delta": 1318587
+    },
+    {
+      "example_count": 1,
+      "field": "blind_input",
+      "max_leave_one_field_out_prompt_token_delta": 189806,
+      "sum_leave_one_field_out_prompt_token_delta": 189806
+    },
+    {
+      "example_count": 21,
+      "field": "evidence_reference_catalog",
+      "max_leave_one_field_out_prompt_token_delta": 8653,
+      "sum_leave_one_field_out_prompt_token_delta": 157428
+    },
+    {
+      "example_count": 21,
+      "field": "local_repair_contract",
+      "max_leave_one_field_out_prompt_token_delta": 127,
+      "sum_leave_one_field_out_prompt_token_delta": 2667
+    },
+    {
+      "example_count": 21,
+      "field": "evidence_pack_sha256",
+      "max_leave_one_field_out_prompt_token_delta": 69,
+      "sum_leave_one_field_out_prompt_token_delta": 1359
+    },
+    {
+      "example_count": 21,
+      "field": "memory_pack_sha256",
+      "max_leave_one_field_out_prompt_token_delta": 9,
+      "sum_leave_one_field_out_prompt_token_delta": 189
+    },
+    {
+      "example_count": 1,
+      "field": "evidence_hydration_manifest_sha256",
+      "max_leave_one_field_out_prompt_token_delta": 70,
+      "sum_leave_one_field_out_prompt_token_delta": 70
+    },
+    {
+      "example_count": 1,
+      "field": "blind_input_sha256",
+      "max_leave_one_field_out_prompt_token_delta": 65,
+      "sum_leave_one_field_out_prompt_token_delta": 65
+    }
+  ],
+  "top_stage_field_rows": [
+    {
+      "example_count": 11,
+      "field": "evidence_pack",
+      "max_leave_one_field_out_prompt_token_delta": 127735,
+      "max_standalone_value_token_count": 127731,
+      "stage_id": "L-A1",
+      "sum_leave_one_field_out_prompt_token_delta": 669775,
+      "sum_standalone_value_token_count": 669731
+    },
+    {
+      "example_count": 10,
+      "field": "evidence_pack",
+      "max_leave_one_field_out_prompt_token_delta": 127735,
+      "max_standalone_value_token_count": 127731,
+      "stage_id": "L-A0",
+      "sum_leave_one_field_out_prompt_token_delta": 648812,
+      "sum_standalone_value_token_count": 648772
+    },
+    {
+      "example_count": 1,
+      "field": "blind_input",
+      "max_leave_one_field_out_prompt_token_delta": 189806,
+      "max_standalone_value_token_count": 189803,
+      "stage_id": "R-PRE-PRIMARY-V1",
+      "sum_leave_one_field_out_prompt_token_delta": 189806,
+      "sum_standalone_value_token_count": 189803
+    },
+    {
+      "example_count": 11,
+      "field": "evidence_reference_catalog",
+      "max_leave_one_field_out_prompt_token_delta": 8653,
+      "max_standalone_value_token_count": 8648,
+      "stage_id": "L-A1",
+      "sum_leave_one_field_out_prompt_token_delta": 81522,
+      "sum_standalone_value_token_count": 81467
+    },
+    {
+      "example_count": 10,
+      "field": "evidence_reference_catalog",
+      "max_leave_one_field_out_prompt_token_delta": 8653,
+      "max_standalone_value_token_count": 8648,
+      "stage_id": "L-A0",
+      "sum_leave_one_field_out_prompt_token_delta": 75906,
+      "sum_standalone_value_token_count": 75856
+    },
+    {
+      "example_count": 11,
+      "field": "local_repair_contract",
+      "max_leave_one_field_out_prompt_token_delta": 127,
+      "max_standalone_value_token_count": 123,
+      "stage_id": "L-A1",
+      "sum_leave_one_field_out_prompt_token_delta": 1397,
+      "sum_standalone_value_token_count": 1353
+    },
+    {
+      "example_count": 10,
+      "field": "local_repair_contract",
+      "max_leave_one_field_out_prompt_token_delta": 127,
+      "max_standalone_value_token_count": 123,
+      "stage_id": "L-A0",
+      "sum_leave_one_field_out_prompt_token_delta": 1270,
+      "sum_standalone_value_token_count": 1230
+    },
+    {
+      "example_count": 11,
+      "field": "evidence_pack_sha256",
+      "max_leave_one_field_out_prompt_token_delta": 69,
+      "max_standalone_value_token_count": 61,
+      "stage_id": "L-A1",
+      "sum_leave_one_field_out_prompt_token_delta": 710,
+      "sum_standalone_value_token_count": 632
+    },
+    {
+      "example_count": 10,
+      "field": "evidence_pack_sha256",
+      "max_leave_one_field_out_prompt_token_delta": 69,
+      "max_standalone_value_token_count": 61,
+      "stage_id": "L-A0",
+      "sum_leave_one_field_out_prompt_token_delta": 649,
+      "sum_standalone_value_token_count": 578
+    },
+    {
+      "example_count": 11,
+      "field": "memory_pack_sha256",
+      "max_leave_one_field_out_prompt_token_delta": 9,
+      "max_standalone_value_token_count": 1,
+      "stage_id": "L-A1",
+      "sum_leave_one_field_out_prompt_token_delta": 99,
+      "sum_standalone_value_token_count": 11
+    },
+    {
+      "example_count": 10,
+      "field": "memory_pack_sha256",
+      "max_leave_one_field_out_prompt_token_delta": 9,
+      "max_standalone_value_token_count": 1,
+      "stage_id": "L-A0",
+      "sum_leave_one_field_out_prompt_token_delta": 90,
+      "sum_standalone_value_token_count": 10
+    },
+    {
+      "example_count": 1,
+      "field": "evidence_hydration_manifest_sha256",
+      "max_leave_one_field_out_prompt_token_delta": 70,
+      "max_standalone_value_token_count": 59,
+      "stage_id": "R-PRE-PRIMARY-V1",
+      "sum_leave_one_field_out_prompt_token_delta": 70,
+      "sum_standalone_value_token_count": 59
+    },
+    {
+      "example_count": 1,
+      "field": "blind_input_sha256",
+      "max_leave_one_field_out_prompt_token_delta": 65,
+      "max_standalone_value_token_count": 59,
+      "stage_id": "R-PRE-PRIMARY-V1",
+      "sum_leave_one_field_out_prompt_token_delta": 65,
+      "sum_standalone_value_token_count": 59
+    }
+  ]
+}

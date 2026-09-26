@@ -1,0 +1,33 @@
+{
+  "schema_id": "V1233H4_REPLAY_REPORT_FIELD_DRIFT_RECOVERY_V1",
+  "root_cause": "native_branch referenced non-existent SourceStateReplayReportV1.exact_match",
+  "frozen_report_fields_used": [
+    "status",
+    "failure_code",
+    "source_fingerprint_sha256",
+    "replay_fingerprint_sha256"
+  ],
+  "safe_recovery_requires": [
+    "exact known AttributeError message",
+    "durable terminal for both matched arms",
+    "scientific_outcome_produced=false",
+    "evidence_complete=false",
+    "scientific_environment_action_result_count=0",
+    "policy_call_result_count=0",
+    "option_environment_step_count is null or zero"
+  ],
+  "single_arm_retry_allowed": false,
+  "candidate_reselection_allowed": false,
+  "replacement_state_allowed": false,
+  "top_up_allowed": false,
+  "hardcoded_current_branch_count_allowed": false,
+  "scientific_authority_changed": false,
+  "independent_verifier_aligned_to_frozen_report_schema": true,
+  "independent_verifier_validation": [
+    "SourceStateReplayReportV1 dataclass reconstruction validates report_sha256",
+    "status must be PASS",
+    "failure_code must be null",
+    "source_fingerprint_sha256 must equal frozen native fingerprint",
+    "replay_fingerprint_sha256 must equal frozen native fingerprint"
+  ]
+}

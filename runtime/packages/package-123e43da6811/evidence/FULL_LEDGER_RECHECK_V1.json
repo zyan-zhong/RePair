@@ -1,0 +1,79 @@
+{
+  "schema_id": "FULL_LEDGER_COVERAGE_AND_AUTHORITY_INDEX_REVIEW_V1",
+  "source_path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\outputs\\PCHSI_CANONICAL_STATUS_20260924_FORMAL_MAX10_V1_6_SERVER_VERIFY_RECORDED_FULL.md",
+  "source_sha256": "af07cda4c2ce868d0410172ad006ba0759c6620c3cfbf606d8c75a191f25d78f",
+  "byte_count": 4559121,
+  "line_count": 165420,
+  "full_file_decoded_and_indexed": true,
+  "heading_count": 5854,
+  "indexed_line_count": 2569,
+  "interpretation": "Whole-file mechanical coverage plus semantic review of recorded scope/authority/statistics/runtime anchors; indexing alone is not a claim of manually evaluating every historical sentence.",
+  "rechecked_ranges": [
+    [
+      20663,
+      20677
+    ],
+    [
+      43787,
+      43835
+    ],
+    [
+      66325,
+      66380
+    ],
+    [
+      66492,
+      66550
+    ],
+    [
+      66990,
+      67040
+    ],
+    [
+      76853,
+      76880
+    ],
+    [
+      78854,
+      78940
+    ],
+    [
+      160510,
+      160543
+    ],
+    [
+      163680,
+      163730
+    ],
+    [
+      164077,
+      164087
+    ],
+    [
+      165367,
+      165420
+    ]
+  ],
+  "invariants": [
+    "Historical R1/R2 canary does not consume Formal valid rounds",
+    "Strong POST determines current recipe from independently verified evidence",
+    "Deterministic promotion remains separate from Strong Planner",
+    "No replacement scientific loops or filesystem discovery",
+    "Authority paths and SHA are registrations, not runtime source constants",
+    "Campaign ceiling10/patience3/restarts2/force_allfalse remain native authority values"
+  ],
+  "formal_promotion_rule_search_hits": [
+    {
+      "line": 43799,
+      "finding": "rule must be frozen before outcomes; algorithm not supplied"
+    },
+    {
+      "line": 43802,
+      "finding": "diagnostic training cannot promote"
+    },
+    {
+      "line": 43808,
+      "finding": "Human diagnostic rollback is not Formal criterion"
+    }
+  ]
+}

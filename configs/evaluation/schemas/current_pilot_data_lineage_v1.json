@@ -1,0 +1,69 @@
+{
+  "$id": "CURRENT_PILOT_DATA_LINEAGE_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "legacy_reference_only": {
+      "const": true,
+      "type": "boolean"
+    },
+    "lineage_id": {
+      "const": "CURRENT_PILOT_DATA_LINEAGE_V1",
+      "type": "string"
+    },
+    "p1_dev_access_class": {
+      "const": "DEV_VISIBLE",
+      "type": "string"
+    },
+    "p1_dev_lineage_id": {
+      "const": "P1_DEV_DATA_LINEAGE_V1",
+      "type": "string"
+    },
+    "p1_dev_seed": {
+      "const": 17,
+      "type": "integer"
+    },
+    "p1_policy_condition_id": {
+      "const": "P4-R0-PI0",
+      "type": "string"
+    },
+    "p4_select_access_class": {
+      "const": "SELECT_SUMMARY_ONLY",
+      "type": "string"
+    },
+    "p4_select_lineage_id": {
+      "const": "P4_SELECT_EVALUATION_LINEAGE_V1",
+      "type": "string"
+    },
+    "prohibited_legacy_data_classes": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "schema_id": {
+      "const": "CURRENT_PILOT_DATA_LINEAGE_V1",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "lineage_id",
+    "p1_dev_lineage_id",
+    "p4_select_lineage_id",
+    "p1_policy_condition_id",
+    "p1_dev_seed",
+    "p1_dev_access_class",
+    "p4_select_access_class",
+    "legacy_reference_only",
+    "prohibited_legacy_data_classes"
+  ],
+  "type": "object"
+}

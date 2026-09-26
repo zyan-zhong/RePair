@@ -1,0 +1,17 @@
+{
+  "schema_id": "EXISTING_SELECT_FREEZE_SOURCE_REUSE_V1",
+  "base_head": "629895d8ca9a7e5be2c9f2991c5e8c71d9ca3df3",
+  "existing_preflight": "STAGE4B_EXISTING_SELECT_PREFLIGHT_V1/preflight.py",
+  "reused_checks": ["verify_training_evidence", "verify_adapter_files", "pool_references", "load_bound_pool_metadata", "draft_task_seed_grid", "clean_adapter.verify_clean_base"],
+  "existing_canonicalization": "pchsi.evaluation.canonical_evidence",
+  "existing_domain_hash": "pchsi.reference_loop.canonical.domain_hash",
+  "existing_authority_resolver": "pchsi.round_control.role_authority.resolve_authority_plan",
+  "existing_artifact_index": "round_training.receipts.build_input_artifact_index",
+  "existing_episode_evaluator": "pchsi.evaluation.episode_evaluator.run_single_episode",
+  "existing_live_source_root": "scripts/engineering_snapshots/stage0/human_pilot_stage0_offoff_execution_and_closeout_v1_9/stage0",
+  "new_evaluator_or_trainer": false,
+  "new_production_patch": false,
+  "only_existing_four_file_overlay_committed": true,
+  "remote_publication": false,
+  "live_execution": false
+}

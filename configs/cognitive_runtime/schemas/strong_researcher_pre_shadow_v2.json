@@ -1,0 +1,604 @@
+{
+  "$id": "STRONG_RESEARCHER_PRE_SHADOW_V2",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "abstention_reason": {
+      "maxLength": 8192,
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "automatic_environment_effect_assignment": {
+      "const": false,
+      "type": "boolean"
+    },
+    "blind_input_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "candidate_bottlenecks": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "candidate_id": {
+            "maxLength": 512,
+            "minLength": 1,
+            "type": "string"
+          },
+          "counterevidence_sha256s": {
+            "items": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "maxItems": 64,
+            "type": "array"
+          },
+          "disposition_reason": {
+            "maxLength": 8192,
+            "minLength": 1,
+            "type": "string"
+          },
+          "evidence_sha256s": {
+            "items": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "maxItems": 64,
+            "type": "array"
+          },
+          "expected_harm_risk_class": {
+            "enum": [
+              "LOW",
+              "MEDIUM",
+              "HIGH",
+              "UNKNOWN"
+            ],
+            "type": "string"
+          },
+          "expected_value_class": {
+            "enum": [
+              "LOW",
+              "MEDIUM",
+              "HIGH",
+              "UNKNOWN"
+            ],
+            "type": "string"
+          },
+          "expected_verification_cost_class": {
+            "enum": [
+              "LOW",
+              "MEDIUM",
+              "HIGH",
+              "UNKNOWN"
+            ],
+            "type": "string"
+          },
+          "observed_facts": {
+            "items": {
+              "maxLength": 8192,
+              "minLength": 1,
+              "type": "string"
+            },
+            "maxItems": 32,
+            "type": "array"
+          },
+          "status": {
+            "enum": [
+              "SELECTED",
+              "REJECTED",
+              "DEFERRED"
+            ],
+            "type": "string"
+          },
+          "uncertainties": {
+            "items": {
+              "maxLength": 8192,
+              "minLength": 1,
+              "type": "string"
+            },
+            "maxItems": 32,
+            "type": "array"
+          }
+        },
+        "required": [
+          "candidate_id",
+          "status",
+          "observed_facts",
+          "uncertainties",
+          "evidence_sha256s",
+          "counterevidence_sha256s",
+          "expected_value_class",
+          "expected_harm_risk_class",
+          "expected_verification_cost_class",
+          "disposition_reason"
+        ],
+        "type": "object"
+      },
+      "maxItems": 32,
+      "minItems": 1,
+      "type": "array"
+    },
+    "effect_authority": {
+      "const": "INDEPENDENT_ENVIRONMENT_VERIFIER_ONLY",
+      "type": "string"
+    },
+    "evidence_hydration_manifest_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "memory_usage_summary": {
+      "additionalProperties": false,
+      "properties": {
+        "memory_effect_authority": {
+          "const": false,
+          "type": "boolean"
+        },
+        "memory_helpfulness_hypothesis": {
+          "maxLength": 8192,
+          "minLength": 1,
+          "type": "string"
+        },
+        "memory_misleading_risk": {
+          "maxLength": 8192,
+          "minLength": 1,
+          "type": "string"
+        },
+        "memory_use_summary": {
+          "maxLength": 8192,
+          "minLength": 1,
+          "type": "string"
+        },
+        "memory_used_for_candidate_discovery": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "memory_used_for_candidate_discovery",
+        "memory_use_summary",
+        "memory_helpfulness_hypothesis",
+        "memory_misleading_risk",
+        "memory_effect_authority"
+      ],
+      "type": "object"
+    },
+    "observed_facts": {
+      "items": {
+        "maxLength": 8192,
+        "minLength": 1,
+        "type": "string"
+      },
+      "maxItems": 64,
+      "minItems": 1,
+      "type": "array"
+    },
+    "promotion_authority": {
+      "const": "DETERMINISTIC_INDEPENDENT_GATE_ONLY",
+      "type": "string"
+    },
+    "resource_plan": {
+      "additionalProperties": false,
+      "properties": {
+        "expected_additional_model_logical_calls": {
+          "maximum": 1000,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "expected_api_cost_usd": {
+          "minimum": 0,
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "expected_environment_branch_runs": {
+          "maximum": 120,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "expected_gpu_hours": {
+          "minimum": 0,
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "resource_basis": {
+          "maxLength": 8192,
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "expected_environment_branch_runs",
+        "expected_additional_model_logical_calls",
+        "expected_gpu_hours",
+        "expected_api_cost_usd",
+        "resource_basis"
+      ],
+      "type": "object"
+    },
+    "round_id": {
+      "maxLength": 512,
+      "minLength": 1,
+      "type": "string"
+    },
+    "schema_id": {
+      "const": "STRONG_RESEARCHER_PRE_SHADOW_V2",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 2,
+      "type": "integer"
+    },
+    "selected_bottleneck_id": {
+      "maxLength": 512,
+      "minLength": 1,
+      "type": "string"
+    },
+    "selected_bottleneck_statement": {
+      "maxLength": 8192,
+      "minLength": 1,
+      "type": "string"
+    },
+    "selected_candidate_sha256s": {
+      "items": {
+        "pattern": "^[0-9a-f]{64}$",
+        "type": "string"
+      },
+      "maxItems": 12,
+      "type": "array"
+    },
+    "selected_condition_counts": {
+      "additionalProperties": false,
+      "properties": {
+        "A2": {
+          "maximum": 12,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "A3": {
+          "maximum": 12,
+          "minimum": 0,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "A2",
+        "A3"
+      ],
+      "type": "object"
+    },
+    "selected_source_state_sha256s": {
+      "items": {
+        "pattern": "^[0-9a-f]{64}$",
+        "type": "string"
+      },
+      "maxItems": 12,
+      "type": "array"
+    },
+    "selected_state_count": {
+      "maximum": 12,
+      "minimum": 0,
+      "type": "integer"
+    },
+    "shadow_record_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "single_falsifiable_hypothesis": {
+      "maxLength": 8192,
+      "minLength": 1,
+      "type": "string"
+    },
+    "single_principal_change": {
+      "maxLength": 8192,
+      "minLength": 1,
+      "type": "string"
+    },
+    "single_principal_change_id": {
+      "maxLength": 512,
+      "minLength": 1,
+      "type": "string"
+    },
+    "state_reviews": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "alternative_candidate_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "alternative_condition": {
+            "enum": [
+              "A2",
+              "A3"
+            ],
+            "type": "string"
+          },
+          "alternative_x_disposition": {
+            "maxLength": 128,
+            "minLength": 1,
+            "type": "string"
+          },
+          "counterevidence_summary": {
+            "maxLength": 8192,
+            "minLength": 1,
+            "type": "string"
+          },
+          "evidence_summary": {
+            "maxLength": 8192,
+            "minLength": 1,
+            "type": "string"
+          },
+          "evidence_support_class": {
+            "enum": [
+              "LOW",
+              "MEDIUM",
+              "HIGH",
+              "UNKNOWN"
+            ],
+            "type": "string"
+          },
+          "expected_harm_risk_class": {
+            "enum": [
+              "LOW",
+              "MEDIUM",
+              "HIGH",
+              "UNKNOWN"
+            ],
+            "type": "string"
+          },
+          "expected_value_class": {
+            "enum": [
+              "LOW",
+              "MEDIUM",
+              "HIGH",
+              "UNKNOWN"
+            ],
+            "type": "string"
+          },
+          "pair_adjudication_rationale": {
+            "maxLength": 8192,
+            "minLength": 1,
+            "type": "string"
+          },
+          "preferred_candidate_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "preferred_condition": {
+            "enum": [
+              "A2",
+              "A3"
+            ],
+            "type": "string"
+          },
+          "preferred_x_disposition": {
+            "maxLength": 128,
+            "minLength": 1,
+            "type": "string"
+          },
+          "selected_for_verification": {
+            "type": "boolean"
+          },
+          "selection_rationale": {
+            "maxLength": 8192,
+            "minLength": 1,
+            "type": "string"
+          },
+          "source_state_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "state_index": {
+            "maximum": 29,
+            "minimum": 0,
+            "type": "integer"
+          },
+          "state_portfolio_disposition": {
+            "enum": [
+              "SELECTED",
+              "DEFERRED_BUDGET",
+              "DEFERRED_LOW_VALUE",
+              "DEFERRED_UNCERTAIN",
+              "REJECTED_RISK",
+              "REJECTED_REDUNDANT"
+            ],
+            "type": "string"
+          },
+          "task_family": {
+            "maxLength": 512,
+            "minLength": 1,
+            "type": "string"
+          },
+          "verification_cost_branch_runs": {
+            "maximum": 120,
+            "minimum": 0,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "state_index",
+          "source_state_sha256",
+          "task_family",
+          "preferred_condition",
+          "preferred_candidate_sha256",
+          "preferred_x_disposition",
+          "alternative_condition",
+          "alternative_candidate_sha256",
+          "alternative_x_disposition",
+          "evidence_support_class",
+          "expected_value_class",
+          "expected_harm_risk_class",
+          "verification_cost_branch_runs",
+          "selected_for_verification",
+          "state_portfolio_disposition",
+          "evidence_summary",
+          "counterevidence_summary",
+          "pair_adjudication_rationale",
+          "selection_rationale"
+        ],
+        "type": "object"
+      },
+      "maxItems": 30,
+      "minItems": 30,
+      "type": "array"
+    },
+    "training_policy_at_pre": {
+      "additionalProperties": false,
+      "properties": {
+        "deferred_until": {
+          "maxLength": 8192,
+          "minLength": 1,
+          "type": "string"
+        },
+        "exact_training_mixture_frozen": {
+          "const": false,
+          "type": "boolean"
+        },
+        "recommendation": {
+          "maxLength": 8192,
+          "minLength": 1,
+          "type": "string"
+        },
+        "status": {
+          "const": "HOLD_PENDING_VERIFIED_F0F1_MANIFEST",
+          "type": "string"
+        }
+      },
+      "required": [
+        "status",
+        "exact_training_mixture_frozen",
+        "recommendation",
+        "deferred_until"
+      ],
+      "type": "object"
+    },
+    "uncertainties": {
+      "items": {
+        "maxLength": 8192,
+        "minLength": 1,
+        "type": "string"
+      },
+      "maxItems": 64,
+      "minItems": 1,
+      "type": "array"
+    },
+    "unused_state_budget": {
+      "maximum": 12,
+      "minimum": 0,
+      "type": "integer"
+    },
+    "verification_plan": {
+      "additionalProperties": false,
+      "properties": {
+        "branch_arms_per_repetition": {
+          "maximum": 2,
+          "minimum": 2,
+          "type": "integer"
+        },
+        "branch_runs_per_state": {
+          "maximum": 10,
+          "minimum": 10,
+          "type": "integer"
+        },
+        "outcome_adaptive_budget_change_allowed": {
+          "const": false,
+          "type": "boolean"
+        },
+        "paired_repetitions_per_state": {
+          "maximum": 5,
+          "minimum": 5,
+          "type": "integer"
+        },
+        "primary_endpoint": {
+          "maxLength": 8192,
+          "minLength": 1,
+          "type": "string"
+        },
+        "refutation_criterion": {
+          "maxLength": 8192,
+          "minLength": 1,
+          "type": "string"
+        },
+        "selected_branch_run_budget": {
+          "maximum": 120,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "selected_state_budget_ceiling": {
+          "maximum": 12,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "stop_condition": {
+          "maxLength": 8192,
+          "minLength": 1,
+          "type": "string"
+        },
+        "support_criterion": {
+          "maxLength": 8192,
+          "minLength": 1,
+          "type": "string"
+        },
+        "total_branch_run_budget_ceiling": {
+          "maximum": 120,
+          "minimum": 120,
+          "type": "integer"
+        },
+        "unfavorable_candidate_replacement_allowed": {
+          "const": false,
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "selected_state_budget_ceiling",
+        "paired_repetitions_per_state",
+        "branch_arms_per_repetition",
+        "branch_runs_per_state",
+        "selected_branch_run_budget",
+        "total_branch_run_budget_ceiling",
+        "outcome_adaptive_budget_change_allowed",
+        "unfavorable_candidate_replacement_allowed",
+        "primary_endpoint",
+        "support_criterion",
+        "refutation_criterion",
+        "stop_condition"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "round_id",
+    "blind_input_sha256",
+    "evidence_hydration_manifest_sha256",
+    "observed_facts",
+    "uncertainties",
+    "candidate_bottlenecks",
+    "selected_bottleneck_id",
+    "selected_bottleneck_statement",
+    "single_falsifiable_hypothesis",
+    "single_principal_change_id",
+    "single_principal_change",
+    "state_reviews",
+    "selected_state_count",
+    "unused_state_budget",
+    "selected_source_state_sha256s",
+    "selected_candidate_sha256s",
+    "selected_condition_counts",
+    "abstention_reason",
+    "verification_plan",
+    "resource_plan",
+    "memory_usage_summary",
+    "training_policy_at_pre",
+    "automatic_environment_effect_assignment",
+    "effect_authority",
+    "promotion_authority",
+    "shadow_record_sha256"
+  ],
+  "type": "object"
+}

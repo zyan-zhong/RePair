@@ -1,0 +1,20 @@
+{
+  "binding_evidence_path": "/data/run01/scwb204/sdar_repro/badcase/github_exports/pchsi-wt-strong-primary-takeover-prep-v1/docs/project/strong_primary_takeover_v1/LOCAL_SHADOW_BINDING_EVIDENCE_V1.json",
+  "binding_evidence_sha256": "98a7e155d027c8e9ba000b236033cb67bac785eed05674e4f9a0eb09bbfd1f13",
+  "discovery_source_path": "/data/run01/scwb204/sdar_repro/badcase/github_exports/pchsi-wt-strong-primary-takeover-prep-v1/docs/project/strong_primary_takeover_v1/audit/LOCAL_SHADOW_CHECKPOINT_DISCOVERY_V1.json",
+  "discovery_source_sha256": "bbc3853fdbd091aa0151309d014d477772224023efcf9da1f355ab2826e58bb1",
+  "execution_authorized": false,
+  "policy_adapter_may_be_reused_as_researcher_or_analyzer_shadow": false,
+  "policy_training_source_detected": true,
+  "reason": "Local shadow for Analyzer/Research Planner requires an explicit role-localization checkpoint/runtime binding. A policy diagnostic training adapter is not role-compatible merely because it is local.",
+  "schema_id": "LOCAL_SHADOW_ROLE_COMPATIBILITY_AUDIT_V1",
+  "source_schema_ids": [
+    "CLEAN_DIAGNOSTIC_CANDIDATE_HANDOFF_V1",
+    "CLEAN_SEEDED_LORA_INITIALIZATION_RECEIPT_V1",
+    "ROUND_ARTIFACT_INDEX_V1",
+    "ROUND_ROLE_BINDING_MANIFEST_V1",
+    "ROUND_TRAINING_STAGE_BINDING_V1"
+  ],
+  "status": "NEEDS_DEDICATED_OR_EXPLICITLY_ROLE_AUTHORIZED_LOCAL_SHADOW_CHECKPOINT",
+  "unique_local_shadow_checkpoint_binding_ready": false
+}

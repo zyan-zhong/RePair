@@ -1,0 +1,299 @@
+{
+  "schema_id": "EXACT_EXPORTED_PRODUCER_REVIEW_V1",
+  "evidence_zip_sha256": "6e78778d47e4fbc37fb3d0bd7a7b70ca494854ad25070e07601c4e5a1ab433ae",
+  "zip_bytes": 117869,
+  "zip_member_count": 58,
+  "exported_exact_file_count": 57,
+  "verified_export_sha_count": 57,
+  "expected_source_sha_checked_count": 26,
+  "actual_capsule_zip_uploaded": false,
+  "capsule_inventory_and_source_projection_reviewed": true,
+  "capsule_zip_revalidated_on_server_before_submission": true,
+  "files": [
+    {
+      "path": "control/R2_PRODUCER_INPUT_CLOSURE_DIAGNOSIS_V1.json",
+      "sha256": "4948d2e9fe3c1da506c459a0aae09bfd9052ef795bf55fdeb36aa49c0b690179",
+      "bound_expected_sha": false
+    },
+    {
+      "path": "control/ROUND_ROLLOUT_PRODUCER_AUTHORITY_V1.json",
+      "sha256": "9f71330cec5430e1a9e9ac724ef587dd836056ae3116f7d6ac2f9ad4094b4d94",
+      "bound_expected_sha": false
+    },
+    {
+      "path": "control/R2_PRODUCER_MATERIALIZATION_V1.json",
+      "sha256": "39680479c8ab2290e77b26ac4c7737ba5e8555dafa2375d8a02455d7ed5f309f",
+      "bound_expected_sha": false
+    },
+    {
+      "path": "control/R2_PRODUCER_NEW_SBATCH_ARGV_V1.json",
+      "sha256": "4235d5990f50498a4f1b0d8ca6c3f1c3a1ea967121a7f8ff9175edc65e6f0b09",
+      "bound_expected_sha": false
+    },
+    {
+      "path": "control/R2_PRODUCER_RESUME_LAUNCH_V1.json",
+      "sha256": "135d298b39d7a6ea5da8388de85647d39a7c50b859b221b2e5cc33f30d66458f",
+      "bound_expected_sha": false
+    },
+    {
+      "path": "control/R2_GATE_ARTIFACT_FIRST_DIAGNOSIS_V1.json",
+      "sha256": "ef4e02f0a4bc06aad5dd43572a1ae68d26f9fbdb2e0595e7dfbd825cfb3dff6f",
+      "bound_expected_sha": false
+    },
+    {
+      "path": "control/R2_GATE_FILENOTFOUND_TYPED_ROOT_ROUTE_V1.json",
+      "sha256": "a94ad2663e025f691702b9b9a44fcfb2b29e3b649409c12e4506a5058539ccf4",
+      "bound_expected_sha": false
+    },
+    {
+      "path": "control/NEXT_ROUND_ROLLOUT_LAUNCH_AUTHORITY_V1.json",
+      "sha256": "c4d9e316f4bf0cd72de7093e7f4f13f9f897cf17274178a0f5b6c2caee8b62fe",
+      "bound_expected_sha": false
+    },
+    {
+      "path": "control/ROUND_MEMORY_CARRY_FORWARD_V1.json",
+      "sha256": "952ac3830605c37b5e3a937e5fff48ed927681de2c2abb5276fd912055a0482d",
+      "bound_expected_sha": false
+    },
+    {
+      "path": "current/request.json",
+      "sha256": "b8f76953d65df83dca187afeab2cb4d7b58e98eb9caac98607fdb59ad3384e60",
+      "bound_expected_sha": true
+    },
+    {
+      "path": "current/PCHSI_V1232K_GATE_FAILURE_V1.json",
+      "sha256": "94bc70dfb09260db2b138e4f26aac41ad11c626b33b3606d172f1d2831cb52dd",
+      "bound_expected_sha": false
+    },
+    {
+      "path": "previous/runner.sh",
+      "sha256": "cfea35ab0a61108a2736dec6db2cc193287041bd458080ad81937681576a1f76",
+      "bound_expected_sha": true
+    },
+    {
+      "path": "previous/shard_plan.json",
+      "sha256": "bebc0b65252b54c193dfc6f42b11debeb6a1f8d112e3d9f0daa3aa7ecccf52e8",
+      "bound_expected_sha": true
+    },
+    {
+      "path": "previous/submission_receipt.json",
+      "sha256": "3a280b2fcaa6499158312f0a993a9bf1d19b86ecf676c9e45a5b07310b4d45cf",
+      "bound_expected_sha": true
+    },
+    {
+      "path": "previous/request.json",
+      "sha256": "901b9222c5afdab7ddb6a29a7e4a60de14405e1f365c48ebc372441ab8717642",
+      "bound_expected_sha": true
+    },
+    {
+      "path": "previous/finalizer_failure.json",
+      "sha256": "c5bc4582e8cd54f5838267355e49c0bf022954bccd3ded7541e26b01f0199101",
+      "bound_expected_sha": true
+    },
+    {
+      "path": "current/runner.sh",
+      "sha256": "46684cbe06926abcfc0b1fb198bdc26a5f9b845c934273308f440bb0f73a5e64",
+      "bound_expected_sha": true
+    },
+    {
+      "path": "current/shard_plan.json",
+      "sha256": "275ddcf9aabc6ab643e3f8fb99e4f16f9f82e2d395ce77de6edd7ad4e002ba20",
+      "bound_expected_sha": true
+    },
+    {
+      "path": "producer_source/PACKAGE_FILES.sha256",
+      "sha256": "b2e6ea8ad7eda31e0f797fca8e3175290ebcc697abf0cfb1b7c5bbaf48903d80",
+      "bound_expected_sha": false
+    },
+    {
+      "path": "producer_source/IMPLEMENTATION_PLAN.md",
+      "sha256": "2edca6f36c85ecb0efbd5756f43d5f68a67adf0b628d4538615e3fcf595e8a23",
+      "bound_expected_sha": true
+    },
+    {
+      "path": "producer_source/README.md",
+      "sha256": "be44abb7d7071c63fe1850dc56824ffd4b547aa6a9fbd62063be0c75dfc9a3c9",
+      "bound_expected_sha": true
+    },
+    {
+      "path": "producer_source/RUN_V1232K.sh",
+      "sha256": "80fb74fed303581be2010a4467f4b1287a38eced0b47793b7b0002bbd7a211c7",
+      "bound_expected_sha": true
+    },
+    {
+      "path": "producer_source/STATUS_V1232K.sh",
+      "sha256": "901542b3657c5916842aa2f20db73ae4bf73a879f84b634b2592f5091c3a573c",
+      "bound_expected_sha": true
+    },
+    {
+      "path": "producer_source/V1232K_CONTROL_PLANE_REENTRY_AUTHORITY_V1.json",
+      "sha256": "a9ecfcc20fd4f033ac0d90f0bb09a23c48a096101353dccd8ec06b8b15a0fd94",
+      "bound_expected_sha": true
+    },
+    {
+      "path": "producer_source/VALIDATION_EVIDENCE.md",
+      "sha256": "a9ba17b96162af44c8f3a3bbf0f9b4b3c9c40697028083a966dc6091c2c22a15",
+      "bound_expected_sha": true
+    },
+    {
+      "path": "producer_source/formal_rollout_support.py",
+      "sha256": "c9664dbbe95d59003a0d8f0a73e3516e31c94f407ab48ce115b26d448f0b0d0b",
+      "bound_expected_sha": true
+    },
+    {
+      "path": "producer_source/global_finalize.py",
+      "sha256": "2244c17d42b1249fabe9e920c7bc50b527ae89f488220c48719eed5641b2b1af",
+      "bound_expected_sha": true
+    },
+    {
+      "path": "producer_source/infra_diagnosis.py",
+      "sha256": "ded948b9bc766de77fc30e2bd657ba637afc2af34983d9e236bd1b03e87c48db",
+      "bound_expected_sha": true
+    },
+    {
+      "path": "producer_source/safe_io.py",
+      "sha256": "ad6e3b05603af3c8a9c444fe35947de7e485ed8ad08111745f708be06a8ff9a2",
+      "bound_expected_sha": true
+    },
+    {
+      "path": "producer_source/shard_math.py",
+      "sha256": "ffc3f2f7851e348edc268d9df1dfe095a6cbb9edc8ed9597fcbd4bc25689e49c",
+      "bound_expected_sha": true
+    },
+    {
+      "path": "producer_source/shard_worker.py",
+      "sha256": "097c22c827ed835c788764a941902646a938048458de0d72c6339f1d0d2a1888",
+      "bound_expected_sha": true
+    },
+    {
+      "path": "producer_source/submission_contract.py",
+      "sha256": "9861a3f7ad80741397ca2c7bd0a278114d9149e135c28c7ce1c53bb0f78cf8ed",
+      "bound_expected_sha": true
+    },
+    {
+      "path": "producer_source/submit_v1232k.py",
+      "sha256": "23218c9fa5af10d2c8104abfb3bb1ebc9a8d63c961425fc3d7c96a362c52c997",
+      "bound_expected_sha": true
+    },
+    {
+      "path": "producer_source/tests/test_infra_diagnosis.py",
+      "sha256": "10b50499676b45e5c40eac8c67c68fb364f4571b7a5c0d563f6e0d986f0fc5f7",
+      "bound_expected_sha": true
+    },
+    {
+      "path": "producer_source/tests/test_package_policy.py",
+      "sha256": "7f6adc62e585d9c6026262e7054904dbdddfa9edc1d5947eab44f9728aaabe97",
+      "bound_expected_sha": true
+    },
+    {
+      "path": "producer_source/tests/test_rollout_classifier.py",
+      "sha256": "8e793f36eb57d36a8ea83522fadeea6251245bf7c7ece0be84b9ddef70a8c729",
+      "bound_expected_sha": true
+    },
+    {
+      "path": "producer_source/verify_package.py",
+      "sha256": "8ddacf182f760144e7160fc1e813a6a5479e96dfb81f3ea40358b88777dfc4c1",
+      "bound_expected_sha": true
+    },
+    {
+      "path": "capsule_review/0004/allocation_preflight.py",
+      "sha256": "65583b4c181bd9f16c20e0c11ba809b242317dcfe11cda0d94c1179755781fd2",
+      "bound_expected_sha": false
+    },
+    {
+      "path": "capsule_review/0004/policy_runtime_lifecycle_source/materialize_policy_runtime_service_launch_contract.py",
+      "sha256": "fe20e629ccdd5e63967e2321a5547f3ef6ef71c7f034052cb6ff7f423f3d6d43",
+      "bound_expected_sha": false
+    },
+    {
+      "path": "capsule_review/0004/policy_runtime_lifecycle_source/materialize_policy_runtime_service_launch_contract_from_profile.py",
+      "sha256": "81aab31f4e868e9c4e3bb6f893253256ae2f26ca75abdd3ba391c70ffc79037e",
+      "bound_expected_sha": false
+    },
+    {
+      "path": "capsule_review/0004/policy_runtime_lifecycle_source/materialize_policy_runtime_slurm_execution.py",
+      "sha256": "9652d9b144d9b1544299190aae1c713254312ae942fa275cde61600041ca7ed8",
+      "bound_expected_sha": false
+    },
+    {
+      "path": "capsule_review/0004/policy_runtime_lifecycle_source/policy_runtime_engine_profile.py",
+      "sha256": "dc0e63283faf99771ddf00bc1c08b1896a9c6575bc7e6335c38fa80ee31d1348",
+      "bound_expected_sha": false
+    },
+    {
+      "path": "capsule_review/0004/policy_runtime_lifecycle_source/policy_runtime_engine_profile_discovery.py",
+      "sha256": "9184dbdbea2bf5893867a1954fd297ad8453949c1df1c6a9f98e366333664b8d",
+      "bound_expected_sha": false
+    },
+    {
+      "path": "capsule_review/0004/policy_runtime_lifecycle_source/policy_runtime_engine_profile_receipt.py",
+      "sha256": "087f25c5c9ee6f3b32602ca5c38b1594c057f6de8c028856138aca18510bb7c5",
+      "bound_expected_sha": false
+    },
+    {
+      "path": "capsule_review/0004/policy_runtime_lifecycle_source/policy_runtime_service.py",
+      "sha256": "6b7b83f9417ca1988f95560e25ad4621bf3a029f5835889c71d2c37a89622245",
+      "bound_expected_sha": false
+    },
+    {
+      "path": "capsule_review/0004/policy_runtime_lifecycle_source/policy_runtime_service_launch_contract_precheck.py",
+      "sha256": "2713640b944a6ef86e4703cff5e9b16f88cfe3f9246cf9b77e0a29658363505e",
+      "bound_expected_sha": false
+    },
+    {
+      "path": "capsule_review/0004/policy_runtime_lifecycle_source/policy_runtime_service_precheck.py",
+      "sha256": "cb915f3bdca2a2e9068ef4dea919f463f769ade2184bbfa5973478750ad07882",
+      "bound_expected_sha": false
+    },
+    {
+      "path": "capsule_review/0004/policy_runtime_lifecycle_source/policy_runtime_slurm_execution.py",
+      "sha256": "29f986bb0dd7055d9f83588caa474917cc29bc31afcee27b2e41ea696a52bee4",
+      "bound_expected_sha": false
+    },
+    {
+      "path": "capsule_review/0004/policy_runtime_lifecycle_source/policy_runtime_slurm_status.py",
+      "sha256": "0481bf1a8cc8d01f605a99b3029a937d46df7d510937594b73bb126e0a8c71ab",
+      "bound_expected_sha": false
+    },
+    {
+      "path": "capsule_review/0004/policy_runtime_lifecycle_source/precheck_policy_runtime_slurm_execution.py",
+      "sha256": "4d414ef46f58af0c2b2b639f60b63e231434f726d7c755a8a21e2c9fb45ac169",
+      "bound_expected_sha": false
+    },
+    {
+      "path": "capsule_review/0004/policy_runtime_lifecycle_source/slurm_policy_runtime_f0f1_job.py",
+      "sha256": "d147cef07f897061263aea67da19112017d354a2c9f7e55d2b50242ed0a6dbb0",
+      "bound_expected_sha": false
+    },
+    {
+      "path": "capsule_review/0004/repo_source/src/pchsi/evaluation/episode_evaluator.py",
+      "sha256": "bdfd359f8cd5c0764fe8439d405987dd392e2215a8a565f1ebf526f02ca0cc55",
+      "bound_expected_sha": false
+    },
+    {
+      "path": "capsule_review/0004/repo_source/src/pchsi/evaluation/policy_attempt_adapter.py",
+      "sha256": "b892ec2846d6d4de4dc1857bc6578abea44ed295b1ad643ce03a40a425d20ba6",
+      "bound_expected_sha": false
+    },
+    {
+      "path": "capsule_review/0004/repo_source/src/pchsi/round_control/attempt_receipts.py",
+      "sha256": "c01266611ca35753076651397d772cd2c00783ffdd812fb487270e0e0980e004",
+      "bound_expected_sha": false
+    },
+    {
+      "path": "capsule_review/0004/repo_source/src/pchsi/round_control/clean_execution_binding.py",
+      "sha256": "1b602201ec3228dcbcc1e75c280aea49d15487e39a4955706cc5782006d7ad7a",
+      "bound_expected_sha": false
+    },
+    {
+      "path": "capsule_review/0004/repo_source/src/pchsi/round_control/rollout_collection.py",
+      "sha256": "6555f9a24e0b0a23314af380beef604690888ac39c23c447d7f80187c403f69c",
+      "bound_expected_sha": false
+    },
+    {
+      "path": "capsule_review/0004/ARCHIVE_INVENTORY.json",
+      "sha256": "5a5a2c0b2bb7303ebbdcae0a9934609bdfec631d0468e8a62c9e9a36b7a94e23",
+      "bound_expected_sha": false
+    }
+  ]
+}

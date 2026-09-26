@@ -1,0 +1,121 @@
+--- /mnt/data/n41/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_REBIND_AND_RECOVERY_V1_23_3N_4_1/native_preflight.py	2026-09-21 10:36:17.000000000 +0000
++++ /mnt/data/build_n42/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_RUNTIME_SURFACE_PREFLIGHT_V1_23_3N_4_2/native_preflight.py	2026-09-21 11:04:38.208669692 +0000
+@@ -5,21 +5,13 @@
+ from recovery_core import equal_or_new,load_json,sha_file,checked,checked_timeout_retry,require_file
+ from fresh_round_contract import load_current_request,validate_request_against_capsule,profile_from_binding,schedule_for_attempt
+ from formal_rollout_support import find_capsule_file_by_sha
++from runtime_surface_preflight import validate_runtime_surface
+ 
+ def run(capsule_root:Path,worktree:Path,request_path:Path,plan_path:Path,output:Path):
+     binding=load_json(capsule_root/'ROUND_MEMORY_AWARE_GENERIC_ROLLOUT_EXECUTION_BINDING_V1.json')
+     head=checked(['git','-C',str(worktree),'rev-parse','HEAD'])
+     if head!=binding['implementation_head']:raise ValueError('NATIVE_WORKTREE_HEAD_MISMATCH')
+-    retry_policy_path=Path(__file__).resolve().parent/'audit/GIT_PREFLIGHT_TIMEOUT_RESILIENCE_V1.json'
+-    retry_policy=load_json(retry_policy_path)
+-    if retry_policy.get('schema_id')!='GIT_PREFLIGHT_TIMEOUT_RESILIENCE_V1' or retry_policy.get('retry_condition')!='TIMEOUT_ONLY' or retry_policy.get('argv_must_be_identical') is not True or retry_policy.get('maximum_attempts')!=2:
+-        raise ValueError('GIT_PREFLIGHT_TIMEOUT_POLICY_INVALID')
+-    status_argv=['git','-C',str(worktree),'status','--porcelain=v1','--untracked-files=all']
+-    if checked_timeout_retry(status_argv,initial_timeout=retry_policy['initial_timeout_seconds'],retry_timeout=retry_policy['retry_timeout_seconds']):raise ValueError('NATIVE_WORKTREE_NOT_CLEAN')
+-    for rel in ['evaluation/episode_evaluator.py','evaluation/policy_attempt_adapter.py','round_control/attempt_receipts.py','round_control/clean_execution_binding.py','round_control/rollout_collection.py']:
+-        source=capsule_root/'repo_source/src/pchsi'/rel
+-        if sha_file(require_file(source))!=sha_file(require_file(worktree/'src/pchsi'/rel)):
+-            raise ValueError('REPO_CAPSULE_SOURCE_MISMATCH:'+rel)
++    surface_receipt=validate_runtime_surface(worktree,capsule_root)
+     sys.path.insert(0,str(worktree/'src'))
+     request=load_current_request(request_path)
+     train=binding['train_update_authority'];mem=binding['memory_authority'];runtime=binding['runtime_authority']
+@@ -57,7 +49,7 @@
+         'current_request_is_independent_authority':True,'archived_binding_mutated':False,
+         'scheduled_count':len(schedule),'schedule_identity_sha256':hashlib.sha256(schedule_bytes).hexdigest(),
+         'fresh_execution_attempt_ordinal':plan['fresh_execution_attempt_ordinal'],
+-        'profile_file_sha256':request.execution_profile_sha256,'git_preflight_timeout_policy_sha256':sha_file(retry_policy_path),'git_status_timeout_retry_authority':'SAME_ARGV_TIMEOUT_ONLY_ONCE','model_loaded':False,'environment_calls':0,'provider_calls':0}
++        'profile_file_sha256':request.execution_profile_sha256,'runtime_surface_preflight':surface_receipt,'git_preflight_mode':'BOUNDED_RUNTIME_SURFACES','model_loaded':False,'environment_calls':0,'provider_calls':0}
+     equal_or_new(output,result)
+     print('NATIVE_REQUEST_CAPSULE_SCOPE_PREFLIGHT=PASS',flush=True)
+     print('NATIVE_TASK_FILE_AND_SCHEDULE_PREFLIGHT=PASS',flush=True)
+--- /mnt/data/n41/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_REBIND_AND_RECOVERY_V1_23_3N_4_1/producer/shard_worker.py	2026-09-21 09:51:48.000000000 +0000
++++ /mnt/data/build_n42/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_RUNTIME_SURFACE_PREFLIGHT_V1_23_3N_4_2/producer/shard_worker.py	2026-09-21 11:04:59.786572977 +0000
+@@ -23,6 +23,7 @@
+ )
+ from global_finalize import try_finalize
+ from fresh_round_contract import (request_from_plan, validate_attempt_ordinal, schedule_for_attempt, validate_request_against_capsule, profile_from_binding)
++from runtime_surface_preflight import validate_runtime_surface
+ 
+ 
+ def git(repo:Path,*args:str)->str:
+@@ -194,8 +195,7 @@
+         worktree=v1230/"build/worktree"
+         if git(worktree,"rev-parse","HEAD")!=binding["implementation_head"]:
+             raise RuntimeError("SHARD_IMPLEMENTATION_HEAD_CHANGED")
+-        if git(worktree,"status","--porcelain=v1","--untracked-files=all"):
+-            raise RuntimeError("SHARD_IMPLEMENTATION_WORKTREE_DIRTY")
++        validate_runtime_surface(worktree,extracted)
+         sys.path.insert(0,str(worktree/"src"))
+         current_request=request_from_plan(shard_plan)
+         validate_attempt_ordinal(shard_plan["fresh_execution_attempt_ordinal"])
+--- /mnt/data/n41/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_REBIND_AND_RECOVERY_V1_23_3N_4_1/producer/formal_rollout_support.py	2026-09-21 09:49:48.000000000 +0000
++++ /mnt/data/build_n42/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_RUNTIME_SURFACE_PREFLIGHT_V1_23_3N_4_2/producer/formal_rollout_support.py	2026-09-21 11:07:01.871885436 +0000
+@@ -24,6 +24,7 @@
+     write_new_bytes,
+     write_new_json,
+ )
++from runtime_surface_preflight import validate_runtime_surface
+ 
+ 
+ 
+@@ -434,8 +435,7 @@
+         expected_head = execution_binding.get("implementation_head")
+         if git(worktree, "rev-parse", "HEAD") != expected_head:
+             raise RuntimeError("V1232_IMPLEMENTATION_HEAD_CHANGED")
+-        if git(worktree, "status", "--porcelain=v1", "--untracked-files=all"):
+-            raise RuntimeError("V1232_IMPLEMENTATION_WORKTREE_DIRTY")
++        validate_runtime_surface(worktree, extracted)
+ 
+         sys.path.insert(0, str(worktree / "src"))
+ 
+--- /mnt/data/n41/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_REBIND_AND_RECOVERY_V1_23_3N_4_1/analyzer_preflight.py	2026-09-21 10:02:28.000000000 +0000
++++ /mnt/data/build_n42/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_RUNTIME_SURFACE_PREFLIGHT_V1_23_3N_4_2/analyzer_preflight.py	2026-09-21 11:07:01.872330149 +0000
+@@ -3,6 +3,7 @@
+ import argparse,importlib.util
+ from pathlib import Path
+ from recovery_core import checked,equal_or_new
++from runtime_surface_preflight import validate_runtime_surface
+ 
+ def existing_driver():
+     path=Path(__file__).parent/'vendor/V1232Q/v1232q_driver.py'
+@@ -14,10 +15,11 @@
+     q=existing_driver() if q is None else q
+     repo,role=q.discover_strong_repo(root)
+     head=checked(['git','-C',str(repo),'rev-parse','HEAD'])
+-    if checked(['git','-C',str(repo),'status','--porcelain=v1','--untracked-files=all']):raise ValueError('ANALYZER_REPO_NOT_CLEAN')
++    analyzer_surface=Path(__file__).resolve().parent/'audit/ANALYZER_RUNTIME_SURFACE_PREFLIGHT_V1.json'
++    surface_receipt=validate_runtime_surface(repo,None,analyzer_surface)
+     q.import_repo(repo);api=q.assert_fixed_head_api_contract(repo)
+     result={'schema_id':'EXISTING_ANALYZER_NATIVE_API_PREFLIGHT_V1','status':'PASS','repo_path':str(repo),
+-        'repo_head':head,'role_authority':role,'checked_symbols':sorted(api),'provider_calls':0,
++        'repo_head':head,'role_authority':role,'checked_symbols':sorted(api),'runtime_surface_preflight':surface_receipt,'provider_calls':0,
+         'environment_calls':0,'entire_hierarchical_analyzer_proven':False}
+     equal_or_new(output,result)
+     print('EXISTING_ANALYZER_NATIVE_API_PREFLIGHT=PASS',flush=True)
+--- /mnt/data/n41/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_REBIND_AND_RECOVERY_V1_23_3N_4_1/supervise.py	2026-09-21 10:04:28.000000000 +0000
++++ /mnt/data/build_n42/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_RUNTIME_SURFACE_PREFLIGHT_V1_23_3N_4_2/supervise.py	2026-09-21 11:07:01.872425468 +0000
+@@ -7,6 +7,7 @@
+ import argparse,fcntl,hashlib,json,os,signal,socket,subprocess,sys,time,traceback
+ from pathlib import Path
+ from recovery_core import *
++from runtime_surface_preflight import validate_runtime_surface
+ 
+ def status(root:Path,value:dict):
+     text=canonical_bytes(value);tmp=root/('RECOVERY_STATUS.tmp.'+str(os.getpid()))
+@@ -91,8 +92,10 @@
+     from analyzer_preflight import existing_driver
+     ar=load_json(require_file(Path(ready['analyzer_preflight_path']),ready['analyzer_preflight_sha256']))
+     qmodule=existing_driver();repo,_=qmodule.discover_strong_repo(root)
+-    if str(repo)!=ar['repo_path'] or checked(['git','-C',str(repo),'rev-parse','HEAD'])!=ar['repo_head'] or checked(['git','-C',str(repo),'status','--porcelain=v1','--untracked-files=all']):
++    analyzer_surface=Path(__file__).resolve().parent/'audit/ANALYZER_RUNTIME_SURFACE_PREFLIGHT_V1.json'
++    if str(repo)!=ar['repo_path'] or checked(['git','-C',str(repo),'rev-parse','HEAD'])!=ar['repo_head']:
+         raise ValueError('ANALYZER_REPO_CHANGED_AFTER_PREFLIGHT')
++    validate_runtime_surface(repo,None,analyzer_surface)
+     qdriver=Path(ready['source_package'])/'vendor/V1232Q/v1232q_driver.py'
+     intent=root/'ANALYZER_REENTRY_INTENT.json'
+     if intent.exists():raise ValueError('ANALYZER_REENTRY_ALREADY_STARTED_NO_RESEND')

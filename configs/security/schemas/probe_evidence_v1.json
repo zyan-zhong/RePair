@@ -1,0 +1,34 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "local_diagnostics": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "schema_version": {
+      "const": "probe_evidence_v1",
+      "type": "string"
+    },
+    "semantic_evidence_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "semantic_results": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema_version",
+    "semantic_evidence_sha256",
+    "semantic_results",
+    "local_diagnostics"
+  ],
+  "schema_version": 1,
+  "title": "Probe Evidence V1",
+  "type": "object"
+}

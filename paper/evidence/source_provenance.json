@@ -1,0 +1,13 @@
+{
+  "sources": {
+    "TRACE_AUDIT.json": "8924cf8cc397746eb81417967e57ceea98c7ffb4e0f662ca11e2442e3c007166",
+    "DETAILED_EVIDENCE.json": "76289001ee0a7d85a2308fb21d9d1645d1e503e593e78a09a1a11c9b79c93509",
+    "LIVE_EVIDENCE.json": "02e50bd30a7d9d16a1eabd128fdf1e6e34f80e627330e960460ecf68af54b3e5",
+    "ANALYSIS.json": "325510786d801e35e2f75063c31bbe5e1eb185e2b04dce63557f276a7f78db59",
+    "R5_BRANCH_AND_POST_AUDIT.json": "f9c1e51bb88d088a4c977fadf0b5ad93701b8fe365544d32e2993839c505bf13"
+  },
+  "original_training_contract_sha256": "f7ce85f3067b1edd684222c7c1b18471b78fddd5fc5feecfe2d1943f1e93732e",
+  "selection_decision_sha256": "290939098a11705ac7dcc6203bb615313b37607b654bb95f488ab028da6091ff",
+  "original_source_paths_omitted_for_anonymous_review": true,
+  "source_export_note": "Nonexecution diagnostic categories corrected to ACTION_EXECUTED enum; manuscript task counts unchanged."
+}

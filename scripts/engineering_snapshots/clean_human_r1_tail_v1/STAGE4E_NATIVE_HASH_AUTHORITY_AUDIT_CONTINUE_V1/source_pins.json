@@ -1,0 +1,13 @@
+{
+  "old_audit_sha256": "a589f616e66c68e9b97ede40ad1c3b766f39f46151891a9948624293d472cd28",
+  "old_driver_sha256": "32ec70c9fd5e0c750b301cf48f713426f483e6f99647bcb312666bfa11e2bcaf",
+  "continuation_sha256": "427657aa1a56bca3095eac25315f23408d457027521a1d97f4b3311ea9862b25",
+  "continuation_manifest_sha256": "8698f4ff79339339847f84207a1b389f04a473a758c9e92901dc4b9febaa48b9",
+  "native_files": {
+    "src/pchsi/evaluation/canonical_evidence.py": "bf10af9121281d53ccf7a0bd6f83434e361ba2c5bfa5cf788f119a044d1aa6a9",
+    "src/pchsi/evaluation/distillation_governance.py": "f9168176e186fee7830054b22f114994159db139672b153423b3c11fd9764209",
+    "src/pchsi/evaluation/condition_run_schedule.py": "1eac1306540417d4794fa98ca338198206826590f50236187c6563ec6dbaf2a6",
+    "src/pchsi/evaluation/select_policy_runtime.py": "64dbfc73957d58d058b8b13a6bcd6627f835ac57da6a3d74f78878c741487486",
+    "src/pchsi/evaluation/select_result_audit.py": "b8b1e7452a2dc57b6e85036b4958ab7718c34d5438f68e238e513d7f2c51ddc3"
+  }
+}

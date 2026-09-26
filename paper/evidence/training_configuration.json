@@ -1,0 +1,99 @@
+{
+  "condition_id": "VERIFIED_BENEFIT_DUAL_VIEW_COMPLETE_PAIRS",
+  "budget": {
+    "data_seed": 17,
+    "effective_batch_size": 4,
+    "epochs": 4,
+    "gradient_accumulation_steps": 4,
+    "micro_batch_size": 1,
+    "optimizer_steps": 8,
+    "partial_final_accumulation_group": false,
+    "target_loss_token_budget": 10388,
+    "training_seed": 17
+  },
+  "optimization": {
+    "adam_beta1": 0.9,
+    "adam_beta2": 0.999,
+    "adam_epsilon": 1e-08,
+    "fresh_optimizer": true,
+    "fresh_scheduler": true,
+    "learning_rate": 2e-05,
+    "lr_scheduler": "linear",
+    "max_grad_norm": 1.0,
+    "optimizer": "adamw_torch",
+    "resume_from_checkpoint": false,
+    "warmup_steps": 1,
+    "weight_decay": 0.01
+  },
+  "peft": {
+    "autocast_adapter_dtype": true,
+    "base_weights_trainable": false,
+    "bias": "none",
+    "lora_alpha": 32,
+    "lora_dropout": 0.05,
+    "method": "LORA",
+    "r": 16,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ]
+  },
+  "execution": {
+    "ambient_environment_variables_forbidden": [
+      "OUTPUT_ROOT",
+      "REPRO_ROOT",
+      "SOURCE_ADAPTER_ROOT",
+      "NATIVE_ROOT",
+      "MAINLINE_ROOT",
+      "PREFLIGHT_ROOT",
+      "REVIEW_ROOT"
+    ],
+    "bf16": true,
+    "checkpoint_rule": "FINAL_STEP_ONLY",
+    "dataloader_num_workers": 0,
+    "distributed_backend": "none",
+    "early_stopping": false,
+    "formal_cuda_required": true,
+    "fp16": false,
+    "gradient_checkpointing": false,
+    "intermediate_checkpoint_selection": false,
+    "per_rank_micro_batch_size": 1,
+    "single_gpu_only": true,
+    "torch_compile": false,
+    "within_training_evaluation": false,
+    "world_size": 1
+  },
+  "dataset": {
+    "row_count": 8,
+    "max_sequence_length": 1248,
+    "one_pass_target_loss_token_count": 2597,
+    "packing": false,
+    "prompt_label_value": -100,
+    "reapply_chat_template": false,
+    "retokenization": false,
+    "sequence_lengths": [
+      434,
+      1127,
+      586,
+      1248,
+      531,
+      1240,
+      424,
+      1103
+    ],
+    "trained_region": "ASSISTANT_COMPLETION_SUFFIX_ONLY",
+    "truncation": false,
+    "sha256": "f3941a973916557a44cfb4387adf2a5ba6941b92d29274b8d1997e29a93c4876"
+  },
+  "base_repository": "Qwen/Qwen2.5-3B-Instruct",
+  "base_revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+  "parent_adapter_sha256": "b993150a15946d8a0210a83a06ac5ba3cc8e612d6a28ebfa42d0d546d9633270",
+  "candidate_adapter_sha256": "320abdee7e1a41054e8f1770d3d9a303203042927d4db93b0b335892e3ed623b",
+  "loss_reduction": "sum shifted assistant cross entropy across the accumulation group / sum supervised shifted tokens in that group",
+  "model_training_executed": true
+}

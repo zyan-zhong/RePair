@@ -1,0 +1,44 @@
+#!/usr/bin/env bash
+
+PACKAGE_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd -P)"
+export PACKAGE_ROOT
+
+export BADCASE_ROOT="${BADCASE_ROOT:-/data/run01/scwb204/sdar_repro/badcase}"
+export ROUND_ROOT="${ROUND_ROOT:-$BADCASE_ROOT/experiments/human_reference_round_pi1_pi2_v1}"
+
+export PI1_SOURCE_TRAINING_EXAMPLES_PATH="${PI1_SOURCE_TRAINING_EXAMPLES_PATH:-/data/run01/scwb204/pchsi/p2/d_q2_bad_v1_frozen/training_examples.jsonl}"
+export EXPECTED_PI1_SOURCE_TRAINING_EXAMPLES_SHA256="9cd758bc6ee6bde268282a19c0c580884c1643a4c0588fe4886e6a0a4810b561"
+
+export PI1_REFERENCE_MATERIALIZED_EXAMPLES_PATH="${PI1_REFERENCE_MATERIALIZED_EXAMPLES_PATH:-/data/run01/scwb204/pchsi/p2/d_q2_bad_training_materialization_v1_frozen/materialized_examples.jsonl}"
+export EXPECTED_PI1_REFERENCE_MATERIALIZED_EXAMPLES_FILE_SHA256="c4f593604208485fe6a35405acc47d56e97bcaf98705bcb292a260a3147e2895"
+
+export PI1_ROW_RENDERER_PATH="${PI1_ROW_RENDERER_PATH:-/data/run01/scwb204/pchsi/p2/d_q2_bad_training_materialization_v1_frozen/provenance/materialize.py}"
+export EXPECTED_PI1_ROW_RENDERER_FILE_SHA256="5f323e437ea70d0e54fd33a21d382df26a0188c7273418acc3c91387433e0820"
+
+export PI1_FINAL_MATERIALIZATION_MANIFEST_PATH="${PI1_FINAL_MATERIALIZATION_MANIFEST_PATH:-/data/run01/scwb204/pchsi/p2/d_q2_bad_training_materialization_v1_frozen/final_materialization_manifest.json}"
+export EXPECTED_PI1_FINAL_MATERIALIZATION_MANIFEST_SHA256="868c434bc519b14fb2f870fefd500526807581f4fb5b22b73eaa69e4e46db1e4"
+
+export V13_OUTPUT_ROOT="${V13_OUTPUT_ROOT:-$ROUND_ROOT/qwen25_3b_plan_driven_dataset_materialization_and_trainer_preflight_v1_3_granularity_failclosed}"
+export V13_SEMANTIC_ROOT="$V13_OUTPUT_ROOT/semantic_materialization"
+export EXPECTED_V13_SEMANTIC_MATERIALIZATION_SHA256="335c8c587c96d5215821e1ad02582d19bef5bf5d5a3ee37f5b81fa2a43bda7f6"
+
+export V14_OUTPUT_ROOT="${V14_OUTPUT_ROOT:-$ROUND_ROOT/qwen25_3b_postsemantic_serialization_and_trainer_preflight_v1_4_hf_cache_recovery}"
+export V14_PREFLIGHT_ROOT="$V14_OUTPUT_ROOT/trainer_preflight"
+export EXPECTED_V14_SERIALIZATION_HANDOFF_SHA256="09059f75814eebf3bd60d3b2619f49faa68cbbf78a5dba1d812c4b7f22bc3b8d"
+
+export EXPECTED_STRONG_PLAN_SHA256="282fe712c85641c47f9c29f2b942c6b94528d22a942345d4ac57553ab95697d2"
+
+export HUMAN_PRE_RECORD_SHA256="532fbc8a77a28d869934679af504ece049b4424c390d935f670a96e081865bea"
+export STRONG_PRE_RECORD_SHA256="f6053675a8738299adb9f8383e75a071d2fd722dabd868aabfb837be54b321ec"
+export PRE_FIELD_ADJUDICATION_FILE_SHA256="2c514c159ee09f9dfb1f43dc6f9ced420f1f086b50fe67a6f7316ba14adc19fa"
+export F0F1_RESULT_AUDIT_SHA256="97f73c5bde4ccdc281523135364a3b39afc477539a2f758de2a567272277f579"
+export NEUTRAL_MECHANISM_AUDIT_SHA256="670011b4ca2c5fdbf61641b6ca73e18d890e7a66e861a7e76626cb64164b9ea1"
+export HUMAN_POST_RECORD_SHA256="fe61c011c58c1c79920a7a2689add3acffcbf6e6c4aab88e0a8562dd20ad32c6"
+export STRONG_POST_RECORD_SHA256="b48370deea5ae87f619de374ece9a95a5e1d5c5f076494e8a3c17ffd42c954df"
+export POST_COMPARISON_SHA256="2609625b508ab7e898b3617d8b6af5414c524259860b863e168eff80ffba1653"
+export POST_ADJUDICATION_SHA256="1d885264140f5d968d5aa0f83b36be1a39ba07cc399bf0f60b14071c807fb679"
+
+export OUTPUT_ROOT="${OUTPUT_ROOT:-$ROUND_ROOT/qwen25_3b_frozen_renderer_interface_census_and_reference_takeover_bridge_v1_6}"
+export CENSUS_ROOT="$OUTPUT_ROOT/renderer_interface_census"
+export BRIDGE_ROOT="$OUTPUT_ROOT/reference_takeover_bridge"
+export REVIEW_ROOT="$OUTPUT_ROOT/review"

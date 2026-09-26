@@ -1,0 +1,198 @@
+{
+  "$id": "ANALYZER_MECHANICAL_CENSUS_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "census_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "incident_counts": {
+      "additionalProperties": false,
+      "properties": {
+        "evidence_incomplete": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "infrastructure_unavailable": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "protocol_invalid": {
+          "minimum": 0,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "protocol_invalid",
+        "evidence_incomplete",
+        "infrastructure_unavailable"
+      ],
+      "type": "object"
+    },
+    "missingness_preserved": {
+      "const": true,
+      "type": "boolean"
+    },
+    "outcome_counts": {
+      "additionalProperties": false,
+      "properties": {
+        "FAILURE": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "SUCCESS": {
+          "minimum": 0,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "SUCCESS",
+        "FAILURE"
+      ],
+      "type": "object"
+    },
+    "reason_census": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "count": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "reason_code": {
+            "maxLength": 256,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "reason_code",
+          "count"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "registered_route_sha256s": {
+      "items": {
+        "pattern": "^[0-9a-f]{64}$",
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "registered_unit_count": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "schema_id": {
+      "const": "ANALYZER_MECHANICAL_CENSUS_V1",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    },
+    "scientific_outcome_count": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "status_counts": {
+      "additionalProperties": false,
+      "properties": {
+        "EVIDENCE_INCOMPLETE": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "INFRASTRUCTURE_UNAVAILABLE": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "PROTOCOL_INVALID": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "SCIENTIFIC_OUTCOME_AVAILABLE": {
+          "minimum": 0,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "SCIENTIFIC_OUTCOME_AVAILABLE",
+        "PROTOCOL_INVALID",
+        "EVIDENCE_INCOMPLETE",
+        "INFRASTRUCTURE_UNAVAILABLE"
+      ],
+      "type": "object"
+    },
+    "task_family_rows": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "evidence_incomplete_primary_count": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "failure_count": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "infrastructure_unavailable_primary_count": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "protocol_invalid_primary_count": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "registered_count": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "scientific_count": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "success_count": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "task_family": {
+            "maxLength": 256,
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "task_family",
+          "registered_count",
+          "scientific_count",
+          "success_count",
+          "failure_count",
+          "protocol_invalid_primary_count",
+          "evidence_incomplete_primary_count",
+          "infrastructure_unavailable_primary_count"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "registered_unit_count",
+    "scientific_outcome_count",
+    "registered_route_sha256s",
+    "status_counts",
+    "outcome_counts",
+    "incident_counts",
+    "reason_census",
+    "task_family_rows",
+    "missingness_preserved",
+    "census_sha256"
+  ],
+  "type": "object"
+}

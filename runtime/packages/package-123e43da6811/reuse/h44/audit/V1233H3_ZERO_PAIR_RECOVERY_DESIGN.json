@@ -1,0 +1,20 @@
+{
+  "schema_id": "V1233H3_ZERO_PAIR_RECOVERY_DESIGN_V1",
+  "scientific_authority_changed": false,
+  "accepted_pre_reexecuted": false,
+  "analyzer_reexecuted": false,
+  "candidate_reselection_allowed": false,
+  "replacement_state_allowed": false,
+  "top_up_allowed": false,
+  "single_arm_retry_allowed": false,
+  "pair_retry_rule": "RETRY_BOTH_ARMS_OF_AN_INCOMPLETE_MATCHED_PAIR_ONLY",
+  "recovery_entry_status": "NATIVE_INFRA_OR_PROTOCOL_INVALID_NO_SCIENTIFIC_NO_TRAIN",
+  "recovery_requires_prior_complete_pair_count": 0,
+  "missing_branch_terminal": "AMBIGUOUS_NO_AUTOMATIC_RETRY",
+  "scientific_zero_intervention_f1": "PROTOCOL_MISSINGNESS_NO_RETRY",
+  "f0_source_prompt_equivalence_failure": "NO_BLIND_RETRY",
+  "f1_source_prompt_rule": "SOURCE_PROMPT_PARITY_REQUIRED_ONLY_IF_F1_MAKES_ZERO_INTERVENTIONS_AND_CALLS_POLICY_AT_SOURCE",
+  "automatic_retry_count_limit_for_h3": 1,
+  "human_scientific_decision_required": false,
+  "max10_released": false
+}

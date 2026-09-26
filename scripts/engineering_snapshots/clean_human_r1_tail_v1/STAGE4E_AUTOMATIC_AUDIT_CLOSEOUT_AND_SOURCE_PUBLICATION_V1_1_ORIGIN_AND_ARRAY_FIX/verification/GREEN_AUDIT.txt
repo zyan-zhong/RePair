@@ -1,0 +1,22 @@
+test_completion_gate_precedes_receipt_read (test_audit_adapter.AuditAdapterTests.test_completion_gate_precedes_receipt_read) ... ok
+test_exact_order_duplicate_missing_and_boolean_outcomes (test_audit_adapter.AuditAdapterTests.test_exact_order_duplicate_missing_and_boolean_outcomes) ... ok
+test_loader_source_missing_is_a_hard_error (test_audit_adapter.AuditAdapterTests.test_loader_source_missing_is_a_hard_error) ... ok
+test_metadata_only_lineage_does_not_read_unsealed_benchmark (test_audit_adapter.AuditAdapterTests.test_metadata_only_lineage_does_not_read_unsealed_benchmark) ... ok
+test_native_audit_and_aggregator_are_imported_not_reimplemented (test_audit_adapter.AuditAdapterTests.test_native_audit_and_aggregator_are_imported_not_reimplemented) ... ok
+test_takeover_not_forged_when_metrics_missing (test_audit_adapter.AuditAdapterTests.test_takeover_not_forged_when_metrics_missing) ... ok
+test_completion_requires_full_counts_not_just_slurm_zero (test_core.Contracts.test_completion_requires_full_counts_not_just_slurm_zero) ... ok
+test_diagnostic_retention_independent_of_score_direction (test_core.Contracts.test_diagnostic_retention_independent_of_score_direction) ... ok
+test_failed_or_unknown_job_does_not_authorize_audit_or_retry (test_core.Contracts.test_failed_or_unknown_job_does_not_authorize_audit_or_retry) ... ok
+test_inventory_rejects_path_traversal (test_core.Contracts.test_inventory_rejects_path_traversal) ... ok
+test_no_clobber_and_exact_resume (test_core.Contracts.test_no_clobber_and_exact_resume) ... ok
+test_no_guess_for_other_training_arm (test_core.Contracts.test_no_guess_for_other_training_arm) ... ok
+test_nonfinite_json_rejected (test_core.Contracts.test_nonfinite_json_rejected) ... ok
+test_sha_bytes_and_semantics_not_interchanged (test_core.Contracts.test_sha_bytes_and_semantics_not_interchanged) ... ok
+test_strict_duplicate_keys_rejected (test_core.Contracts.test_strict_duplicate_keys_rejected) ... ok
+test_summary_projection_removes_all_per_task_content (test_core.Contracts.test_summary_projection_removes_all_per_task_content) ... ok
+test_symlink_output_rejected (test_core.Contracts.test_symlink_output_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.023s
+
+OK

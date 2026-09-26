@@ -1,0 +1,16 @@
+{
+  "branch_arms_per_repetition": 2,
+  "budget_derivation_rule": "len(planner_selected_source_state_ids) * paired_repetitions_per_state * branch_arms_per_repetition",
+  "effect_authority": "INDEPENDENT_ENVIRONMENT_VERIFIER_ONLY",
+  "legacy_select12_authority_for_current_round": false,
+  "outcome_adaptive_budget_change_allowed": false,
+  "outcome_adaptive_reselection_allowed": false,
+  "paired_repetitions_per_state": 5,
+  "paired_seeds": [17, 31, 47, 73, 101],
+  "schema_id": "PLANNER_BOUND_F0F1_REPLICATION_PROTOCOL_V2",
+  "schema_version": 2,
+  "stable_direction_min_pairs": 4,
+  "state_budget_authority": "RESEARCH_PLANNER_PRE_SELECTED_UNIVERSE",
+  "state_budget_value": null,
+  "total_branch_run_budget": null
+}

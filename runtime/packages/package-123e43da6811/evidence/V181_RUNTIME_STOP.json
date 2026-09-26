@@ -1,0 +1,97 @@
+{
+  "schema_id": "FORMAL_V181_RUNTIME_STOP_RECONCILIATION_V1",
+  "observed_utc": "2026-09-24T10:31:56.299472+00:00",
+  "status": "STOPPED_FIRST_ROLLOUT_INFRA_INVALID_RESIDENT_EXITED",
+  "resident_alive": false,
+  "completed_valid_formal_rounds": 0,
+  "optimizer_training_execution_count": 0,
+  "global_terminal": {
+    "failure_count": 2110,
+    "fatal_shard_count": 2,
+    "handoff_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/attempts/000001/rollout/round_evidence/ROUND_ROLLOUT_EVIDENCE_HANDOFF_V1.json",
+    "handoff_sha256": "568d59be243f66877b6bc0c09ca646e98c7f627d74fbb711e4dce409ba0e82f8",
+    "human_scientific_decision_count": 0,
+    "infrastructure_invalid_count": 714,
+    "memory_writeback_count": 0,
+    "protocol_invalid_count": 0,
+    "scheduled_count": 2843,
+    "schema_id": "PCHSI_V1232K_GLOBAL_TERMINAL_V1",
+    "schema_version": 1,
+    "scientific_rollout_valid": false,
+    "shard_count": 8,
+    "status": "V1232K_REPAIRED_GATED_SHARDED_FRESH_MEMORY_AWARE_TRAIN_UPDATE_ROLLOUT_PROTOCOL_INFRA_INVALID",
+    "success_count": 19,
+    "training_execution_count": 0
+  },
+  "fatal_shards": [
+    {
+      "fatal_error_message": "SHARD_PREEXISTING_ENDPOINT_OCCUPIED",
+      "fatal_error_type": "RuntimeError",
+      "fatal_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/attempts/000001/rollout/shards/0006/PCHSI_V1232S_SHARD_FATAL_V1.json",
+      "fatal_sha256": "21e63ad94387a6dca0bf7e75d96dc465e4f5497e5f195f58473750300d007584",
+      "shard_id": 6
+    },
+    {
+      "fatal_error_message": "SHARD_PREEXISTING_ENDPOINT_OCCUPIED",
+      "fatal_error_type": "RuntimeError",
+      "fatal_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/attempts/000001/rollout/shards/0007/PCHSI_V1232S_SHARD_FATAL_V1.json",
+      "fatal_sha256": "abf649d8c5ef7db3e9e86ae73f474c067f8047179e80daa648c7f64311c93557",
+      "shard_id": 7
+    }
+  ],
+  "evidence": [
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v181\\server_current_entry_validation\\a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df\\status_checks\\20260924T103156824026Z\\CURRENT_STATUS.json",
+      "sha256": "f7eab75dc61f7e6dcb947502631bd6c224881bbce3c82609c0079b1dd79c6f1a",
+      "bytes": 23274
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v181\\server_current_entry_validation\\a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df\\status_checks\\20260924T103156824026Z\\registered_index\\INDEX.json",
+      "sha256": "fe31f796fb95fe29a6912501a450af23f170aa32ee07e41ec5b7f025c58e2704",
+      "bytes": 1834867
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v181\\server_current_entry_validation\\a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df\\status_checks\\20260924T103156824026Z\\registered_index\\READ_RECEIPT.json",
+      "sha256": "b6773a76c5d2f0250455a220fc609c438fcee691875b30a753924c005fd424c2",
+      "bytes": 852
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v181\\server_current_entry_validation\\a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df\\status_checks\\20260924T103156824026Z\\fatal_evidence\\FATAL_6.json",
+      "sha256": "21e63ad94387a6dca0bf7e75d96dc465e4f5497e5f195f58473750300d007584",
+      "bytes": 819
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v181\\server_current_entry_validation\\a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df\\status_checks\\20260924T103156824026Z\\fatal_evidence\\FATAL_7.json",
+      "sha256": "abf649d8c5ef7db3e9e86ae73f474c067f8047179e80daa648c7f64311c93557",
+      "bytes": 819
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v181\\server_current_entry_validation\\a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df\\status_checks\\20260924T103156824026Z\\fatal_evidence\\READ_RECEIPT.json",
+      "sha256": "84a97ecf0e8edd439b3fe98097dd310fa8a32a008f4bec8610b0606b50ee4596",
+      "bytes": 1464
+    }
+  ],
+  "exact_remote_reads_only": true,
+  "remote_mutation_count": 0,
+  "production_git_mutation_count": 0,
+  "repair_or_relaunch_performed": false,
+  "unresolved": [
+    "Endpoint occupant and allocation collision mechanism not yet established",
+    "Four non-fatal-shard infrastructure-invalid cells require exact indexed terminal diagnosis",
+    "Rollout invalid status raises uncaught AuthorityError before campaign result/retry transition"
+  ],
+  "source_locations": [
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\outputs\\MAX10_V1_8_1_NATIVE_MEMORY_FIX\\entry\\rollout.py",
+      "line": 40
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\outputs\\MAX10_V1_8_1_NATIVE_MEMORY_FIX\\entry\\driver.py",
+      "line": 168
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\outputs\\MAX10_V1_8_1_NATIVE_MEMORY_FIX\\entry\\campaign_owner.py",
+      "line": 315
+    }
+  ]
+}

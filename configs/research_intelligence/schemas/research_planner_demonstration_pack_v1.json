@@ -1,0 +1,16 @@
+{
+  "$id": "RESEARCH_PLANNER_DEMONSTRATION_PACK_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "current_round_human_answer_absent": {"const": true, "type": "boolean"},
+    "current_round_id": {"minLength": 1, "type": "string"},
+    "demonstration_pack_sha256": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+    "records": {"items": {"type": "object"}, "minItems": 1, "type": "array"},
+    "schema_id": {"const": "RESEARCH_PLANNER_DEMONSTRATION_PACK_V1", "type": "string"},
+    "schema_version": {"const": 1, "type": "integer"},
+    "sealed_test_details_absent": {"const": true, "type": "boolean"}
+  },
+  "required": ["schema_id", "schema_version", "current_round_id", "records", "current_round_human_answer_absent", "sealed_test_details_absent", "demonstration_pack_sha256"],
+  "type": "object"
+}

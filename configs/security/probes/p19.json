@@ -1,0 +1,17 @@
+{
+  "execution_status": "NOT_APPROVED",
+  "expected_normalized_outcome": "TIMEOUT_ENFORCED",
+  "forbidden_side_effects": [
+    "host_write",
+    "network",
+    "new_privilege",
+    "unreviewed_process"
+  ],
+  "payload_id": "timeout",
+  "payload_sha256": "b5d72b96c7772e68a53ef0f2eef3d145a1fb416c330cec215f755bb1260e261b",
+  "permitted_side_effects": [],
+  "probe_id": "P19",
+  "profile_id": "S1_PRODUCTION_V1",
+  "schema_version": 1,
+  "timeout_seconds": 10
+}

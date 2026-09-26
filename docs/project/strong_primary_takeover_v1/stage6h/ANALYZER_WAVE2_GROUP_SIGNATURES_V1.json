@@ -1,0 +1,424 @@
+{
+  "filesystem_wide_discovery_used": false,
+  "implementation": "pchsi.analyzer.act3_registration.build_group_signature_binding",
+  "new_signature_semantics_introduced": false,
+  "round_id": "CLEAN-HUMAN-REFERENCE-R1-PI0",
+  "row_count": 59,
+  "rows": [
+    {
+      "error_instance_id": "E1_POST_ACQUISITION_TREATMENT_OMISSION",
+      "local_result_sha256": "30f23ca3f30dcbbec40587639ffef271cd32b86e2b7a8b677baa16bda31972b6",
+      "mechanical_signature_sha256": "ce3feb5270c1b62158663799158c0398c406ca1c4fc7254187f2854e78063094",
+      "progress_signature_sha256": "8945e9d7ad8faacc421ed8528ea7d261beb85c6b5850536065d2da90bf866a11",
+      "task_family": "pick_clean_then_place_in_recep"
+    },
+    {
+      "error_instance_id": "E2_CLOSED_DRAWER_EXAMINATION_LOOP",
+      "local_result_sha256": "30f23ca3f30dcbbec40587639ffef271cd32b86e2b7a8b677baa16bda31972b6",
+      "mechanical_signature_sha256": "76737709ad31199ce97300d719bcf69aa34c74fdf578defe3e533161ef7013ec",
+      "progress_signature_sha256": "8945e9d7ad8faacc421ed8528ea7d261beb85c6b5850536065d2da90bf866a11",
+      "task_family": "pick_clean_then_place_in_recep"
+    },
+    {
+      "error_instance_id": "E3_RECURRING_MENU_MEMBERSHIP_VIOLATIONS",
+      "local_result_sha256": "30f23ca3f30dcbbec40587639ffef271cd32b86e2b7a8b677baa16bda31972b6",
+      "mechanical_signature_sha256": "191b7544b5492cd72ecc9be62fe04c05e53a3dfd1bb3fdc31d90f46869b9c0ce",
+      "progress_signature_sha256": "8945e9d7ad8faacc421ed8528ea7d261beb85c6b5850536065d2da90bf866a11",
+      "task_family": "pick_clean_then_place_in_recep"
+    },
+    {
+      "error_instance_id": "E4_LATE_NO_PROGRESS_EXAMINATION_AND_REVISIT_LOOP",
+      "local_result_sha256": "30f23ca3f30dcbbec40587639ffef271cd32b86e2b7a8b677baa16bda31972b6",
+      "mechanical_signature_sha256": "f226f06a8b910b8181e2bfaab0bdac48fc6db56779a4ed1b4d03152416c72b3f",
+      "progress_signature_sha256": "8945e9d7ad8faacc421ed8528ea7d261beb85c6b5850536065d2da90bf866a11",
+      "task_family": "pick_clean_then_place_in_recep"
+    },
+    {
+      "error_instance_id": "E1_IRRELEVANT_OBJECT_ACQUISITION",
+      "local_result_sha256": "3978bad8c019dad3bd4aa4abc7b890d0f5bac791ebd31337093147e0b2685b12",
+      "mechanical_signature_sha256": "61342b22b0908737dea33ae4425d0c15e4bd9f9a779441af96cbcb1d2c01bea2",
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "task_family": "pick_cool_then_place_in_recep"
+    },
+    {
+      "error_instance_id": "E2_RECURRENT_CURRENT_LOCATION_NAVIGATION",
+      "local_result_sha256": "3978bad8c019dad3bd4aa4abc7b890d0f5bac791ebd31337093147e0b2685b12",
+      "mechanical_signature_sha256": "c1a9f094951cdd6abedbaf57c000dcfd9f3b0478c8b90c4855a0bcc937e20a39",
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "task_family": "pick_cool_then_place_in_recep"
+    },
+    {
+      "error_instance_id": "E3_NO_EFFECT_EXAMINATION_PERSEVERATION",
+      "local_result_sha256": "3978bad8c019dad3bd4aa4abc7b890d0f5bac791ebd31337093147e0b2685b12",
+      "mechanical_signature_sha256": "e2e1ad410f21b2df9ceb1e26b5f2c784fa5c3380c2d75133ebfb433b97b55ffd",
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "task_family": "pick_cool_then_place_in_recep"
+    },
+    {
+      "error_instance_id": "E4_GOAL_WORKFLOW_NOT_INITIATED",
+      "local_result_sha256": "3978bad8c019dad3bd4aa4abc7b890d0f5bac791ebd31337093147e0b2685b12",
+      "mechanical_signature_sha256": "95eb5fc892d2b65095270248af9afed1a2a57b5ff4b058d57978b801b8fd9c85",
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "task_family": "pick_cool_then_place_in_recep"
+    },
+    {
+      "error_instance_id": "E1_INADMISSIBLE_LOCATION_REPEAT",
+      "local_result_sha256": "53b5bc7a2c7d66fd69a3ad68e26e71c321257839fa46d1026e8a9da14c2c8be9",
+      "mechanical_signature_sha256": "e005206dfceab91441f345dbc9051b07ac011e7307d8141a5016b70dc6f38db0",
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "task_family": "pick_cool_then_place_in_recep"
+    },
+    {
+      "error_instance_id": "E2_IRRELEVANT_TOOL_DETOUR",
+      "local_result_sha256": "53b5bc7a2c7d66fd69a3ad68e26e71c321257839fa46d1026e8a9da14c2c8be9",
+      "mechanical_signature_sha256": "871bde16d8e5af43a2841f27c14372fcb5b3f3a96be87d7f5709285b6b134939",
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "task_family": "pick_cool_then_place_in_recep"
+    },
+    {
+      "error_instance_id": "E3_COOLING_STAGE_OMITTED",
+      "local_result_sha256": "53b5bc7a2c7d66fd69a3ad68e26e71c321257839fa46d1026e8a9da14c2c8be9",
+      "mechanical_signature_sha256": "0b640459b66105e17772240c94e3cc914af0bb89418ddf649f2c97f808efc572",
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "task_family": "pick_cool_then_place_in_recep"
+    },
+    {
+      "error_instance_id": "E4_POT_TAKE_PLACE_OSCILLATION",
+      "local_result_sha256": "53b5bc7a2c7d66fd69a3ad68e26e71c321257839fa46d1026e8a9da14c2c8be9",
+      "mechanical_signature_sha256": "f70bc54d93939fa069e639c13d7387dc032ce4179e23a19109045bccb4b4a317",
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "task_family": "pick_cool_then_place_in_recep"
+    },
+    {
+      "error_instance_id": "ERR-INADMISSIBLE-COUNTERTOP-NAVIGATION",
+      "local_result_sha256": "56b319c7d3b4f1d507e17271aa0b854a5e0808c2b5da10c2257f86446d76a55e",
+      "mechanical_signature_sha256": "11e1181ba549f59276ad799b0b01ef87717605f2680f55da8945c1a217b1b16d",
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "task_family": "pick_heat_then_place_in_recep"
+    },
+    {
+      "error_instance_id": "ERR-NO-REGISTERED-TASK-WORKFLOW-PROGRESS",
+      "local_result_sha256": "56b319c7d3b4f1d507e17271aa0b854a5e0808c2b5da10c2257f86446d76a55e",
+      "mechanical_signature_sha256": "8e8e00f81774d574be536c1d57fee6e8a9d4fe0aecc81d574218c262980d18f4",
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "task_family": "pick_heat_then_place_in_recep"
+    },
+    {
+      "error_instance_id": "ERR-REPEATED-NO-EFFECT-EXAMINATION",
+      "local_result_sha256": "56b319c7d3b4f1d507e17271aa0b854a5e0808c2b5da10c2257f86446d76a55e",
+      "mechanical_signature_sha256": "d31d5d2d3b575846e8a4638184a97f174e34b39fe3b56fb485fddc36a79a93ea",
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "task_family": "pick_heat_then_place_in_recep"
+    },
+    {
+      "error_instance_id": "E1_MULTILINE_PROTOCOL_FAILURE",
+      "local_result_sha256": "5c2fc4b144e92271938ec8475229c6c7ca415400a8eb5c190f8bea4d4635bd6a",
+      "mechanical_signature_sha256": "d32645f5ebadadf4f1d7d8ce9dc63996024940e51a5459505bfcb068b9625495",
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "task_family": "pick_two_obj_and_place"
+    },
+    {
+      "error_instance_id": "E2_OPEN_ALREADY_OPEN_CABINET",
+      "local_result_sha256": "5c2fc4b144e92271938ec8475229c6c7ca415400a8eb5c190f8bea4d4635bd6a",
+      "mechanical_signature_sha256": "556238e3137843aedbfbe31b7928083c4105606004d7834dfaddd401e4e264ad",
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "task_family": "pick_two_obj_and_place"
+    },
+    {
+      "error_instance_id": "E3_CURRENT_LOCATION_RENAVIGATION",
+      "local_result_sha256": "5c2fc4b144e92271938ec8475229c6c7ca415400a8eb5c190f8bea4d4635bd6a",
+      "mechanical_signature_sha256": "8ce1b58fe58a4a23b94e100ef8861861653f50152be9d63b355a9e845f17eabc",
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "task_family": "pick_two_obj_and_place"
+    },
+    {
+      "error_instance_id": "E1_INITIAL_INADMISSIBLE_ACTION",
+      "local_result_sha256": "6b5db4cf77078a7c80dd2a2a65878bc1e1307fca4be32a1b6896b3b1ff095214",
+      "mechanical_signature_sha256": "509491af41fe521621d9ec081a2cf13ecad9a122fbaf73e334b295105e31ac01",
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "task_family": "look_at_obj_in_light"
+    },
+    {
+      "error_instance_id": "E2_FAILURE_TO_RECOVER_FROM_INVALID_FEEDBACK",
+      "local_result_sha256": "6b5db4cf77078a7c80dd2a2a65878bc1e1307fca4be32a1b6896b3b1ff095214",
+      "mechanical_signature_sha256": "406e106f8a812bae2c618cca2ac0a793eb350494062c0c316a319b357734a8b4",
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "task_family": "look_at_obj_in_light"
+    },
+    {
+      "error_instance_id": "error-1-initial-unsupported-take",
+      "local_result_sha256": "71595694a62552d1d5f75e74b2e784ca0c5b1839e120b0446913e07f4660a5af",
+      "mechanical_signature_sha256": "509491af41fe521621d9ec081a2cf13ecad9a122fbaf73e334b295105e31ac01",
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "task_family": "pick_two_obj_and_place"
+    },
+    {
+      "error_instance_id": "error-2-failed-first-recovery",
+      "local_result_sha256": "71595694a62552d1d5f75e74b2e784ca0c5b1839e120b0446913e07f4660a5af",
+      "mechanical_signature_sha256": "556238e3137843aedbfbe31b7928083c4105606004d7834dfaddd401e4e264ad",
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "task_family": "pick_two_obj_and_place"
+    },
+    {
+      "error_instance_id": "error-3-terminal-inadmissible-repeat",
+      "local_result_sha256": "71595694a62552d1d5f75e74b2e784ca0c5b1839e120b0446913e07f4660a5af",
+      "mechanical_signature_sha256": "8ce1b58fe58a4a23b94e100ef8861861653f50152be9d63b355a9e845f17eabc",
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "task_family": "pick_two_obj_and_place"
+    },
+    {
+      "error_instance_id": "E1_GOAL_OBJECT_MISMATCH",
+      "local_result_sha256": "831c70e9736c36721d34568c1b6cbed5fe3894961c141df8cf2ea366d17d0ae7",
+      "mechanical_signature_sha256": "3e3114965456d7f2b79b05a83174e0c9d8280a55f61d5aab5b1b8fd09b1d34dd",
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "task_family": "pick_and_place_simple"
+    },
+    {
+      "error_instance_id": "E2_OUTPUT_PROTOCOL_FAILURES",
+      "local_result_sha256": "831c70e9736c36721d34568c1b6cbed5fe3894961c141df8cf2ea366d17d0ae7",
+      "mechanical_signature_sha256": "3d8933208949f4ebd077094e620857bcf1230fbb6f1e0a4a39c45f9dbb630351",
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "task_family": "pick_and_place_simple"
+    },
+    {
+      "error_instance_id": "E3_RECURRENT_INADMISSIBLE_ACTIONS",
+      "local_result_sha256": "831c70e9736c36721d34568c1b6cbed5fe3894961c141df8cf2ea366d17d0ae7",
+      "mechanical_signature_sha256": "7d652f8b2467cc195f65bcf8bb2932e11e81127da1f8baa9d5d2fc9e0bb9987e",
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "task_family": "pick_and_place_simple"
+    },
+    {
+      "error_instance_id": "E4_PILLOW_MANIPULATION_LOOP",
+      "local_result_sha256": "831c70e9736c36721d34568c1b6cbed5fe3894961c141df8cf2ea366d17d0ae7",
+      "mechanical_signature_sha256": "35e7cd7987ed7b3c4d930de59c89c0dc7ca567d2e41f80b664b8373a4902cb5d",
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "task_family": "pick_and_place_simple"
+    },
+    {
+      "error_instance_id": "E5_ENVIRONMENT_BUDGET_EXHAUSTION",
+      "local_result_sha256": "831c70e9736c36721d34568c1b6cbed5fe3894961c141df8cf2ea366d17d0ae7",
+      "mechanical_signature_sha256": "0bef64cf4bef3f178aef29096cdb0ce67a109a8de88121f2d8ed00afce75482c",
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "task_family": "pick_and_place_simple"
+    },
+    {
+      "error_instance_id": "error-initial-inadmissible-command",
+      "local_result_sha256": "856749aa36e54688b928ec7a2811c381ce0b155bea5a5ac96fba119892e6506b",
+      "mechanical_signature_sha256": "509491af41fe521621d9ec081a2cf13ecad9a122fbaf73e334b295105e31ac01",
+      "progress_signature_sha256": "fa53842c1ffedd1c5260e51156892d0ef4d1918d5d8d2fa22664300e37d9976a",
+      "task_family": "look_at_obj_in_light"
+    },
+    {
+      "error_instance_id": "error-post-feedback-perseveration",
+      "local_result_sha256": "856749aa36e54688b928ec7a2811c381ce0b155bea5a5ac96fba119892e6506b",
+      "mechanical_signature_sha256": "406e106f8a812bae2c618cca2ac0a793eb350494062c0c316a319b357734a8b4",
+      "progress_signature_sha256": "fa53842c1ffedd1c5260e51156892d0ef4d1918d5d8d2fa22664300e37d9976a",
+      "task_family": "look_at_obj_in_light"
+    },
+    {
+      "error_instance_id": "ERR_MULTILINE_PROTOCOL_FAILURE",
+      "local_result_sha256": "8c77ee2d2df95c24b76b646fc960c63898c84b8a45e1f9f30cb2bc64131dd8ba",
+      "mechanical_signature_sha256": "d32645f5ebadadf4f1d7d8ce9dc63996024940e51a5459505bfcb068b9625495",
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "task_family": "pick_clean_then_place_in_recep"
+    },
+    {
+      "error_instance_id": "ERR_PREREQUISITE_OMISSION",
+      "local_result_sha256": "8c77ee2d2df95c24b76b646fc960c63898c84b8a45e1f9f30cb2bc64131dd8ba",
+      "mechanical_signature_sha256": "ef50232c9af189a10c2857c3c9339b3cb25eb7184c59a8514d5334775b27408f",
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "task_family": "pick_clean_then_place_in_recep"
+    },
+    {
+      "error_instance_id": "ERR_RECIPROCAL_ACTION_LOOP",
+      "local_result_sha256": "8c77ee2d2df95c24b76b646fc960c63898c84b8a45e1f9f30cb2bc64131dd8ba",
+      "mechanical_signature_sha256": "b31900085ddef8d93f4f16a1f1c62fae2fd0cd1fc0fa9d41bdcb4c07a3088dff",
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "task_family": "pick_clean_then_place_in_recep"
+    },
+    {
+      "error_instance_id": "error-compound-action-call-4",
+      "local_result_sha256": "a947f66b1c77a06d17233b1a018b410f6024590160bc453c3c07a73507c15ba9",
+      "mechanical_signature_sha256": "509491af41fe521621d9ec081a2cf13ecad9a122fbaf73e334b295105e31ac01",
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "task_family": "pick_clean_then_place_in_recep"
+    },
+    {
+      "error_instance_id": "error-terminal-inadmissible-run-calls-6-8",
+      "local_result_sha256": "a947f66b1c77a06d17233b1a018b410f6024590160bc453c3c07a73507c15ba9",
+      "mechanical_signature_sha256": "e310a7fb46f706a1f6f69b5336ae470a93ffb8661f1ef37f271f6df207eadbc6",
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "task_family": "pick_clean_then_place_in_recep"
+    },
+    {
+      "error_instance_id": "error-wrong-object-pickup-call-5",
+      "local_result_sha256": "a947f66b1c77a06d17233b1a018b410f6024590160bc453c3c07a73507c15ba9",
+      "mechanical_signature_sha256": "61342b22b0908737dea33ae4425d0c15e4bd9f9a779441af96cbcb1d2c01bea2",
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "task_family": "pick_clean_then_place_in_recep"
+    },
+    {
+      "error_instance_id": "error_budget_exhaustion",
+      "local_result_sha256": "aa48a34ad31eaf6f80fa517845c77241731a2228803bdede2f0904a20f01a620",
+      "mechanical_signature_sha256": "61342b22b0908737dea33ae4425d0c15e4bd9f9a779441af96cbcb1d2c01bea2",
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "task_family": "look_at_obj_in_light"
+    },
+    {
+      "error_instance_id": "error_repetitive_examine_loop",
+      "local_result_sha256": "aa48a34ad31eaf6f80fa517845c77241731a2228803bdede2f0904a20f01a620",
+      "mechanical_signature_sha256": "689416d3ea220825116a9dd822ff650c93c0f9aaa549fcc3d38e89761b0da844",
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "task_family": "look_at_obj_in_light"
+    },
+    {
+      "error_instance_id": "ERR-1-REPEATED-BREAD-EXAMINATION",
+      "local_result_sha256": "b1e6ff320b538ded90a43385be1fc025be03235f25175526872d2bdb39832fe1",
+      "mechanical_signature_sha256": "e2d1787b06ecd2d3c9af51e258011402fb3660d90f071c24652a01ef716ca779",
+      "progress_signature_sha256": "e65d5d6f9e39e314e82b8041ea78cf3e907c1f47b7cd9fe2f7f34b1662e34b2c",
+      "task_family": "pick_cool_then_place_in_recep"
+    },
+    {
+      "error_instance_id": "ERR-2-REPEATED-COOLING-AFTER-TREATMENT",
+      "local_result_sha256": "b1e6ff320b538ded90a43385be1fc025be03235f25175526872d2bdb39832fe1",
+      "mechanical_signature_sha256": "10db38f3f598c0e69869e440d1dfba7503e2aa82011144a57d9a134b65a2c601",
+      "progress_signature_sha256": "e65d5d6f9e39e314e82b8041ea78cf3e907c1f47b7cd9fe2f7f34b1662e34b2c",
+      "task_family": "pick_cool_then_place_in_recep"
+    },
+    {
+      "error_instance_id": "error-1-repeated-inadmissible-current-location-navigation",
+      "local_result_sha256": "bd7a708d04f85a425b205265fc898fa850a189d1ba7fd7cece9b5be95c27eeb1",
+      "mechanical_signature_sha256": "fa2aa74443125d2bd15c4be7a8b3c5cf34ba6bbe3b9ee76bd43636abf330ccfd",
+      "progress_signature_sha256": "8945e9d7ad8faacc421ed8528ea7d261beb85c6b5850536065d2da90bf866a11",
+      "task_family": "pick_heat_then_place_in_recep"
+    },
+    {
+      "error_instance_id": "E1_DESTINATION_EXAMINE_PERSEVERATION",
+      "local_result_sha256": "c66bfeca7485d653c12da2017d5ccf68730b1b86708f6b0e7fdb504c1a90eb04",
+      "mechanical_signature_sha256": "10db38f3f598c0e69869e440d1dfba7503e2aa82011144a57d9a134b65a2c601",
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "task_family": "pick_and_place_simple"
+    },
+    {
+      "error_instance_id": "E2_GOAL_OBJECT_SEARCH_AND_IDENTITY_DRIFT",
+      "local_result_sha256": "c66bfeca7485d653c12da2017d5ccf68730b1b86708f6b0e7fdb504c1a90eb04",
+      "mechanical_signature_sha256": "7c3ed92834b29e15fd2cc3367e5a8349b19ce24f4502246d13818da4df007df0",
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "task_family": "pick_and_place_simple"
+    },
+    {
+      "error_instance_id": "E3_INTERMITTENT_MENU_MISMATCHES",
+      "local_result_sha256": "c66bfeca7485d653c12da2017d5ccf68730b1b86708f6b0e7fdb504c1a90eb04",
+      "mechanical_signature_sha256": "2e7b26a55a80ad3c97fea73e9b2bb80a588f5bea245561ae310391f919f9049a",
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "task_family": "pick_and_place_simple"
+    },
+    {
+      "error_instance_id": "E4_MULTILINE_ACTION_PROTOCOL_FAILURE",
+      "local_result_sha256": "c66bfeca7485d653c12da2017d5ccf68730b1b86708f6b0e7fdb504c1a90eb04",
+      "mechanical_signature_sha256": "d32645f5ebadadf4f1d7d8ce9dc63996024940e51a5459505bfcb068b9625495",
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "task_family": "pick_and_place_simple"
+    },
+    {
+      "error_instance_id": "E5_TERMINAL_OPEN_CABINET_REPEAT",
+      "local_result_sha256": "c66bfeca7485d653c12da2017d5ccf68730b1b86708f6b0e7fdb504c1a90eb04",
+      "mechanical_signature_sha256": "fa2aa74443125d2bd15c4be7a8b3c5cf34ba6bbe3b9ee76bd43636abf330ccfd",
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "task_family": "pick_and_place_simple"
+    },
+    {
+      "error_instance_id": "E1-SEARCH-STAGNATION",
+      "local_result_sha256": "cc936c5ffaed4602cb04374efa9b01ad346fe9cb6b4547a527789b64e58f92a3",
+      "mechanical_signature_sha256": "0b640459b66105e17772240c94e3cc914af0bb89418ddf649f2c97f808efc572",
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "task_family": "pick_heat_then_place_in_recep"
+    },
+    {
+      "error_instance_id": "E2-FIRST-CURRENT-LOCATION-INVALID-ACTION",
+      "local_result_sha256": "cc936c5ffaed4602cb04374efa9b01ad346fe9cb6b4547a527789b64e58f92a3",
+      "mechanical_signature_sha256": "e005206dfceab91441f345dbc9051b07ac011e7307d8141a5016b70dc6f38db0",
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "task_family": "pick_heat_then_place_in_recep"
+    },
+    {
+      "error_instance_id": "E3-SECOND-CURRENT-LOCATION-INVALID-ACTION",
+      "local_result_sha256": "cc936c5ffaed4602cb04374efa9b01ad346fe9cb6b4547a527789b64e58f92a3",
+      "mechanical_signature_sha256": "e005206dfceab91441f345dbc9051b07ac011e7307d8141a5016b70dc6f38db0",
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "task_family": "pick_heat_then_place_in_recep"
+    },
+    {
+      "error_instance_id": "E4-REDUNDANT-APPLIANCE-EXAMINATION",
+      "local_result_sha256": "cc936c5ffaed4602cb04374efa9b01ad346fe9cb6b4547a527789b64e58f92a3",
+      "mechanical_signature_sha256": "61342b22b0908737dea33ae4425d0c15e4bd9f9a779441af96cbcb1d2c01bea2",
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "task_family": "pick_heat_then_place_in_recep"
+    },
+    {
+      "error_instance_id": "E5-TERMINAL-INADMISSIBLE-PERSEVERATION",
+      "local_result_sha256": "cc936c5ffaed4602cb04374efa9b01ad346fe9cb6b4547a527789b64e58f92a3",
+      "mechanical_signature_sha256": "fa2aa74443125d2bd15c4be7a8b3c5cf34ba6bbe3b9ee76bd43636abf330ccfd",
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "task_family": "pick_heat_then_place_in_recep"
+    },
+    {
+      "error_instance_id": "ERR_EXPLORATORY_DETOUR",
+      "local_result_sha256": "ea5560eca15ba8d5639f3660d1a63854ecea61e494e012ae5b7af52f5419e32b",
+      "mechanical_signature_sha256": "0b640459b66105e17772240c94e3cc914af0bb89418ddf649f2c97f808efc572",
+      "progress_signature_sha256": "bd578687560b737ff6f32d063fd0b6e65471570b485c08879a4a9929cb41ea54",
+      "task_family": "pick_heat_then_place_in_recep"
+    },
+    {
+      "error_instance_id": "ERR_FEEDBACK_NONADAPTATION",
+      "local_result_sha256": "ea5560eca15ba8d5639f3660d1a63854ecea61e494e012ae5b7af52f5419e32b",
+      "mechanical_signature_sha256": "406e106f8a812bae2c618cca2ac0a793eb350494062c0c316a319b357734a8b4",
+      "progress_signature_sha256": "8945e9d7ad8faacc421ed8528ea7d261beb85c6b5850536065d2da90bf866a11",
+      "task_family": "pick_heat_then_place_in_recep"
+    },
+    {
+      "error_instance_id": "ERR_INITIAL_INADMISSIBLE_NAVIGATION",
+      "local_result_sha256": "ea5560eca15ba8d5639f3660d1a63854ecea61e494e012ae5b7af52f5419e32b",
+      "mechanical_signature_sha256": "509491af41fe521621d9ec081a2cf13ecad9a122fbaf73e334b295105e31ac01",
+      "progress_signature_sha256": "8945e9d7ad8faacc421ed8528ea7d261beb85c6b5850536065d2da90bf866a11",
+      "task_family": "pick_heat_then_place_in_recep"
+    },
+    {
+      "error_instance_id": "ERR_FEEDBACK_NONADAPTATION",
+      "local_result_sha256": "f69da5f566fc9627828738f4adba4ee484dafdbd3965807ff07d4ab1d07e6884",
+      "mechanical_signature_sha256": "406e106f8a812bae2c618cca2ac0a793eb350494062c0c316a319b357734a8b4",
+      "progress_signature_sha256": "fa53842c1ffedd1c5260e51156892d0ef4d1918d5d8d2fa22664300e37d9976a",
+      "task_family": "look_at_obj_in_light"
+    },
+    {
+      "error_instance_id": "ERR_MENU_NONCOMPLIANCE_INITIAL",
+      "local_result_sha256": "f69da5f566fc9627828738f4adba4ee484dafdbd3965807ff07d4ab1d07e6884",
+      "mechanical_signature_sha256": "509491af41fe521621d9ec081a2cf13ecad9a122fbaf73e334b295105e31ac01",
+      "progress_signature_sha256": "fa53842c1ffedd1c5260e51156892d0ef4d1918d5d8d2fa22664300e37d9976a",
+      "task_family": "look_at_obj_in_light"
+    },
+    {
+      "error_instance_id": "ERR-1-COMPOSITE-INADMISSIBLE-ACTION",
+      "local_result_sha256": "f9df42a955607a1f7dfe082c42cc3acc18b8d69fbe515a14ce08288253a4de5e",
+      "mechanical_signature_sha256": "509491af41fe521621d9ec081a2cf13ecad9a122fbaf73e334b295105e31ac01",
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "task_family": "pick_two_obj_and_place"
+    },
+    {
+      "error_instance_id": "ERR-2-WRONG-GOAL-OBJECT-ACQUISITION",
+      "local_result_sha256": "f9df42a955607a1f7dfe082c42cc3acc18b8d69fbe515a14ce08288253a4de5e",
+      "mechanical_signature_sha256": "61342b22b0908737dea33ae4425d0c15e4bd9f9a779441af96cbcb1d2c01bea2",
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "task_family": "pick_two_obj_and_place"
+    },
+    {
+      "error_instance_id": "ERR-3-REPEATED-INADMISSIBLE-NAVIGATION",
+      "local_result_sha256": "f9df42a955607a1f7dfe082c42cc3acc18b8d69fbe515a14ce08288253a4de5e",
+      "mechanical_signature_sha256": "fa2aa74443125d2bd15c4be7a8b3c5cf34ba6bbe3b9ee76bd43636abf330ccfd",
+      "progress_signature_sha256": "d6a0f8c1b2bb8e9d5bc89e3b4b65182b1a6ace56b7e29a50e71af50615b8358b",
+      "task_family": "pick_two_obj_and_place"
+    }
+  ],
+  "schema_id": "STAGE6H_ANALYZER_GROUP_SIGNATURE_COLLECTION_V1",
+  "schema_version": 1
+}

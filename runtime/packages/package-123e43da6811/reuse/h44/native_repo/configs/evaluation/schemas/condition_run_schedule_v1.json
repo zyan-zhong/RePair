@@ -1,0 +1,120 @@
+{
+  "$id": "CONDITION_RUN_SCHEDULE_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "cell_count": {
+      "minimum": 1,
+      "type": "integer"
+    },
+    "cells": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "condition_cell_id": {
+            "pattern": "^p4-[A-Za-z0-9][A-Za-z0-9._-]{0,63}-t[0-9]{5}-s[0-9]{10}$",
+            "type": "string"
+          },
+          "manifest_index": {
+            "maximum": 99999,
+            "minimum": 0,
+            "type": "integer"
+          },
+          "seed": {
+            "maximum": 9999999999,
+            "minimum": 0,
+            "type": "integer"
+          },
+          "task_id": {
+            "maxLength": 256,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "condition_cell_id",
+          "manifest_index",
+          "task_id",
+          "seed"
+        ],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "order": {
+      "const": "seed-major",
+      "type": "string"
+    },
+    "output_namespace": {
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$",
+      "type": "string"
+    },
+    "policy_condition_manifest_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "primary_statistical_unit": {
+      "const": "unique_task",
+      "type": "string"
+    },
+    "replicate_seeds": {
+      "items": {
+        "maximum": 9999999999,
+        "minimum": 0,
+        "type": "integer"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "run_purpose": {
+      "enum": [
+        "P1_PI0_DEV_ROLLOUT",
+        "P4_HARNESS_OFF_SELECT"
+      ],
+      "type": "string"
+    },
+    "schedule_id": {
+      "maxLength": 320,
+      "minLength": 1,
+      "type": "string"
+    },
+    "schema_id": {
+      "const": "CONDITION_RUN_SCHEDULE_V1",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    },
+    "target_access_class": {
+      "enum": [
+        "DEV_VISIBLE",
+        "SELECT_SUMMARY_ONLY",
+        "CONFIRMATORY_SEALED",
+        "HISTORICALLY_EXPOSED"
+      ],
+      "type": "string"
+    },
+    "task_access_manifest_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "schedule_id",
+    "task_access_manifest_sha256",
+    "policy_condition_manifest_sha256",
+    "run_purpose",
+    "target_access_class",
+    "replicate_seeds",
+    "order",
+    "cell_count",
+    "output_namespace",
+    "primary_statistical_unit",
+    "cells"
+  ],
+  "type": "object"
+}

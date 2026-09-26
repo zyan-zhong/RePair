@@ -1,0 +1,595 @@
+{
+  "schema": "REPAIR_CAUSAL_STATES_V1",
+  "source": "reused_R5_TRAIN_UPDATE",
+  "state_count": 5,
+  "seeds": [
+    17,
+    31,
+    47,
+    73,
+    101
+  ],
+  "states": {
+    "18739065b796acb3a6dbd6d8e6bd709634ebeb21a3555f25b9819c672ad8626c": {
+      "task_goal": "put a clean pan in stoveburner.",
+      "task_id": "alfworld_train_all3553_1514",
+      "arms": {
+        "F0": [
+          {
+            "seed": 17,
+            "success": false,
+            "policy_calls": 28,
+            "intervention_steps": 0,
+            "steps": 28,
+            "actions": []
+          },
+          {
+            "seed": 31,
+            "success": false,
+            "policy_calls": 28,
+            "intervention_steps": 0,
+            "steps": 28,
+            "actions": []
+          },
+          {
+            "seed": 47,
+            "success": false,
+            "policy_calls": 28,
+            "intervention_steps": 0,
+            "steps": 28,
+            "actions": []
+          },
+          {
+            "seed": 73,
+            "success": false,
+            "policy_calls": 28,
+            "intervention_steps": 0,
+            "steps": 28,
+            "actions": []
+          },
+          {
+            "seed": 101,
+            "success": false,
+            "policy_calls": 28,
+            "intervention_steps": 0,
+            "steps": 28,
+            "actions": []
+          }
+        ],
+        "F1": [
+          {
+            "seed": 17,
+            "success": true,
+            "policy_calls": 0,
+            "intervention_steps": 2,
+            "steps": 2,
+            "actions": [
+              "go to sinkbasin 1",
+              "clean pan 1 with sinkbasin 1"
+            ]
+          },
+          {
+            "seed": 31,
+            "success": true,
+            "policy_calls": 0,
+            "intervention_steps": 2,
+            "steps": 2,
+            "actions": [
+              "go to sinkbasin 1",
+              "clean pan 1 with sinkbasin 1"
+            ]
+          },
+          {
+            "seed": 47,
+            "success": true,
+            "policy_calls": 0,
+            "intervention_steps": 2,
+            "steps": 2,
+            "actions": [
+              "go to sinkbasin 1",
+              "clean pan 1 with sinkbasin 1"
+            ]
+          },
+          {
+            "seed": 73,
+            "success": true,
+            "policy_calls": 0,
+            "intervention_steps": 2,
+            "steps": 2,
+            "actions": [
+              "go to sinkbasin 1",
+              "clean pan 1 with sinkbasin 1"
+            ]
+          },
+          {
+            "seed": 101,
+            "success": true,
+            "policy_calls": 0,
+            "intervention_steps": 2,
+            "steps": 2,
+            "actions": [
+              "go to sinkbasin 1",
+              "clean pan 1 with sinkbasin 1"
+            ]
+          }
+        ]
+      }
+    },
+    "51232a0d2961b40bd8b05f4eb7ae15b469f50e6f95997d8c9b9b0e4d829ff7b5": {
+      "task_goal": "put some creditcard on armchair.",
+      "task_id": "alfworld_train_all3553_0552",
+      "arms": {
+        "F0": [
+          {
+            "seed": 17,
+            "success": false,
+            "policy_calls": 28,
+            "intervention_steps": 0,
+            "steps": 28,
+            "actions": []
+          },
+          {
+            "seed": 31,
+            "success": false,
+            "policy_calls": 28,
+            "intervention_steps": 0,
+            "steps": 28,
+            "actions": []
+          },
+          {
+            "seed": 47,
+            "success": false,
+            "policy_calls": 28,
+            "intervention_steps": 0,
+            "steps": 28,
+            "actions": []
+          },
+          {
+            "seed": 73,
+            "success": false,
+            "policy_calls": 28,
+            "intervention_steps": 0,
+            "steps": 28,
+            "actions": []
+          },
+          {
+            "seed": 101,
+            "success": false,
+            "policy_calls": 28,
+            "intervention_steps": 0,
+            "steps": 28,
+            "actions": []
+          }
+        ],
+        "F1": [
+          {
+            "seed": 17,
+            "success": false,
+            "policy_calls": 3,
+            "intervention_steps": 4,
+            "steps": 4,
+            "actions": [
+              "go to coffeetable 1",
+              "go to sidetable 1",
+              "go to tvstand 1",
+              "take creditcard 1 from tvstand 1"
+            ]
+          },
+          {
+            "seed": 31,
+            "success": false,
+            "policy_calls": 3,
+            "intervention_steps": 4,
+            "steps": 4,
+            "actions": [
+              "go to coffeetable 1",
+              "go to sidetable 1",
+              "go to tvstand 1",
+              "take creditcard 1 from tvstand 1"
+            ]
+          },
+          {
+            "seed": 47,
+            "success": false,
+            "policy_calls": 3,
+            "intervention_steps": 4,
+            "steps": 4,
+            "actions": [
+              "go to coffeetable 1",
+              "go to sidetable 1",
+              "go to tvstand 1",
+              "take creditcard 1 from tvstand 1"
+            ]
+          },
+          {
+            "seed": 73,
+            "success": false,
+            "policy_calls": 3,
+            "intervention_steps": 4,
+            "steps": 4,
+            "actions": [
+              "go to coffeetable 1",
+              "go to sidetable 1",
+              "go to tvstand 1",
+              "take creditcard 1 from tvstand 1"
+            ]
+          },
+          {
+            "seed": 101,
+            "success": false,
+            "policy_calls": 3,
+            "intervention_steps": 4,
+            "steps": 4,
+            "actions": [
+              "go to coffeetable 1",
+              "go to sidetable 1",
+              "go to tvstand 1",
+              "take creditcard 1 from tvstand 1"
+            ]
+          }
+        ]
+      }
+    },
+    "e03627d14f88920d2f2329aae48bef09abe3b309363af1a26409850152d78bc8": {
+      "task_goal": "put a potato in microwave.",
+      "task_id": "alfworld_train_all3553_0824",
+      "arms": {
+        "F0": [
+          {
+            "seed": 17,
+            "success": false,
+            "policy_calls": 5,
+            "intervention_steps": 0,
+            "steps": 1,
+            "actions": []
+          },
+          {
+            "seed": 31,
+            "success": false,
+            "policy_calls": 3,
+            "intervention_steps": 0,
+            "steps": 0,
+            "actions": []
+          },
+          {
+            "seed": 47,
+            "success": false,
+            "policy_calls": 3,
+            "intervention_steps": 0,
+            "steps": 0,
+            "actions": []
+          },
+          {
+            "seed": 73,
+            "success": false,
+            "policy_calls": 3,
+            "intervention_steps": 0,
+            "steps": 0,
+            "actions": []
+          },
+          {
+            "seed": 101,
+            "success": false,
+            "policy_calls": 3,
+            "intervention_steps": 0,
+            "steps": 0,
+            "actions": []
+          }
+        ],
+        "F1": [
+          {
+            "seed": 17,
+            "success": true,
+            "policy_calls": 0,
+            "intervention_steps": 4,
+            "steps": 4,
+            "actions": [
+              "go to countertop 1",
+              "take potato 1 from countertop 1",
+              "go to microwave 1",
+              "move potato 1 to microwave 1"
+            ]
+          },
+          {
+            "seed": 31,
+            "success": true,
+            "policy_calls": 0,
+            "intervention_steps": 4,
+            "steps": 4,
+            "actions": [
+              "go to countertop 1",
+              "take potato 1 from countertop 1",
+              "go to microwave 1",
+              "move potato 1 to microwave 1"
+            ]
+          },
+          {
+            "seed": 47,
+            "success": true,
+            "policy_calls": 0,
+            "intervention_steps": 4,
+            "steps": 4,
+            "actions": [
+              "go to countertop 1",
+              "take potato 1 from countertop 1",
+              "go to microwave 1",
+              "move potato 1 to microwave 1"
+            ]
+          },
+          {
+            "seed": 73,
+            "success": true,
+            "policy_calls": 0,
+            "intervention_steps": 4,
+            "steps": 4,
+            "actions": [
+              "go to countertop 1",
+              "take potato 1 from countertop 1",
+              "go to microwave 1",
+              "move potato 1 to microwave 1"
+            ]
+          },
+          {
+            "seed": 101,
+            "success": true,
+            "policy_calls": 0,
+            "intervention_steps": 4,
+            "steps": 4,
+            "actions": [
+              "go to countertop 1",
+              "take potato 1 from countertop 1",
+              "go to microwave 1",
+              "move potato 1 to microwave 1"
+            ]
+          }
+        ]
+      }
+    },
+    "f5545bdcb157180c1adbae42b42ee10195fbd0bc2c5614302a8ce84099a26bc9": {
+      "task_goal": "heat some cup and put it in cabinet.",
+      "task_id": "alfworld_train_all3553_2355",
+      "arms": {
+        "F0": [
+          {
+            "seed": 17,
+            "success": false,
+            "policy_calls": 3,
+            "intervention_steps": 0,
+            "steps": 0,
+            "actions": []
+          },
+          {
+            "seed": 31,
+            "success": false,
+            "policy_calls": 9,
+            "intervention_steps": 0,
+            "steps": 4,
+            "actions": []
+          },
+          {
+            "seed": 47,
+            "success": false,
+            "policy_calls": 3,
+            "intervention_steps": 0,
+            "steps": 0,
+            "actions": []
+          },
+          {
+            "seed": 73,
+            "success": false,
+            "policy_calls": 57,
+            "intervention_steps": 0,
+            "steps": 23,
+            "actions": []
+          },
+          {
+            "seed": 101,
+            "success": false,
+            "policy_calls": 17,
+            "intervention_steps": 0,
+            "steps": 9,
+            "actions": []
+          }
+        ],
+        "F1": [
+          {
+            "seed": 17,
+            "success": true,
+            "policy_calls": 0,
+            "intervention_steps": 6,
+            "steps": 6,
+            "actions": [
+              "take cup 1 from countertop 1",
+              "go to microwave 1",
+              "heat cup 1 with microwave 1",
+              "open microwave 1",
+              "go to cabinet 1",
+              "move cup 1 to cabinet 1"
+            ]
+          },
+          {
+            "seed": 31,
+            "success": true,
+            "policy_calls": 0,
+            "intervention_steps": 6,
+            "steps": 6,
+            "actions": [
+              "take cup 1 from countertop 1",
+              "go to microwave 1",
+              "heat cup 1 with microwave 1",
+              "open microwave 1",
+              "go to cabinet 1",
+              "move cup 1 to cabinet 1"
+            ]
+          },
+          {
+            "seed": 47,
+            "success": true,
+            "policy_calls": 0,
+            "intervention_steps": 6,
+            "steps": 6,
+            "actions": [
+              "take cup 1 from countertop 1",
+              "go to microwave 1",
+              "heat cup 1 with microwave 1",
+              "open microwave 1",
+              "go to cabinet 1",
+              "move cup 1 to cabinet 1"
+            ]
+          },
+          {
+            "seed": 73,
+            "success": true,
+            "policy_calls": 0,
+            "intervention_steps": 6,
+            "steps": 6,
+            "actions": [
+              "take cup 1 from countertop 1",
+              "go to microwave 1",
+              "heat cup 1 with microwave 1",
+              "open microwave 1",
+              "go to cabinet 1",
+              "move cup 1 to cabinet 1"
+            ]
+          },
+          {
+            "seed": 101,
+            "success": true,
+            "policy_calls": 0,
+            "intervention_steps": 6,
+            "steps": 6,
+            "actions": [
+              "take cup 1 from countertop 1",
+              "go to microwave 1",
+              "heat cup 1 with microwave 1",
+              "open microwave 1",
+              "go to cabinet 1",
+              "move cup 1 to cabinet 1"
+            ]
+          }
+        ]
+      }
+    },
+    "f90dc32bb8f8b9af4337ca3b21af43737e1c66524beffe2943d043de7783026b": {
+      "task_goal": "examine the newspaper with the desklamp.",
+      "task_id": "alfworld_train_all3553_0176",
+      "arms": {
+        "F0": [
+          {
+            "seed": 17,
+            "success": false,
+            "policy_calls": 27,
+            "intervention_steps": 0,
+            "steps": 27,
+            "actions": []
+          },
+          {
+            "seed": 31,
+            "success": false,
+            "policy_calls": 27,
+            "intervention_steps": 0,
+            "steps": 27,
+            "actions": []
+          },
+          {
+            "seed": 47,
+            "success": false,
+            "policy_calls": 27,
+            "intervention_steps": 0,
+            "steps": 27,
+            "actions": []
+          },
+          {
+            "seed": 73,
+            "success": false,
+            "policy_calls": 27,
+            "intervention_steps": 0,
+            "steps": 27,
+            "actions": []
+          },
+          {
+            "seed": 101,
+            "success": false,
+            "policy_calls": 27,
+            "intervention_steps": 0,
+            "steps": 27,
+            "actions": []
+          }
+        ],
+        "F1": [
+          {
+            "seed": 17,
+            "success": true,
+            "policy_calls": 0,
+            "intervention_steps": 4,
+            "steps": 4,
+            "actions": [
+              "go to sofa 1",
+              "take newspaper 2 from sofa 1",
+              "go to sidetable 1",
+              "use desklamp 1"
+            ]
+          },
+          {
+            "seed": 31,
+            "success": true,
+            "policy_calls": 0,
+            "intervention_steps": 4,
+            "steps": 4,
+            "actions": [
+              "go to sofa 1",
+              "take newspaper 2 from sofa 1",
+              "go to sidetable 1",
+              "use desklamp 1"
+            ]
+          },
+          {
+            "seed": 47,
+            "success": true,
+            "policy_calls": 0,
+            "intervention_steps": 4,
+            "steps": 4,
+            "actions": [
+              "go to sofa 1",
+              "take newspaper 2 from sofa 1",
+              "go to sidetable 1",
+              "use desklamp 1"
+            ]
+          },
+          {
+            "seed": 73,
+            "success": true,
+            "policy_calls": 0,
+            "intervention_steps": 4,
+            "steps": 4,
+            "actions": [
+              "go to sofa 1",
+              "take newspaper 2 from sofa 1",
+              "go to sidetable 1",
+              "use desklamp 1"
+            ]
+          },
+          {
+            "seed": 101,
+            "success": true,
+            "policy_calls": 0,
+            "intervention_steps": 4,
+            "steps": 4,
+            "actions": [
+              "go to sofa 1",
+              "take newspaper 2 from sofa 1",
+              "go to sidetable 1",
+              "use desklamp 1"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "stable_effect_counts": {
+    "BENEFIT": 4,
+    "HARM": 0,
+    "NEUTRAL": 1,
+    "UNCERTAIN": 0
+  }
+}

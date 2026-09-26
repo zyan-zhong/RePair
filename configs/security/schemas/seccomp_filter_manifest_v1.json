@@ -1,0 +1,30 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "architecture": {
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$",
+      "type": "string"
+    },
+    "policy_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "program_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "seccomp_filter_manifest_v1",
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "architecture",
+    "policy_sha256",
+    "program_sha256"
+  ],
+  "schema_version": 1,
+  "title": "Seccomp Filter Manifest V1",
+  "type": "object"
+}

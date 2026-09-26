@@ -1,0 +1,43 @@
+{
+  "all_examples_file_sha256": "e5ca2aacafe8913d0b58a93df74d7854d1cd6f66e8399a74c4ad64b9e03ec601",
+  "all_examples_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage6l_i1_role_teacher_serializer_local_ri_training_prep_v1_2/a6f4fefff95418801fce2e915380c065fb682c32/serialized/LOCAL_RI_ROLE_TEACHER_SERIALIZATION_V1.jsonl",
+  "analyzer_example_count": 144,
+  "analyzer_examples_file_sha256": "7120f4439c6e74a8072771fd09f16d496c46f0f8e0009ee08ab905265e91541d",
+  "assistant_target": "EXACT_CANONICAL_VALIDATED_STRUCTURED_ARTIFACT",
+  "base_model_lineage": "Qwen2.5-3B-Instruct",
+  "base_model_revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+  "dataset_sha256": "9fa79d5972e1cf8d547c650b3d24637f3810076dd5be6759d9202218dcf42921",
+  "example_count": 146,
+  "execution_profile_sha256": null,
+  "filesystem_wide_discovery_used": false,
+  "interface_profile_id": "I1_EXECUTION_PROFILE_V1",
+  "interface_profile_schema_sha256": "ddca85be85528f1720614e9bfad1fd599f975737a43c51da130a402b312cce6a",
+  "local_primary_authorized": false,
+  "messages_format": "SYSTEM_USER_ASSISTANT",
+  "planner_example_count": 2,
+  "planner_examples_file_sha256": "90f134ebaf419655a023463812ea3177df337d54376cd73d6b67285f40ba718e",
+  "provider_hidden_reasoning_included": false,
+  "role_counts": {
+    "ANALYZER": 144,
+    "RESEARCH_PLANNER_POST": 1,
+    "RESEARCH_PLANNER_PRE": 1
+  },
+  "round_id": "CLEAN-HUMAN-REFERENCE-R1-PI0",
+  "schema_id": "LOCAL_RI_ROLE_TEACHER_SERIALIZATION_MANIFEST_V1",
+  "schema_version": 1,
+  "source_corpus_file_sha256": "37e3afd53acbba82e428b29264a1c21db12222e453efadb648db7cc0cc21905e",
+  "source_corpus_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage6k_strong_c_p_x_live_ri_corpus_v1/b1db69dbc2adb33a2b9b9b93e2fa46dfcfb86a04/x_ambiguity_recovery_v1/STRONG_LOCALIZATION_TEACHER_CALL_CORPUS_V1.json",
+  "source_corpus_resolution_mode": "RECOVERY_SUBROOT_EXACT",
+  "source_corpus_sha256": "0654fb1c93317500b93dee467f32066a31d968f576b86e849210101a88668bcf",
+  "stage_counts": {
+    "C": 33,
+    "G-A2": 17,
+    "G-A3": 18,
+    "L-A0": 22,
+    "L-A1": 21,
+    "R-POST-PRIMARY-V1": 1,
+    "R-PRE-PRIMARY-V1": 1,
+    "X": 33
+  },
+  "training_executed": false
+}

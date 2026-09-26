@@ -1,0 +1,20 @@
+{
+  "recipe": {
+    "data_seed": 17031,
+    "data_semantics": "VERIFIED_BENEFIT_DUAL_VIEW_COMPLETE_PAIRS",
+    "dataset_sha256": "15f626e1847a51278fa95b083b43e72a803e1b1f51e4fcddd86086267a92393d",
+    "epochs": 3,
+    "gradient_accumulation_steps": 2,
+    "learning_rate": 5e-06,
+    "max_grad_norm": 1.0,
+    "micro_batch_size": 1,
+    "rationale": "Recommend a minimal, conservative update on the supplied two-row verified-benefit dual-view dataset. Three epochs with accumulation over both rows yields only three optimizer steps, limiting overfitting and broad-policy drift while exposing both views of the sole replicated benefit. This is a training recommendation only and does not imply that training or promotion has occurred.",
+    "training_seed": 31017,
+    "warmup_steps": 0,
+    "weight_decay": 0.01
+  },
+  "context": {
+    "dataset_sha256": "15f626e1847a51278fa95b083b43e72a803e1b1f51e4fcddd86086267a92393d",
+    "row_count": 2
+  }
+}

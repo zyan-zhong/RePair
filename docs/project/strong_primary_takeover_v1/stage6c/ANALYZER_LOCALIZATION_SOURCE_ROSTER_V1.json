@@ -1,0 +1,14 @@
+{
+  "analyzer_example_materializer_present": false,
+  "environment_call_required": false,
+  "existing_local_dataset_schema_reused": true,
+  "local_training_authorized": false,
+  "provider_call_required": false,
+  "records": [],
+  "round_id": "CLEAN-HUMAN-REFERENCE-R1-PI0",
+  "schema_id": "ANALYZER_LOCALIZATION_SOURCE_ROSTER_V1",
+  "schema_version": 1,
+  "source_contract": "EXISTING_ROLE_TRACE_RECORD_V1_PLUS_RETENTION_V1",
+  "source_ready": false,
+  "strong_analyzer_trace_count": 0
+}

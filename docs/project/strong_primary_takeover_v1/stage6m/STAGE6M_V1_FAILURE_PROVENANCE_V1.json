@@ -1,0 +1,20 @@
+{
+  "environment_call_count_before_failure": 0,
+  "failed_command_rc": 1,
+  "failed_package": "STAGE6M_LOCAL_RI_NATIVE_SERIALIZER_SEQUENCE_POLICY_CLOSURE_V1",
+  "failed_package_sha256": "3510b8f98c9c07679a36c378f3a74252fd819d555b6ad45f2bd3d65a03797289",
+  "failure_class": "STAGE6L_FULL_TOKEN_AUDIT_NESTED_SUMMARY_ACCESSOR_MISMATCH",
+  "failure_message": "RuntimeError: Stage6L architecture-overlength denominator drift",
+  "fix_scope": "NESTED_SCHEMA_ACCESSOR_ONLY",
+  "git_commit_created_by_failed_run": false,
+  "provider_call_count_before_failure": 0,
+  "repository_head_after_failed_run": "2c88b8c681718021c19d03b01f557e691d0e6746",
+  "root_cause": "Stage6L LOCAL_RI_TEACHER_TOKEN_AUDIT_V2 stores detailed sequence metrics under sequence_length_summary, while Stage6M V1 read architecture_overlength_example_count from the audit top level and therefore observed None instead of the frozen 22.",
+  "round_id": "CLEAN-HUMAN-REFERENCE-R1-PI0",
+  "schema_id": "STAGE6M_V1_FAILURE_PROVENANCE_V1",
+  "schema_version": 1,
+  "scientific_denominator_changed": false,
+  "stage6l_architecture_overlength_example_count": 22,
+  "stage6l_tokenizer_overlength_example_count": 3,
+  "training_execution_count_before_failure": 0
+}

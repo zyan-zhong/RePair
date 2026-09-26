@@ -1,0 +1,54 @@
+{
+  "candidate_absolute_paths": [
+    {
+      "exists": true,
+      "is_dir": false,
+      "is_file": true,
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage3y_existing_training_preparation_v1/5c042850c1b926c3805a64f1f4b16d3688abf327af1db1eb34444b483baa5997/INPUT_ARTIFACT_INDEX.json",
+      "sha256": "ccd14a6e5a47dfcb331a65fc9073b5396fe16850fd1158eba558646d3ecbdfdf"
+    },
+    {
+      "exists": true,
+      "is_dir": false,
+      "is_file": true,
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4a_clean_existing_trainer_v1/1711c5fbc6431f3bd59bda066011ab265837aecfcaf827b073f6a4754ec2f692/CANDIDATE_HANDOFF.json",
+      "sha256": "12843e82af08c1340e043440a658c1cc852322a4c1c0758eec64e7d86a7fd7ff"
+    },
+    {
+      "exists": true,
+      "is_dir": false,
+      "is_file": true,
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4a_clean_existing_trainer_v1/1711c5fbc6431f3bd59bda066011ab265837aecfcaf827b073f6a4754ec2f692/INITIALIZATION_RECEIPT.json",
+      "sha256": "2d3526db1b1b0f0d02b76370e61e7d0be24b39ef5619b2e2d2c6de7a80964de0"
+    },
+    {
+      "exists": true,
+      "is_dir": false,
+      "is_file": true,
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4a_clean_existing_trainer_v1/1711c5fbc6431f3bd59bda066011ab265837aecfcaf827b073f6a4754ec2f692/TRAINER_ROLE_BINDING.json",
+      "sha256": "caff540181ec6a54e9c49bba7545f27d33b8f3558bebdbc150437f510f57d262"
+    },
+    {
+      "exists": true,
+      "is_dir": false,
+      "is_file": true,
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4a_clean_existing_trainer_v1/1711c5fbc6431f3bd59bda066011ab265837aecfcaf827b073f6a4754ec2f692/TRAINING_STAGE_BINDING.json",
+      "sha256": "6985f3ec970d1b3ce981295c9bca0da2f12e1699333876294c34ac06f4b6d8da"
+    }
+  ],
+  "candidate_identity_field_count": 96,
+  "candidate_model_checkpoint_adapter_values": [],
+  "candidate_sha256s": [
+    "12843e82af08c1340e043440a658c1cc852322a4c1c0758eec64e7d86a7fd7ff",
+    "2d3526db1b1b0f0d02b76370e61e7d0be24b39ef5619b2e2d2c6de7a80964de0",
+    "6985f3ec970d1b3ce981295c9bca0da2f12e1699333876294c34ac06f4b6d8da",
+    "caff540181ec6a54e9c49bba7545f27d33b8f3558bebdbc150437f510f57d262",
+    "ccd14a6e5a47dfcb331a65fc9073b5396fe16850fd1158eba558646d3ecbdfdf"
+  ],
+  "execution_authorized": false,
+  "schema_id": "LOCAL_SHADOW_CHECKPOINT_DISCOVERY_V1",
+  "source_path": "/data/run01/scwb204/sdar_repro/badcase/github_exports/pchsi-wt-strong-primary-takeover-prep-v1/docs/project/strong_primary_takeover_v1/LOCAL_SHADOW_BINDING_EVIDENCE_V1.json",
+  "source_sha256": "98a7e155d027c8e9ba000b236033cb67bac785eed05674e4f9a0eb09bbfd1f13",
+  "status": "NEEDS_UNIQUE_LOCAL_SHADOW_MODEL_CHECKPOINT_BINDING",
+  "unique_checkpoint_binding_ready": false
+}

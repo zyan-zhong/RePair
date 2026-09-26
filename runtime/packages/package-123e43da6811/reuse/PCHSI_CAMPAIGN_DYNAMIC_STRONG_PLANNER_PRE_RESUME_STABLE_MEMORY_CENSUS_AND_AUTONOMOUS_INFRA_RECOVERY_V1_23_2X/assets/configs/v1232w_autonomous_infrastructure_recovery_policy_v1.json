@@ -1,0 +1,33 @@
+{
+  "automatic_transport_retry_introduced": false,
+  "candidate_universe_change_authorized": false,
+  "dynamic_pre_contract_change_authorized": false,
+  "eligible_recovery_classes": [
+    "SAFE_PRE_SEND",
+    "SAFE_PROVIDER_REJECTION"
+  ],
+  "historical_classifier": {
+    "commit": "1ea4647443d4a9140bb6712c7f92f1538c896b8b",
+    "git_blob_oid": "d8b3d3332120b5efff1f53207e2bb5ec423e9d76",
+    "path": "src/pchsi/cognitive_runtime/infra_recovery_disposition.py",
+    "repository": "zyan-zhong/phase-critical-harness-guided-self-improvement"
+  },
+  "human_scientific_decision_count": 0,
+  "human_stage_handoff_after_invocation_start": 0,
+  "legacy_retry_authority_bridge": "HUMAN_DISPOSITION_TO_INVOCATION_START_AUTONOMOUS_POLICY",
+  "maximum_provider_recovery_calls": 1,
+  "model_change_authorized": false,
+  "new_remediation_logical_call_required": true,
+  "parent_policy_change_authorized": false,
+  "policy_sha256": "e34e41c628977d10900ebc22adec81f646f8a37e92a9e1d87f53e72c284795c7",
+  "projection_change_authorized": false,
+  "request_body_change_authorized": false,
+  "researcher_memory_change_authorized": false,
+  "round_change_authorized": false,
+  "same_logical_call_resend_authorized": false,
+  "schema_id": "V1232W_AUTONOMOUS_INFRASTRUCTURE_RECOVERY_POLICY_V1",
+  "schema_version": 1,
+  "scientific_attempt_increment": 0,
+  "scope": "R_PRE_PRIMARY_V2_INFRASTRUCTURE_ONLY",
+  "second_recovery_authorized": false
+}

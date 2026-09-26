@@ -1,0 +1,45 @@
+FFFFF                                                                    [100%]
+=================================== FAILURES ===================================
+__________ test_v1233i_plain_hash_is_repaired_only_in_integrity_field __________
+
+    def test_v1233i_plain_hash_is_repaired_only_in_integrity_field():
+>       import request_hash_repair as m
+E       ModuleNotFoundError: No module named 'request_hash_repair'
+
+tests/test_request_hash_repair.py:61: ModuleNotFoundError
+___________ test_native_canonical_request_is_adopted_without_change ____________
+
+    def test_native_canonical_request_is_adopted_without_change():
+>       import request_hash_repair as m
+E       ModuleNotFoundError: No module named 'request_hash_repair'
+
+tests/test_request_hash_repair.py:80: ModuleNotFoundError
+______________________ test_unknown_bad_hash_fails_closed ______________________
+
+    def test_unknown_bad_hash_fails_closed():
+>       import request_hash_repair as m
+E       ModuleNotFoundError: No module named 'request_hash_repair'
+
+tests/test_request_hash_repair.py:91: ModuleNotFoundError
+_______________ test_repair_requires_exact_fixed_selection_rule ________________
+
+    def test_repair_requires_exact_fixed_selection_rule():
+>       import request_hash_repair as m
+E       ModuleNotFoundError: No module named 'request_hash_repair'
+
+tests/test_request_hash_repair.py:101: ModuleNotFoundError
+_____ test_recover_uses_repaired_request_and_preserves_original_as_source ______
+
+    def test_recover_uses_repaired_request_and_preserves_original_as_source():
+        text = (ROOT / "recover.py").read_text()
+>       assert "materialize_request_repair" in text
+E       assert 'materialize_request_repair' in '"""Exact producer repair/reentry. Does not scan or copy old shard outputs."""\nfrom __future__ import annotations\nim...True);print(\'SAME_LOGICAL_SUBMISSION_RESEND_AUTHORIZED=false\',flush=True)\n        rc=20\n    raise SystemExit(rc)\n'
+
+tests/test_request_hash_repair.py:112: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_request_hash_repair.py::test_v1233i_plain_hash_is_repaired_only_in_integrity_field - ModuleNotFoundError: No module named 'request_hash_repair'
+FAILED tests/test_request_hash_repair.py::test_native_canonical_request_is_adopted_without_change - ModuleNotFoundError: No module named 'request_hash_repair'
+FAILED tests/test_request_hash_repair.py::test_unknown_bad_hash_fails_closed - ModuleNotFoundError: No module named 'request_hash_repair'
+FAILED tests/test_request_hash_repair.py::test_repair_requires_exact_fixed_selection_rule - ModuleNotFoundError: No module named 'request_hash_repair'
+FAILED tests/test_request_hash_repair.py::test_recover_uses_repaired_request_and_preserves_original_as_source - assert 'materialize_request_repair' in '"""Exact producer repair/reentry. Does not scan or copy old shard outputs."""\nfrom __future__ import annotations\nim...True);print(\'SAME_LOGICAL_SUBMISSION_RESEND_AUTHORIZED=false\',flush=True)\n        rc=20\n    raise SystemExit(rc)\n'
+5 failed in 0.12s

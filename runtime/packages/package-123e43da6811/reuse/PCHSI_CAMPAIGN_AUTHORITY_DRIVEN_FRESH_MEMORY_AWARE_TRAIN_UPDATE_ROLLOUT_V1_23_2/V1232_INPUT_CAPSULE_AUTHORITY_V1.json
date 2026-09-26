@@ -1,0 +1,18 @@
+{
+  "capsule_filename": "V123133_MEMORY_AWARE_GENERIC_ROLLOUT_LIVE_SOURCE_CAPSULE.zip",
+  "capsule_sha256": "3464255b55717395babaa09d4851270035cf80fdef528463b68246ed01a71a6d",
+  "environment_execution_authorized": true,
+  "human_scientific_decision_required": false,
+  "local_bound_policy_runtime_authorized": true,
+  "memory_writeback_authorized": false,
+  "next_round_creation_authorized": false,
+  "production_literal_authority": false,
+  "promotion_or_rollback_authorized": false,
+  "provider_external_api_authorized": false,
+  "required_next": "BUILD_AND_SUBMIT_AUTHORITY_DRIVEN_FRESH_MEMORY_AWARE_TRAIN_UPDATE_ROLLOUT_FROM_V123133",
+  "required_terminal_status": "DIRECT_SHARED_TRAIN_RUNTIME_MEMORY_SLURM_AND_ALLOCATION_PREFLIGHT_CLOSED_NO_LAUNCH",
+  "schema_id": "PCHSI_V1232_INPUT_CAPSULE_AUTHORITY_V1",
+  "schema_version": 1,
+  "scientific_execution_authority": "FRESH_SAME_ROUND_MEMORY_AWARE_TRAIN_UPDATE_ROLLOUT_V1",
+  "training_execution_authorized": false
+}

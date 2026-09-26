@@ -1,0 +1,45 @@
+{
+  "schema_id": "FORMAL_POST_SUBMIT_INVALID_ROLLOUT_SOURCE_RECOVERY_V1",
+  "predecessor_owner_root": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df",
+  "predecessor_source_sha256": "a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df",
+  "initial_request_sha256": "4df82378171a302b68089348859040f4c4c605f39eb1f703932de9536561991e",
+  "refs": {
+    "owner_binding": {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/OWNER_BINDING.json",
+      "sha256": "7e4f501ad86fa3a31c0c929b09e5947bc022bec354d2076c8266bd0b7230ea64"
+    },
+    "intent": {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/attempts/000001/INTENT.json",
+      "sha256": "935f50b60ee92859ae14331a3094e3340cd22cd86b4c10de44883228ec79e121"
+    },
+    "submission": {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/attempts/000001/rollout/SUBMISSION_RECEIPT.json",
+      "sha256": "8ab9da965c5a8868c13422247351c6e06593c01540edddbde84a7b961b26ac44"
+    },
+    "failure": {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/attempts/000001/rollout/RESIDENT_ROLLOUT_OPERATIONAL_STOP.json",
+      "sha256": "3800f3cb2901ebc760ff2cbdea0fcbb0058c4121766e94628d518eb1b281f1ed"
+    },
+    "terminal": {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/attempts/000001/rollout/round_evidence/PCHSI_V1232K_GLOBAL_TERMINAL_V1.json",
+      "sha256": "fd12548121bb2d12bf2f2c2f50e86dc8d5f2facb176aad73f3aab1c9555ccdac"
+    },
+    "handoff": {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/attempts/000001/rollout/round_evidence/ROUND_ROLLOUT_EVIDENCE_HANDOFF_V1.json",
+      "sha256": "568d59be243f66877b6bc0c09ca646e98c7f627d74fbb711e4dce409ba0e82f8"
+    },
+    "manifest": {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/attempts/000001/rollout/MATERIALIZED_ROLLOUT.json",
+      "sha256": "7f10653a8596dfcfae789f6edc1a1831a97106a4e856a6c82942f4b59980b1a6"
+    },
+    "original_delegation": {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/PRE_SUBMIT_SOURCE_RECOVERY.json",
+      "sha256": "627a48786648e03229dd7c5647e322695c1765e29f4c9240c1734b70bca583e5"
+    }
+  },
+  "user_authorized_minimal_repair_and_relaunch": true,
+  "recover_whole_attempt_only": true,
+  "scientific_thresholds_changed": false,
+  "recovery_budget_reset": false,
+  "failure_fix": "Exclusive allocation-local policy endpoint; native invalid-attempt governance"
+}

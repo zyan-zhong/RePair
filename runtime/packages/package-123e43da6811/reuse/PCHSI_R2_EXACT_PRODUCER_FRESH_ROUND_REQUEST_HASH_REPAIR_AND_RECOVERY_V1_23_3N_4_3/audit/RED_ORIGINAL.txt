@@ -1,0 +1,40 @@
+F.FF                                                                     [100%]
+=================================== FAILURES ===================================
+__________ test_native_zero_ordinal_is_accepted_before_service_launch __________
+
+    def test_native_zero_ordinal_is_accepted_before_service_launch():
+>       assert run_original_attempt_block(0)[0].execution_attempt_id=='cell-a000'
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_original_regressions.py:37: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_original_regressions.py:33: in run_original_attempt_block
+    exec(compile(ast.Module(body=block[start:end],type_ignores=[]),'reviewed_attempt_block','exec'),env)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+>   ???
+E   RuntimeError: FRESH_EXECUTION_ATTEMPT_ORDINAL_INVALID
+
+reviewed_attempt_block:282: RuntimeError
+___________ test_worker_and_finalizer_share_attempt_identity_binding ___________
+
+    def test_worker_and_finalizer_share_attempt_identity_binding():
+        w=(SOURCE_ROOT/'shard_worker.py').read_text()
+        f=(SOURCE_ROOT/'global_finalize.py').read_text()
+>       assert 'schedule_for_attempt(' in w and 'schedule_for_attempt(' in f
+E       assert ('schedule_for_attempt(' in 'from __future__ import annotations\n\nimport argparse\nfrom dataclasses import asdict, replace as dataclass_replace\n...           except BaseException:\n                    pass\n\nif __name__=="__main__":\n    raise SystemExit(main())\n')
+
+tests/test_original_regressions.py:45: AssertionError
+_______ test_finalizer_consumes_current_request_not_legacy_capsule_round _______
+
+    def test_finalizer_consumes_current_request_not_legacy_capsule_round():
+        text=(SOURCE_ROOT/'global_finalize.py').read_text()
+>       assert 'load_current_request(' in text
+E       AssertionError: assert 'load_current_request(' in 'from __future__ import annotations\n\nfrom pathlib import Path\nimport os\nimport shutil\nimport sys\n\nfrom safe_io ...      return True\n    finally:\n        # Keep lock as durable proof that finalization was attempted.\n        pass\n'
+
+tests/test_original_regressions.py:49: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_original_regressions.py::test_native_zero_ordinal_is_accepted_before_service_launch - RuntimeError: FRESH_EXECUTION_ATTEMPT_ORDINAL_INVALID
+FAILED tests/test_original_regressions.py::test_worker_and_finalizer_share_attempt_identity_binding - assert ('schedule_for_attempt(' in 'from __future__ import annotations\n\nimport argparse\nfrom dataclasses import asdict, replace as dataclass_replace\n...           except BaseException:\n                    pass\n\nif __name__=="__main__":\n    raise SystemExit(main())\n')
+FAILED tests/test_original_regressions.py::test_finalizer_consumes_current_request_not_legacy_capsule_round - AssertionError: assert 'load_current_request(' in 'from __future__ import annotations\n\nfrom pathlib import Path\nimport os\nimport shutil\nimport sys\n\nfrom safe_io ...      return True\n    finally:\n        # Keep lock as durable proof that finalization was attempted.\n        pass\n'
+3 failed, 1 passed in 0.19s

@@ -1,0 +1,21 @@
+{
+  "schema_id": "CLEAN_EXISTING_TRAINER_STAGE_REQUEST_V1",
+  "repo": "/data/run01/scwb204/sdar_repro/badcase/github_exports/pchsi-wt-stage3u-planner-derived-budget-v1",
+  "fixed_head": "629895d8ca9a7e5be2c9f2991c5e8c71d9ca3df3",
+  "fixed_tree": "841809224d03713a39fe3cd20e9d590cd9db3e02",
+  "source_review": {
+    "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage3z_plan_handoff_v1/66cacb65558d14428ca1e990203a3dd36336a16d31562402a437e8e4e12e104b/PLAN_HANDOFF_REVIEW.zip",
+    "sha256": "ec4b2396208f71dad21bc3b2bdb4b29d05a3c2d3ecdf17ab14695a6ac99d8596"
+  },
+  "output_parent": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4a_clean_existing_trainer_v1",
+  "python": "/data/home/scwb204/run/sdar_repro/conda_envs/sdar_sft_py312/bin/python",
+  "existing_verifier": {
+    "path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/STAGE3V_V2_CORRECTED_EXECUTION_V1/rebind.py",
+    "sha256": "65ff15cd8f93039729b8f51529ceadbd3c427da5b0f419a3fc15828657e767ce",
+    "orchestration_sha256": "21ba88372e781c741b975afa8d1cd08ceedd1a23809428b0346edfa2ca79afef"
+  },
+  "slurm": {
+    "partition": "gpu_a800",
+    "time": "00:20:00"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "schema_id": "PCHSI_EXISTING_CURRENT_ROUND_DEPLOYMENT_LOCATORS_V1",
+  "source_ledger_section": "V123133-3/4; V248; V1231-3; V1233F",
+  "train_update_manifest_path": "/data/run01/scwb204/sdar_repro/badcase/benchmarks/baseline_runtime/shared_inputs_v1/pools/TRAIN_UPDATE.jsonl",
+  "train_root": "/data/run01/scwb204/.cache/alfworld/json_2.1.1/train",
+  "scripts_root": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts",
+  "output_parent": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/paper_critical_native_round",
+  "memory_runtime_environment_variable": "PCHSI_ROUND_MEMORY_RUNTIME_AUTHORITY",
+  "bootstrap_memory_relative_glob": "failure_memory_v1_final_execution/fixed_*/FINAL_RUNTIME_IDENTITY_V1.json",
+  "paths_are_locators_not_scientific_identity": true
+}

@@ -1,0 +1,17 @@
+{
+  "execution_status": "NOT_APPROVED",
+  "expected_normalized_outcome": "DENIED",
+  "forbidden_side_effects": [
+    "host_write",
+    "network",
+    "new_privilege",
+    "unreviewed_process"
+  ],
+  "payload_id": "fd_leak",
+  "payload_sha256": "a7037ab3ef4fed55f08dc10e29bbc983c857b4c36ae149517366e07a3f7f3a17",
+  "permitted_side_effects": [],
+  "probe_id": "P11",
+  "profile_id": "S1_PRODUCTION_V1",
+  "schema_version": 1,
+  "timeout_seconds": 10
+}

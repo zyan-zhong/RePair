@@ -1,0 +1,13 @@
+........................................................................ [ 96%]
+...                                                                      [100%]
+75 passed in 37.09s
+.....................................................................    [100%]
+69 passed in 44.30s
+..........                                                               [100%]
+10 passed in 41.68s
+................                                                         [100%]
+16 passed in 1.37s
+........................................................................ [ 54%]
+...........................................................              [100%]
+131 passed in 1.86s
+{"groups": [{"returncode": 0, "tests": ["work/v17/training_binding/tests", "work/v17/post_binding/tests"]}, {"returncode": 0, "tests": ["work/v17/continuity_binding/tests", "work/v17/offoff_binding/tests", "work/v17/entry/tests"]}, {"returncode": 0, "tests": ["work/v17/policy_binding/tests", "work/v17/memory_binding/tests"]}, {"returncode": 0, "tests": ["work/v17/analyzer_binding/tests"]}, {"returncode": 0, "tests": ["work/v17/memory_binding/tests/run_native_compatibility.py"]}], "production_readiness_inferred": false, "provider_call_count": 0, "schema_id": "FRESH_UNZIP_CURRENT_ENTRY_SOFTWARE_VERIFICATION_V1", "slurm_submission_count": 0, "training_execution_count": 0}

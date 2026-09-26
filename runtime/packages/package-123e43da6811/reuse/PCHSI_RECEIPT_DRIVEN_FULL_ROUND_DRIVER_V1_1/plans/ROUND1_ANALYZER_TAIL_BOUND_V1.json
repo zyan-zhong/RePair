@@ -1,0 +1,35 @@
+{
+  "schema_id": "PCHSI_FULL_ROUND_PLAN_V1",
+  "schema_version": 1,
+  "process_standard": "ONE_COMMAND_PI_K_TO_NEXT_ROUND_OR_TERMINAL_STOP_RECEIPT_DRIVEN",
+  "round_id": "STRONG-PRIMARY-R1-PI0-I1",
+  "policy_version": "PI0_CLEAN",
+  "expected_repo_head": "61c9b8798f0b0d1cfb046b5ca60d90b9d8d0da6a",
+  "expected_repo_branch": "integration/strong-primary-takeover-prep-v1",
+  "require_clean_worktree": true,
+  "gates": [
+    {
+      "gate_id": "ANALYZER_TAIL_CLOSEOUT",
+      "depends_on": [],
+      "binding_status": "BOUND",
+      "side_effect_class": "PROVIDER_OR_ENVIRONMENT",
+      "command": [
+        "bash",
+        "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/STRONG_PRIMARY_ROUND1_ANALYZER_TAIL_AUTORUN_V1_1/RUN_ANALYZER_TAIL.sh",
+        "--repo",
+        "{REPO}"
+      ],
+      "cwd": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/STRONG_PRIMARY_ROUND1_ANALYZER_TAIL_AUTORUN_V1_1",
+      "terminal_receipt": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/strong_primary_round1_analyzer_tail_autorun_v1/61c9b8798f0b0d1cfb046b5ca60d90b9d8d0da6a/STRONG_PRIMARY_ROUND1_ANALYZER_TAIL_AUTORUN_RESULT_V1.json",
+      "terminal_contract": {
+        "kind": "JSON_FIELD_IN",
+        "field": "status",
+        "in": [
+          "ANALYZER_TAIL_CLOSED_STRONG_PRIMARY",
+          "NO_COMPLETE_G_PAIRS"
+        ]
+      },
+      "notes": "Bound only to the already-frozen Round-1 Analyzer-tail package; does not change scientific runtime bytes."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+test_accounting_waits_for_all_four_not_parent (test_array_contract.ArrayContractTests.test_accounting_waits_for_all_four_not_parent) ... ok
+test_all_four_completed_zero_is_required (test_array_contract.ArrayContractTests.test_all_four_completed_zero_is_required) ... ok
+test_array_template_one_gpu_and_no_parent_directory_guess (test_array_contract.ArrayContractTests.test_array_template_one_gpu_and_no_parent_directory_guess) ... ok
+test_bad_prefix_rejected (test_array_contract.ArrayContractTests.test_bad_prefix_rejected) ... ok
+test_duplicate_accounting_is_not_silently_selected (test_array_contract.ArrayContractTests.test_duplicate_accounting_is_not_silently_selected) ... ok
+test_failed_or_nonzero_element_stops (test_array_contract.ArrayContractTests.test_failed_or_nonzero_element_stops) ... ok
+test_only_never_started_pending_job_is_migratable (test_array_contract.ArrayContractTests.test_only_never_started_pending_job_is_migratable) ... ok
+test_partial_resume_only_registered_incomplete_shards (test_array_contract.ArrayContractTests.test_partial_resume_only_registered_incomplete_shards) ... ok
+test_plan_partition_reuses_absolute_ordinal (test_array_contract.ArrayContractTests.test_plan_partition_reuses_absolute_ordinal) ... ok
+test_submission_uses_single_array_and_no_requeue (test_array_contract.ArrayContractTests.test_submission_uses_single_array_and_no_requeue) ... ok
+test_submit_output_ambiguity_rejected (test_array_contract.ArrayContractTests.test_submit_output_ambiguity_rejected) ... ok
+test_task_steps_not_counted_as_completed_elements (test_array_contract.ArrayContractTests.test_task_steps_not_counted_as_completed_elements) ... ok
+test_partial_accounting_with_no_queue_is_unknown_not_infinite_wait (test_array_contract.ArrayQueryTests.test_partial_accounting_with_no_queue_is_unknown_not_infinite_wait) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.026s
+
+OK

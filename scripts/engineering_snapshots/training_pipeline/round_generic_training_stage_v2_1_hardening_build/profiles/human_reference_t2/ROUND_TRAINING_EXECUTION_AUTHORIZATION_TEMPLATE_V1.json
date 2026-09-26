@@ -1,0 +1,19 @@
+{
+  "authorization_sha256": "949318dcf65be9179e3b425bc7a934b48bf2616d0644b370ffc26902c96c7bdd",
+  "authorization_status": "NOT_AUTHORIZED",
+  "authorized_optimizer_steps": 3,
+  "authorized_output_dir": null,
+  "authorized_target_loss_tokens": 151,
+  "diagnostic_only": true,
+  "execution_attempt_id": null,
+  "profile_id": "HUMAN_T2_UNVERIFIED_REPAIR_DIAGNOSTIC_PROFILE_V1",
+  "promotion_eligible": false,
+  "round_id": "HUMAN_REFERENCE_ROUND_PI1_PI2_V1",
+  "runner_freeze_root_sha256": null,
+  "schema_id": "ROUND_TRAINING_EXECUTION_AUTHORIZATION_V1",
+  "schema_version": 1,
+  "stage_attempt_root": null,
+  "stage_binding_sha256": "9185d27c16789689906eddc67759a6280572016cbfd1f1122ec18f608462853e",
+  "stage_id": "TRAINING_EXECUTION",
+  "training_execution_count_before": 0
+}

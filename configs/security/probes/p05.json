@@ -1,0 +1,17 @@
+{
+  "execution_status": "NOT_APPROVED",
+  "expected_normalized_outcome": "DENIED",
+  "forbidden_side_effects": [
+    "host_write",
+    "network",
+    "new_privilege",
+    "unreviewed_process"
+  ],
+  "payload_id": "write_dataset",
+  "payload_sha256": "fe8e1dba282a081d043e99f38d8f3a41544a593e5dde90100db69339e97932f8",
+  "permitted_side_effects": [],
+  "probe_id": "P05",
+  "profile_id": "S1_PRODUCTION_V1",
+  "schema_version": 1,
+  "timeout_seconds": 10
+}

@@ -1,0 +1,1209 @@
+{
+  "branch": {
+    "source_state_sha256": "18739065b796acb3a6dbd6d8e6bd709634ebeb21a3555f25b9819c672ad8626c",
+    "replicate_index": 0,
+    "arm": "F1",
+    "continuation_seed": 17,
+    "terminal_reason": "ENVIRONMENT_STEP_BUDGET_EXHAUSTED",
+    "terminal_success": false,
+    "typed_option_stop_reason": "NO_REGISTERED_RULE_APPLICABLE",
+    "final_budget": {
+      "consecutive_nonexecuted_attempt_count": 0,
+      "environment_step_count": 30,
+      "inadmissible_action_count": 0,
+      "policy_attempt_count": 29,
+      "protocol_failure_count": 0
+    },
+    "strategy_execution": {
+      "arm": "F1",
+      "budget_limits": {
+        "max_consecutive_nonexecuted_attempts": 3,
+        "max_environment_steps": 30,
+        "max_policy_attempts": 60
+      },
+      "calls": [
+        {
+          "base_prompt_sha256": "e0c90d8e2c2a6b5575dedc192d65ccc73dab4c923fc0f1d4a63a76d35a34b15c",
+          "base_prompt_text": "MEMORY_AUGMENTED_RAW_POLICY_PROMPT_V1\nTASK_GOAL_JSON=\"put a clean pan in stoveburner.\"\nCURRENT_OBSERVATION_JSON=\"You arrive at sinkbasin 1. On the sinkbasin 1, you see nothing.\"\nEXECUTED_TRANSITIONS_JSON=[{\"action\":\"go to stoveburner 1\",\"resulting_observation\":\"You arrive at stoveburner 1. On the stoveburner 1, you see a pan 1.\"},{\"action\":\"take pan 1 from stoveburner 1\",\"resulting_observation\":\"You pick up the pan 1 from the stoveburner 1.\"},{\"action\":\"go to sinkbasin 1\",\"resulting_observation\":\"You arrive at sinkbasin 1. On the sinkbasin 1, you see nothing.\"}]\nRETRIEVED_FAILURE_EXPERIENCES_JSON=[]\nVISIBLE_ADMISSIBLE_COMMANDS_JSON=[\"clean pan 1 with sinkbasin 1\",\"examine pan 1\",\"examine sinkbasin 1\",\"go to cabinet 1\",\"go to cabinet 10\",\"go to cabinet 11\",\"go to cabinet 12\",\"go to cabinet 13\",\"go to cabinet 2\",\"go to cabinet 3\",\"go to cabinet 4\",\"go to cabinet 5\",\"go to cabinet 6\",\"go to cabinet 7\",\"go to cabinet 8\",\"go to cabinet 9\",\"go to coffeemachine 1\",\"go to countertop 1\",\"go to diningtable 1\",\"go to drawer 1\",\"go to fridge 1\",\"go to garbagecan 1\",\"go to microwave 1\",\"go to shelf 1\",\"go to shelf 2\",\"go to shelf 3\",\"go to stoveburner 1\",\"go to stoveburner 2\",\"go to stoveburner 3\",\"go to stoveburner 4\",\"go to toaster 1\",\"help\",\"inventory\",\"look\",\"move pan 1 to sinkbasin 1\"]\nINTERFACE_FEEDBACK_JSON=null\nOUTPUT_REQUIREMENT={\"action\":\"<command>\"}",
+          "decision": {
+            "action": "examine pan 1",
+            "attempt_outcome": "ACTION_EXECUTED",
+            "budget_after": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 4,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 3,
+              "protocol_failure_count": 0
+            },
+            "budget_before": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 3,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 2,
+              "protocol_failure_count": 0
+            },
+            "feedback_code": null,
+            "should_call_env": true,
+            "termination_reason": null
+          },
+          "model_call_index": 2,
+          "policy_call_sha256": "a88f23367f679fe3e21968ea83a586fef839d3201b5e2d4164607fec7270a03f",
+          "prompt_sha256": "0bc613c4f75cf2f68f695a83126f3547c1450418bf60aa9a273d4cc6d0d26437"
+        },
+        {
+          "base_prompt_sha256": "a462ffe54daa3add5a39674cee8abf0dc17c4a910f34b726c3ccefc1fc9f8bce",
+          "base_prompt_text": "MEMORY_AUGMENTED_RAW_POLICY_PROMPT_V1\nTASK_GOAL_JSON=\"put a clean pan in stoveburner.\"\nCURRENT_OBSERVATION_JSON=\"This is a normal pan 1. In it, you see nothing.\"\nEXECUTED_TRANSITIONS_JSON=[{\"action\":\"go to stoveburner 1\",\"resulting_observation\":\"You arrive at stoveburner 1. On the stoveburner 1, you see a pan 1.\"},{\"action\":\"take pan 1 from stoveburner 1\",\"resulting_observation\":\"You pick up the pan 1 from the stoveburner 1.\"},{\"action\":\"go to sinkbasin 1\",\"resulting_observation\":\"You arrive at sinkbasin 1. On the sinkbasin 1, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"}]\nRETRIEVED_FAILURE_EXPERIENCES_JSON=[]\nVISIBLE_ADMISSIBLE_COMMANDS_JSON=[\"clean pan 1 with sinkbasin 1\",\"examine pan 1\",\"examine sinkbasin 1\",\"go to cabinet 1\",\"go to cabinet 10\",\"go to cabinet 11\",\"go to cabinet 12\",\"go to cabinet 13\",\"go to cabinet 2\",\"go to cabinet 3\",\"go to cabinet 4\",\"go to cabinet 5\",\"go to cabinet 6\",\"go to cabinet 7\",\"go to cabinet 8\",\"go to cabinet 9\",\"go to coffeemachine 1\",\"go to countertop 1\",\"go to diningtable 1\",\"go to drawer 1\",\"go to fridge 1\",\"go to garbagecan 1\",\"go to microwave 1\",\"go to shelf 1\",\"go to shelf 2\",\"go to shelf 3\",\"go to stoveburner 1\",\"go to stoveburner 2\",\"go to stoveburner 3\",\"go to stoveburner 4\",\"go to toaster 1\",\"help\",\"inventory\",\"look\",\"move pan 1 to sinkbasin 1\"]\nINTERFACE_FEEDBACK_JSON=null\nOUTPUT_REQUIREMENT={\"action\":\"<command>\"}",
+          "decision": {
+            "action": "examine pan 1",
+            "attempt_outcome": "ACTION_EXECUTED",
+            "budget_after": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 5,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 4,
+              "protocol_failure_count": 0
+            },
+            "budget_before": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 4,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 3,
+              "protocol_failure_count": 0
+            },
+            "feedback_code": null,
+            "should_call_env": true,
+            "termination_reason": null
+          },
+          "model_call_index": 3,
+          "policy_call_sha256": "f1e0c3c2167d516aecfc133d5df1016564ad6d38b0c69f46bd8aa47634850e5e",
+          "prompt_sha256": "bafb6d7b978857f1b3527a4d77aaf8ee4d4ef745f777c6079665414846a75036"
+        },
+        {
+          "base_prompt_sha256": "3fdf47506b3845d47832c24c0144fbeb3b87331d6275b2f4c70ab52f96018eaa",
+          "base_prompt_text": "MEMORY_AUGMENTED_RAW_POLICY_PROMPT_V1\nTASK_GOAL_JSON=\"put a clean pan in stoveburner.\"\nCURRENT_OBSERVATION_JSON=\"This is a normal pan 1. In it, you see nothing.\"\nEXECUTED_TRANSITIONS_JSON=[{\"action\":\"go to stoveburner 1\",\"resulting_observation\":\"You arrive at stoveburner 1. On the stoveburner 1, you see a pan 1.\"},{\"action\":\"take pan 1 from stoveburner 1\",\"resulting_observation\":\"You pick up the pan 1 from the stoveburner 1.\"},{\"action\":\"go to sinkbasin 1\",\"resulting_observation\":\"You arrive at sinkbasin 1. On the sinkbasin 1, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"}]\nRETRIEVED_FAILURE_EXPERIENCES_JSON=[]\nVISIBLE_ADMISSIBLE_COMMANDS_JSON=[\"clean pan 1 with sinkbasin 1\",\"examine pan 1\",\"examine sinkbasin 1\",\"go to cabinet 1\",\"go to cabinet 10\",\"go to cabinet 11\",\"go to cabinet 12\",\"go to cabinet 13\",\"go to cabinet 2\",\"go to cabinet 3\",\"go to cabinet 4\",\"go to cabinet 5\",\"go to cabinet 6\",\"go to cabinet 7\",\"go to cabinet 8\",\"go to cabinet 9\",\"go to coffeemachine 1\",\"go to countertop 1\",\"go to diningtable 1\",\"go to drawer 1\",\"go to fridge 1\",\"go to garbagecan 1\",\"go to microwave 1\",\"go to shelf 1\",\"go to shelf 2\",\"go to shelf 3\",\"go to stoveburner 1\",\"go to stoveburner 2\",\"go to stoveburner 3\",\"go to stoveburner 4\",\"go to toaster 1\",\"help\",\"inventory\",\"look\",\"move pan 1 to sinkbasin 1\"]\nINTERFACE_FEEDBACK_JSON=null\nOUTPUT_REQUIREMENT={\"action\":\"<command>\"}",
+          "decision": {
+            "action": "examine pan 1",
+            "attempt_outcome": "ACTION_EXECUTED",
+            "budget_after": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 6,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 5,
+              "protocol_failure_count": 0
+            },
+            "budget_before": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 5,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 4,
+              "protocol_failure_count": 0
+            },
+            "feedback_code": null,
+            "should_call_env": true,
+            "termination_reason": null
+          },
+          "model_call_index": 4,
+          "policy_call_sha256": "df05f33bd742839be07e3ad440b2eb36c27a2dfb5a188072cd05be2b138db82e",
+          "prompt_sha256": "2af12e9ec98e2fd391404c5f8726c7e3fe4161e607b6209d0fd3988d8d1a58fb"
+        },
+        {
+          "base_prompt_sha256": "2f875152ab6548b76ab31884a9303241a3076996574b86a227920da1dbf80e23",
+          "base_prompt_text": "MEMORY_AUGMENTED_RAW_POLICY_PROMPT_V1\nTASK_GOAL_JSON=\"put a clean pan in stoveburner.\"\nCURRENT_OBSERVATION_JSON=\"This is a normal pan 1. In it, you see nothing.\"\nEXECUTED_TRANSITIONS_JSON=[{\"action\":\"go to stoveburner 1\",\"resulting_observation\":\"You arrive at stoveburner 1. On the stoveburner 1, you see a pan 1.\"},{\"action\":\"take pan 1 from stoveburner 1\",\"resulting_observation\":\"You pick up the pan 1 from the stoveburner 1.\"},{\"action\":\"go to sinkbasin 1\",\"resulting_observation\":\"You arrive at sinkbasin 1. On the sinkbasin 1, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"}]\nRETRIEVED_FAILURE_EXPERIENCES_JSON=[]\nVISIBLE_ADMISSIBLE_COMMANDS_JSON=[\"clean pan 1 with sinkbasin 1\",\"examine pan 1\",\"examine sinkbasin 1\",\"go to cabinet 1\",\"go to cabinet 10\",\"go to cabinet 11\",\"go to cabinet 12\",\"go to cabinet 13\",\"go to cabinet 2\",\"go to cabinet 3\",\"go to cabinet 4\",\"go to cabinet 5\",\"go to cabinet 6\",\"go to cabinet 7\",\"go to cabinet 8\",\"go to cabinet 9\",\"go to coffeemachine 1\",\"go to countertop 1\",\"go to diningtable 1\",\"go to drawer 1\",\"go to fridge 1\",\"go to garbagecan 1\",\"go to microwave 1\",\"go to shelf 1\",\"go to shelf 2\",\"go to shelf 3\",\"go to stoveburner 1\",\"go to stoveburner 2\",\"go to stoveburner 3\",\"go to stoveburner 4\",\"go to toaster 1\",\"help\",\"inventory\",\"look\",\"move pan 1 to sinkbasin 1\"]\nINTERFACE_FEEDBACK_JSON=null\nOUTPUT_REQUIREMENT={\"action\":\"<command>\"}",
+          "decision": {
+            "action": "examine pan 1",
+            "attempt_outcome": "ACTION_EXECUTED",
+            "budget_after": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 7,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 6,
+              "protocol_failure_count": 0
+            },
+            "budget_before": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 6,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 5,
+              "protocol_failure_count": 0
+            },
+            "feedback_code": null,
+            "should_call_env": true,
+            "termination_reason": null
+          },
+          "model_call_index": 5,
+          "policy_call_sha256": "974bd81998e97fd32a61ade0ef05aad982b3b24eb256b6f7e8c5bc30abcd04e0",
+          "prompt_sha256": "8a277cbce45e4c534ab3671c7e15e0a3c07f015475234ec3d4a4fd23c9abbdd8"
+        },
+        {
+          "base_prompt_sha256": "45215f3c356100d4884b8610c264dcc29e370034ef063d1a37d53951a19db644",
+          "base_prompt_text": "MEMORY_AUGMENTED_RAW_POLICY_PROMPT_V1\nTASK_GOAL_JSON=\"put a clean pan in stoveburner.\"\nCURRENT_OBSERVATION_JSON=\"This is a normal pan 1. In it, you see nothing.\"\nEXECUTED_TRANSITIONS_JSON=[{\"action\":\"go to stoveburner 1\",\"resulting_observation\":\"You arrive at stoveburner 1. On the stoveburner 1, you see a pan 1.\"},{\"action\":\"take pan 1 from stoveburner 1\",\"resulting_observation\":\"You pick up the pan 1 from the stoveburner 1.\"},{\"action\":\"go to sinkbasin 1\",\"resulting_observation\":\"You arrive at sinkbasin 1. On the sinkbasin 1, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"}]\nRETRIEVED_FAILURE_EXPERIENCES_JSON=[]\nVISIBLE_ADMISSIBLE_COMMANDS_JSON=[\"clean pan 1 with sinkbasin 1\",\"examine pan 1\",\"examine sinkbasin 1\",\"go to cabinet 1\",\"go to cabinet 10\",\"go to cabinet 11\",\"go to cabinet 12\",\"go to cabinet 13\",\"go to cabinet 2\",\"go to cabinet 3\",\"go to cabinet 4\",\"go to cabinet 5\",\"go to cabinet 6\",\"go to cabinet 7\",\"go to cabinet 8\",\"go to cabinet 9\",\"go to coffeemachine 1\",\"go to countertop 1\",\"go to diningtable 1\",\"go to drawer 1\",\"go to fridge 1\",\"go to garbagecan 1\",\"go to microwave 1\",\"go to shelf 1\",\"go to shelf 2\",\"go to shelf 3\",\"go to stoveburner 1\",\"go to stoveburner 2\",\"go to stoveburner 3\",\"go to stoveburner 4\",\"go to toaster 1\",\"help\",\"inventory\",\"look\",\"move pan 1 to sinkbasin 1\"]\nINTERFACE_FEEDBACK_JSON=null\nOUTPUT_REQUIREMENT={\"action\":\"<command>\"}",
+          "decision": {
+            "action": "examine pan 1",
+            "attempt_outcome": "ACTION_EXECUTED",
+            "budget_after": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 8,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 7,
+              "protocol_failure_count": 0
+            },
+            "budget_before": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 7,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 6,
+              "protocol_failure_count": 0
+            },
+            "feedback_code": null,
+            "should_call_env": true,
+            "termination_reason": null
+          },
+          "model_call_index": 6,
+          "policy_call_sha256": "9e3aa844995b382d677386fe11dfb7e9fc5bcb4492267683340937591a5c7257",
+          "prompt_sha256": "a5e8600eec7c40bd32a81d3c7922f842e9f94b781660f7c5862e623f90118016"
+        },
+        {
+          "base_prompt_sha256": "e4622a5313a8ee6252ff55d7dd1a0cc9698fbcb004d81f36b7eb505e4b6a44ea",
+          "base_prompt_text": "MEMORY_AUGMENTED_RAW_POLICY_PROMPT_V1\nTASK_GOAL_JSON=\"put a clean pan in stoveburner.\"\nCURRENT_OBSERVATION_JSON=\"This is a normal pan 1. In it, you see nothing.\"\nEXECUTED_TRANSITIONS_JSON=[{\"action\":\"go to stoveburner 1\",\"resulting_observation\":\"You arrive at stoveburner 1. On the stoveburner 1, you see a pan 1.\"},{\"action\":\"take pan 1 from stoveburner 1\",\"resulting_observation\":\"You pick up the pan 1 from the stoveburner 1.\"},{\"action\":\"go to sinkbasin 1\",\"resulting_observation\":\"You arrive at sinkbasin 1. On the sinkbasin 1, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"}]\nRETRIEVED_FAILURE_EXPERIENCES_JSON=[]\nVISIBLE_ADMISSIBLE_COMMANDS_JSON=[\"clean pan 1 with sinkbasin 1\",\"examine pan 1\",\"examine sinkbasin 1\",\"go to cabinet 1\",\"go to cabinet 10\",\"go to cabinet 11\",\"go to cabinet 12\",\"go to cabinet 13\",\"go to cabinet 2\",\"go to cabinet 3\",\"go to cabinet 4\",\"go to cabinet 5\",\"go to cabinet 6\",\"go to cabinet 7\",\"go to cabinet 8\",\"go to cabinet 9\",\"go to coffeemachine 1\",\"go to countertop 1\",\"go to diningtable 1\",\"go to drawer 1\",\"go to fridge 1\",\"go to garbagecan 1\",\"go to microwave 1\",\"go to shelf 1\",\"go to shelf 2\",\"go to shelf 3\",\"go to stoveburner 1\",\"go to stoveburner 2\",\"go to stoveburner 3\",\"go to stoveburner 4\",\"go to toaster 1\",\"help\",\"inventory\",\"look\",\"move pan 1 to sinkbasin 1\"]\nINTERFACE_FEEDBACK_JSON=null\nOUTPUT_REQUIREMENT={\"action\":\"<command>\"}",
+          "decision": {
+            "action": "examine pan 1",
+            "attempt_outcome": "ACTION_EXECUTED",
+            "budget_after": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 9,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 8,
+              "protocol_failure_count": 0
+            },
+            "budget_before": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 8,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 7,
+              "protocol_failure_count": 0
+            },
+            "feedback_code": null,
+            "should_call_env": true,
+            "termination_reason": null
+          },
+          "model_call_index": 7,
+          "policy_call_sha256": "2d640218b2693221e6e9c3a1ffd0e22356a49e18d973b1ebd67131817ce8429e",
+          "prompt_sha256": "8da0bd6cef5052ad23caf3e316efed3b172e0b401d98a98d462c59f617be6c1d"
+        },
+        {
+          "base_prompt_sha256": "b07597de79f3adcabf674935fe202d64c6a306078d3619669aca14fd230a4c0e",
+          "base_prompt_text": "MEMORY_AUGMENTED_RAW_POLICY_PROMPT_V1\nTASK_GOAL_JSON=\"put a clean pan in stoveburner.\"\nCURRENT_OBSERVATION_JSON=\"This is a normal pan 1. In it, you see nothing.\"\nEXECUTED_TRANSITIONS_JSON=[{\"action\":\"take pan 1 from stoveburner 1\",\"resulting_observation\":\"You pick up the pan 1 from the stoveburner 1.\"},{\"action\":\"go to sinkbasin 1\",\"resulting_observation\":\"You arrive at sinkbasin 1. On the sinkbasin 1, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"}]\nRETRIEVED_FAILURE_EXPERIENCES_JSON=[]\nVISIBLE_ADMISSIBLE_COMMANDS_JSON=[\"clean pan 1 with sinkbasin 1\",\"examine pan 1\",\"examine sinkbasin 1\",\"go to cabinet 1\",\"go to cabinet 10\",\"go to cabinet 11\",\"go to cabinet 12\",\"go to cabinet 13\",\"go to cabinet 2\",\"go to cabinet 3\",\"go to cabinet 4\",\"go to cabinet 5\",\"go to cabinet 6\",\"go to cabinet 7\",\"go to cabinet 8\",\"go to cabinet 9\",\"go to coffeemachine 1\",\"go to countertop 1\",\"go to diningtable 1\",\"go to drawer 1\",\"go to fridge 1\",\"go to garbagecan 1\",\"go to microwave 1\",\"go to shelf 1\",\"go to shelf 2\",\"go to shelf 3\",\"go to stoveburner 1\",\"go to stoveburner 2\",\"go to stoveburner 3\",\"go to stoveburner 4\",\"go to toaster 1\",\"help\",\"inventory\",\"look\",\"move pan 1 to sinkbasin 1\"]\nINTERFACE_FEEDBACK_JSON=null\nOUTPUT_REQUIREMENT={\"action\":\"<command>\"}",
+          "decision": {
+            "action": "examine pan 1",
+            "attempt_outcome": "ACTION_EXECUTED",
+            "budget_after": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 10,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 9,
+              "protocol_failure_count": 0
+            },
+            "budget_before": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 9,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 8,
+              "protocol_failure_count": 0
+            },
+            "feedback_code": null,
+            "should_call_env": true,
+            "termination_reason": null
+          },
+          "model_call_index": 8,
+          "policy_call_sha256": "e43178bb15ed98d2594261408c415779e2f8b8427560396bfc57f47533aab15f",
+          "prompt_sha256": "04ecb3858b9b375b02cb5fc08ca3292020f63bf463db5b9b23e09a39805a432a"
+        },
+        {
+          "base_prompt_sha256": "8dd58034134f76fb11d909ea988bc91105c6c20ea23ad62ac01f84a855cd2936",
+          "base_prompt_text": "MEMORY_AUGMENTED_RAW_POLICY_PROMPT_V1\nTASK_GOAL_JSON=\"put a clean pan in stoveburner.\"\nCURRENT_OBSERVATION_JSON=\"This is a normal pan 1. In it, you see nothing.\"\nEXECUTED_TRANSITIONS_JSON=[{\"action\":\"go to sinkbasin 1\",\"resulting_observation\":\"You arrive at sinkbasin 1. On the sinkbasin 1, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"}]\nRETRIEVED_FAILURE_EXPERIENCES_JSON=[]\nVISIBLE_ADMISSIBLE_COMMANDS_JSON=[\"clean pan 1 with sinkbasin 1\",\"examine pan 1\",\"examine sinkbasin 1\",\"go to cabinet 1\",\"go to cabinet 10\",\"go to cabinet 11\",\"go to cabinet 12\",\"go to cabinet 13\",\"go to cabinet 2\",\"go to cabinet 3\",\"go to cabinet 4\",\"go to cabinet 5\",\"go to cabinet 6\",\"go to cabinet 7\",\"go to cabinet 8\",\"go to cabinet 9\",\"go to coffeemachine 1\",\"go to countertop 1\",\"go to diningtable 1\",\"go to drawer 1\",\"go to fridge 1\",\"go to garbagecan 1\",\"go to microwave 1\",\"go to shelf 1\",\"go to shelf 2\",\"go to shelf 3\",\"go to stoveburner 1\",\"go to stoveburner 2\",\"go to stoveburner 3\",\"go to stoveburner 4\",\"go to toaster 1\",\"help\",\"inventory\",\"look\",\"move pan 1 to sinkbasin 1\"]\nINTERFACE_FEEDBACK_JSON=null\nOUTPUT_REQUIREMENT={\"action\":\"<command>\"}",
+          "decision": {
+            "action": "examine pan 1",
+            "attempt_outcome": "ACTION_EXECUTED",
+            "budget_after": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 11,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 10,
+              "protocol_failure_count": 0
+            },
+            "budget_before": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 10,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 9,
+              "protocol_failure_count": 0
+            },
+            "feedback_code": null,
+            "should_call_env": true,
+            "termination_reason": null
+          },
+          "model_call_index": 9,
+          "policy_call_sha256": "963c116a65f78da72c5a1da1e456f2eba82d1746c82540e6bca93d240116f8e9",
+          "prompt_sha256": "a65a28e49e539246002d21f9b7e066b37d24d1be541dac1b1c18eb9f59eb706b"
+        },
+        {
+          "base_prompt_sha256": "ccb8d785957d2b228a96a2efb88958b6a15be2447ec8b9ddfdbee0c16d53e821",
+          "base_prompt_text": "MEMORY_AUGMENTED_RAW_POLICY_PROMPT_V1\nTASK_GOAL_JSON=\"put a clean pan in stoveburner.\"\nCURRENT_OBSERVATION_JSON=\"This is a normal pan 1. In it, you see nothing.\"\nEXECUTED_TRANSITIONS_JSON=[{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"}]\nRETRIEVED_FAILURE_EXPERIENCES_JSON=[]\nVISIBLE_ADMISSIBLE_COMMANDS_JSON=[\"clean pan 1 with sinkbasin 1\",\"examine pan 1\",\"examine sinkbasin 1\",\"go to cabinet 1\",\"go to cabinet 10\",\"go to cabinet 11\",\"go to cabinet 12\",\"go to cabinet 13\",\"go to cabinet 2\",\"go to cabinet 3\",\"go to cabinet 4\",\"go to cabinet 5\",\"go to cabinet 6\",\"go to cabinet 7\",\"go to cabinet 8\",\"go to cabinet 9\",\"go to coffeemachine 1\",\"go to countertop 1\",\"go to diningtable 1\",\"go to drawer 1\",\"go to fridge 1\",\"go to garbagecan 1\",\"go to microwave 1\",\"go to shelf 1\",\"go to shelf 2\",\"go to shelf 3\",\"go to stoveburner 1\",\"go to stoveburner 2\",\"go to stoveburner 3\",\"go to stoveburner 4\",\"go to toaster 1\",\"help\",\"inventory\",\"look\",\"move pan 1 to sinkbasin 1\"]\nINTERFACE_FEEDBACK_JSON=null\nOUTPUT_REQUIREMENT={\"action\":\"<command>\"}",
+          "decision": {
+            "action": "examine pan 1",
+            "attempt_outcome": "ACTION_EXECUTED",
+            "budget_after": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 12,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 11,
+              "protocol_failure_count": 0
+            },
+            "budget_before": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 11,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 10,
+              "protocol_failure_count": 0
+            },
+            "feedback_code": null,
+            "should_call_env": true,
+            "termination_reason": null
+          },
+          "model_call_index": 10,
+          "policy_call_sha256": "d45804f4ee8cb3d4e30dae11a9a24c3f03282a4985e8e76bfb2dc70431965b84",
+          "prompt_sha256": "b8e8cc2808a0ec0ddaabf030bfd777847411eacba767ebd6fcb3c83a1b024d8b"
+        },
+        {
+          "base_prompt_sha256": "ccb8d785957d2b228a96a2efb88958b6a15be2447ec8b9ddfdbee0c16d53e821",
+          "base_prompt_text": "MEMORY_AUGMENTED_RAW_POLICY_PROMPT_V1\nTASK_GOAL_JSON=\"put a clean pan in stoveburner.\"\nCURRENT_OBSERVATION_JSON=\"This is a normal pan 1. In it, you see nothing.\"\nEXECUTED_TRANSITIONS_JSON=[{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"}]\nRETRIEVED_FAILURE_EXPERIENCES_JSON=[]\nVISIBLE_ADMISSIBLE_COMMANDS_JSON=[\"clean pan 1 with sinkbasin 1\",\"examine pan 1\",\"examine sinkbasin 1\",\"go to cabinet 1\",\"go to cabinet 10\",\"go to cabinet 11\",\"go to cabinet 12\",\"go to cabinet 13\",\"go to cabinet 2\",\"go to cabinet 3\",\"go to cabinet 4\",\"go to cabinet 5\",\"go to cabinet 6\",\"go to cabinet 7\",\"go to cabinet 8\",\"go to cabinet 9\",\"go to coffeemachine 1\",\"go to countertop 1\",\"go to diningtable 1\",\"go to drawer 1\",\"go to fridge 1\",\"go to garbagecan 1\",\"go to microwave 1\",\"go to shelf 1\",\"go to shelf 2\",\"go to shelf 3\",\"go to stoveburner 1\",\"go to stoveburner 2\",\"go to stoveburner 3\",\"go to stoveburner 4\",\"go to toaster 1\",\"help\",\"inventory\",\"look\",\"move pan 1 to sinkbasin 1\"]\nINTERFACE_FEEDBACK_JSON=null\nOUTPUT_REQUIREMENT={\"action\":\"<command>\"}",
+          "decision": {
+            "action": "examine pan 1",
+            "attempt_outcome": "ACTION_EXECUTED",
+            "budget_after": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 13,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 12,
+              "protocol_failure_count": 0
+            },
+            "budget_before": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 12,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 11,
+              "protocol_failure_count": 0
+            },
+            "feedback_code": null,
+            "should_call_env": true,
+            "termination_reason": null
+          },
+          "model_call_index": 11,
+          "policy_call_sha256": "53841b42338327a46e959f75e8d3b49f49afc9530e9cbde57110e8e1eb320e46",
+          "prompt_sha256": "b8e8cc2808a0ec0ddaabf030bfd777847411eacba767ebd6fcb3c83a1b024d8b"
+        },
+        {
+          "base_prompt_sha256": "ccb8d785957d2b228a96a2efb88958b6a15be2447ec8b9ddfdbee0c16d53e821",
+          "base_prompt_text": "MEMORY_AUGMENTED_RAW_POLICY_PROMPT_V1\nTASK_GOAL_JSON=\"put a clean pan in stoveburner.\"\nCURRENT_OBSERVATION_JSON=\"This is a normal pan 1. In it, you see nothing.\"\nEXECUTED_TRANSITIONS_JSON=[{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"}]\nRETRIEVED_FAILURE_EXPERIENCES_JSON=[]\nVISIBLE_ADMISSIBLE_COMMANDS_JSON=[\"clean pan 1 with sinkbasin 1\",\"examine pan 1\",\"examine sinkbasin 1\",\"go to cabinet 1\",\"go to cabinet 10\",\"go to cabinet 11\",\"go to cabinet 12\",\"go to cabinet 13\",\"go to cabinet 2\",\"go to cabinet 3\",\"go to cabinet 4\",\"go to cabinet 5\",\"go to cabinet 6\",\"go to cabinet 7\",\"go to cabinet 8\",\"go to cabinet 9\",\"go to coffeemachine 1\",\"go to countertop 1\",\"go to diningtable 1\",\"go to drawer 1\",\"go to fridge 1\",\"go to garbagecan 1\",\"go to microwave 1\",\"go to shelf 1\",\"go to shelf 2\",\"go to shelf 3\",\"go to stoveburner 1\",\"go to stoveburner 2\",\"go to stoveburner 3\",\"go to stoveburner 4\",\"go to toaster 1\",\"help\",\"inventory\",\"look\",\"move pan 1 to sinkbasin 1\"]\nINTERFACE_FEEDBACK_JSON=null\nOUTPUT_REQUIREMENT={\"action\":\"<command>\"}",
+          "decision": {
+            "action": "examine pan 1",
+            "attempt_outcome": "ACTION_EXECUTED",
+            "budget_after": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 14,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 13,
+              "protocol_failure_count": 0
+            },
+            "budget_before": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 13,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 12,
+              "protocol_failure_count": 0
+            },
+            "feedback_code": null,
+            "should_call_env": true,
+            "termination_reason": null
+          },
+          "model_call_index": 12,
+          "policy_call_sha256": "34f9a4f065f784f9f20ee8690a42782bcf1691c323b8b0493701ce56630fac32",
+          "prompt_sha256": "b8e8cc2808a0ec0ddaabf030bfd777847411eacba767ebd6fcb3c83a1b024d8b"
+        },
+        {
+          "base_prompt_sha256": "ccb8d785957d2b228a96a2efb88958b6a15be2447ec8b9ddfdbee0c16d53e821",
+          "base_prompt_text": "MEMORY_AUGMENTED_RAW_POLICY_PROMPT_V1\nTASK_GOAL_JSON=\"put a clean pan in stoveburner.\"\nCURRENT_OBSERVATION_JSON=\"This is a normal pan 1. In it, you see nothing.\"\nEXECUTED_TRANSITIONS_JSON=[{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"}]\nRETRIEVED_FAILURE_EXPERIENCES_JSON=[]\nVISIBLE_ADMISSIBLE_COMMANDS_JSON=[\"clean pan 1 with sinkbasin 1\",\"examine pan 1\",\"examine sinkbasin 1\",\"go to cabinet 1\",\"go to cabinet 10\",\"go to cabinet 11\",\"go to cabinet 12\",\"go to cabinet 13\",\"go to cabinet 2\",\"go to cabinet 3\",\"go to cabinet 4\",\"go to cabinet 5\",\"go to cabinet 6\",\"go to cabinet 7\",\"go to cabinet 8\",\"go to cabinet 9\",\"go to coffeemachine 1\",\"go to countertop 1\",\"go to diningtable 1\",\"go to drawer 1\",\"go to fridge 1\",\"go to garbagecan 1\",\"go to microwave 1\",\"go to shelf 1\",\"go to shelf 2\",\"go to shelf 3\",\"go to stoveburner 1\",\"go to stoveburner 2\",\"go to stoveburner 3\",\"go to stoveburner 4\",\"go to toaster 1\",\"help\",\"inventory\",\"look\",\"move pan 1 to sinkbasin 1\"]\nINTERFACE_FEEDBACK_JSON=null\nOUTPUT_REQUIREMENT={\"action\":\"<command>\"}",
+          "decision": {
+            "action": "examine pan 1",
+            "attempt_outcome": "ACTION_EXECUTED",
+            "budget_after": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 15,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 14,
+              "protocol_failure_count": 0
+            },
+            "budget_before": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 14,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 13,
+              "protocol_failure_count": 0
+            },
+            "feedback_code": null,
+            "should_call_env": true,
+            "termination_reason": null
+          },
+          "model_call_index": 13,
+          "policy_call_sha256": "99f2bab73c0fdd582b4ccf0046526fbcc29ea470cbe0e6471719bbcfdc2707b6",
+          "prompt_sha256": "b8e8cc2808a0ec0ddaabf030bfd777847411eacba767ebd6fcb3c83a1b024d8b"
+        },
+        {
+          "base_prompt_sha256": "ccb8d785957d2b228a96a2efb88958b6a15be2447ec8b9ddfdbee0c16d53e821",
+          "base_prompt_text": "MEMORY_AUGMENTED_RAW_POLICY_PROMPT_V1\nTASK_GOAL_JSON=\"put a clean pan in stoveburner.\"\nCURRENT_OBSERVATION_JSON=\"This is a normal pan 1. In it, you see nothing.\"\nEXECUTED_TRANSITIONS_JSON=[{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"}]\nRETRIEVED_FAILURE_EXPERIENCES_JSON=[]\nVISIBLE_ADMISSIBLE_COMMANDS_JSON=[\"clean pan 1 with sinkbasin 1\",\"examine pan 1\",\"examine sinkbasin 1\",\"go to cabinet 1\",\"go to cabinet 10\",\"go to cabinet 11\",\"go to cabinet 12\",\"go to cabinet 13\",\"go to cabinet 2\",\"go to cabinet 3\",\"go to cabinet 4\",\"go to cabinet 5\",\"go to cabinet 6\",\"go to cabinet 7\",\"go to cabinet 8\",\"go to cabinet 9\",\"go to coffeemachine 1\",\"go to countertop 1\",\"go to diningtable 1\",\"go to drawer 1\",\"go to fridge 1\",\"go to garbagecan 1\",\"go to microwave 1\",\"go to shelf 1\",\"go to shelf 2\",\"go to shelf 3\",\"go to stoveburner 1\",\"go to stoveburner 2\",\"go to stoveburner 3\",\"go to stoveburner 4\",\"go to toaster 1\",\"help\",\"inventory\",\"look\",\"move pan 1 to sinkbasin 1\"]\nINTERFACE_FEEDBACK_JSON=null\nOUTPUT_REQUIREMENT={\"action\":\"<command>\"}",
+          "decision": {
+            "action": "examine pan 1",
+            "attempt_outcome": "ACTION_EXECUTED",
+            "budget_after": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 16,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 15,
+              "protocol_failure_count": 0
+            },
+            "budget_before": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 15,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 14,
+              "protocol_failure_count": 0
+            },
+            "feedback_code": null,
+            "should_call_env": true,
+            "termination_reason": null
+          },
+          "model_call_index": 14,
+          "policy_call_sha256": "b04f5fc81a7e9b5bd30176b54cc978a5866bf6d7dd5b81bbe68a7ae440262813",
+          "prompt_sha256": "b8e8cc2808a0ec0ddaabf030bfd777847411eacba767ebd6fcb3c83a1b024d8b"
+        },
+        {
+          "base_prompt_sha256": "ccb8d785957d2b228a96a2efb88958b6a15be2447ec8b9ddfdbee0c16d53e821",
+          "base_prompt_text": "MEMORY_AUGMENTED_RAW_POLICY_PROMPT_V1\nTASK_GOAL_JSON=\"put a clean pan in stoveburner.\"\nCURRENT_OBSERVATION_JSON=\"This is a normal pan 1. In it, you see nothing.\"\nEXECUTED_TRANSITIONS_JSON=[{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"}]\nRETRIEVED_FAILURE_EXPERIENCES_JSON=[]\nVISIBLE_ADMISSIBLE_COMMANDS_JSON=[\"clean pan 1 with sinkbasin 1\",\"examine pan 1\",\"examine sinkbasin 1\",\"go to cabinet 1\",\"go to cabinet 10\",\"go to cabinet 11\",\"go to cabinet 12\",\"go to cabinet 13\",\"go to cabinet 2\",\"go to cabinet 3\",\"go to cabinet 4\",\"go to cabinet 5\",\"go to cabinet 6\",\"go to cabinet 7\",\"go to cabinet 8\",\"go to cabinet 9\",\"go to coffeemachine 1\",\"go to countertop 1\",\"go to diningtable 1\",\"go to drawer 1\",\"go to fridge 1\",\"go to garbagecan 1\",\"go to microwave 1\",\"go to shelf 1\",\"go to shelf 2\",\"go to shelf 3\",\"go to stoveburner 1\",\"go to stoveburner 2\",\"go to stoveburner 3\",\"go to stoveburner 4\",\"go to toaster 1\",\"help\",\"inventory\",\"look\",\"move pan 1 to sinkbasin 1\"]\nINTERFACE_FEEDBACK_JSON=null\nOUTPUT_REQUIREMENT={\"action\":\"<command>\"}",
+          "decision": {
+            "action": "examine pan 1",
+            "attempt_outcome": "ACTION_EXECUTED",
+            "budget_after": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 17,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 16,
+              "protocol_failure_count": 0
+            },
+            "budget_before": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 16,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 15,
+              "protocol_failure_count": 0
+            },
+            "feedback_code": null,
+            "should_call_env": true,
+            "termination_reason": null
+          },
+          "model_call_index": 15,
+          "policy_call_sha256": "ef0543246b88f6e5f0c593f1e2d104e644ac08aaf82dcf1eb5fc7162571244f6",
+          "prompt_sha256": "b8e8cc2808a0ec0ddaabf030bfd777847411eacba767ebd6fcb3c83a1b024d8b"
+        },
+        {
+          "base_prompt_sha256": "ccb8d785957d2b228a96a2efb88958b6a15be2447ec8b9ddfdbee0c16d53e821",
+          "base_prompt_text": "MEMORY_AUGMENTED_RAW_POLICY_PROMPT_V1\nTASK_GOAL_JSON=\"put a clean pan in stoveburner.\"\nCURRENT_OBSERVATION_JSON=\"This is a normal pan 1. In it, you see nothing.\"\nEXECUTED_TRANSITIONS_JSON=[{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"}]\nRETRIEVED_FAILURE_EXPERIENCES_JSON=[]\nVISIBLE_ADMISSIBLE_COMMANDS_JSON=[\"clean pan 1 with sinkbasin 1\",\"examine pan 1\",\"examine sinkbasin 1\",\"go to cabinet 1\",\"go to cabinet 10\",\"go to cabinet 11\",\"go to cabinet 12\",\"go to cabinet 13\",\"go to cabinet 2\",\"go to cabinet 3\",\"go to cabinet 4\",\"go to cabinet 5\",\"go to cabinet 6\",\"go to cabinet 7\",\"go to cabinet 8\",\"go to cabinet 9\",\"go to coffeemachine 1\",\"go to countertop 1\",\"go to diningtable 1\",\"go to drawer 1\",\"go to fridge 1\",\"go to garbagecan 1\",\"go to microwave 1\",\"go to shelf 1\",\"go to shelf 2\",\"go to shelf 3\",\"go to stoveburner 1\",\"go to stoveburner 2\",\"go to stoveburner 3\",\"go to stoveburner 4\",\"go to toaster 1\",\"help\",\"inventory\",\"look\",\"move pan 1 to sinkbasin 1\"]\nINTERFACE_FEEDBACK_JSON=null\nOUTPUT_REQUIREMENT={\"action\":\"<command>\"}",
+          "decision": {
+            "action": "examine pan 1",
+            "attempt_outcome": "ACTION_EXECUTED",
+            "budget_after": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 18,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 17,
+              "protocol_failure_count": 0
+            },
+            "budget_before": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 17,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 16,
+              "protocol_failure_count": 0
+            },
+            "feedback_code": null,
+            "should_call_env": true,
+            "termination_reason": null
+          },
+          "model_call_index": 16,
+          "policy_call_sha256": "4433015fbf7e3003febd0634c51341f8f6cb10de0fe22845d9bd393775caf9de",
+          "prompt_sha256": "b8e8cc2808a0ec0ddaabf030bfd777847411eacba767ebd6fcb3c83a1b024d8b"
+        },
+        {
+          "base_prompt_sha256": "ccb8d785957d2b228a96a2efb88958b6a15be2447ec8b9ddfdbee0c16d53e821",
+          "base_prompt_text": "MEMORY_AUGMENTED_RAW_POLICY_PROMPT_V1\nTASK_GOAL_JSON=\"put a clean pan in stoveburner.\"\nCURRENT_OBSERVATION_JSON=\"This is a normal pan 1. In it, you see nothing.\"\nEXECUTED_TRANSITIONS_JSON=[{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"}]\nRETRIEVED_FAILURE_EXPERIENCES_JSON=[]\nVISIBLE_ADMISSIBLE_COMMANDS_JSON=[\"clean pan 1 with sinkbasin 1\",\"examine pan 1\",\"examine sinkbasin 1\",\"go to cabinet 1\",\"go to cabinet 10\",\"go to cabinet 11\",\"go to cabinet 12\",\"go to cabinet 13\",\"go to cabinet 2\",\"go to cabinet 3\",\"go to cabinet 4\",\"go to cabinet 5\",\"go to cabinet 6\",\"go to cabinet 7\",\"go to cabinet 8\",\"go to cabinet 9\",\"go to coffeemachine 1\",\"go to countertop 1\",\"go to diningtable 1\",\"go to drawer 1\",\"go to fridge 1\",\"go to garbagecan 1\",\"go to microwave 1\",\"go to shelf 1\",\"go to shelf 2\",\"go to shelf 3\",\"go to stoveburner 1\",\"go to stoveburner 2\",\"go to stoveburner 3\",\"go to stoveburner 4\",\"go to toaster 1\",\"help\",\"inventory\",\"look\",\"move pan 1 to sinkbasin 1\"]\nINTERFACE_FEEDBACK_JSON=null\nOUTPUT_REQUIREMENT={\"action\":\"<command>\"}",
+          "decision": {
+            "action": "examine pan 1",
+            "attempt_outcome": "ACTION_EXECUTED",
+            "budget_after": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 19,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 18,
+              "protocol_failure_count": 0
+            },
+            "budget_before": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 18,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 17,
+              "protocol_failure_count": 0
+            },
+            "feedback_code": null,
+            "should_call_env": true,
+            "termination_reason": null
+          },
+          "model_call_index": 17,
+          "policy_call_sha256": "9de5c8ec42a9411acd2bbc881c962a9c78e33762d7b6f12457989631d41df1ab",
+          "prompt_sha256": "b8e8cc2808a0ec0ddaabf030bfd777847411eacba767ebd6fcb3c83a1b024d8b"
+        },
+        {
+          "base_prompt_sha256": "ccb8d785957d2b228a96a2efb88958b6a15be2447ec8b9ddfdbee0c16d53e821",
+          "base_prompt_text": "MEMORY_AUGMENTED_RAW_POLICY_PROMPT_V1\nTASK_GOAL_JSON=\"put a clean pan in stoveburner.\"\nCURRENT_OBSERVATION_JSON=\"This is a normal pan 1. In it, you see nothing.\"\nEXECUTED_TRANSITIONS_JSON=[{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"}]\nRETRIEVED_FAILURE_EXPERIENCES_JSON=[]\nVISIBLE_ADMISSIBLE_COMMANDS_JSON=[\"clean pan 1 with sinkbasin 1\",\"examine pan 1\",\"examine sinkbasin 1\",\"go to cabinet 1\",\"go to cabinet 10\",\"go to cabinet 11\",\"go to cabinet 12\",\"go to cabinet 13\",\"go to cabinet 2\",\"go to cabinet 3\",\"go to cabinet 4\",\"go to cabinet 5\",\"go to cabinet 6\",\"go to cabinet 7\",\"go to cabinet 8\",\"go to cabinet 9\",\"go to coffeemachine 1\",\"go to countertop 1\",\"go to diningtable 1\",\"go to drawer 1\",\"go to fridge 1\",\"go to garbagecan 1\",\"go to microwave 1\",\"go to shelf 1\",\"go to shelf 2\",\"go to shelf 3\",\"go to stoveburner 1\",\"go to stoveburner 2\",\"go to stoveburner 3\",\"go to stoveburner 4\",\"go to toaster 1\",\"help\",\"inventory\",\"look\",\"move pan 1 to sinkbasin 1\"]\nINTERFACE_FEEDBACK_JSON=null\nOUTPUT_REQUIREMENT={\"action\":\"<command>\"}",
+          "decision": {
+            "action": "examine pan 1",
+            "attempt_outcome": "ACTION_EXECUTED",
+            "budget_after": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 20,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 19,
+              "protocol_failure_count": 0
+            },
+            "budget_before": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 19,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 18,
+              "protocol_failure_count": 0
+            },
+            "feedback_code": null,
+            "should_call_env": true,
+            "termination_reason": null
+          },
+          "model_call_index": 18,
+          "policy_call_sha256": "6f8abbfc7f1d8bfd6ce09302b44bc5c3cb195b3755a477a136ba129cfba16d53",
+          "prompt_sha256": "b8e8cc2808a0ec0ddaabf030bfd777847411eacba767ebd6fcb3c83a1b024d8b"
+        },
+        {
+          "base_prompt_sha256": "ccb8d785957d2b228a96a2efb88958b6a15be2447ec8b9ddfdbee0c16d53e821",
+          "base_prompt_text": "MEMORY_AUGMENTED_RAW_POLICY_PROMPT_V1\nTASK_GOAL_JSON=\"put a clean pan in stoveburner.\"\nCURRENT_OBSERVATION_JSON=\"This is a normal pan 1. In it, you see nothing.\"\nEXECUTED_TRANSITIONS_JSON=[{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"}]\nRETRIEVED_FAILURE_EXPERIENCES_JSON=[]\nVISIBLE_ADMISSIBLE_COMMANDS_JSON=[\"clean pan 1 with sinkbasin 1\",\"examine pan 1\",\"examine sinkbasin 1\",\"go to cabinet 1\",\"go to cabinet 10\",\"go to cabinet 11\",\"go to cabinet 12\",\"go to cabinet 13\",\"go to cabinet 2\",\"go to cabinet 3\",\"go to cabinet 4\",\"go to cabinet 5\",\"go to cabinet 6\",\"go to cabinet 7\",\"go to cabinet 8\",\"go to cabinet 9\",\"go to coffeemachine 1\",\"go to countertop 1\",\"go to diningtable 1\",\"go to drawer 1\",\"go to fridge 1\",\"go to garbagecan 1\",\"go to microwave 1\",\"go to shelf 1\",\"go to shelf 2\",\"go to shelf 3\",\"go to stoveburner 1\",\"go to stoveburner 2\",\"go to stoveburner 3\",\"go to stoveburner 4\",\"go to toaster 1\",\"help\",\"inventory\",\"look\",\"move pan 1 to sinkbasin 1\"]\nINTERFACE_FEEDBACK_JSON=null\nOUTPUT_REQUIREMENT={\"action\":\"<command>\"}",
+          "decision": {
+            "action": "examine pan 1",
+            "attempt_outcome": "ACTION_EXECUTED",
+            "budget_after": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 21,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 20,
+              "protocol_failure_count": 0
+            },
+            "budget_before": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 20,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 19,
+              "protocol_failure_count": 0
+            },
+            "feedback_code": null,
+            "should_call_env": true,
+            "termination_reason": null
+          },
+          "model_call_index": 19,
+          "policy_call_sha256": "55701d4c239ccc301d0112772bd9d7b4b524508baadf54b9a9d672dcb1a4bcf7",
+          "prompt_sha256": "b8e8cc2808a0ec0ddaabf030bfd777847411eacba767ebd6fcb3c83a1b024d8b"
+        },
+        {
+          "base_prompt_sha256": "ccb8d785957d2b228a96a2efb88958b6a15be2447ec8b9ddfdbee0c16d53e821",
+          "base_prompt_text": "MEMORY_AUGMENTED_RAW_POLICY_PROMPT_V1\nTASK_GOAL_JSON=\"put a clean pan in stoveburner.\"\nCURRENT_OBSERVATION_JSON=\"This is a normal pan 1. In it, you see nothing.\"\nEXECUTED_TRANSITIONS_JSON=[{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"}]\nRETRIEVED_FAILURE_EXPERIENCES_JSON=[]\nVISIBLE_ADMISSIBLE_COMMANDS_JSON=[\"clean pan 1 with sinkbasin 1\",\"examine pan 1\",\"examine sinkbasin 1\",\"go to cabinet 1\",\"go to cabinet 10\",\"go to cabinet 11\",\"go to cabinet 12\",\"go to cabinet 13\",\"go to cabinet 2\",\"go to cabinet 3\",\"go to cabinet 4\",\"go to cabinet 5\",\"go to cabinet 6\",\"go to cabinet 7\",\"go to cabinet 8\",\"go to cabinet 9\",\"go to coffeemachine 1\",\"go to countertop 1\",\"go to diningtable 1\",\"go to drawer 1\",\"go to fridge 1\",\"go to garbagecan 1\",\"go to microwave 1\",\"go to shelf 1\",\"go to shelf 2\",\"go to shelf 3\",\"go to stoveburner 1\",\"go to stoveburner 2\",\"go to stoveburner 3\",\"go to stoveburner 4\",\"go to toaster 1\",\"help\",\"inventory\",\"look\",\"move pan 1 to sinkbasin 1\"]\nINTERFACE_FEEDBACK_JSON=null\nOUTPUT_REQUIREMENT={\"action\":\"<command>\"}",
+          "decision": {
+            "action": "examine pan 1",
+            "attempt_outcome": "ACTION_EXECUTED",
+            "budget_after": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 22,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 21,
+              "protocol_failure_count": 0
+            },
+            "budget_before": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 21,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 20,
+              "protocol_failure_count": 0
+            },
+            "feedback_code": null,
+            "should_call_env": true,
+            "termination_reason": null
+          },
+          "model_call_index": 20,
+          "policy_call_sha256": "97dbb6a21bee3adb2c31e735b6a6af2b34e9816449338ef9ead1a4fa40b366e9",
+          "prompt_sha256": "b8e8cc2808a0ec0ddaabf030bfd777847411eacba767ebd6fcb3c83a1b024d8b"
+        },
+        {
+          "base_prompt_sha256": "ccb8d785957d2b228a96a2efb88958b6a15be2447ec8b9ddfdbee0c16d53e821",
+          "base_prompt_text": "MEMORY_AUGMENTED_RAW_POLICY_PROMPT_V1\nTASK_GOAL_JSON=\"put a clean pan in stoveburner.\"\nCURRENT_OBSERVATION_JSON=\"This is a normal pan 1. In it, you see nothing.\"\nEXECUTED_TRANSITIONS_JSON=[{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"}]\nRETRIEVED_FAILURE_EXPERIENCES_JSON=[]\nVISIBLE_ADMISSIBLE_COMMANDS_JSON=[\"clean pan 1 with sinkbasin 1\",\"examine pan 1\",\"examine sinkbasin 1\",\"go to cabinet 1\",\"go to cabinet 10\",\"go to cabinet 11\",\"go to cabinet 12\",\"go to cabinet 13\",\"go to cabinet 2\",\"go to cabinet 3\",\"go to cabinet 4\",\"go to cabinet 5\",\"go to cabinet 6\",\"go to cabinet 7\",\"go to cabinet 8\",\"go to cabinet 9\",\"go to coffeemachine 1\",\"go to countertop 1\",\"go to diningtable 1\",\"go to drawer 1\",\"go to fridge 1\",\"go to garbagecan 1\",\"go to microwave 1\",\"go to shelf 1\",\"go to shelf 2\",\"go to shelf 3\",\"go to stoveburner 1\",\"go to stoveburner 2\",\"go to stoveburner 3\",\"go to stoveburner 4\",\"go to toaster 1\",\"help\",\"inventory\",\"look\",\"move pan 1 to sinkbasin 1\"]\nINTERFACE_FEEDBACK_JSON=null\nOUTPUT_REQUIREMENT={\"action\":\"<command>\"}",
+          "decision": {
+            "action": "examine pan 1",
+            "attempt_outcome": "ACTION_EXECUTED",
+            "budget_after": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 23,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 22,
+              "protocol_failure_count": 0
+            },
+            "budget_before": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 22,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 21,
+              "protocol_failure_count": 0
+            },
+            "feedback_code": null,
+            "should_call_env": true,
+            "termination_reason": null
+          },
+          "model_call_index": 21,
+          "policy_call_sha256": "4011d07d30310de3ac68d045389724c99e0d04b3398923b890ca52fcff465358",
+          "prompt_sha256": "b8e8cc2808a0ec0ddaabf030bfd777847411eacba767ebd6fcb3c83a1b024d8b"
+        },
+        {
+          "base_prompt_sha256": "ccb8d785957d2b228a96a2efb88958b6a15be2447ec8b9ddfdbee0c16d53e821",
+          "base_prompt_text": "MEMORY_AUGMENTED_RAW_POLICY_PROMPT_V1\nTASK_GOAL_JSON=\"put a clean pan in stoveburner.\"\nCURRENT_OBSERVATION_JSON=\"This is a normal pan 1. In it, you see nothing.\"\nEXECUTED_TRANSITIONS_JSON=[{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"}]\nRETRIEVED_FAILURE_EXPERIENCES_JSON=[]\nVISIBLE_ADMISSIBLE_COMMANDS_JSON=[\"clean pan 1 with sinkbasin 1\",\"examine pan 1\",\"examine sinkbasin 1\",\"go to cabinet 1\",\"go to cabinet 10\",\"go to cabinet 11\",\"go to cabinet 12\",\"go to cabinet 13\",\"go to cabinet 2\",\"go to cabinet 3\",\"go to cabinet 4\",\"go to cabinet 5\",\"go to cabinet 6\",\"go to cabinet 7\",\"go to cabinet 8\",\"go to cabinet 9\",\"go to coffeemachine 1\",\"go to countertop 1\",\"go to diningtable 1\",\"go to drawer 1\",\"go to fridge 1\",\"go to garbagecan 1\",\"go to microwave 1\",\"go to shelf 1\",\"go to shelf 2\",\"go to shelf 3\",\"go to stoveburner 1\",\"go to stoveburner 2\",\"go to stoveburner 3\",\"go to stoveburner 4\",\"go to toaster 1\",\"help\",\"inventory\",\"look\",\"move pan 1 to sinkbasin 1\"]\nINTERFACE_FEEDBACK_JSON=null\nOUTPUT_REQUIREMENT={\"action\":\"<command>\"}",
+          "decision": {
+            "action": "examine pan 1",
+            "attempt_outcome": "ACTION_EXECUTED",
+            "budget_after": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 24,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 23,
+              "protocol_failure_count": 0
+            },
+            "budget_before": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 23,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 22,
+              "protocol_failure_count": 0
+            },
+            "feedback_code": null,
+            "should_call_env": true,
+            "termination_reason": null
+          },
+          "model_call_index": 22,
+          "policy_call_sha256": "d201d40c1c138ade4f6e28040b8bd83997f3947f3f03cc84e35e4b2cff7beafd",
+          "prompt_sha256": "b8e8cc2808a0ec0ddaabf030bfd777847411eacba767ebd6fcb3c83a1b024d8b"
+        },
+        {
+          "base_prompt_sha256": "ccb8d785957d2b228a96a2efb88958b6a15be2447ec8b9ddfdbee0c16d53e821",
+          "base_prompt_text": "MEMORY_AUGMENTED_RAW_POLICY_PROMPT_V1\nTASK_GOAL_JSON=\"put a clean pan in stoveburner.\"\nCURRENT_OBSERVATION_JSON=\"This is a normal pan 1. In it, you see nothing.\"\nEXECUTED_TRANSITIONS_JSON=[{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"}]\nRETRIEVED_FAILURE_EXPERIENCES_JSON=[]\nVISIBLE_ADMISSIBLE_COMMANDS_JSON=[\"clean pan 1 with sinkbasin 1\",\"examine pan 1\",\"examine sinkbasin 1\",\"go to cabinet 1\",\"go to cabinet 10\",\"go to cabinet 11\",\"go to cabinet 12\",\"go to cabinet 13\",\"go to cabinet 2\",\"go to cabinet 3\",\"go to cabinet 4\",\"go to cabinet 5\",\"go to cabinet 6\",\"go to cabinet 7\",\"go to cabinet 8\",\"go to cabinet 9\",\"go to coffeemachine 1\",\"go to countertop 1\",\"go to diningtable 1\",\"go to drawer 1\",\"go to fridge 1\",\"go to garbagecan 1\",\"go to microwave 1\",\"go to shelf 1\",\"go to shelf 2\",\"go to shelf 3\",\"go to stoveburner 1\",\"go to stoveburner 2\",\"go to stoveburner 3\",\"go to stoveburner 4\",\"go to toaster 1\",\"help\",\"inventory\",\"look\",\"move pan 1 to sinkbasin 1\"]\nINTERFACE_FEEDBACK_JSON=null\nOUTPUT_REQUIREMENT={\"action\":\"<command>\"}",
+          "decision": {
+            "action": "examine pan 1",
+            "attempt_outcome": "ACTION_EXECUTED",
+            "budget_after": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 25,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 24,
+              "protocol_failure_count": 0
+            },
+            "budget_before": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 24,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 23,
+              "protocol_failure_count": 0
+            },
+            "feedback_code": null,
+            "should_call_env": true,
+            "termination_reason": null
+          },
+          "model_call_index": 23,
+          "policy_call_sha256": "31db516a0b4fc38a1a260dfd16b9b5ae544ecb244c9cfe57652fbff8e3e14545",
+          "prompt_sha256": "b8e8cc2808a0ec0ddaabf030bfd777847411eacba767ebd6fcb3c83a1b024d8b"
+        },
+        {
+          "base_prompt_sha256": "ccb8d785957d2b228a96a2efb88958b6a15be2447ec8b9ddfdbee0c16d53e821",
+          "base_prompt_text": "MEMORY_AUGMENTED_RAW_POLICY_PROMPT_V1\nTASK_GOAL_JSON=\"put a clean pan in stoveburner.\"\nCURRENT_OBSERVATION_JSON=\"This is a normal pan 1. In it, you see nothing.\"\nEXECUTED_TRANSITIONS_JSON=[{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"}]\nRETRIEVED_FAILURE_EXPERIENCES_JSON=[]\nVISIBLE_ADMISSIBLE_COMMANDS_JSON=[\"clean pan 1 with sinkbasin 1\",\"examine pan 1\",\"examine sinkbasin 1\",\"go to cabinet 1\",\"go to cabinet 10\",\"go to cabinet 11\",\"go to cabinet 12\",\"go to cabinet 13\",\"go to cabinet 2\",\"go to cabinet 3\",\"go to cabinet 4\",\"go to cabinet 5\",\"go to cabinet 6\",\"go to cabinet 7\",\"go to cabinet 8\",\"go to cabinet 9\",\"go to coffeemachine 1\",\"go to countertop 1\",\"go to diningtable 1\",\"go to drawer 1\",\"go to fridge 1\",\"go to garbagecan 1\",\"go to microwave 1\",\"go to shelf 1\",\"go to shelf 2\",\"go to shelf 3\",\"go to stoveburner 1\",\"go to stoveburner 2\",\"go to stoveburner 3\",\"go to stoveburner 4\",\"go to toaster 1\",\"help\",\"inventory\",\"look\",\"move pan 1 to sinkbasin 1\"]\nINTERFACE_FEEDBACK_JSON=null\nOUTPUT_REQUIREMENT={\"action\":\"<command>\"}",
+          "decision": {
+            "action": "examine pan 1",
+            "attempt_outcome": "ACTION_EXECUTED",
+            "budget_after": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 26,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 25,
+              "protocol_failure_count": 0
+            },
+            "budget_before": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 25,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 24,
+              "protocol_failure_count": 0
+            },
+            "feedback_code": null,
+            "should_call_env": true,
+            "termination_reason": null
+          },
+          "model_call_index": 24,
+          "policy_call_sha256": "6c6f9bc606c4a91f18e0af94bdf0ba8ac97304464475429821427f61a0c19e77",
+          "prompt_sha256": "b8e8cc2808a0ec0ddaabf030bfd777847411eacba767ebd6fcb3c83a1b024d8b"
+        },
+        {
+          "base_prompt_sha256": "ccb8d785957d2b228a96a2efb88958b6a15be2447ec8b9ddfdbee0c16d53e821",
+          "base_prompt_text": "MEMORY_AUGMENTED_RAW_POLICY_PROMPT_V1\nTASK_GOAL_JSON=\"put a clean pan in stoveburner.\"\nCURRENT_OBSERVATION_JSON=\"This is a normal pan 1. In it, you see nothing.\"\nEXECUTED_TRANSITIONS_JSON=[{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"}]\nRETRIEVED_FAILURE_EXPERIENCES_JSON=[]\nVISIBLE_ADMISSIBLE_COMMANDS_JSON=[\"clean pan 1 with sinkbasin 1\",\"examine pan 1\",\"examine sinkbasin 1\",\"go to cabinet 1\",\"go to cabinet 10\",\"go to cabinet 11\",\"go to cabinet 12\",\"go to cabinet 13\",\"go to cabinet 2\",\"go to cabinet 3\",\"go to cabinet 4\",\"go to cabinet 5\",\"go to cabinet 6\",\"go to cabinet 7\",\"go to cabinet 8\",\"go to cabinet 9\",\"go to coffeemachine 1\",\"go to countertop 1\",\"go to diningtable 1\",\"go to drawer 1\",\"go to fridge 1\",\"go to garbagecan 1\",\"go to microwave 1\",\"go to shelf 1\",\"go to shelf 2\",\"go to shelf 3\",\"go to stoveburner 1\",\"go to stoveburner 2\",\"go to stoveburner 3\",\"go to stoveburner 4\",\"go to toaster 1\",\"help\",\"inventory\",\"look\",\"move pan 1 to sinkbasin 1\"]\nINTERFACE_FEEDBACK_JSON=null\nOUTPUT_REQUIREMENT={\"action\":\"<command>\"}",
+          "decision": {
+            "action": "examine pan 1",
+            "attempt_outcome": "ACTION_EXECUTED",
+            "budget_after": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 27,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 26,
+              "protocol_failure_count": 0
+            },
+            "budget_before": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 26,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 25,
+              "protocol_failure_count": 0
+            },
+            "feedback_code": null,
+            "should_call_env": true,
+            "termination_reason": null
+          },
+          "model_call_index": 25,
+          "policy_call_sha256": "96eb636c9529f9331de2e4dc68ad8afeac415b29d704d766aace45ab01bbfbc1",
+          "prompt_sha256": "b8e8cc2808a0ec0ddaabf030bfd777847411eacba767ebd6fcb3c83a1b024d8b"
+        },
+        {
+          "base_prompt_sha256": "ccb8d785957d2b228a96a2efb88958b6a15be2447ec8b9ddfdbee0c16d53e821",
+          "base_prompt_text": "MEMORY_AUGMENTED_RAW_POLICY_PROMPT_V1\nTASK_GOAL_JSON=\"put a clean pan in stoveburner.\"\nCURRENT_OBSERVATION_JSON=\"This is a normal pan 1. In it, you see nothing.\"\nEXECUTED_TRANSITIONS_JSON=[{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"}]\nRETRIEVED_FAILURE_EXPERIENCES_JSON=[]\nVISIBLE_ADMISSIBLE_COMMANDS_JSON=[\"clean pan 1 with sinkbasin 1\",\"examine pan 1\",\"examine sinkbasin 1\",\"go to cabinet 1\",\"go to cabinet 10\",\"go to cabinet 11\",\"go to cabinet 12\",\"go to cabinet 13\",\"go to cabinet 2\",\"go to cabinet 3\",\"go to cabinet 4\",\"go to cabinet 5\",\"go to cabinet 6\",\"go to cabinet 7\",\"go to cabinet 8\",\"go to cabinet 9\",\"go to coffeemachine 1\",\"go to countertop 1\",\"go to diningtable 1\",\"go to drawer 1\",\"go to fridge 1\",\"go to garbagecan 1\",\"go to microwave 1\",\"go to shelf 1\",\"go to shelf 2\",\"go to shelf 3\",\"go to stoveburner 1\",\"go to stoveburner 2\",\"go to stoveburner 3\",\"go to stoveburner 4\",\"go to toaster 1\",\"help\",\"inventory\",\"look\",\"move pan 1 to sinkbasin 1\"]\nINTERFACE_FEEDBACK_JSON=null\nOUTPUT_REQUIREMENT={\"action\":\"<command>\"}",
+          "decision": {
+            "action": "examine pan 1",
+            "attempt_outcome": "ACTION_EXECUTED",
+            "budget_after": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 28,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 27,
+              "protocol_failure_count": 0
+            },
+            "budget_before": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 27,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 26,
+              "protocol_failure_count": 0
+            },
+            "feedback_code": null,
+            "should_call_env": true,
+            "termination_reason": null
+          },
+          "model_call_index": 26,
+          "policy_call_sha256": "48f4d79573f74d4917da10bc1b51fe194eea7c2919b9c04c09b0120c6f47a339",
+          "prompt_sha256": "b8e8cc2808a0ec0ddaabf030bfd777847411eacba767ebd6fcb3c83a1b024d8b"
+        },
+        {
+          "base_prompt_sha256": "ccb8d785957d2b228a96a2efb88958b6a15be2447ec8b9ddfdbee0c16d53e821",
+          "base_prompt_text": "MEMORY_AUGMENTED_RAW_POLICY_PROMPT_V1\nTASK_GOAL_JSON=\"put a clean pan in stoveburner.\"\nCURRENT_OBSERVATION_JSON=\"This is a normal pan 1. In it, you see nothing.\"\nEXECUTED_TRANSITIONS_JSON=[{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"}]\nRETRIEVED_FAILURE_EXPERIENCES_JSON=[]\nVISIBLE_ADMISSIBLE_COMMANDS_JSON=[\"clean pan 1 with sinkbasin 1\",\"examine pan 1\",\"examine sinkbasin 1\",\"go to cabinet 1\",\"go to cabinet 10\",\"go to cabinet 11\",\"go to cabinet 12\",\"go to cabinet 13\",\"go to cabinet 2\",\"go to cabinet 3\",\"go to cabinet 4\",\"go to cabinet 5\",\"go to cabinet 6\",\"go to cabinet 7\",\"go to cabinet 8\",\"go to cabinet 9\",\"go to coffeemachine 1\",\"go to countertop 1\",\"go to diningtable 1\",\"go to drawer 1\",\"go to fridge 1\",\"go to garbagecan 1\",\"go to microwave 1\",\"go to shelf 1\",\"go to shelf 2\",\"go to shelf 3\",\"go to stoveburner 1\",\"go to stoveburner 2\",\"go to stoveburner 3\",\"go to stoveburner 4\",\"go to toaster 1\",\"help\",\"inventory\",\"look\",\"move pan 1 to sinkbasin 1\"]\nINTERFACE_FEEDBACK_JSON=null\nOUTPUT_REQUIREMENT={\"action\":\"<command>\"}",
+          "decision": {
+            "action": "examine pan 1",
+            "attempt_outcome": "ACTION_EXECUTED",
+            "budget_after": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 29,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 28,
+              "protocol_failure_count": 0
+            },
+            "budget_before": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 28,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 27,
+              "protocol_failure_count": 0
+            },
+            "feedback_code": null,
+            "should_call_env": true,
+            "termination_reason": null
+          },
+          "model_call_index": 27,
+          "policy_call_sha256": "7bf21f50976f0acb8151b950afc0bb7df26eae05667ec83ad579f57ddabfe7d8",
+          "prompt_sha256": "b8e8cc2808a0ec0ddaabf030bfd777847411eacba767ebd6fcb3c83a1b024d8b"
+        },
+        {
+          "base_prompt_sha256": "ccb8d785957d2b228a96a2efb88958b6a15be2447ec8b9ddfdbee0c16d53e821",
+          "base_prompt_text": "MEMORY_AUGMENTED_RAW_POLICY_PROMPT_V1\nTASK_GOAL_JSON=\"put a clean pan in stoveburner.\"\nCURRENT_OBSERVATION_JSON=\"This is a normal pan 1. In it, you see nothing.\"\nEXECUTED_TRANSITIONS_JSON=[{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"},{\"action\":\"examine pan 1\",\"resulting_observation\":\"This is a normal pan 1. In it, you see nothing.\"}]\nRETRIEVED_FAILURE_EXPERIENCES_JSON=[]\nVISIBLE_ADMISSIBLE_COMMANDS_JSON=[\"clean pan 1 with sinkbasin 1\",\"examine pan 1\",\"examine sinkbasin 1\",\"go to cabinet 1\",\"go to cabinet 10\",\"go to cabinet 11\",\"go to cabinet 12\",\"go to cabinet 13\",\"go to cabinet 2\",\"go to cabinet 3\",\"go to cabinet 4\",\"go to cabinet 5\",\"go to cabinet 6\",\"go to cabinet 7\",\"go to cabinet 8\",\"go to cabinet 9\",\"go to coffeemachine 1\",\"go to countertop 1\",\"go to diningtable 1\",\"go to drawer 1\",\"go to fridge 1\",\"go to garbagecan 1\",\"go to microwave 1\",\"go to shelf 1\",\"go to shelf 2\",\"go to shelf 3\",\"go to stoveburner 1\",\"go to stoveburner 2\",\"go to stoveburner 3\",\"go to stoveburner 4\",\"go to toaster 1\",\"help\",\"inventory\",\"look\",\"move pan 1 to sinkbasin 1\"]\nINTERFACE_FEEDBACK_JSON=null\nOUTPUT_REQUIREMENT={\"action\":\"<command>\"}",
+          "decision": {
+            "action": "examine pan 1",
+            "attempt_outcome": "ACTION_EXECUTED",
+            "budget_after": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 30,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 29,
+              "protocol_failure_count": 0
+            },
+            "budget_before": {
+              "consecutive_nonexecuted_attempt_count": 0,
+              "environment_step_count": 29,
+              "inadmissible_action_count": 0,
+              "policy_attempt_count": 28,
+              "protocol_failure_count": 0
+            },
+            "feedback_code": null,
+            "should_call_env": true,
+            "termination_reason": null
+          },
+          "model_call_index": 28,
+          "policy_call_sha256": "01a8aeff9d3ce989324d068636fcbd965073d8be37b39fb378c3e2c13c543581",
+          "prompt_sha256": "b8e8cc2808a0ec0ddaabf030bfd777847411eacba767ebd6fcb3c83a1b024d8b"
+        }
+      ],
+      "causal_verification_scope": "COMPLETE_REGISTERED_GUARDED_STRATEGY_INTERVENTION",
+      "contract": {
+        "causal_verification_scope": "COMPLETE_REGISTERED_GUARDED_STRATEGY_INTERVENTION",
+        "compiler_id": "PUBLIC_PHASE_RULES_THEN_FROZEN_POLICY_FULL_PLAN_CUE_V1",
+        "complete_registered_candidate": {
+          "all_intervention_actions_count_against_environment_budget": true,
+          "candidate_kind": "FAILURE_REPAIR",
+          "candidate_sha256": "3e7b116e6d321c8b0fd5d0af223405fd50a53c3288366e123a7197d28246dc7b",
+          "candidate_status": "EXECUTABLE_EXACT_ACTION",
+          "exact_action": "go to sinkbasin 1",
+          "live_menu_revalidation_required": true,
+          "menu_sha256": "2428bd13881314e48bca5c26e652f8d65d82ee2832ab03694225b43cd5cd0746",
+          "option_actions": [],
+          "requires_environment_verification": true,
+          "schema_id": "ANALYZER_REPAIR_CANDIDATE_V1",
+          "schema_version": 1,
+          "source_proposal_sha256": "0db681060b9f6b297f66bd19134eb94d61a5afa809f7d6cfad6edd76bb5eae12",
+          "source_state_sha256": "18739065b796acb3a6dbd6d8e6bd709634ebeb21a3555f25b9819c672ad8626c",
+          "termination_condition": null
+        },
+        "contract_sha256": "e72695c21dca20835d23330d78f4b1996b5a11ce0719c5f8881af98894b9d720",
+        "cue_active_until_native_episode_or_budget_terminal": true,
+        "dispatch_mode": "GUARDED_PHASES_THEN_CUE_GUIDED_POLICY",
+        "execution_identity_sha256": "758f20e48783bde4c83bdb7c375dd3a1bd2ee107bad52464fe0d25822a0431d6",
+        "extra_external_model_calls_allowed": false,
+        "frozen_policy_unchanged": true,
+        "full_plan_cue_on_every_f1_policy_call": true,
+        "max_intervention_steps": 4,
+        "native_budget_limits_unchanged": true,
+        "option_actions": [
+          "go to sinkbasin 1"
+        ],
+        "plan": {
+          "experiment_id": "guarded-validation-405f90ce4b9e871dfe1b",
+          "goal": "put a clean pan in stoveburner.",
+          "menu_sha256": "2428bd13881314e48bca5c26e652f8d65d82ee2832ab03694225b43cd5cd0746",
+          "original_candidate_sha256": "26a17e68a41946686006a2183695602a01c097818306e12fead25ad8a32ce282",
+          "original_proposal_sha256": "cf9577944e65149fe829e6724f613caa83e07379d78b0b458d21d47054cc373a",
+          "program": [
+            {
+              "complete_when_any": [
+                {
+                  "arguments": [
+                    "clean",
+                    "pan 1"
+                  ],
+                  "kind": "OBSERVATION_ALL_SUBSTRINGS",
+                  "negate": false
+                }
+              ],
+              "purpose": "Clean the carried pan at the sink before attempting any stoveburner placement.",
+              "rules": [
+                {
+                  "command": {
+                    "kind": "PREFIX_SUFFIX",
+                    "suffix": "with sinkbasin 1",
+                    "text": "clean pan "
+                  },
+                  "max_uses": 1,
+                  "when_all": [
+                    {
+                      "arguments": [
+                        "pan"
+                      ],
+                      "kind": "PUBLIC_TARGET_CARRIED",
+                      "negate": false
+                    },
+                    {
+                      "arguments": [
+                        "clean pan "
+                      ],
+                      "kind": "MENU_COMMAND_PREFIX",
+                      "negate": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "complete_when_any": [
+                {
+                  "arguments": [
+                    "stoveburner 1"
+                  ],
+                  "kind": "OBSERVATION_ALL_SUBSTRINGS",
+                  "negate": false
+                }
+              ],
+              "purpose": "After public confirmation of cleaning, return with the pan to the known stoveburner 1 location.",
+              "rules": [
+                {
+                  "command": {
+                    "kind": "EXACT",
+                    "suffix": "",
+                    "text": "go to stoveburner 1"
+                  },
+                  "max_uses": 1,
+                  "when_all": [
+                    {
+                      "arguments": [
+                        "clean",
+                        "pan 1"
+                      ],
+                      "kind": "OBSERVATION_ALL_SUBSTRINGS",
+                      "negate": false
+                    },
+                    {
+                      "arguments": [
+                        "pan"
+                      ],
+                      "kind": "PUBLIC_TARGET_CARRIED",
+                      "negate": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "complete_when_any": [
+                {
+                  "arguments": [
+                    "pan 1",
+                    "stoveburner 1"
+                  ],
+                  "kind": "OBSERVATION_ALL_SUBSTRINGS",
+                  "negate": false
+                }
+              ],
+              "purpose": "Place the cleaned pan in stoveburner 1 without resuming the inverse take/place cycle.",
+              "rules": [
+                {
+                  "command": {
+                    "kind": "PREFIX_SUFFIX",
+                    "suffix": "to stoveburner 1",
+                    "text": "move pan "
+                  },
+                  "max_uses": 1,
+                  "when_all": [
+                    {
+                      "arguments": [
+                        "pan"
+                      ],
+                      "kind": "PUBLIC_TARGET_CARRIED",
+                      "negate": false
+                    },
+                    {
+                      "arguments": [
+                        "move pan "
+                      ],
+                      "kind": "MENU_COMMAND_PREFIX",
+                      "negate": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "schema_id": "GUARDED_STRATEGY_PLAN_V1",
+          "schema_version": 1,
+          "source_observation_sha256": "0becbaf3080ca1d81557f7652db68dc074d87739d5ddb3f41ce631ac47d221b5",
+          "source_state_sha256": "18739065b796acb3a6dbd6d8e6bd709634ebeb21a3555f25b9819c672ad8626c",
+          "strategy": {
+            "action": "go to sinkbasin 1",
+            "current_subgoal": "Take the carried pan to the sink and obtain public confirmation that it has been cleaned before any final placement.",
+            "expected_next_event": "A sinkbasin observation and live menu should appear, ideally with one admissible command matching cleaning the carried pan with sinkbasin 1.",
+            "expected_state_change": "The initial action should change location toward sinkbasin 1 while retaining the pan; if live commands support the remaining phases, the pan should then be publicly cleaned and only afterward placed in a stoveburner.",
+            "fallback_condition": "Return to the frozen parent if any phase lacks one uniquely admissible rule. The parent should inspect the live menu, preserve pan identity and possession, pursue only a menu-supported cleaning interaction, and avoid placing or taking the pan again until cleaning is publicly evidenced.",
+            "principal_bottleneck": "The policy failed to enforce the clean-state prerequisite and then failed to escape an inverse take/place loop.",
+            "progress_criterion": "Progress requires public evidence in order: a cleaning response naming pan 1, arrival at stoveburner 1 while the pan remains carried, and then a transfer response naming both pan 1 and stoveburner 1.",
+            "recovery_trigger": "Recover if an action produces no phase-appropriate public observation, if a required selector is absent or ambiguous, if the pan is no longer carried before verified placement, or if take/place inversion starts recurring."
+          },
+          "strategy_plan_sha256": "0db681060b9f6b297f66bd19134eb94d61a5afa809f7d6cfad6edd76bb5eae12"
+        },
+        "schema_id": "GUARDED_STRATEGY_CONTRACT_V1",
+        "schema_version": 1,
+        "source_candidate_sha256": "3e7b116e6d321c8b0fd5d0af223405fd50a53c3288366e123a7197d28246dc7b",
+        "source_state_sha256": "18739065b796acb3a6dbd6d8e6bd709634ebeb21a3555f25b9819c672ad8626c",
+        "standalone_action_causal_effect_claimed": false
+      },
+      "guarded_trace": [
+        {
+          "action": "go to sinkbasin 1",
+          "decision": "EXECUTE",
+          "initial": true,
+          "registered_action_index": 0
+        },
+        {
+          "decision": "STOP",
+          "phase": 0,
+          "reason": "NO_REGISTERED_RULE_APPLICABLE"
+        }
+      ],
+      "schema_id": "CUE_GUIDED_BRANCH_EXECUTION_V1",
+      "source_budget": {
+        "consecutive_nonexecuted_attempt_count": 0,
+        "environment_step_count": 2,
+        "inadmissible_action_count": 0,
+        "policy_attempt_count": 2,
+        "protocol_failure_count": 0
+      },
+      "source_call_index": 2,
+      "source_commands": [
+        "examine pan 1",
+        "examine stoveburner 1",
+        "examine stoveburner 3",
+        "go to cabinet 1",
+        "go to cabinet 10",
+        "go to cabinet 11",
+        "go to cabinet 12",
+        "go to cabinet 13",
+        "go to cabinet 2",
+        "go to cabinet 3",
+        "go to cabinet 4",
+        "go to cabinet 5",
+        "go to cabinet 6",
+        "go to cabinet 7",
+        "go to cabinet 8",
+        "go to cabinet 9",
+        "go to coffeemachine 1",
+        "go to countertop 1",
+        "go to diningtable 1",
+        "go to drawer 1",
+        "go to fridge 1",
+        "go to garbagecan 1",
+        "go to microwave 1",
+        "go to shelf 1",
+        "go to shelf 2",
+        "go to shelf 3",
+        "go to sinkbasin 1",
+        "go to stoveburner 2",
+        "go to stoveburner 4",
+        "go to toaster 1",
+        "help",
+        "inventory",
+        "look",
+        "move pan 1 to stoveburner 1",
+        "move pan 1 to stoveburner 3"
+      ],
+      "source_history": [
+        {
+          "action": "go to stoveburner 1",
+          "resulting_observation": "You arrive at stoveburner 1. On the stoveburner 1, you see a pan 1."
+        },
+        {
+          "action": "take pan 1 from stoveburner 1",
+          "resulting_observation": "You pick up the pan 1 from the stoveburner 1."
+        }
+      ],
+      "source_observation": "You pick up the pan 1 from the stoveburner 1.",
+      "source_prompt_sha256": "d1ed69439ff06ec55a4345a00085a22537bca08ff6809d2d28cc7feb15b10a96",
+      "standalone_action_causal_effect_claimed": false
+    },
+    "actions": [
+      "go to sinkbasin 1",
+      "examine pan 1",
+      "examine pan 1",
+      "examine pan 1",
+      "examine pan 1",
+      "examine pan 1",
+      "examine pan 1",
+      "examine pan 1",
+      "examine pan 1",
+      "examine pan 1",
+      "examine pan 1",
+      "examine pan 1",
+      "examine pan 1",
+      "examine pan 1",
+      "examine pan 1",
+      "examine pan 1",
+      "examine pan 1",
+      "examine pan 1",
+      "examine pan 1",
+      "examine pan 1",
+      "examine pan 1",
+      "examine pan 1",
+      "examine pan 1",
+      "examine pan 1",
+      "examine pan 1",
+      "examine pan 1",
+      "examine pan 1",
+      "examine pan 1"
+    ],
+    "last_observation": "This is a normal pan 1. In it, you see nothing.",
+    "last_menu": [
+      "clean pan 1 with sinkbasin 1",
+      "examine pan 1",
+      "examine sinkbasin 1",
+      "go to cabinet 1",
+      "go to cabinet 10",
+      "go to cabinet 11",
+      "go to cabinet 12",
+      "go to cabinet 13",
+      "go to cabinet 2",
+      "go to cabinet 3",
+      "go to cabinet 4",
+      "go to cabinet 5",
+      "go to cabinet 6",
+      "go to cabinet 7",
+      "go to cabinet 8",
+      "go to cabinet 9",
+      "go to coffeemachine 1",
+      "go to countertop 1",
+      "go to diningtable 1",
+      "go to drawer 1",
+      "go to fridge 1",
+      "go to garbagecan 1",
+      "go to microwave 1",
+      "go to shelf 1",
+      "go to shelf 2",
+      "go to shelf 3",
+      "go to stoveburner 1",
+      "go to stoveburner 2",
+      "go to stoveburner 3",
+      "go to stoveburner 4",
+      "go to toaster 1",
+      "help",
+      "inventory",
+      "look",
+      "move pan 1 to sinkbasin 1"
+    ],
+    "intervention_sequence": [
+      {
+        "action": "go to sinkbasin 1",
+        "budget_after": {
+          "consecutive_nonexecuted_attempt_count": 0,
+          "environment_step_count": 3,
+          "inadmissible_action_count": 0,
+          "policy_attempt_count": 2,
+          "protocol_failure_count": 0
+        },
+        "budget_before": {
+          "consecutive_nonexecuted_attempt_count": 0,
+          "environment_step_count": 2,
+          "inadmissible_action_count": 0,
+          "policy_attempt_count": 2,
+          "protocol_failure_count": 0
+        },
+        "done": false,
+        "pre_menu": [
+          "examine pan 1",
+          "examine stoveburner 1",
+          "examine stoveburner 3",
+          "go to cabinet 1",
+          "go to cabinet 10",
+          "go to cabinet 11",
+          "go to cabinet 12",
+          "go to cabinet 13",
+          "go to cabinet 2",
+          "go to cabinet 3",
+          "go to cabinet 4",
+          "go to cabinet 5",
+          "go to cabinet 6",
+          "go to cabinet 7",
+          "go to cabinet 8",
+          "go to cabinet 9",
+          "go to coffeemachine 1",
+          "go to countertop 1",
+          "go to diningtable 1",
+          "go to drawer 1",
+          "go to fridge 1",
+          "go to garbagecan 1",
+          "go to microwave 1",
+          "go to shelf 1",
+          "go to shelf 2",
+          "go to shelf 3",
+          "go to sinkbasin 1",
+          "go to stoveburner 2",
+          "go to stoveburner 4",
+          "go to toaster 1",
+          "help",
+          "inventory",
+          "look",
+          "move pan 1 to stoveburner 1",
+          "move pan 1 to stoveburner 3"
+        ],
+        "pre_menu_sequence_sha256": "2428bd13881314e48bca5c26e652f8d65d82ee2832ab03694225b43cd5cd0746",
+        "pre_observation": "You pick up the pan 1 from the stoveburner 1.",
+        "pre_observation_sha256": "0becbaf3080ca1d81557f7652db68dc074d87739d5ddb3f41ce631ac47d221b5",
+        "registered_action_index": 0,
+        "resulting_menu": [
+          "clean pan 1 with sinkbasin 1",
+          "examine pan 1",
+          "examine sinkbasin 1",
+          "go to cabinet 1",
+          "go to cabinet 10",
+          "go to cabinet 11",
+          "go to cabinet 12",
+          "go to cabinet 13",
+          "go to cabinet 2",
+          "go to cabinet 3",
+          "go to cabinet 4",
+          "go to cabinet 5",
+          "go to cabinet 6",
+          "go to cabinet 7",
+          "go to cabinet 8",
+          "go to cabinet 9",
+          "go to coffeemachine 1",
+          "go to countertop 1",
+          "go to diningtable 1",
+          "go to drawer 1",
+          "go to fridge 1",
+          "go to garbagecan 1",
+          "go to microwave 1",
+          "go to shelf 1",
+          "go to shelf 2",
+          "go to shelf 3",
+          "go to stoveburner 1",
+          "go to stoveburner 2",
+          "go to stoveburner 3",
+          "go to stoveburner 4",
+          "go to toaster 1",
+          "help",
+          "inventory",
+          "look",
+          "move pan 1 to sinkbasin 1"
+        ],
+        "resulting_menu_sequence_sha256": "dce19b52d663398ffcda5b6b8ffc371de32873e6e5b68f98a0876a610702705b",
+        "resulting_observation": "You arrive at sinkbasin 1. On the sinkbasin 1, you see nothing.",
+        "resulting_observation_sha256": "b0bc3a086e858dcc961272368202eb9548f550c49f75918adaa63360419c109b",
+        "role": "REGISTERED_SHORT_OPTION_INTERVENTION",
+        "score": 0,
+        "won": false
+      }
+    ]
+  },
+  "source_ref": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/validation_experiments/guarded-validation-405f90ce4b9e871dfe1b/analyzer/h44/registered_executions/00e00ea53cc65de5b96e0f38b1dab1b336dbf3ac43a60a9bc19fe8cd5fcaed92/h44/run/verifier/ENVIRONMENT_RESULT_PACKAGE.json",
+  "prior_program_count": 6
+}

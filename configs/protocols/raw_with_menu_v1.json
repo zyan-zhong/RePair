@@ -1,0 +1,468 @@
+{
+  "action_interface": {
+    "filtering_allowed": false,
+    "mode": "full_admissible_menu",
+    "policy_harness_menu_byte_identical": true,
+    "preserve_environment_order": true,
+    "sorting_allowed": false,
+    "truncation_allowed": false
+  },
+  "admissibility": {
+    "case_sensitive": true,
+    "exact_string_membership": true,
+    "failure_calls_env_step": false,
+    "failure_consumes_environment_step": false,
+    "failure_consumes_policy_attempt": true,
+    "failure_outcome": "ACTION_NOT_ADMISSIBLE",
+    "membership_source": "policy_visible_admissible_commands",
+    "parser_independent": true,
+    "stage_id": "EXACT_ADMISSIBILITY_V1"
+  },
+  "attempt_outcomes": [
+    "ACTION_EXECUTED",
+    "FORMAT_PROTOCOL_FAILURE",
+    "ACTION_NOT_ADMISSIBLE",
+    "INFRASTRUCTURE_ERROR"
+  ],
+  "budget": {
+    "completed_generation_consumes_policy_attempt": true,
+    "environment_step_30_is_permitted": true,
+    "format_failure_consumes_environment_step": false,
+    "format_failure_consumes_policy_attempt": true,
+    "harness_actions_consume_environment_steps": true,
+    "inadmissible_action_consumes_environment_step": false,
+    "inadmissible_action_consumes_policy_attempt": true,
+    "max_action_codepoints": 256,
+    "max_consecutive_nonexecuted_attempts": 3,
+    "max_policy_attempts": 60,
+    "maximum_environment_steps": 30,
+    "policy_attempt_60_is_permitted": true,
+    "valid_action_consumes_environment_step": true
+  },
+  "clarification_id": "E1_MODEL_BOUNDARY_V1",
+  "decoding": {
+    "generation_config_mode": "vllm",
+    "max_new_tokens": 128,
+    "model_checkpoint": "Qwen/Qwen2.5-3B-Instruct@aa8e72537993ba99e69dfaafa59ed015b17504d1",
+    "seed_schedule": [
+      17,
+      31,
+      47,
+      73,
+      101
+    ],
+    "seed_scope": "explicit_per_request",
+    "temperature": 0.2,
+    "tokenizer_sha256": "8fba154872aa8982e9556cb6cbdd35f3f6e83b8c3c41d782caf6fbf5931c8e0c",
+    "top_p": 0.95
+  },
+  "disabled_components": [
+    "historical_phase_controller",
+    "historical_action_guard",
+    "historical_done_rewrite",
+    "historical_release_suppression",
+    "historical_retake_suppression"
+  ],
+  "e1_replication_plan": {
+    "engineering_smoke_is_excluded_from_results": true,
+    "full_task_replicates": 5,
+    "planned_episode_count": 670,
+    "primary_statistical_unit": "unique_task",
+    "replicate_seeds": [
+      17,
+      31,
+      47,
+      73,
+      101
+    ],
+    "replicates_are_not_independent_tasks": true,
+    "tasks_per_replicate": 134
+  },
+  "episode_termination_reasons": [
+    "ENVIRONMENT_TERMINATED",
+    "POLICY_ATTEMPT_BUDGET_EXHAUSTED",
+    "ENVIRONMENT_STEP_BUDGET_EXHAUSTED",
+    "CONSECUTIVE_NONEXECUTED_ATTEMPTS_EXHAUSTED",
+    "PROTOCOL_CONFIGURATION_ERROR",
+    "INFRASTRUCTURE_ERROR"
+  ],
+  "evaluator_preconditions": {
+    "deduplication_allowed": false,
+    "failure_consumes_policy_attempt": false,
+    "failure_outcome": "PROTOCOL_CONFIGURATION_ERROR",
+    "filtering_allowed": false,
+    "harness_menu_equals_environment_menu": true,
+    "policy_menu_equals_environment_menu": true,
+    "preserve_count": true,
+    "preserve_order": true,
+    "preserve_sequence_sha256": true,
+    "sorting_allowed": false,
+    "truncation_allowed": false,
+    "validate_command_boundary_spaces": true,
+    "validate_command_controls": true,
+    "validate_command_length": true
+  },
+  "experiment_role": {
+    "experiment_id": "E1",
+    "question": "What can an off-the-shelf instruction model with no project-specific training do under the complete-menu, controller-free protocol?",
+    "system_condition": "R0"
+  },
+  "fixed_interface_feedback": {
+    "FORMAT_ERROR_V1": "FORMAT_ERROR_V1:\nExpected exactly one JSON object with exactly one string field:\n{\"action\":\"<command>\"}\nNo environment action was executed.",
+    "INVALID_ACTION_V1": "INVALID_ACTION_V1:\nThe parsed action is not an exact member of the visible admissible-command menu.\nNo environment action was executed.",
+    "controller_reasoning_visible_to_policy": false,
+    "internal_failure_code_visible_to_policy": false,
+    "nearest_action_visible_to_policy": false,
+    "recommended_action_visible_to_policy": false
+  },
+  "parser": {
+    "action_replacement": false,
+    "admissible_list_access": false,
+    "canonicalisation": false,
+    "casefold_matching": false,
+    "lexical_matching": false,
+    "markdown_code_fence_fallback": false,
+    "parser_id": "RAW_POLICY_PARSER_V1",
+    "prose_fallback": false,
+    "remove_transport_whitespace_only": true,
+    "required_output": {
+      "action": "<command>"
+    },
+    "stage_1_envelope": {
+      "allowed_surrounding_transport_whitespace": [
+        "U+0020",
+        "U+0009",
+        "U+000A",
+        "U+000D"
+      ],
+      "duplicate_members_rejected": true,
+      "exact_member_count": 1,
+      "markdown_fence_rejected": true,
+      "nonstandard_constants_rejected": true,
+      "prose_rejected": true,
+      "required_member_name": "action",
+      "required_member_type": "string",
+      "strict_single_json_document": true,
+      "strict_top_level_object": true,
+      "trailing_json_rejected": true
+    },
+    "stage_2_action_normalization": {
+      "casefold": false,
+      "closest_command_replacement": false,
+      "fuzzy_matching": false,
+      "lowercase": false,
+      "max_action_codepoints": 256,
+      "multiline_extraction": false,
+      "object_receptacle_repair": false,
+      "prefix_removal": false,
+      "reject_c0_controls": true,
+      "reject_c1_controls": true,
+      "reject_carriage_return": true,
+      "reject_empty_after_trim": true,
+      "reject_line_feed": true,
+      "spelling_correction": false,
+      "template_canonicalisation": false,
+      "trim_codepoints": [
+        "U+0020"
+      ]
+    },
+    "strict_top_level_json": true
+  },
+  "policy_model": {
+    "alfworld_specific_training": false,
+    "lora_enabled": false,
+    "model_manifest_path": "configs/models/qwen25_3b_instruct_aa8e725.json",
+    "model_repository": "Qwen/Qwen2.5-3B-Instruct",
+    "model_revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+    "model_role": "off_the_shelf_project_unadapted_instruction_policy",
+    "project_adapter": null,
+    "project_specific_finetuning": false
+  },
+  "prompt": {
+    "complete_current_observation": true,
+    "executed_transition_history_window": 8,
+    "history_action_field": "sent_to_env_action",
+    "include_future_outcome": false,
+    "include_hidden_environment_state": false,
+    "include_raw_unexecuted_response_in_history": false,
+    "prompt_id": "RAW_POLICY_PROMPT_V1",
+    "repeat_public_task_goal_each_step": true
+  },
+  "protocol_id": "RAW_WITH_MENU_V1",
+  "protocol_version": "3.1",
+  "runtime": {
+    "dtype": "bfloat16",
+    "engine": "vllm",
+    "engine_version": "0.11.0",
+    "generation_config_mode": "vllm",
+    "lora_modules": [],
+    "served_model_name": "Qwen2.5-3B-Instruct-E1",
+    "tensor_parallel_size": 1
+  },
+  "runtime_core_design_id": "E1_RUNTIME_CORE_V1_60_30_3_256",
+  "status": "split_and_access_v1_frozen_pending_execution_approval",
+  "task_manifest": {
+    "controls_menu_exposure": false,
+    "manifest_id": "ALFWORLD_STRICT_VALID_UNSEEN_ALL134_V1",
+    "path": "data/manifests/alfworld_strict_valid_unseen_all134_v1.jsonl",
+    "records": 134,
+    "sha256": "6e480bb663a6f17207aa2c7a6e1b504adad8448f6e8a2615c5e62fea0b64c0f4",
+    "unique_tasks": 134
+  },
+  "termination_precedence": [
+    "INFRASTRUCTURE_ERROR",
+    "ENVIRONMENT_TERMINATED",
+    "ENVIRONMENT_STEP_BUDGET_EXHAUSTED",
+    "CONSECUTIVE_NONEXECUTED_ATTEMPTS_EXHAUSTED",
+    "POLICY_ATTEMPT_BUDGET_EXHAUSTED"
+  ],
+  "audit_contract": {
+    "runtime_core_trace_contract": {
+      "status": "implemented_on_main_code_approved_execution_not_approved",
+      "source_module": "src/pchsi/evaluation/action_trace.py",
+      "source_types": [
+        "TraceProvenance",
+        "ActionTrace"
+      ],
+      "task5_commit": "f5bac95abf6faa0fd4d7d48169756c73edad75ee",
+      "consistency_correction_commit": "086231b2919ac0afa0aa043cc6aa87ef981e2a1c",
+      "runtime_scope": "RAW_V1_runtime_fields_only",
+      "counter_lineage_fields": [
+        "protocol_failure_count_before",
+        "inadmissible_action_count_before",
+        "consecutive_nonexecuted_attempt_count_before"
+      ],
+      "historical_constructor_compatibility": "preserved_for_non_runtime_traces",
+      "legacy_serialization_byte_identity_required": false,
+      "source_of_truth": "tested_to_dict_output"
+    },
+    "fake_environment_integration": {
+      "status": "test_only_implemented",
+      "source_file": "tests/evaluation/test_runtime_core_fake_environment.py",
+      "task6_commit": "c95ee14c58709fc48ac23bd61ae071341380ff31",
+      "production_evaluator": false,
+      "consistency_correction_commit": "086231b2919ac0afa0aa043cc6aa87ef981e2a1c"
+    },
+    "future_evaluator_contract": {
+      "status": "not_designed",
+      "schema": null,
+      "separate_design_approval_required": true,
+      "separate_code_approval_required": true
+    }
+  },
+  "governance": {
+    "schema_version": "E1_RUNTIME_CORE_GOVERNANCE_V1",
+    "current_status": "split_and_access_v1_frozen_pending_execution_approval",
+    "current_facts": {
+      "runtime_core_implementation": "implemented_on_main",
+      "task_level_review": "passed",
+      "cumulative_code_approval": "approved",
+      "merge_status": "merged",
+      "approved_review_base": "b079f2b3696fb6525353a6694be2bb78ee8d027a",
+      "approved_review_head": "85e102b46a9bb09b92f1d8d39edcaee5bd9aa7d7",
+      "runtime_core_merge_commit": "1ce3622b3b247c44e962a6b98eb78192f724580b",
+      "code_approval_decision": "CODE_APPROVED_E1_RUNTIME_CORE_V1",
+      "merge_approval_decision": "MERGE_APPROVED_E1_RUNTIME_CORE_V1",
+      "split_and_access_v1": "frozen",
+      "alfworld_evaluator": "not_implemented",
+      "e1_dev_execution": "not_approved",
+      "e1_confirmatory_execution": "not_approved",
+      "s1_backend_probe": {
+        "design_id": "S1_COLLECTOR_BACKEND_PROBE_V1",
+        "implementation_status": "implemented_on_main",
+        "approved_review_base": "0c5249bf6bf8c6335e77a791256654bff0f0e01d",
+        "approved_review_head": "465503d14ee968d2acf23a314c66c65c52260583",
+        "merge_commit": "71ff322ecba105521baf2cb4c2d84024529824b9",
+        "candidate_commit_count": 22,
+        "candidate_changed_path_count": 143,
+        "verified_test_count": 477,
+        "candidate_tree_sha256": "d61493ccbb433babf2fed2a7e749dc483fe2e63bc6d43422048440d84ad96885",
+        "candidate_binary_sha256": "3f03b30b408e16466981bca1556983bdf709edf065a11d3b15bb626c3032e713",
+        "source_manifest_sha256": "41f7461ac7ac7213ca13024a7c755a551f9ad0ab363ac46bc414040af3904eb7",
+        "runtime_manifest_sha256": "4a524d95339afedbdc282a027cc99d388f4e99005f6ad109ff2bc61158effcfc",
+        "code_approval_decision": "CODE_APPROVED_S1_COLLECTOR_BACKEND_PROBE_V1_CANDIDATE_ONLY",
+        "merge_approval_decision": "MERGE_APPROVED_S1_COLLECTOR_BACKEND_PROBE_V1_CANDIDATE_ONLY",
+        "backend_probe_execution": "not_approved",
+        "read_only_inventory_execution": "not_approved",
+        "collector_backend_final_approval": "pending"
+      },
+      "split_and_access_v1_record": {
+        "access_mode": "TRUSTED_MANIFEST_DIRECT_V1",
+        "dataset": {
+          "directory_scan_selects_tasks": false,
+          "logical_root_id": "ALFWORLD_DATASET_LOGICAL_ROOT_V1",
+          "required_split": "valid_unseen",
+          "version": "json_2.1.1",
+          "writes_allowed": false
+        },
+        "execution_boundaries": {
+          "alfworld_evaluator": "not_implemented",
+          "backend_probe_execution": "not_approved",
+          "e1_confirmatory_execution": "not_approved",
+          "e1_dev_execution": "not_approved",
+          "read_only_inventory_execution": "not_approved"
+        },
+        "external_identity_evidence": {
+          "dataset_preflight_decision_id": "cdb7a6de952f648eb83e37947f8d00090f5fb0fb44df29d22699a7fa276911a0",
+          "dataset_preflight_manifest_sha256": "f21ec29cc44b029c6d0412c7565596790eabe28424a2fc0c2e8da27a4723af6c",
+          "decision": "NOT_GRANTED",
+          "execution_enablement_source_commit": null,
+          "input_contract_sha256": "7be24bc2d1bb5a9a0328445f69efb23bd84358ae23a52eddaa4fcb9e4ae76979",
+          "legacy_manifest_sha256": "cc08cf1f437548dd6b81411e567cfc9b743488ee49ef1dff8173860fce1d9d56"
+        },
+        "protocol_id": "SPLIT_AND_ACCESS_V1",
+        "schema_version": 1,
+        "scope_reduction": {
+          "backend_probe_execution_required_for_e1": false,
+          "backend_probe_status": "deferred_optional_hardening",
+          "hostile_collector_required_for_e1": false,
+          "inventory_collection_required_for_e1": false,
+          "p1_p20_required_for_e1": false
+        },
+        "status": "frozen_pending_evaluator_and_execution_approval",
+        "task_manifest": {
+          "deduplication_allowed": false,
+          "manifest_id": "ALFWORLD_STRICT_VALID_UNSEEN_ALL134_V1",
+          "path": "data/manifests/alfworld_strict_valid_unseen_all134_v1.jsonl",
+          "preserve_order": true,
+          "records": 134,
+          "sha256": "6e480bb663a6f17207aa2c7a6e1b504adad8448f6e8a2615c5e62fea0b64c0f4",
+          "substitution_allowed": false,
+          "unique_tasks": 134,
+          "path_binding": "server_local_absolute_gamefile_paths",
+          "relocation_requires_regeneration_and_refreeze": true
+        }
+      }
+    },
+    "allowed_statuses": [
+      "runtime_core_implemented_pending_code_approval",
+      "runtime_core_code_approved_execution_not_approved",
+      "split_and_access_v1_frozen_pending_execution_approval",
+      "e1_dev_execution_approved"
+    ],
+    "allowed_committed_transitions": [
+      {
+        "from": "runtime_core_design_frozen_pending_implementation",
+        "to": "runtime_core_implemented_pending_code_approval",
+        "required_evidence": [
+          "task_1_to_6_commit_ledger",
+          "unit_and_fake_environment_verification",
+          "task_level_code_review_records"
+        ]
+      },
+      {
+        "from": "runtime_core_implemented_pending_code_approval",
+        "to": "runtime_core_code_approved_execution_not_approved",
+        "required_evidence": [
+          "external_immutable_cumulative_code_review_record"
+        ]
+      },
+      {
+        "from": "runtime_core_implemented_pending_code_approval",
+        "to": "split_and_access_v1_frozen_pending_execution_approval",
+        "coalesced_transition": true,
+        "required_evidence": [
+          "external_immutable_cumulative_code_review_record",
+          "split_and_access_v1_freeze_record"
+        ]
+      },
+      {
+        "from": "runtime_core_code_approved_execution_not_approved",
+        "to": "split_and_access_v1_frozen_pending_execution_approval",
+        "required_evidence": [
+          "split_and_access_v1_freeze_record"
+        ]
+      },
+      {
+        "from": "split_and_access_v1_frozen_pending_execution_approval",
+        "to": "e1_dev_execution_approved",
+        "required_evidence": [
+          "alfworld_evaluator_code_approval_record",
+          "e1_dev_execution_readiness_record",
+          "e1_dev_execution_approval_record"
+        ]
+      }
+    ],
+    "consistency_invariants": [
+      "top_level_status_equals_governance_current_status",
+      "pending_code_approval_requires_cumulative_code_approval_pending",
+      "pending_code_approval_requires_merge_status_not_merged",
+      "pending_code_approval_requires_split_and_access_v1_not_frozen",
+      "pending_code_approval_requires_alfworld_evaluator_not_implemented",
+      "pending_code_approval_requires_e1_dev_execution_not_approved",
+      "split_frozen_status_requires_external_code_approval_evidence",
+      "e1_dev_execution_approved_requires_split_frozen",
+      "e1_dev_execution_approved_requires_evaluator_code_approval",
+      "e1_dev_execution_approved_requires_execution_approval",
+      "generic_approved_status_is_forbidden"
+    ],
+    "approval_decisions_are_external": true,
+    "approval_evidence_must_bind_exact_commits": true
+  },
+  "hash_scope": {
+    "schema_version": "E1_CONFIG_HASH_SCOPE_V1",
+    "document_config_sha256": {
+      "input": "exact_file_bytes",
+      "includes_governance": true,
+      "includes_audit_contract": true,
+      "computed_externally": true,
+      "trace_config_sha256_semantics": "whole_document_sha256"
+    },
+    "runtime_core_semantics_projection": {
+      "status": "definition_only_not_yet_emitted",
+      "canonicalization_id": "PCHSI_CANONICAL_JSON_V1",
+      "top_level_keys": [
+        "action_interface",
+        "admissibility",
+        "attempt_outcomes",
+        "budget",
+        "disabled_components",
+        "episode_termination_reasons",
+        "evaluator_preconditions",
+        "fixed_interface_feedback",
+        "parser",
+        "prompt",
+        "protocol_id",
+        "protocol_version",
+        "runtime_core_design_id",
+        "termination_precedence"
+      ]
+    },
+    "execution_profile_projection": {
+      "status": "definition_only_not_yet_emitted",
+      "canonicalization_id": "PCHSI_CANONICAL_JSON_V1",
+      "top_level_keys": [
+        "clarification_id",
+        "decoding",
+        "e1_replication_plan",
+        "experiment_role",
+        "policy_model",
+        "runtime",
+        "task_manifest"
+      ]
+    },
+    "non_runtime_metadata_keys": [
+      "audit_contract",
+      "governance",
+      "hash_scope",
+      "status"
+    ],
+    "canonicalization": {
+      "encoding": "utf-8",
+      "ensure_ascii": false,
+      "allow_nan": false,
+      "sort_keys": true,
+      "separators": [
+        ",",
+        ":"
+      ]
+    },
+    "partition_invariants": {
+      "sets_are_pairwise_disjoint": true,
+      "union_equals_actual_document_top_level_keys": true,
+      "unknown_top_level_key_is_error": true,
+      "missing_classification_is_error": true
+    },
+    "governance_is_not_runtime_policy_semantics": true
+  }
+}

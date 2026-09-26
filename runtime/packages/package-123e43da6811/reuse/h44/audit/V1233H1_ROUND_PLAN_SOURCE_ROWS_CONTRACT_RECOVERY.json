@@ -1,0 +1,37 @@
+{
+  "schema_id": "V1233H1_ROUND_PLAN_SOURCE_ROWS_CONTRACT_RECOVERY_V1",
+  "predecessor_package": "PCHSI_PAPER_CRITICAL_CAUSAL_ROUND_EXECUTION_V1_23_3H",
+  "server_failure": {
+    "exception": "TypeError",
+    "message": "string indices must be integers, not 'str'",
+    "file": "round_plan.py",
+    "failing_expression": "r['bundle'].episode_artifact.evaluator_commit",
+    "provider_call_count": 0,
+    "environment_call_count": 0,
+    "training_execution_count": 0,
+    "scheduler_submission_count": 0
+  },
+  "root_cause": [
+    "load_source_rows(capture) returns one list of selected-state dictionaries.",
+    "round_plan incorrectly unpacked that two-element list into handoff, source_rows.",
+    "Iterating the resulting second dictionary yielded string keys, causing the observed TypeError.",
+    "The same file also used row['selected'] although the frozen source adapter exposes row['handoff_state'].",
+    "The same file treated fingerprint dictionaries as attribute objects and passed a keyword-only exact_gamefile parameter positionally.",
+    "deployment.resolve_gamefiles likewise assumed an attribute fingerprint although the live source adapter returns a mapping."
+  ],
+  "fix_scope": [
+    "Read handoff from its immutable handoff artifact.",
+    "Consume load_source_rows(capture) as the list it actually returns.",
+    "Use the existing handoff_state key and mapping fingerprint fields.",
+    "Call register_source with keyword exact_gamefile.",
+    "Make gamefile resolution accept the already-existing mapping form without changing scientific identities."
+  ],
+  "scientific_authority_changed": false,
+  "selected_states_changed": false,
+  "branch_plan_changed": false,
+  "candidate_reselection_allowed": false,
+  "automatic_retry_count_added": 0,
+  "training_execution_authorized": false,
+  "next_round_launch_authorized": false,
+  "max10_released": false
+}

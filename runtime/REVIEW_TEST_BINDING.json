@@ -1,0 +1,6 @@
+{
+  "schema": "REPAIR_REVIEW_TEST_BINDING_V1",
+  "current_package": "runtime/packages/MAX10_V2_1_1_EXECUTABLE_PLANNER_VALIDATION-0c20fc82ebc2",
+  "purpose": "Resolve the declared native_h44_root inside the exported source index for offline tests only",
+  "scientific_execution_authority": false
+}

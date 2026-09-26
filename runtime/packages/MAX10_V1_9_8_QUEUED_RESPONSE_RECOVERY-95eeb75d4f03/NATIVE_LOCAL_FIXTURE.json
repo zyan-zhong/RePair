@@ -1,0 +1,3264 @@
+{
+  "projection": {
+    "evidence_pack": {
+      "analyzer_output_authority": {
+        "benefit_harm_authority": false,
+        "candidate_repair_is_proposal": true,
+        "failure_window_is_proposal": true,
+        "mechanism_is_semantic_hypothesis": true,
+        "promotion_authority": false,
+        "training_label_authority": false
+      },
+      "evidence_pack_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+      "mechanical_evidence": {
+        "alfworld_event_facts": {
+          "destination_revisit_count": 0,
+          "goal_object": "clean mug",
+          "goal_object_acquired_events": [
+            3,
+            8
+          ],
+          "goal_object_parse_status": "KNOWN",
+          "goal_object_visible_events": [],
+          "goal_take_available_events": [],
+          "inventory_change_events": [],
+          "parser_version": "ALFWORLD_MECHANICAL_EVENT_RULES_V1",
+          "placement_completed_events": [
+            7,
+            9
+          ],
+          "remaining_environment_budget": 18,
+          "required_treatment_completed_events": [],
+          "source_family_revisit_count": 0,
+          "source_revisit_count": 0,
+          "time_since_last_registered_progress": 2,
+          "time_to_first_registered_progress": 4,
+          "unsupported_or_ambiguous_fields_use_unknown": true
+        },
+        "authority": "DETERMINISTIC_FACTS_ONLY",
+        "evidence_sha256": "a2471ac49044ce03e366f3b62e6d02ea7b06d06906a791f20cb0a094127b3bc8",
+        "gamefile_sha256": "6db76c36b59efc98f9cab5dbdc87020fe5cd8a87c8f0a72e57a5f53beed6b190",
+        "generic_episode_facts": {
+          "abab_action_oscillation_count": 0,
+          "budget_exhaustion": true,
+          "consecutive_exact_action_repeat_count": 0,
+          "environment_error_count": 0,
+          "exact_action_repeat_count": 3,
+          "executed_environment_step_count": 12,
+          "inadmissible_action_count": 7,
+          "max_consecutive_exact_action_repeat_run": 1,
+          "menu_unchanged_count": 4,
+          "no_effect_rule": "EXACT_RESULT_NOTHING_HAPPENS_OR_BOTH_OBSERVATION_AND_MENU_UNCHANGED",
+          "no_effect_transition_count": 0,
+          "nonexecuted_attempt_count": 7,
+          "nothing_happens_count": 0,
+          "observation_unchanged_count": 0,
+          "policy_call_count": 19,
+          "protocol_failure_count": 0,
+          "terminal_done": false,
+          "terminal_success": false,
+          "terminal_won": false,
+          "termination_reason": "CONSECUTIVE_NONEXECUTED_ATTEMPTS_EXHAUSTED",
+          "time_since_last_public_state_change": 0,
+          "time_to_first_public_state_change": 1
+        },
+        "prohibited_interpretations": [
+          "FAILURE_MECHANISM",
+          "CRITICAL_STEP",
+          "ROOT_CAUSE",
+          "REPAIR_QUALITY",
+          "BENEFIT",
+          "HARM",
+          "NEUTRAL",
+          "UNCERTAIN"
+        ],
+        "schema_id": "MECHANICAL_EPISODE_EVIDENCE_V1",
+        "schema_version": 1,
+        "source_attempt_bundle_sha256": "1ee305a7eb1ee48d5358596dbea0b6e46721e021932aeabb09ebd8aeac6bbfcc",
+        "source_episode_semantic_sha256": "8998650c72f07ba158977acb7a19e7ac418aa44f0a663af6c5c6dc844fe7acfe",
+        "task_id": "alfworld_train_all3553_1480"
+      },
+      "memory_support_port": {
+        "a3_extension_rule": "A3_MAY_ATTACH_ONE_FROZEN_ANALYZER_MEMORY_PACKET_WITHOUT_CHANGING_COMMON_TRAJECTORY_EVIDENCE",
+        "base_pack_exposes_memory": false,
+        "memory_packet": null,
+        "schema_id": "ANALYZER_MEMORY_SUPPORT_PORT_V1"
+      },
+      "pack_role": "COMMON_EVIDENCE_IDENTICAL_ACROSS_A0_A1_A2_A3",
+      "policy_identity": {
+        "checkpoint_instance_id": "PI0_CLEAN",
+        "identity_sha256": "d5abdea71ed3e2b40f3f7455f20f6c1eb29f045223a5a55bfd4a4be472ce67ae",
+        "logical_policy_id": "PI0_CLEAN"
+      },
+      "requires_environment_verification": true,
+      "schema_id": "ANALYZER_EVIDENCE_PACK_V1",
+      "schema_version": 1,
+      "task_identity": {
+        "gamefile_sha256": "6db76c36b59efc98f9cab5dbdc87020fe5cd8a87c8f0a72e57a5f53beed6b190",
+        "public_task_goal": "put a clean mug in coffeemachine.",
+        "seed": 17,
+        "task_id": "alfworld_train_all3553_1480",
+        "task_type": "pick_clean_then_place_in_recep"
+      },
+      "trajectory": [
+        {
+          "admissible_commands": [
+            "go to cabinet 1",
+            "go to cabinet 10",
+            "go to cabinet 11",
+            "go to cabinet 12",
+            "go to cabinet 13",
+            "go to cabinet 14",
+            "go to cabinet 15",
+            "go to cabinet 16",
+            "go to cabinet 17",
+            "go to cabinet 18",
+            "go to cabinet 19",
+            "go to cabinet 2",
+            "go to cabinet 20",
+            "go to cabinet 21",
+            "go to cabinet 22",
+            "go to cabinet 23",
+            "go to cabinet 3",
+            "go to cabinet 4",
+            "go to cabinet 5",
+            "go to cabinet 6",
+            "go to cabinet 7",
+            "go to cabinet 8",
+            "go to cabinet 9",
+            "go to coffeemachine 1",
+            "go to countertop 1",
+            "go to countertop 2",
+            "go to countertop 3",
+            "go to diningtable 1",
+            "go to drawer 1",
+            "go to drawer 2",
+            "go to drawer 3",
+            "go to drawer 4",
+            "go to fridge 1",
+            "go to garbagecan 1",
+            "go to microwave 1",
+            "go to sinkbasin 1",
+            "go to stoveburner 1",
+            "go to stoveburner 2",
+            "go to stoveburner 3",
+            "go to stoveburner 4",
+            "go to toaster 1",
+            "help",
+            "inventory",
+            "look"
+          ],
+          "attempt_outcome": "ACTION_EXECUTED",
+          "budget_after": {
+            "consecutive_nonexecuted_attempt_count": 0,
+            "environment_step_count": 1,
+            "inadmissible_action_count": 0,
+            "policy_attempt_count": 1,
+            "protocol_failure_count": 0
+          },
+          "budget_before": {
+            "consecutive_nonexecuted_attempt_count": 0,
+            "environment_step_count": 0,
+            "inadmissible_action_count": 0,
+            "policy_attempt_count": 0,
+            "protocol_failure_count": 0
+          },
+          "environment_done": false,
+          "environment_score": 0,
+          "environment_step_count_before": 0,
+          "environment_won": false,
+          "executed_history": [],
+          "execution_status": "executed",
+          "final_executed_action": "go to cabinet 1",
+          "literal_action": "go to cabinet 1",
+          "model_call_index": 0,
+          "normalized_action": "go to cabinet 1",
+          "observation_before": "-= Welcome to TextWorld, ALFRED! =-\n\nYou are in the middle of a room. Looking quickly around you, you see a cabinet 23, a cabinet 22, a cabinet 21, a cabinet 20, a cabinet 19, a cabinet 18, a cabinet 17, a cabinet 16, a cabinet 15, a cabinet 14, a cabinet 13, a cabinet 12, a cabinet 11, a cabinet 10, a cabinet 9, a cabinet 8, a cabinet 7, a cabinet 6, a cabinet 5, a cabinet 4, a cabinet 3, a cabinet 2, a cabinet 1, a coffeemachine 1, a countertop 3, a countertop 2, a countertop 1, a diningtable 1, a drawer 4, a drawer 3, a drawer 2, a drawer 1, a fridge 1, a garbagecan 1, a microwave 1, a sinkbasin 1, a stoveburner 4, a stoveburner 3, a stoveburner 2, a stoveburner 1, and a toaster 1.\n\nYour task is to: put a clean mug in coffeemachine.",
+          "parser_error": null,
+          "parser_status": "success",
+          "policy_prompt_text": "MEMORY_AUGMENTED_RAW_POLICY_PROMPT_V1\nTASK_GOAL_JSON=\"put a clean mug in coffeemachine.\"\nCURRENT_OBSERVATION_JSON=\"-= Welcome to TextWorld, ALFRED! =-\\n\\nYou are in the middle of a room. Looking quickly around you, you see a cabinet 23, a cabinet 22, a cabinet 21, a cabinet 20, a cabinet 19, a cabinet 18, a cabinet 17, a cabinet 16, a cabinet 15, a cabinet 14, a cabinet 13, a cabinet 12, a cabinet 11, a cabinet 10, a cabinet 9, a cabinet 8, a cabinet 7, a cabinet 6, a cabinet 5, a cabinet 4, a cabinet 3, a cabinet 2, a cabinet 1, a coffeemachine 1, a countertop 3, a countertop 2, a countertop 1, a diningtable 1, a drawer 4, a drawer 3, a drawer 2, a drawer 1, a fridge 1, a garbagecan 1, a microwave 1, a sinkbasin 1, a stoveburner 4, a stoveburner 3, a stoveburner 2, a stoveburner 1, and a toaster 1.\\n\\nYour task is to: put a clean mug in coffeemachine.\"\nEXECUTED_TRANSITIONS_JSON=[]\nRETRIEVED_FAILURE_EXPERIENCES_JSON=[]\nVISIBLE_ADMISSIBLE_COMMANDS_JSON=[\"go to cabinet 1\",\"go to cabinet 10\",\"go to cabinet 11\",\"go to cabinet 12\",\"go to cabinet 13\",\"go to cabinet 14\",\"go to cabinet 15\",\"go to cabinet 16\",\"go to cabinet 17\",\"go to cabinet 18\",\"go to cabinet 19\",\"go to cabinet 2\",\"go to cabinet 20\",\"go to cabinet 21\",\"go to cabinet 22\",\"go to cabinet 23\",\"go to cabinet 3\",\"go to cabinet 4\",\"go to cabinet 5\",\"go to cabinet 6\",\"go to cabinet 7\",\"go to cabinet 8\",\"go to cabinet 9\",\"go to coffeemachine 1\",\"go to countertop 1\",\"go to countertop 2\",\"go to countertop 3\",\"go to diningtable 1\",\"go to drawer 1\",\"go to drawer 2\",\"go to drawer 3\",\"go to drawer 4\",\"go to fridge 1\",\"go to garbagecan 1\",\"go to microwave 1\",\"go to sinkbasin 1\",\"go to stoveburner 1\",\"go to stoveburner 2\",\"go to stoveburner 3\",\"go to stoveburner 4\",\"go to toaster 1\",\"help\",\"inventory\",\"look\"]\nINTERFACE_FEEDBACK_JSON=null\nOUTPUT_REQUIREMENT={\"action\":\"<command>\"}",
+          "public_task_goal": "put a clean mug in coffeemachine.",
+          "raw_model_response": "{\"action\":\"go to cabinet 1\"}",
+          "resulting_admissible_commands": [
+            "examine cabinet 1",
+            "go to cabinet 10",
+            "go to cabinet 11",
+            "go to cabinet 12",
+            "go to cabinet 13",
+            "go to cabinet 14",
+            "go to cabinet 15",
+            "go to cabinet 16",
+            "go to cabinet 17",
+            "go to cabinet 18",
+            "go to cabinet 19",
+            "go to cabinet 2",
+            "go to cabinet 20",
+            "go to cabinet 21",
+            "go to cabinet 22",
+            "go to cabinet 23",
+            "go to cabinet 3",
+            "go to cabinet 4",
+            "go to cabinet 5",
+            "go to cabinet 6",
+            "go to cabinet 7",
+            "go to cabinet 8",
+            "go to cabinet 9",
+            "go to coffeemachine 1",
+            "go to countertop 1",
+            "go to countertop 2",
+            "go to countertop 3",
+            "go to diningtable 1",
+            "go to drawer 1",
+            "go to drawer 2",
+            "go to drawer 3",
+            "go to drawer 4",
+            "go to fridge 1",
+            "go to garbagecan 1",
+            "go to microwave 1",
+            "go to sinkbasin 1",
+            "go to stoveburner 1",
+            "go to stoveburner 2",
+            "go to stoveburner 3",
+            "go to stoveburner 4",
+            "go to toaster 1",
+            "help",
+            "inventory",
+            "look",
+            "open cabinet 1"
+          ],
+          "resulting_observation": "You arrive at cabinet 1. The cabinet 1 is closed.",
+          "submitted_environment_action": "go to cabinet 1"
+        },
+        {
+          "admissible_commands": [
+            "examine cabinet 1",
+            "go to cabinet 10",
+            "go to cabinet 11",
+            "go to cabinet 12",
+            "go to cabinet 13",
+            "go to cabinet 14",
+            "go to cabinet 15",
+            "go to cabinet 16",
+            "go to cabinet 17",
+            "go to cabinet 18",
+            "go to cabinet 19",
+            "go to cabinet 2",
+            "go to cabinet 20",
+            "go to cabinet 21",
+            "go to cabinet 22",
+            "go to cabinet 23",
+            "go to cabinet 3",
+            "go to cabinet 4",
+            "go to cabinet 5",
+            "go to cabinet 6",
+            "go to cabinet 7",
+            "go to cabinet 8",
+            "go to cabinet 9",
+            "go to coffeemachine 1",
+            "go to countertop 1",
+            "go to countertop 2",
+            "go to countertop 3",
+            "go to diningtable 1",
+            "go to drawer 1",
+            "go to drawer 2",
+            "go to drawer 3",
+            "go to drawer 4",
+            "go to fridge 1",
+            "go to garbagecan 1",
+            "go to microwave 1",
+            "go to sinkbasin 1",
+            "go to stoveburner 1",
+            "go to stoveburner 2",
+            "go to stoveburner 3",
+            "go to stoveburner 4",
+            "go to toaster 1",
+            "help",
+            "inventory",
+            "look",
+            "open cabinet 1"
+          ],
+          "attempt_outcome": "ACTION_EXECUTED",
+          "budget_after": {
+            "consecutive_nonexecuted_attempt_count": 0,
+            "environment_step_count": 2,
+            "inadmissible_action_count": 0,
+            "policy_attempt_count": 2,
+            "protocol_failure_count": 0
+          },
+          "budget_before": {
+            "consecutive_nonexecuted_attempt_count": 0,
+            "environment_step_count": 1,
+            "inadmissible_action_count": 0,
+            "policy_attempt_count": 1,
+            "protocol_failure_count": 0
+          },
+          "environment_done": false,
+          "environment_score": 0,
+          "environment_step_count_before": 1,
+          "environment_won": false,
+          "executed_history": [
+            {
+              "action": "go to cabinet 1",
+              "resulting_observation": "You arrive at cabinet 1. The cabinet 1 is closed."
+            }
+          ],
+          "execution_status": "executed",
+          "final_executed_action": "open cabinet 1",
+          "literal_action": "open cabinet 1",
+          "model_call_index": 1,
+          "normalized_action": "open cabinet 1",
+          "observation_before": "You arrive at cabinet 1. The cabinet 1 is closed.",
+          "parser_error": null,
+          "parser_status": "success",
+          "policy_prompt_text": "MEMORY_AUGMENTED_RAW_POLICY_PROMPT_V1\nTASK_GOAL_JSON=\"put a clean mug in coffeemachine.\"\nCURRENT_OBSERVATION_JSON=\"You arrive at cabinet 1. The cabinet 1 is closed.\"\nEXECUTED_TRANSITIONS_JSON=[{\"action\":\"go to cabinet 1\",\"resulting_observation\":\"You arrive at cabinet 1. The cabinet 1 is closed.\"}]\nRETRIEVED_FAILURE_EXPERIENCES_JSON=[]\nVISIBLE_ADMISSIBLE_COMMANDS_JSON=[\"examine cabinet 1\",\"go to cabinet 10\",\"go to cabinet 11\",\"go to cabinet 12\",\"go to cabinet 13\",\"go to cabinet 14\",\"go to cabinet 15\",\"go to cabinet 16\",\"go to cabinet 17\",\"go to cabinet 18\",\"go to cabinet 19\",\"go to cabinet 2\",\"go to cabinet 20\",\"go to cabinet 21\",\"go to cabinet 22\",\"go to cabinet 23\",\"go to cabinet 3\",\"go to cabinet 4\",\"go to cabinet 5\",\"go to cabinet 6\",\"go to cabinet 7\",\"go to cabinet 8\",\"go to cabinet 9\",\"go to coffeemachine 1\",\"go to countertop 1\",\"go to countertop 2\",\"go to countertop 3\",\"go to diningtable 1\",\"go to drawer 1\",\"go to drawer 2\",\"go to drawer 3\",\"go to drawer 4\",\"go to fridge 1\",\"go to garbagecan 1\",\"go to microwave 1\",\"go to sinkbasin 1\",\"go to stoveburner 1\",\"go to stoveburner 2\",\"go to stoveburner 3\",\"go to stoveburner 4\",\"go to toaster 1\",\"help\",\"inventory\",\"look\",\"open cabinet 1\"]\nINTERFACE_FEEDBACK_JSON=null\nOUTPUT_REQUIREMENT={\"action\":\"<command>\"}",
+          "public_task_goal": "put a clean mug in coffeemachine.",
+          "raw_model_response": "{\"action\":\"open cabinet 1\"}",
+          "resulting_admissible_commands": [
+            "close cabinet 1",
+            "examine cabinet 1",
+            "go to cabinet 10",
+            "go to cabinet 11",
+            "go to cabinet 12",
+            "go to cabinet 13",
+            "go to cabinet 14",
+            "go to cabinet 15",
+            "go to cabinet 16",
+            "go to cabinet 17",
+            "go to cabinet 18",
+            "go to cabinet 19",
+            "go to cabinet 2",
+            "go to cabinet 20",
+            "go to cabinet 21",
+            "go to cabinet 22",
+            "go to cabinet 23",
+            "go to cabinet 3",
+            "go to cabinet 4",
+            "go to cabinet 5",
+            "go to cabinet 6",
+            "go to cabinet 7",
+            "go to cabinet 8",
+            "go to cabinet 9",
+            "go to coffeemachine 1",
+            "go to countertop 1",
+            "go to countertop 2",
+            "go to countertop 3",
+            "go to diningtable 1",
+            "go to drawer 1",
+            "go to drawer 2",
+            "go to drawer 3",
+            "go to drawer 4",
+            "go to fridge 1",
+            "go to garbagecan 1",
+            "go to microwave 1",
+            "go to sinkbasin 1",
+            "go to stoveburner 1",
+            "go to stoveburner 2",
+            "go to stoveburner 3",
+            "go to stoveburner 4",
+            "go to toaster 1",
+            "help",
+            "inventory",
+            "look"
+          ],
+          "resulting_observation": "You open the cabinet 1. The cabinet 1 is open. In it, you see nothing.",
+          "submitted_environment_action": "open cabinet 1"
+        },
+        {
+          "admissible_commands": [
+            "close cabinet 1",
+            "examine cabinet 1",
+            "go to cabinet 10",
+            "go to cabinet 11",
+            "go to cabinet 12",
+            "go to cabinet 13",
+            "go to cabinet 14",
+            "go to cabinet 15",
+            "go to cabinet 16",
+            "go to cabinet 17",
+            "go to cabinet 18",
+            "go to cabinet 19",
+            "go to cabinet 2",
+            "go to cabinet 20",
+            "go to cabinet 21",
+            "go to cabinet 22",
+            "go to cabinet 23",
+            "go to cabinet 3",
+            "go to cabinet 4",
+            "go to cabinet 5",
+            "go to cabinet 6",
+            "go to cabinet 7",
+            "go to cabinet 8",
+            "go to cabinet 9",
+            "go to coffeemachine 1",
+            "go to countertop 1",
+            "go to countertop 2",
+            "go to countertop 3",
+            "go to diningtable 1",
+            "go to drawer 1",
+            "go to drawer 2",
+            "go to drawer 3",
+            "go to drawer 4",
+            "go to fridge 1",
+            "go to garbagecan 1",
+            "go to microwave 1",
+            "go to sinkbasin 1",
+            "go to stoveburner 1",
+            "go to stoveburner 2",
+            "go to stoveburner 3",
+            "go to stoveburner 4",
+            "go to toaster 1",
+            "help",
+            "inventory",
+            "look"
+          ],
+          "attempt_outcome": "ACTION_EXECUTED",
+          "budget_after": {
+            "consecutive_nonexecuted_attempt_count": 0,
+            "environment_step_count": 3,
+            "inadmissible_action_count": 0,
+            "policy_attempt_count": 3,
+            "protocol_failure_count": 0
+          },
+          "budget_before": {
+            "consecutive_nonexecuted_attempt_count": 0,
+            "environment_step_count": 2,
+            "inadmissible_action_count": 0,
+            "policy_attempt_count": 2,
+            "protocol_failure_count": 0
+          },
+          "environment_done": false,
+          "environment_score": 0,
+          "environment_step_count_before": 2,
+          "environment_won": false,
+          "executed_history": [
+            {
+              "action": "go to cabinet 1",
+              "resulting_observation": "You arrive at cabinet 1. The cabinet 1 is closed."
+            },
+            {
+              "action": "open cabinet 1",
+              "resulting_observation": "You open the cabinet 1. The cabinet 1 is open. In it, you see nothing."
+            }
+          ],
+          "execution_status": "executed",
+          "final_executed_action": "go to coffeemachine 1",
+          "literal_action": "go to coffeemachine 1",
+          "model_call_index": 2,
+          "normalized_action": "go to coffeemachine 1",
+          "observation_before": "You open the cabinet 1. The cabinet 1 is open. In it, you see nothing.",
+          "parser_error": null,
+          "parser_status": "success",
+          "policy_prompt_text": "MEMORY_AUGMENTED_RAW_POLICY_PROMPT_V1\nTASK_GOAL_JSON=\"put a clean mug in coffeemachine.\"\nCURRENT_OBSERVATION_JSON=\"You open the cabinet 1. The cabinet 1 is open. In it, you see nothing.\"\nEXECUTED_TRANSITIONS_JSON=[{\"action\":\"go to cabinet 1\",\"resulting_observation\":\"You arrive at cabinet 1. The cabinet 1 is closed.\"},{\"action\":\"open cabinet 1\",\"resulting_observation\":\"You open the cabinet 1. The cabinet 1 is open. In it, you see nothing.\"}]\nRETRIEVED_FAILURE_EXPERIENCES_JSON=[]\nVISIBLE_ADMISSIBLE_COMMANDS_JSON=[\"close cabinet 1\",\"examine cabinet 1\",\"go to cabinet 10\",\"go to cabinet 11\",\"go to cabinet 12\",\"go to cabinet 13\",\"go to cabinet 14\",\"go to cabinet 15\",\"go to cabinet 16\",\"go to cabinet 17\",\"go to cabinet 18\",\"go to cabinet 19\",\"go to cabinet 2\",\"go to cabinet 20\",\"go to cabinet 21\",\"go to cabinet 22\",\"go to cabinet 23\",\"go to cabinet 3\",\"go to cabinet 4\",\"go to cabinet 5\",\"go to cabinet 6\",\"go to cabinet 7\",\"go to cabinet 8\",\"go to cabinet 9\",\"go to coffeemachine 1\",\"go to countertop 1\",\"go to countertop 2\",\"go to countertop 3\",\"go to diningtable 1\",\"go to drawer 1\",\"go to drawer 2\",\"go to drawer 3\",\"go to drawer 4\",\"go to fridge 1\",\"go to garbagecan 1\",\"go to microwave 1\",\"go to sinkbasin 1\",\"go to stoveburner 1\",\"go to stoveburner 2\",\"go to stoveburner 3\",\"go to stoveburner 4\",\"go to toaster 1\",\"help\",\"inventory\",\"look\"]\nINTERFACE_FEEDBACK_JSON=null\nOUTPUT_REQUIREMENT={\"action\":\"<command>\"}",
+          "public_task_goal": "put a clean mug in coffeemachine.",
+          "raw_model_response": "{\"action\":\"go to coffeemachine 1\"}",
+          "resulting_admissible_commands": [
+            "examine coffeemachine 1",
+            "go to cabinet 1",
+            "go to cabinet 10",
+            "go to cabinet 11",
+            "go to cabinet 12",
+            "go to cabinet 13",
+            "go to cabinet 14",
+            "go to cabinet 15",
+            "go to cabinet 16",
+            "go to cabinet 17",
+            "go to cabinet 18",
+            "go to cabinet 19",
+            "go to cabinet 2",
+            "go to cabinet 20",
+            "go to cabinet 21",
+            "go to cabinet 22",
+            "go to cabinet 23",
+            "go to cabinet 3",
+            "go to cabinet 4",
+            "go to cabinet 5",
+            "go to cabinet 6",
+            "go to cabinet 7",
+            "go to cabinet 8",
+            "go to cabinet 9",
+            "go to countertop 1",
+            "go to countertop 2",
+            "go to countertop 3",
+            "go to diningtable 1",
+            "go to drawer 1",
+            "go to drawer 2",
+            "go to drawer 3",
+            "go to drawer 4",
+            "go to fridge 1",
+            "go to garbagecan 1",
+            "go to microwave 1",
+            "go to sinkbasin 1",
+            "go to stoveburner 1",
+            "go to stoveburner 2",
+            "go to stoveburner 3",
+            "go to stoveburner 4",
+            "go to toaster 1",
+            "help",
+            "inventory",
+            "look",
+            "take mug 3 from coffeemachine 1"
+          ],
+          "resulting_observation": "You arrive at coffeemachine 1. On the coffeemachine 1, you see a mug 3.",
+          "submitted_environment_action": "go to coffeemachine 1"
+        },
+        {
+          "admissible_commands": [
+            "examine coffeemachine 1",
+            "go to cabinet 1",
+            "go to cabinet 10",
+            "go to cabinet 11",
+            "go to cabinet 12",
+            "go to cabinet 13",
+            "go to cabinet 14",
+            "go to cabinet 15",
+            "go to cabinet 16",
+            "go to cabinet 17",
+            "go to cabinet 18",
+            "go to cabinet 19",
+            "go to cabinet 2",
+            "go to cabinet 20",
+            "go to cabinet 21",
+            "go to cabinet 22",
+            "go to cabinet 23",
+            "go to cabinet 3",
+            "go to cabinet 4",
+            "go to cabinet 5",
+            "go to cabinet 6",
+            "go to cabinet 7",
+            "go to cabinet 8",
+            "go to cabinet 9",
+            "go to countertop 1",
+            "go to countertop 2",
+            "go to countertop 3",
+            "go to diningtable 1",
+            "go to drawer 1",
+            "go to drawer 2",
+            "go to drawer 3",
+            "go to drawer 4",
+            "go to fridge 1",
+            "go to garbagecan 1",
+            "go to microwave 1",
+            "go to sinkbasin 1",
+            "go to stoveburner 1",
+            "go to stoveburner 2",
+            "go to stoveburner 3",
+            "go to stoveburner 4",
+            "go to toaster 1",
+            "help",
+            "inventory",
+            "look",
+            "take mug 3 from coffeemachine 1"
+          ],
+          "attempt_outcome": "ACTION_EXECUTED",
+          "budget_after": {
+            "consecutive_nonexecuted_attempt_count": 0,
+            "environment_step_count": 4,
+            "inadmissible_action_count": 0,
+            "policy_attempt_count": 4,
+            "protocol_failure_count": 0
+          },
+          "budget_before": {
+            "consecutive_nonexecuted_attempt_count": 0,
+            "environment_step_count": 3,
+            "inadmissible_action_count": 0,
+            "policy_attempt_count": 3,
+            "protocol_failure_count": 0
+          },
+          "environment_done": false,
+          "environment_score": 0,
+          "environment_step_count_before": 3,
+          "environment_won": false,
+          "executed_history": [
+            {
+              "action": "go to cabinet 1",
+              "resulting_observation": "You arrive at cabinet 1. The cabinet 1 is closed."
+            },
+            {
+              "action": "open cabinet 1",
+              "resulting_observation": "You open the cabinet 1. The cabinet 1 is open. In it, you see nothing."
+            },
+            {
+              "action": "go to coffeemachine 1",
+              "resulting_observation": "You arrive at coffeemachine 1. On the coffeemachine 1, you see a mug 3."
+            }
+          ],
+          "execution_status": "executed",
+          "final_executed_action": "take mug 3 from coffeemachine 1",
+          "literal_action": "take mug 3 from coffeemachine 1",
+          "model_call_index": 3,
+          "normalized_action": "take mug 3 from coffeemachine 1",
+          "observation_before": "You arrive at coffeemachine 1. On the coffeemachine 1, you see a mug 3.",
+          "parser_error": null,
+          "parser_status": "success",
+          "policy_prompt_text": "MEMORY_AUGMENTED_RAW_POLICY_PROMPT_V1\nTASK_GOAL_JSON=\"put a clean mug in coffeemachine.\"\nCURRENT_OBSERVATION_JSON=\"You arrive at coffeemachine 1. On the coffeemachine 1, you see a mug 3.\"\nEXECUTED_TRANSITIONS_JSON=[{\"action\":\"go to cabinet 1\",\"resulting_observation\":\"You arrive at cabinet 1. The cabinet 1 is closed.\"},{\"action\":\"open cabinet 1\",\"resulting_observation\":\"You open the cabinet 1. The cabinet 1 is open. In it, you see nothing.\"},{\"action\":\"go to coffeemachine 1\",\"resulting_observation\":\"You arrive at coffeemachine 1. On the coffeemachine 1, you see a mug 3.\"}]\nRETRIEVED_FAILURE_EXPERIENCES_JSON=[]\nVISIBLE_ADMISSIBLE_COMMANDS_JSON=[\"examine coffeemachine 1\",\"go to cabinet 1\",\"go to cabinet 10\",\"go to cabinet 11\",\"go to cabinet 12\",\"go to cabinet 13\",\"go to cabinet 14\",\"go to cabinet 15\",\"go to cabinet 16\",\"go to cabinet 17\",\"go to cabinet 18\",\"go to cabinet 19\",\"go to cabinet 2\",\"go to cabinet 20\",\"go to cabinet 21\",\"go to cabinet 22\",\"go to cabinet 23\",\"go to cabinet 3\",\"go to cabinet 4\",\"go to cabinet 5\",\"go to cabinet 6\",\"go to cabinet 7\",\"go to cabinet 8\",\"go to cabinet 9\",\"go to countertop 1\",\"go to countertop 2\",\"go to countertop 3\",\"go to diningtable 1\",\"go to drawer 1\",\"go to drawer 2\",\"go to drawer 3\",\"go to drawer 4\",\"go to fridge 1\",\"go to garbagecan 1\",\"go to microwave 1\",\"go to sinkbasin 1\",\"go to stoveburner 1\",\"go to stoveburner 2\",\"go to stoveburner 3\",\"go to stoveburner 4\",\"go to toaster 1\",\"help\",\"inventory\",\"look\",\"take mug 3 from coffeemachine 1\"]\nINTERFACE_FEEDBACK_JSON=null\nOUTPUT_REQUIREMENT={\"action\":\"<command>\"}",
+          "public_task_goal": "put a clean mug in coffeemachine.",
+          "raw_model_response": "{\"action\":\"take mug 3 from coffeemachine 1\"}",
+          "resulting_admissible_commands": [
+            "examine coffeemachine 1",
+            "examine mug 3",
+            "go to cabinet 1",
+            "go to cabinet 10",
+            "go to cabinet 11",
+            "go to cabinet 12",
+            "go to cabinet 13",
+            "go to cabinet 14",
+            "go to cabinet 15",
+            "go to cabinet 16",
+            "go to cabinet 17",
+            "go to cabinet 18",
+            "go to cabinet 19",
+            "go to cabinet 2",
+            "go to cabinet 20",
+            "go to cabinet 21",
+            "go to cabinet 22",
+            "go to cabinet 23",
+            "go to cabinet 3",
+            "go to cabinet 4",
+            "go to cabinet 5",
+            "go to cabinet 6",
+            "go to cabinet 7",
+            "go to cabinet 8",
+            "go to cabinet 9",
+            "go to countertop 1",
+            "go to countertop 2",
+            "go to countertop 3",
+            "go to diningtable 1",
+            "go to drawer 1",
+            "go to drawer 2",
+            "go to drawer 3",
+            "go to drawer 4",
+            "go to fridge 1",
+            "go to garbagecan 1",
+            "go to microwave 1",
+            "go to sinkbasin 1",
+            "go to stoveburner 1",
+            "go to stoveburner 2",
+            "go to stoveburner 3",
+            "go to stoveburner 4",
+            "go to toaster 1",
+            "help",
+            "inventory",
+            "look",
+            "move mug 3 to coffeemachine 1"
+          ],
+          "resulting_observation": "You pick up the mug 3 from the coffeemachine 1.",
+          "submitted_environment_action": "take mug 3 from coffeemachine 1"
+        },
+        {
+          "admissible_commands": [
+            "examine coffeemachine 1",
+            "examine mug 3",
+            "go to cabinet 1",
+            "go to cabinet 10",
+            "go to cabinet 11",
+            "go to cabinet 12",
+            "go to cabinet 13",
+            "go to cabinet 14",
+            "go to cabinet 15",
+            "go to cabinet 16",
+            "go to cabinet 17",
+            "go to cabinet 18",
+            "go to cabinet 19",
+            "go to cabinet 2",
+            "go to cabinet 20",
+            "go to cabinet 21",
+            "go to cabinet 22",
+            "go to cabinet 23",
+            "go to cabinet 3",
+            "go to cabinet 4",
+            "go to cabinet 5",
+            "go to cabinet 6",
+            "go to cabinet 7",
+            "go to cabinet 8",
+            "go to cabinet 9",
+            "go to countertop 1",
+            "go to countertop 2",
+            "go to countertop 3",
+            "go to diningtable 1",
+            "go to drawer 1",
+            "go to drawer 2",
+            "go to drawer 3",
+            "go to drawer 4",
+            "go to fridge 1",
+            "go to garbagecan 1",
+            "go to microwave 1",
+            "go to sinkbasin 1",
+            "go to stoveburner 1",
+            "go to stoveburner 2",
+            "go to stoveburner 3",
+            "go to stoveburner 4",
+            "go to toaster 1",
+            "help",
+            "inventory",
+            "look",
+            "move mug 3 to coffeemachine 1"
+          ],
+          "attempt_outcome": "ACTION_NOT_ADMISSIBLE",
+          "budget_after": {
+            "consecutive_nonexecuted_attempt_count": 1,
+            "environment_step_count": 4,
+            "inadmissible_action_count": 1,
+            "policy_attempt_count": 5,
+            "protocol_failure_count": 0
+          },
+          "budget_before": {
+            "consecutive_nonexecuted_attempt_count": 0,
+            "environment_step_count": 4,
+            "inadmissible_action_count": 0,
+            "policy_attempt_count": 4,
+            "protocol_failure_count": 0
+          },
+          "environment_done": null,
+          "environment_score": null,
+          "environment_step_count_before": 4,
+          "environment_won": null,
+          "executed_history": [
+            {
+              "action": "go to cabinet 1",
+              "resulting_observation": "You arrive at cabinet 1. The cabinet 1 is closed."
+            },
+            {
+              "action": "open cabinet 1",
+              "resulting_observation": "You open the cabinet 1. The cabinet 1 is open. In it, you see nothing."
+            },
+            {
+              "action": "go to coffeemachine 1",
+              "resulting_observation": "You arrive at coffeemachine 1. On the coffeemachine 1, you see a mug 3."
+            },
+            {
+              "action": "take mug 3 from coffeemachine 1",
+              "resulting_observation": "You pick up the mug 3 from the coffeemachine 1."
+            }
+          ],
+          "execution_status": "not_executed",
+          "final_executed_action": null,
+          "literal_action": "go to countertop 1, examine mug 3, go to coffeemachine 1, take mug 3 from coffeemachine 1",
+          "model_call_index": 4,
+          "normalized_action": "go to countertop 1, examine mug 3, go to coffeemachine 1, take mug 3 from coffeemachine 1",
+          "observation_before": "You pick up the mug 3 from the coffeemachine 1.",
+          "parser_error": null,
+          "parser_status": "success",
+          "policy_prompt_text": "MEMORY_AUGMENTED_RAW_POLICY_PROMPT_V1\nTASK_GOAL_JSON=\"put a clean mug in coffeemachine.\"\nCURRENT_OBSERVATION_JSON=\"You pick up the mug 3 from the coffeemachine 1.\"\nEXECUTED_TRANSITIONS_JSON=[{\"action\":\"go to cabinet 1\",\"resulting_observation\":\"You arrive at cabinet 1. The cabinet 1 is closed.\"},{\"action\":\"open cabinet 1\",\"resulting_observation\":\"You open the cabinet 1. The cabinet 1 is open. In it, you see nothing.\"},{\"action\":\"go to coffeemachine 1\",\"resulting_observation\":\"You arrive at coffeemachine 1. On the coffeemachine 1, you see a mug 3.\"},{\"action\":\"take mug 3 from coffeemachine 1\",\"resulting_observation\":\"You pick up the mug 3 from the coffeemachine 1.\"}]\nRETRIEVED_FAILURE_EXPERIENCES_JSON=[]\nVISIBLE_ADMISSIBLE_COMMANDS_JSON=[\"examine coffeemachine 1\",\"examine mug 3\",\"go to cabinet 1\",\"go to cabinet 10\",\"go to cabinet 11\",\"go to cabinet 12\",\"go to cabinet 13\",\"go to cabinet 14\",\"go to cabinet 15\",\"go to cabinet 16\",\"go to cabinet 17\",\"go to cabinet 18\",\"go to cabinet 19\",\"go to cabinet 2\",\"go to cabinet 20\",\"go to cabinet 21\",\"go to cabinet 22\",\"go to cabinet 23\",\"go to cabinet 3\",\"go to cabinet 4\",\"go to cabinet 5\",\"go to cabinet 6\",\"go to cabinet 7\",\"go to cabinet 8\",\"go to cabinet 9\",\"go to countertop 1\",\"go to countertop 2\",\"go to countertop 3\",\"go to diningtable 1\",\"go to drawer 1\",\"go to drawer 2\",\"go to drawer 3\",\"go to drawer 4\",\"go to fridge 1\",\"go to garbagecan 1\",\"go to microwave 1\",\"go to sinkbasin 1\",\"go to stoveburner 1\",\"go to stoveburner 2\",\"go to stoveburner 3\",\"go to stoveburner 4\",\"go to toaster 1\",\"help\",\"inventory\",\"look\",\"move mug 3 to coffeemachine 1\"]\nINTERFACE_FEEDBACK_JSON=null\nOUTPUT_REQUIREMENT={\"action\":\"<command>\"}",
+          "public_task_goal": "put a clean mug in coffeemachine.",
+          "raw_model_response": "{\"action\":\"go to countertop 1, examine mug 3, go to coffeemachine 1, take mug 3 from coffeemachine 1\"}",
+          "resulting_admissible_commands": null,
+          "resulting_observation": null,
+          "submitted_environment_action": null
+        },
+        {
+          "admissible_commands": [
+            "examine coffeemachine 1",
+            "examine mug 3",
+            "go to cabinet 1",
+            "go to cabinet 10",
+            "go to cabinet 11",
+            "go to cabinet 12",
+            "go to cabinet 13",
+            "go to cabinet 14",
+            "go to cabinet 15",
+            "go to cabinet 16",
+            "go to cabinet 17",
+            "go to cabinet 18",
+            "go to cabinet 19",
+            "go to cabinet 2",
+            "go to cabinet 20",
+            "go to cabinet 21",
+            "go to cabinet 22",
+            "go to cabinet 23",
+            "go to cabinet 3",
+            "go to cabinet 4",
+            "go to cabinet 5",
+            "go to cabinet 6",
+            "go to cabinet 7",
+            "go to cabinet 8",
+            "go to cabinet 9",
+            "go to countertop 1",
+            "go to countertop 2",
+            "go to countertop 3",
+            "go to diningtable 1",
+            "go to drawer 1",
+            "go to drawer 2",
+            "go to drawer 3",
+            "go to drawer 4",
+            "go to fridge 1",
+            "go to garbagecan 1",
+            "go to microwave 1",
+            "go to sinkbasin 1",
+            "go to stoveburner 1",
+            "go to stoveburner 2",
+            "go to stoveburner 3",
+            "go to stoveburner 4",
+            "go to toaster 1",
+            "help",
+            "inventory",
+            "look",
+            "move mug 3 to coffeemachine 1"
+          ],
+          "attempt_outcome": "ACTION_EXECUTED",
+          "budget_after": {
+            "consecutive_nonexecuted_attempt_count": 0,
+            "environment_step_count": 5,
+            "inadmissible_action_count": 1,
+            "policy_attempt_count": 6,
+            "protocol_failure_count": 0
+          },
+          "budget_before": {
+            "consecutive_nonexecuted_attempt_count": 1,
+            "environment_step_count": 4,
+            "inadmissible_action_count": 1,
+            "policy_attempt_count": 5,
+            "protocol_failure_count": 0
+          },
+          "environment_done": false,
+          "environment_score": 0,
+          "environment_step_count_before": 4,
+          "environment_won": false,
+          "executed_history": [
+            {
+              "action": "go to cabinet 1",
+              "resulting_observation": "You arrive at cabinet 1. The cabinet 1 is closed."
+            },
+            {
+              "action": "open cabinet 1",
+              "resulting_observation": "You open the cabinet 1. The cabinet 1 is open. In it, you see nothing."
+            },
+            {
+              "action": "go to coffeemachine 1",
+              "resulting_observation": "You arrive at coffeemachine 1. On the coffeemachine 1, you see a mug 3."
+            },
+            {
+              "action": "take mug 3 from coffeemachine 1",
+              "resulting_observation": "You pick up the mug 3 from the coffeemachine 1."
+            }
+          ],
+          "execution_status": "executed",
+          "final_executed_action": "examine mug 3",
+          "literal_action": "examine mug 3",
+          "model_call_index": 5,
+          "normalized_action": "examine mug 3",
+          "observation_before": "You pick up the mug 3 from the coffeemachine 1.",
+          "parser_error": null,
+          "parser_status": "success",
+          "policy_prompt_text": "MEMORY_AUGMENTED_RAW_POLICY_PROMPT_V1\nTASK_GOAL_JSON=\"put a clean mug in coffeemachine.\"\nCURRENT_OBSERVATION_JSON=\"You pick up the mug 3 from the coffeemachine 1.\"\nEXECUTED_TRANSITIONS_JSON=[{\"action\":\"go to cabinet 1\",\"resulting_observation\":\"You arrive at cabinet 1. The cabinet 1 is closed.\"},{\"action\":\"open cabinet 1\",\"resulting_observation\":\"You open the cabinet 1. The cabinet 1 is open. In it, you see nothing.\"},{\"action\":\"go to coffeemachine 1\",\"resulting_observation\":\"You arrive at coffeemachine 1. On the coffeemachine 1, you see a mug 3.\"},{\"action\":\"take mug 3 from coffeemachine 1\",\"resulting_observation\":\"You pick up the mug 3 from the coffeemachine 1.\"}]\nRETRIEVED_FAILURE_EXPERIENCES_JSON=[]\nVISIBLE_ADMISSIBLE_COMMANDS_JSON=[\"examine coffeemachine 1\",\"examine mug 3\",\"go to cabinet 1\",\"go to cabinet 10\",\"go to cabinet 11\",\"go to cabinet 12\",\"go to cabinet 13\",\"go to cabinet 14\",\"go to cabinet 15\",\"go to cabinet 16\",\"go to cabinet 17\",\"go to cabinet 18\",\"go to cabinet 19\",\"go to cabinet 2\",\"go to cabinet 20\",\"go to cabinet 21\",\"go to cabinet 22\",\"go to cabinet 23\",\"go to cabinet 3\",\"go to cabinet 4\",\"go to cabinet 5\",\"go to cabinet 6\",\"go to cabinet 7\",\"go to cabinet 8\",\"go to cabinet 9\",\"go to countertop 1\",\"go to countertop 2\",\"go to countertop 3\",\"go to diningtable 1\",\"go to drawer 1\",\"go to drawer 2\",\"go to drawer 3\",\"go to drawer 4\",\"go to fridge 1\",\"go to garbagecan 1\",\"go to microwave 1\",\"go to sinkbasin 1\",\"go to stoveburner 1\",\"go to stoveburner 2\",\"go to stoveburner 3\",\"go to stoveburner 4\",\"go to toaster 1\",\"help\",\"inventory\",\"look\",\"move mug 3 to coffeemachine 1\"]\nINTERFACE_FEEDBACK_JSON=\"INVALID_ACTION_V1:\\nThe parsed action is not an exact member of the visible admissible-command menu.\\nNo environment action was executed.\"\nOUTPUT_REQUIREMENT={\"action\":\"<command>\"}",
+          "public_task_goal": "put a clean mug in coffeemachine.",
+          "raw_model_response": "{\n  \"action\": \"examine mug 3\"\n}",
+          "resulting_admissible_commands": [
+            "examine coffeemachine 1",
+            "examine mug 3",
+            "go to cabinet 1",
+            "go to cabinet 10",
+            "go to cabinet 11",
+            "go to cabinet 12",
+            "go to cabinet 13",
+            "go to cabinet 14",
+            "go to cabinet 15",
+            "go to cabinet 16",
+            "go to cabinet 17",
+            "go to cabinet 18",
+            "go to cabinet 19",
+            "go to cabinet 2",
+            "go to cabinet 20",
+            "go to cabinet 21",
+            "go to cabinet 22",
+            "go to cabinet 23",
+            "go to cabinet 3",
+            "go to cabinet 4",
+            "go to cabinet 5",
+            "go to cabinet 6",
+            "go to cabinet 7",
+            "go to cabinet 8",
+            "go to cabinet 9",
+            "go to countertop 1",
+            "go to countertop 2",
+            "go to countertop 3",
+            "go to diningtable 1",
+            "go to drawer 1",
+            "go to drawer 2",
+            "go to drawer 3",
+            "go to drawer 4",
+            "go to fridge 1",
+            "go to garbagecan 1",
+            "go to microwave 1",
+            "go to sinkbasin 1",
+            "go to stoveburner 1",
+            "go to stoveburner 2",
+            "go to stoveburner 3",
+            "go to stoveburner 4",
+            "go to toaster 1",
+            "help",
+            "inventory",
+            "look",
+            "move mug 3 to coffeemachine 1"
+          ],
+          "resulting_observation": "This is a normal mug 3. In it, you see nothing.",
+          "submitted_environment_action": "examine mug 3"
+        },
+        {
+          "admissible_commands": [
+            "examine coffeemachine 1",
+            "examine mug 3",
+            "go to cabinet 1",
+            "go to cabinet 10",
+            "go to cabinet 11",
+            "go to cabinet 12",
+            "go to cabinet 13",
+            "go to cabinet 14",
+            "go to cabinet 15",
+            "go to cabinet 16",
+            "go to cabinet 17",
+            "go to cabinet 18",
+            "go to cabinet 19",
+            "go to cabinet 2",
+            "go to cabinet 20",
+            "go to cabinet 21",
+            "go to cabinet 22",
+            "go to cabinet 23",
+            "go to cabinet 3",
+            "go to cabinet 4",
+            "go to cabinet 5",
+            "go to cabinet 6",
+            "go to cabinet 7",
+            "go to cabinet 8",
+            "go to cabinet 9",
+            "go to countertop 1",
+            "go to countertop 2",
+            "go to countertop 3",
+            "go to diningtable 1",
+            "go to drawer 1",
+            "go to drawer 2",
+            "go to drawer 3",
+            "go to drawer 4",
+            "go to fridge 1",
+            "go to garbagecan 1",
+            "go to microwave 1",
+            "go to sinkbasin 1",
+            "go to stoveburner 1",
+            "go to stoveburner 2",
+            "go to stoveburner 3",
+            "go to stoveburner 4",
+            "go to toaster 1",
+            "help",
+            "inventory",
+            "look",
+            "move mug 3 to coffeemachine 1"
+          ],
+          "attempt_outcome": "ACTION_NOT_ADMISSIBLE",
+          "budget_after": {
+            "consecutive_nonexecuted_attempt_count": 1,
+            "environment_step_count": 5,
+            "inadmissible_action_count": 2,
+            "policy_attempt_count": 7,
+            "protocol_failure_count": 0
+          },
+          "budget_before": {
+            "consecutive_nonexecuted_attempt_count": 0,
+            "environment_step_count": 5,
+            "inadmissible_action_count": 1,
+            "policy_attempt_count": 6,
+            "protocol_failure_count": 0
+          },
+          "environment_done": null,
+          "environment_score": null,
+          "environment_step_count_before": 5,
+          "environment_won": null,
+          "executed_history": [
+            {
+              "action": "go to cabinet 1",
+              "resulting_observation": "You arrive at cabinet 1. The cabinet 1 is closed."
+            },
+            {
+              "action": "open cabinet 1",
+              "resulting_observation": "You open the cabinet 1. The cabinet 1 is open. In it, you see nothing."
+            },
+            {
+              "action": "go to coffeemachine 1",
+              "resulting_observation": "You arrive at coffeemachine 1. On the coffeemachine 1, you see a mug 3."
+            },
+            {
+              "action": "take mug 3 from coffeemachine 1",
+              "resulting_observation": "You pick up the mug 3 from the coffeemachine 1."
+            },
+            {
+              "action": "examine mug 3",
+              "resulting_observation": "This is a normal mug 3. In it, you see nothing."
+            }
+          ],
+          "execution_status": "not_executed",
+          "final_executed_action": null,
+          "literal_action": "go to coffeemachine 1, take mug 3 from coffeemachine 1, move mug 3 to coffeemachine 1",
+          "model_call_index": 6,
+          "normalized_action": "go to coffeemachine 1, take mug 3 from coffeemachine 1, move mug 3 to coffeemachine 1",
+          "observation_before": "This is a normal mug 3. In it, you see nothing.",
+          "parser_error": null,
+          "parser_status": "success",
+          "policy_prompt_text": "MEMORY_AUGMENTED_RAW_POLICY_PROMPT_V1\nTASK_GOAL_JSON=\"put a clean mug in coffeemachine.\"\nCURRENT_OBSERVATION_JSON=\"This is a normal mug 3. In it, you see nothing.\"\nEXECUTED_TRANSITIONS_JSON=[{\"action\":\"go to cabinet 1\",\"resulting_observation\":\"You arrive at cabinet 1. The cabinet 1 is closed.\"},{\"action\":\"open cabinet 1\",\"resulting_observation\":\"You open the cabinet 1. The cabinet 1 is open. In it, you see nothing.\"},{\"action\":\"go to coffeemachine 1\",\"resulting_observation\":\"You arrive at coffeemachine 1. On the coffeemachine 1, you see a mug 3.\"},{\"action\":\"take mug 3 from coffeemachine 1\",\"resulting_observation\":\"You pick up the mug 3 from the coffeemachine 1.\"},{\"action\":\"examine mug 3\",\"resulting_observation\":\"This is a normal mug 3. In it, you see nothing.\"}]\nRETRIEVED_FAILURE_EXPERIENCES_JSON=[]\nVISIBLE_ADMISSIBLE_COMMANDS_JSON=[\"examine coffeemachine 1\",\"examine mug 3\",\"go to cabinet 1\",\"go to cabinet 10\",\"go to cabinet 11\",\"go to cabinet 12\",\"go to cabinet 13\",\"go to cabinet 14\",\"go to cabinet 15\",\"go to cabinet 16\",\"go to cabinet 17\",\"go to cabinet 18\",\"go to cabinet 19\",\"go to cabinet 2\",\"go to cabinet 20\",\"go to cabinet 21\",\"go to cabinet 22\",\"go to cabinet 23\",\"go to cabinet 3\",\"go to cabinet 4\",\"go to cabinet 5\",\"go to cabinet 6\",\"go to cabinet 7\",\"go to cabinet 8\",\"go to cabinet 9\",\"go to countertop 1\",\"go to countertop 2\",\"go to countertop 3\",\"go to diningtable 1\",\"go to drawer 1\",\"go to drawer 2\",\"go to drawer 3\",\"go to drawer 4\",\"go to fridge 1\",\"go to garbagecan 1\",\"go to microwave 1\",\"go to sinkbasin 1\",\"go to stoveburner 1\",\"go to stoveburner 2\",\"go to stoveburner 3\",\"go to stoveburner 4\",\"go to toaster 1\",\"help\",\"inventory\",\"look\",\"move mug 3 to coffeemachine 1\"]\nINTERFACE_FEEDBACK_JSON=null\nOUTPUT_REQUIREMENT={\"action\":\"<command>\"}",
+          "public_task_goal": "put a clean mug in coffeemachine.",
+          "raw_model_response": "{\"action\":\"go to coffeemachine 1, take mug 3 from coffeemachine 1, move mug 3 to coffeemachine 1\"}",
+          "resulting_admissible_commands": null,
+          "resulting_observation": null,
+          "submitted_environment_action": null
+        },
+        {
+          "admissible_commands": [
+            "examine coffeemachine 1",
+            "examine mug 3",
+            "go to cabinet 1",
+            "go to cabinet 10",
+            "go to cabinet 11",
+            "go to cabinet 12",
+            "go to cabinet 13",
+            "go to cabinet 14",
+            "go to cabinet 15",
+            "go to cabinet 16",
+            "go to cabinet 17",
+            "go to cabinet 18",
+            "go to cabinet 19",
+            "go to cabinet 2",
+            "go to cabinet 20",
+            "go to cabinet 21",
+            "go to cabinet 22",
+            "go to cabinet 23",
+            "go to cabinet 3",
+            "go to cabinet 4",
+            "go to cabinet 5",
+            "go to cabinet 6",
+            "go to cabinet 7",
+            "go to cabinet 8",
+            "go to cabinet 9",
+            "go to countertop 1",
+            "go to countertop 2",
+            "go to countertop 3",
+            "go to diningtable 1",
+            "go to drawer 1",
+            "go to drawer 2",
+            "go to drawer 3",
+            "go to drawer 4",
+            "go to fridge 1",
+            "go to garbagecan 1",
+            "go to microwave 1",
+            "go to sinkbasin 1",
+            "go to stoveburner 1",
+            "go to stoveburner 2",
+            "go to stoveburner 3",
+            "go to stoveburner 4",
+            "go to toaster 1",
+            "help",
+            "inventory",
+            "look",
+            "move mug 3 to coffeemachine 1"
+          ],
+          "attempt_outcome": "ACTION_EXECUTED",
+          "budget_after": {
+            "consecutive_nonexecuted_attempt_count": 0,
+            "environment_step_count": 6,
+            "inadmissible_action_count": 2,
+            "policy_attempt_count": 8,
+            "protocol_failure_count": 0
+          },
+          "budget_before": {
+            "consecutive_nonexecuted_attempt_count": 1,
+            "environment_step_count": 5,
+            "inadmissible_action_count": 2,
+            "policy_attempt_count": 7,
+            "protocol_failure_count": 0
+          },
+          "environment_done": false,
+          "environment_score": 0,
+          "environment_step_count_before": 5,
+          "environment_won": false,
+          "executed_history": [
+            {
+              "action": "go to cabinet 1",
+              "resulting_observation": "You arrive at cabinet 1. The cabinet 1 is closed."
+            },
+            {
+              "action": "open cabinet 1",
+              "resulting_observation": "You open the cabinet 1. The cabinet 1 is open. In it, you see nothing."
+            },
+            {
+              "action": "go to coffeemachine 1",
+              "resulting_observation": "You arrive at coffeemachine 1. On the coffeemachine 1, you see a mug 3."
+            },
+            {
+              "action": "take mug 3 from coffeemachine 1",
+              "resulting_observation": "You pick up the mug 3 from the coffeemachine 1."
+            },
+            {
+              "action": "examine mug 3",
+              "resulting_observation": "This is a normal mug 3. In it, you see nothing."
+            }
+          ],
+          "execution_status": "executed",
+          "final_executed_action": "examine coffeemachine 1",
+          "literal_action": "examine coffeemachine 1",
+          "model_call_index": 7,
+          "normalized_action": "examine coffeemachine 1",
+          "observation_before": "This is a normal mug 3. In it, you see nothing.",
+          "parser_error": null,
+          "parser_status": "success",
+          "policy_prompt_text": "MEMORY_AUGMENTED_RAW_POLICY_PROMPT_V1\nTASK_GOAL_JSON=\"put a clean mug in coffeemachine.\"\nCURRENT_OBSERVATION_JSON=\"This is a normal mug 3. In it, you see nothing.\"\nEXECUTED_TRANSITIONS_JSON=[{\"action\":\"go to cabinet 1\",\"resulting_observation\":\"You arrive at cabinet 1. The cabinet 1 is closed.\"},{\"action\":\"open cabinet 1\",\"resulting_observation\":\"You open the cabinet 1. The cabinet 1 is open. In it, you see nothing.\"},{\"action\":\"go to coffeemachine 1\",\"resulting_observation\":\"You arrive at coffeemachine 1. On the coffeemachine 1, you see a mug 3.\"},{\"action\":\"take mug 3 from coffeemachine 1\",\"resulting_observation\":\"You pick up the mug 3 from the coffeemachine 1.\"},{\"action\":\"examine mug 3\",\"resulting_observation\":\"This is a normal mug 3. In it, you see nothing.\"}]\nRETRIEVED_FAILURE_EXPERIENCES_JSON=[]\nVISIBLE_ADMISSIBLE_COMMANDS_JSON=[\"examine coffeemachine 1\",\"examine mug 3\",\"go to cabinet 1\",\"go to cabinet 10\",\"go to cabinet 11\",\"go to cabinet 12\",\"go to cabinet 13\",\"go to cabinet 14\",\"go to cabinet 15\",\"go to cabinet 16\",\"go to cabinet 17\",\"go to cabinet 18\",\"go to cabinet 19\",\"go to cabinet 2\",\"go to cabinet 20\",\"go to cabinet 21\",\"go to cabinet 22\",\"go to cabinet 23\",\"go to cabinet 3\",\"go to cabinet 4\",\"go to cabinet 5\",\"go to cabinet 6\",\"go to cabinet 7\",\"go to cabinet 8\",\"go to cabinet 9\",\"go to countertop 1\",\"go to countertop 2\",\"go to countertop 3\",\"go to diningtable 1\",\"go to drawer 1\",\"go to drawer 2\",\"go to drawer 3\",\"go to drawer 4\",\"go to fridge 1\",\"go to garbagecan 1\",\"go to microwave 1\",\"go to sinkbasin 1\",\"go to stoveburner 1\",\"go to stoveburner 2\",\"go to stoveburner 3\",\"go to stoveburner 4\",\"go to toaster 1\",\"help\",\"inventory\",\"look\",\"move mug 3 to coffeemachine 1\"]\nINTERFACE_FEEDBACK_JSON=\"INVALID_ACTION_V1:\\nThe parsed action is not an exact member of the visible admissible-command menu.\\nNo environment action was executed.\"\nOUTPUT_REQUIREMENT={\"action\":\"<command>\"}",
+          "public_task_goal": "put a clean mug in coffeemachine.",
+          "raw_model_response": "{\"action\":\"examine coffeemachine 1\"}",
+          "resulting_admissible_commands": [
+            "examine coffeemachine 1",
+            "examine mug 3",
+            "go to cabinet 1",
+            "go to cabinet 10",
+            "go to cabinet 11",
+            "go to cabinet 12",
+            "go to cabinet 13",
+            "go to cabinet 14",
+            "go to cabinet 15",
+            "go to cabinet 16",
+            "go to cabinet 17",
+            "go to cabinet 18",
+            "go to cabinet 19",
+            "go to cabinet 2",
+            "go to cabinet 20",
+            "go to cabinet 21",
+            "go to cabinet 22",
+            "go to cabinet 23",
+            "go to cabinet 3",
+            "go to cabinet 4",
+            "go to cabinet 5",
+            "go to cabinet 6",
+            "go to cabinet 7",
+            "go to cabinet 8",
+            "go to cabinet 9",
+            "go to countertop 1",
+            "go to countertop 2",
+            "go to countertop 3",
+            "go to diningtable 1",
+            "go to drawer 1",
+            "go to drawer 2",
+            "go to drawer 3",
+            "go to drawer 4",
+            "go to fridge 1",
+            "go to garbagecan 1",
+            "go to microwave 1",
+            "go to sinkbasin 1",
+            "go to stoveburner 1",
+            "go to stoveburner 2",
+            "go to stoveburner 3",
+            "go to stoveburner 4",
+            "go to toaster 1",
+            "help",
+            "inventory",
+            "look",
+            "move mug 3 to coffeemachine 1"
+          ],
+          "resulting_observation": "On the coffeemachine 1, you see nothing.",
+          "submitted_environment_action": "examine coffeemachine 1"
+        },
+        {
+          "admissible_commands": [
+            "examine coffeemachine 1",
+            "examine mug 3",
+            "go to cabinet 1",
+            "go to cabinet 10",
+            "go to cabinet 11",
+            "go to cabinet 12",
+            "go to cabinet 13",
+            "go to cabinet 14",
+            "go to cabinet 15",
+            "go to cabinet 16",
+            "go to cabinet 17",
+            "go to cabinet 18",
+            "go to cabinet 19",
+            "go to cabinet 2",
+            "go to cabinet 20",
+            "go to cabinet 21",
+            "go to cabinet 22",
+            "go to cabinet 23",
+            "go to cabinet 3",
+            "go to cabinet 4",
+            "go to cabinet 5",
+            "go to cabinet 6",
+            "go to cabinet 7",
+            "go to cabinet 8",
+            "go to cabinet 9",
+            "go to countertop 1",
+            "go to countertop 2",
+            "go to countertop 3",
+            "go to diningtable 1",
+            "go to drawer 1",
+            "go to drawer 2",
+            "go to drawer 3",
+            "go to drawer 4",
+            "go to fridge 1",
+            "go to garbagecan 1",
+            "go to microwave 1",
+            "go to sinkbasin 1",
+            "go to stoveburner 1",
+            "go to stoveburner 2",
+            "go to stoveburner 3",
+            "go to stoveburner 4",
+            "go to toaster 1",
+            "help",
+            "inventory",
+            "look",
+            "move mug 3 to coffeemachine 1"
+          ],
+          "attempt_outcome": "ACTION_NOT_ADMISSIBLE",
+          "budget_after": {
+            "consecutive_nonexecuted_attempt_count": 1,
+            "environment_step_count": 6,
+            "inadmissible_action_count": 3,
+            "policy_attempt_count": 9,
+            "protocol_failure_count": 0
+          },
+          "budget_before": {
+            "consecutive_nonexecuted_attempt_count": 0,
+            "environment_step_count": 6,
+            "inadmissible_action_count": 2,
+            "policy_attempt_count": 8,
+            "protocol_failure_count": 0
+          },
+          "environment_done": null,
+          "environment_score": null,
+          "environment_step_count_before": 6,
+          "environment_won": null,
+          "executed_history": [
+            {
+              "action": "go to cabinet 1",
+              "resulting_observation": "You arrive at cabinet 1. The cabinet 1 is closed."
+            },
+            {
+              "action": "open cabinet 1",
+              "resulting_observation": "You open the cabinet 1. The cabinet 1 is open. In it, you see nothing."
+            },
+            {
+              "action": "go to coffeemachine 1",
+              "resulting_observation": "You arrive at coffeemachine 1. On the coffeemachine 1, you see a mug 3."
+            },
+            {
+              "action": "take mug 3 from coffeemachine 1",
+              "resulting_observation": "You pick up the mug 3 from the coffeemachine 1."
+            },
+            {
+              "action": "examine mug 3",
+              "resulting_observation": "This is a normal mug 3. In it, you see nothing."
+            },
+            {
+              "action": "examine coffeemachine 1",
+              "resulting_observation": "On the coffeemachine 1, you see nothing."
+            }
+          ],
+          "execution_status": "not_executed",
+          "final_executed_action": null,
+          "literal_action": "go to coffeemachine 1, take mug 3 from coffeemachine 1, move mug 3 to coffeemachine 1",
+          "model_call_index": 8,
+          "normalized_action": "go to coffeemachine 1, take mug 3 from coffeemachine 1, move mug 3 to coffeemachine 1",
+          "observation_before": "On the coffeemachine 1, you see nothing.",
+          "parser_error": null,
+          "parser_status": "success",
+          "policy_prompt_text": "MEMORY_AUGMENTED_RAW_POLICY_PROMPT_V1\nTASK_GOAL_JSON=\"put a clean mug in coffeemachine.\"\nCURRENT_OBSERVATION_JSON=\"On the coffeemachine 1, you see nothing.\"\nEXECUTED_TRANSITIONS_JSON=[{\"action\":\"go to cabinet 1\",\"resulting_observation\":\"You arrive at cabinet 1. The cabinet 1 is closed.\"},{\"action\":\"open cabinet 1\",\"resulting_observation\":\"You open the cabinet 1. The cabinet 1 is open. In it, you see nothing.\"},{\"action\":\"go to coffeemachine 1\",\"resulting_observation\":\"You arrive at coffeemachine 1. On the coffeemachine 1, you see a mug 3.\"},{\"action\":\"take mug 3 from coffeemachine 1\",\"resulting_observation\":\"You pick up the mug 3 from the coffeemachine 1.\"},{\"action\":\"examine mug 3\",\"resulting_observation\":\"This is a normal mug 3. In it, you see nothing.\"},{\"action\":\"examine coffeemachine 1\",\"resulting_observation\":\"On the coffeemachine 1, you see nothing.\"}]\nRETRIEVED_FAILURE_EXPERIENCES_JSON=[]\nVISIBLE_ADMISSIBLE_COMMANDS_JSON=[\"examine coffeemachine 1\",\"examine mug 3\",\"go to cabinet 1\",\"go to cabinet 10\",\"go to cabinet 11\",\"go to cabinet 12\",\"go to cabinet 13\",\"go to cabinet 14\",\"go to cabinet 15\",\"go to cabinet 16\",\"go to cabinet 17\",\"go to cabinet 18\",\"go to cabinet 19\",\"go to cabinet 2\",\"go to cabinet 20\",\"go to cabinet 21\",\"go to cabinet 22\",\"go to cabinet 23\",\"go to cabinet 3\",\"go to cabinet 4\",\"go to cabinet 5\",\"go to cabinet 6\",\"go to cabinet 7\",\"go to cabinet 8\",\"go to cabinet 9\",\"go to countertop 1\",\"go to countertop 2\",\"go to countertop 3\",\"go to diningtable 1\",\"go to drawer 1\",\"go to drawer 2\",\"go to drawer 3\",\"go to drawer 4\",\"go to fridge 1\",\"go to garbagecan 1\",\"go to microwave 1\",\"go to sinkbasin 1\",\"go to stoveburner 1\",\"go to stoveburner 2\",\"go to stoveburner 3\",\"go to stoveburner 4\",\"go to toaster 1\",\"help\",\"inventory\",\"look\",\"move mug 3 to coffeemachine 1\"]\nINTERFACE_FEEDBACK_JSON=null\nOUTPUT_REQUIREMENT={\"action\":\"<command>\"}",
+          "public_task_goal": "put a clean mug in coffeemachine.",
+          "raw_model_response": "{\"action\":\"go to coffeemachine 1, take mug 3 from coffeemachine 1, move mug 3 to coffeemachine 1\"}",
+          "resulting_admissible_commands": null,
+          "resulting_observation": null,
+          "submitted_environment_action": null
+        },
+        {
+          "admissible_commands": [
+            "examine coffeemachine 1",
+            "examine mug 3",
+            "go to cabinet 1",
+            "go to cabinet 10",
+            "go to cabinet 11",
+            "go to cabinet 12",
+            "go to cabinet 13",
+            "go to cabinet 14",
+            "go to cabinet 15",
+            "go to cabinet 16",
+            "go to cabinet 17",
+            "go to cabinet 18",
+            "go to cabinet 19",
+            "go to cabinet 2",
+            "go to cabinet 20",
+            "go to cabinet 21",
+            "go to cabinet 22",
+            "go to cabinet 23",
+            "go to cabinet 3",
+            "go to cabinet 4",
+            "go to cabinet 5",
+            "go to cabinet 6",
+            "go to cabinet 7",
+            "go to cabinet 8",
+            "go to cabinet 9",
+            "go to countertop 1",
+            "go to countertop 2",
+            "go to countertop 3",
+            "go to diningtable 1",
+            "go to drawer 1",
+            "go to drawer 2",
+            "go to drawer 3",
+            "go to drawer 4",
+            "go to fridge 1",
+            "go to garbagecan 1",
+            "go to microwave 1",
+            "go to sinkbasin 1",
+            "go to stoveburner 1",
+            "go to stoveburner 2",
+            "go to stoveburner 3",
+            "go to stoveburner 4",
+            "go to toaster 1",
+            "help",
+            "inventory",
+            "look",
+            "move mug 3 to coffeemachine 1"
+          ],
+          "attempt_outcome": "ACTION_EXECUTED",
+          "budget_after": {
+            "consecutive_nonexecuted_attempt_count": 0,
+            "environment_step_count": 7,
+            "inadmissible_action_count": 3,
+            "policy_attempt_count": 10,
+            "protocol_failure_count": 0
+          },
+          "budget_before": {
+            "consecutive_nonexecuted_attempt_count": 1,
+            "environment_step_count": 6,
+            "inadmissible_action_count": 3,
+            "policy_attempt_count": 9,
+            "protocol_failure_count": 0
+          },
+          "environment_done": false,
+          "environment_score": 0,
+          "environment_step_count_before": 6,
+          "environment_won": false,
+          "executed_history": [
+            {
+              "action": "go to cabinet 1",
+              "resulting_observation": "You arrive at cabinet 1. The cabinet 1 is closed."
+            },
+            {
+              "action": "open cabinet 1",
+              "resulting_observation": "You open the cabinet 1. The cabinet 1 is open. In it, you see nothing."
+            },
+            {
+              "action": "go to coffeemachine 1",
+              "resulting_observation": "You arrive at coffeemachine 1. On the coffeemachine 1, you see a mug 3."
+            },
+            {
+              "action": "take mug 3 from coffeemachine 1",
+              "resulting_observation": "You pick up the mug 3 from the coffeemachine 1."
+            },
+            {
+              "action": "examine mug 3",
+              "resulting_observation": "This is a normal mug 3. In it, you see nothing."
+            },
+            {
+              "action": "examine coffeemachine 1",
+              "resulting_observation": "On the coffeemachine 1, you see nothing."
+            }
+          ],
+          "execution_status": "executed",
+          "final_executed_action": "help",
+          "literal_action": "help",
+          "model_call_index": 9,
+          "normalized_action": "help",
+          "observation_before": "On the coffeemachine 1, you see nothing.",
+          "parser_error": null,
+          "parser_status": "success",
+          "policy_prompt_text": "MEMORY_AUGMENTED_RAW_POLICY_PROMPT_V1\nTASK_GOAL_JSON=\"put a clean mug in coffeemachine.\"\nCURRENT_OBSERVATION_JSON=\"On the coffeemachine 1, you see nothing.\"\nEXECUTED_TRANSITIONS_JSON=[{\"action\":\"go to cabinet 1\",\"resulting_observation\":\"You arrive at cabinet 1. The cabinet 1 is closed.\"},{\"action\":\"open cabinet 1\",\"resulting_observation\":\"You open the cabinet 1. The cabinet 1 is open. In it, you see nothing.\"},{\"action\":\"go to coffeemachine 1\",\"resulting_observation\":\"You arrive at coffeemachine 1. On the coffeemachine 1, you see a mug 3.\"},{\"action\":\"take mug 3 from coffeemachine 1\",\"resulting_observation\":\"You pick up the mug 3 from the coffeemachine 1.\"},{\"action\":\"examine mug 3\",\"resulting_observation\":\"This is a normal mug 3. In it, you see nothing.\"},{\"action\":\"examine coffeemachine 1\",\"resulting_observation\":\"On the coffeemachine 1, you see nothing.\"}]\nRETRIEVED_FAILURE_EXPERIENCES_JSON=[]\nVISIBLE_ADMISSIBLE_COMMANDS_JSON=[\"examine coffeemachine 1\",\"examine mug 3\",\"go to cabinet 1\",\"go to cabinet 10\",\"go to cabinet 11\",\"go to cabinet 12\",\"go to cabinet 13\",\"go to cabinet 14\",\"go to cabinet 15\",\"go to cabinet 16\",\"go to cabinet 17\",\"go to cabinet 18\",\"go to cabinet 19\",\"go to cabinet 2\",\"go to cabinet 20\",\"go to cabinet 21\",\"go to cabinet 22\",\"go to cabinet 23\",\"go to cabinet 3\",\"go to cabinet 4\",\"go to cabinet 5\",\"go to cabinet 6\",\"go to cabinet 7\",\"go to cabinet 8\",\"go to cabinet 9\",\"go to countertop 1\",\"go to countertop 2\",\"go to countertop 3\",\"go to diningtable 1\",\"go to drawer 1\",\"go to drawer 2\",\"go to drawer 3\",\"go to drawer 4\",\"go to fridge 1\",\"go to garbagecan 1\",\"go to microwave 1\",\"go to sinkbasin 1\",\"go to stoveburner 1\",\"go to stoveburner 2\",\"go to stoveburner 3\",\"go to stoveburner 4\",\"go to toaster 1\",\"help\",\"inventory\",\"look\",\"move mug 3 to coffeemachine 1\"]\nINTERFACE_FEEDBACK_JSON=\"INVALID_ACTION_V1:\\nThe parsed action is not an exact member of the visible admissible-command menu.\\nNo environment action was executed.\"\nOUTPUT_REQUIREMENT={\"action\":\"<command>\"}",
+          "public_task_goal": "put a clean mug in coffeemachine.",
+          "raw_model_response": "{\"action\":\"help\"}",
+          "resulting_admissible_commands": [
+            "examine coffeemachine 1",
+            "examine mug 3",
+            "go to cabinet 1",
+            "go to cabinet 10",
+            "go to cabinet 11",
+            "go to cabinet 12",
+            "go to cabinet 13",
+            "go to cabinet 14",
+            "go to cabinet 15",
+            "go to cabinet 16",
+            "go to cabinet 17",
+            "go to cabinet 18",
+            "go to cabinet 19",
+            "go to cabinet 2",
+            "go to cabinet 20",
+            "go to cabinet 21",
+            "go to cabinet 22",
+            "go to cabinet 23",
+            "go to cabinet 3",
+            "go to cabinet 4",
+            "go to cabinet 5",
+            "go to cabinet 6",
+            "go to cabinet 7",
+            "go to cabinet 8",
+            "go to cabinet 9",
+            "go to countertop 1",
+            "go to countertop 2",
+            "go to countertop 3",
+            "go to diningtable 1",
+            "go to drawer 1",
+            "go to drawer 2",
+            "go to drawer 3",
+            "go to drawer 4",
+            "go to fridge 1",
+            "go to garbagecan 1",
+            "go to microwave 1",
+            "go to sinkbasin 1",
+            "go to stoveburner 1",
+            "go to stoveburner 2",
+            "go to stoveburner 3",
+            "go to stoveburner 4",
+            "go to toaster 1",
+            "help",
+            "inventory",
+            "look",
+            "move mug 3 to coffeemachine 1"
+          ],
+          "resulting_observation": "Available commands:\n  look:                             look around your current location\n  inventory:                        check your current inventory\n  go to (receptacle):               move to a receptacle\n  open (receptacle):                open a receptacle\n  close (receptacle):               close a receptacle\n  take (object) from (receptacle):  take an object from a receptacle\n  move (object) to (receptacle):  place an object in or on a receptacle\n  examine (something):              examine a receptacle or an object\n  use (object):                     use an object\n  heat (object) with (receptacle):  heat an object using a receptacle\n  clean (object) with (receptacle): clean an object using a receptacle\n  cool (object) with (receptacle):  cool an object using a receptacle\n  slice (object) with (object):     slice an object using a sharp object\n",
+          "submitted_environment_action": "help"
+        },
+        {
+          "admissible_commands": [
+            "examine coffeemachine 1",
+            "examine mug 3",
+            "go to cabinet 1",
+            "go to cabinet 10",
+            "go to cabinet 11",
+            "go to cabinet 12",
+            "go to cabinet 13",
+            "go to cabinet 14",
+            "go to cabinet 15",
+            "go to cabinet 16",
+            "go to cabinet 17",
+            "go to cabinet 18",
+            "go to cabinet 19",
+            "go to cabinet 2",
+            "go to cabinet 20",
+            "go to cabinet 21",
+            "go to cabinet 22",
+            "go to cabinet 23",
+            "go to cabinet 3",
+            "go to cabinet 4",
+            "go to cabinet 5",
+            "go to cabinet 6",
+            "go to cabinet 7",
+            "go to cabinet 8",
+            "go to cabinet 9",
+            "go to countertop 1",
+            "go to countertop 2",
+            "go to countertop 3",
+            "go to diningtable 1",
+            "go to drawer 1",
+            "go to drawer 2",
+            "go to drawer 3",
+            "go to drawer 4",
+            "go to fridge 1",
+            "go to garbagecan 1",
+            "go to microwave 1",
+            "go to sinkbasin 1",
+            "go to stoveburner 1",
+            "go to stoveburner 2",
+            "go to stoveburner 3",
+            "go to stoveburner 4",
+            "go to toaster 1",
+            "help",
+            "inventory",
+            "look",
+            "move mug 3 to coffeemachine 1"
+          ],
+          "attempt_outcome": "ACTION_EXECUTED",
+          "budget_after": {
+            "consecutive_nonexecuted_attempt_count": 0,
+            "environment_step_count": 8,
+            "inadmissible_action_count": 3,
+            "policy_attempt_count": 11,
+            "protocol_failure_count": 0
+          },
+          "budget_before": {
+            "consecutive_nonexecuted_attempt_count": 0,
+            "environment_step_count": 7,
+            "inadmissible_action_count": 3,
+            "policy_attempt_count": 10,
+            "protocol_failure_count": 0
+          },
+          "environment_done": false,
+          "environment_score": 0,
+          "environment_step_count_before": 7,
+          "environment_won": false,
+          "executed_history": [
+            {
+              "action": "go to cabinet 1",
+              "resulting_observation": "You arrive at cabinet 1. The cabinet 1 is closed."
+            },
+            {
+              "action": "open cabinet 1",
+              "resulting_observation": "You open the cabinet 1. The cabinet 1 is open. In it, you see nothing."
+            },
+            {
+              "action": "go to coffeemachine 1",
+              "resulting_observation": "You arrive at coffeemachine 1. On the coffeemachine 1, you see a mug 3."
+            },
+            {
+              "action": "take mug 3 from coffeemachine 1",
+              "resulting_observation": "You pick up the mug 3 from the coffeemachine 1."
+            },
+            {
+              "action": "examine mug 3",
+              "resulting_observation": "This is a normal mug 3. In it, you see nothing."
+            },
+            {
+              "action": "examine coffeemachine 1",
+              "resulting_observation": "On the coffeemachine 1, you see nothing."
+            },
+            {
+              "action": "help",
+              "resulting_observation": "Available commands:\n  look:                             look around your current location\n  inventory:                        check your current inventory\n  go to (receptacle):               move to a receptacle\n  open (receptacle):                open a receptacle\n  close (receptacle):               close a receptacle\n  take (object) from (receptacle):  take an object from a receptacle\n  move (object) to (receptacle):  place an object in or on a receptacle\n  examine (something):              examine a receptacle or an object\n  use (object):                     use an object\n  heat (object) with (receptacle):  heat an object using a receptacle\n  clean (object) with (receptacle): clean an object using a receptacle\n  cool (object) with (receptacle):  cool an object using a receptacle\n  slice (object) with (object):     slice an object using a sharp object\n"
+            }
+          ],
+          "execution_status": "executed",
+          "final_executed_action": "move mug 3 to coffeemachine 1",
+          "literal_action": "move mug 3 to coffeemachine 1",
+          "model_call_index": 10,
+          "normalized_action": "move mug 3 to coffeemachine 1",
+          "observation_before": "Available commands:\n  look:                             look around your current location\n  inventory:                        check your current inventory\n  go to (receptacle):               move to a receptacle\n  open (receptacle):                open a receptacle\n  close (receptacle):               close a receptacle\n  take (object) from (receptacle):  take an object from a receptacle\n  move (object) to (receptacle):  place an object in or on a receptacle\n  examine (something):              examine a receptacle or an object\n  use (object):                     use an object\n  heat (object) with (receptacle):  heat an object using a receptacle\n  clean (object) with (receptacle): clean an object using a receptacle\n  cool (object) with (receptacle):  cool an object using a receptacle\n  slice (object) with (object):     slice an object using a sharp object\n",
+          "parser_error": null,
+          "parser_status": "success",
+          "policy_prompt_text": "MEMORY_AUGMENTED_RAW_POLICY_PROMPT_V1\nTASK_GOAL_JSON=\"put a clean mug in coffeemachine.\"\nCURRENT_OBSERVATION_JSON=\"Available commands:\\n  look:                             look around your current location\\n  inventory:                        check your current inventory\\n  go to (receptacle):               move to a receptacle\\n  open (receptacle):                open a receptacle\\n  close (receptacle):               close a receptacle\\n  take (object) from (receptacle):  take an object from a receptacle\\n  move (object) to (receptacle):  place an object in or on a receptacle\\n  examine (something):              examine a receptacle or an object\\n  use (object):                     use an object\\n  heat (object) with (receptacle):  heat an object using a receptacle\\n  clean (object) with (receptacle): clean an object using a receptacle\\n  cool (object) with (receptacle):  cool an object using a receptacle\\n  slice (object) with (object):     slice an object using a sharp object\\n\"\nEXECUTED_TRANSITIONS_JSON=[{\"action\":\"go to cabinet 1\",\"resulting_observation\":\"You arrive at cabinet 1. The cabinet 1 is closed.\"},{\"action\":\"open cabinet 1\",\"resulting_observation\":\"You open the cabinet 1. The cabinet 1 is open. In it, you see nothing.\"},{\"action\":\"go to coffeemachine 1\",\"resulting_observation\":\"You arrive at coffeemachine 1. On the coffeemachine 1, you see a mug 3.\"},{\"action\":\"take mug 3 from coffeemachine 1\",\"resulting_observation\":\"You pick up the mug 3 from the coffeemachine 1.\"},{\"action\":\"examine mug 3\",\"resulting_observation\":\"This is a normal mug 3. In it, you see nothing.\"},{\"action\":\"examine coffeemachine 1\",\"resulting_observation\":\"On the coffeemachine 1, you see nothing.\"},{\"action\":\"help\",\"resulting_observation\":\"Available commands:\\n  look:                             look around your current location\\n  inventory:                        check your current inventory\\n  go to (receptacle):               move to a receptacle\\n  open (receptacle):                open a receptacle\\n  close (receptacle):               close a receptacle\\n  take (object) from (receptacle):  take an object from a receptacle\\n  move (object) to (receptacle):  place an object in or on a receptacle\\n  examine (something):              examine a receptacle or an object\\n  use (object):                     use an object\\n  heat (object) with (receptacle):  heat an object using a receptacle\\n  clean (object) with (receptacle): clean an object using a receptacle\\n  cool (object) with (receptacle):  cool an object using a receptacle\\n  slice (object) with (object):     slice an object using a sharp object\\n\"}]\nRETRIEVED_FAILURE_EXPERIENCES_JSON=[]\nVISIBLE_ADMISSIBLE_COMMANDS_JSON=[\"examine coffeemachine 1\",\"examine mug 3\",\"go to cabinet 1\",\"go to cabinet 10\",\"go to cabinet 11\",\"go to cabinet 12\",\"go to cabinet 13\",\"go to cabinet 14\",\"go to cabinet 15\",\"go to cabinet 16\",\"go to cabinet 17\",\"go to cabinet 18\",\"go to cabinet 19\",\"go to cabinet 2\",\"go to cabinet 20\",\"go to cabinet 21\",\"go to cabinet 22\",\"go to cabinet 23\",\"go to cabinet 3\",\"go to cabinet 4\",\"go to cabinet 5\",\"go to cabinet 6\",\"go to cabinet 7\",\"go to cabinet 8\",\"go to cabinet 9\",\"go to countertop 1\",\"go to countertop 2\",\"go to countertop 3\",\"go to diningtable 1\",\"go to drawer 1\",\"go to drawer 2\",\"go to drawer 3\",\"go to drawer 4\",\"go to fridge 1\",\"go to garbagecan 1\",\"go to microwave 1\",\"go to sinkbasin 1\",\"go to stoveburner 1\",\"go to stoveburner 2\",\"go to stoveburner 3\",\"go to stoveburner 4\",\"go to toaster 1\",\"help\",\"inventory\",\"look\",\"move mug 3 to coffeemachine 1\"]\nINTERFACE_FEEDBACK_JSON=null\nOUTPUT_REQUIREMENT={\"action\":\"<command>\"}",
+          "public_task_goal": "put a clean mug in coffeemachine.",
+          "raw_model_response": "{\"action\":\"move mug 3 to coffeemachine 1\"}",
+          "resulting_admissible_commands": [
+            "examine coffeemachine 1",
+            "go to cabinet 1",
+            "go to cabinet 10",
+            "go to cabinet 11",
+            "go to cabinet 12",
+            "go to cabinet 13",
+            "go to cabinet 14",
+            "go to cabinet 15",
+            "go to cabinet 16",
+            "go to cabinet 17",
+            "go to cabinet 18",
+            "go to cabinet 19",
+            "go to cabinet 2",
+            "go to cabinet 20",
+            "go to cabinet 21",
+            "go to cabinet 22",
+            "go to cabinet 23",
+            "go to cabinet 3",
+            "go to cabinet 4",
+            "go to cabinet 5",
+            "go to cabinet 6",
+            "go to cabinet 7",
+            "go to cabinet 8",
+            "go to cabinet 9",
+            "go to countertop 1",
+            "go to countertop 2",
+            "go to countertop 3",
+            "go to diningtable 1",
+            "go to drawer 1",
+            "go to drawer 2",
+            "go to drawer 3",
+            "go to drawer 4",
+            "go to fridge 1",
+            "go to garbagecan 1",
+            "go to microwave 1",
+            "go to sinkbasin 1",
+            "go to stoveburner 1",
+            "go to stoveburner 2",
+            "go to stoveburner 3",
+            "go to stoveburner 4",
+            "go to toaster 1",
+            "help",
+            "inventory",
+            "look",
+            "take mug 3 from coffeemachine 1"
+          ],
+          "resulting_observation": "You move the mug 3 to the coffeemachine 1.",
+          "submitted_environment_action": "move mug 3 to coffeemachine 1"
+        },
+        {
+          "admissible_commands": [
+            "examine coffeemachine 1",
+            "go to cabinet 1",
+            "go to cabinet 10",
+            "go to cabinet 11",
+            "go to cabinet 12",
+            "go to cabinet 13",
+            "go to cabinet 14",
+            "go to cabinet 15",
+            "go to cabinet 16",
+            "go to cabinet 17",
+            "go to cabinet 18",
+            "go to cabinet 19",
+            "go to cabinet 2",
+            "go to cabinet 20",
+            "go to cabinet 21",
+            "go to cabinet 22",
+            "go to cabinet 23",
+            "go to cabinet 3",
+            "go to cabinet 4",
+            "go to cabinet 5",
+            "go to cabinet 6",
+            "go to cabinet 7",
+            "go to cabinet 8",
+            "go to cabinet 9",
+            "go to countertop 1",
+            "go to countertop 2",
+            "go to countertop 3",
+            "go to diningtable 1",
+            "go to drawer 1",
+            "go to drawer 2",
+            "go to drawer 3",
+            "go to drawer 4",
+            "go to fridge 1",
+            "go to garbagecan 1",
+            "go to microwave 1",
+            "go to sinkbasin 1",
+            "go to stoveburner 1",
+            "go to stoveburner 2",
+            "go to stoveburner 3",
+            "go to stoveburner 4",
+            "go to toaster 1",
+            "help",
+            "inventory",
+            "look",
+            "take mug 3 from coffeemachine 1"
+          ],
+          "attempt_outcome": "ACTION_EXECUTED",
+          "budget_after": {
+            "consecutive_nonexecuted_attempt_count": 0,
+            "environment_step_count": 9,
+            "inadmissible_action_count": 3,
+            "policy_attempt_count": 12,
+            "protocol_failure_count": 0
+          },
+          "budget_before": {
+            "consecutive_nonexecuted_attempt_count": 0,
+            "environment_step_count": 8,
+            "inadmissible_action_count": 3,
+            "policy_attempt_count": 11,
+            "protocol_failure_count": 0
+          },
+          "environment_done": false,
+          "environment_score": 0,
+          "environment_step_count_before": 8,
+          "environment_won": false,
+          "executed_history": [
+            {
+              "action": "go to cabinet 1",
+              "resulting_observation": "You arrive at cabinet 1. The cabinet 1 is closed."
+            },
+            {
+              "action": "open cabinet 1",
+              "resulting_observation": "You open the cabinet 1. The cabinet 1 is open. In it, you see nothing."
+            },
+            {
+              "action": "go to coffeemachine 1",
+              "resulting_observation": "You arrive at coffeemachine 1. On the coffeemachine 1, you see a mug 3."
+            },
+            {
+              "action": "take mug 3 from coffeemachine 1",
+              "resulting_observation": "You pick up the mug 3 from the coffeemachine 1."
+            },
+            {
+              "action": "examine mug 3",
+              "resulting_observation": "This is a normal mug 3. In it, you see nothing."
+            },
+            {
+              "action": "examine coffeemachine 1",
+              "resulting_observation": "On the coffeemachine 1, you see nothing."
+            },
+            {
+              "action": "help",
+              "resulting_observation": "Available commands:\n  look:                             look around your current location\n  inventory:                        check your current inventory\n  go to (receptacle):               move to a receptacle\n  open (receptacle):                open a receptacle\n  close (receptacle):               close a receptacle\n  take (object) from (receptacle):  take an object from a receptacle\n  move (object) to (receptacle):  place an object in or on a receptacle\n  examine (something):              examine a receptacle or an object\n  use (object):                     use an object\n  heat (object) with (receptacle):  heat an object using a receptacle\n  clean (object) with (receptacle): clean an object using a receptacle\n  cool (object) with (receptacle):  cool an object using a receptacle\n  slice (object) with (object):     slice an object using a sharp object\n"
+            },
+            {
+              "action": "move mug 3 to coffeemachine 1",
+              "resulting_observation": "You move the mug 3 to the coffeemachine 1."
+            }
+          ],
+          "execution_status": "executed",
+          "final_executed_action": "take mug 3 from coffeemachine 1",
+          "literal_action": "take mug 3 from coffeemachine 1",
+          "model_call_index": 11,
+          "normalized_action": "take mug 3 from coffeemachine 1",
+          "observation_before": "You move the mug 3 to the coffeemachine 1.",
+          "parser_error": null,
+          "parser_status": "success",
+          "policy_prompt_text": "MEMORY_AUGMENTED_RAW_POLICY_PROMPT_V1\nTASK_GOAL_JSON=\"put a clean mug in coffeemachine.\"\nCURRENT_OBSERVATION_JSON=\"You move the mug 3 to the coffeemachine 1.\"\nEXECUTED_TRANSITIONS_JSON=[{\"action\":\"go to cabinet 1\",\"resulting_observation\":\"You arrive at cabinet 1. The cabinet 1 is closed.\"},{\"action\":\"open cabinet 1\",\"resulting_observation\":\"You open the cabinet 1. The cabinet 1 is open. In it, you see nothing.\"},{\"action\":\"go to coffeemachine 1\",\"resulting_observation\":\"You arrive at coffeemachine 1. On the coffeemachine 1, you see a mug 3.\"},{\"action\":\"take mug 3 from coffeemachine 1\",\"resulting_observation\":\"You pick up the mug 3 from the coffeemachine 1.\"},{\"action\":\"examine mug 3\",\"resulting_observation\":\"This is a normal mug 3. In it, you see nothing.\"},{\"action\":\"examine coffeemachine 1\",\"resulting_observation\":\"On the coffeemachine 1, you see nothing.\"},{\"action\":\"help\",\"resulting_observation\":\"Available commands:\\n  look:                             look around your current location\\n  inventory:                        check your current inventory\\n  go to (receptacle):               move to a receptacle\\n  open (receptacle):                open a receptacle\\n  close (receptacle):               close a receptacle\\n  take (object) from (receptacle):  take an object from a receptacle\\n  move (object) to (receptacle):  place an object in or on a receptacle\\n  examine (something):              examine a receptacle or an object\\n  use (object):                     use an object\\n  heat (object) with (receptacle):  heat an object using a receptacle\\n  clean (object) with (receptacle): clean an object using a receptacle\\n  cool (object) with (receptacle):  cool an object using a receptacle\\n  slice (object) with (object):     slice an object using a sharp object\\n\"},{\"action\":\"move mug 3 to coffeemachine 1\",\"resulting_observation\":\"You move the mug 3 to the coffeemachine 1.\"}]\nRETRIEVED_FAILURE_EXPERIENCES_JSON=[]\nVISIBLE_ADMISSIBLE_COMMANDS_JSON=[\"examine coffeemachine 1\",\"go to cabinet 1\",\"go to cabinet 10\",\"go to cabinet 11\",\"go to cabinet 12\",\"go to cabinet 13\",\"go to cabinet 14\",\"go to cabinet 15\",\"go to cabinet 16\",\"go to cabinet 17\",\"go to cabinet 18\",\"go to cabinet 19\",\"go to cabinet 2\",\"go to cabinet 20\",\"go to cabinet 21\",\"go to cabinet 22\",\"go to cabinet 23\",\"go to cabinet 3\",\"go to cabinet 4\",\"go to cabinet 5\",\"go to cabinet 6\",\"go to cabinet 7\",\"go to cabinet 8\",\"go to cabinet 9\",\"go to countertop 1\",\"go to countertop 2\",\"go to countertop 3\",\"go to diningtable 1\",\"go to drawer 1\",\"go to drawer 2\",\"go to drawer 3\",\"go to drawer 4\",\"go to fridge 1\",\"go to garbagecan 1\",\"go to microwave 1\",\"go to sinkbasin 1\",\"go to stoveburner 1\",\"go to stoveburner 2\",\"go to stoveburner 3\",\"go to stoveburner 4\",\"go to toaster 1\",\"help\",\"inventory\",\"look\",\"take mug 3 from coffeemachine 1\"]\nINTERFACE_FEEDBACK_JSON=null\nOUTPUT_REQUIREMENT={\"action\":\"<command>\"}",
+          "public_task_goal": "put a clean mug in coffeemachine.",
+          "raw_model_response": "{\"action\":\"take mug 3 from coffeemachine 1\"}",
+          "resulting_admissible_commands": [
+            "examine coffeemachine 1",
+            "examine mug 3",
+            "go to cabinet 1",
+            "go to cabinet 10",
+            "go to cabinet 11",
+            "go to cabinet 12",
+            "go to cabinet 13",
+            "go to cabinet 14",
+            "go to cabinet 15",
+            "go to cabinet 16",
+            "go to cabinet 17",
+            "go to cabinet 18",
+            "go to cabinet 19",
+            "go to cabinet 2",
+            "go to cabinet 20",
+            "go to cabinet 21",
+            "go to cabinet 22",
+            "go to cabinet 23",
+            "go to cabinet 3",
+            "go to cabinet 4",
+            "go to cabinet 5",
+            "go to cabinet 6",
+            "go to cabinet 7",
+            "go to cabinet 8",
+            "go to cabinet 9",
+            "go to countertop 1",
+            "go to countertop 2",
+            "go to countertop 3",
+            "go to diningtable 1",
+            "go to drawer 1",
+            "go to drawer 2",
+            "go to drawer 3",
+            "go to drawer 4",
+            "go to fridge 1",
+            "go to garbagecan 1",
+            "go to microwave 1",
+            "go to sinkbasin 1",
+            "go to stoveburner 1",
+            "go to stoveburner 2",
+            "go to stoveburner 3",
+            "go to stoveburner 4",
+            "go to toaster 1",
+            "help",
+            "inventory",
+            "look",
+            "move mug 3 to coffeemachine 1"
+          ],
+          "resulting_observation": "You pick up the mug 3 from the coffeemachine 1.",
+          "submitted_environment_action": "take mug 3 from coffeemachine 1"
+        },
+        {
+          "admissible_commands": [
+            "examine coffeemachine 1",
+            "examine mug 3",
+            "go to cabinet 1",
+            "go to cabinet 10",
+            "go to cabinet 11",
+            "go to cabinet 12",
+            "go to cabinet 13",
+            "go to cabinet 14",
+            "go to cabinet 15",
+            "go to cabinet 16",
+            "go to cabinet 17",
+            "go to cabinet 18",
+            "go to cabinet 19",
+            "go to cabinet 2",
+            "go to cabinet 20",
+            "go to cabinet 21",
+            "go to cabinet 22",
+            "go to cabinet 23",
+            "go to cabinet 3",
+            "go to cabinet 4",
+            "go to cabinet 5",
+            "go to cabinet 6",
+            "go to cabinet 7",
+            "go to cabinet 8",
+            "go to cabinet 9",
+            "go to countertop 1",
+            "go to countertop 2",
+            "go to countertop 3",
+            "go to diningtable 1",
+            "go to drawer 1",
+            "go to drawer 2",
+            "go to drawer 3",
+            "go to drawer 4",
+            "go to fridge 1",
+            "go to garbagecan 1",
+            "go to microwave 1",
+            "go to sinkbasin 1",
+            "go to stoveburner 1",
+            "go to stoveburner 2",
+            "go to stoveburner 3",
+            "go to stoveburner 4",
+            "go to toaster 1",
+            "help",
+            "inventory",
+            "look",
+            "move mug 3 to coffeemachine 1"
+          ],
+          "attempt_outcome": "ACTION_EXECUTED",
+          "budget_after": {
+            "consecutive_nonexecuted_attempt_count": 0,
+            "environment_step_count": 10,
+            "inadmissible_action_count": 3,
+            "policy_attempt_count": 13,
+            "protocol_failure_count": 0
+          },
+          "budget_before": {
+            "consecutive_nonexecuted_attempt_count": 0,
+            "environment_step_count": 9,
+            "inadmissible_action_count": 3,
+            "policy_attempt_count": 12,
+            "protocol_failure_count": 0
+          },
+          "environment_done": false,
+          "environment_score": 0,
+          "environment_step_count_before": 9,
+          "environment_won": false,
+          "executed_history": [
+            {
+              "action": "go to cabinet 1",
+              "resulting_observation": "You arrive at cabinet 1. The cabinet 1 is closed."
+            },
+            {
+              "action": "open cabinet 1",
+              "resulting_observation": "You open the cabinet 1. The cabinet 1 is open. In it, you see nothing."
+            },
+            {
+              "action": "go to coffeemachine 1",
+              "resulting_observation": "You arrive at coffeemachine 1. On the coffeemachine 1, you see a mug 3."
+            },
+            {
+              "action": "take mug 3 from coffeemachine 1",
+              "resulting_observation": "You pick up the mug 3 from the coffeemachine 1."
+            },
+            {
+              "action": "examine mug 3",
+              "resulting_observation": "This is a normal mug 3. In it, you see nothing."
+            },
+            {
+              "action": "examine coffeemachine 1",
+              "resulting_observation": "On the coffeemachine 1, you see nothing."
+            },
+            {
+              "action": "help",
+              "resulting_observation": "Available commands:\n  look:                             look around your current location\n  inventory:                        check your current inventory\n  go to (receptacle):               move to a receptacle\n  open (receptacle):                open a receptacle\n  close (receptacle):               close a receptacle\n  take (object) from (receptacle):  take an object from a receptacle\n  move (object) to (receptacle):  place an object in or on a receptacle\n  examine (something):              examine a receptacle or an object\n  use (object):                     use an object\n  heat (object) with (receptacle):  heat an object using a receptacle\n  clean (object) with (receptacle): clean an object using a receptacle\n  cool (object) with (receptacle):  cool an object using a receptacle\n  slice (object) with (object):     slice an object using a sharp object\n"
+            },
+            {
+              "action": "move mug 3 to coffeemachine 1",
+              "resulting_observation": "You move the mug 3 to the coffeemachine 1."
+            },
+            {
+              "action": "take mug 3 from coffeemachine 1",
+              "resulting_observation": "You pick up the mug 3 from the coffeemachine 1."
+            }
+          ],
+          "execution_status": "executed",
+          "final_executed_action": "move mug 3 to coffeemachine 1",
+          "literal_action": "move mug 3 to coffeemachine 1",
+          "model_call_index": 12,
+          "normalized_action": "move mug 3 to coffeemachine 1",
+          "observation_before": "You pick up the mug 3 from the coffeemachine 1.",
+          "parser_error": null,
+          "parser_status": "success",
+          "policy_prompt_text": "MEMORY_AUGMENTED_RAW_POLICY_PROMPT_V1\nTASK_GOAL_JSON=\"put a clean mug in coffeemachine.\"\nCURRENT_OBSERVATION_JSON=\"You pick up the mug 3 from the coffeemachine 1.\"\nEXECUTED_TRANSITIONS_JSON=[{\"action\":\"open cabinet 1\",\"resulting_observation\":\"You open the cabinet 1. The cabinet 1 is open. In it, you see nothing.\"},{\"action\":\"go to coffeemachine 1\",\"resulting_observation\":\"You arrive at coffeemachine 1. On the coffeemachine 1, you see a mug 3.\"},{\"action\":\"take mug 3 from coffeemachine 1\",\"resulting_observation\":\"You pick up the mug 3 from the coffeemachine 1.\"},{\"action\":\"examine mug 3\",\"resulting_observation\":\"This is a normal mug 3. In it, you see nothing.\"},{\"action\":\"examine coffeemachine 1\",\"resulting_observation\":\"On the coffeemachine 1, you see nothing.\"},{\"action\":\"help\",\"resulting_observation\":\"Available commands:\\n  look:                             look around your current location\\n  inventory:                        check your current inventory\\n  go to (receptacle):               move to a receptacle\\n  open (receptacle):                open a receptacle\\n  close (receptacle):               close a receptacle\\n  take (object) from (receptacle):  take an object from a receptacle\\n  move (object) to (receptacle):  place an object in or on a receptacle\\n  examine (something):              examine a receptacle or an object\\n  use (object):                     use an object\\n  heat (object) with (receptacle):  heat an object using a receptacle\\n  clean (object) with (receptacle): clean an object using a receptacle\\n  cool (object) with (receptacle):  cool an object using a receptacle\\n  slice (object) with (object):     slice an object using a sharp object\\n\"},{\"action\":\"move mug 3 to coffeemachine 1\",\"resulting_observation\":\"You move the mug 3 to the coffeemachine 1.\"},{\"action\":\"take mug 3 from coffeemachine 1\",\"resulting_observation\":\"You pick up the mug 3 from the coffeemachine 1.\"}]\nRETRIEVED_FAILURE_EXPERIENCES_JSON=[]\nVISIBLE_ADMISSIBLE_COMMANDS_JSON=[\"examine coffeemachine 1\",\"examine mug 3\",\"go to cabinet 1\",\"go to cabinet 10\",\"go to cabinet 11\",\"go to cabinet 12\",\"go to cabinet 13\",\"go to cabinet 14\",\"go to cabinet 15\",\"go to cabinet 16\",\"go to cabinet 17\",\"go to cabinet 18\",\"go to cabinet 19\",\"go to cabinet 2\",\"go to cabinet 20\",\"go to cabinet 21\",\"go to cabinet 22\",\"go to cabinet 23\",\"go to cabinet 3\",\"go to cabinet 4\",\"go to cabinet 5\",\"go to cabinet 6\",\"go to cabinet 7\",\"go to cabinet 8\",\"go to cabinet 9\",\"go to countertop 1\",\"go to countertop 2\",\"go to countertop 3\",\"go to diningtable 1\",\"go to drawer 1\",\"go to drawer 2\",\"go to drawer 3\",\"go to drawer 4\",\"go to fridge 1\",\"go to garbagecan 1\",\"go to microwave 1\",\"go to sinkbasin 1\",\"go to stoveburner 1\",\"go to stoveburner 2\",\"go to stoveburner 3\",\"go to stoveburner 4\",\"go to toaster 1\",\"help\",\"inventory\",\"look\",\"move mug 3 to coffeemachine 1\"]\nINTERFACE_FEEDBACK_JSON=null\nOUTPUT_REQUIREMENT={\"action\":\"<command>\"}",
+          "public_task_goal": "put a clean mug in coffeemachine.",
+          "raw_model_response": "{\"action\":\"move mug 3 to coffeemachine 1\"}",
+          "resulting_admissible_commands": [
+            "examine coffeemachine 1",
+            "go to cabinet 1",
+            "go to cabinet 10",
+            "go to cabinet 11",
+            "go to cabinet 12",
+            "go to cabinet 13",
+            "go to cabinet 14",
+            "go to cabinet 15",
+            "go to cabinet 16",
+            "go to cabinet 17",
+            "go to cabinet 18",
+            "go to cabinet 19",
+            "go to cabinet 2",
+            "go to cabinet 20",
+            "go to cabinet 21",
+            "go to cabinet 22",
+            "go to cabinet 23",
+            "go to cabinet 3",
+            "go to cabinet 4",
+            "go to cabinet 5",
+            "go to cabinet 6",
+            "go to cabinet 7",
+            "go to cabinet 8",
+            "go to cabinet 9",
+            "go to countertop 1",
+            "go to countertop 2",
+            "go to countertop 3",
+            "go to diningtable 1",
+            "go to drawer 1",
+            "go to drawer 2",
+            "go to drawer 3",
+            "go to drawer 4",
+            "go to fridge 1",
+            "go to garbagecan 1",
+            "go to microwave 1",
+            "go to sinkbasin 1",
+            "go to stoveburner 1",
+            "go to stoveburner 2",
+            "go to stoveburner 3",
+            "go to stoveburner 4",
+            "go to toaster 1",
+            "help",
+            "inventory",
+            "look",
+            "take mug 3 from coffeemachine 1"
+          ],
+          "resulting_observation": "You move the mug 3 to the coffeemachine 1.",
+          "submitted_environment_action": "move mug 3 to coffeemachine 1"
+        },
+        {
+          "admissible_commands": [
+            "examine coffeemachine 1",
+            "go to cabinet 1",
+            "go to cabinet 10",
+            "go to cabinet 11",
+            "go to cabinet 12",
+            "go to cabinet 13",
+            "go to cabinet 14",
+            "go to cabinet 15",
+            "go to cabinet 16",
+            "go to cabinet 17",
+            "go to cabinet 18",
+            "go to cabinet 19",
+            "go to cabinet 2",
+            "go to cabinet 20",
+            "go to cabinet 21",
+            "go to cabinet 22",
+            "go to cabinet 23",
+            "go to cabinet 3",
+            "go to cabinet 4",
+            "go to cabinet 5",
+            "go to cabinet 6",
+            "go to cabinet 7",
+            "go to cabinet 8",
+            "go to cabinet 9",
+            "go to countertop 1",
+            "go to countertop 2",
+            "go to countertop 3",
+            "go to diningtable 1",
+            "go to drawer 1",
+            "go to drawer 2",
+            "go to drawer 3",
+            "go to drawer 4",
+            "go to fridge 1",
+            "go to garbagecan 1",
+            "go to microwave 1",
+            "go to sinkbasin 1",
+            "go to stoveburner 1",
+            "go to stoveburner 2",
+            "go to stoveburner 3",
+            "go to stoveburner 4",
+            "go to toaster 1",
+            "help",
+            "inventory",
+            "look",
+            "take mug 3 from coffeemachine 1"
+          ],
+          "attempt_outcome": "ACTION_NOT_ADMISSIBLE",
+          "budget_after": {
+            "consecutive_nonexecuted_attempt_count": 1,
+            "environment_step_count": 10,
+            "inadmissible_action_count": 4,
+            "policy_attempt_count": 14,
+            "protocol_failure_count": 0
+          },
+          "budget_before": {
+            "consecutive_nonexecuted_attempt_count": 0,
+            "environment_step_count": 10,
+            "inadmissible_action_count": 3,
+            "policy_attempt_count": 13,
+            "protocol_failure_count": 0
+          },
+          "environment_done": null,
+          "environment_score": null,
+          "environment_step_count_before": 10,
+          "environment_won": null,
+          "executed_history": [
+            {
+              "action": "go to cabinet 1",
+              "resulting_observation": "You arrive at cabinet 1. The cabinet 1 is closed."
+            },
+            {
+              "action": "open cabinet 1",
+              "resulting_observation": "You open the cabinet 1. The cabinet 1 is open. In it, you see nothing."
+            },
+            {
+              "action": "go to coffeemachine 1",
+              "resulting_observation": "You arrive at coffeemachine 1. On the coffeemachine 1, you see a mug 3."
+            },
+            {
+              "action": "take mug 3 from coffeemachine 1",
+              "resulting_observation": "You pick up the mug 3 from the coffeemachine 1."
+            },
+            {
+              "action": "examine mug 3",
+              "resulting_observation": "This is a normal mug 3. In it, you see nothing."
+            },
+            {
+              "action": "examine coffeemachine 1",
+              "resulting_observation": "On the coffeemachine 1, you see nothing."
+            },
+            {
+              "action": "help",
+              "resulting_observation": "Available commands:\n  look:                             look around your current location\n  inventory:                        check your current inventory\n  go to (receptacle):               move to a receptacle\n  open (receptacle):                open a receptacle\n  close (receptacle):               close a receptacle\n  take (object) from (receptacle):  take an object from a receptacle\n  move (object) to (receptacle):  place an object in or on a receptacle\n  examine (something):              examine a receptacle or an object\n  use (object):                     use an object\n  heat (object) with (receptacle):  heat an object using a receptacle\n  clean (object) with (receptacle): clean an object using a receptacle\n  cool (object) with (receptacle):  cool an object using a receptacle\n  slice (object) with (object):     slice an object using a sharp object\n"
+            },
+            {
+              "action": "move mug 3 to coffeemachine 1",
+              "resulting_observation": "You move the mug 3 to the coffeemachine 1."
+            },
+            {
+              "action": "take mug 3 from coffeemachine 1",
+              "resulting_observation": "You pick up the mug 3 from the coffeemachine 1."
+            },
+            {
+              "action": "move mug 3 to coffeemachine 1",
+              "resulting_observation": "You move the mug 3 to the coffeemachine 1."
+            }
+          ],
+          "execution_status": "not_executed",
+          "final_executed_action": null,
+          "literal_action": "examine mug 3",
+          "model_call_index": 13,
+          "normalized_action": "examine mug 3",
+          "observation_before": "You move the mug 3 to the coffeemachine 1.",
+          "parser_error": null,
+          "parser_status": "success",
+          "policy_prompt_text": "MEMORY_AUGMENTED_RAW_POLICY_PROMPT_V1\nTASK_GOAL_JSON=\"put a clean mug in coffeemachine.\"\nCURRENT_OBSERVATION_JSON=\"You move the mug 3 to the coffeemachine 1.\"\nEXECUTED_TRANSITIONS_JSON=[{\"action\":\"go to coffeemachine 1\",\"resulting_observation\":\"You arrive at coffeemachine 1. On the coffeemachine 1, you see a mug 3.\"},{\"action\":\"take mug 3 from coffeemachine 1\",\"resulting_observation\":\"You pick up the mug 3 from the coffeemachine 1.\"},{\"action\":\"examine mug 3\",\"resulting_observation\":\"This is a normal mug 3. In it, you see nothing.\"},{\"action\":\"examine coffeemachine 1\",\"resulting_observation\":\"On the coffeemachine 1, you see nothing.\"},{\"action\":\"help\",\"resulting_observation\":\"Available commands:\\n  look:                             look around your current location\\n  inventory:                        check your current inventory\\n  go to (receptacle):               move to a receptacle\\n  open (receptacle):                open a receptacle\\n  close (receptacle):               close a receptacle\\n  take (object) from (receptacle):  take an object from a receptacle\\n  move (object) to (receptacle):  place an object in or on a receptacle\\n  examine (something):              examine a receptacle or an object\\n  use (object):                     use an object\\n  heat (object) with (receptacle):  heat an object using a receptacle\\n  clean (object) with (receptacle): clean an object using a receptacle\\n  cool (object) with (receptacle):  cool an object using a receptacle\\n  slice (object) with (object):     slice an object using a sharp object\\n\"},{\"action\":\"move mug 3 to coffeemachine 1\",\"resulting_observation\":\"You move the mug 3 to the coffeemachine 1.\"},{\"action\":\"take mug 3 from coffeemachine 1\",\"resulting_observation\":\"You pick up the mug 3 from the coffeemachine 1.\"},{\"action\":\"move mug 3 to coffeemachine 1\",\"resulting_observation\":\"You move the mug 3 to the coffeemachine 1.\"}]\nRETRIEVED_FAILURE_EXPERIENCES_JSON=[]\nVISIBLE_ADMISSIBLE_COMMANDS_JSON=[\"examine coffeemachine 1\",\"go to cabinet 1\",\"go to cabinet 10\",\"go to cabinet 11\",\"go to cabinet 12\",\"go to cabinet 13\",\"go to cabinet 14\",\"go to cabinet 15\",\"go to cabinet 16\",\"go to cabinet 17\",\"go to cabinet 18\",\"go to cabinet 19\",\"go to cabinet 2\",\"go to cabinet 20\",\"go to cabinet 21\",\"go to cabinet 22\",\"go to cabinet 23\",\"go to cabinet 3\",\"go to cabinet 4\",\"go to cabinet 5\",\"go to cabinet 6\",\"go to cabinet 7\",\"go to cabinet 8\",\"go to cabinet 9\",\"go to countertop 1\",\"go to countertop 2\",\"go to countertop 3\",\"go to diningtable 1\",\"go to drawer 1\",\"go to drawer 2\",\"go to drawer 3\",\"go to drawer 4\",\"go to fridge 1\",\"go to garbagecan 1\",\"go to microwave 1\",\"go to sinkbasin 1\",\"go to stoveburner 1\",\"go to stoveburner 2\",\"go to stoveburner 3\",\"go to stoveburner 4\",\"go to toaster 1\",\"help\",\"inventory\",\"look\",\"take mug 3 from coffeemachine 1\"]\nINTERFACE_FEEDBACK_JSON=null\nOUTPUT_REQUIREMENT={\"action\":\"<command>\"}",
+          "public_task_goal": "put a clean mug in coffeemachine.",
+          "raw_model_response": "{\"action\":\"examine mug 3\"}",
+          "resulting_admissible_commands": null,
+          "resulting_observation": null,
+          "submitted_environment_action": null
+        },
+        {
+          "admissible_commands": [
+            "examine coffeemachine 1",
+            "go to cabinet 1",
+            "go to cabinet 10",
+            "go to cabinet 11",
+            "go to cabinet 12",
+            "go to cabinet 13",
+            "go to cabinet 14",
+            "go to cabinet 15",
+            "go to cabinet 16",
+            "go to cabinet 17",
+            "go to cabinet 18",
+            "go to cabinet 19",
+            "go to cabinet 2",
+            "go to cabinet 20",
+            "go to cabinet 21",
+            "go to cabinet 22",
+            "go to cabinet 23",
+            "go to cabinet 3",
+            "go to cabinet 4",
+            "go to cabinet 5",
+            "go to cabinet 6",
+            "go to cabinet 7",
+            "go to cabinet 8",
+            "go to cabinet 9",
+            "go to countertop 1",
+            "go to countertop 2",
+            "go to countertop 3",
+            "go to diningtable 1",
+            "go to drawer 1",
+            "go to drawer 2",
+            "go to drawer 3",
+            "go to drawer 4",
+            "go to fridge 1",
+            "go to garbagecan 1",
+            "go to microwave 1",
+            "go to sinkbasin 1",
+            "go to stoveburner 1",
+            "go to stoveburner 2",
+            "go to stoveburner 3",
+            "go to stoveburner 4",
+            "go to toaster 1",
+            "help",
+            "inventory",
+            "look",
+            "take mug 3 from coffeemachine 1"
+          ],
+          "attempt_outcome": "ACTION_EXECUTED",
+          "budget_after": {
+            "consecutive_nonexecuted_attempt_count": 0,
+            "environment_step_count": 11,
+            "inadmissible_action_count": 4,
+            "policy_attempt_count": 15,
+            "protocol_failure_count": 0
+          },
+          "budget_before": {
+            "consecutive_nonexecuted_attempt_count": 1,
+            "environment_step_count": 10,
+            "inadmissible_action_count": 4,
+            "policy_attempt_count": 14,
+            "protocol_failure_count": 0
+          },
+          "environment_done": false,
+          "environment_score": 0,
+          "environment_step_count_before": 10,
+          "environment_won": false,
+          "executed_history": [
+            {
+              "action": "go to cabinet 1",
+              "resulting_observation": "You arrive at cabinet 1. The cabinet 1 is closed."
+            },
+            {
+              "action": "open cabinet 1",
+              "resulting_observation": "You open the cabinet 1. The cabinet 1 is open. In it, you see nothing."
+            },
+            {
+              "action": "go to coffeemachine 1",
+              "resulting_observation": "You arrive at coffeemachine 1. On the coffeemachine 1, you see a mug 3."
+            },
+            {
+              "action": "take mug 3 from coffeemachine 1",
+              "resulting_observation": "You pick up the mug 3 from the coffeemachine 1."
+            },
+            {
+              "action": "examine mug 3",
+              "resulting_observation": "This is a normal mug 3. In it, you see nothing."
+            },
+            {
+              "action": "examine coffeemachine 1",
+              "resulting_observation": "On the coffeemachine 1, you see nothing."
+            },
+            {
+              "action": "help",
+              "resulting_observation": "Available commands:\n  look:                             look around your current location\n  inventory:                        check your current inventory\n  go to (receptacle):               move to a receptacle\n  open (receptacle):                open a receptacle\n  close (receptacle):               close a receptacle\n  take (object) from (receptacle):  take an object from a receptacle\n  move (object) to (receptacle):  place an object in or on a receptacle\n  examine (something):              examine a receptacle or an object\n  use (object):                     use an object\n  heat (object) with (receptacle):  heat an object using a receptacle\n  clean (object) with (receptacle): clean an object using a receptacle\n  cool (object) with (receptacle):  cool an object using a receptacle\n  slice (object) with (object):     slice an object using a sharp object\n"
+            },
+            {
+              "action": "move mug 3 to coffeemachine 1",
+              "resulting_observation": "You move the mug 3 to the coffeemachine 1."
+            },
+            {
+              "action": "take mug 3 from coffeemachine 1",
+              "resulting_observation": "You pick up the mug 3 from the coffeemachine 1."
+            },
+            {
+              "action": "move mug 3 to coffeemachine 1",
+              "resulting_observation": "You move the mug 3 to the coffeemachine 1."
+            }
+          ],
+          "execution_status": "executed",
+          "final_executed_action": "help",
+          "literal_action": "help",
+          "model_call_index": 14,
+          "normalized_action": "help",
+          "observation_before": "You move the mug 3 to the coffeemachine 1.",
+          "parser_error": null,
+          "parser_status": "success",
+          "policy_prompt_text": "MEMORY_AUGMENTED_RAW_POLICY_PROMPT_V1\nTASK_GOAL_JSON=\"put a clean mug in coffeemachine.\"\nCURRENT_OBSERVATION_JSON=\"You move the mug 3 to the coffeemachine 1.\"\nEXECUTED_TRANSITIONS_JSON=[{\"action\":\"go to coffeemachine 1\",\"resulting_observation\":\"You arrive at coffeemachine 1. On the coffeemachine 1, you see a mug 3.\"},{\"action\":\"take mug 3 from coffeemachine 1\",\"resulting_observation\":\"You pick up the mug 3 from the coffeemachine 1.\"},{\"action\":\"examine mug 3\",\"resulting_observation\":\"This is a normal mug 3. In it, you see nothing.\"},{\"action\":\"examine coffeemachine 1\",\"resulting_observation\":\"On the coffeemachine 1, you see nothing.\"},{\"action\":\"help\",\"resulting_observation\":\"Available commands:\\n  look:                             look around your current location\\n  inventory:                        check your current inventory\\n  go to (receptacle):               move to a receptacle\\n  open (receptacle):                open a receptacle\\n  close (receptacle):               close a receptacle\\n  take (object) from (receptacle):  take an object from a receptacle\\n  move (object) to (receptacle):  place an object in or on a receptacle\\n  examine (something):              examine a receptacle or an object\\n  use (object):                     use an object\\n  heat (object) with (receptacle):  heat an object using a receptacle\\n  clean (object) with (receptacle): clean an object using a receptacle\\n  cool (object) with (receptacle):  cool an object using a receptacle\\n  slice (object) with (object):     slice an object using a sharp object\\n\"},{\"action\":\"move mug 3 to coffeemachine 1\",\"resulting_observation\":\"You move the mug 3 to the coffeemachine 1.\"},{\"action\":\"take mug 3 from coffeemachine 1\",\"resulting_observation\":\"You pick up the mug 3 from the coffeemachine 1.\"},{\"action\":\"move mug 3 to coffeemachine 1\",\"resulting_observation\":\"You move the mug 3 to the coffeemachine 1.\"}]\nRETRIEVED_FAILURE_EXPERIENCES_JSON=[]\nVISIBLE_ADMISSIBLE_COMMANDS_JSON=[\"examine coffeemachine 1\",\"go to cabinet 1\",\"go to cabinet 10\",\"go to cabinet 11\",\"go to cabinet 12\",\"go to cabinet 13\",\"go to cabinet 14\",\"go to cabinet 15\",\"go to cabinet 16\",\"go to cabinet 17\",\"go to cabinet 18\",\"go to cabinet 19\",\"go to cabinet 2\",\"go to cabinet 20\",\"go to cabinet 21\",\"go to cabinet 22\",\"go to cabinet 23\",\"go to cabinet 3\",\"go to cabinet 4\",\"go to cabinet 5\",\"go to cabinet 6\",\"go to cabinet 7\",\"go to cabinet 8\",\"go to cabinet 9\",\"go to countertop 1\",\"go to countertop 2\",\"go to countertop 3\",\"go to diningtable 1\",\"go to drawer 1\",\"go to drawer 2\",\"go to drawer 3\",\"go to drawer 4\",\"go to fridge 1\",\"go to garbagecan 1\",\"go to microwave 1\",\"go to sinkbasin 1\",\"go to stoveburner 1\",\"go to stoveburner 2\",\"go to stoveburner 3\",\"go to stoveburner 4\",\"go to toaster 1\",\"help\",\"inventory\",\"look\",\"take mug 3 from coffeemachine 1\"]\nINTERFACE_FEEDBACK_JSON=\"INVALID_ACTION_V1:\\nThe parsed action is not an exact member of the visible admissible-command menu.\\nNo environment action was executed.\"\nOUTPUT_REQUIREMENT={\"action\":\"<command>\"}",
+          "public_task_goal": "put a clean mug in coffeemachine.",
+          "raw_model_response": "{\n  \"action\": \"help\"\n}",
+          "resulting_admissible_commands": [
+            "examine coffeemachine 1",
+            "go to cabinet 1",
+            "go to cabinet 10",
+            "go to cabinet 11",
+            "go to cabinet 12",
+            "go to cabinet 13",
+            "go to cabinet 14",
+            "go to cabinet 15",
+            "go to cabinet 16",
+            "go to cabinet 17",
+            "go to cabinet 18",
+            "go to cabinet 19",
+            "go to cabinet 2",
+            "go to cabinet 20",
+            "go to cabinet 21",
+            "go to cabinet 22",
+            "go to cabinet 23",
+            "go to cabinet 3",
+            "go to cabinet 4",
+            "go to cabinet 5",
+            "go to cabinet 6",
+            "go to cabinet 7",
+            "go to cabinet 8",
+            "go to cabinet 9",
+            "go to countertop 1",
+            "go to countertop 2",
+            "go to countertop 3",
+            "go to diningtable 1",
+            "go to drawer 1",
+            "go to drawer 2",
+            "go to drawer 3",
+            "go to drawer 4",
+            "go to fridge 1",
+            "go to garbagecan 1",
+            "go to microwave 1",
+            "go to sinkbasin 1",
+            "go to stoveburner 1",
+            "go to stoveburner 2",
+            "go to stoveburner 3",
+            "go to stoveburner 4",
+            "go to toaster 1",
+            "help",
+            "inventory",
+            "look",
+            "take mug 3 from coffeemachine 1"
+          ],
+          "resulting_observation": "Available commands:\n  look:                             look around your current location\n  inventory:                        check your current inventory\n  go to (receptacle):               move to a receptacle\n  open (receptacle):                open a receptacle\n  close (receptacle):               close a receptacle\n  take (object) from (receptacle):  take an object from a receptacle\n  move (object) to (receptacle):  place an object in or on a receptacle\n  examine (something):              examine a receptacle or an object\n  use (object):                     use an object\n  heat (object) with (receptacle):  heat an object using a receptacle\n  clean (object) with (receptacle): clean an object using a receptacle\n  cool (object) with (receptacle):  cool an object using a receptacle\n  slice (object) with (object):     slice an object using a sharp object\n",
+          "submitted_environment_action": "help"
+        },
+        {
+          "admissible_commands": [
+            "examine coffeemachine 1",
+            "go to cabinet 1",
+            "go to cabinet 10",
+            "go to cabinet 11",
+            "go to cabinet 12",
+            "go to cabinet 13",
+            "go to cabinet 14",
+            "go to cabinet 15",
+            "go to cabinet 16",
+            "go to cabinet 17",
+            "go to cabinet 18",
+            "go to cabinet 19",
+            "go to cabinet 2",
+            "go to cabinet 20",
+            "go to cabinet 21",
+            "go to cabinet 22",
+            "go to cabinet 23",
+            "go to cabinet 3",
+            "go to cabinet 4",
+            "go to cabinet 5",
+            "go to cabinet 6",
+            "go to cabinet 7",
+            "go to cabinet 8",
+            "go to cabinet 9",
+            "go to countertop 1",
+            "go to countertop 2",
+            "go to countertop 3",
+            "go to diningtable 1",
+            "go to drawer 1",
+            "go to drawer 2",
+            "go to drawer 3",
+            "go to drawer 4",
+            "go to fridge 1",
+            "go to garbagecan 1",
+            "go to microwave 1",
+            "go to sinkbasin 1",
+            "go to stoveburner 1",
+            "go to stoveburner 2",
+            "go to stoveburner 3",
+            "go to stoveburner 4",
+            "go to toaster 1",
+            "help",
+            "inventory",
+            "look",
+            "take mug 3 from coffeemachine 1"
+          ],
+          "attempt_outcome": "ACTION_EXECUTED",
+          "budget_after": {
+            "consecutive_nonexecuted_attempt_count": 0,
+            "environment_step_count": 12,
+            "inadmissible_action_count": 4,
+            "policy_attempt_count": 16,
+            "protocol_failure_count": 0
+          },
+          "budget_before": {
+            "consecutive_nonexecuted_attempt_count": 0,
+            "environment_step_count": 11,
+            "inadmissible_action_count": 4,
+            "policy_attempt_count": 15,
+            "protocol_failure_count": 0
+          },
+          "environment_done": false,
+          "environment_score": 0,
+          "environment_step_count_before": 11,
+          "environment_won": false,
+          "executed_history": [
+            {
+              "action": "go to cabinet 1",
+              "resulting_observation": "You arrive at cabinet 1. The cabinet 1 is closed."
+            },
+            {
+              "action": "open cabinet 1",
+              "resulting_observation": "You open the cabinet 1. The cabinet 1 is open. In it, you see nothing."
+            },
+            {
+              "action": "go to coffeemachine 1",
+              "resulting_observation": "You arrive at coffeemachine 1. On the coffeemachine 1, you see a mug 3."
+            },
+            {
+              "action": "take mug 3 from coffeemachine 1",
+              "resulting_observation": "You pick up the mug 3 from the coffeemachine 1."
+            },
+            {
+              "action": "examine mug 3",
+              "resulting_observation": "This is a normal mug 3. In it, you see nothing."
+            },
+            {
+              "action": "examine coffeemachine 1",
+              "resulting_observation": "On the coffeemachine 1, you see nothing."
+            },
+            {
+              "action": "help",
+              "resulting_observation": "Available commands:\n  look:                             look around your current location\n  inventory:                        check your current inventory\n  go to (receptacle):               move to a receptacle\n  open (receptacle):                open a receptacle\n  close (receptacle):               close a receptacle\n  take (object) from (receptacle):  take an object from a receptacle\n  move (object) to (receptacle):  place an object in or on a receptacle\n  examine (something):              examine a receptacle or an object\n  use (object):                     use an object\n  heat (object) with (receptacle):  heat an object using a receptacle\n  clean (object) with (receptacle): clean an object using a receptacle\n  cool (object) with (receptacle):  cool an object using a receptacle\n  slice (object) with (object):     slice an object using a sharp object\n"
+            },
+            {
+              "action": "move mug 3 to coffeemachine 1",
+              "resulting_observation": "You move the mug 3 to the coffeemachine 1."
+            },
+            {
+              "action": "take mug 3 from coffeemachine 1",
+              "resulting_observation": "You pick up the mug 3 from the coffeemachine 1."
+            },
+            {
+              "action": "move mug 3 to coffeemachine 1",
+              "resulting_observation": "You move the mug 3 to the coffeemachine 1."
+            },
+            {
+              "action": "help",
+              "resulting_observation": "Available commands:\n  look:                             look around your current location\n  inventory:                        check your current inventory\n  go to (receptacle):               move to a receptacle\n  open (receptacle):                open a receptacle\n  close (receptacle):               close a receptacle\n  take (object) from (receptacle):  take an object from a receptacle\n  move (object) to (receptacle):  place an object in or on a receptacle\n  examine (something):              examine a receptacle or an object\n  use (object):                     use an object\n  heat (object) with (receptacle):  heat an object using a receptacle\n  clean (object) with (receptacle): clean an object using a receptacle\n  cool (object) with (receptacle):  cool an object using a receptacle\n  slice (object) with (object):     slice an object using a sharp object\n"
+            }
+          ],
+          "execution_status": "executed",
+          "final_executed_action": "go to countertop 1",
+          "literal_action": "go to countertop 1",
+          "model_call_index": 15,
+          "normalized_action": "go to countertop 1",
+          "observation_before": "Available commands:\n  look:                             look around your current location\n  inventory:                        check your current inventory\n  go to (receptacle):               move to a receptacle\n  open (receptacle):                open a receptacle\n  close (receptacle):               close a receptacle\n  take (object) from (receptacle):  take an object from a receptacle\n  move (object) to (receptacle):  place an object in or on a receptacle\n  examine (something):              examine a receptacle or an object\n  use (object):                     use an object\n  heat (object) with (receptacle):  heat an object using a receptacle\n  clean (object) with (receptacle): clean an object using a receptacle\n  cool (object) with (receptacle):  cool an object using a receptacle\n  slice (object) with (object):     slice an object using a sharp object\n",
+          "parser_error": null,
+          "parser_status": "success",
+          "policy_prompt_text": "MEMORY_AUGMENTED_RAW_POLICY_PROMPT_V1\nTASK_GOAL_JSON=\"put a clean mug in coffeemachine.\"\nCURRENT_OBSERVATION_JSON=\"Available commands:\\n  look:                             look around your current location\\n  inventory:                        check your current inventory\\n  go to (receptacle):               move to a receptacle\\n  open (receptacle):                open a receptacle\\n  close (receptacle):               close a receptacle\\n  take (object) from (receptacle):  take an object from a receptacle\\n  move (object) to (receptacle):  place an object in or on a receptacle\\n  examine (something):              examine a receptacle or an object\\n  use (object):                     use an object\\n  heat (object) with (receptacle):  heat an object using a receptacle\\n  clean (object) with (receptacle): clean an object using a receptacle\\n  cool (object) with (receptacle):  cool an object using a receptacle\\n  slice (object) with (object):     slice an object using a sharp object\\n\"\nEXECUTED_TRANSITIONS_JSON=[{\"action\":\"take mug 3 from coffeemachine 1\",\"resulting_observation\":\"You pick up the mug 3 from the coffeemachine 1.\"},{\"action\":\"examine mug 3\",\"resulting_observation\":\"This is a normal mug 3. In it, you see nothing.\"},{\"action\":\"examine coffeemachine 1\",\"resulting_observation\":\"On the coffeemachine 1, you see nothing.\"},{\"action\":\"help\",\"resulting_observation\":\"Available commands:\\n  look:                             look around your current location\\n  inventory:                        check your current inventory\\n  go to (receptacle):               move to a receptacle\\n  open (receptacle):                open a receptacle\\n  close (receptacle):               close a receptacle\\n  take (object) from (receptacle):  take an object from a receptacle\\n  move (object) to (receptacle):  place an object in or on a receptacle\\n  examine (something):              examine a receptacle or an object\\n  use (object):                     use an object\\n  heat (object) with (receptacle):  heat an object using a receptacle\\n  clean (object) with (receptacle): clean an object using a receptacle\\n  cool (object) with (receptacle):  cool an object using a receptacle\\n  slice (object) with (object):     slice an object using a sharp object\\n\"},{\"action\":\"move mug 3 to coffeemachine 1\",\"resulting_observation\":\"You move the mug 3 to the coffeemachine 1.\"},{\"action\":\"take mug 3 from coffeemachine 1\",\"resulting_observation\":\"You pick up the mug 3 from the coffeemachine 1.\"},{\"action\":\"move mug 3 to coffeemachine 1\",\"resulting_observation\":\"You move the mug 3 to the coffeemachine 1.\"},{\"action\":\"help\",\"resulting_observation\":\"Available commands:\\n  look:                             look around your current location\\n  inventory:                        check your current inventory\\n  go to (receptacle):               move to a receptacle\\n  open (receptacle):                open a receptacle\\n  close (receptacle):               close a receptacle\\n  take (object) from (receptacle):  take an object from a receptacle\\n  move (object) to (receptacle):  place an object in or on a receptacle\\n  examine (something):              examine a receptacle or an object\\n  use (object):                     use an object\\n  heat (object) with (receptacle):  heat an object using a receptacle\\n  clean (object) with (receptacle): clean an object using a receptacle\\n  cool (object) with (receptacle):  cool an object using a receptacle\\n  slice (object) with (object):     slice an object using a sharp object\\n\"}]\nRETRIEVED_FAILURE_EXPERIENCES_JSON=[]\nVISIBLE_ADMISSIBLE_COMMANDS_JSON=[\"examine coffeemachine 1\",\"go to cabinet 1\",\"go to cabinet 10\",\"go to cabinet 11\",\"go to cabinet 12\",\"go to cabinet 13\",\"go to cabinet 14\",\"go to cabinet 15\",\"go to cabinet 16\",\"go to cabinet 17\",\"go to cabinet 18\",\"go to cabinet 19\",\"go to cabinet 2\",\"go to cabinet 20\",\"go to cabinet 21\",\"go to cabinet 22\",\"go to cabinet 23\",\"go to cabinet 3\",\"go to cabinet 4\",\"go to cabinet 5\",\"go to cabinet 6\",\"go to cabinet 7\",\"go to cabinet 8\",\"go to cabinet 9\",\"go to countertop 1\",\"go to countertop 2\",\"go to countertop 3\",\"go to diningtable 1\",\"go to drawer 1\",\"go to drawer 2\",\"go to drawer 3\",\"go to drawer 4\",\"go to fridge 1\",\"go to garbagecan 1\",\"go to microwave 1\",\"go to sinkbasin 1\",\"go to stoveburner 1\",\"go to stoveburner 2\",\"go to stoveburner 3\",\"go to stoveburner 4\",\"go to toaster 1\",\"help\",\"inventory\",\"look\",\"take mug 3 from coffeemachine 1\"]\nINTERFACE_FEEDBACK_JSON=null\nOUTPUT_REQUIREMENT={\"action\":\"<command>\"}",
+          "public_task_goal": "put a clean mug in coffeemachine.",
+          "raw_model_response": "{\"action\":\"go to countertop 1\"}",
+          "resulting_admissible_commands": [
+            "examine countertop 1",
+            "go to cabinet 1",
+            "go to cabinet 10",
+            "go to cabinet 11",
+            "go to cabinet 12",
+            "go to cabinet 13",
+            "go to cabinet 14",
+            "go to cabinet 15",
+            "go to cabinet 16",
+            "go to cabinet 17",
+            "go to cabinet 18",
+            "go to cabinet 19",
+            "go to cabinet 2",
+            "go to cabinet 20",
+            "go to cabinet 21",
+            "go to cabinet 22",
+            "go to cabinet 23",
+            "go to cabinet 3",
+            "go to cabinet 4",
+            "go to cabinet 5",
+            "go to cabinet 6",
+            "go to cabinet 7",
+            "go to cabinet 8",
+            "go to cabinet 9",
+            "go to coffeemachine 1",
+            "go to countertop 2",
+            "go to countertop 3",
+            "go to diningtable 1",
+            "go to drawer 1",
+            "go to drawer 2",
+            "go to drawer 3",
+            "go to drawer 4",
+            "go to fridge 1",
+            "go to garbagecan 1",
+            "go to microwave 1",
+            "go to sinkbasin 1",
+            "go to stoveburner 1",
+            "go to stoveburner 2",
+            "go to stoveburner 3",
+            "go to stoveburner 4",
+            "go to toaster 1",
+            "help",
+            "inventory",
+            "look",
+            "take bread 1 from countertop 1",
+            "take butterknife 1 from countertop 1",
+            "take butterknife 2 from countertop 1",
+            "take soapbottle 1 from countertop 1",
+            "take spatula 1 from countertop 1",
+            "take spatula 2 from countertop 1"
+          ],
+          "resulting_observation": "You arrive at countertop 1. On the countertop 1, you see a bread 1, a butterknife 2, a butterknife 1, a soapbottle 1, a spatula 2, and a spatula 1.",
+          "submitted_environment_action": "go to countertop 1"
+        },
+        {
+          "admissible_commands": [
+            "examine countertop 1",
+            "go to cabinet 1",
+            "go to cabinet 10",
+            "go to cabinet 11",
+            "go to cabinet 12",
+            "go to cabinet 13",
+            "go to cabinet 14",
+            "go to cabinet 15",
+            "go to cabinet 16",
+            "go to cabinet 17",
+            "go to cabinet 18",
+            "go to cabinet 19",
+            "go to cabinet 2",
+            "go to cabinet 20",
+            "go to cabinet 21",
+            "go to cabinet 22",
+            "go to cabinet 23",
+            "go to cabinet 3",
+            "go to cabinet 4",
+            "go to cabinet 5",
+            "go to cabinet 6",
+            "go to cabinet 7",
+            "go to cabinet 8",
+            "go to cabinet 9",
+            "go to coffeemachine 1",
+            "go to countertop 2",
+            "go to countertop 3",
+            "go to diningtable 1",
+            "go to drawer 1",
+            "go to drawer 2",
+            "go to drawer 3",
+            "go to drawer 4",
+            "go to fridge 1",
+            "go to garbagecan 1",
+            "go to microwave 1",
+            "go to sinkbasin 1",
+            "go to stoveburner 1",
+            "go to stoveburner 2",
+            "go to stoveburner 3",
+            "go to stoveburner 4",
+            "go to toaster 1",
+            "help",
+            "inventory",
+            "look",
+            "take bread 1 from countertop 1",
+            "take butterknife 1 from countertop 1",
+            "take butterknife 2 from countertop 1",
+            "take soapbottle 1 from countertop 1",
+            "take spatula 1 from countertop 1",
+            "take spatula 2 from countertop 1"
+          ],
+          "attempt_outcome": "ACTION_NOT_ADMISSIBLE",
+          "budget_after": {
+            "consecutive_nonexecuted_attempt_count": 1,
+            "environment_step_count": 12,
+            "inadmissible_action_count": 5,
+            "policy_attempt_count": 17,
+            "protocol_failure_count": 0
+          },
+          "budget_before": {
+            "consecutive_nonexecuted_attempt_count": 0,
+            "environment_step_count": 12,
+            "inadmissible_action_count": 4,
+            "policy_attempt_count": 16,
+            "protocol_failure_count": 0
+          },
+          "environment_done": null,
+          "environment_score": null,
+          "environment_step_count_before": 12,
+          "environment_won": null,
+          "executed_history": [
+            {
+              "action": "go to cabinet 1",
+              "resulting_observation": "You arrive at cabinet 1. The cabinet 1 is closed."
+            },
+            {
+              "action": "open cabinet 1",
+              "resulting_observation": "You open the cabinet 1. The cabinet 1 is open. In it, you see nothing."
+            },
+            {
+              "action": "go to coffeemachine 1",
+              "resulting_observation": "You arrive at coffeemachine 1. On the coffeemachine 1, you see a mug 3."
+            },
+            {
+              "action": "take mug 3 from coffeemachine 1",
+              "resulting_observation": "You pick up the mug 3 from the coffeemachine 1."
+            },
+            {
+              "action": "examine mug 3",
+              "resulting_observation": "This is a normal mug 3. In it, you see nothing."
+            },
+            {
+              "action": "examine coffeemachine 1",
+              "resulting_observation": "On the coffeemachine 1, you see nothing."
+            },
+            {
+              "action": "help",
+              "resulting_observation": "Available commands:\n  look:                             look around your current location\n  inventory:                        check your current inventory\n  go to (receptacle):               move to a receptacle\n  open (receptacle):                open a receptacle\n  close (receptacle):               close a receptacle\n  take (object) from (receptacle):  take an object from a receptacle\n  move (object) to (receptacle):  place an object in or on a receptacle\n  examine (something):              examine a receptacle or an object\n  use (object):                     use an object\n  heat (object) with (receptacle):  heat an object using a receptacle\n  clean (object) with (receptacle): clean an object using a receptacle\n  cool (object) with (receptacle):  cool an object using a receptacle\n  slice (object) with (object):     slice an object using a sharp object\n"
+            },
+            {
+              "action": "move mug 3 to coffeemachine 1",
+              "resulting_observation": "You move the mug 3 to the coffeemachine 1."
+            },
+            {
+              "action": "take mug 3 from coffeemachine 1",
+              "resulting_observation": "You pick up the mug 3 from the coffeemachine 1."
+            },
+            {
+              "action": "move mug 3 to coffeemachine 1",
+              "resulting_observation": "You move the mug 3 to the coffeemachine 1."
+            },
+            {
+              "action": "help",
+              "resulting_observation": "Available commands:\n  look:                             look around your current location\n  inventory:                        check your current inventory\n  go to (receptacle):               move to a receptacle\n  open (receptacle):                open a receptacle\n  close (receptacle):               close a receptacle\n  take (object) from (receptacle):  take an object from a receptacle\n  move (object) to (receptacle):  place an object in or on a receptacle\n  examine (something):              examine a receptacle or an object\n  use (object):                     use an object\n  heat (object) with (receptacle):  heat an object using a receptacle\n  clean (object) with (receptacle): clean an object using a receptacle\n  cool (object) with (receptacle):  cool an object using a receptacle\n  slice (object) with (object):     slice an object using a sharp object\n"
+            },
+            {
+              "action": "go to countertop 1",
+              "resulting_observation": "You arrive at countertop 1. On the countertop 1, you see a bread 1, a butterknife 2, a butterknife 1, a soapbottle 1, a spatula 2, and a spatula 1."
+            }
+          ],
+          "execution_status": "not_executed",
+          "final_executed_action": null,
+          "literal_action": "take mug 3 from coffeemachine 1",
+          "model_call_index": 16,
+          "normalized_action": "take mug 3 from coffeemachine 1",
+          "observation_before": "You arrive at countertop 1. On the countertop 1, you see a bread 1, a butterknife 2, a butterknife 1, a soapbottle 1, a spatula 2, and a spatula 1.",
+          "parser_error": null,
+          "parser_status": "success",
+          "policy_prompt_text": "MEMORY_AUGMENTED_RAW_POLICY_PROMPT_V1\nTASK_GOAL_JSON=\"put a clean mug in coffeemachine.\"\nCURRENT_OBSERVATION_JSON=\"You arrive at countertop 1. On the countertop 1, you see a bread 1, a butterknife 2, a butterknife 1, a soapbottle 1, a spatula 2, and a spatula 1.\"\nEXECUTED_TRANSITIONS_JSON=[{\"action\":\"examine mug 3\",\"resulting_observation\":\"This is a normal mug 3. In it, you see nothing.\"},{\"action\":\"examine coffeemachine 1\",\"resulting_observation\":\"On the coffeemachine 1, you see nothing.\"},{\"action\":\"help\",\"resulting_observation\":\"Available commands:\\n  look:                             look around your current location\\n  inventory:                        check your current inventory\\n  go to (receptacle):               move to a receptacle\\n  open (receptacle):                open a receptacle\\n  close (receptacle):               close a receptacle\\n  take (object) from (receptacle):  take an object from a receptacle\\n  move (object) to (receptacle):  place an object in or on a receptacle\\n  examine (something):              examine a receptacle or an object\\n  use (object):                     use an object\\n  heat (object) with (receptacle):  heat an object using a receptacle\\n  clean (object) with (receptacle): clean an object using a receptacle\\n  cool (object) with (receptacle):  cool an object using a receptacle\\n  slice (object) with (object):     slice an object using a sharp object\\n\"},{\"action\":\"move mug 3 to coffeemachine 1\",\"resulting_observation\":\"You move the mug 3 to the coffeemachine 1.\"},{\"action\":\"take mug 3 from coffeemachine 1\",\"resulting_observation\":\"You pick up the mug 3 from the coffeemachine 1.\"},{\"action\":\"move mug 3 to coffeemachine 1\",\"resulting_observation\":\"You move the mug 3 to the coffeemachine 1.\"},{\"action\":\"help\",\"resulting_observation\":\"Available commands:\\n  look:                             look around your current location\\n  inventory:                        check your current inventory\\n  go to (receptacle):               move to a receptacle\\n  open (receptacle):                open a receptacle\\n  close (receptacle):               close a receptacle\\n  take (object) from (receptacle):  take an object from a receptacle\\n  move (object) to (receptacle):  place an object in or on a receptacle\\n  examine (something):              examine a receptacle or an object\\n  use (object):                     use an object\\n  heat (object) with (receptacle):  heat an object using a receptacle\\n  clean (object) with (receptacle): clean an object using a receptacle\\n  cool (object) with (receptacle):  cool an object using a receptacle\\n  slice (object) with (object):     slice an object using a sharp object\\n\"},{\"action\":\"go to countertop 1\",\"resulting_observation\":\"You arrive at countertop 1. On the countertop 1, you see a bread 1, a butterknife 2, a butterknife 1, a soapbottle 1, a spatula 2, and a spatula 1.\"}]\nRETRIEVED_FAILURE_EXPERIENCES_JSON=[]\nVISIBLE_ADMISSIBLE_COMMANDS_JSON=[\"examine countertop 1\",\"go to cabinet 1\",\"go to cabinet 10\",\"go to cabinet 11\",\"go to cabinet 12\",\"go to cabinet 13\",\"go to cabinet 14\",\"go to cabinet 15\",\"go to cabinet 16\",\"go to cabinet 17\",\"go to cabinet 18\",\"go to cabinet 19\",\"go to cabinet 2\",\"go to cabinet 20\",\"go to cabinet 21\",\"go to cabinet 22\",\"go to cabinet 23\",\"go to cabinet 3\",\"go to cabinet 4\",\"go to cabinet 5\",\"go to cabinet 6\",\"go to cabinet 7\",\"go to cabinet 8\",\"go to cabinet 9\",\"go to coffeemachine 1\",\"go to countertop 2\",\"go to countertop 3\",\"go to diningtable 1\",\"go to drawer 1\",\"go to drawer 2\",\"go to drawer 3\",\"go to drawer 4\",\"go to fridge 1\",\"go to garbagecan 1\",\"go to microwave 1\",\"go to sinkbasin 1\",\"go to stoveburner 1\",\"go to stoveburner 2\",\"go to stoveburner 3\",\"go to stoveburner 4\",\"go to toaster 1\",\"help\",\"inventory\",\"look\",\"take bread 1 from countertop 1\",\"take butterknife 1 from countertop 1\",\"take butterknife 2 from countertop 1\",\"take soapbottle 1 from countertop 1\",\"take spatula 1 from countertop 1\",\"take spatula 2 from countertop 1\"]\nINTERFACE_FEEDBACK_JSON=null\nOUTPUT_REQUIREMENT={\"action\":\"<command>\"}",
+          "public_task_goal": "put a clean mug in coffeemachine.",
+          "raw_model_response": "{\"action\":\"take mug 3 from coffeemachine 1\"}",
+          "resulting_admissible_commands": null,
+          "resulting_observation": null,
+          "submitted_environment_action": null
+        },
+        {
+          "admissible_commands": [
+            "examine countertop 1",
+            "go to cabinet 1",
+            "go to cabinet 10",
+            "go to cabinet 11",
+            "go to cabinet 12",
+            "go to cabinet 13",
+            "go to cabinet 14",
+            "go to cabinet 15",
+            "go to cabinet 16",
+            "go to cabinet 17",
+            "go to cabinet 18",
+            "go to cabinet 19",
+            "go to cabinet 2",
+            "go to cabinet 20",
+            "go to cabinet 21",
+            "go to cabinet 22",
+            "go to cabinet 23",
+            "go to cabinet 3",
+            "go to cabinet 4",
+            "go to cabinet 5",
+            "go to cabinet 6",
+            "go to cabinet 7",
+            "go to cabinet 8",
+            "go to cabinet 9",
+            "go to coffeemachine 1",
+            "go to countertop 2",
+            "go to countertop 3",
+            "go to diningtable 1",
+            "go to drawer 1",
+            "go to drawer 2",
+            "go to drawer 3",
+            "go to drawer 4",
+            "go to fridge 1",
+            "go to garbagecan 1",
+            "go to microwave 1",
+            "go to sinkbasin 1",
+            "go to stoveburner 1",
+            "go to stoveburner 2",
+            "go to stoveburner 3",
+            "go to stoveburner 4",
+            "go to toaster 1",
+            "help",
+            "inventory",
+            "look",
+            "take bread 1 from countertop 1",
+            "take butterknife 1 from countertop 1",
+            "take butterknife 2 from countertop 1",
+            "take soapbottle 1 from countertop 1",
+            "take spatula 1 from countertop 1",
+            "take spatula 2 from countertop 1"
+          ],
+          "attempt_outcome": "ACTION_NOT_ADMISSIBLE",
+          "budget_after": {
+            "consecutive_nonexecuted_attempt_count": 2,
+            "environment_step_count": 12,
+            "inadmissible_action_count": 6,
+            "policy_attempt_count": 18,
+            "protocol_failure_count": 0
+          },
+          "budget_before": {
+            "consecutive_nonexecuted_attempt_count": 1,
+            "environment_step_count": 12,
+            "inadmissible_action_count": 5,
+            "policy_attempt_count": 17,
+            "protocol_failure_count": 0
+          },
+          "environment_done": null,
+          "environment_score": null,
+          "environment_step_count_before": 12,
+          "environment_won": null,
+          "executed_history": [
+            {
+              "action": "go to cabinet 1",
+              "resulting_observation": "You arrive at cabinet 1. The cabinet 1 is closed."
+            },
+            {
+              "action": "open cabinet 1",
+              "resulting_observation": "You open the cabinet 1. The cabinet 1 is open. In it, you see nothing."
+            },
+            {
+              "action": "go to coffeemachine 1",
+              "resulting_observation": "You arrive at coffeemachine 1. On the coffeemachine 1, you see a mug 3."
+            },
+            {
+              "action": "take mug 3 from coffeemachine 1",
+              "resulting_observation": "You pick up the mug 3 from the coffeemachine 1."
+            },
+            {
+              "action": "examine mug 3",
+              "resulting_observation": "This is a normal mug 3. In it, you see nothing."
+            },
+            {
+              "action": "examine coffeemachine 1",
+              "resulting_observation": "On the coffeemachine 1, you see nothing."
+            },
+            {
+              "action": "help",
+              "resulting_observation": "Available commands:\n  look:                             look around your current location\n  inventory:                        check your current inventory\n  go to (receptacle):               move to a receptacle\n  open (receptacle):                open a receptacle\n  close (receptacle):               close a receptacle\n  take (object) from (receptacle):  take an object from a receptacle\n  move (object) to (receptacle):  place an object in or on a receptacle\n  examine (something):              examine a receptacle or an object\n  use (object):                     use an object\n  heat (object) with (receptacle):  heat an object using a receptacle\n  clean (object) with (receptacle): clean an object using a receptacle\n  cool (object) with (receptacle):  cool an object using a receptacle\n  slice (object) with (object):     slice an object using a sharp object\n"
+            },
+            {
+              "action": "move mug 3 to coffeemachine 1",
+              "resulting_observation": "You move the mug 3 to the coffeemachine 1."
+            },
+            {
+              "action": "take mug 3 from coffeemachine 1",
+              "resulting_observation": "You pick up the mug 3 from the coffeemachine 1."
+            },
+            {
+              "action": "move mug 3 to coffeemachine 1",
+              "resulting_observation": "You move the mug 3 to the coffeemachine 1."
+            },
+            {
+              "action": "help",
+              "resulting_observation": "Available commands:\n  look:                             look around your current location\n  inventory:                        check your current inventory\n  go to (receptacle):               move to a receptacle\n  open (receptacle):                open a receptacle\n  close (receptacle):               close a receptacle\n  take (object) from (receptacle):  take an object from a receptacle\n  move (object) to (receptacle):  place an object in or on a receptacle\n  examine (something):              examine a receptacle or an object\n  use (object):                     use an object\n  heat (object) with (receptacle):  heat an object using a receptacle\n  clean (object) with (receptacle): clean an object using a receptacle\n  cool (object) with (receptacle):  cool an object using a receptacle\n  slice (object) with (object):     slice an object using a sharp object\n"
+            },
+            {
+              "action": "go to countertop 1",
+              "resulting_observation": "You arrive at countertop 1. On the countertop 1, you see a bread 1, a butterknife 2, a butterknife 1, a soapbottle 1, a spatula 2, and a spatula 1."
+            }
+          ],
+          "execution_status": "not_executed",
+          "final_executed_action": null,
+          "literal_action": "examine mug 3",
+          "model_call_index": 17,
+          "normalized_action": "examine mug 3",
+          "observation_before": "You arrive at countertop 1. On the countertop 1, you see a bread 1, a butterknife 2, a butterknife 1, a soapbottle 1, a spatula 2, and a spatula 1.",
+          "parser_error": null,
+          "parser_status": "success",
+          "policy_prompt_text": "MEMORY_AUGMENTED_RAW_POLICY_PROMPT_V1\nTASK_GOAL_JSON=\"put a clean mug in coffeemachine.\"\nCURRENT_OBSERVATION_JSON=\"You arrive at countertop 1. On the countertop 1, you see a bread 1, a butterknife 2, a butterknife 1, a soapbottle 1, a spatula 2, and a spatula 1.\"\nEXECUTED_TRANSITIONS_JSON=[{\"action\":\"examine mug 3\",\"resulting_observation\":\"This is a normal mug 3. In it, you see nothing.\"},{\"action\":\"examine coffeemachine 1\",\"resulting_observation\":\"On the coffeemachine 1, you see nothing.\"},{\"action\":\"help\",\"resulting_observation\":\"Available commands:\\n  look:                             look around your current location\\n  inventory:                        check your current inventory\\n  go to (receptacle):               move to a receptacle\\n  open (receptacle):                open a receptacle\\n  close (receptacle):               close a receptacle\\n  take (object) from (receptacle):  take an object from a receptacle\\n  move (object) to (receptacle):  place an object in or on a receptacle\\n  examine (something):              examine a receptacle or an object\\n  use (object):                     use an object\\n  heat (object) with (receptacle):  heat an object using a receptacle\\n  clean (object) with (receptacle): clean an object using a receptacle\\n  cool (object) with (receptacle):  cool an object using a receptacle\\n  slice (object) with (object):     slice an object using a sharp object\\n\"},{\"action\":\"move mug 3 to coffeemachine 1\",\"resulting_observation\":\"You move the mug 3 to the coffeemachine 1.\"},{\"action\":\"take mug 3 from coffeemachine 1\",\"resulting_observation\":\"You pick up the mug 3 from the coffeemachine 1.\"},{\"action\":\"move mug 3 to coffeemachine 1\",\"resulting_observation\":\"You move the mug 3 to the coffeemachine 1.\"},{\"action\":\"help\",\"resulting_observation\":\"Available commands:\\n  look:                             look around your current location\\n  inventory:                        check your current inventory\\n  go to (receptacle):               move to a receptacle\\n  open (receptacle):                open a receptacle\\n  close (receptacle):               close a receptacle\\n  take (object) from (receptacle):  take an object from a receptacle\\n  move (object) to (receptacle):  place an object in or on a receptacle\\n  examine (something):              examine a receptacle or an object\\n  use (object):                     use an object\\n  heat (object) with (receptacle):  heat an object using a receptacle\\n  clean (object) with (receptacle): clean an object using a receptacle\\n  cool (object) with (receptacle):  cool an object using a receptacle\\n  slice (object) with (object):     slice an object using a sharp object\\n\"},{\"action\":\"go to countertop 1\",\"resulting_observation\":\"You arrive at countertop 1. On the countertop 1, you see a bread 1, a butterknife 2, a butterknife 1, a soapbottle 1, a spatula 2, and a spatula 1.\"}]\nRETRIEVED_FAILURE_EXPERIENCES_JSON=[]\nVISIBLE_ADMISSIBLE_COMMANDS_JSON=[\"examine countertop 1\",\"go to cabinet 1\",\"go to cabinet 10\",\"go to cabinet 11\",\"go to cabinet 12\",\"go to cabinet 13\",\"go to cabinet 14\",\"go to cabinet 15\",\"go to cabinet 16\",\"go to cabinet 17\",\"go to cabinet 18\",\"go to cabinet 19\",\"go to cabinet 2\",\"go to cabinet 20\",\"go to cabinet 21\",\"go to cabinet 22\",\"go to cabinet 23\",\"go to cabinet 3\",\"go to cabinet 4\",\"go to cabinet 5\",\"go to cabinet 6\",\"go to cabinet 7\",\"go to cabinet 8\",\"go to cabinet 9\",\"go to coffeemachine 1\",\"go to countertop 2\",\"go to countertop 3\",\"go to diningtable 1\",\"go to drawer 1\",\"go to drawer 2\",\"go to drawer 3\",\"go to drawer 4\",\"go to fridge 1\",\"go to garbagecan 1\",\"go to microwave 1\",\"go to sinkbasin 1\",\"go to stoveburner 1\",\"go to stoveburner 2\",\"go to stoveburner 3\",\"go to stoveburner 4\",\"go to toaster 1\",\"help\",\"inventory\",\"look\",\"take bread 1 from countertop 1\",\"take butterknife 1 from countertop 1\",\"take butterknife 2 from countertop 1\",\"take soapbottle 1 from countertop 1\",\"take spatula 1 from countertop 1\",\"take spatula 2 from countertop 1\"]\nINTERFACE_FEEDBACK_JSON=\"INVALID_ACTION_V1:\\nThe parsed action is not an exact member of the visible admissible-command menu.\\nNo environment action was executed.\"\nOUTPUT_REQUIREMENT={\"action\":\"<command>\"}",
+          "public_task_goal": "put a clean mug in coffeemachine.",
+          "raw_model_response": "{\n  \"action\": \"examine mug 3\"\n}",
+          "resulting_admissible_commands": null,
+          "resulting_observation": null,
+          "submitted_environment_action": null
+        },
+        {
+          "admissible_commands": [
+            "examine countertop 1",
+            "go to cabinet 1",
+            "go to cabinet 10",
+            "go to cabinet 11",
+            "go to cabinet 12",
+            "go to cabinet 13",
+            "go to cabinet 14",
+            "go to cabinet 15",
+            "go to cabinet 16",
+            "go to cabinet 17",
+            "go to cabinet 18",
+            "go to cabinet 19",
+            "go to cabinet 2",
+            "go to cabinet 20",
+            "go to cabinet 21",
+            "go to cabinet 22",
+            "go to cabinet 23",
+            "go to cabinet 3",
+            "go to cabinet 4",
+            "go to cabinet 5",
+            "go to cabinet 6",
+            "go to cabinet 7",
+            "go to cabinet 8",
+            "go to cabinet 9",
+            "go to coffeemachine 1",
+            "go to countertop 2",
+            "go to countertop 3",
+            "go to diningtable 1",
+            "go to drawer 1",
+            "go to drawer 2",
+            "go to drawer 3",
+            "go to drawer 4",
+            "go to fridge 1",
+            "go to garbagecan 1",
+            "go to microwave 1",
+            "go to sinkbasin 1",
+            "go to stoveburner 1",
+            "go to stoveburner 2",
+            "go to stoveburner 3",
+            "go to stoveburner 4",
+            "go to toaster 1",
+            "help",
+            "inventory",
+            "look",
+            "take bread 1 from countertop 1",
+            "take butterknife 1 from countertop 1",
+            "take butterknife 2 from countertop 1",
+            "take soapbottle 1 from countertop 1",
+            "take spatula 1 from countertop 1",
+            "take spatula 2 from countertop 1"
+          ],
+          "attempt_outcome": "ACTION_NOT_ADMISSIBLE",
+          "budget_after": {
+            "consecutive_nonexecuted_attempt_count": 3,
+            "environment_step_count": 12,
+            "inadmissible_action_count": 7,
+            "policy_attempt_count": 19,
+            "protocol_failure_count": 0
+          },
+          "budget_before": {
+            "consecutive_nonexecuted_attempt_count": 2,
+            "environment_step_count": 12,
+            "inadmissible_action_count": 6,
+            "policy_attempt_count": 18,
+            "protocol_failure_count": 0
+          },
+          "environment_done": null,
+          "environment_score": null,
+          "environment_step_count_before": 12,
+          "environment_won": null,
+          "executed_history": [
+            {
+              "action": "go to cabinet 1",
+              "resulting_observation": "You arrive at cabinet 1. The cabinet 1 is closed."
+            },
+            {
+              "action": "open cabinet 1",
+              "resulting_observation": "You open the cabinet 1. The cabinet 1 is open. In it, you see nothing."
+            },
+            {
+              "action": "go to coffeemachine 1",
+              "resulting_observation": "You arrive at coffeemachine 1. On the coffeemachine 1, you see a mug 3."
+            },
+            {
+              "action": "take mug 3 from coffeemachine 1",
+              "resulting_observation": "You pick up the mug 3 from the coffeemachine 1."
+            },
+            {
+              "action": "examine mug 3",
+              "resulting_observation": "This is a normal mug 3. In it, you see nothing."
+            },
+            {
+              "action": "examine coffeemachine 1",
+              "resulting_observation": "On the coffeemachine 1, you see nothing."
+            },
+            {
+              "action": "help",
+              "resulting_observation": "Available commands:\n  look:                             look around your current location\n  inventory:                        check your current inventory\n  go to (receptacle):               move to a receptacle\n  open (receptacle):                open a receptacle\n  close (receptacle):               close a receptacle\n  take (object) from (receptacle):  take an object from a receptacle\n  move (object) to (receptacle):  place an object in or on a receptacle\n  examine (something):              examine a receptacle or an object\n  use (object):                     use an object\n  heat (object) with (receptacle):  heat an object using a receptacle\n  clean (object) with (receptacle): clean an object using a receptacle\n  cool (object) with (receptacle):  cool an object using a receptacle\n  slice (object) with (object):     slice an object using a sharp object\n"
+            },
+            {
+              "action": "move mug 3 to coffeemachine 1",
+              "resulting_observation": "You move the mug 3 to the coffeemachine 1."
+            },
+            {
+              "action": "take mug 3 from coffeemachine 1",
+              "resulting_observation": "You pick up the mug 3 from the coffeemachine 1."
+            },
+            {
+              "action": "move mug 3 to coffeemachine 1",
+              "resulting_observation": "You move the mug 3 to the coffeemachine 1."
+            },
+            {
+              "action": "help",
+              "resulting_observation": "Available commands:\n  look:                             look around your current location\n  inventory:                        check your current inventory\n  go to (receptacle):               move to a receptacle\n  open (receptacle):                open a receptacle\n  close (receptacle):               close a receptacle\n  take (object) from (receptacle):  take an object from a receptacle\n  move (object) to (receptacle):  place an object in or on a receptacle\n  examine (something):              examine a receptacle or an object\n  use (object):                     use an object\n  heat (object) with (receptacle):  heat an object using a receptacle\n  clean (object) with (receptacle): clean an object using a receptacle\n  cool (object) with (receptacle):  cool an object using a receptacle\n  slice (object) with (object):     slice an object using a sharp object\n"
+            },
+            {
+              "action": "go to countertop 1",
+              "resulting_observation": "You arrive at countertop 1. On the countertop 1, you see a bread 1, a butterknife 2, a butterknife 1, a soapbottle 1, a spatula 2, and a spatula 1."
+            }
+          ],
+          "execution_status": "not_executed",
+          "final_executed_action": null,
+          "literal_action": "examine mug 3",
+          "model_call_index": 18,
+          "normalized_action": "examine mug 3",
+          "observation_before": "You arrive at countertop 1. On the countertop 1, you see a bread 1, a butterknife 2, a butterknife 1, a soapbottle 1, a spatula 2, and a spatula 1.",
+          "parser_error": null,
+          "parser_status": "success",
+          "policy_prompt_text": "MEMORY_AUGMENTED_RAW_POLICY_PROMPT_V1\nTASK_GOAL_JSON=\"put a clean mug in coffeemachine.\"\nCURRENT_OBSERVATION_JSON=\"You arrive at countertop 1. On the countertop 1, you see a bread 1, a butterknife 2, a butterknife 1, a soapbottle 1, a spatula 2, and a spatula 1.\"\nEXECUTED_TRANSITIONS_JSON=[{\"action\":\"examine mug 3\",\"resulting_observation\":\"This is a normal mug 3. In it, you see nothing.\"},{\"action\":\"examine coffeemachine 1\",\"resulting_observation\":\"On the coffeemachine 1, you see nothing.\"},{\"action\":\"help\",\"resulting_observation\":\"Available commands:\\n  look:                             look around your current location\\n  inventory:                        check your current inventory\\n  go to (receptacle):               move to a receptacle\\n  open (receptacle):                open a receptacle\\n  close (receptacle):               close a receptacle\\n  take (object) from (receptacle):  take an object from a receptacle\\n  move (object) to (receptacle):  place an object in or on a receptacle\\n  examine (something):              examine a receptacle or an object\\n  use (object):                     use an object\\n  heat (object) with (receptacle):  heat an object using a receptacle\\n  clean (object) with (receptacle): clean an object using a receptacle\\n  cool (object) with (receptacle):  cool an object using a receptacle\\n  slice (object) with (object):     slice an object using a sharp object\\n\"},{\"action\":\"move mug 3 to coffeemachine 1\",\"resulting_observation\":\"You move the mug 3 to the coffeemachine 1.\"},{\"action\":\"take mug 3 from coffeemachine 1\",\"resulting_observation\":\"You pick up the mug 3 from the coffeemachine 1.\"},{\"action\":\"move mug 3 to coffeemachine 1\",\"resulting_observation\":\"You move the mug 3 to the coffeemachine 1.\"},{\"action\":\"help\",\"resulting_observation\":\"Available commands:\\n  look:                             look around your current location\\n  inventory:                        check your current inventory\\n  go to (receptacle):               move to a receptacle\\n  open (receptacle):                open a receptacle\\n  close (receptacle):               close a receptacle\\n  take (object) from (receptacle):  take an object from a receptacle\\n  move (object) to (receptacle):  place an object in or on a receptacle\\n  examine (something):              examine a receptacle or an object\\n  use (object):                     use an object\\n  heat (object) with (receptacle):  heat an object using a receptacle\\n  clean (object) with (receptacle): clean an object using a receptacle\\n  cool (object) with (receptacle):  cool an object using a receptacle\\n  slice (object) with (object):     slice an object using a sharp object\\n\"},{\"action\":\"go to countertop 1\",\"resulting_observation\":\"You arrive at countertop 1. On the countertop 1, you see a bread 1, a butterknife 2, a butterknife 1, a soapbottle 1, a spatula 2, and a spatula 1.\"}]\nRETRIEVED_FAILURE_EXPERIENCES_JSON=[]\nVISIBLE_ADMISSIBLE_COMMANDS_JSON=[\"examine countertop 1\",\"go to cabinet 1\",\"go to cabinet 10\",\"go to cabinet 11\",\"go to cabinet 12\",\"go to cabinet 13\",\"go to cabinet 14\",\"go to cabinet 15\",\"go to cabinet 16\",\"go to cabinet 17\",\"go to cabinet 18\",\"go to cabinet 19\",\"go to cabinet 2\",\"go to cabinet 20\",\"go to cabinet 21\",\"go to cabinet 22\",\"go to cabinet 23\",\"go to cabinet 3\",\"go to cabinet 4\",\"go to cabinet 5\",\"go to cabinet 6\",\"go to cabinet 7\",\"go to cabinet 8\",\"go to cabinet 9\",\"go to coffeemachine 1\",\"go to countertop 2\",\"go to countertop 3\",\"go to diningtable 1\",\"go to drawer 1\",\"go to drawer 2\",\"go to drawer 3\",\"go to drawer 4\",\"go to fridge 1\",\"go to garbagecan 1\",\"go to microwave 1\",\"go to sinkbasin 1\",\"go to stoveburner 1\",\"go to stoveburner 2\",\"go to stoveburner 3\",\"go to stoveburner 4\",\"go to toaster 1\",\"help\",\"inventory\",\"look\",\"take bread 1 from countertop 1\",\"take butterknife 1 from countertop 1\",\"take butterknife 2 from countertop 1\",\"take soapbottle 1 from countertop 1\",\"take spatula 1 from countertop 1\",\"take spatula 2 from countertop 1\"]\nINTERFACE_FEEDBACK_JSON=\"INVALID_ACTION_V1:\\nThe parsed action is not an exact member of the visible admissible-command menu.\\nNo environment action was executed.\"\nOUTPUT_REQUIREMENT={\"action\":\"<command>\"}",
+          "public_task_goal": "put a clean mug in coffeemachine.",
+          "raw_model_response": "{\n  \"action\": \"examine mug 3\"\n}",
+          "resulting_admissible_commands": null,
+          "resulting_observation": null,
+          "submitted_environment_action": null
+        }
+      ],
+      "trajectory_identity": {
+        "execution_attempt_id": "e1-t1480-s0000000017-a000",
+        "round_id": "FORMAL-R2-5cf26b8115c2a538",
+        "round_rollout_evidence_handoff_sha256": "b879afbe78987d95ca0157434a6148e92d4fd0077cbeb0b118083dacf0874e5c",
+        "source_attempt_bundle_sha256": "1ee305a7eb1ee48d5358596dbea0b6e46721e021932aeabb09ebd8aeac6bbfcc",
+        "source_episode_semantic_sha256": "8998650c72f07ba158977acb7a19e7ac418aa44f0a663af6c5c6dc844fe7acfe"
+      }
+    },
+    "evidence_pack_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+    "evidence_reference_catalog": {
+      "copy_policy": "EXACT_OBJECT_COPY_ONLY",
+      "counterexamples": [],
+      "evidence_pack_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+      "mechanical_facts": [
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:alfworld_event_facts.destination_revisit_count"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:alfworld_event_facts.goal_object"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:alfworld_event_facts.goal_object_acquired_events[0]"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:alfworld_event_facts.goal_object_acquired_events[1]"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:alfworld_event_facts.goal_object_parse_status"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:alfworld_event_facts.parser_version"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:alfworld_event_facts.placement_completed_events[0]"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:alfworld_event_facts.placement_completed_events[1]"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:alfworld_event_facts.remaining_environment_budget"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:alfworld_event_facts.source_family_revisit_count"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:alfworld_event_facts.source_revisit_count"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:alfworld_event_facts.time_since_last_registered_progress"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:alfworld_event_facts.time_to_first_registered_progress"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:alfworld_event_facts.unsupported_or_ambiguous_fields_use_unknown"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:authority"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:evidence_sha256"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:gamefile_sha256"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:generic_episode_facts.abab_action_oscillation_count"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:generic_episode_facts.budget_exhaustion"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:generic_episode_facts.consecutive_exact_action_repeat_count"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:generic_episode_facts.environment_error_count"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:generic_episode_facts.exact_action_repeat_count"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:generic_episode_facts.executed_environment_step_count"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:generic_episode_facts.inadmissible_action_count"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:generic_episode_facts.max_consecutive_exact_action_repeat_run"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:generic_episode_facts.menu_unchanged_count"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:generic_episode_facts.no_effect_rule"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:generic_episode_facts.no_effect_transition_count"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:generic_episode_facts.nonexecuted_attempt_count"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:generic_episode_facts.nothing_happens_count"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:generic_episode_facts.observation_unchanged_count"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:generic_episode_facts.policy_call_count"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:generic_episode_facts.protocol_failure_count"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:generic_episode_facts.terminal_done"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:generic_episode_facts.terminal_success"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:generic_episode_facts.terminal_won"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:generic_episode_facts.termination_reason"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:generic_episode_facts.time_since_last_public_state_change"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:generic_episode_facts.time_to_first_public_state_change"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:prohibited_interpretations[0]"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:prohibited_interpretations[1]"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:prohibited_interpretations[2]"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:prohibited_interpretations[3]"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:prohibited_interpretations[4]"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:prohibited_interpretations[5]"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:prohibited_interpretations[6]"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:prohibited_interpretations[7]"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:schema_id"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:schema_version"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:source_attempt_bundle_sha256"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:source_episode_semantic_sha256"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "MECHANICAL_FACT",
+          "local_selector": "mechanical:task_id"
+        }
+      ],
+      "mechanical_selector_policy": "LEAF_ONLY_EXACT_CATALOG_MEMBER",
+      "schema_id": "ANALYZER_EVIDENCE_REFERENCE_CATALOG_V1",
+      "trajectory_calls": [
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "TRAJECTORY_CALL",
+          "local_selector": "trajectory:0"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "TRAJECTORY_CALL",
+          "local_selector": "trajectory:1"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "TRAJECTORY_CALL",
+          "local_selector": "trajectory:2"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "TRAJECTORY_CALL",
+          "local_selector": "trajectory:3"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "TRAJECTORY_CALL",
+          "local_selector": "trajectory:4"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "TRAJECTORY_CALL",
+          "local_selector": "trajectory:5"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "TRAJECTORY_CALL",
+          "local_selector": "trajectory:6"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "TRAJECTORY_CALL",
+          "local_selector": "trajectory:7"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "TRAJECTORY_CALL",
+          "local_selector": "trajectory:8"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "TRAJECTORY_CALL",
+          "local_selector": "trajectory:9"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "TRAJECTORY_CALL",
+          "local_selector": "trajectory:10"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "TRAJECTORY_CALL",
+          "local_selector": "trajectory:11"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "TRAJECTORY_CALL",
+          "local_selector": "trajectory:12"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "TRAJECTORY_CALL",
+          "local_selector": "trajectory:13"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "TRAJECTORY_CALL",
+          "local_selector": "trajectory:14"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "TRAJECTORY_CALL",
+          "local_selector": "trajectory:15"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "TRAJECTORY_CALL",
+          "local_selector": "trajectory:16"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "TRAJECTORY_CALL",
+          "local_selector": "trajectory:17"
+        },
+        {
+          "artifact_sha256": "b628a7f52f2ea3ed33fecb104aeb13c2ad5f23dd69f46e4f7735c9b4e91809de",
+          "authority": "DETERMINISTIC_FACT",
+          "evidence_kind": "TRAJECTORY_CALL",
+          "local_selector": "trajectory:18"
+        }
+      ]
+    },
+    "local_repair_contract": {
+      "EXACT_ACTION": {
+        "exact_action": "REQUIRED_EXACT_ADMISSIBLE_COMMAND_STRING",
+        "option_actions": "EMPTY_ARRAY",
+        "termination_condition": "NULL",
+        "trainable_rule": "NULL"
+      },
+      "SHORT_OPTION": {
+        "exact_action": "NULL",
+        "option_actions": "ARRAY_1_TO_4_FIRST_ACTION_ADMISSIBLE",
+        "termination_condition": "REQUIRED_NONEMPTY_STRING",
+        "trainable_rule": "NULL"
+      },
+      "TRAINABLE_RULE": {
+        "exact_action": "NULL",
+        "option_actions": "EMPTY_ARRAY",
+        "termination_condition": "NULL",
+        "trainable_rule": "REQUIRED_NONEMPTY_STRING"
+      },
+      "requires_environment_verification": true,
+      "schema_id": "ANALYZER_LOCAL_REPAIR_CONTRACT_V1"
+    },
+    "memory_pack_sha256": null
+  },
+  "stage_id": "L-A1",
+  "current_binding_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/attempts/000004/CURRENT_ANALYZER_BINDING.json"
+}

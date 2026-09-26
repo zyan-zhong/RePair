@@ -1,0 +1,35 @@
+{
+  "action_only_policy_gradient_problem_claimed_fixed": false,
+  "architecture_overlength_example_count": 22,
+  "architecture_safety_ceiling_tokens": 32768,
+  "assistant_structured_target_token_count_total": 315552,
+  "assistant_target_tokens_by_role": {
+    "ANALYZER": 297915,
+    "RESEARCH_PLANNER_POST": 671,
+    "RESEARCH_PLANNER_PRE": 16966
+  },
+  "assistant_target_tokens_by_stage": {
+    "C": 20132,
+    "G-A2": 40078,
+    "G-A3": 29118,
+    "L-A0": 53950,
+    "L-A1": 130148,
+    "R-POST-PRIMARY-V1": 671,
+    "R-PRE-PRIMARY-V1": 16966,
+    "X": 24489
+  },
+  "automatic_chunking_authorized": false,
+  "automatic_truncation_authorized": false,
+  "example_count": 146,
+  "full_audit_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage6l_i1_role_teacher_serializer_local_ri_training_prep_v1_2/a6f4fefff95418801fce2e915380c065fb682c32/LOCAL_RI_TEACHER_TOKEN_AUDIT_V2.json",
+  "full_audit_sha256": "3998d6f05c574e7d029bea89176fb0e6688bfb4ec9f131c663345f9270d3fcb0",
+  "loss_bearing_token_count_claim_authorized": false,
+  "max_full_chat_template_token_count": 207843,
+  "model_max_position_embeddings": 32768,
+  "round_id": "CLEAN-HUMAN-REFERENCE-R1-PI0",
+  "schema_id": "LOCAL_RI_TEACHER_TOKEN_AUDIT_SUMMARY_V2",
+  "schema_version": 2,
+  "sequence_length_policy_status": "OVERLENGTH_EXAMPLES_REQUIRE_EXPLICIT_TRAINER_NATIVE_SEQUENCE_POLICY",
+  "tokenizer_model_max_length": 131072,
+  "tokenizer_overlength_example_count": 3
+}

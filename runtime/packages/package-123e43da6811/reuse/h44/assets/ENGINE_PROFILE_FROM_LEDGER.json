@@ -1,0 +1,18 @@
+{
+  "schema_id": "POLICY_RUNTIME_COMPATIBLE_ENGINE_PROFILE_DISCOVERY_V1",
+  "schema_version": 1,
+  "status": "RESOLVED_UNIQUE_COMPATIBLE_POLICY_ENGINE_PROFILE",
+  "base_model_local_path": "/data/run01/scwb204/sdar_repro/clean_model_snapshots/Qwen2.5-3B-Instruct/aa8e72537993ba99e69dfaafa59ed015b17504d1",
+  "vllm_version": "0.11.0",
+  "dtype": "bfloat16",
+  "tensor_parallel_size": 1,
+  "generation_config": "vllm",
+  "chat_template_content_format": null,
+  "request_id_headers_enabled": false,
+  "engine_profile_sha256": "309a2441f31d210f9043dbb465c1e631ed175ca7179851e301b8e8aefca5a221",
+  "compatible_command_count": 1,
+  "distinct_profile_count": 1,
+  "historical_endpoint_or_alias_reused": false,
+  "operator_launch_knobs_synthesized": false,
+  "scientific_candidate_reselection_performed": false
+}

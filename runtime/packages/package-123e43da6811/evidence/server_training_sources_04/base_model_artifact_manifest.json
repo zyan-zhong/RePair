@@ -1,0 +1,72 @@
+{
+  "artifact_manifest_sha256": "4079fc1b2480e5dc5803c1cef2a394c1ec0c969d5099b5c1be63dd2b095f6e3b",
+  "complete_local_candidates": [
+    "/data/home/scwb204/.cache/huggingface/hub/models--Qwen--Qwen2.5-3B-Instruct/snapshots/aa8e72537993ba99e69dfaafa59ed015b17504d1",
+    "/data/run01/scwb204/.cache/huggingface/hub/models--Qwen--Qwen2.5-3B-Instruct/snapshots/aa8e72537993ba99e69dfaafa59ed015b17504d1"
+  ],
+  "files": {
+    "config.json": {
+      "sha256": "eed00b17e22553979d090fa492e587e92885e328914c8e0b0b78f0a0d3576b3b",
+      "size_bytes": 661
+    },
+    "generation_config.json": {
+      "sha256": "ea35dfb6fc5051b01114f9b995820d55dab01ed33ee490f6378b442af82c09f9",
+      "size_bytes": 242
+    },
+    "merges.txt": {
+      "sha256": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+      "size_bytes": 1671839
+    },
+    "model-00001-of-00002.safetensors": {
+      "sha256": "67347b23fb4165b652eb6611f5e1f2a06dfcddba8e909df1b2b0b1857bee06c2",
+      "size_bytes": 3968658944
+    },
+    "model-00002-of-00002.safetensors": {
+      "sha256": "a40d941d0e7e0b966ad8b62bb6d6b7c88cce1299197b599d9d0a4ce59aabfc1d",
+      "size_bytes": 2203268048
+    },
+    "model.safetensors.index.json": {
+      "sha256": "bc8aaa0c87d4335177e01c765f1de0db81661c67c1a72fbfb0d521b09f5ddc56",
+      "size_bytes": 35581
+    },
+    "tokenizer.json": {
+      "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+      "size_bytes": 7031645
+    },
+    "tokenizer_config.json": {
+      "sha256": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+      "size_bytes": 7305
+    },
+    "vocab.json": {
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+      "size_bytes": 2776833
+    }
+  },
+  "local_snapshot_path": "/data/home/scwb204/.cache/huggingface/hub/models--Qwen--Qwen2.5-3B-Instruct/snapshots/aa8e72537993ba99e69dfaafa59ed015b17504d1",
+  "lora_enabled": false,
+  "model_manifest_id": "QWEN25_3B_INSTRUCT_E1_OFF_THE_SHELF_V1",
+  "model_role": "off_the_shelf_project_unadapted_instruction_policy",
+  "project_adapter": null,
+  "repository_id": "Qwen/Qwen2.5-3B-Instruct",
+  "runtime_freeze": {
+    "dtype": "bfloat16",
+    "engine": "vllm",
+    "engine_version": "0.11.0",
+    "generation_config_mode": "vllm",
+    "huggingface_hub_version": "0.36.2",
+    "served_model_name": "Qwen2.5-3B-Instruct-E1",
+    "tensor_parallel_size": 1,
+    "tokenizers_version": "0.22.2",
+    "transformers_version": "4.57.3"
+  },
+  "snapshot_revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+  "tokenizer_bundle_definition": "SHA-256 of canonical JSON containing file sizes and SHA-256 values for merges.txt, tokenizer.json, tokenizer_config.json and vocab.json",
+  "tokenizer_bundle_sha256": "8fba154872aa8982e9556cb6cbdd35f3f6e83b8c3c41d782caf6fbf5931c8e0c",
+  "training_scope": {
+    "alfworld_specific_training": false,
+    "general_instruction_post_training": true,
+    "general_pretraining": true,
+    "project_specific_finetuning": false
+  },
+  "weights_bundle_sha256": "a2e285e6b6161adb3ec7889466d8f1c0b384abdda3035f8b1630d457dcf66175"
+}

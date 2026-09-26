@@ -1,0 +1,11 @@
+{
+  "schema_id": "USER_PREDECLARED_FORMAL_PROMOTION_AUTHORITY_V1",
+  "user_primary_verbatim": "一方面是总的成功的数量上升（主要的），另一方面是整体的状态更佳。",
+  "user_clarification_verbatim": "成功数上升为晋升条件，其他状态指标（以及我们的关键指标，相关记忆等）可以作为辅助解释，并且不另设数值门槛。另外你还可以回去我们的这个历史状态总账找找有没有相关的设计参考。",
+  "scope": "Formal unattended campaign; existing registered TRAIN_SELECT only; Memory OFF and Harness OFF",
+  "initialized_before_formal_candidate_outcomes": true,
+  "routine_human_scientific_decisions_after_initialization": 0,
+  "historical_routing_reused": true,
+  "final_seen_unseen_adaptive_feedback_authorized": false,
+  "historical_python_decision_producer_required": false
+}

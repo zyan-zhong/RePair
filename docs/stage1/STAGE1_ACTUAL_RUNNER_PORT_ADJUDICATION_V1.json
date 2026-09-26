@@ -1,0 +1,68 @@
+{
+  "adjudication_status": "PASS",
+  "base_main_head": "a56269309a8bef4406579b1a0ff261f547a17f0d",
+  "benchmark_execution_authorized": false,
+  "census_input": {
+    "census_review_zip_sha256": "bb8a588384c49a3f26e83418dd23fba98b488a65c625b32992be6cacdf8ab56f",
+    "expected_unresolved_runner_port_count": 4,
+    "schema_id": "STAGE1_ACTUAL_RUNNER_INTERFACE_CENSUS_V1"
+  },
+  "environment_execution_authorized": false,
+  "framework_unresolved_runner_port_count": 0,
+  "lanes": {
+    "GENERIC_TRAINING": {
+      "callable": "run_training_stage",
+      "component_id": "GENERIC_TRAINING_STAGE_V2_1",
+      "disposition": "FROZEN_ACTUAL_RUNNER",
+      "reason": "Reuse the frozen Generic Training Stage V2.1 stage runner. Do not create a second trainer or training orchestrator.",
+      "required_parameters": [
+        "binding_path",
+        "authorization_path",
+        "runner_freeze_root_sha256"
+      ],
+      "source_path": "scripts/engineering_snapshots/training_pipeline/round_generic_training_stage_v2_1_hardening_build/round_training/stage_runner.py"
+    },
+    "ROLE_INVOCATION": {
+      "actor_adapter_gate": "CLEAN_TRAIN_ONLY_HUMAN_REFERENCE_ROUND_BOOTSTRAP",
+      "component_id": "RESEARCH_PLANNER_PRE_POST",
+      "disposition": "FROZEN_ROLE_CONTRACT_ACTOR_ADAPTER_DEFERRED",
+      "reason": "Historical one-off Human or Strong runners are not promoted to a generic role runner. Human, Strong and Local keep the shared role/trace contract while their thin actor-specific adapters are bound at the clean-round execution gate.",
+      "source_paths": [
+        "src/pchsi/research_intelligence/role_neutral.py",
+        "src/pchsi/research_intelligence/research_planner_reference_trace.py",
+        "src/pchsi/research_intelligence/reference_round.py",
+        "src/pchsi/round_control/role_authority.py",
+        "src/pchsi/round_control/trace_handoff.py"
+      ]
+    },
+    "SAME_STATE_F0F1": {
+      "component_id": "SAME_STATE_F0F1",
+      "disposition": "FROZEN_PORT_CONTRACT_LIVE_ADAPTER_DEFERRED",
+      "live_adapter_gate": "CLEAN_TRAIN_ONLY_HUMAN_REFERENCE_ROUND_BOOTSTRAP",
+      "reason": "The census heuristic top candidate is not promoted to authority. Stage 1 retains the existing exact-state F0/F1 port over the evaluation stack. The thin source-state execution adapter is bound only when the clean train-only round provides its frozen source-state authority.",
+      "source_paths": [
+        "src/pchsi/evaluation/episode_evaluator.py",
+        "src/pchsi/evaluation/run_schedule.py",
+        "src/pchsi/evaluation/result_audit.py"
+      ]
+    },
+    "SELECT_EVALUATION": {
+      "callable": "run_single_episode",
+      "component_id": "SELECT_EVALUATOR",
+      "disposition": "FROZEN_ACTUAL_RUNNER",
+      "reason": "Reuse the repository-native single-episode evaluator together with the already-frozen Generic SELECT policy binding.",
+      "required_parameters": [
+        "config",
+        "dependencies"
+      ],
+      "source_path": "src/pchsi/evaluation/episode_evaluator.py"
+    }
+  },
+  "live_adapter_deferred_count": 2,
+  "model_execution_authorized": false,
+  "next_gate": "CLEAN_TRAIN_ONLY_HUMAN_REFERENCE_ROUND_BOOTSTRAP",
+  "schema_id": "STAGE1_ACTUAL_RUNNER_PORT_ADJUDICATION_V1",
+  "schema_version": 1,
+  "scientific_execution_authorized": false,
+  "training_execution_authorized": false
+}

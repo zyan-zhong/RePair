@@ -1,0 +1,21 @@
+{
+  "analyzer_example_materializer_present": false,
+  "analyzer_localization_source_count": 0,
+  "analyzer_localization_source_ready": false,
+  "environment_call_count": 0,
+  "existing_distillation_reused": true,
+  "local_shadow_execution_authorized": false,
+  "local_training_execution_authorized": false,
+  "model_call_count": 0,
+  "new_parallel_dataset_format_created": false,
+  "next_gate": "REVIEW_ONLY_UNRESOLVED_REFERENCE_IDENTITIES",
+  "planner_dataset_materialized": false,
+  "reference_manifest_materialized": false,
+  "round_id": "CLEAN-HUMAN-REFERENCE-R1-PI0",
+  "schema_id": "LOCAL_RI_SOURCE_READINESS_V1",
+  "schema_version": 1,
+  "status": "EXACT_REFERENCE_IDENTITY_BLOCKER_REMAINS",
+  "strong_primary_execution_authorized": false,
+  "strong_primary_transport_ready": true,
+  "training_execution_count": 0
+}

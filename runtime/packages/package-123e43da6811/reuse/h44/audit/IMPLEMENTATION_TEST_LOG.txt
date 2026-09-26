@@ -1,0 +1,12 @@
+.......................F.........                                        [100%]
+=================================== FAILURES ===================================
+______ test_actual_post_orchestrator_schema_validator_and_native_no_train ______
+tests/test_post.py:46: in test_actual_post_orchestrator_schema_validator_and_native_no_train
+    assert no['semantic_row_count']==0 and no['native_row_count']==0 and no['requires_review'] is False
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+E   KeyError: 'semantic_row_count'
+=========================== short test summary info ============================
+FAILED tests/test_post.py::test_actual_post_orchestrator_schema_validator_and_native_no_train - KeyError: 'semantic_row_count'
+1 failed, 32 passed in 1.43s
+
+STDERR

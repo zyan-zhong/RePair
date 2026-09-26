@@ -1,0 +1,69 @@
+FFF                                                                      [100%]
+=================================== FAILURES ===================================
+_____________ test_git_status_timeout_retries_identical_argv_once ______________
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7fba8a54b360>
+
+    def test_git_status_timeout_retries_identical_argv_once(monkeypatch):
+        argv = ["git", "-C", "/repo", "status", "--porcelain=v1", "--untracked-files=all"]
+        calls = []
+    
+        def fake_cmd(actual, *, timeout=120, cwd=None):
+            calls.append((list(actual), timeout, cwd))
+            if len(calls) == 1:
+                return _result(actual, 124, stderr="TIMEOUT:")
+            return _result(actual, 0, stdout="")
+    
+        monkeypatch.setattr(c, "cmd", fake_cmd)
+>       out = c.checked_timeout_retry(
+              ^^^^^^^^^^^^^^^^^^^^^^^
+            argv,
+            initial_timeout=120,
+            retry_timeout=180,
+        )
+E       AttributeError: module 'recovery_core' has no attribute 'checked_timeout_retry'
+
+tests/test_git_timeout_resilience.py:27: AttributeError
+______________ test_git_status_non_timeout_failure_is_not_retried ______________
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7fba8a54b820>
+
+    def test_git_status_non_timeout_failure_is_not_retried(monkeypatch):
+        argv = ["git", "status"]
+        calls = []
+    
+        def fake_cmd(actual, *, timeout=120, cwd=None):
+            calls.append((list(actual), timeout, cwd))
+            return _result(actual, 128, stderr="fatal: not a git repository")
+    
+        monkeypatch.setattr(c, "cmd", fake_cmd)
+        with pytest.raises(ValueError, match="COMMAND_FAILED"):
+>           c.checked_timeout_retry(argv, initial_timeout=120, retry_timeout=180)
+            ^^^^^^^^^^^^^^^^^^^^^^^
+E           AttributeError: module 'recovery_core' has no attribute 'checked_timeout_retry'
+
+tests/test_git_timeout_resilience.py:46: AttributeError
+_________ test_git_status_second_timeout_fails_closed_after_one_retry __________
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7fba8afe7530>
+
+    def test_git_status_second_timeout_fails_closed_after_one_retry(monkeypatch):
+        argv = ["git", "status"]
+        calls = []
+    
+        def fake_cmd(actual, *, timeout=120, cwd=None):
+            calls.append((list(actual), timeout, cwd))
+            return _result(actual, 124, stderr="TIMEOUT:")
+    
+        monkeypatch.setattr(c, "cmd", fake_cmd)
+        with pytest.raises(ValueError, match="COMMAND_FAILED"):
+>           c.checked_timeout_retry(argv, initial_timeout=120, retry_timeout=180)
+            ^^^^^^^^^^^^^^^^^^^^^^^
+E           AttributeError: module 'recovery_core' has no attribute 'checked_timeout_retry'
+
+tests/test_git_timeout_resilience.py:60: AttributeError
+=========================== short test summary info ============================
+FAILED tests/test_git_timeout_resilience.py::test_git_status_timeout_retries_identical_argv_once - AttributeError: module 'recovery_core' has no attribute 'checked_timeout_retry'
+FAILED tests/test_git_timeout_resilience.py::test_git_status_non_timeout_failure_is_not_retried - AttributeError: module 'recovery_core' has no attribute 'checked_timeout_retry'
+FAILED tests/test_git_timeout_resilience.py::test_git_status_second_timeout_fails_closed_after_one_retry - AttributeError: module 'recovery_core' has no attribute 'checked_timeout_retry'
+3 failed in 0.12s

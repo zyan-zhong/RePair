@@ -1,0 +1,90 @@
+{
+  "all_durable_repo_relevant_content_organized": true,
+  "all_stage5_stage6_content_should_be_pushed": false,
+  "already_pushed_stage_authority_directories": [
+    "stage5z",
+    "stage6a",
+    "stage6ad",
+    "stage6ai",
+    "stage6b",
+    "stage6c",
+    "stage6d",
+    "stage6e",
+    "stage6f",
+    "stage6h",
+    "stage6i",
+    "stage6j",
+    "stage6k",
+    "stage6l",
+    "stage6m",
+    "stage6n",
+    "stage6x"
+  ],
+  "base_main_head": "4fb1f124aa25325e6e62dfdb284c60c520c74c0b",
+  "canonical_snapshot_sync": {
+    "destination_path": "docs/project/PCHSI_AUTONOMOUS_LOOP_CANONICAL_STATUS_20260911_V74_FULL.md",
+    "policy": "SYNC_LATEST_FULL_APPEND_ONLY_SNAPSHOT_ONLY;DO_NOT_PUSH_EVERY_INTERMEDIATE_CANONICAL_VERSION",
+    "sha256": "e7a496c7acc74adae2566b1b6f4697ed8669bbb0ba38a287ba57dd86181a45f2"
+  },
+  "durable_authorities_synced_by_stage6an": [
+    {
+      "destination_path": "docs/project/strong_primary_takeover_v1/stage6ak/LOCAL_ANALYZER_BOOTSTRAP_CHECKPOINT_AUTHORITY_V1.json",
+      "sha256": "445c6be257271d7719aff057f3987e88edb88f7c2baa66db63476ff1f55056d6",
+      "source_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage6ak_local_analyzer_full_bootstrap_training_v1_1/45ed5f9728510af709e0b9b883da699545c053a3/LOCAL_ANALYZER_BOOTSTRAP_CHECKPOINT_AUTHORITY_V1.json"
+    },
+    {
+      "destination_path": "docs/project/strong_primary_takeover_v1/stage6ak/STAGE6AK_RESULT_AUTHORITY_V1.json",
+      "sha256": "b66db57f7e8fb4d8c7a35544086a432c648dc64bbf78c8c5a78af55d3f598a9a",
+      "source_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage6ak_local_analyzer_full_bootstrap_training_v1_1/45ed5f9728510af709e0b9b883da699545c053a3/STAGE6AK_RESULT_AUTHORITY_V1.json"
+    },
+    {
+      "destination_path": "docs/project/strong_primary_takeover_v1/stage6al/STRATEGY_BEARING_POLICY_HANDOFF_REUSE_AUDIT_V1.json",
+      "sha256": "26688b2af9d3db307b8189ada03638786ee7535397d8c986b3c3cdd76e9c1e80",
+      "source_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage6al_strategy_bearing_policy_handoff_reuse_audit_and_schema_freeze_v1/45ed5f9728510af709e0b9b883da699545c053a3/STRATEGY_BEARING_POLICY_HANDOFF_REUSE_AUDIT_V1.json"
+    },
+    {
+      "destination_path": "docs/project/strong_primary_takeover_v1/stage6al/STRATEGY_BEARING_POLICY_TARGET_SCHEMA_V1.json",
+      "sha256": "3c6178366c154e9182739bb4ff21290b7954fc92dbe89f4920ba5a1cc71e7589",
+      "source_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage6al_strategy_bearing_policy_handoff_reuse_audit_and_schema_freeze_v1/45ed5f9728510af709e0b9b883da699545c053a3/STRATEGY_BEARING_POLICY_TARGET_SCHEMA_V1.json"
+    },
+    {
+      "destination_path": "docs/project/strong_primary_takeover_v1/stage6al/STRATEGY_BEARING_NATIVE_LABEL_GATE_V1.json",
+      "sha256": "3d3eb0be7d089b3f4ab766215e2e9e8b6a58439059f055f68c669b232d82542e",
+      "source_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage6al_strategy_bearing_policy_handoff_reuse_audit_and_schema_freeze_v1/45ed5f9728510af709e0b9b883da699545c053a3/STRATEGY_BEARING_NATIVE_LABEL_GATE_V1.json"
+    },
+    {
+      "destination_path": "docs/project/strong_primary_takeover_v1/stage6al/STAGE6AL_SUMMARY_V1.json",
+      "sha256": "9b7afb915847991d576bc0fd51f96c28de831d3d648e761f361ee7054aeb653f",
+      "source_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage6al_strategy_bearing_policy_handoff_reuse_audit_and_schema_freeze_v1/45ed5f9728510af709e0b9b883da699545c053a3/STAGE6AL_SUMMARY_V1.json"
+    },
+    {
+      "destination_path": "docs/project/strong_primary_takeover_v1/stage6am/I1_STRATEGY_SIGNAL_COMPATIBILITY_DECISION_V1.json",
+      "sha256": "0a6ca638055c0f6a9ef246c22f547fcd40868f5375790542b1f1c48b3b481373",
+      "source_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage6am_i1_strategy_signal_compatibility_audit_and_dual_view_freeze_v1/45ed5f9728510af709e0b9b883da699545c053a3/I1_STRATEGY_SIGNAL_COMPATIBILITY_DECISION_V1.json"
+    },
+    {
+      "destination_path": "docs/project/strong_primary_takeover_v1/stage6am/STAGE6AM_SUMMARY_V1.json",
+      "sha256": "a44485429af43cf2d7a01ff11e31fd4b830eab2fdf6eb0e4a25756af1aa09d80",
+      "source_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage6am_i1_strategy_signal_compatibility_audit_and_dual_view_freeze_v1/45ed5f9728510af709e0b9b883da699545c053a3/STAGE6AM_SUMMARY_V1.json"
+    }
+  ],
+  "integration_ahead_of_main_before_stage6an": 27,
+  "integration_behind_main_before_stage6an": 0,
+  "integration_head_before_stage6an": "45ed5f9728510af709e0b9b883da699545c053a3",
+  "intentionally_server_only_not_for_git": [
+    "raw_slurm_stdout_stderr",
+    "failed_extracted_package_working_copies",
+    "temporary_execution_bundles",
+    "large_transient_control_attempt_directories",
+    "superseded_debug_packages"
+  ],
+  "preserve_outside_git": [
+    "unique_failure_logs_and_hashes",
+    "immutable_control_receipts",
+    "zip_and_sha_reconstruction_assets"
+  ],
+  "push_policy": "DURABLE_CODE_AND_COMPACT_AUTHORITIES_ONLY;TRANSIENT_EXECUTION_EVIDENCE_REMAINS_SERVER_CONTROL_PLANE",
+  "schema_id": "STAGE5_STAGE6_GIT_SYNC_MATRIX_V1",
+  "schema_version": 1,
+  "status": "SYNC_PLAN_MATERIALIZED"
+}

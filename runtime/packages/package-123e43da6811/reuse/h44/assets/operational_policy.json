@@ -1,0 +1,13 @@
+{
+  "schema_id": "PCHSI_SINGLE_ROUND_OPERATIONAL_LIMITS_V1",
+  "time_limit": "02:00:00",
+  "policy_timeout_seconds": 60.0,
+  "service_ready_timeout_seconds": 600.0,
+  "service_poll_seconds": 2.0,
+  "termination_grace_seconds": 30.0,
+  "automatic_submission_retries": 0,
+  "automatic_branch_retries": 0,
+  "automatic_post_retries": 0,
+  "max_scientific_rounds_released": 0,
+  "scope": "current accepted handoff only; not max-10 release"
+}

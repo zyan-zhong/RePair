@@ -1,0 +1,39 @@
+{
+  "schema_id": "V1233H2_RUNTIME_PROFILE_AND_MECHANICAL_RETRY_RECOVERY_V1",
+  "predecessor_package": "PCHSI_PAPER_CRITICAL_CAUSAL_ROUND_EXECUTION_V1_23_3H1",
+  "server_terminal": {
+    "status": "CURRENT_EXECUTION_STOPPED_WITH_DIAGNOSTIC",
+    "error_type": "ImportError",
+    "error_message_contains": "cannot import name 'normalize_profile' from 'policy_runtime_engine_profile'",
+    "full_round_closed": false,
+    "next_round_launched": false,
+    "training_execution_count": 0
+  },
+  "root_cause": [
+    "gpu_job/controller imported normalize_profile but vendored policy_runtime_engine_profile.py did not export it",
+    "controller expected cluster policy key slurm_partition but frozen authority uses inference_partition_default",
+    "gpu_job imported nonexistent service lifecycle helpers from policy_runtime_service.py"
+  ],
+  "historical_reuse": {
+    "engine_profile_mode": "DIRECT_DURABLE_RECEIPT_REUSE_NO_REDISCOVERY",
+    "engine_profile_sha256": "309a2441f31d210f9043dbb465c1e631ed175ca7179851e301b8e8aefca5a221",
+    "cluster_policy_partition_field": "inference_partition_default",
+    "gpu_count_rule": "TENSOR_PARALLEL_SIZE",
+    "service_readiness_functions": [
+      "wait_for_policy_runtime_service",
+      "readiness_with_sha"
+    ]
+  },
+  "mechanical_recovery": {
+    "scientific_reselection": false,
+    "new_scientific_round": false,
+    "allowed_only_when_prior_sbatch_intent_absent": true,
+    "allowed_only_when_prior_gpu_terminal_absent": true,
+    "allowed_only_when_prior_branch_evidence_absent": true,
+    "old_attempt_preserved": true
+  },
+  "scientific_authority_changed": false,
+  "training_execution_authorized": false,
+  "next_round_launch_authorized": false,
+  "max10_released": false
+}

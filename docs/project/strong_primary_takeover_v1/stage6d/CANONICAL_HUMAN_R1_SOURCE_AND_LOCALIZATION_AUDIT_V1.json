@@ -1,0 +1,89 @@
+{
+  "analyzer_localization": {
+    "fresh_provider_call_authorized": false,
+    "local_training_authorized": false,
+    "next_gate": "FRESH_TRAIN_ONLY_STRONG_ANALYZER_SUPERVISION_COLLECTION_DESIGN",
+    "status": "NO_CLEAN_STRONG_ANALYZER_TEACHER_SOURCE_FOUND",
+    "typed_role_trace_count": 0,
+    "typed_role_traces": [],
+    "validated_strong_output_count": 0,
+    "validated_strong_outputs": []
+  },
+  "bounded_roots": [
+    "/data/run01/scwb204/sdar_repro/badcase/github_exports/pchsi-wt-strong-primary-takeover-prep-v1/docs/project/clean_human_r1_tail_v1/results",
+    "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage3y_existing_training_preparation_v1/5c042850c1b926c3805a64f1f4b16d3688abf327af1db1eb34444b483baa5997",
+    "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4a_clean_existing_trainer_v1/1711c5fbc6431f3bd59bda066011ab265837aecfcaf827b073f6a4754ec2f692",
+    "/data/run01/scwb204/sdar_repro/badcase/experiments/human_reference_round_pi1_pi2_v1/human_researcher_post_freeze_ready_v2_neutral_audit",
+    "/data/run01/scwb204/sdar_repro/badcase/experiments/human_reference_round_pi1_pi2_v1/strong_researcher_pre_shadow_v2",
+    "/data/run01/scwb204/sdar_repro/badcase/experiments/human_reference_round_pi1_pi2_v1/human_strong_post_pipeline_v3_postfreeze_continuation",
+    "/data/run01/scwb204/sdar_repro/badcase/experiments/human_reference_round_pi1_pi2_v1/human_post_environment_binding_correction_v1",
+    "/data/run01/scwb204/sdar_repro/badcase/experiments/human_reference_round_pi1_pi2_v1/human_strong_field_level_adjudication_v1"
+  ],
+  "environment_call_count": 0,
+  "json_document_count": 185,
+  "local_shadow_execution_authorized": false,
+  "local_training_execution_authorized": false,
+  "model_call_count": 0,
+  "next_gate": "FRESH_TRAIN_ONLY_STRONG_ROLE_SUPERVISION_COLLECTION_DESIGN",
+  "pre_adjudication": {
+    "clean_candidates": [],
+    "legacy_candidates": [],
+    "status": "STRONG_PRE_UNRESOLVED"
+  },
+  "reference_status": {
+    "contract_review_required": true,
+    "direct_manifest_materialization_ready": false,
+    "resolved": {
+      "access_class": "TRAIN_REFERENCE_ROUND",
+      "environment_result_package_sha256": "4366c3f5797dfdcaf74dfb8c2cf1562f615fd48c363e3dfc1aa838814585f247",
+      "go_nogo_status": "HOLD",
+      "human_post_record_sha256": "8a6df3182c95db15115f8a909bd60f17c574d78cba4569dec4df10a553e7a198",
+      "human_pre_record_sha256": "1e6609654b482b8683bd7fb2790ea86fcbbe07ec6bb6b45abb82c14241738c8d",
+      "policy_evaluation_result_sha256": "abd3927783ea660fc97c2a20b61f62ba28bfd605a909437d8d97dbd6bc8b7150",
+      "policy_lineage_sha256": "dc1f61ebcfba5a69310f40834be38718de9c3f42206cd00b1bb33be658aac443",
+      "post_adjudication_sha256": "7bedc15c9a3d1e61e68d735715f74899dd6c43783adc82f14a6732804e58f7f8",
+      "promotion_result": "ROLLBACK",
+      "round_evidence_package_sha256": "a9b6343157e65966d5f1a077478b234512ff6f021bff06bf4d6e7bb5fefecac8",
+      "round_id": "CLEAN-HUMAN-REFERENCE-R1-PI0",
+      "strong_post_shadow_sha256": "2a7810b09c7a23b26b03e91f24d962a6032fe4fed44a986e438d3b077bc77cd5"
+    },
+    "synthetic_placeholder_used": false,
+    "unresolved_fields": [
+      "strong_pre_shadow_sha256",
+      "pre_adjudication_sha256",
+      "verified_training_evidence_sha256"
+    ]
+  },
+  "round_id": "CLEAN-HUMAN-REFERENCE-R1-PI0",
+  "schema_id": "STAGE6D_CANONICAL_HUMAN_R1_SOURCE_AND_LOCALIZATION_AUDIT_V1",
+  "schema_version": 1,
+  "status": "REFERENCE_GAP_AND_NO_CLEAN_STRONG_ANALYZER_TEACHER_SOURCE",
+  "strong_pre": {
+    "candidate_count": 0,
+    "candidates": [],
+    "compatible_candidate_count": 0,
+    "compatible_identities": [],
+    "resolved": false,
+    "resolved_sha256": null,
+    "status": "STRONG_PRE_LINEAGE_NOT_UNIQUE_OR_INCOMPATIBLE"
+  },
+  "strong_primary_execution_authorized": false,
+  "training_execution_count": 0,
+  "verified_training_evidence": {
+    "diagnostic_is_not_verified": true,
+    "diagnostic_training_artifact_count": 1,
+    "diagnostic_training_artifacts": [
+      {
+        "file_sha256": "ae9c12b364c52443784d01811ae69a911a8296ea59708488d4c81fe763e9c0ff",
+        "schema_ids": [
+          "CLEAN_PI0_LIVE_RUNTIME_BINDING_V2",
+          "TRAINING_PREPARATION_PROPOSAL_V1"
+        ],
+        "source_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage3y_existing_training_preparation_v1/5c042850c1b926c3805a64f1f4b16d3688abf327af1db1eb34444b483baa5997/TRAINING_PLAN_PROPOSAL.json"
+      }
+    ],
+    "resolved_sha256": null,
+    "status": "NO_VERIFIED_TRAINING_EVIDENCE",
+    "verified_candidates": []
+  }
+}

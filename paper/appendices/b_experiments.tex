@@ -1,0 +1,201 @@
+\section{Evaluation Protocol and Comparisons}
+\label{app:experimental}
+\subsection{Tasks, Interface, and Execution Settings}
+\label{app:configuration}
+The training design partitions 3,553 gamefiles into 2,843 TRAIN\_UPDATE,
+355 TRAIN\_SELECT, and 355 TRAIN\_AUDIT tasks. The first pool supplies
+rollouts, analysis, repair experiments, and training; the second supplies
+candidate-selection results; the third supports research-role qualification.
+All states, seeds, and branches belonging to one gamefile inherit its pool.
+Final seen and unseen evaluations remain outside RePair's adaptive research
+and selection loop.
+
+
+\begin{table}[!htbp]
+\caption{Executed dual-view validation and evaluation settings. Repair
+verification and policy selection use different seed protocols.}
+\label{tab:config}\centering\small
+\begin{tabularx}{\linewidth}{L{1.6in}X}\toprule
+Field & Setting\\\midrule
+Base model & Qwen2.5-3B-Instruct; retained parent adapter continued, base weights frozen.\\
+Research models & External GPT API; recent validation records \texttt{gpt-5.6-sol}; no teacher takeover during branch execution.\\
+Training-side pools & UPDATE 2,843; SELECT 355; AUDIT 355, disjoint by gamefile.\\
+Final benchmark & Unseen 134 and seen 140, kept separate from selection.\\
+Interface and budget & Strict single-action JSON; full menu; eight executed transitions; 30 environment steps; 60 policy attempts; three consecutive nonexecutions stop.\\
+Selection / repair seeds & Selection: 17; repair: 17, 31, 47, 73, 101.\\
+LoRA & Rank 16; alpha 32; dropout 0.05; no bias; attention projections and gate/up/down MLP projections.\\
+Optimizer & AdamW; learning rate $2\!\times\!10^{-5}$; betas $(0.9,0.999)$; epsilon $10^{-8}$; weight decay 0.01; gradient norm cap 1.0.\\
+Schedule and batches & Linear schedule; one warmup step; microbatch 1; accumulation 4; four passes; eight optimizer steps.\\
+Data and randomness & Eight examples; max length 1,248 without truncation; training and data seed 17; one trained run.\\
+Loss and precision & Assistant-only token mean per accumulation group; BF16; one GPU; no packing or distributed reduction.\\
+Checkpoint & Final update only; no intermediate evaluation or checkpoint selection.\\
+Statistics & Exact task-paired counts; no significance or multi-training-seed estimate.\\\bottomrule
+\end{tabularx}
+\end{table}
+
+\paragraph{Shared raw prompt.}
+The seven-line prompt begins with a fixed format identifier, followed by
+the task goal, current observation, executed-transition history, complete
+admissible-action menu, interface feedback, and output requirement. The
+context fields are JSON-serialized, and the menu retains its original order.
+The output requirement is \texttt{\{"action":"<command>"\}}.
+The parser accepts exactly one top-level JSON object with one string member
+named \texttt{action}. It removes outer transport whitespace and ASCII
+spaces at action edges, then tests exact case-sensitive menu membership.
+Duplicate members, trailing data, nonstandard constants, multiline or control
+characters, and actions longer than 256 codepoints fail parsing.
+No action-repair or canonicalization layer is applied.
+
+\paragraph{Budget accounting.}
+A format failure or parsed out-of-menu action consumes one policy attempt
+and zero environment steps. An admissible action consumes one of each;
+successful environment execution resets the consecutive-nonexecution count.
+After a nonexecution, the consecutive-three limit takes precedence over
+policy-attempt exhaustion. After execution, termination priority is
+infrastructure failure, environment terminal status, the 30-step limit,
+then the 60-attempt limit. Each episode retains its termination reason.
+
+\paragraph{Frozen evaluation assets.}
+The shared evaluation protocol and the two task lists are fixed before
+evaluation and kept unchanged across methods. The lists contain 140 seen
+games and 134 unseen games, respectively. Version records and file checksums
+identify these assets, and execution records link each run to the assets it
+used. Full task lists and run records are retained with the experiment
+artifacts; the accompanying numerical supplement preserves the table inputs and
+result provenance without private server paths.
+The shared external interface and action budget coexist with model-specific
+inference profiles. In particular, high-reasoning API inference and local
+128-token generation have different computation costs. The shared action budget is not a matched inference-compute budget;
+we do not claim equal token cost or latency across these methods.
+
+\subsection{Reference Checkpoints on the Final Benchmark Splits}
+\label{app:aggregation}
+The benchmark columns are Pick, Clean, Cool, Look, Heat, Pick2, and All.
+They correspond to pick-and-place, clean-and-place, cool-and-place,
+look-at-object-in-light, heat-and-place, and pick-two-object tasks.
+Table~\ref{tab:main} reports unseen-134; Table~\ref{tab:seen} uses the same
+method roster and columns for seen-140. These reference measurements give
+task context across heterogeneous model scales and inference settings.
+The RePair candidate has not been evaluated on either final split;
+the tables therefore contain reference models only.
+\input{tables/main_results}
+\input{tables/seen_results}
+
+For disjoint task-family subsets $\mathcal D_c$ within one split,
+\begin{equation}
+\widehat{\SR}_c=\frac{1}{N_c}\sum_{t\in\mathcal D_c}\bar Y_t,\qquad
+\widehat{\SR}_{\mathrm{All}}=\frac{\sum_c N_c\widehat{\SR}_c}{\sum_c N_c},\qquad
+\bar Y_t=\frac{1}{J_{\mathrm{eval}}}\sum_jY_{tj},\quad N_c=|\mathcal D_c|.
+\label{eq:task-types}
+\end{equation}
+Thus All weights families by their task counts. Tables report
+$100\widehat{\SR}$ as percentages. The primary benchmark uses
+$J_{\mathrm{eval}}=1$. Raw successes, family counts, and their mapping to
+ALFWorld task IDs are exported with each table. Seen and unseen have separate
+denominators throughout.
+
+
+\subsection{Scope of Internal Comparisons}
+\label{app:comparisons}
+The framework supports simple versus hierarchical analysis, historical
+memory access, alternative Planner rankings, and action-only versus
+dual-view supervision. These define useful controlled experiments, but
+the present development sequence changes multiple components and does
+not instantiate those matched comparisons. In particular, there is no
+completed weaker-filter training control or equal-compute action-only
+control for the reported candidate. We do not report a component effect
+from the difference between sequential portfolios.
+
+\subsection{Repair Yield, Cost, and Statistical Units}
+\label{app:metrics}
+A registered-unit discovery-yield comparison would require a common
+failure universe, proposal budget, and verifier. The current report instead
+uses the directly observed number of tested states and branches in each
+portfolio. These denominators exclude unselected candidates and therefore
+must not be interpreted as a matched discovery-yield comparison.
+Cost per useful unit is
+\begin{equation}
+C_{\mathrm{repair}}(a)
+=\frac{N_{\mathrm{branches}}(a)}{N_{\mathrm{Benefit\ units}}(a)}.
+\label{eq:cost}
+\end{equation}
+A zero-Benefit run reports its total cost and an undefined ratio.
+The reported branch counts include complete unsuccessful tests. They do
+not constitute total campaign cost: upstream API calls, retries, engineering
+recovery, and training compute have not been reconciled into a comparable
+end-to-end cost estimate.
+
+Among candidates with complete formal verdicts, the Benefit share is
+\begin{equation}
+p_B=\frac{N_B}{N_{\mathrm{tested}}},\qquad
+N_{\mathrm{tested}}=N_B+N_H+N_{NS}+N_{NF}+N_U.
+\label{eq:precision}
+\end{equation}
+This candidate-level denominator differs from a discovery yield measured
+over a common registered failure universe. The outcome breakdown retains neutral and uncertain cases alongside
+Harm, while unbound, unsupported, invalid, and incomplete proposals have
+separate counts.
+
+
+The 355 paired selection tasks are the statistical units for the final
+validation. The paired outcome table has 2 shared successes, 1
+candidate-only success, 1 parent-only success, and 351 shared failures.
+We provide exact counts rather than a significance claim based on these
+two discordant tasks. Five continuation seeds at a repair source are
+repetitions nested within that source, not five independent repairs.
+
+\subsection{The Verified-Action Control}
+\label{app:cso-control}
+A matched action-only control would share the parent, source evidence,
+action coverage, and evaluation protocol while omitting auxiliary targets.
+CSO uses verified alternatives with a different critical-step procedure
+and DPO objective \citep{li2026cso}; such an internal RePair control would
+not constitute a CSO reproduction. This control has not been run here.
+
+\subsection{Released Checkpoints in the Reference Benchmark}
+\label{app:baseline-status}
+The external comparison uses the five author-released checkpoints in
+Table~\ref{tab:checkpoint-identities}. Their selection precedes shared
+benchmark evaluation. Each is loaded at the previously frozen repository
+revision; the experimental release records that revision, conversion steps,
+weight hashes, tokenizer, and episode outputs. The model names and nominal
+sizes identify a heterogeneous checkpoint comparison.
+
+\begin{table}[htbp]
+\caption{Author-released ALFWorld checkpoints evaluated under the common
+RAW\_WITH\_MENU interface. Repository names identify the selected releases; immutable revisions,
+conversion receipts, and completion records are retained with the experimental
+artifacts.}
+\label{tab:checkpoint-identities}
+\centering\small
+\begin{tabularx}{\linewidth}{@{}L{0.80in}L{0.42in}X@{}}
+\toprule
+Method & Scale & Checkpoint repository\\\midrule
+SkillRL & 7B & \nolinkurl{Jianwen/Alfworld-7B-RL}\\
+GiGPO & 7B & \nolinkurl{langfeng01/GiGPO-Qwen2.5-7B-Instruct-ALFWorld}\\
+SEED & 3B & \nolinkurl{Jinyang23/Seed-AlfWorld-3B}\\
+Agent\_G2 & 7B & \nolinkurl{xiamoent/Agent-G2-alfworld-7b}\\
+OPID & 1.7B & \nolinkurl{Jinyang23/OPID-ALFWorld-1.7B}\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+All five use the shared ALFWorld task/environment contract and primary seed
+slot, while method-faithful adapters preserve inference behavior required by
+the released checkpoint. Project RePair Memory and Harness are disabled. A
+frozen native component is retained when it is part of the released method's
+inference definition---for example, SkillRL uses its frozen official SkillBank
+without benchmark-time writeback or dynamic updating. The evaluation performs
+no checkpoint adaptation from benchmark feedback. Model scales, checkpoint
+identities, decode profiles, and adapter choices are recorded with the run.
+The reported parent--candidate selection comparison uses one lineage,
+but it does not isolate individual algorithmic components.
+
+SkillRL's sharded actor checkpoint requires its recorded conversion to a
+loadable model; no optimizer state is used for benchmark-time learning.
+GiGPO, SEED, Agent\_G2, and OPID likewise retain the chosen release identity
+through loading and evaluation. The final export accounts for all 274
+primary cells per checkpoint, with 134 unseen and 140 seen tasks, and
+records raw responses, parser outcomes, actions, steps, termination, tokens,
+and latency. Aggregate scores are derived after completion. The completed task-level exports for all five released baselines are the
+source of Tables~\ref{tab:main} and~\ref{tab:seen}.

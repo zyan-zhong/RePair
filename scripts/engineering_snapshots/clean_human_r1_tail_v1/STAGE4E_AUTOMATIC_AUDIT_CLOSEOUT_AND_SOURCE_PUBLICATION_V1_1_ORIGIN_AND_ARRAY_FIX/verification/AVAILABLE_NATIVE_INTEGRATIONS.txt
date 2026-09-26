@@ -1,0 +1,8 @@
+test_actual_authorization_contract_file_and_signatures (native_tests.test_reused_integration.NativeIntegrationTests.test_actual_authorization_contract_file_and_signatures) ... ok
+test_native_aggregator_then_clean_projection (native_tests.test_reused_integration.NativeIntegrationTests.test_native_aggregator_then_clean_projection) ... ok
+test_native_disposition_and_next_round_keep_parent (native_tests.test_reused_integration.NativeIntegrationTests.test_native_disposition_and_next_round_keep_parent) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.157s
+
+OK

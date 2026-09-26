@@ -1,0 +1,36 @@
+{
+  "schema_id": "STAGE4E_SINGLE_OWNER_CODE_REVIEW_V1",
+  "references": [
+    {
+      "role": "outer_duplicate_lock",
+      "path": "STAGE4E_NODE_EXCLUDED_ARRAY_RECOVERY_V1/recover.py",
+      "file_sha256": "95e950452b576982f9dbacfa025eb1560412e0660c92c75fe3c1c3bdd98d773a",
+      "start_line": 306,
+      "end_line": 310,
+      "source_excerpt": "        lock=os.open(root/'full_select_execution.lock',os.O_CREAT|os.O_RDWR,0o600)\n        try:\n            fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)\n            ad.consolidate(cfg,state,plan)\n        finally:os.close(lock)"
+    },
+    {
+      "role": "native_lock_owner",
+      "path": "STAGE4D_FULL_SELECT_EXECUTION_AUTHORIZATION_AND_RESUMABLE_LIVE_V1_3_4GPU_PARALLEL_SHARDING/stage4d_full/live.py",
+      "file_sha256": "1419854de8945b28840ff86d3282a53600af4b11b56aa373396966b9943bf8db",
+      "start_line": 401,
+      "end_line": 414,
+      "source_excerpt": "def consolidate_shards(*, execution_root: Path, binding_root: Path, completed_prefix_count: int) -> dict[str, Any]:\n    context = _prepare_live_context(execution_root=execution_root, binding_root=binding_root)\n    if _canonical_prefix(execution_root=execution_root, context=context) < completed_prefix_count:\n        raise Stage4DFullError(\"CANONICAL_PREFIX_REGRESSED_BEFORE_CONSOLIDATION\")\n    legacy = context[\"legacy\"]\n    bundles = context[\"bundles\"]\n    canonical_root = execution_root / \"execution\"\n    lock_path = execution_root / \"full_select_execution.lock\"\n    lock_fd = os.open(lock_path, os.O_CREAT | os.O_RDWR, 0o600)\n    try:\n        try:\n            fcntl.flock(lock_fd, fcntl.LOCK_EX | fcntl.LOCK_NB)\n        except BlockingIOError as exc:\n            raise Stage4DFullError(\"FULL_SELECT_CONSOLIDATION_ALREADY_ACTIVE\") from exc"
+    },
+    {
+      "role": "reused_consolidation_adapter",
+      "path": "STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1_1_ORIGIN_AND_ARRAY_FIX/stage4e/array_driver.py",
+      "file_sha256": "8cf7275d63c3ddae705e099ff320e3a23c2724b9d21b0aa75bf7e6a31ad4065d",
+      "start_line": 223,
+      "end_line": 248,
+      "source_excerpt": "def consolidate(cfg: dict, state_root: Path, plan: dict) -> None:\n    root=Path(cfg['execution_root']);binding=Path(cfg['binding_root'])\n    live,_,entry,_=existing_modules(cfg)\n    # Validate every shard's exact full cell sequence before copying any output.\n    context=live._prepare_live_context(execution_root=root,binding_root=binding)\n    for shard,ordinals in enumerate(plan['partitions']):\n        for label in ('T0','T2'):\n            rows=context['legacy'].load_receipts(root/'parallel_v1'/f'shard_{shard}'/'execution'/label.lower()/'cell_receipts.jsonl')\n            cells=[context['bundles'][label][2].cells[i] for i in ordinals]\n            if len(rows)!=len(cells):raise GateError('ARRAY_EXACT_SHARD_COVERAGE_MISMATCH')\n            for ordinal,row,cell in zip(ordinals,rows,cells,strict=True):\n                live._validate_canonical_row(row=row,cell=cell,label=label,ordinal=ordinal)\n    write_exact(state_root/'CONSOLIDATION.intent.json',{'plan_sha256':plan['plan_sha256'],\n        'completed_prefix_count':plan['completed_prefix_count'],'all_shards_complete':True})\n    # Original V1.3 consolidation keeps attempts, publication metadata and canonical hash chains.\n    result=live.consolidate_shards(execution_root=root,binding_root=binding,completed_prefix_count=plan['completed_prefix_count'])\n    if not result['complete']:raise GateError('ARRAY_CONSOLIDATION_NOT_COMPLETE')\n    auth=read_json(root/'STAGE4D_FULL_SELECT_EXECUTION_AUTHORIZATION_V1.json')\n    payload=entry._completion_payload(execution_root=root,auth=auth,execution=result)\n    write_exact(root/driver.COMPLETE,payload)\n    write_exact(state_root/'ARRAY_CONSOLIDATION_RECEIPT.json',{\n        'schema_id':'STAGE4D_INDEPENDENT_JOBS_CONSOLIDATION_V1','plan_sha256':plan['plan_sha256'],\n        'canonical_completion_file_sha256':file_sha(root/driver.COMPLETE),\n        'canonical_ledger_file_sha256s':ledger_shas(root),'result_interpretation_authorized':False})\n    print('STAGE4D_FULL_SELECT_EXECUTION_COMPLETE',flush=True)\n    print('T0_CELL_COUNT=1775\\nT2_CELL_COUNT=1775\\nTOTAL_CONDITION_CELL_COUNT=3550',flush=True)"
+    }
+  ],
+  "current_stage5d_head_from_user_log": "a0b58f5291d9879c9903f28f795b1c2024c38e18",
+  "current_stage5d_test_count_from_user_log": 2043,
+  "stage5d_commit_or_receipt_independently_reverified_on_server": false,
+  "new_evaluator": false,
+  "new_scientific_execution": false,
+  "changes_old_packages": false,
+  "requires_full_array_status_and_original_audit": true
+}

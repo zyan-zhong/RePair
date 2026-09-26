@@ -1,0 +1,29 @@
+{
+  "analyzer_example_count": 144,
+  "audit_sha256": "5623c19155cd6659f532ca11f8595d86db3093826f2ec27cea1070efe9936739",
+  "automatic_planner_teacher_recollection_authorized": false,
+  "example_count": 146,
+  "planner_empirical_gate": "LOCAL_SHADOW_QUALIFICATION",
+  "planner_generalization_sufficiency_claim_authorized": false,
+  "planner_post_example_count": 1,
+  "planner_pre_example_count": 1,
+  "planner_total_example_count": 2,
+  "role_counts": {
+    "ANALYZER": 144,
+    "RESEARCH_PLANNER_POST": 1,
+    "RESEARCH_PLANNER_PRE": 1
+  },
+  "round_id": "CLEAN-HUMAN-REFERENCE-R1-PI0",
+  "schema_id": "LOCAL_RI_ROLE_COVERAGE_AUDIT_V1",
+  "schema_version": 1,
+  "stage_counts": {
+    "C": 33,
+    "G-A2": 17,
+    "G-A3": 18,
+    "L-A0": 22,
+    "L-A1": 21,
+    "R-POST-PRIMARY-V1": 1,
+    "R-PRE-PRIMARY-V1": 1,
+    "X": 33
+  }
+}

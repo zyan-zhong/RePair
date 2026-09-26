@@ -1,0 +1,248 @@
+{
+  "schema_id": "PCHSI_FULL_ROUND_PLAN_V1",
+  "schema_version": 1,
+  "process_standard": "ONE_COMMAND_PI_K_TO_NEXT_ROUND_OR_TERMINAL_STOP_RECEIPT_DRIVEN",
+  "round_id": "ROUND_ID_TO_BIND",
+  "policy_version": "PI_K_TO_BIND",
+  "expected_repo_head": null,
+  "expected_repo_branch": null,
+  "require_clean_worktree": true,
+  "gates": [
+    {
+      "gate_id": "POLICY_ROLLOUT_WITH_POLICY_MEMORY_VIEW",
+      "depends_on": [],
+      "binding_status": "UNBOUND",
+      "side_effect_class": "PROVIDER_OR_ENVIRONMENT",
+      "command": [
+        "UNBOUND_COMMAND"
+      ],
+      "cwd": null,
+      "terminal_receipt": "UNBOUND_TERMINAL_RECEIPT",
+      "terminal_contract": {
+        "kind": "FILE_EXISTS"
+      },
+      "notes": "pi_k executes rollout using policy-specific governed Memory view; produces trajectories and exact execution evidence."
+    },
+    {
+      "gate_id": "EVIDENCE_AND_TRAJECTORY_FREEZE",
+      "depends_on": [
+        "POLICY_ROLLOUT_WITH_POLICY_MEMORY_VIEW"
+      ],
+      "binding_status": "UNBOUND",
+      "side_effect_class": "DETERMINISTIC",
+      "command": [
+        "UNBOUND_COMMAND"
+      ],
+      "cwd": null,
+      "terminal_receipt": "UNBOUND_TERMINAL_RECEIPT",
+      "terminal_contract": {
+        "kind": "FILE_EXISTS"
+      },
+      "notes": "Freeze exact evidence/trajectory manifests before semantic analysis."
+    },
+    {
+      "gate_id": "ANALYZER_LOCAL_AND_GROUP_HIERARCHY",
+      "depends_on": [
+        "EVIDENCE_AND_TRAJECTORY_FREEZE"
+      ],
+      "binding_status": "UNBOUND",
+      "side_effect_class": "PROVIDER_OR_ENVIRONMENT",
+      "command": [
+        "UNBOUND_COMMAND"
+      ],
+      "cwd": null,
+      "terminal_receipt": "UNBOUND_TERMINAL_RECEIPT",
+      "terminal_contract": {
+        "kind": "FILE_EXISTS"
+      },
+      "notes": "Strong/local Analyzer consumes Analyzer-specific Memory view and executes L/G/C/P/X hierarchy automatically."
+    },
+    {
+      "gate_id": "RESEARCH_PLANNER_PRE",
+      "depends_on": [
+        "ANALYZER_LOCAL_AND_GROUP_HIERARCHY"
+      ],
+      "binding_status": "UNBOUND",
+      "side_effect_class": "PROVIDER_OR_ENVIRONMENT",
+      "command": [
+        "UNBOUND_COMMAND"
+      ],
+      "cwd": null,
+      "terminal_receipt": "UNBOUND_TERMINAL_RECEIPT",
+      "terminal_contract": {
+        "kind": "FILE_EXISTS"
+      },
+      "notes": "Planner consumes frozen Analyzer closeout + Planner-specific Memory view; selects bounded hypotheses/candidates/verification plan without assigning effects."
+    },
+    {
+      "gate_id": "SAME_STATE_F0_F1",
+      "depends_on": [
+        "RESEARCH_PLANNER_PRE"
+      ],
+      "binding_status": "UNBOUND",
+      "side_effect_class": "PROVIDER_OR_ENVIRONMENT",
+      "command": [
+        "UNBOUND_COMMAND"
+      ],
+      "cwd": null,
+      "terminal_receipt": "UNBOUND_TERMINAL_RECEIPT",
+      "terminal_contract": {
+        "kind": "FILE_EXISTS"
+      },
+      "notes": "Execute bounded same-state F0/F1 causal branches exactly as frozen by Planner PRE."
+    },
+    {
+      "gate_id": "INDEPENDENT_ENVIRONMENT_VERIFICATION",
+      "depends_on": [
+        "SAME_STATE_F0_F1"
+      ],
+      "binding_status": "UNBOUND",
+      "side_effect_class": "DETERMINISTIC",
+      "command": [
+        "UNBOUND_COMMAND"
+      ],
+      "cwd": null,
+      "terminal_receipt": "UNBOUND_TERMINAL_RECEIPT",
+      "terminal_contract": {
+        "kind": "FILE_EXISTS"
+      },
+      "notes": "Independent verifier is sole effect authority; Strong Planner cannot self-assign Benefit/Harm."
+    },
+    {
+      "gate_id": "RESEARCH_PLANNER_POST",
+      "depends_on": [
+        "INDEPENDENT_ENVIRONMENT_VERIFICATION"
+      ],
+      "binding_status": "UNBOUND",
+      "side_effect_class": "PROVIDER_OR_ENVIRONMENT",
+      "command": [
+        "UNBOUND_COMMAND"
+      ],
+      "cwd": null,
+      "terminal_receipt": "UNBOUND_TERMINAL_RECEIPT",
+      "terminal_contract": {
+        "kind": "FILE_EXISTS"
+      },
+      "notes": "Planner POST consumes verified F0/F1 package and emits train/no-train research disposition."
+    },
+    {
+      "gate_id": "MEMORY_ROUND_MAINTENANCE",
+      "depends_on": [
+        "RESEARCH_PLANNER_POST"
+      ],
+      "binding_status": "UNBOUND",
+      "side_effect_class": "DETERMINISTIC",
+      "command": [
+        "UNBOUND_COMMAND"
+      ],
+      "cwd": null,
+      "terminal_receipt": "UNBOUND_TERMINAL_RECEIPT",
+      "terminal_contract": {
+        "kind": "FILE_EXISTS"
+      },
+      "notes": "Govern, deduplicate, compact and freeze role-specific next-round Memory artifacts from verified evidence only."
+    },
+    {
+      "gate_id": "TRAIN_OR_NO_TRAIN_GATE",
+      "depends_on": [
+        "MEMORY_ROUND_MAINTENANCE"
+      ],
+      "binding_status": "UNBOUND",
+      "side_effect_class": "DETERMINISTIC",
+      "command": [
+        "UNBOUND_COMMAND"
+      ],
+      "cwd": null,
+      "terminal_receipt": "UNBOUND_TERMINAL_RECEIPT",
+      "terminal_contract": {
+        "kind": "FILE_EXISTS"
+      },
+      "notes": "Deterministically authorize training only if Planner POST + verifier + budgets satisfy the frozen gate; otherwise advance without training."
+    },
+    {
+      "gate_id": "POLICY_UPDATE_IF_AUTHORIZED",
+      "depends_on": [
+        "TRAIN_OR_NO_TRAIN_GATE"
+      ],
+      "binding_status": "UNBOUND",
+      "side_effect_class": "TRAINING",
+      "command": [
+        "UNBOUND_COMMAND"
+      ],
+      "cwd": null,
+      "terminal_receipt": "UNBOUND_TERMINAL_RECEIPT",
+      "terminal_contract": {
+        "kind": "FILE_EXISTS"
+      },
+      "notes": "Conditional optimizer/training step; no-op terminal receipt required when training is not authorized."
+    },
+    {
+      "gate_id": "MEMORY_OFF_HARNESS_OFF_ACCEPTANCE",
+      "depends_on": [
+        "POLICY_UPDATE_IF_AUTHORIZED"
+      ],
+      "binding_status": "UNBOUND",
+      "side_effect_class": "PROVIDER_OR_ENVIRONMENT",
+      "command": [
+        "UNBOUND_COMMAND"
+      ],
+      "cwd": null,
+      "terminal_receipt": "UNBOUND_TERMINAL_RECEIPT",
+      "terminal_contract": {
+        "kind": "FILE_EXISTS"
+      },
+      "notes": "Evaluate candidate pi_(k+1) under frozen acceptance protocol with Memory OFF + Harness OFF."
+    },
+    {
+      "gate_id": "PROMOTE_OR_ROLLBACK",
+      "depends_on": [
+        "MEMORY_OFF_HARNESS_OFF_ACCEPTANCE"
+      ],
+      "binding_status": "UNBOUND",
+      "side_effect_class": "PROMOTION",
+      "command": [
+        "UNBOUND_COMMAND"
+      ],
+      "cwd": null,
+      "terminal_receipt": "UNBOUND_TERMINAL_RECEIPT",
+      "terminal_contract": {
+        "kind": "FILE_EXISTS"
+      },
+      "notes": "Deterministic promotion authority only; either bind accepted pi_(k+1) or retain/rollback pi_k."
+    },
+    {
+      "gate_id": "OUTER_LOOP_STOP_GOVERNANCE",
+      "depends_on": [
+        "PROMOTE_OR_ROLLBACK"
+      ],
+      "binding_status": "UNBOUND",
+      "side_effect_class": "DETERMINISTIC",
+      "command": [
+        "UNBOUND_COMMAND"
+      ],
+      "cwd": null,
+      "terminal_receipt": "UNBOUND_TERMINAL_RECEIPT",
+      "terminal_contract": {
+        "kind": "FILE_EXISTS"
+      },
+      "notes": "Deterministic bounded-loop governance consumes the authoritative round outcome and prior cross-round counters. It must apply the frozen Strong-primary stop policy (max 10 scientifically-valid attempts; 3 consecutive scientifically-valid no-promotion attempts; applicable abstention/verified-benefit/I1-label/acceptance/resource/protocol conditions). Invalid protocol/infra attempts do not count as scientific no-improvement. The sealed paper benchmark is never loop feedback."
+    },
+    {
+      "gate_id": "NEXT_ROUND_TRANSITION_IF_AUTHORIZED",
+      "depends_on": [
+        "OUTER_LOOP_STOP_GOVERNANCE"
+      ],
+      "binding_status": "UNBOUND",
+      "side_effect_class": "DETERMINISTIC",
+      "command": [
+        "UNBOUND_COMMAND"
+      ],
+      "cwd": null,
+      "terminal_receipt": "UNBOUND_TERMINAL_RECEIPT",
+      "terminal_contract": {
+        "kind": "FILE_EXISTS"
+      },
+      "notes": "If governance authorizes CONTINUE, freeze next-round identity/authority/Memory bindings and launch the next receipt-driven round. If governance returns a scientific STOP, emit a terminal no-launch receipt and exit cleanly. Safety/protocol invalidity remains fail-closed and must not launch another round."
+    }
+  ]
+}

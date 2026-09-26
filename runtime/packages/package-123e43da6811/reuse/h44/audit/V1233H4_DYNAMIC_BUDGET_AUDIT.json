@@ -1,0 +1,10 @@
+{
+  "schema_id": "V1233H4_DYNAMIC_BUDGET_AUDIT_V1",
+  "current_observed_branch_count": 20,
+  "current_observed_selected_state_count": 2,
+  "production_authority": "CURRENT_ACCEPTED_PLANNER_HANDOFF",
+  "production_derivation_rule": "len(planner_selected_source_state_ids) * paired_repetitions_per_state * branch_arms_per_repetition",
+  "current_counts_used_as_production_acceptance_constants": false,
+  "current_state_sha256_literals_in_live_package_control_code": false,
+  "note": "Return-code value 20 may appear in controller/recovery code and is unrelated to branch budget."
+}

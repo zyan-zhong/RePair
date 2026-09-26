@@ -1,0 +1,54 @@
+{
+  "references": [
+    {
+      "path": "src/pchsi/evaluation/canonical_evidence.py",
+      "start_line": 13,
+      "end_line": 25,
+      "role": "repository serializer includes LF",
+      "file_sha256": "bf10af9121281d53ccf7a0bd6f83434e361ba2c5bfa5cf788f119a044d1aa6a9",
+      "excerpt": "def canonical_json_bytes(value: object) -> bytes:\n    \"\"\"Serialize one JSON value as deterministic UTF-8 plus one LF.\"\"\"\n\n    return (\n        json.dumps(\n            value,\n            ensure_ascii=False,\n            allow_nan=False,\n            sort_keys=True,\n            separators=(\",\", \":\"),\n        ).encode(\"utf-8\")\n        + b\"\\n\"\n    )"
+    },
+    {
+      "path": "src/pchsi/evaluation/distillation_governance.py",
+      "start_line": 30,
+      "end_line": 37,
+      "role": "native typed model hash",
+      "file_sha256": "f9168176e186fee7830054b22f114994159db139672b153423b3c11fd9764209",
+      "excerpt": "def canonical_model_sha256(model: object) -> str:\n    to_dict = getattr(model, \"to_dict\", None)\n    if not callable(to_dict):\n        raise TypeError(\"model must expose to_dict()\")\n    payload = to_dict()\n    if not isinstance(payload, dict):\n        raise TypeError(\"to_dict() must return dict\")\n    return sha256_bytes(canonical_json_bytes(payload))"
+    },
+    {
+      "path": "src/pchsi/evaluation/select_result_audit.py",
+      "start_line": 104,
+      "end_line": 124,
+      "role": "native authorized schedule comparison",
+      "file_sha256": "b8b1e7452a2dc57b6e85036b4958ab7718c34d5438f68e238e513d7f2c51ddc3",
+      "excerpt": "            is not ConditionRunScheduleV1\n        ):\n            raise TypeError(\n                \"SELECT schedule has wrong type\"\n            )\n\n        schedule_sha = (\n            canonical_model_sha256(\n                schedule\n            )\n        )\n\n        if (\n            schedule_sha\n            != authorized_schedule_sha256[\n                name\n            ]\n        ):\n            raise ValueError(\n                \"SELECT authorized schedule hash mismatch\"\n            )"
+    },
+    {
+      "path": "src/pchsi/evaluation/select_result_audit.py",
+      "start_line": 377,
+      "end_line": 394,
+      "role": "native authorized runtime comparison",
+      "file_sha256": "b8b1e7452a2dc57b6e85036b4958ab7718c34d5438f68e238e513d7f2c51ddc3",
+      "excerpt": "        raise TypeError(\n            \"policy_runtime has wrong type\"\n        )\n\n    if (\n        type(episode_artifact)\n        is not EpisodeArtifactV1\n    ):\n        raise TypeError(\n            \"episode_artifact has wrong type\"\n        )\n\n\n    # ========================================================\n    # Frozen policy/runtime authority\n    # ========================================================\n\n    runtime_sha = sha256_bytes("
+    },
+    {
+      "path": "original_stage4e/stage4e/audit.py",
+      "start_line": 181,
+      "end_line": 183,
+      "role": "incorrect schedule hash call",
+      "file_sha256": "a589f616e66c68e9b97ede40ad1c3b766f39f46151891a9948624293d472cd28",
+      "excerpt": "    allowed_schedule_hashes = {label:identity['artifacts'][f'{label}_CONDITION_RUN_SCHEDULE_V1.json'] for label in ('T0','T2')}\n    expected = native['derive_expected_select_cells_from_master_schedules'](schedules=schedules,authorized_schedule_sha256=allowed_schedule_hashes)\n    by_expected = {(e.schedule_name,e.condition_cell_id):e for e in expected}"
+    },
+    {
+      "path": "original_stage4e/stage4e/audit.py",
+      "start_line": 207,
+      "end_line": 213,
+      "role": "incorrect runtime hash call",
+      "file_sha256": "a589f616e66c68e9b97ede40ad1c3b766f39f46151891a9948624293d472cd28",
+      "excerpt": "                runtime_sha=identity['artifacts'][f'{label}_SELECT_POLICY_RUNTIME_MANIFEST_V1.json'],\n                request_sha=cfg['request_schema_sha256'])\n            ep=loaded.episode_artifact; task=by_access[ep.task_index]\n            for key,value in {\n                'task_access_manifest_sha256':file_sha(access_path),\n                'gamefile_identity_manifest_sha256':expected_gamefile_manifest_sha,\n                'environment_runtime_manifest_sha256':expected_env_manifest_sha,"
+    }
+  ],
+  "native_validator_modified": false,
+  "real_server_results_present_locally": false
+}

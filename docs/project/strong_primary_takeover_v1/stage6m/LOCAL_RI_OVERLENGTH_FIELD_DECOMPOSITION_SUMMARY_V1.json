@@ -1,0 +1,21 @@
+{
+  "architecture_ceiling_tokens": 32768,
+  "automatic_chunking_authorized": false,
+  "automatic_field_drop_authorized": false,
+  "automatic_truncation_authorized": false,
+  "full_audit_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage6m_local_ri_native_serializer_sequence_policy_closure_v1_1/2c88b8c681718021c19d03b01f557e691d0e6746/LOCAL_RI_OVERLENGTH_FIELD_DECOMPOSITION_V1.json",
+  "full_audit_sha256": "ae5f4fb1ab5d26df7c7a13ea8c20242a04a4a82c1dd91c2b3fc5b4950b39cec1",
+  "overlength_example_count": 22,
+  "overlength_examples_by_role": {
+    "ANALYZER": 21,
+    "RESEARCH_PLANNER_PRE": 1
+  },
+  "overlength_examples_by_stage": {
+    "L-A0": 10,
+    "L-A1": 11,
+    "R-PRE-PRIMARY-V1": 1
+  },
+  "round_id": "CLEAN-HUMAN-REFERENCE-R1-PI0",
+  "schema_id": "LOCAL_RI_OVERLENGTH_FIELD_DECOMPOSITION_SUMMARY_V1",
+  "schema_version": 1
+}

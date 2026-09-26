@@ -1,0 +1,27 @@
+{
+  "host": "ln02",
+  "rows": [
+    {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/paper_critical_native_round/6ad3d219a1aa2417fab469733c6c4ee2fc628a9dde2eea6e1f315faf3eb25f45/mechanical_recovery_attempts/8fc5380364671b4088c5b9134d76ff3d/paired_operational_recovery_attempts/cfb24840294af00eec2c1705b6b0cce3/EXECUTION_PLAN.json",
+      "local_name": "EXECUTION_PLAN.json",
+      "authority": "SOURCE_PLAN protected terminal registered ancestor + native fixed schema filename",
+      "sha256": null,
+      "status": "READ",
+      "observed_sha256": "3d1f80347c28c0f627e1855dcb13de565eedb00f2f69b6e83eb4669c76c8f0ed",
+      "bytes": 75117
+    },
+    {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/paper_critical_native_round/6ad3d219a1aa2417fab469733c6c4ee2fc628a9dde2eea6e1f315faf3eb25f45/mechanical_recovery_attempts/8fc5380364671b4088c5b9134d76ff3d/paired_operational_recovery_attempts/cfb24840294af00eec2c1705b6b0cce3/verifier/ENVIRONMENT_RESULT_PACKAGE.json",
+      "local_name": "verifier/ENVIRONMENT_RESULT_PACKAGE.json",
+      "authority": "SOURCE_PLAN protected terminal registered ancestor + native fixed schema filename",
+      "sha256": null,
+      "status": "READ",
+      "observed_sha256": "9ed8f6facf7fc555ada16325c10614dbe1680b62e0f572f3fd003010edd0da47",
+      "bytes": 5178450
+    }
+  ],
+  "schema_id": "EXACT_REGISTERED_SSH_READ_RECEIPT_V1",
+  "remote_filesystem_mutations": 0,
+  "filesystem_discovery_used": false,
+  "scientific_execution_count": 0
+}

@@ -1,0 +1,127 @@
+{
+  "$id": "RUNTIME_INPUT_REGISTRY_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "policy_version": {
+      "maxLength": 512,
+      "minLength": 1,
+      "type": "string"
+    },
+    "registry_role": {
+      "enum": [
+        "ACT1_DEV_SMOKE",
+        "ACT2_LOCAL_PILOT",
+        "ACT3_HIERARCHY_PILOT",
+        "FORMAL_A0_A3"
+      ],
+      "type": "string"
+    },
+    "registry_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "round_id": {
+      "maxLength": 512,
+      "minLength": 1,
+      "type": "string"
+    },
+    "schema_id": {
+      "const": "RUNTIME_INPUT_REGISTRY_V1",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    },
+    "task_access_manifest_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "units": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "condition_id": {
+            "maxLength": 8192,
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "expected_a1_local_result_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "expected_common_evidence_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "expected_memory_pack_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "input_projection_path": {
+            "maxLength": 512,
+            "minLength": 1,
+            "type": "string"
+          },
+          "scientific_unit_identity_path": {
+            "maxLength": 512,
+            "minLength": 1,
+            "type": "string"
+          },
+          "source_unit_id": {
+            "maxLength": 512,
+            "minLength": 1,
+            "type": "string"
+          },
+          "stage_id": {
+            "maxLength": 512,
+            "minLength": 1,
+            "type": "string"
+          },
+          "task_access_record_path": {
+            "maxLength": 512,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "source_unit_id",
+          "scientific_unit_identity_path",
+          "stage_id",
+          "condition_id",
+          "input_projection_path",
+          "task_access_record_path",
+          "expected_common_evidence_sha256",
+          "expected_a1_local_result_sha256",
+          "expected_memory_pack_sha256"
+        ],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "registry_role",
+    "round_id",
+    "policy_version",
+    "task_access_manifest_sha256",
+    "units",
+    "registry_sha256"
+  ],
+  "type": "object"
+}

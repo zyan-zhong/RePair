@@ -1,0 +1,98 @@
+{
+  "alpha": 0.05,
+  "final_policy_authority": "PI2_VS_PI1_MEMORY_OFF_HARNESS_OFF_TASK_SUCCESS",
+  "independent_unit": "TASK_GAMEFILE",
+  "metrics": {
+    "EVRY_at_B": {
+      "claim_status": "SECONDARY",
+      "denominator": "FROZEN_ENVIRONMENT_STEP_BUDGET",
+      "missingness": "FROZEN_PRIORITY_BEFORE_OUTCOMES",
+      "numerator": "CUMULATIVE_REPAIRED_UNIQUE_UNITS",
+      "role": "BUDGET_CURVE",
+      "uncertainty_method": "DESCRIPTIVE_CURVE"
+    },
+    "EVRY_avail": {
+      "claim_status": "SENSITIVITY",
+      "denominator": "PROTOCOL_COMPLETE_U_REG",
+      "missingness": "INFRASTRUCTURE_UNAVAILABLE_EXCLUDED_ONLY_HERE",
+      "numerator": "PROTOCOL_COMPLETE_UNITS_WITH_VERIFIED_BENEFIT",
+      "role": "SENSITIVITY",
+      "uncertainty_method": "TASK_GAMEFILE_CLUSTERED_BOOTSTRAP"
+    },
+    "EVRY_reg": {
+      "claim_status": "PRIMARY",
+      "denominator": "COMMON_REGISTERED_U_REG",
+      "missingness": "ALL_METHOD_FAILURES_REMAIN",
+      "numerator": "UNIQUE_U_REG_UNITS_WITH_VERIFIED_BENEFIT",
+      "role": "PRIMARY_C1",
+      "uncertainty_method": "TASK_GAMEFILE_CLUSTERED_BOOTSTRAP"
+    },
+    "ProposalCoverage": {
+      "claim_status": "SECONDARY",
+      "denominator": "COMMON_REGISTERED_U_REG",
+      "missingness": "ABSTAIN_REMAINS_DENOMINATOR",
+      "numerator": "UNIQUE_U_REG_UNITS_WITH_FORMAL_PROPOSAL",
+      "role": "SECONDARY",
+      "uncertainty_method": "WILSON_95"
+    },
+    "VBP": {
+      "claim_status": "SECONDARY",
+      "denominator": "ALL_FORMALLY_PROPOSED_CANDIDATES",
+      "missingness": "INVALID_NONBENEFIT_REMAINS",
+      "numerator": "VERIFIED_BENEFIT_FORMAL_CANDIDATES",
+      "role": "SECONDARY",
+      "uncertainty_method": "WILSON_95"
+    },
+    "failure_cohort_harm": {
+      "claim_status": "SAFETY",
+      "denominator": "FAILURE_COHORT",
+      "missingness": "ALL_REGISTERED_FAILURE_UNITS",
+      "numerator": "UNIQUE_FAILURE_UNITS_WITH_HARM",
+      "role": "SAFETY",
+      "uncertainty_method": "WILSON_95"
+    },
+    "protected_cohort_harm": {
+      "claim_status": "SAFETY",
+      "denominator": "PROTECTED_BASELINE_COHORT",
+      "missingness": "ALL_REGISTERED_PROTECTED_UNITS",
+      "numerator": "UNIQUE_PROTECTED_UNITS_WITH_HARM",
+      "role": "SAFETY",
+      "uncertainty_method": "WILSON_95"
+    },
+    "verifier_environment_steps_per_repaired_unique_unit": {
+      "claim_status": "COST",
+      "denominator": "REPAIRED_UNIQUE_U_REG_UNITS",
+      "missingness": "REPORT_ZERO_DENOMINATOR_AS_NULL",
+      "numerator": "FORMAL_VERIFIER_ENVIRONMENT_STEPS",
+      "role": "COST",
+      "uncertainty_method": "TASK_GAMEFILE_CLUSTERED_BOOTSTRAP"
+    }
+  },
+  "registered_secondary_contrasts": [
+    {
+      "condition_a": "A0",
+      "condition_b": "A1",
+      "contrast_id": "A1_VS_A0",
+      "interpretation": "MULTI_HYPOTHESIS_LOCAL_INCREMENT",
+      "multiplicity_family": "ANALYZER_SECONDARY_CONTRASTS"
+    },
+    {
+      "condition_a": "A1",
+      "condition_b": "A2",
+      "contrast_id": "A2_VS_A1",
+      "interpretation": "HIERARCHY_INCREMENT",
+      "multiplicity_family": "ANALYZER_SECONDARY_CONTRASTS"
+    },
+    {
+      "condition_a": "A2",
+      "condition_b": "A3",
+      "contrast_id": "A3_VS_A2",
+      "interpretation": "HISTORICAL_EXPERIENCE_INCREMENT",
+      "multiplicity_family": "ANALYZER_SECONDARY_CONTRASTS"
+    }
+  ],
+  "schema_id": "ANALYZER_METRIC_REGISTRY_V1",
+  "schema_version": 1,
+  "secondary_contrast_adjustment": "HOLM",
+  "weighted_composite_scores_forbidden": true
+}

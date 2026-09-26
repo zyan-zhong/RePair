@@ -1,0 +1,56 @@
+--- /mnt/data/n4_inspect/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_REBIND_AND_RECOVERY_V1_23_3N_4/recovery_core.py	2026-09-21 10:04:28.000000000 +0000
++++ recovery_core.py	2026-09-21 10:36:17.499290057 +0000
+@@ -30,6 +30,19 @@
+     if r['returncode']!=0:raise ValueError('COMMAND_FAILED:'+json.dumps(r,ensure_ascii=False)[-4000:])
+     return r['stdout'].strip()
+ 
++def checked_timeout_retry(argv,*,initial_timeout:int,retry_timeout:int,cwd=None):
++    if type(initial_timeout) is not int or initial_timeout<=0 or type(retry_timeout) is not int or retry_timeout<=initial_timeout:
++        raise ValueError('TIMEOUT_RETRY_POLICY_INVALID')
++    frozen_argv=list(map(str,argv))
++    first=cmd(frozen_argv,timeout=initial_timeout,cwd=cwd)
++    timed_out=(first['returncode']==124 and str(first.get('stderr','')).startswith('TIMEOUT:'))
++    if not timed_out:
++        if first['returncode']!=0:raise ValueError('COMMAND_FAILED:'+json.dumps(first,ensure_ascii=False)[-4000:])
++        return first['stdout'].strip()
++    second=cmd(frozen_argv,timeout=retry_timeout,cwd=cwd)
++    if second['returncode']!=0:raise ValueError('COMMAND_FAILED:'+json.dumps(second,ensure_ascii=False)[-4000:])
++    return second['stdout'].strip()
++
+ def parse_runner(path:Path):
+     lines=[s.strip() for s in require_file(path).read_text().splitlines() if s.strip() and not s.lstrip().startswith('#')]
+     if len(lines)!=1 or not lines[0].startswith('exec '):raise ValueError('RUNNER_NOT_SINGLE_EXEC')
+--- /mnt/data/n4_inspect/PCHSI_R2_EXACT_PRODUCER_FRESH_ROUND_REBIND_AND_RECOVERY_V1_23_3N_4/native_preflight.py	2026-09-21 09:55:04.000000000 +0000
++++ native_preflight.py	2026-09-21 10:36:17.499465819 +0000
+@@ -2,7 +2,7 @@
+ from __future__ import annotations
+ import argparse,hashlib,importlib.util,json,sys
+ from pathlib import Path
+-from recovery_core import equal_or_new,load_json,sha_file,checked,require_file
++from recovery_core import equal_or_new,load_json,sha_file,checked,checked_timeout_retry,require_file
+ from fresh_round_contract import load_current_request,validate_request_against_capsule,profile_from_binding,schedule_for_attempt
+ from formal_rollout_support import find_capsule_file_by_sha
+ 
+@@ -10,7 +10,12 @@
+     binding=load_json(capsule_root/'ROUND_MEMORY_AWARE_GENERIC_ROLLOUT_EXECUTION_BINDING_V1.json')
+     head=checked(['git','-C',str(worktree),'rev-parse','HEAD'])
+     if head!=binding['implementation_head']:raise ValueError('NATIVE_WORKTREE_HEAD_MISMATCH')
+-    if checked(['git','-C',str(worktree),'status','--porcelain=v1','--untracked-files=all']):raise ValueError('NATIVE_WORKTREE_NOT_CLEAN')
++    retry_policy_path=Path(__file__).resolve().parent/'audit/GIT_PREFLIGHT_TIMEOUT_RESILIENCE_V1.json'
++    retry_policy=load_json(retry_policy_path)
++    if retry_policy.get('schema_id')!='GIT_PREFLIGHT_TIMEOUT_RESILIENCE_V1' or retry_policy.get('retry_condition')!='TIMEOUT_ONLY' or retry_policy.get('argv_must_be_identical') is not True or retry_policy.get('maximum_attempts')!=2:
++        raise ValueError('GIT_PREFLIGHT_TIMEOUT_POLICY_INVALID')
++    status_argv=['git','-C',str(worktree),'status','--porcelain=v1','--untracked-files=all']
++    if checked_timeout_retry(status_argv,initial_timeout=retry_policy['initial_timeout_seconds'],retry_timeout=retry_policy['retry_timeout_seconds']):raise ValueError('NATIVE_WORKTREE_NOT_CLEAN')
+     for rel in ['evaluation/episode_evaluator.py','evaluation/policy_attempt_adapter.py','round_control/attempt_receipts.py','round_control/clean_execution_binding.py','round_control/rollout_collection.py']:
+         source=capsule_root/'repo_source/src/pchsi'/rel
+         if sha_file(require_file(source))!=sha_file(require_file(worktree/'src/pchsi'/rel)):
+@@ -52,7 +57,7 @@
+         'current_request_is_independent_authority':True,'archived_binding_mutated':False,
+         'scheduled_count':len(schedule),'schedule_identity_sha256':hashlib.sha256(schedule_bytes).hexdigest(),
+         'fresh_execution_attempt_ordinal':plan['fresh_execution_attempt_ordinal'],
+-        'profile_file_sha256':request.execution_profile_sha256,'model_loaded':False,'environment_calls':0,'provider_calls':0}
++        'profile_file_sha256':request.execution_profile_sha256,'git_preflight_timeout_policy_sha256':sha_file(retry_policy_path),'git_status_timeout_retry_authority':'SAME_ARGV_TIMEOUT_ONLY_ONCE','model_loaded':False,'environment_calls':0,'provider_calls':0}
+     equal_or_new(output,result)
+     print('NATIVE_REQUEST_CAPSULE_SCOPE_PREFLIGHT=PASS',flush=True)
+     print('NATIVE_TASK_FILE_AND_SCHEDULE_PREFLIGHT=PASS',flush=True)

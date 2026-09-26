@@ -1,0 +1,101 @@
+{
+  "$id": "RESEARCHER_FIELD_ADJUDICATION_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "adjudication_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "api_shadow_record_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "field_rows": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "api_value_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "disposition": {
+            "enum": [
+              "ACCEPTED",
+              "REVISED",
+              "REJECTED",
+              "MISSING",
+              "OVERREACH"
+            ],
+            "type": "string"
+          },
+          "evidence_sha256s": {
+            "items": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "field_name": {
+            "maxLength": 512,
+            "minLength": 1,
+            "type": "string"
+          },
+          "human_value_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "reason_code": {
+            "maxLength": 512,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "field_name",
+          "api_value_sha256",
+          "human_value_sha256",
+          "disposition",
+          "reason_code",
+          "evidence_sha256s"
+        ],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "human_record_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "round_id": {
+      "maxLength": 512,
+      "minLength": 1,
+      "type": "string"
+    },
+    "schema_id": {
+      "const": "RESEARCHER_FIELD_ADJUDICATION_V1",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "round_id",
+    "human_record_sha256",
+    "api_shadow_record_sha256",
+    "field_rows",
+    "adjudication_sha256"
+  ],
+  "type": "object"
+}

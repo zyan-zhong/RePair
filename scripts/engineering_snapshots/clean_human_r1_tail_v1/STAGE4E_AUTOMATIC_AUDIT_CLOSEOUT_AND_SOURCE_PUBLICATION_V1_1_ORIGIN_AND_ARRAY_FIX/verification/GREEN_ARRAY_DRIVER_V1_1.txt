@@ -1,0 +1,12 @@
+test_ambiguous_submission_intent_never_resubmits (test_array_driver.ArrayDriverTests.test_ambiguous_submission_intent_never_resubmits) ... ok
+test_existing_submission_is_reused_without_sbatch (test_array_driver.ArrayDriverTests.test_existing_submission_is_reused_without_sbatch) ... ok
+test_marker_binds_native_status_and_array_task (test_array_driver.ArrayDriverTests.test_marker_binds_native_status_and_array_task) ... ok
+test_no_evaluator_reimplementation_or_failed_job_retry (test_array_driver.ArrayDriverTests.test_no_evaluator_reimplementation_or_failed_job_retry) ... ok
+test_pending_cancellation_is_specific_and_state_filtered (test_array_driver.ArrayDriverTests.test_pending_cancellation_is_specific_and_state_filtered) ... STAGE4D_OLD_PENDING_JOB_CANCELLED=156834
+ok
+test_running_job_never_cancelled (test_array_driver.ArrayDriverTests.test_running_job_never_cancelled) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.023s
+
+OK

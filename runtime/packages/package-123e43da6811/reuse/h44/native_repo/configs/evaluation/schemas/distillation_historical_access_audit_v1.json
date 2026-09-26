@@ -1,0 +1,104 @@
+{
+  "$id": "DISTILLATION_HISTORICAL_ACCESS_AUDIT_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "audit_id": {
+      "maxLength": 128,
+      "minLength": 1,
+      "type": "string"
+    },
+    "dataset_version": {
+      "maxLength": 128,
+      "minLength": 1,
+      "type": "string"
+    },
+    "record_count": {
+      "minimum": 1,
+      "type": "integer"
+    },
+    "records": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "access_flags": {
+            "items": {
+              "enum": [
+                "NO_KNOWN_PRIOR_ACCESS",
+                "ACCESS_HISTORY_INCOMPLETE",
+                "AGGREGATE_ONLY",
+                "EXECUTED_NOT_INSPECTED",
+                "TRAJECTORY_INSPECTED",
+                "USED_FOR_METHOD_DESIGN",
+                "SENT_TO_EXTERNAL_MODEL"
+              ],
+              "type": "string"
+            },
+            "maxItems": 7,
+            "minItems": 1,
+            "type": "array"
+          },
+          "dataset_split": {
+            "maxLength": 128,
+            "minLength": 1,
+            "type": "string"
+          },
+          "evidence_sources": {
+            "items": {
+              "maxLength": 4096,
+              "minLength": 1,
+              "type": "string"
+            },
+            "minItems": 1,
+            "type": "array"
+          },
+          "first_known_access_date": {
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "gamefile": {
+            "maxLength": 4096,
+            "minLength": 1,
+            "type": "string"
+          },
+          "task_id": {
+            "maxLength": 256,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "task_id",
+          "gamefile",
+          "dataset_split",
+          "first_known_access_date",
+          "access_flags",
+          "evidence_sources"
+        ],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "schema_id": {
+      "const": "DISTILLATION_HISTORICAL_ACCESS_AUDIT_V1",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "audit_id",
+    "dataset_version",
+    "record_count",
+    "records"
+  ],
+  "type": "object"
+}

@@ -1,0 +1,92 @@
+{
+  "$id": "RUNTIME_STAGE_RESULT_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "condition_id": {
+      "maxLength": 8192,
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "logical_call_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "method_failure_reason": {
+      "maxLength": 8192,
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "parse_status": {
+      "enum": [
+        "ACCEPTED",
+        "ABSTAIN",
+        "SCHEMA_INVALID",
+        "SEMANTIC_INVALID",
+        "REFUSED",
+        "INFRASTRUCTURE_ERROR",
+        "AMBIGUOUS_POST_SEND"
+      ],
+      "type": "string"
+    },
+    "raw_response_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "schema_id": {
+      "const": "RUNTIME_STAGE_RESULT_V1",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    },
+    "scientific_unit_id": {
+      "maxLength": 512,
+      "minLength": 1,
+      "type": "string"
+    },
+    "stage_id": {
+      "maxLength": 512,
+      "minLength": 1,
+      "type": "string"
+    },
+    "stage_result_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "validated_artifact_schema_id": {
+      "maxLength": 8192,
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "validated_artifact_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "logical_call_sha256",
+    "stage_id",
+    "condition_id",
+    "scientific_unit_id",
+    "raw_response_sha256",
+    "validated_artifact_schema_id",
+    "validated_artifact_sha256",
+    "parse_status",
+    "method_failure_reason",
+    "stage_result_sha256"
+  ],
+  "type": "object"
+}

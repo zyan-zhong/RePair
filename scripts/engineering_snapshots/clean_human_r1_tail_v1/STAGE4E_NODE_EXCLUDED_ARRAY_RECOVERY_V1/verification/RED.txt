@@ -1,0 +1,76 @@
+test_any_partial_attempt_is_preserved_and_rejected (test_recovery.RecoveryTests.test_any_partial_attempt_is_preserved_and_rejected) ... ok
+test_batch_steps_do_not_supply_element (test_recovery.RecoveryTests.test_batch_steps_do_not_supply_element) ... ok
+test_command_only_adds_registered_exclusion (test_recovery.RecoveryTests.test_command_only_adds_registered_exclusion) ... ERROR
+test_contradictory_memory_evidence_rejected (test_recovery.RecoveryTests.test_contradictory_memory_evidence_rejected) ... ok
+test_different_gpu_utilization_rejected (test_recovery.RecoveryTests.test_different_gpu_utilization_rejected) ... ok
+test_duplicate_element_rejected (test_recovery.RecoveryTests.test_duplicate_element_rejected) ... ok
+test_even_empty_receipt_file_rejected (test_recovery.RecoveryTests.test_even_empty_receipt_file_rejected) ... ok
+test_exact_failed_nodes_and_unique_physical_ids (test_recovery.RecoveryTests.test_exact_failed_nodes_and_unique_physical_ids) ... ERROR
+test_generic_exit_is_not_memory_evidence (test_recovery.RecoveryTests.test_generic_exit_is_not_memory_evidence) ... ok
+test_missing_element_rejected (test_recovery.RecoveryTests.test_missing_element_rejected) ... ok
+test_missing_or_empty_shards_allowed (test_recovery.RecoveryTests.test_missing_or_empty_shards_allowed) ... ERROR
+test_native_worker_and_science_not_reimplemented (test_recovery.RecoveryTests.test_native_worker_and_science_not_reimplemented) ... FAIL
+test_no_arbitrary_command (test_recovery.RecoveryTests.test_no_arbitrary_command) ... ok
+test_no_duplicate_or_external_exclusion (test_recovery.RecoveryTests.test_no_duplicate_or_external_exclusion) ... ok
+test_other_success_rejected (test_recovery.RecoveryTests.test_other_success_rejected) ... ok
+test_running_rejected (test_recovery.RecoveryTests.test_running_rejected) ... ok
+test_specific_startup_memory_error (test_recovery.RecoveryTests.test_specific_startup_memory_error) ... ERROR
+test_symlink_shard_rejected (test_recovery.RecoveryTests.test_symlink_shard_rejected) ... ok
+test_wrong_node_rejected (test_recovery.RecoveryTests.test_wrong_node_rejected) ... ok
+test_wrong_owner_rejected (test_recovery.RecoveryTests.test_wrong_owner_rejected) ... ok
+
+======================================================================
+ERROR: test_command_only_adds_registered_exclusion (test_recovery.RecoveryTests.test_command_only_adds_registered_exclusion)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/STAGE4E_NODE_EXCLUDED_ARRAY_RECOVERY_V1/tests/test_recovery.py", line 62, in test_command_only_adds_registered_exclusion
+    out=m.with_exclusion(cmd)
+  File "/mnt/data/STAGE4E_NODE_EXCLUDED_ARRAY_RECOVERY_V1/recover.py", line 14, in with_exclusion
+    raise RecoveryError('NOT_IMPLEMENTED')
+recover.RecoveryError: NOT_IMPLEMENTED
+
+======================================================================
+ERROR: test_exact_failed_nodes_and_unique_physical_ids (test_recovery.RecoveryTests.test_exact_failed_nodes_and_unique_physical_ids)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/STAGE4E_NODE_EXCLUDED_ARRAY_RECOVERY_V1/tests/test_recovery.py", line 17, in test_exact_failed_nodes_and_unique_physical_ids
+    rows=m.parse_failed_accounting(self.accounting(),os.getuid())
+  File "/mnt/data/STAGE4E_NODE_EXCLUDED_ARRAY_RECOVERY_V1/recover.py", line 5, in parse_failed_accounting
+    raise RecoveryError('NOT_IMPLEMENTED')
+recover.RecoveryError: NOT_IMPLEMENTED
+
+======================================================================
+ERROR: test_missing_or_empty_shards_allowed (test_recovery.RecoveryTests.test_missing_or_empty_shards_allowed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/STAGE4E_NODE_EXCLUDED_ARRAY_RECOVERY_V1/tests/test_recovery.py", line 44, in test_missing_or_empty_shards_allowed
+    root=Path(d);m.require_no_shard_outputs(root)
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/mnt/data/STAGE4E_NODE_EXCLUDED_ARRAY_RECOVERY_V1/recover.py", line 11, in require_no_shard_outputs
+    raise RecoveryError('NOT_IMPLEMENTED')
+recover.RecoveryError: NOT_IMPLEMENTED
+
+======================================================================
+ERROR: test_specific_startup_memory_error (test_recovery.RecoveryTests.test_specific_startup_memory_error)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/STAGE4E_NODE_EXCLUDED_ARRAY_RECOVERY_V1/tests/test_recovery.py", line 35, in test_specific_startup_memory_error
+    self.assertEqual(m.memory_failure(text)['free_gib'],2.17)
+                     ~~~~~~~~~~~~~~~~^^^^^^
+  File "/mnt/data/STAGE4E_NODE_EXCLUDED_ARRAY_RECOVERY_V1/recover.py", line 8, in memory_failure
+    raise RecoveryError('NOT_IMPLEMENTED')
+recover.RecoveryError: NOT_IMPLEMENTED
+
+======================================================================
+FAIL: test_native_worker_and_science_not_reimplemented (test_recovery.RecoveryTests.test_native_worker_and_science_not_reimplemented)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/STAGE4E_NODE_EXCLUDED_ARRAY_RECOVERY_V1/tests/test_recovery.py", line 70, in test_native_worker_and_science_not_reimplemented
+    self.assertIn('ad.load_worker_status(',s)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'ad.load_worker_status(' not found in "class RecoveryError(ValueError):\n    pass\n\ndef parse_failed_accounting(raw, uid):\n    raise RecoveryError('NOT_IMPLEMENTED')\n\ndef memory_failure(text):\n    raise RecoveryError('NOT_IMPLEMENTED')\n\ndef require_no_shard_outputs(root):\n    raise RecoveryError('NOT_IMPLEMENTED')\n\ndef with_exclusion(cmd):\n    raise RecoveryError('NOT_IMPLEMENTED')\n"
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.004s
+
+FAILED (failures=1, errors=4)

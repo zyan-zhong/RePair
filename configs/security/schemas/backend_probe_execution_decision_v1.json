@@ -1,0 +1,216 @@
+{
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "decision": {
+            "const": "NOT_GRANTED"
+          }
+        },
+        "required": [
+          "decision"
+        ]
+      },
+      "then": {
+        "properties": {
+          "execution_enablement_source_commit": {
+            "const": null
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "decision": {
+            "const": "BACKEND_PROBE_EXECUTION_APPROVED"
+          }
+        },
+        "required": [
+          "decision"
+        ]
+      },
+      "then": {
+        "properties": {
+          "execution_enablement_source_commit": {
+            "pattern": "^[0-9a-f]{40}$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "execution_enablement_source_commit"
+        ]
+      }
+    }
+  ],
+  "properties": {
+    "alfworld_execution_approved": {
+      "const": false,
+      "type": "boolean"
+    },
+    "approval_scope": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "candidate_binary_sha256": {
+      "const": "3f03b30b408e16466981bca1556983bdf709edf065a11d3b15bb626c3032e713",
+      "type": "string"
+    },
+    "candidate_review_head": {
+      "const": "465503d14ee968d2acf23a314c66c65c52260583",
+      "type": "string"
+    },
+    "candidate_tree_sha256": {
+      "const": "d61493ccbb433babf2fed2a7e749dc483fe2e63bc6d43422048440d84ad96885",
+      "type": "string"
+    },
+    "dataset_identity": {
+      "additionalProperties": false,
+      "properties": {
+        "dataset_version": {
+          "const": "json_2.1.1",
+          "type": "string"
+        },
+        "filesystem_type": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "input_contract_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "legacy_manifest_exact_file_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "logical_root_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "resolved_device": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "resolved_inode": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "resolved_mount_id": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "train_present": {
+          "const": true,
+          "type": "boolean"
+        },
+        "valid_seen_present": {
+          "const": true,
+          "type": "boolean"
+        },
+        "valid_unseen_present": {
+          "const": true,
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "dataset_version",
+        "logical_root_id",
+        "train_present",
+        "valid_seen_present",
+        "valid_unseen_present",
+        "legacy_manifest_exact_file_sha256",
+        "input_contract_sha256",
+        "resolved_device",
+        "resolved_inode",
+        "resolved_mount_id",
+        "filesystem_type"
+      ],
+      "type": "object"
+    },
+    "decision": {
+      "enum": [
+        "NOT_GRANTED",
+        "BACKEND_PROBE_EXECUTION_APPROVED"
+      ],
+      "type": "string"
+    },
+    "decision_id": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "execution_enablement_source_commit": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "pattern": "^[0-9a-f]{40}$",
+          "type": "string"
+        }
+      ]
+    },
+    "external_decision_reference": {
+      "pattern": "^external://[^\\u0000]+$",
+      "type": "string"
+    },
+    "inventory_execution_approved": {
+      "const": false,
+      "type": "boolean"
+    },
+    "model_execution_approved": {
+      "const": false,
+      "type": "boolean"
+    },
+    "one_shot": {
+      "const": true,
+      "type": "boolean"
+    },
+    "preflight_manifest_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "preflight_source_commit": {
+      "pattern": "^[0-9a-f]{40}$",
+      "type": "string"
+    },
+    "runtime_manifest_sha256": {
+      "const": "4a524d95339afedbdc282a027cc99d388f4e99005f6ad109ff2bc61158effcfc",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    },
+    "source_manifest_sha256": {
+      "const": "41f7461ac7ac7213ca13024a7c755a551f9ad0ab363ac46bc414040af3904eb7",
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "decision",
+    "decision_id",
+    "external_decision_reference",
+    "preflight_source_commit",
+    "execution_enablement_source_commit",
+    "candidate_review_head",
+    "candidate_tree_sha256",
+    "candidate_binary_sha256",
+    "source_manifest_sha256",
+    "runtime_manifest_sha256",
+    "preflight_manifest_sha256",
+    "dataset_identity",
+    "approval_scope",
+    "one_shot",
+    "inventory_execution_approved",
+    "alfworld_execution_approved",
+    "model_execution_approved"
+  ],
+  "schema_version": 1,
+  "title": "S1 Backend Probe External Execution Decision V1",
+  "type": "object"
+}

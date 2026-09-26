@@ -1,0 +1,310 @@
+{
+  "$id": "HUMAN_RESEARCHER_PRE_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "baseline": {
+      "maxLength": 8192,
+      "minLength": 1,
+      "type": "string"
+    },
+    "candidate_bottlenecks": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "candidate_id": {
+            "maxLength": 512,
+            "minLength": 1,
+            "type": "string"
+          },
+          "counterevidence_sha256s": {
+            "items": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "disposition_reason": {
+            "maxLength": 8192,
+            "minLength": 1,
+            "type": "string"
+          },
+          "evidence_sha256s": {
+            "items": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "expected_api_cost_usd": {
+            "minimum": 0,
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "expected_environment_steps": {
+            "minimum": 0,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "expected_gpu_hours": {
+            "minimum": 0,
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "expected_model_logical_calls": {
+            "minimum": 0,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "expected_transport_attempts": {
+            "minimum": 0,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "expected_value_basis": {
+            "maxLength": 8192,
+            "minLength": 1,
+            "type": "string"
+          },
+          "expected_value_class": {
+            "enum": [
+              "LOW",
+              "MEDIUM",
+              "HIGH",
+              "UNKNOWN"
+            ],
+            "type": "string"
+          },
+          "observed_facts": {
+            "items": {
+              "maxLength": 8192,
+              "minLength": 1,
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "risk_basis": {
+            "maxLength": 8192,
+            "minLength": 1,
+            "type": "string"
+          },
+          "risk_class": {
+            "enum": [
+              "LOW",
+              "MEDIUM",
+              "HIGH",
+              "UNKNOWN"
+            ],
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "SELECTED",
+              "REJECTED",
+              "DEFERRED"
+            ],
+            "type": "string"
+          },
+          "uncertainties": {
+            "items": {
+              "maxLength": 8192,
+              "minLength": 1,
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "candidate_id",
+          "observed_facts",
+          "uncertainties",
+          "evidence_sha256s",
+          "counterevidence_sha256s",
+          "expected_value_class",
+          "expected_value_basis",
+          "expected_environment_steps",
+          "expected_model_logical_calls",
+          "expected_transport_attempts",
+          "expected_gpu_hours",
+          "expected_api_cost_usd",
+          "risk_class",
+          "risk_basis",
+          "status",
+          "disposition_reason"
+        ],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "environment_budget": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "evidence_cutoff": {
+      "maxLength": 512,
+      "minLength": 1,
+      "type": "string"
+    },
+    "fixed_variables": {
+      "items": {
+        "maxLength": 8192,
+        "minLength": 1,
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "gpu_budget_hours": {
+      "minimum": 0,
+      "type": "number"
+    },
+    "intervention": {
+      "maxLength": 8192,
+      "minLength": 1,
+      "type": "string"
+    },
+    "model_logical_call_budget": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "observed_facts": {
+      "items": {
+        "maxLength": 8192,
+        "minLength": 1,
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "policy_version": {
+      "maxLength": 512,
+      "minLength": 1,
+      "type": "string"
+    },
+    "pre_record_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "primary_endpoint": {
+      "maxLength": 8192,
+      "minLength": 1,
+      "type": "string"
+    },
+    "refutation_criterion": {
+      "maxLength": 8192,
+      "minLength": 1,
+      "type": "string"
+    },
+    "round_evidence_package_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "round_id": {
+      "maxLength": 512,
+      "minLength": 1,
+      "type": "string"
+    },
+    "sample_definition": {
+      "maxLength": 8192,
+      "minLength": 1,
+      "type": "string"
+    },
+    "schema_id": {
+      "const": "HUMAN_RESEARCHER_PRE_V1",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    },
+    "secondary_diagnostics": {
+      "items": {
+        "maxLength": 8192,
+        "minLength": 1,
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "selected_bottleneck_id": {
+      "maxLength": 512,
+      "minLength": 1,
+      "type": "string"
+    },
+    "selection_rationale": {
+      "maxLength": 8192,
+      "minLength": 1,
+      "type": "string"
+    },
+    "single_falsifiable_hypothesis": {
+      "maxLength": 8192,
+      "minLength": 1,
+      "type": "string"
+    },
+    "single_principal_change": {
+      "maxLength": 8192,
+      "minLength": 1,
+      "type": "string"
+    },
+    "stop_condition": {
+      "maxLength": 8192,
+      "minLength": 1,
+      "type": "string"
+    },
+    "support_criterion": {
+      "maxLength": 8192,
+      "minLength": 1,
+      "type": "string"
+    },
+    "uncertainties": {
+      "items": {
+        "maxLength": 8192,
+        "minLength": 1,
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "verification_budget": {
+      "minimum": 0,
+      "type": "integer"
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "round_id",
+    "policy_version",
+    "evidence_cutoff",
+    "round_evidence_package_sha256",
+    "observed_facts",
+    "uncertainties",
+    "candidate_bottlenecks",
+    "selected_bottleneck_id",
+    "selection_rationale",
+    "single_falsifiable_hypothesis",
+    "single_principal_change",
+    "baseline",
+    "intervention",
+    "fixed_variables",
+    "sample_definition",
+    "verification_budget",
+    "model_logical_call_budget",
+    "environment_budget",
+    "gpu_budget_hours",
+    "primary_endpoint",
+    "secondary_diagnostics",
+    "support_criterion",
+    "refutation_criterion",
+    "stop_condition",
+    "pre_record_sha256"
+  ],
+  "type": "object"
+}

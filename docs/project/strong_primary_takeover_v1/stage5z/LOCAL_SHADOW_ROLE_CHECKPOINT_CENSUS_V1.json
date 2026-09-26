@@ -1,0 +1,31 @@
+{
+  "binding_ready": false,
+  "candidate_count": 1,
+  "candidates": [
+    {
+      "file_sha256": "36eb42adbfeae6199a880df3d4a03bd7c3b04fe7a4acf651eb2dd2ca47a680f0",
+      "json_path": "$.properties",
+      "local_primary_authorized": {
+        "const": false,
+        "type": "boolean"
+      },
+      "local_training_executed": {
+        "const": false,
+        "type": "boolean"
+      },
+      "node_id": "0c0969493cf51a4a2b44dc71e3cdec6bdc957a383411211f9e21e68b759b1076",
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4b_existing_select_preflight_v1/82fa066f0d56e6c1c528d47f44d373cfb5a13bfd4ab8c2eaed124b4bdd143389/code/configs/research_intelligence/schemas/local_role_supervision_dataset_v1.json",
+      "role_fields": {},
+      "schema_id": {
+        "const": "LOCAL_ROLE_SUPERVISION_DATASET_V1",
+        "type": "string"
+      }
+    }
+  ],
+  "explicit_trained_role_checkpoint_count": 0,
+  "local_shadow_execution_authorized": false,
+  "schema_id": "LOCAL_SHADOW_ROLE_CHECKPOINT_CENSUS_V1",
+  "schema_version": 1,
+  "stage4a_policy_adapter_reuse_authorized": false,
+  "status": "NO_UNIQUE_ROLE_AUTHORIZED_LOCAL_SHADOW_CHECKPOINT"
+}

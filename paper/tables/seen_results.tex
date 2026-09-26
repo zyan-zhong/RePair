@@ -1,0 +1,22 @@
+\begin{table}[H]
+\caption{\textbf{Seen ALFWorld reference results.} Success (\%) on 140 games using seed 17. All is task-weighted. These seven reference models use the shared task and environment protocol with model-specific inference settings. They provide task context, not a matched comparison with RePair; its final benchmark evaluation remains incomplete.}
+\label{tab:seen}
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\linewidth}{@{}Xrrrrrrr@{}}
+\toprule
+Method & Pick & Clean & Cool & Look & Heat & Pick2 & All\\
+\midrule
+GPT 5.6 sol high & \res{bench-seen-strong-pick} & \res{bench-seen-strong-clean} & \res{bench-seen-strong-cool} & \res{bench-seen-strong-look} & \res{bench-seen-strong-heat} & \res{bench-seen-strong-pick2} & \res{bench-seen-strong-all}\\
+\midrule
+Qwen2.5-3B-Instruct (base model) & \res{bench-seen-base-pick} & \res{bench-seen-base-clean} & \res{bench-seen-base-cool} & \res{bench-seen-base-look} & \res{bench-seen-base-heat} & \res{bench-seen-base-pick2} & \res{bench-seen-base-all}\\
+\midrule
+SkillRL & \res{bench-seen-skillrl-pick} & \res{bench-seen-skillrl-clean} & \res{bench-seen-skillrl-cool} & \res{bench-seen-skillrl-look} & \res{bench-seen-skillrl-heat} & \res{bench-seen-skillrl-pick2} & \res{bench-seen-skillrl-all}\\
+GiGPO & \res{bench-seen-gigpo-pick} & \res{bench-seen-gigpo-clean} & \res{bench-seen-gigpo-cool} & \res{bench-seen-gigpo-look} & \res{bench-seen-gigpo-heat} & \res{bench-seen-gigpo-pick2} & \res{bench-seen-gigpo-all}\\
+SEED & \res{bench-seen-seed-pick} & \res{bench-seen-seed-clean} & \res{bench-seen-seed-cool} & \res{bench-seen-seed-look} & \res{bench-seen-seed-heat} & \res{bench-seen-seed-pick2} & \res{bench-seen-seed-all}\\
+Agent\_G2 & \res{bench-seen-agentg2-pick} & \res{bench-seen-agentg2-clean} & \res{bench-seen-agentg2-cool} & \res{bench-seen-agentg2-look} & \res{bench-seen-agentg2-heat} & \res{bench-seen-agentg2-pick2} & \res{bench-seen-agentg2-all}\\
+OPID & \res{bench-seen-opid-pick} & \res{bench-seen-opid-clean} & \res{bench-seen-opid-cool} & \res{bench-seen-opid-look} & \res{bench-seen-opid-heat} & \res{bench-seen-opid-pick2} & \res{bench-seen-opid-all}\\
+\bottomrule
+\end{tabularx}
+\end{table}

@@ -1,0 +1,68 @@
+\section{Behavioral Analysis and Additional Experiments}
+\label{app:additional}
+\subsection{Task Outcomes and Trace-Linked Cases}
+\label{app:behavior}
+The audit covers all 710 selected-seed episodes, with action-trace
+checksums matched to the recorded attempts, and all 50 branches in the
+executable-strategy validation. The public task goal, current observation,
+admissible menu, recent executed history, and interface feedback are
+present in policy prompts. The policy is not being asked to act without
+environment feedback. Full private restoration state is intentionally
+excluded, and the research models receive public trajectory evidence
+rather than an unrestricted live simulator.
+
+\begin{table}[!htbp]
+\caption{Observed continuation failures and a beneficial program.
+These cases illustrate mechanisms; they are not estimates of their
+frequency across all ALFWorld tasks.}
+\centering\small
+\begin{tabularx}{\linewidth}{L{0.85in}XX}\toprule
+Case & Executed intervention & Observed continuation\\\midrule
+R3, cool egg & Navigate to fridge while carrying egg & Cool the egg 25 times; no placement; budget exhausted.\\
+R3, place CD & Navigate to desk; CD becomes visible & Attempt placement three times without acquisition; commands absent from menu.\\
+R4, examine CD & Use desk lamp & Examine the side table 28 times; target not acquired.\\
+R5, place remote & Put a newspaper on sofa & The requested object is a remote control; the tested action does not complete its prerequisite chain.\\
+Validation, heat cup & Acquire cup, reach microwave, heat, open, reach cabinet, place & Program completes the task in six actions; no policy continuation call.\\\bottomrule
+\end{tabularx}
+\end{table}
+
+In the selection task requiring an alarm clock to be examined with a
+desk lamp, the public observation contains an alarm clock and the menu
+offers a take action. Both policies nevertheless emit an out-of-menu
+examine command. Across all tasks, out-of-menu calls total 1,556 for the
+parent and 1,612 for the candidate; format failures total 135 and 119.
+Most format failures are multiline action strings (130 and 113);
+the remainder are invalid JSON envelopes (5 and 6).
+
+The candidate executes slightly more environment actions on average
+(13.479 versus 13.228) and makes more policy calls (18.355 versus 17.992).
+Adjacent repeated executed actions total 1,902 versus 1,767. Repetition
+is a trace statistic, not automatically proof that an action is useless.
+Together with the unchanged success count and additional budget-exhausted
+episodes, these results do not show overall behavioral improvement.
+
+\subsection{What Was Verified and What Was Supervised}
+\label{app:historical}
+The four successful programs contain 2, 4, 6, and 4 executed actions per
+repetition. All 20 F1 successes occur before any policy continuation call.
+The remaining selected state acquires a credit card but does not complete
+placement; it remains a neutral failure. The training materialization
+contains four initial-action targets and four strategy targets. It does
+not supervise all 16 action positions of the four successful suffixes.
+
+An earlier native-label audit recorded 12 action-only rows and 151
+loss-bearing tokens, with richer strategy descriptions remaining upstream.
+The present native-label census establishes that substantive auxiliary
+targets now enter learning. Neither audit alone proves that a particular
+representation causes better policy behavior. The numerical supplement
+reports the current census and executed training configuration.
+
+\subsection{Process Effects and Capability}
+Intermediate changes remain separate from terminal effect labels.
+In the earlier guarded validation, 85 pairs include 11 positive process
+effects, 1 negative, 57 unchanged, and 16 unassessable. Ten positive
+process cases are terminal-neutral. These descriptive process records do
+not become Benefit labels and are not admitted to the current
+Benefit-only training set. A future progress-supervision condition would
+require its own admission rule and comparison.
+

@@ -1,0 +1,19 @@
+\begin{table}[H]
+\caption{\textbf{What each training view teaches.} Schematic example:
+the agent is looking for an object beside a closed cabinet, and
+\texttt{open cabinet 1} is admissible. The auxiliary view adds prospective
+task information to the same action. This illustrates target content.}
+\label{tab:views-example}
+\centering\small
+\begin{tabularx}{\linewidth}{@{}L{1.10in}X@{}}
+\toprule
+View & Supervised content\\
+\midrule
+Execution & \texttt{\{"action":"open cabinet 1"\}}\\
+Strategy & Subgoal: inspect the cabinet. Expected progress: its contents
+become visible. Check: whether the target is present. Recovery/fallback:
+if it is absent, continue the search elsewhere. Action:
+\texttt{open cabinet 1}.\\
+\bottomrule
+\end{tabularx}
+\end{table}

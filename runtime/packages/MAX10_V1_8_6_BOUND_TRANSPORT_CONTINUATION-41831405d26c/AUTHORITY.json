@@ -1,0 +1,104 @@
+{
+  "schema_id": "REGISTERED_CAMPAIGN_TRANSPORT_REPAIR_AUTHORITY_V1",
+  "host": "ln02",
+  "registered_python": "/data/home/scwb204/run/sdar_repro/conda_envs/sdar_sft_py312/bin/python",
+  "owner_root": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359",
+  "predecessor_source_root": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/formal_max10_v185_signature_validation/48b214c03049e13f745e52c13874577789cc4b6f9e14bac8daee0ce279545543/MAX10_V1_8_5_SIGNATURE_COMPATIBILITY_ENTRY",
+  "predecessor_manifest_sha256": "48b214c03049e13f745e52c13874577789cc4b6f9e14bac8daee0ce279545543",
+  "base_package_root": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/formal_max10_v182_validation/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/package",
+  "v185_source_root": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/formal_max10_v185_validation/251d67deea109147336cfac84e48fb2b7c02e7f46a1447299019a3132f2a9cec/MAX10_V1_8_5_DURABLE_ANALYZER_CONTINUATION",
+  "campaign_authority_ref": {
+    "file_sha256": "262cfb0698a67d65eb0a78193cb434505bf23f83bd840acdbee10e0dcfedbdee",
+    "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/CAMPAIGN_STARTUP_AUTHORITY_V1.json"
+  },
+  "stop_ref": {
+    "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/runtime_extensions/251d67deea109147336cfac84e48fb2b7c02e7f46a1447299019a3132f2a9cec/invocations/df56f07e065f43da894e4893ad18bad9/RESIDENT_RUNTIME_STOP.json",
+    "sha256": "ebeae601539f659a519eb15bbbdf2b6bd4a915968231858150f3a0bc02a2ebcd"
+  },
+  "prior_launch": {
+    "schema_id": "REGISTERED_RUNTIME_EXTENSION_RESIDENT_LAUNCHED_V1",
+    "pid": 2249792,
+    "argv": [
+      "/data/home/scwb204/run/sdar_repro/conda_envs/sdar_sft_py312/bin/python",
+      "-B",
+      "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/formal_max10_v185_signature_validation/48b214c03049e13f745e52c13874577789cc4b6f9e14bac8daee0ce279545543/MAX10_V1_8_5_SIGNATURE_COMPATIBILITY_ENTRY/signature_entry.py",
+      "--run",
+      "--invocation",
+      "df56f07e065f43da894e4893ad18bad9"
+    ],
+    "owner_root": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359",
+    "log_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/runtime_extensions/251d67deea109147336cfac84e48fb2b7c02e7f46a1447299019a3132f2a9cec/launch_receipts/df56f07e065f43da894e4893ad18bad9/resident.log",
+    "runtime_root": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/attempts/000002/analyzer/local/strong_local_runtime/registered_credential_continuations/576da204ad3d56f0a9222a52a229ab88f8ba341915dc2ceacf8594c715dff54d/registered_credential_continuations/b08380cf695378534a0feed3caf718149ddea907967383c0e2985be1d3dc302e/registered_durable_continuations/251d67deea109147336cfac84e48fb2b7c02e7f46a1447299019a3132f2a9cec",
+    "extension_root": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/runtime_extensions/251d67deea109147336cfac84e48fb2b7c02e7f46a1447299019a3132f2a9cec",
+    "extension_sha256": "251d67deea109147336cfac84e48fb2b7c02e7f46a1447299019a3132f2a9cec",
+    "signature_overlay_manifest_sha256": "48b214c03049e13f745e52c13874577789cc4b6f9e14bac8daee0ce279545543",
+    "invocation_id": "df56f07e065f43da894e4893ad18bad9",
+    "invocation_root": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/runtime_extensions/251d67deea109147336cfac84e48fb2b7c02e7f46a1447299019a3132f2a9cec/invocations/df56f07e065f43da894e4893ad18bad9",
+    "base_source_sha256": "123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359",
+    "new_provider_budget": 0
+  },
+  "immutable_refs": {
+    "local_execution": {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/attempts/000002/analyzer/local/strong_local_runtime/registered_credential_continuations/576da204ad3d56f0a9222a52a229ab88f8ba341915dc2ceacf8594c715dff54d/registered_credential_continuations/b08380cf695378534a0feed3caf718149ddea907967383c0e2985be1d3dc302e/registered_durable_continuations/251d67deea109147336cfac84e48fb2b7c02e7f46a1447299019a3132f2a9cec/execution_manifest.json",
+      "sha256": "2185cf11c7ae86c8a0bc41d976ce274413536b4a8a8c012f565acf0ab6352ddf"
+    },
+    "group_universe": {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/attempts/000002/analyzer/group/CLEAN_ANALYZER_GROUP_UNIVERSE_V1.json",
+      "sha256": "eda2775975f7f2b97867aca81c6dd41b79a3fc86db43324cf27738effb2e3e9a"
+    },
+    "group_budget": {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/attempts/000002/analyzer/group/ROUND_GROUP_ANALYZER_RESOURCE_AUTHORITY_V1.json",
+      "sha256": "5fca0d6ca009e6bc58d75a9981c11c7cdb15528e5e414339a0ad269761dc7d09"
+    },
+    "group_preparation": {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/attempts/000002/analyzer/local/GROUP_PREPARATION_CENSUS.json",
+      "sha256": "c4ae35b96e079e33b1ce3fdabea9e588d547dac3b31ad1211f34de49daffb7bb"
+    }
+  },
+  "repair": {
+    "logical_call_id": "4e712dfd7a6c71c75dece3d93a50144225c4063590001c51b3023a29a23a2e18",
+    "call_dir": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/attempts/000002/analyzer/group/strong_group_runtime/4e712dfd7a6c71c75dece3d93a50144225c4063590001c51b3023a29a23a2e18",
+    "consumed_attempts": 1,
+    "refs": {
+      "logical_call.json": {
+        "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/attempts/000002/analyzer/group/strong_group_runtime/4e712dfd7a6c71c75dece3d93a50144225c4063590001c51b3023a29a23a2e18/logical_call.json",
+        "sha256": "a9951ffe955f007be4444f8ea9db0d8082587e4289f74437b3b1317047309afd"
+      },
+      "method_result.json": {
+        "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/attempts/000002/analyzer/group/strong_group_runtime/4e712dfd7a6c71c75dece3d93a50144225c4063590001c51b3023a29a23a2e18/method_result.json",
+        "sha256": "408cbd2653bc0b371dead08c036f2c294ab5e448838417e7fae8e6628f441c64"
+      },
+      "rendered_request.json": {
+        "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/attempts/000002/analyzer/group/strong_group_runtime/4e712dfd7a6c71c75dece3d93a50144225c4063590001c51b3023a29a23a2e18/rendered_request.json",
+        "sha256": "c45ede371da87a8244ca8b9a4236324adcbae255137d273d935791385432d46f"
+      },
+      "transport_http_meta.json": {
+        "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/attempts/000002/analyzer/group/strong_group_runtime/4e712dfd7a6c71c75dece3d93a50144225c4063590001c51b3023a29a23a2e18/transport_http_meta.json",
+        "sha256": "713b55cb7415e7f6e92d414822e7ff27b3fc38eb88f48ec1f1c7093b321e8584"
+      },
+      "attempt_000.json": {
+        "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/attempts/000002/analyzer/group/strong_group_runtime/4e712dfd7a6c71c75dece3d93a50144225c4063590001c51b3023a29a23a2e18/attempt_000.json",
+        "sha256": "27bb8a6c5cdb01876698a65710ca2d35910405dcb532bf08b20b84975d3272a0"
+      }
+    }
+  },
+  "h44_input_ref": {
+    "path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/formal_max10_v182_validation/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/package/live_adapter/h44_input.py",
+    "sha256": "2138196ee7c5153c47fba920fadb706684efeb1ad2882ce6b5e1c200ad4bbfd7"
+  },
+  "h44_worker_ref": {
+    "path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/formal_max10_v182_validation/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/package/live_adapter/h44_worker.py",
+    "sha256": "5f93850f4862851efbe19636d058602998091ae432c06a3528c39bae930aae18"
+  },
+  "source_ledger": {
+    "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\outputs\\PCHSI_CANONICAL_STATUS_20260924_FORMAL_MAX10_ANALYZER_BUDGET_AUDIT_FULL.md",
+    "sha256": "803d1e41632786245cd401dc11e301c599ed6bea91f330bec03b701419980ca1",
+    "bytes": 5206719
+  },
+  "authorization": "User-directed repair and continuation after exact G-A2 stopped event; preserve original exhaustion, use only unconsumed frozen campaign attempts.",
+  "scientific_protocol_changed": false,
+  "ambiguous_or_partial_resend_authorized": false,
+  "old_terminal_overwrite_authorized": false,
+  "production_git_mutation_count": 0,
+  "future_local_resource_budget_producer": "Separate audit gap; no new adaptive algorithm introduced by transport repair."
+}

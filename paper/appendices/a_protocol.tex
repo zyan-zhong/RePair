@@ -1,0 +1,209 @@
+\section{Repair Tests and Training Details}
+\label{app:protocol}
+This appendix specifies the state restoration, evidence handling, and learning
+procedure used in Section~\ref{sec:method}.
+
+\subsection{Notation and Information Available to Each Role}
+\label{app:views}
+\begin{table}[htbp]
+\caption{Notation for a repair, an improvement round, and an evaluation task.}
+\centering
+\begin{tabularx}{\linewidth}{lX}
+\toprule
+Symbol & Meaning\\\midrule
+$\pi_k$ & Retained task policy entering round $k$.\\
+$\widetilde\pi_{k+1}$ & Trained candidate awaiting the selection test.\\
+$x,\ c(x)$ & Recoverable environment state and policy-visible context.\\
+$r,\ a_0$ & Registered repair and current-policy baseline action.\\
+$E_k,\ S_k$ & Current trajectory evidence and round-start experience snapshot.\\
+$\mathcal U$ & Common predeclared set of failure units.\\
+$\mathcal I_k$ & Completed interventions whose source and training records match the executed test.\\
+$J_{\mathrm{eval}}$ & Repetitions per evaluation task; one in the primary benchmark.\\
+$\mathcal D_k^+$ & Benefit subset used for positive supervision.\\
+$A_k$ & Scaffold-free acceptance result for candidate policy $k+1$.\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\begin{table}[htbp]
+\caption{Research inputs and responsibilities. Current experiment outcomes
+enter POST directly; historical retrieval reads the round-start snapshot.}
+\centering
+\begin{tabularx}{\linewidth}{L{0.82in}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X}
+\toprule
+Role & Available evidence & Responsibility\\\midrule
+Task policy & Goal, visible prefix, menu; permitted procedural cues when memory is enabled & Select the next action. OFF/OFF evaluation removes the extra cues.\\
+Analyzer & Trajectories, mechanical facts, failure analogies, counterexamples & Propose source-grounded failure hypotheses and repairs.\\
+Planner PRE & Failure profiles, candidates, resources, earlier experiments & Select and register the intervention portfolio before current verdicts.\\
+Planner POST & Registered PRE, fixed current verdicts and costs, earlier lessons & Interpret experiments and recommend TRAIN or NO-TRAIN.\\
+Verifier & Executed paired traces and the fixed effect rule & Assign Benefit, Harm, neutral, or uncertain labels.\\
+Acceptance rule & Candidate and parent results on training-side selection tasks & Apply the predeclared promotion and regression criteria.\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+A historical record retains starting conditions, the action/feedback sequence,
+observed state changes, a wrong branch and its consequence, the repair,
+applicability conditions, counterexamples, and effect provenance. Retrieval
+identifies whether a record is an exact past observation or an analogy. Its
+usefulness for the current policy is determined by a new experiment.
+Within round $k$, historical reads use the immutable snapshot $S_k$.
+New records accumulate in a shadow writeback store and become available as
+history through $S_{k+1}$ after round closure. POST receives current verdicts
+through its explicit experiment-result input. Hidden restoration state and
+future outcomes are excluded from task-policy inputs.
+
+\subsection{Restoring the Source and Executing the Repair}
+\label{app:restoration}
+The source record identifies the task/gamefile, source prefix and state,
+policy checkpoint, prompt, initial menu, memory snapshot, candidate payload,
+and remaining budget. Restoration uses an environment-supported snapshot
+or a checked replay of the recorded prefix. The experiment records the
+backend, replay checks, paired seed protocol, and restored-context equality;
+the current validation uses checked public-prefix replay. Its five
+continuation seed slots are 17, 31, 47, 73, and 101. All 50 planned
+branches of the executable-strategy validation are scientifically complete. The policy receives only
+$c(x)$, even when restoration requires additional simulator state.
+
+A one-action repair replaces the registered baseline decision once. Earlier options execute one to four registered actions. In the later
+validation, ordered guarded rules select admissible actions using the
+current public observation, carried-object evidence, and menu. Each rule
+has a finite use count and the program obeys the remaining episode budget.
+The executor checks each action against the newly observed menu, debits
+actual calls and steps, and records completion or invalidity. If the task is unfinished after the program, $\pi_k$ continues from the
+resulting state and remaining budget. The later validation appends the
+registered strategy to F1 continuation prompts. F0 retains the original
+continuation input. This cue is part of the treatment; it is not added to
+the scaffold-free selection prompts.
+The intervention remains fixed throughout the paired repetitions.
+This tests the whole option, including its extra actions and observations.
+The completed training run uses one initial-action example per verified
+source, not an expansion of every executed program step. A future
+action-only comparison must match this action coverage explicitly.
+
+Missing restoration, unsupported options, parser violations, and incomplete
+branches have explicit execution outcomes. The discovery export retains
+attempted, supported, completed, and labeled counts over the registered
+universe. Only complete protocol-valid tests enter the effect-label rule.
+This preserves the distinction between an experiment that found no benefit
+and one that did not produce an interpretable comparison.
+
+\subsection{Paired Outcomes and the Stability Rule}
+\label{app:labels}
+For five valid paired repetitions, define
+\begin{equation}
+n_{ab}=\sum_{j=1}^{5}\ind\{Y_j^{(0)}=a,Y_j^{(1)}=b\},
+\qquad a,b\in\{0,1\}.
+\label{eq:counts}
+\end{equation}
+The effect label is
+\begin{equation}
+L(x,r)=\begin{cases}
+\Benefit\ \text{(Benefit)},&n_{01}\ge4,\ n_{10}=0,\\
+\Harm\ \text{(Harm)},&n_{10}\ge4,\ n_{01}=0,\\
+\NeutralS\ \text{(neutral-success)},&n_{11}\ge4,\\
+\NeutralF\ \text{(neutral-failure)},&n_{00}\ge4,\\
+\Uncertain\ \text{(Uncertain)},&\text{otherwise}.
+\end{cases}
+\label{eq:labels}
+\end{equation}
+Insufficient valid pairs retain their incomplete-test status. The endpoint
+is terminal task success, fixed when PRE registers the experiment.
+Intermediate progress, loop reduction, and environment steps support the
+behavioral analysis without replacing that endpoint.
+
+The four-of-five rule describes finite-repeat stability, not a confidence
+level. Its effect is conditional on the source state and continuation
+policy. Because the source episodes were failures, the sampled states may
+provide few successful baseline continuations that a repair could damage.
+Harm counts are consequently reported for this selected population.
+Verification establishes the utility of the executed intervention; claims
+about a particular explanatory field require their own interventions.
+
+\subsection{Training Views and Native Supervision}
+\label{app:training-details}
+The execution view retains the exact I1 policy prompt and one string-valued
+\texttt{action} field. The auxiliary view uses the same policy-visible
+context followed by a fixed training-only instruction requesting a compact
+strategy response. The target describes the principal bottleneck, current
+subgoal, expected next event and state change, progress criterion, recovery
+trigger, fallback condition, and action. A strategy identifier and evidence
+references link this response to the tested repair. The strategy identifier
+is computed from the pre-verification payload.
+Verification provenance links that same payload to the effect label, which
+controls training eligibility. Expected progress is prospective information;
+the target excludes realized future outcomes, rewards, Benefit tags,
+promotion decisions, and sealed benchmark feedback. The native census contains four execution views and four auxiliary views:
+51 action and 2,546 strategy loss-bearing tokens per pass, with 4,096
+prompt tokens masked across the eight examples. No prompt truncation,
+retokenization, or repeated chat templating is applied.
+
+Both views share one real source state. A common source-state identifier
+links them to that state, while a distinct example identifier distinguishes
+each view. Native labels mask prompt and padding tokens with $-100$ and
+supervise the assistant suffix. The label
+census checks each verified pair for nonzero action supervision and nonzero
+substantive strategy supervision. It reports action, strategy, and metadata
+tokens separately, including the renderer's treatment of strategy identifiers and
+evidence references. Every admitted pair is Benefit-verified; the census
+rejects a purported strategy view that contains only an action target.
+These checks concern explicit supervision. Prompt content can still affect
+the conditional distribution learned from assistant targets.
+
+For view $v\in\{e,s\}$, assistant-token mask $m_{ivt}$, and minibatch
+$\mathcal B$, the common objective is
+\begin{equation}
+\mathcal L_{\mathrm{policy}}(\theta;\mathcal B)
+=-\frac{1}{Z_{\mathcal B}}
+\sum_{(i,v)\in\mathcal B}\sum_t
+w_{ivt}m_{ivt}\log\pi_\theta(y_{ivt}\mid p_i^v,y_{iv,<t}).
+\label{eq:loss}
+\end{equation}
+Action-only training samples execution views; dual-view training samples
+both views. In the executed run, $w_{ivt}=1$ on supervised assistant tokens and
+$Z_{\mathcal B}$ is the number of shifted, unmasked targets across the
+gradient-accumulation group. Each microbatch has one example; gradients
+from four microbatches accumulate using that common token denominator.
+There is no separate equal weighting of the two views. Every one of the
+eight rows appears once per pass in the registered deterministic order;
+four passes produce eight optimizer updates on one GPU. Thus the longer
+strategy responses contribute many more supervised token terms, although
+token counts alone do not determine their gradient magnitudes.
+
+The executed update continues the retained parent's trainable LoRA
+adapter with a fresh optimizer and scheduler. Its four Benefit sources
+are drawn from R5 evidence; the candidate is not initialized from a new
+untrained base model. An action-only or equal-compute descendant was not
+trained in this validation. Consequently, the result does not estimate
+the causal contribution of strategy supervision.
+
+\subsection{Additional Training Conditions}
+\label{app:optional}
+The historical design also identifies T5 for Benefit--Harm preference
+learning and T6 for audited RL. They are optional extensions beyond the
+primary supervised comparison. A Benefit pair prefers the repair to its
+baseline; a Harm pair reverses that preference. Neutral outcomes alone
+supply no such ordering. An executed T5 condition would specify its reference
+policy, preference serialization, and objective parameters, including
+$\beta$ for DPO \citep{rafailov2023dpo}. T6 requires its own executed loss
+and rollout protocol. Neither extension contributes a result to this study.
+
+\subsection{Recording Autonomy and Recovery}
+Routine scientific decisions include choosing a research question and test
+portfolio, recommending training, and accepting a candidate under the fixed
+rules. Campaign records distinguish these decisions from initial
+configuration, file transfers, restarts, code edits, and automated retries.
+Each has its own count and timestamp; absence of a record remains unknown.
+The intended steady-state operation has zero routine human scientific
+decisions after initialization.
+
+Valid attempts, no-promotion patience, abstention, nonproductive portfolios,
+integrity checks, and total resource limits determine stopping.
+Infrastructure-invalid attempts follow bounded recovery rules and retain
+their cost even when excluded from the scientific-attempt counter.
+The observed campaign stops after five valid rounds and three successive
+rounds without promotion. The invalid attempt remains separately counted;
+later reused-evidence validations do not increment the formal round count.
+Local Analyzer/Planner distillation is a separate research-role experiment,
+with shadow qualification preceding any takeover. The main method can use
+fixed strong research models throughout.

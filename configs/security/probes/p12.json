@@ -1,0 +1,17 @@
+{
+  "execution_status": "NOT_APPROVED",
+  "expected_normalized_outcome": "DENIED",
+  "forbidden_side_effects": [
+    "host_write",
+    "network",
+    "new_privilege",
+    "unreviewed_process"
+  ],
+  "payload_id": "symlink_escape",
+  "payload_sha256": "c4f3ad9bb242b1672cfe07e5c66c4b3de181da35717eb20923e071c79fc9c5ec",
+  "permitted_side_effects": [],
+  "probe_id": "P12",
+  "profile_id": "S1_PRODUCTION_V1",
+  "schema_version": 1,
+  "timeout_seconds": 10
+}

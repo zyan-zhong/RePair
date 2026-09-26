@@ -1,0 +1,100 @@
+{
+  "schema_id": "FROZEN_PRE_TYPED_OPTION_MATERIALIZATION_V1",
+  "round_id": "FORMAL-R2-5cf26b8115c2a538",
+  "pre_strategy_receipt_sha256": "dffa0980d63ece401ab4cd3392e0d2b702628b51c4cf030f976f040f73741692",
+  "accepted_pre_ref": {
+    "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/attempts/000003/analyzer/pre/strong_pre_runtime/4559b454d1be82841f14083bf9f965afff70a13d58b3461c4309cd11b4d56730/validated_artifact.json",
+    "sha256": "309cd0c588442171ae6b1e3bc30697858950373c57f4aa829311ee0f2efed197"
+  },
+  "candidates": [
+    {
+      "all_intervention_actions_count_against_environment_budget": true,
+      "candidate_kind": "FAILURE_REPAIR",
+      "candidate_sha256": "a2cbfdab661dd96096a85e90bbe8f69c361115322050e2fa1d399a1cd654f081",
+      "candidate_status": "EXECUTABLE_SHORT_OPTION",
+      "exact_action": null,
+      "live_menu_revalidation_required": true,
+      "menu_sha256": "a2eb3f32bc445120218d22987488405a5929f80fbf043fa29eb563790c6c6ea3",
+      "option_actions": [
+        "go to fridge 1",
+        "cool egg 1 with fridge 1",
+        "go to microwave 1",
+        "move egg 1 to microwave 1"
+      ],
+      "requires_environment_verification": true,
+      "schema_id": "ANALYZER_REPAIR_CANDIDATE_V1",
+      "schema_version": 1,
+      "source_proposal_sha256": "7b82559b0821519c1e73314a1e83ada9c3e2f1b230f57948edc00193ead8b054",
+      "source_state_sha256": "393def02d81accd7778ee80cd3990ca98edf87fef09045cbb1e918c71b1b7949",
+      "termination_condition": "Stop when an observation confirms that the egg is cooled and placed in the microwave; otherwise stop and replan immediately if the next listed action is absent from the current admissible-command menu or its required preconditions are unmet."
+    },
+    {
+      "all_intervention_actions_count_against_environment_budget": true,
+      "candidate_kind": "FAILURE_REPAIR",
+      "candidate_sha256": "f3051bf8294bccbf462b4bbe2efdbacb1e9a9823521d9f78822b72e87333d692",
+      "candidate_status": "EXECUTABLE_SHORT_OPTION",
+      "exact_action": null,
+      "live_menu_revalidation_required": true,
+      "menu_sha256": "7f27a476fc2020128671c3cdeec10bb939eb33afa19acba824c136d4222b6a80",
+      "option_actions": [
+        "go to drawer 1",
+        "go to drawer 2",
+        "go to sidetable 1",
+        "go to sidetable 2"
+      ],
+      "requires_environment_verification": true,
+      "schema_id": "ANALYZER_REPAIR_CANDIDATE_V1",
+      "schema_version": 1,
+      "source_proposal_sha256": "347cc0064cf23f344007eeae3572f64234b847e84d8c5ec25f23627f0a46a138",
+      "source_state_sha256": "72e6ad19520b9c33a4850dffc0a31ab8b725d8e095792f42b1d480f1eec86413",
+      "termination_condition": "Revalidate the menu after every resulting state change and terminate this search option set when an exact admissible take command naming a cellphone appears, when all listed receptacles have been inspected without finding it, or when a listed navigation action is no longer admissible and replanning from the updated menu is required."
+    }
+  ],
+  "execution_contracts": [
+    {
+      "source_candidate_sha256": "a2cbfdab661dd96096a85e90bbe8f69c361115322050e2fa1d399a1cd654f081",
+      "source_state_sha256": "393def02d81accd7778ee80cd3990ca98edf87fef09045cbb1e918c71b1b7949",
+      "termination_condition": "Stop when an observation confirms that the egg is cooled and placed in the microwave; otherwise stop and replan immediately if the next listed action is absent from the current admissible-command menu or its required preconditions are unmet.",
+      "dispatch_mode": "ORDERED_SEQUENCE",
+      "semantic_coverage": "FULL",
+      "coverage_explanation": "The registered public task goal is exactly the stated treated-object placement goal. ALFWorld task completion is an environment-done boundary, which is always checked. Required action preconditions are enforced by the native live admissible-command menu before each action; the full ordered option is bounded by its registered action count. No reward, hidden state or F0/F1 result is consulted. This binding is valid only with this exact public task goal and preserves all four registered actions.",
+      "stop_predicates": [
+        {
+          "kind": "PUBLIC_GOAL_COMPLETION",
+          "arguments": [
+            "put a cool egg in microwave."
+          ]
+        }
+      ]
+    },
+    {
+      "source_candidate_sha256": "f3051bf8294bccbf462b4bbe2efdbacb1e9a9823521d9f78822b72e87333d692",
+      "source_state_sha256": "72e6ad19520b9c33a4850dffc0a31ab8b725d8e095792f42b1d480f1eec86413",
+      "termination_condition": "Revalidate the menu after every resulting state change and terminate this search option set when an exact admissible take command naming a cellphone appears, when all listed receptacles have been inspected without finding it, or when a listed navigation action is no longer admissible and replanning from the updated menu is required.",
+      "dispatch_mode": "ORDERED_SEQUENCE",
+      "semantic_coverage": "FULL",
+      "coverage_explanation": "The complete exact command prefix checks a cellphone-taking affordance, not arbitrary mentions or other objects. All listed search actions execute in order until that affordance, live-menu invalidation, environment termination or exhaustion. No candidate is replaced and visibility alone does not terminate this option.",
+      "stop_predicates": [
+        {
+          "kind": "MENU_COMMAND_PREFIX",
+          "arguments": [
+            "take cellphone "
+          ]
+        }
+      ]
+    }
+  ],
+  "public_task_goals": {
+    "08824b43767ea506b06ffd054f7dc5c59a53d0919e68a5ced06282b7d65ecbdc": "examine the alarmclock with the desklamp.",
+    "6f18c8cd125cbdf4e1f0235f41e22cd98daaf4b639957cd00a1220081e728d7a": "examine the newspaper with the desklamp.",
+    "a2cbfdab661dd96096a85e90bbe8f69c361115322050e2fa1d399a1cd654f081": "put a cool egg in microwave.",
+    "f3051bf8294bccbf462b4bbe2efdbacb1e9a9823521d9f78822b72e87333d692": "put some cellphone on bed.",
+    "14a97147dbebcbfe0824811e9b12574c7736c9c6c68e1cde888449f161afb7ef": "put a cool tomato in microwave.",
+    "03577267adf9d7b37dd6e7a34be2b0e17312ed68f80f39f885884164bf1e04bd": "cool some potato and put it in microwave."
+  },
+  "candidate_reselection_performed": false,
+  "pre_rerun": false,
+  "partial_f0f1_execution_allowed": false,
+  "provider_call_count": 0,
+  "scientific_outcomes_visible": false
+}

@@ -1,0 +1,125 @@
+{
+  "$id": "ALFWORLD_ENVIRONMENT_RUNTIME_MANIFEST_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "alfworld_version": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "asynchronous": {
+      "const": false,
+      "type": "boolean"
+    },
+    "auto_reset": {
+      "const": false,
+      "type": "boolean"
+    },
+    "batch_size": {
+      "const": 1,
+      "type": "integer"
+    },
+    "env_infos": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "maxItems": 3,
+      "minItems": 3,
+      "type": "array"
+    },
+    "gym_version": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "manifest_id": {
+      "const": "ALFWORLD_ENVIRONMENT_RUNTIME_MANIFEST_V1",
+      "type": "string"
+    },
+    "max_episode_steps": {
+      "const": 31,
+      "type": "integer"
+    },
+    "process_start_method": {
+      "const": "spawn",
+      "type": "string"
+    },
+    "python_executable_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "python_version": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "schema_id": {
+      "const": "ALFWORLD_ENVIRONMENT_RUNTIME_MANIFEST_V1",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    },
+    "source_identities": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "logical_name": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "source_path": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "logical_name",
+          "source_path",
+          "sha256"
+        ],
+        "type": "object"
+      },
+      "maxItems": 4,
+      "minItems": 4,
+      "type": "array"
+    },
+    "textworld_version": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "wrapper_order": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "maxItems": 2,
+      "minItems": 2,
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "manifest_id",
+    "python_version",
+    "python_executable_sha256",
+    "alfworld_version",
+    "textworld_version",
+    "gym_version",
+    "source_identities",
+    "wrapper_order",
+    "env_infos",
+    "batch_size",
+    "asynchronous",
+    "auto_reset",
+    "max_episode_steps",
+    "process_start_method"
+  ],
+  "title": "ALFWorld environment runtime manifest",
+  "type": "object"
+}

@@ -1,0 +1,107 @@
+[
+  {
+    "path": "native_repo/configs/cognitive_runtime/unified_cognitive_runtime_manifest_v1.json",
+    "sha256": "af6405b12455585fa69264a6d5b7c850619377af224172e582179e1b50b8dbdb",
+    "source": "captured cognitive commit; missing-only support asset"
+  },
+  {
+    "path": "native_repo/configs/cognitive_runtime/p2_asset_binding_v1.json",
+    "sha256": "b1610c2e376eed87f5ecd5e8e955caaa9616de51b355c31720edbe885bbb4b5a",
+    "source": "captured cognitive commit; missing-only support asset"
+  },
+  {
+    "path": "native_repo/configs/cognitive_runtime/schemas/api_researcher_post_primary_v1.json",
+    "sha256": "0dd4c062c4c4c0599cfc641ea1331b1778223bb648ac8ab1f22b4ca32df6faec",
+    "source": "captured cognitive commit; missing-only support asset"
+  },
+  {
+    "path": "native_repo/configs/cognitive_runtime/schemas/environment_result_package_v1.json",
+    "sha256": "9b360dd53c601e7e0c5e4da6ec7b899e499b513ea285a2e285f01e3685fe4132",
+    "source": "captured cognitive commit; missing-only support asset"
+  },
+  {
+    "path": "native_repo/configs/cognitive_runtime/schemas/api_researcher_post_shadow_v1.json",
+    "sha256": "e6f1fff088b73788713c3b5845fe46205fcea9eec303a4d221f2475fd17a9525",
+    "source": "captured cognitive commit; missing-only support asset"
+  },
+  {
+    "path": "native_repo/configs/cognitive_runtime/schemas/logical_call_record_v1.json",
+    "sha256": "6dd3b1bcf82c68482ee8a3310091fe294aba88a6ce9820da8ee7190d2d6da8de",
+    "source": "captured cognitive commit; missing-only support asset"
+  },
+  {
+    "path": "native_repo/configs/cognitive_runtime/schemas/local_researcher_post_supervision_v1.json",
+    "sha256": "fbcf013e97edbd9ec9eaf7ae73746eab8fd7accc397fb0b9ece2797c1e2e0924",
+    "source": "captured cognitive commit; missing-only support asset"
+  },
+  {
+    "path": "native_repo/configs/cognitive_runtime/schemas/api_researcher_pre_shadow_v1.json",
+    "sha256": "7b7ebf017a718761bb9ab4b1558e26dbc3228b1ded0ef33645f8f9b2b8158ae6",
+    "source": "captured cognitive commit; missing-only support asset"
+  },
+  {
+    "path": "native_repo/configs/cognitive_runtime/schemas/scientific_unit_identity_v1.json",
+    "sha256": "99ef99f22090eaf296bedf0d50d7359b7a335e2416f71c0471705202f19f3c3b",
+    "source": "captured cognitive commit; missing-only support asset"
+  },
+  {
+    "path": "native_repo/configs/cognitive_runtime/schemas/human_researcher_post_v1.json",
+    "sha256": "667008e04c1d6e7d43aa41762d16bc104c361fe6d088ca1cc895155a4b46ba59",
+    "source": "captured cognitive commit; missing-only support asset"
+  },
+  {
+    "path": "native_repo/configs/cognitive_runtime/schemas/transport_attempt_record_v1.json",
+    "sha256": "e53767bf20eddeeba5721ba049c8c86439b7ba3f072519e1ddda1f7f58b0b7c7",
+    "source": "captured cognitive commit; missing-only support asset"
+  },
+  {
+    "path": "native_repo/configs/cognitive_runtime/schemas/strong_researcher_pre_primary_v1.json",
+    "sha256": "4e51e76ba7f9a9ae043cab90460a0c3aadb25590f5a24149cea5dbb893ca6256",
+    "source": "captured cognitive commit; missing-only support asset"
+  },
+  {
+    "path": "native_repo/configs/cognitive_runtime/schemas/runtime_stage_result_v1.json",
+    "sha256": "fec64594321dc7159ce318a09d4369ec1776af65735766016f550d3551daa40a",
+    "source": "captured cognitive commit; missing-only support asset"
+  },
+  {
+    "path": "native_repo/configs/cognitive_runtime/schemas/strong_researcher_pre_shadow_v2.json",
+    "sha256": "2bf0c26727732eb9d3603fc141549b9174d3faa6d1e19fc486d87d2207b06bab",
+    "source": "captured cognitive commit; missing-only support asset"
+  },
+  {
+    "path": "native_repo/configs/cognitive_runtime/schemas/researcher_field_adjudication_v1.json",
+    "sha256": "924cb526e0b8ed6037b0eb106f39e2bf1dc9f5501b44f2e150341600e9012c18",
+    "source": "captured cognitive commit; missing-only support asset"
+  },
+  {
+    "path": "native_repo/configs/cognitive_runtime/schemas/formal_analyzer_dag_registry_v1.json",
+    "sha256": "3049178a1a0c9d1c8181d2cb666de995c54d21c3c2fdedb3e56a274bc7f56ba5",
+    "source": "captured cognitive commit; missing-only support asset"
+  },
+  {
+    "path": "native_repo/configs/cognitive_runtime/schemas/local_researcher_pre_supervision_v1.json",
+    "sha256": "11659ddb9cb657cf7c8c73d5148e273f1d9eca3ee59c58b8eb8c56edef0840da",
+    "source": "captured cognitive commit; missing-only support asset"
+  },
+  {
+    "path": "native_repo/configs/cognitive_runtime/schemas/formal_analyzer_dag_registry_v2.json",
+    "sha256": "be577d7dabdcfd9471fca695680ad859552eb3668bae9d50972b41c58ea6e4b8",
+    "source": "captured cognitive commit; missing-only support asset"
+  },
+  {
+    "path": "native_repo/configs/cognitive_runtime/schemas/human_researcher_pre_v1.json",
+    "sha256": "ec3a8504a5782570edfad07c0d548ee42d795341622e23d8a3610e4ada0f2d42",
+    "source": "captured cognitive commit; missing-only support asset"
+  },
+  {
+    "path": "native_repo/configs/cognitive_runtime/schemas/round_evidence_package_v1.json",
+    "sha256": "89044b2b36b828130c946f7c6d5feb8eea273a77b994243cc222aeef8de85d1a",
+    "source": "captured cognitive commit; missing-only support asset"
+  },
+  {
+    "path": "native_repo/configs/cognitive_runtime/schemas/runtime_input_registry_v1.json",
+    "sha256": "539ab0b8306d76a37ae2c4b329480be52e8310784d11fb76315f0b123aa115a7",
+    "source": "captured cognitive commit; missing-only support asset"
+  }
+]

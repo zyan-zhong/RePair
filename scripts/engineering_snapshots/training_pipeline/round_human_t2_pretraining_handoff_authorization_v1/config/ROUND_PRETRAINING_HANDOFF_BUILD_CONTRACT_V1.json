@@ -1,0 +1,99 @@
+{
+  "build_status": "REVIEW_ONLY",
+  "current_training_budget": {
+    "data_seed": 17,
+    "diagnostic_only": true,
+    "epochs": 1,
+    "optimizer_steps": 3,
+    "promotion_eligible": false,
+    "row_count": 12,
+    "target_loss_tokens": 151,
+    "training_seed": 17
+  },
+  "execution_authorization_candidate": {
+    "authorized_output_dir": "/data/run01/scwb204/sdar_repro/badcase/experiments/human_reference_round_pi1_pi2_v1/human_t2_train17_continuation_v1/human-t2-train17-continuation-v1-a000",
+    "execution_attempt_id": "human-t2-train17-continuation-v1-a000",
+    "stage_attempt_root": "/data/run01/scwb204/sdar_repro/badcase/experiments/human_reference_round_pi1_pi2_v1/human_t2_train17_continuation_stage_attempts_v1/human-t2-train17-continuation-v1-a000"
+  },
+  "formal_training_authorized": false,
+  "parent_policy": {
+    "adapter_bundle_sha256": "b296f2254b1fa1f2e141dffd3f6b5af903f839df4790ffcb245fd8dd57773ace",
+    "final_trainable_parameter_sha256": "1801dc72946471ac3ada1ab61967c86d03874b209d9342db94b0054cccdb3dac",
+    "policy_id": "PILOT_DISTILLED_PI1",
+    "training_seed": 17
+  },
+  "profile_id": "HUMAN_T2_UNVERIFIED_REPAIR_DIAGNOSTIC_PROFILE_V1",
+  "reviewed_training_stage": {
+    "root": "/data/home/scwb204/run/sdar_repro/badcase/pchsi_scripts/round_generic_training_stage_v2_1_hardening_build",
+    "runner_freeze_root_sha256": "c6918c25da0cba986ef80f05f4c144011835bca5592e4c81cc6a58cb198dd37e",
+    "runtime_adapter": {
+      "path": "/data/home/scwb204/run/sdar_repro/badcase/pchsi_scripts/round_generic_training_stage_v2_1_hardening_build/round_training/adapters/frozen_formal_train_peft.py",
+      "sha256": "166dbaff3845588ff53f0a4306d7116b59ac0026f4de191cf8bb696e9d38a327"
+    },
+    "sample_order": {
+      "path": "/data/home/scwb204/run/sdar_repro/badcase/pchsi_scripts/round_generic_training_stage_v2_1_hardening_build/profiles/human_reference_t2/ROUND_SAMPLE_ORDER_MANIFEST_V1.json",
+      "sha256": "524554a8ee0c4eea9f2d4919a178698cb647b4d86189cb437b3f4e35ffe2d940"
+    },
+    "stage_binding": {
+      "domain_sha256": "9185d27c16789689906eddc67759a6280572016cbfd1f1122ec18f608462853e",
+      "file_sha256": "3c4b9954e5feea8ef7f682c2df1328f4413f7e4e2e650ce61aea91d8602e379a",
+      "path": "/data/home/scwb204/run/sdar_repro/badcase/pchsi_scripts/round_generic_training_stage_v2_1_hardening_build/profiles/human_reference_t2/ROUND_TRAINING_STAGE_BINDING_V1.json"
+    },
+    "trainer_role_binding": {
+      "path": "/data/home/scwb204/run/sdar_repro/badcase/pchsi_scripts/round_generic_training_stage_v2_1_hardening_build/profiles/human_reference_t2/TRAINER_ROLE_BINDING_V1.json",
+      "sha256": "0d5d74d2e5d5294dfbe665524328beac402d74ee286c2c19ccde984efe2d3989"
+    },
+    "training_contract": {
+      "path": "/data/home/scwb204/run/sdar_repro/badcase/pchsi_scripts/round_generic_training_stage_v2_1_hardening_build/profiles/human_reference_t2/ROUND_LOCAL_TRAINING_CONTRACT_V1.json",
+      "sha256": "d23339bc42f665f88bf4156550a030f5950b75d9d8bf813825a58627830ccf31"
+    }
+  },
+  "round_id": "HUMAN_REFERENCE_ROUND_PI1_PI2_V1",
+  "schema_id": "ROUND_PRETRAINING_HANDOFF_BUILD_CONTRACT_V1",
+  "schema_version": 1,
+  "smoke_job": {
+    "expected_exit_code": "0:0",
+    "expected_state": "COMPLETED",
+    "job_id": "151486"
+  },
+  "smoke_review_bundle": {
+    "expected_member_count": 8,
+    "path": "/data/home/scwb204/run/sdar_repro/badcase/pchsi_scripts/ROUND_GENERIC_TRAINING_MODEL_INIT_SMOKE_REVIEW_V1.zip",
+    "sha256": "5310c2637b53b6e0be30750554c8e69492468dd916a030a1241a6f02d81b2e72"
+  },
+  "training_execution_count": 0,
+  "upstream_scientific_authorities": [
+    {
+      "logical_name": "HUMAN_REFERENCE_F0F1_AUTHORITY_PACKAGE",
+      "path": "/data/run01/scwb204/sdar_repro/badcase/experiments/human_reference_round_pi1_pi2_v1/human_f0f1_authorities_v4_replay_first_structured_recovery/HUMAN_REFERENCE_F0F1_AUTHORITY_PACKAGE_V1.json",
+      "retention_class": "VALIDATED_SCIENTIFIC_ARTIFACT",
+      "sha256": "6e5abac5dd17664c9e3b9b6219f9aaa55042171be703bf65ebe069f77df82805"
+    },
+    {
+      "logical_name": "POST_ADJUDICATED_TRAINING_EVIDENCE_INPUT",
+      "path": "/data/run01/scwb204/sdar_repro/badcase/experiments/human_reference_round_pi1_pi2_v1/human_strong_post_adjudication_and_strong_training_plan_v1_1_route_scope_recovery/evidence_routing/POST_ADJUDICATED_TRAINING_EVIDENCE_INPUT_V1.json",
+      "retention_class": "DECISION_ARTIFACT",
+      "sha256": "d881c855317ac10e814ca80fd464659234bb66569a129747c7a681f584c61f5a"
+    },
+    {
+      "domain_sha256": "282fe712c85641c47f9c29f2b942c6b94528d22a942345d4ac57553ab95697d2",
+      "logical_name": "RESEARCH_PLANNER_TRAINING_PLAN",
+      "path": "/data/run01/scwb204/sdar_repro/badcase/experiments/human_reference_round_pi1_pi2_v1/human_strong_post_adjudication_and_strong_training_plan_v1_1_route_scope_recovery/handoff/RESEARCH_PLANNER_TRAINING_PLAN_V1.json",
+      "retention_class": "DECISION_ARTIFACT",
+      "sha256": "896eccfd04609bd17ae3a7ed0570545604f5e9a59016937ae9cfa299074501ce"
+    },
+    {
+      "domain_sha256": "d1087a0d08bcfea65645000307e0bcfab1ab9101cba3bbe08c17b6b9821b8ebe",
+      "logical_name": "T2_TRAINER_NATIVE_DATASET_MANIFEST",
+      "path": "/data/run01/scwb204/sdar_repro/badcase/experiments/human_reference_round_pi1_pi2_v1/qwen25_3b_schema_aware_renderer_adapter_and_trainer_native_preflight_v1_7_2/trainer_native_dataset/POLICY_T2_TRAINER_NATIVE_DATASET_MANIFEST_V1.json",
+      "retention_class": "VALIDATED_SCIENTIFIC_ARTIFACT",
+      "sha256": "2186248929ece9c6d22b6d0b35a8bbec0b4873a8783579e1a0c38812f54dc3ae"
+    },
+    {
+      "logical_name": "T2_TRAINER_NATIVE_DATASET",
+      "path": "/data/run01/scwb204/sdar_repro/badcase/experiments/human_reference_round_pi1_pi2_v1/qwen25_3b_schema_aware_renderer_adapter_and_trainer_native_preflight_v1_7_2/trainer_native_dataset/POLICY_T2_TRAINER_NATIVE_V1.jsonl",
+      "retention_class": "VALIDATED_SCIENTIFIC_ARTIFACT",
+      "sha256": "ae5fa948fe75a56c287e0a09070211242a0a933bc0a1011486b186bba824ea39"
+    }
+  ]
+}

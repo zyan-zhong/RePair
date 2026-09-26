@@ -1,0 +1,130 @@
+"""Frozen Analyzer V2 authorities, identities, and information boundaries."""
+
+from __future__ import annotations
+from collections.abc import Mapping
+from enum import StrEnum
+
+from pchsi.reference_loop.canonical import domain_hash
+
+
+class AnalyzerAuthority(StrEnum):
+    DETERMINISTIC_FACT = "DETERMINISTIC_FACT"
+    SEMANTIC_HYPOTHESIS = "SEMANTIC_HYPOTHESIS"
+    REPAIR_PROPOSAL = "REPAIR_PROPOSAL"
+    ABSTENTION = "ABSTENTION"
+    REGISTERED_BOUNDARY = "REGISTERED_BOUNDARY"
+    EFFECT_EVIDENCE = "EFFECT_EVIDENCE"
+    TRAINING_LABEL = "TRAINING_LABEL"
+    PROMOTION_DECISION = "PROMOTION_DECISION"
+
+
+ANALYZER_WRITABLE_AUTHORITIES = frozenset({
+    AnalyzerAuthority.SEMANTIC_HYPOTHESIS,
+    AnalyzerAuthority.REPAIR_PROPOSAL,
+    AnalyzerAuthority.ABSTENTION,
+})
+
+
+class AnalyzerCondition(StrEnum):
+    A0_ONE_SHOT_LOCAL = "A0_ONE_SHOT_LOCAL"
+    A1_MULTI_HYPOTHESIS_LOCAL = "A1_MULTI_HYPOTHESIS_LOCAL"
+    A2_HIERARCHICAL_NO_HISTORY = "A2_HIERARCHICAL_NO_HISTORY"
+    A3_HIERARCHICAL_WITH_HISTORY = "A3_HIERARCHICAL_WITH_HISTORY"
+
+
+LOCAL_GENERATION_CONDITIONS = frozenset({
+    AnalyzerCondition.A0_ONE_SHOT_LOCAL,
+    AnalyzerCondition.A1_MULTI_HYPOTHESIS_LOCAL,
+})
+
+
+class TrajectoryOutcome(StrEnum):
+    SUCCESS = "SUCCESS"
+    FAILURE = "FAILURE"
+
+
+class OutcomeRouteStatus(StrEnum):
+    SCIENTIFIC_OUTCOME_AVAILABLE = "SCIENTIFIC_OUTCOME_AVAILABLE"
+    INFRASTRUCTURE_UNAVAILABLE = "INFRASTRUCTURE_UNAVAILABLE"
+    PROTOCOL_INVALID = "PROTOCOL_INVALID"
+    EVIDENCE_INCOMPLETE = "EVIDENCE_INCOMPLETE"
+
+
+class AnalysisObjective(StrEnum):
+    FAILURE_DIAGNOSIS = "FAILURE_DIAGNOSIS"
+    SUCCESS_QUALITY = "SUCCESS_QUALITY"
+
+
+class AnalysisRegime(StrEnum):
+    FAILURE_CRITICAL = "FAILURE_CRITICAL"
+    MIXED_PERFORMANCE = "MIXED_PERFORMANCE"
+    HIGH_SUCCESS_REFINEMENT = "HIGH_SUCCESS_REFINEMENT"
+
+
+class AnalysisSchedulerRole(StrEnum):
+    MECHANICAL_SAMPLING_ONLY = "MECHANICAL_SAMPLING_ONLY"
+    RESEARCH_PRIORITY_AUTHORITY = "NOT_AUTHORIZED"
+
+
+class ScientificUse(StrEnum):
+    SCHEMA_DEVELOPMENT_FIXTURE = "SCHEMA_DEVELOPMENT_FIXTURE"
+    PILOT_EXCLUDED_FROM_CONFIRMATORY_CLAIM = (
+        "PILOT_EXCLUDED_FROM_CONFIRMATORY_CLAIM"
+    )
+    FORMAL_DEVELOPMENT_EXPERIMENT = "FORMAL_DEVELOPMENT_EXPERIMENT"
+    PRIVILEGED_OFFLINE_ANALYSIS = "PRIVILEGED_OFFLINE_ANALYSIS"
+
+
+class AnalysisTimeInformationBoundary(StrEnum):
+    POST_EPISODE_DEV_ONLY = "POST_EPISODE_DEV_ONLY"
+
+
+class RepairKind(StrEnum):
+    EXACT_ACTION = "EXACT_ACTION"
+    SHORT_OPTION = "SHORT_OPTION"
+    TRAINABLE_RULE = "TRAINABLE_RULE"
+
+
+class CandidateStatus(StrEnum):
+    EXECUTABLE_EXACT_ACTION = "EXECUTABLE_EXACT_ACTION"
+    EXECUTABLE_SHORT_OPTION = "EXECUTABLE_SHORT_OPTION"
+    REQUIRES_EXECUTABLE_INSTANTIATION = "REQUIRES_EXECUTABLE_INSTANTIATION"
+    ABSTAIN = "ABSTAIN"
+    REJECTED_SCHEMA_INVALID = "REJECTED_SCHEMA_INVALID"
+    REJECTED_NOT_ADMISSIBLE_AT_SOURCE = "REJECTED_NOT_ADMISSIBLE_AT_SOURCE"
+    REJECTED_UNSUPPORTED_EVIDENCE = "REJECTED_UNSUPPORTED_EVIDENCE"
+
+
+class ErrorLifecycleStatus(StrEnum):
+    ACTIVE = "ACTIVE"
+    RESOLVED = "RESOLVED"
+    LATENT = "LATENT"
+    DOWNSTREAM_SYMPTOM = "DOWNSTREAM_SYMPTOM"
+
+
+class TerminalFootprint(StrEnum):
+    DIRECT_TERMINAL_IMPACT = "DIRECT_TERMINAL_IMPACT"
+    BUDGET_ONLY_IMPACT = "BUDGET_ONLY_IMPACT"
+    RECOVERED_NO_TERMINAL_IMPACT = "RECOVERED_NO_TERMINAL_IMPACT"
+    UNCERTAIN = "UNCERTAIN"
+
+
+class CrosscheckDisposition(StrEnum):
+    ACCEPT = "ACCEPT"
+    DOWNGRADE_SCOPE = "DOWNGRADE_SCOPE"
+    REQUIRE_ABSTENTION = "REQUIRE_ABSTENTION"
+    REJECT = "REJECT"
+
+
+def canonical_analyzer_identity(
+    *,
+    domain: str,
+    payload: Mapping[str, object],
+) -> str:
+    """Return a domain-separated canonical SHA without semantic normalization."""
+
+    if not isinstance(domain, str) or not domain:
+        raise ValueError("domain must be non-empty text")
+    if not isinstance(payload, Mapping):
+        raise TypeError("payload must be a mapping")
+    return domain_hash(domain, dict(payload))

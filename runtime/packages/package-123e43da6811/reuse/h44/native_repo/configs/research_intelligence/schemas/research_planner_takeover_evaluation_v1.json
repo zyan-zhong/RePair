@@ -1,0 +1,20 @@
+{
+  "$id": "RESEARCH_PLANNER_TAKEOVER_EVALUATION_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "fresh_autonomous_round_claim_supported": {"const": false, "type": "boolean"},
+    "local_primary_checks": {"type": "object"},
+    "local_research_planner_primary_eligible": {"type": "boolean"},
+    "local_training_and_shadow_eligible": {"type": "boolean"},
+    "metrics": {"type": "object"},
+    "schema_id": {"const": "RESEARCH_PLANNER_TAKEOVER_EVALUATION_V1", "type": "string"},
+    "schema_version": {"const": 1, "type": "integer"},
+    "strong_primary_checks": {"type": "object"},
+    "strong_research_planner_primary_eligible": {"type": "boolean"},
+    "takeover_evaluation_sha256": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+    "unified_checkpoint_claim_supported": {"const": false, "type": "boolean"}
+  },
+  "required": ["schema_id", "schema_version", "metrics", "strong_primary_checks", "strong_research_planner_primary_eligible", "local_training_and_shadow_eligible", "local_primary_checks", "local_research_planner_primary_eligible", "unified_checkpoint_claim_supported", "fresh_autonomous_round_claim_supported", "takeover_evaluation_sha256"],
+  "type": "object"
+}

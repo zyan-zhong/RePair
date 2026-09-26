@@ -1,0 +1,4 @@
+100 1 0:1 / /runtime ro,nosuid,nodev - bind /host/runtime ro
+101 1 0:2 / /input/repo ro,nosuid,nodev,noexec - bind /host/repo ro
+102 101 0:3 / /input/repo/cache rw,nosuid,nodev,noexec - tmpfs tmpfs rw
+103 1 0:4 / /input/dataset ro,nosuid,nodev,noexec - bind /host/dataset ro

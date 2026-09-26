@@ -1,0 +1,19 @@
+{
+  "$id": "LOCAL_ROLE_SUPERVISION_DATASET_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "base_model_lineage": {"const": "Qwen2.5-3B-Instruct", "type": "string"},
+    "dataset_sha256": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+    "examples": {"items": {"type": "object"}, "minItems": 1, "type": "array"},
+    "go_and_no_go_preserved": {"const": true, "type": "boolean"},
+    "local_primary_authorized": {"const": false, "type": "boolean"},
+    "local_training_executed": {"const": false, "type": "boolean"},
+    "provider_reasoning_artifact_required": {"const": false, "type": "boolean"},
+    "schema_id": {"const": "LOCAL_ROLE_SUPERVISION_DATASET_V1", "type": "string"},
+    "schema_version": {"const": 1, "type": "integer"},
+    "split_unit": {"const": "ROUND_ID_PLUS_POLICY_LINEAGE_PLUS_TASK_SET", "type": "string"}
+  },
+  "required": ["schema_id", "schema_version", "base_model_lineage", "split_unit", "examples", "go_and_no_go_preserved", "provider_reasoning_artifact_required", "local_training_executed", "local_primary_authorized", "dataset_sha256"],
+  "type": "object"
+}

@@ -1,0 +1,137 @@
+test_completion_requires_full_counts_not_just_slurm_zero (test_core.Contracts.test_completion_requires_full_counts_not_just_slurm_zero) ... FAIL
+test_diagnostic_retention_independent_of_score_direction (test_core.Contracts.test_diagnostic_retention_independent_of_score_direction) ... FAIL
+test_failed_or_unknown_job_does_not_authorize_audit_or_retry (test_core.Contracts.test_failed_or_unknown_job_does_not_authorize_audit_or_retry) ... FAIL
+test_inventory_rejects_path_traversal (test_core.Contracts.test_inventory_rejects_path_traversal) ... FAIL
+test_no_clobber_and_exact_resume (test_core.Contracts.test_no_clobber_and_exact_resume) ... FAIL
+test_no_guess_for_other_training_arm (test_core.Contracts.test_no_guess_for_other_training_arm) ... FAIL
+test_nonfinite_json_rejected (test_core.Contracts.test_nonfinite_json_rejected) ... FAIL
+test_sha_bytes_and_semantics_not_interchanged (test_core.Contracts.test_sha_bytes_and_semantics_not_interchanged) ... FAIL
+test_strict_duplicate_keys_rejected (test_core.Contracts.test_strict_duplicate_keys_rejected) ... FAIL
+test_summary_projection_removes_all_per_task_content (test_core.Contracts.test_summary_projection_removes_all_per_task_content) ... FAIL
+test_symlink_output_rejected (test_core.Contracts.test_symlink_output_rejected) ... FAIL
+
+======================================================================
+FAIL: test_completion_requires_full_counts_not_just_slurm_zero (test_core.Contracts.test_completion_requires_full_counts_not_just_slurm_zero)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_core.py", line 41, in test_completion_requires_full_counts_not_just_slurm_zero
+    c=self.core()
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_core.py", line 11, in core
+    self.assertTrue(hasattr(stage4e, 'strict_loads'), 'MISSING_STAGE4E_OUTCOME_GATED_ADAPTERS')
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : MISSING_STAGE4E_OUTCOME_GATED_ADAPTERS
+
+======================================================================
+FAIL: test_diagnostic_retention_independent_of_score_direction (test_core.Contracts.test_diagnostic_retention_independent_of_score_direction)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_core.py", line 70, in test_diagnostic_retention_independent_of_score_direction
+    c=self.core()
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_core.py", line 11, in core
+    self.assertTrue(hasattr(stage4e, 'strict_loads'), 'MISSING_STAGE4E_OUTCOME_GATED_ADAPTERS')
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : MISSING_STAGE4E_OUTCOME_GATED_ADAPTERS
+
+======================================================================
+FAIL: test_failed_or_unknown_job_does_not_authorize_audit_or_retry (test_core.Contracts.test_failed_or_unknown_job_does_not_authorize_audit_or_retry)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_core.py", line 84, in test_failed_or_unknown_job_does_not_authorize_audit_or_retry
+    c=self.core()
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_core.py", line 11, in core
+    self.assertTrue(hasattr(stage4e, 'strict_loads'), 'MISSING_STAGE4E_OUTCOME_GATED_ADAPTERS')
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : MISSING_STAGE4E_OUTCOME_GATED_ADAPTERS
+
+======================================================================
+FAIL: test_inventory_rejects_path_traversal (test_core.Contracts.test_inventory_rejects_path_traversal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_core.py", line 93, in test_inventory_rejects_path_traversal
+    c=self.core()
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_core.py", line 11, in core
+    self.assertTrue(hasattr(stage4e, 'strict_loads'), 'MISSING_STAGE4E_OUTCOME_GATED_ADAPTERS')
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : MISSING_STAGE4E_OUTCOME_GATED_ADAPTERS
+
+======================================================================
+FAIL: test_no_clobber_and_exact_resume (test_core.Contracts.test_no_clobber_and_exact_resume)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_core.py", line 24, in test_no_clobber_and_exact_resume
+    c=self.core()
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_core.py", line 11, in core
+    self.assertTrue(hasattr(stage4e, 'strict_loads'), 'MISSING_STAGE4E_OUTCOME_GATED_ADAPTERS')
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : MISSING_STAGE4E_OUTCOME_GATED_ADAPTERS
+
+======================================================================
+FAIL: test_no_guess_for_other_training_arm (test_core.Contracts.test_no_guess_for_other_training_arm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_core.py", line 80, in test_no_guess_for_other_training_arm
+    c=self.core()
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_core.py", line 11, in core
+    self.assertTrue(hasattr(stage4e, 'strict_loads'), 'MISSING_STAGE4E_OUTCOME_GATED_ADAPTERS')
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : MISSING_STAGE4E_OUTCOME_GATED_ADAPTERS
+
+======================================================================
+FAIL: test_nonfinite_json_rejected (test_core.Contracts.test_nonfinite_json_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_core.py", line 19, in test_nonfinite_json_rejected
+    c=self.core()
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_core.py", line 11, in core
+    self.assertTrue(hasattr(stage4e, 'strict_loads'), 'MISSING_STAGE4E_OUTCOME_GATED_ADAPTERS')
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : MISSING_STAGE4E_OUTCOME_GATED_ADAPTERS
+
+======================================================================
+FAIL: test_sha_bytes_and_semantics_not_interchanged (test_core.Contracts.test_sha_bytes_and_semantics_not_interchanged)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_core.py", line 99, in test_sha_bytes_and_semantics_not_interchanged
+    c=self.core()
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_core.py", line 11, in core
+    self.assertTrue(hasattr(stage4e, 'strict_loads'), 'MISSING_STAGE4E_OUTCOME_GATED_ADAPTERS')
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : MISSING_STAGE4E_OUTCOME_GATED_ADAPTERS
+
+======================================================================
+FAIL: test_strict_duplicate_keys_rejected (test_core.Contracts.test_strict_duplicate_keys_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_core.py", line 15, in test_strict_duplicate_keys_rejected
+    c=self.core()
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_core.py", line 11, in core
+    self.assertTrue(hasattr(stage4e, 'strict_loads'), 'MISSING_STAGE4E_OUTCOME_GATED_ADAPTERS')
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : MISSING_STAGE4E_OUTCOME_GATED_ADAPTERS
+
+======================================================================
+FAIL: test_summary_projection_removes_all_per_task_content (test_core.Contracts.test_summary_projection_removes_all_per_task_content)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_core.py", line 55, in test_summary_projection_removes_all_per_task_content
+    c=self.core()
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_core.py", line 11, in core
+    self.assertTrue(hasattr(stage4e, 'strict_loads'), 'MISSING_STAGE4E_OUTCOME_GATED_ADAPTERS')
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : MISSING_STAGE4E_OUTCOME_GATED_ADAPTERS
+
+======================================================================
+FAIL: test_symlink_output_rejected (test_core.Contracts.test_symlink_output_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_core.py", line 34, in test_symlink_output_rejected
+    c=self.core()
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/tests/test_core.py", line 11, in core
+    self.assertTrue(hasattr(stage4e, 'strict_loads'), 'MISSING_STAGE4E_OUTCOME_GATED_ADAPTERS')
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : MISSING_STAGE4E_OUTCOME_GATED_ADAPTERS
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.005s
+
+FAILED (failures=11)

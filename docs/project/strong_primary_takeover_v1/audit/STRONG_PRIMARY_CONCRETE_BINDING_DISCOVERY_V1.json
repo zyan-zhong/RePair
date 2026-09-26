@@ -1,0 +1,24 @@
+{
+  "execution_authorized": false,
+  "human_primary_strong_shadow_factory_present": true,
+  "required_entrypoints": [
+    {
+      "exists": true,
+      "path": "src/pchsi/cognitive_runtime/orchestrator.py",
+      "sha256": "ed44d301bb32fb6ff7fd60da1629f2569d3d9d10bdf703a3da491bb40ee692bd"
+    },
+    {
+      "exists": true,
+      "path": "scripts/research_intelligence/run_researcher_pre_shadow_v6.py",
+      "sha256": "dd5f7e53975a420a014dfaa38cced57dc4f574d093835f1f39fae1c8e993e094"
+    }
+  ],
+  "role_neutral_local_shadow_present": true,
+  "role_neutral_strong_api_primary_present": true,
+  "runtime_manifest_schema_id": "UNIFIED_COGNITIVE_RUNTIME_MANIFEST_V1",
+  "schema_id": "STRONG_PRIMARY_CONCRETE_BINDING_DISCOVERY_V1",
+  "source_path": "/data/run01/scwb204/sdar_repro/badcase/github_exports/pchsi-wt-strong-primary-takeover-prep-v1/src/pchsi/round_control/clean_role_actor_binding.py",
+  "source_sha256": "5cacb0ad65cd82e371f6efddf762ffaa05b194a0f8591368df80bb0857b39154",
+  "status": "NEEDS_ROLE_NEUTRAL_PRIMARY_CONCRETE_BINDING",
+  "strong_primary_local_shadow_factory_present": false
+}

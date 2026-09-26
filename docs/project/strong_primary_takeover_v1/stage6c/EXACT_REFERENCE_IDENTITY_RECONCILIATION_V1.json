@@ -1,0 +1,63 @@
+{
+  "filename_heuristics_used": false,
+  "mtime_heuristics_used": false,
+  "object_count": 24659,
+  "outcome_adaptive_selection_used": false,
+  "resolution_decisions": {
+    "access_class": {
+      "downstream_non_manifest_access_candidates": [
+        "TRAIN_SELECT_AGGREGATE_ONLY"
+      ],
+      "status": "RESOLVED_BY_REFERENCE_ROLE_TRACE_AND_MANIFEST_CONTRACT"
+    },
+    "go_nogo_status": {
+      "source": "docs/project/clean_human_r1_tail_v1/results/CLEAN_HUMAN_REFERENCE_CLOSEOUT.json",
+      "status": "EXACT_NON_STATISTICAL_DISPOSITION_TO_HOLD_V1"
+    },
+    "policy_evaluation_result_sha256": {
+      "source": "docs/project/clean_human_r1_tail_v1/results/TRAIN_SELECT_AGGREGATE.json",
+      "status": "CANONICAL_TAIL_CROSS_BINDING"
+    },
+    "pre_adjudication_sha256": {
+      "status": "STRONG_PRE_UNRESOLVED"
+    },
+    "promotion_result": {
+      "source": "docs/project/clean_human_r1_tail_v1/results/POLICY_DISPOSITION.json",
+      "status": "CANONICAL_POLICY_DISPOSITION"
+    },
+    "strong_pre_shadow_sha256": {
+      "candidate_count": 0,
+      "output_candidates": [],
+      "status": "NOT_UNIQUE_TYPED_STRONG_PRE_ROLE_TRACE"
+    },
+    "verified_training_evidence_sha256": {
+      "candidates": [],
+      "status": "TRAINING_EVIDENCE_NOT_UNIQUE"
+    }
+  },
+  "resolved": {
+    "access_class": "TRAIN_REFERENCE_ROUND",
+    "environment_result_package_sha256": "4366c3f5797dfdcaf74dfb8c2cf1562f615fd48c363e3dfc1aa838814585f247",
+    "go_nogo_status": "HOLD",
+    "human_post_record_sha256": "8a6df3182c95db15115f8a909bd60f17c574d78cba4569dec4df10a553e7a198",
+    "human_pre_record_sha256": "1e6609654b482b8683bd7fb2790ea86fcbbe07ec6bb6b45abb82c14241738c8d",
+    "policy_evaluation_result_sha256": "abd3927783ea660fc97c2a20b61f62ba28bfd605a909437d8d97dbd6bc8b7150",
+    "policy_lineage_sha256": "dc1f61ebcfba5a69310f40834be38718de9c3f42206cd00b1bb33be658aac443",
+    "post_adjudication_sha256": "7bedc15c9a3d1e61e68d735715f74899dd6c43783adc82f14a6732804e58f7f8",
+    "promotion_result": "ROLLBACK",
+    "round_evidence_package_sha256": "a9b6343157e65966d5f1a077478b234512ff6f021bff06bf4d6e7bb5fefecac8",
+    "round_id": "CLEAN-HUMAN-REFERENCE-R1-PI0",
+    "strong_post_shadow_sha256": "2a7810b09c7a23b26b03e91f24d962a6032fe4fed44a986e438d3b077bc77cd5"
+  },
+  "round_id": "CLEAN-HUMAN-REFERENCE-R1-PI0",
+  "schema_id": "EXACT_REFERENCE_IDENTITY_RECONCILIATION_V1",
+  "schema_version": 1,
+  "source_file_count": 639,
+  "stage6b_closure_core_sha256": null,
+  "stage6b_closure_path": "docs/project/strong_primary_takeover_v1/stage6b/CLEAN_REFERENCE_IDENTITY_CLOSURE_V1.json",
+  "unresolved_fields": [
+    "pre_adjudication_sha256",
+    "strong_pre_shadow_sha256",
+    "verified_training_evidence_sha256"
+  ]
+}

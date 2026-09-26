@@ -1,0 +1,116 @@
+{
+  "$id": "E1_ATTEMPT_RECEIPT_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "attempt_bundle_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "attempt_ordinal": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "created_at_utc": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "design_merge_commit": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "episode_semantic_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "error_code": {
+      "minLength": 1,
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "evaluator_commit": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "execution_attempt_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "operational_finalization_status": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "receipt_kind": {
+      "enum": [
+        "STARTED",
+        "TERMINAL"
+      ],
+      "type": "string"
+    },
+    "run_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "run_schedule_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "runtime_core_commit": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "scheduled_cell_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "schema_id": {
+      "const": "E1_ATTEMPT_RECEIPT_V1",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    },
+    "scientific_outcome_status": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "terminal_class": {
+      "minLength": 1,
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "receipt_kind",
+    "run_id",
+    "scheduled_cell_id",
+    "execution_attempt_id",
+    "attempt_ordinal",
+    "evaluator_commit",
+    "design_merge_commit",
+    "runtime_core_commit",
+    "run_schedule_sha256",
+    "scientific_outcome_status",
+    "operational_finalization_status",
+    "episode_semantic_sha256",
+    "attempt_bundle_sha256",
+    "terminal_class",
+    "error_code",
+    "created_at_utc"
+  ],
+  "title": "E1 attempt receipt",
+  "type": "object"
+}

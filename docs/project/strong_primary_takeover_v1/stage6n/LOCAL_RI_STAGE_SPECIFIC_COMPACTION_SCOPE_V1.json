@@ -1,0 +1,43 @@
+{
+  "action_only_policy_gradient_problem_claimed_fixed": false,
+  "automatic_chunking_authorized": false,
+  "automatic_example_drop_authorized": false,
+  "automatic_truncation_authorized": false,
+  "exact_alias_dedup_audit_sha256": "b027f3cf3aac15f9f37a7f51811b742386caf29ecf829197cb5a8bd91850d66b",
+  "exact_alias_dedup_sufficient": false,
+  "field_aggregate_sha256": "f79698eb4a5ff3baabe4b2094c26df545f345d4938f84e15e2ca995932248fbc",
+  "new_teacher_collection_authorized": false,
+  "new_trainer_required": false,
+  "next_gate": "BUILD_MINIMAL_REUSE_BASED_LA0_LA1_PRE_COMPACT_VIEW_THEN_REAUDIT_ALL_146_EXAMPLES",
+  "original_overlength_example_count": 22,
+  "original_overlength_stages": {
+    "L-A0": 10,
+    "L-A1": 11,
+    "R-PRE-PRIMARY-V1": 1
+  },
+  "registered_example_count": 146,
+  "remaining_overlength_example_count": 22,
+  "remaining_overlength_examples_by_stage": {
+    "L-A0": 10,
+    "L-A1": 11,
+    "R-PRE-PRIMARY-V1": 1
+  },
+  "reuse_asset_audit_sha256": "6bccb015f28fcb1ab4f2c5f8c363c29f9c8114d13984f433f78738da5eb44c29",
+  "round_id": "CLEAN-HUMAN-REFERENCE-R1-PI0",
+  "schema_id": "LOCAL_RI_STAGE_SPECIFIC_COMPACTION_SCOPE_V1",
+  "schema_version": 1,
+  "semantic_compaction_policy_required": true,
+  "stages_naturally_within_architecture": [
+    "G-A2",
+    "G-A3",
+    "C",
+    "X",
+    "R-POST-PRIMARY-V1"
+  ],
+  "stages_requiring_compaction_attention": [
+    "L-A0",
+    "L-A1",
+    "R-PRE-PRIMARY-V1"
+  ],
+  "status": "LOSSLESS_ALIAS_DEDUP_INSUFFICIENT_STAGE_SPECIFIC_COMPACT_VIEW_REQUIRED"
+}

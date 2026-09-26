@@ -1,0 +1,33 @@
+{
+  "control_plane_recovery": {
+    "artifact_sha256_semantics_unchanged": true,
+    "git_head_authority": "git rev-parse --verify HEAD^{commit}",
+    "git_object_format_authority": "git rev-parse --show-object-format=storage",
+    "git_object_type_authority": "git cat-file -t <head_oid>",
+    "root_class": "GIT_OBJECT_ID_AND_SHA256_ARTIFACT_IDENTITY_DOMAIN_CONFLATION"
+  },
+  "reused_assets": [
+    {
+      "asset": "source_context_equivalence.py",
+      "durable_commit": "7d31c84161e6c2471417f470a412155b11da2b90",
+      "durable_path": "src/pchsi/research_intelligence/source_context_equivalence.py",
+      "durable_repository": "zyan-zhong/phase-critical-harness-guided-self-improvement",
+      "role": "execution-context equivalence and provenance-variant preservation for dynamic pair universe"
+    },
+    {
+      "asset": "Strong Analyzer group tail",
+      "reused_paths": [
+        "src/pchsi/cognitive_runtime/orchestrator.py",
+        "src/pchsi/cognitive_runtime/projections.py",
+        "src/pchsi/memory/dev_snapshot_loader.py",
+        "src/pchsi/memory/consumer_views.py",
+        "src/pchsi/analyzer/component_attribution.py",
+        "src/pchsi/analyzer/candidate_projector.py",
+        "src/pchsi/analyzer/state_candidate_budget.py"
+      ],
+      "server_repository_discovery": "ROLE_SCOPED_STRONG_PRIMARY_FRESH_ROUND_AUTHORITY_V1"
+    }
+  ],
+  "schema_id": "V1232T_REUSED_SOURCE_ASSET_PROVENANCE_V1",
+  "schema_version": 1
+}

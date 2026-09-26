@@ -1,0 +1,36 @@
+\section*{AI Use Statement}
+Generative AI was used in the research method and in its development.
+External GPT API models supplied failure analyses, repair proposals,
+PRE/POST planning, and strategy supervision; the recorded provider model
+for the recent validation is \texttt{gpt-5.6-sol}. Qwen2.5-3B-Instruct and
+its trained descendants generated task actions. ChatGPT and Codex assisted
+with conceptual and experimental design, implementation and debugging,
+data extraction and analysis, literature search, mathematical exposition,
+English revision, figures, and LaTeX production. Task outcomes and effect
+labels were computed from environment execution rather than accepted from
+model judgments. Checks included source/result identity checks, tests,
+native training-label audits, paired episode recounts, and document
+compilation and layout inspection. The authors remain responsible for
+the final claims, interpretation, and artifacts.
+
+\section*{Ethics Statement}
+The study concerns simulated household tasks and provides no evidence for
+safe physical deployment. External research models process simulated
+trajectory evidence. The accompanying numerical supplement excludes
+credentials, private server locations, and identifying operational logs.
+Third-party environments and checkpoints retain their original licenses
+and access conditions. Regressions, unsuccessful tests, implementation
+changes, and human intervention are disclosed to avoid conflating system
+execution with autonomous capability improvement.
+
+\section*{Reproducibility Statement}
+Section~\ref{sec:method} defines the procedure;
+Appendix~\ref{app:protocol} specifies interventions and training;
+Appendix~\ref{app:experimental} gives the evaluation protocol and
+checkpoint context; and Appendix~\ref{app:research} documents the campaign.
+The accompanying anonymous numerical supplement contains the 355 paired
+selection records, 50 validation branch summaries, training configuration,
+and a script that recomputes the reported counts. It supports direct numerical
+verification of the tables. Independently rerunning the GPU/API campaign
+would additionally require model weights, environment replay assets, and
+API access, which are outside this numerical supplement.

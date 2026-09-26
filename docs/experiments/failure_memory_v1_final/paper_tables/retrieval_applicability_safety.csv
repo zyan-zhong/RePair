@@ -1,0 +1,5 @@
+source,row_count,coverage_count,correct_exposure_count,wrong_exposure_count,unsafe_exposure_count,harm_count,abstention_count,exposure_label_authority,harm_authority,note
+FORMAL_B,30,0,0,0,0,,30,FORMAL_B_REGISTERED_GOLD_V1,NOT_APPLICABLE_OFFLINE_RETRIEVAL,sealed pre-live retrieval authority
+STAGE1B,3,3,3,0,0,0,0,REGISTERED_DIRECT_GOLD_V1,PAIRED_TASK_SUCCESS_V1,live registered stage
+STAGE2,60,0,,,,0,60,NOT_EVALUATED_NO_REGISTERED_GOLD_V1,PAIRED_TASK_SUCCESS_V1,live registered stage
+STAGE3,140,0,,,,0,140,NOT_EVALUATED_NO_REGISTERED_GOLD_V1,PAIRED_TASK_SUCCESS_V1,live registered stage

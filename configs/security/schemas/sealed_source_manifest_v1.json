@@ -1,0 +1,30 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "bootstrap_source_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "collector_source_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "sealed_source_manifest_v1",
+      "type": "string"
+    },
+    "source_copy_contract_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "bootstrap_source_sha256",
+    "collector_source_sha256",
+    "source_copy_contract_sha256"
+  ],
+  "schema_version": 1,
+  "title": "Sealed Source Manifest V1",
+  "type": "object"
+}

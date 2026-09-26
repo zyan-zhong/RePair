@@ -1,0 +1,69 @@
+{
+  "authority_recovery": {
+    "ambiguous_distinct_leaf_content": "QUERY_REQUIRED_AMBIGUOUS",
+    "exact_file_sha256_remains_strongest_authority": true,
+    "exact_utf8_text_file_sha256_can_be_readable": true,
+    "identity_carrier_schemas": [
+      "SCIENTIFIC_UNIT_IDENTITY_V1"
+    ],
+    "identity_carrier_schemas_are_readable_authority": false,
+    "identity_field_resolution_requires_full_artifact_name_affinity": true,
+    "input_human_head": "1ef4c4ca040145e84ed1f2770fc7b94dbd0f9875",
+    "missing_leaf_content": "QUERY_REQUIRED_MISSING",
+    "recovery_version": "STRONG_HYDRATION_AUTHORITY_RECOVERY_V1",
+    "reference_only_schema_less_maps_are_readable_authority": false,
+    "sealed_round_evidence_support_receives_priority_bonus": true
+  },
+  "human_adjudication_changed": false,
+  "human_pre_frozen_by_default_run": false,
+  "identity_only_slots": [
+    "policy_scorecard.policy_checkpoint_sha256"
+  ],
+  "null_reference_rule": "A null historical reference remains ABSENT_NOT_BOUND and is never backfilled from chat history or analyst memory.",
+  "purpose": "Resolve immutable high-level Round-Evidence references into model-readable pre-outcome evidence views for the blind Strong Researcher without changing the Human scientific adjudication.",
+  "readability_policy": {
+    "full_json_object_limit_bytes": 131072,
+    "large_json_policy": "deterministic compact projection",
+    "policy_checkpoint_weights_visible": false
+  },
+  "required_readable_slots_when_bound": [
+    "policy_scorecard.policy_lineage_sha256",
+    "policy_scorecard.policy_config_sha256",
+    "policy_scorecard.task_set_manifest_sha256",
+    "policy_scorecard.rollout_census_sha256",
+    "policy_scorecard.mechanical_failure_census_sha256",
+    "analyzer_evidence.formal_result_manifest_sha256",
+    "analyzer_evidence.metric_report_sha256",
+    "experiment_history.historical_f0f1_summary_sha256",
+    "experiment_history.historical_go_nogo_ledger_sha256",
+    "experiment_history.previous_researcher_decisions_sha256",
+    "experiment_history.training_history_sha256",
+    "experiment_history.code_config_diff_manifest_sha256",
+    "resource_and_cost.resource_budget_manifest_sha256"
+  ],
+  "resolution_authority": {
+    "distinct_best_matches": "QUERY_REQUIRED_AMBIGUOUS",
+    "duplicate_copies": "Allowed only when the highest-ranked scientific content identity is identical.",
+    "missing_required": "QUERY_REQUIRED_MISSING",
+    "preferred": [
+      "exact file SHA-256 with readable JSON or UTF-8 text content",
+      "schema-bearing slot-affine leaf artifact from sealed Round-Evidence support",
+      "schema-bearing slot-affine leaf artifact from another approved frozen root"
+    ]
+  },
+  "schema_id": "STRONG_RESEARCHER_BLIND_EVIDENCE_HYDRATION_CONTRACT_V1",
+  "schema_version": 1,
+  "source_blind_input_v1_sha256": "cf6a1d4f88f7db2ad0803a1955d5e65279bab98447cda2f7a445f6a17425ffed",
+  "source_human_head": "075b49a3f59e3465d7fa165d488f68ff4e3c0dff",
+  "strong_shadow_executed_by_default_run": false,
+  "visibility_boundary": {
+    "current_f0f1_outcomes_visible": false,
+    "future_policy_evaluation_visible": false,
+    "human_pre_hash_visible": false,
+    "human_pre_visible": false,
+    "human_rationale_visible": false,
+    "human_selection_visible": false,
+    "strong_model_benchmark_per_task_results_visible": false,
+    "success_trajectory_optimization_active": false
+  }
+}

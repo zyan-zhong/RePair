@@ -1,0 +1,116 @@
+{
+  "classification_counts": {
+    "IDENTITY_OR_AUDIT_METADATA": 5,
+    "UNCLASSIFIED_REFERENCE": 12
+  },
+  "legacy_sha256": "2c514c159ee09f9dfb1f43dc6f9ced420f1f086b50fe67a6f7316ba14adc19fa",
+  "live_semantic_occurrence_count": 0,
+  "occurrence_count": 17,
+  "occurrences": [
+    {
+      "classification": "UNCLASSIFIED_REFERENCE",
+      "file_path": "/data/run01/scwb204/sdar_repro/badcase/experiments/human_reference_round_pi1_pi2_v1/human_strong_post_pipeline_v3_postfreeze_continuation/precall/FINAL_RENDERED_STRONG_RESEARCHER_POST_REQUEST_V1.json",
+      "file_sha256": "1e97bfc643ff90d23f28ad7f4613a9d30ff57ff3974bbeb61f2f35cbb5b7c6f0",
+      "json_path": "$.input_projection.reviewed_blind_input.field_adjudication_file_sha256"
+    },
+    {
+      "classification": "IDENTITY_OR_AUDIT_METADATA",
+      "file_path": "/data/run01/scwb204/sdar_repro/badcase/experiments/human_reference_round_pi1_pi2_v1/human_strong_post_pipeline_v3_postfreeze_continuation/handoff/HUMAN_STRONG_POST_ADJUDICATION_INPUT_V1.json",
+      "file_sha256": "294dcad2ba89dce7e9dc010097789b63604af09fb5f6b1e6ed487a3158e69bf2",
+      "json_path": "$.pre_field_adjudication_file_sha256"
+    },
+    {
+      "classification": "UNCLASSIFIED_REFERENCE",
+      "file_path": "/data/run01/scwb204/sdar_repro/badcase/experiments/human_reference_round_pi1_pi2_v1/human_strong_post_pipeline_v3_postfreeze_continuation/handoff/RESEARCH_PLANNER_LOCALIZATION_HANDOFF_V1.json",
+      "file_sha256": "432511340436cfbaa06c578ff13859365bcf450ee28a42c792a30548a1771466",
+      "json_path": "$.source_streams.research_planner_pre.field_adjudication_file_sha256"
+    },
+    {
+      "classification": "UNCLASSIFIED_REFERENCE",
+      "file_path": "/data/run01/scwb204/sdar_repro/badcase/experiments/human_reference_round_pi1_pi2_v1/human_strong_post_pipeline_v3_postfreeze_continuation/materialized/FINAL_STRONG_RESEARCHER_POST_PROJECTION_V1.json",
+      "file_sha256": "59f5d775dfee1c4a74368ebfbeb5dba18e9759167145ab2330578f1819aaf889",
+      "json_path": "$.reviewed_blind_input.field_adjudication_file_sha256"
+    },
+    {
+      "classification": "IDENTITY_OR_AUDIT_METADATA",
+      "file_path": "/data/run01/scwb204/sdar_repro/badcase/experiments/human_reference_round_pi1_pi2_v1/human_strong_post_pipeline_v3_postfreeze_continuation/review/handoff/HUMAN_STRONG_POST_ADJUDICATION_INPUT_V1.json",
+      "file_sha256": "294dcad2ba89dce7e9dc010097789b63604af09fb5f6b1e6ed487a3158e69bf2",
+      "json_path": "$.pre_field_adjudication_file_sha256"
+    },
+    {
+      "classification": "UNCLASSIFIED_REFERENCE",
+      "file_path": "/data/run01/scwb204/sdar_repro/badcase/experiments/human_reference_round_pi1_pi2_v1/human_strong_post_pipeline_v3_postfreeze_continuation/review/handoff/RESEARCH_PLANNER_LOCALIZATION_HANDOFF_V1.json",
+      "file_sha256": "432511340436cfbaa06c578ff13859365bcf450ee28a42c792a30548a1771466",
+      "json_path": "$.source_streams.research_planner_pre.field_adjudication_file_sha256"
+    },
+    {
+      "classification": "UNCLASSIFIED_REFERENCE",
+      "file_path": "/data/run01/scwb204/sdar_repro/badcase/experiments/human_reference_round_pi1_pi2_v1/human_strong_post_pipeline_v3_postfreeze_continuation/review/projection/FINAL_STRONG_RESEARCHER_POST_PROJECTION_V1.json",
+      "file_sha256": "59f5d775dfee1c4a74368ebfbeb5dba18e9759167145ab2330578f1819aaf889",
+      "json_path": "$.reviewed_blind_input.field_adjudication_file_sha256"
+    },
+    {
+      "classification": "IDENTITY_OR_AUDIT_METADATA",
+      "file_path": "/data/run01/scwb204/sdar_repro/badcase/experiments/human_reference_round_pi1_pi2_v1/qwen25_3b_schema_aware_renderer_adapter_and_trainer_native_preflight_v1_7_2/review/evidence/REFERENCE_TO_TAKEOVER_NORMATIVE_BRIDGE_V1.json",
+      "file_sha256": "ea9897ee17e3a661b103a21f37413097be8afc9ae4f9a4c216822135bf27c245",
+      "json_path": "$.human_reference_teacher_artifact_identities.pre_field_adjudication_file_sha256"
+    },
+    {
+      "classification": "UNCLASSIFIED_REFERENCE",
+      "file_path": "/data/run01/scwb204/sdar_repro/badcase/experiments/human_reference_round_pi1_pi2_v1/human_post_environment_binding_correction_v1/RENDERED_STRONG_RESEARCHER_POST_REQUEST_V1.json",
+      "file_sha256": "36e52aff3dde9045907026ada7de977d5114a109969d8cbd79dcd260ba294e04",
+      "json_path": "$.input_projection.reviewed_blind_input.field_adjudication_file_sha256"
+    },
+    {
+      "classification": "UNCLASSIFIED_REFERENCE",
+      "file_path": "/data/run01/scwb204/sdar_repro/badcase/experiments/human_reference_round_pi1_pi2_v1/human_post_environment_binding_correction_v1/STRONG_RESEARCHER_POST_PROJECTION_V1.json",
+      "file_sha256": "2cf2cde06265351e502e041e1cda507050f5067db48c93145f958edfdb4f4f95",
+      "json_path": "$.reviewed_blind_input.field_adjudication_file_sha256"
+    },
+    {
+      "classification": "UNCLASSIFIED_REFERENCE",
+      "file_path": "/data/run01/scwb204/sdar_repro/badcase/experiments/human_reference_round_pi1_pi2_v1/human_post_environment_binding_correction_v1/review/RENDERED_STRONG_RESEARCHER_POST_REQUEST_V1.json",
+      "file_sha256": "36e52aff3dde9045907026ada7de977d5114a109969d8cbd79dcd260ba294e04",
+      "json_path": "$.input_projection.reviewed_blind_input.field_adjudication_file_sha256"
+    },
+    {
+      "classification": "UNCLASSIFIED_REFERENCE",
+      "file_path": "/data/run01/scwb204/sdar_repro/badcase/experiments/human_reference_round_pi1_pi2_v1/human_post_environment_binding_correction_v1/review/STRONG_RESEARCHER_POST_PROJECTION_V1.json",
+      "file_sha256": "2cf2cde06265351e502e041e1cda507050f5067db48c93145f958edfdb4f4f95",
+      "json_path": "$.reviewed_blind_input.field_adjudication_file_sha256"
+    },
+    {
+      "classification": "UNCLASSIFIED_REFERENCE",
+      "file_path": "/data/run01/scwb204/sdar_repro/badcase/experiments/human_reference_round_pi1_pi2_v1/human_researcher_post_freeze_ready_v2_neutral_audit/STRONG_RESEARCHER_POST_BLIND_INPUT_V1.json",
+      "file_sha256": "87df7dade2708dfab3e2a40f0ba8dd6d8c314ac7b973add0604500e99d8dc472",
+      "json_path": "$.field_adjudication_file_sha256"
+    },
+    {
+      "classification": "UNCLASSIFIED_REFERENCE",
+      "file_path": "/data/run01/scwb204/sdar_repro/badcase/experiments/human_reference_round_pi1_pi2_v1/human_researcher_post_freeze_ready_v2_neutral_audit/review_bundle/STRONG_RESEARCHER_POST_BLIND_INPUT_V1.json",
+      "file_sha256": "87df7dade2708dfab3e2a40f0ba8dd6d8c314ac7b973add0604500e99d8dc472",
+      "json_path": "$.field_adjudication_file_sha256"
+    },
+    {
+      "classification": "UNCLASSIFIED_REFERENCE",
+      "file_path": "/data/run01/scwb204/sdar_repro/badcase/experiments/human_reference_round_pi1_pi2_v1/strong_researcher_post_shadow_v1/591ca3745d625ee3b8e04e87d499fd2cd22e6ae545638d52722e767ffa0ba4df/rendered_request.json",
+      "file_sha256": "1e97bfc643ff90d23f28ad7f4613a9d30ff57ff3974bbeb61f2f35cbb5b7c6f0",
+      "json_path": "$.input_projection.reviewed_blind_input.field_adjudication_file_sha256"
+    },
+    {
+      "classification": "IDENTITY_OR_AUDIT_METADATA",
+      "file_path": "/data/run01/scwb204/sdar_repro/badcase/experiments/human_reference_round_pi1_pi2_v1/qwen25_3b_frozen_renderer_interface_census_and_reference_takeover_bridge_v1_6/reference_takeover_bridge/REFERENCE_TO_TAKEOVER_NORMATIVE_BRIDGE_V1.json",
+      "file_sha256": "ea9897ee17e3a661b103a21f37413097be8afc9ae4f9a4c216822135bf27c245",
+      "json_path": "$.human_reference_teacher_artifact_identities.pre_field_adjudication_file_sha256"
+    },
+    {
+      "classification": "IDENTITY_OR_AUDIT_METADATA",
+      "file_path": "/data/run01/scwb204/sdar_repro/badcase/experiments/human_reference_round_pi1_pi2_v1/qwen25_3b_frozen_renderer_interface_census_and_reference_takeover_bridge_v1_6/review/evidence/REFERENCE_TO_TAKEOVER_NORMATIVE_BRIDGE_V1.json",
+      "file_sha256": "ea9897ee17e3a661b103a21f37413097be8afc9ae4f9a4c216822135bf27c245",
+      "json_path": "$.human_reference_teacher_artifact_identities.pre_field_adjudication_file_sha256"
+    }
+  ],
+  "scanned_post_consumer_file_count": 18,
+  "semantic_reachability_blocker": false,
+  "unclassified_requires_review": true
+}

@@ -1,0 +1,17 @@
+{
+  "execution_status": "NOT_APPROVED",
+  "expected_normalized_outcome": "DENIED",
+  "forbidden_side_effects": [
+    "host_write",
+    "network",
+    "new_privilege",
+    "unreviewed_process"
+  ],
+  "payload_id": "mount_operation",
+  "payload_sha256": "b286b53fa77d0539fed982cd36a230c06bf7874be880f072c113e4d4d55b77d0",
+  "permitted_side_effects": [],
+  "probe_id": "P09",
+  "profile_id": "S1_PRODUCTION_V1",
+  "schema_version": 1,
+  "timeout_seconds": 10
+}

@@ -1,0 +1,79 @@
+test_allowed_distinct_push_transport_is_preserved (test_origin_recovery.OriginRecoveryTests.test_allowed_distinct_push_transport_is_preserved) ... FAIL
+test_does_not_adopt_dirty_partial_clone (test_origin_recovery.OriginRecoveryTests.test_does_not_adopt_dirty_partial_clone) ... ok
+test_existing_stamped_clone_rechecks_pushurl (test_origin_recovery.OriginRecoveryTests.test_existing_stamped_clone_rechecks_pushurl) ... FAIL
+test_recovers_exact_old_v1_partial_clone_without_reset (test_origin_recovery.OriginRecoveryTests.test_recovers_exact_old_v1_partial_clone_without_reset) ... ERROR
+test_rejected_origin_leaves_no_partial_clone (test_origin_recovery.OriginRecoveryTests.test_rejected_origin_leaves_no_partial_clone) ... FAIL
+test_ssh443_exact_repository_forms_are_registered (test_origin_recovery.OriginRecoveryTests.test_ssh443_exact_repository_forms_are_registered) ... FAIL
+test_unapproved_pushurl_is_rejected_before_clone (test_origin_recovery.OriginRecoveryTests.test_unapproved_pushurl_is_rejected_before_clone) ... FAIL
+
+======================================================================
+ERROR: test_recovers_exact_old_v1_partial_clone_without_reset (test_origin_recovery.OriginRecoveryTests.test_recovers_exact_old_v1_partial_clone_without_reset)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/repair_work/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1_1_ORIGIN_AND_ARRAY_FIX/tests/test_origin_recovery.py", line 36, in test_recovers_exact_old_v1_partial_clone_without_reset
+    source.ensure_isolated_repo(active=a,dest=dest,cfg=c)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/repair_work/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1_1_ORIGIN_AND_ARRAY_FIX/stage4e/source.py", line 93, in ensure_isolated_repo
+    if git(dest,'config','--get','stage4e.anchor') != cfg['fixed_head']:
+       ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/repair_work/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1_1_ORIGIN_AND_ARRAY_FIX/stage4e/source.py", line 24, in git
+    return run(['git','-C',str(repo),*args],env=env)
+  File "/mnt/data/repair_work/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1_1_ORIGIN_AND_ARRAY_FIX/stage4e/source.py", line 19, in run
+    raise GateError(f'COMMAND_FAILED:{args[0]}:rc={p.returncode}\n'+p.stderr[-8000:])
+stage4e.GateError: COMMAND_FAILED:git:rc=1
+
+
+======================================================================
+FAIL: test_allowed_distinct_push_transport_is_preserved (test_origin_recovery.OriginRecoveryTests.test_allowed_distinct_push_transport_is_preserved)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/repair_work/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1_1_ORIGIN_AND_ARRAY_FIX/tests/test_origin_recovery.py", line 60, in test_allowed_distinct_push_transport_is_preserved
+    self.assertEqual(source.git(dest,'remote','get-url','--push','origin'),push)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'ssh://git@ssh.github.com:443/zyan-zhong/p[45 chars].git' != 'https://github.com/zyan-zhong/phase-criti[35 chars].git'
+- ssh://git@ssh.github.com:443/zyan-zhong/phase-critical-harness-guided-self-improvement.git
+?  --   --------          ----
++ https://github.com/zyan-zhong/phase-critical-harness-guided-self-improvement.git
+? ++++
+
+
+======================================================================
+FAIL: test_existing_stamped_clone_rechecks_pushurl (test_origin_recovery.OriginRecoveryTests.test_existing_stamped_clone_rechecks_pushurl)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/repair_work/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1_1_ORIGIN_AND_ARRAY_FIX/tests/test_origin_recovery.py", line 66, in test_existing_stamped_clone_rechecks_pushurl
+    with self.assertRaises(GateError):source.ensure_isolated_repo(active=a,dest=dest,cfg=c)
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+AssertionError: GateError not raised
+
+======================================================================
+FAIL: test_rejected_origin_leaves_no_partial_clone (test_origin_recovery.OriginRecoveryTests.test_rejected_origin_leaves_no_partial_clone)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/repair_work/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1_1_ORIGIN_AND_ARRAY_FIX/tests/test_origin_recovery.py", line 30, in test_rejected_origin_leaves_no_partial_clone
+    self.assertFalse(dest.exists(),'origin must be validated before cloning')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: True is not false : origin must be validated before cloning
+
+======================================================================
+FAIL: test_ssh443_exact_repository_forms_are_registered (test_origin_recovery.OriginRecoveryTests.test_ssh443_exact_repository_forms_are_registered)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/repair_work/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1_1_ORIGIN_AND_ARRAY_FIX/tests/test_origin_recovery.py", line 24, in test_ssh443_exact_repository_forms_are_registered
+    self.assertIn(prefix+stem,cfg['allowed_origin_urls'])
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'ssh://git@ssh.github.com:443/zyan-zhong/phase-critical-harness-guided-self-improvement.git' not found in ['https://github.com/zyan-zhong/phase-critical-harness-guided-self-improvement.git', 'git@github.com:zyan-zhong/phase-critical-harness-guided-self-improvement.git', 'https://github.com/zyan-zhong/phase-critical-harness-guided-self-improvement']
+
+======================================================================
+FAIL: test_unapproved_pushurl_is_rejected_before_clone (test_origin_recovery.OriginRecoveryTests.test_unapproved_pushurl_is_rejected_before_clone)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/repair_work/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1_1_ORIGIN_AND_ARRAY_FIX/tests/test_origin_recovery.py", line 51, in test_unapproved_pushurl_is_rejected_before_clone
+    with self.assertRaisesRegex(GateError,'ORIGIN'):
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+AssertionError: GateError not raised
+
+----------------------------------------------------------------------
+Ran 7 tests in 1.093s
+
+FAILED (failures=5, errors=1)

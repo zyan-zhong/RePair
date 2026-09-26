@@ -1,0 +1,147 @@
+--- reviewed_original/shard_worker.py
++++ producer/shard_worker.py
+@@ -22,6 +22,7 @@
+     load_module,
+ )
+ from global_finalize import try_finalize
++from fresh_round_contract import (request_from_plan, validate_attempt_ordinal, schedule_for_attempt, validate_request_against_capsule, profile_from_binding)
+ 
+ 
+ def git(repo:Path,*args:str)->str:
+@@ -185,6 +186,8 @@
+     started=time.monotonic()
+ 
+     try:
++        if sha_file(capsule) != shard_plan["repaired_capsule_sha256"]:
++            raise RuntimeError("SHARD_CAPSULE_SHA_CHANGED")
+         if not extracted.exists():safe_extract_zip(capsule,extracted)
+         binding=load_json(extracted/"ROUND_MEMORY_AWARE_GENERIC_ROLLOUT_EXECUTION_BINDING_V1.json")
+         allocation_contract=load_json(extracted/"ROUND_MEMORY_AWARE_GENERIC_ROLLOUT_ALLOCATION_PREFLIGHT_V1.json")
+@@ -194,6 +197,16 @@
+         if git(worktree,"status","--porcelain=v1","--untracked-files=all"):
+             raise RuntimeError("SHARD_IMPLEMENTATION_WORKTREE_DIRTY")
+         sys.path.insert(0,str(worktree/"src"))
++        current_request=request_from_plan(shard_plan)
++        validate_attempt_ordinal(shard_plan["fresh_execution_attempt_ordinal"])
++        if current_request is None and shard_plan["fresh_execution_attempt_ordinal"] == 0:
++            raise RuntimeError("ZERO_ORDINAL_REQUIRES_CURRENT_REQUEST_AUTHORITY")
++        # Resolve only the input identities read by this original producer.
++        runtime_path=find_capsule_file_by_sha(extracted,expected_sha256=binding["runtime_authority"]["runtime_binding_file_sha256"],suffixes=(".json",))
++        memory_path=find_capsule_file_by_sha(extracted,expected_sha256=binding["memory_authority"]["runtime_identity_file_sha256"],suffixes=(".json",))
++        if current_request is not None:
++            _,bound_profile=profile_from_binding(binding)
++            validate_request_against_capsule(current_request,binding,runtime_path,memory_path,bound_profile)
+ 
+         alloc_mod=load_module("v1232s_alloc_"+str(shard_id),extracted/"allocation_preflight.py")
+         import torch
+@@ -277,20 +290,8 @@
+         schedule=build_clean_train_schedule(
+           records=records,train_pool="TRAIN_UPDATE",seed=train_auth["rollout_seed"]
+         )
+-        fresh_attempt_ordinal=int(shard_plan["fresh_execution_attempt_ordinal"])
+-        if fresh_attempt_ordinal<=0:
+-            raise RuntimeError("FRESH_EXECUTION_ATTEMPT_ORDINAL_INVALID")
+-        schedule=tuple(
+-          dataclass_replace(
+-            cell,
+-            attempt_ordinal=fresh_attempt_ordinal,
+-            execution_attempt_id=execution_attempt_id(
+-              scheduled_cell_id=cell.cell.scheduled_cell_id,
+-              attempt_ordinal=fresh_attempt_ordinal,
+-            ),
+-          )
+-          for cell in schedule
+-        )
++        fresh_attempt_ordinal=validate_attempt_ordinal(shard_plan["fresh_execution_attempt_ordinal"])
++        schedule=schedule_for_attempt(schedule,fresh_attempt_ordinal,execution_attempt_id)
+         assigned=shard_positions(len(schedule),shard_count,shard_id)
+         by_index={r.index:r for r in records}
+         write_new_json(shard_root/"PCHSI_V1232S_SHARD_SCHEDULE_V1.json",{
+@@ -320,6 +321,8 @@
+         profile_path=evidence/"ROUND_BOUND_POLICY_EXECUTION_PROFILE_V1.json"
+         write_or_verify_json(profile_path,profile_artifact)
+         profile_sha=sha_file(profile_path)
++        if current_request is not None and profile_sha!=current_request.execution_profile_sha256:
++            raise RuntimeError("WORKER_CURRENT_PROFILE_SHA_MISMATCH")
+ 
+         access_path=shard_root/"ROUND_TRAIN_UPDATE_ACCESS_AUTHORITY_V1.json"
+         write_new_json(access_path,{
+--- reviewed_original/global_finalize.py
++++ producer/global_finalize.py
+@@ -7,6 +7,7 @@
+ 
+ from safe_io import load_json, sha_file, write_new_json
+ from shard_math import shard_positions
++from fresh_round_contract import (load_current_request, request_from_plan, schedule_for_attempt, validate_request_against_capsule)
+ 
+ 
+ def try_finalize(
+@@ -102,6 +103,8 @@
+             train_pool="TRAIN_UPDATE",
+             seed=train["rollout_seed"],
+         )
++        from pchsi.evaluation.run_schedule import execution_attempt_id
++        schedule=schedule_for_attempt(schedule,shard_plan["fresh_execution_attempt_ordinal"],execution_attempt_id)
+         total=len(schedule)
+         if total!=int(shard_plan["total_schedule_count"]):
+             raise RuntimeError("GLOBAL_SCHEDULE_COUNT_CHANGED")
+@@ -111,20 +114,25 @@
+             raise RuntimeError("GLOBAL_PROFILE_AUTHORITY_MISSING")
+         profile_sha=sha_file(profile_path)
+ 
+-        request=RoundRolloutCollectionRequestV1(
+-            round_id=binding["round_id"],
+-            execution_attempt_id=str(shard_plan["activation_id"]),
+-            parent_policy_id=binding["parent_policy_id"],
+-            parent_policy_artifact_sha256=runtime_obj["policy_runtime_manifest_sha256"],
+-            policy_runtime_binding_sha256=sha_file(runtime_path),
+-            execution_profile_sha256=profile_sha,
+-            train_update_manifest_sha256=train["manifest_sha256"],
+-            round_memory_runtime_authority_sha256=sha_file(memory_path),
+-            round_start_memory_snapshot_sha256=memory["active_snapshot_sha256"],
+-            token_budget_contract_sha256=memory["token_budget_contract_sha256"],
+-            execution_namespace=str(shard_plan["activation_id"]),
+-            rollout_seed=train["rollout_seed"],
+-        )
++        current_request=request_from_plan(shard_plan)
++        if current_request is not None:
++            validate_request_against_capsule(current_request,binding,runtime_path,memory_path,load_json(profile_path))
++            request=current_request
++        else:
++            request=RoundRolloutCollectionRequestV1(
++                round_id=binding["round_id"],
++                execution_attempt_id=str(shard_plan["activation_id"]),
++                parent_policy_id=binding["parent_policy_id"],
++                parent_policy_artifact_sha256=runtime_obj["policy_runtime_manifest_sha256"],
++                policy_runtime_binding_sha256=sha_file(runtime_path),
++                execution_profile_sha256=profile_sha,
++                train_update_manifest_sha256=train["manifest_sha256"],
++                round_memory_runtime_authority_sha256=sha_file(memory_path),
++                round_start_memory_snapshot_sha256=memory["active_snapshot_sha256"],
++                token_budget_contract_sha256=memory["token_budget_contract_sha256"],
++                execution_namespace=str(shard_plan["activation_id"]),
++                rollout_seed=train["rollout_seed"],
++            )
+         request_path=evidence/"ROUND_ROLLOUT_COLLECTION_REQUEST_V1.json"
+         if not request_path.exists():
+             write_new_json(request_path,request.to_dict())
+@@ -195,7 +203,7 @@
+                   "global_ordinal":ordinal,
+                   "scientific_cell_id":entry["scientific_cell_id"],
+                   "shard_id":shard_id,
+-                  "attempt_bundle_path":entry.get("attempt_bundle_path"),
++                  "attempt_bundle_path":(str(Path(entry["attempt_bundle_root"])/entry["execution_attempt_id"]) if entry.get("attempt_bundle_root") else entry.get("attempt_bundle_path")),
+                   "attempt_terminal_path":entry.get("attempt_terminal_path"),
+                 })
+             if tuple(sorted(observed_ordinals))!=assigned:
+@@ -265,8 +273,8 @@
+         handoff_path=evidence/"ROUND_ROLLOUT_EVIDENCE_HANDOFF_V1.json"
+         write_new_json(handoff_path,{
+           "schema_id":"ROUND_ROLLOUT_EVIDENCE_HANDOFF_V1","schema_version":1,
+-          "round_id":binding["round_id"],
+-          "parent_policy_id":binding["parent_policy_id"],
++          "round_id":request.round_id,
++          "parent_policy_id":request.parent_policy_id,
+           "rollout_request_path":str(request_path),
+           "rollout_request_sha256":sha_file(request_path),
+           "rollout_execution_binding_path":str(exec_path),

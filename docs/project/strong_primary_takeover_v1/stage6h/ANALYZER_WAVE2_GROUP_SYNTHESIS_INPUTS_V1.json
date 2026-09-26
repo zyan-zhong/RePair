@@ -1,0 +1,474 @@
+{
+  "inputs": [
+    {
+      "base_memory_exposed": false,
+      "group_manifest_sha256": "ebda12897d785def6b3a25ecc2b1e59a035510fe070da39d0a2879cad49af39a",
+      "group_synthesis_input_sha256": "6bc5df57dd9a6113dcd144f774dd341f5a2ce34f44e43f42f960c0438fc1d8fd",
+      "member_rows": [
+        {
+          "error_instance_id": "error-3-terminal-inadmissible-repeat",
+          "local_result_sha256": "71595694a62552d1d5f75e74b2e784ca0c5b1839e120b0446913e07f4660a5af",
+          "menu_sha256": "cf22ff4f78ce65ca6ef82e607280f21281831ba02b52445fdae5059f9b57d0f8",
+          "proposal_slot_limit": 1,
+          "source_call_index": 1,
+          "source_state_sha256": "5d7095a753302a880087664896ce01afa9652f674663138951ec05d23e2945ad"
+        }
+      ],
+      "schema_id": "ANALYZER_GROUP_SYNTHESIS_INPUT_V1",
+      "schema_version": 1
+    },
+    {
+      "base_memory_exposed": false,
+      "group_manifest_sha256": "f9619427fd088648a370b6e62290f1c9e9375b6313b1c7dd6c8664b34f50d197",
+      "group_synthesis_input_sha256": "14a659cc599abfcfb5e3f33d51784c10bcb081bc885f66b2f598d3fbd834b391",
+      "member_rows": [
+        {
+          "error_instance_id": "error_repetitive_examine_loop",
+          "local_result_sha256": "aa48a34ad31eaf6f80fa517845c77241731a2228803bdede2f0904a20f01a620",
+          "menu_sha256": "b4e716d8acc36b9246bd722b95dbb28d765e3b703ac9be03e167e2b860225a30",
+          "proposal_slot_limit": 1,
+          "source_call_index": 2,
+          "source_state_sha256": "b602bcdaf640eef12c173f8b7a7f66ac382045ca5f56a015fd26efa52aecf07d"
+        }
+      ],
+      "schema_id": "ANALYZER_GROUP_SYNTHESIS_INPUT_V1",
+      "schema_version": 1
+    },
+    {
+      "base_memory_exposed": false,
+      "group_manifest_sha256": "66429703fd7c5be420bba55208b48dfc35a2209613ea974ba5e651334ced36f4",
+      "group_synthesis_input_sha256": "d80dbf08ca39ba18b569c18a66d3b80b03dc6fa7c51bdc5880ef3a4e8343d4f2",
+      "member_rows": [
+        {
+          "error_instance_id": "E5-TERMINAL-INADMISSIBLE-PERSEVERATION",
+          "local_result_sha256": "cc936c5ffaed4602cb04374efa9b01ad346fe9cb6b4547a527789b64e58f92a3",
+          "menu_sha256": "9bb7b1576fc523c0d7c82ee9685f870af1f05dc8d419752c7853efce4dfe3594",
+          "proposal_slot_limit": 1,
+          "source_call_index": 12,
+          "source_state_sha256": "ab40c1be81edc1c904be57f2b84985b055c82dd6454e1ffb686afb1d5bf06282"
+        }
+      ],
+      "schema_id": "ANALYZER_GROUP_SYNTHESIS_INPUT_V1",
+      "schema_version": 1
+    },
+    {
+      "base_memory_exposed": false,
+      "group_manifest_sha256": "667d58be49108f1f4c90101cac74b203442d029b8e3046bb8c3a9acd102dd20d",
+      "group_synthesis_input_sha256": "f256a7407a1cc05899c3658b7fa1d2b0ed18e952c9d9638983b0348cce12cafe",
+      "member_rows": [
+        {
+          "error_instance_id": "E4_GOAL_WORKFLOW_NOT_INITIATED",
+          "local_result_sha256": "3978bad8c019dad3bd4aa4abc7b890d0f5bac791ebd31337093147e0b2685b12",
+          "menu_sha256": "f34387f336d1cb852a198467bcf6f360fe3f6d8659b33e662b2c323aaa1e7ba4",
+          "proposal_slot_limit": 1,
+          "source_call_index": 11,
+          "source_state_sha256": "5fccf26a33c6f797fcb31034f9d4eb36b35003bc5029af8fa92934b67a85e7bf"
+        }
+      ],
+      "schema_id": "ANALYZER_GROUP_SYNTHESIS_INPUT_V1",
+      "schema_version": 1
+    },
+    {
+      "base_memory_exposed": false,
+      "group_manifest_sha256": "66506b76eb8034e4153df9ccaea437b58861394486ae97828fd2e4898632737d",
+      "group_synthesis_input_sha256": "c6f01838c3354ac89c02399d6ac683c35f8f6bffb9675215ee2f5ffa917a5d65",
+      "member_rows": [
+        {
+          "error_instance_id": "error-initial-inadmissible-command",
+          "local_result_sha256": "856749aa36e54688b928ec7a2811c381ce0b155bea5a5ac96fba119892e6506b",
+          "menu_sha256": "1f1141c78e444c009c858928961229eadba7d1c2dea90507ec41a2aebf46f8c6",
+          "proposal_slot_limit": 1,
+          "source_call_index": 1,
+          "source_state_sha256": "cff452dea551d84cb9b7a139b8dfcdf661e5fde1600ba9aa9485880821e51644"
+        },
+        {
+          "error_instance_id": "ERR_MENU_NONCOMPLIANCE_INITIAL",
+          "local_result_sha256": "f69da5f566fc9627828738f4adba4ee484dafdbd3965807ff07d4ab1d07e6884",
+          "menu_sha256": "284a20d7c9a73163f92eb13ddc9a2328628e0872f908e7a1cd62b461a8a9f701",
+          "proposal_slot_limit": 1,
+          "source_call_index": 1,
+          "source_state_sha256": "6858ffc60241d36c092f4ea3347bbc705903360aa3426b88b90fb0358ab0bc51"
+        }
+      ],
+      "schema_id": "ANALYZER_GROUP_SYNTHESIS_INPUT_V1",
+      "schema_version": 1
+    },
+    {
+      "base_memory_exposed": false,
+      "group_manifest_sha256": "dabdc82221a57b048ea64a6e61a868294b7a38aeead921cf4db10e338599b3ad",
+      "group_synthesis_input_sha256": "6517e09ccddb3299ccf78694e232fb2673495f50f4cab7c1f3ce94610ba91f99",
+      "member_rows": [
+        {
+          "error_instance_id": "E2_GOAL_OBJECT_SEARCH_AND_IDENTITY_DRIFT",
+          "local_result_sha256": "c66bfeca7485d653c12da2017d5ccf68730b1b86708f6b0e7fdb504c1a90eb04",
+          "menu_sha256": "3d8df575243cc346ace90d57321e0970903f2a5849485c6c5d74f762f1f2b740",
+          "proposal_slot_limit": 1,
+          "source_call_index": 27,
+          "source_state_sha256": "862a07a17cabcf8123eaa3416552ee85a7a8c7ad801ff57c0cc8f7d61009eba9"
+        }
+      ],
+      "schema_id": "ANALYZER_GROUP_SYNTHESIS_INPUT_V1",
+      "schema_version": 1
+    },
+    {
+      "base_memory_exposed": false,
+      "group_manifest_sha256": "970c6a36956fca96209a5ce6d29d71df16ad4da9c564806fa458e969774d0f26",
+      "group_synthesis_input_sha256": "d39e329cc69c1a4022f6ce1a5445007ce33977cda0e5c1f28bf57db2158d5de1",
+      "member_rows": [
+        {
+          "error_instance_id": "E1_INITIAL_INADMISSIBLE_ACTION",
+          "local_result_sha256": "6b5db4cf77078a7c80dd2a2a65878bc1e1307fca4be32a1b6896b3b1ff095214",
+          "menu_sha256": "62c5c6173573ec2b33a63d4e967ed217ae5ea89eefb051ec72cc608a713da800",
+          "proposal_slot_limit": 1,
+          "source_call_index": 1,
+          "source_state_sha256": "339a27410f49670c66e1e2d75905300502a5644ab2f82c90b9f0baa5414fda71"
+        }
+      ],
+      "schema_id": "ANALYZER_GROUP_SYNTHESIS_INPUT_V1",
+      "schema_version": 1
+    },
+    {
+      "base_memory_exposed": false,
+      "group_manifest_sha256": "7b1aef7129bc24aa2321a38d73532763d1da36078989ce5f7be54dc4bf90f8a8",
+      "group_synthesis_input_sha256": "b0dbbad8e95eead01daf105e6ae085758becceafbf466144bcf09889f363b1cd",
+      "member_rows": [
+        {
+          "error_instance_id": "error-1-repeated-inadmissible-current-location-navigation",
+          "local_result_sha256": "bd7a708d04f85a425b205265fc898fa850a189d1ba7fd7cece9b5be95c27eeb1",
+          "menu_sha256": "eb5338410bfdd796b262731ac5ee578553fe04e5f64b750735f565ab0b64095f",
+          "proposal_slot_limit": 1,
+          "source_call_index": 4,
+          "source_state_sha256": "07169925e09855691720f53b24154f9a22e57f7716e6da3637e1364550d18654"
+        }
+      ],
+      "schema_id": "ANALYZER_GROUP_SYNTHESIS_INPUT_V1",
+      "schema_version": 1
+    },
+    {
+      "base_memory_exposed": false,
+      "group_manifest_sha256": "026d1379fb25041d4984dbcf74be297b8152837725c74267c554fd7bbbdd1a98",
+      "group_synthesis_input_sha256": "fa16445f035f0e90689e153fc8475cdfd48d52709358ea2ab70332e54f04869c",
+      "member_rows": [
+        {
+          "error_instance_id": "E5_TERMINAL_OPEN_CABINET_REPEAT",
+          "local_result_sha256": "c66bfeca7485d653c12da2017d5ccf68730b1b86708f6b0e7fdb504c1a90eb04",
+          "menu_sha256": "3d8df575243cc346ace90d57321e0970903f2a5849485c6c5d74f762f1f2b740",
+          "proposal_slot_limit": 1,
+          "source_call_index": 27,
+          "source_state_sha256": "862a07a17cabcf8123eaa3416552ee85a7a8c7ad801ff57c0cc8f7d61009eba9"
+        }
+      ],
+      "schema_id": "ANALYZER_GROUP_SYNTHESIS_INPUT_V1",
+      "schema_version": 1
+    },
+    {
+      "base_memory_exposed": false,
+      "group_manifest_sha256": "645f35774fc04e64c52e9894d4eb76d5f86acb30d479c090ddc3eb07393af1dc",
+      "group_synthesis_input_sha256": "ec04782968eee576db5ee42c15fedba5887ea97918bce7fde212b923eb0c9700",
+      "member_rows": [
+        {
+          "error_instance_id": "error-terminal-inadmissible-run-calls-6-8",
+          "local_result_sha256": "a947f66b1c77a06d17233b1a018b410f6024590160bc453c3c07a73507c15ba9",
+          "menu_sha256": "7df1cb96a5455be4dd8dbc07e2416f184d3dd7abd5bfe5fccdb648a69b6de91e",
+          "proposal_slot_limit": 1,
+          "source_call_index": 6,
+          "source_state_sha256": "781e7bd2d8e6fae4ea82e377265dce521b72bb57b9fb7608dd3ff2d535caba79"
+        }
+      ],
+      "schema_id": "ANALYZER_GROUP_SYNTHESIS_INPUT_V1",
+      "schema_version": 1
+    },
+    {
+      "base_memory_exposed": false,
+      "group_manifest_sha256": "4e9d282cb5c9aad59d57488f08e3e95febcabef133a037b46137b221a1a11b4b",
+      "group_synthesis_input_sha256": "9b730787903603f9e102c0b655b49c15593aa8e8f83b06ebbb8029c163a09869",
+      "member_rows": [
+        {
+          "error_instance_id": "E3_COOLING_STAGE_OMITTED",
+          "local_result_sha256": "53b5bc7a2c7d66fd69a3ad68e26e71c321257839fa46d1026e8a9da14c2c8be9",
+          "menu_sha256": "7ee5f9f12fb0c3182882fd8f0a87539d2da7c4bf8966dd04db62d881a6151776",
+          "proposal_slot_limit": 1,
+          "source_call_index": 14,
+          "source_state_sha256": "09e630294120fa7931cdb0ea9cd7ecbaead339740da804c44ed2ce50c5091b73"
+        }
+      ],
+      "schema_id": "ANALYZER_GROUP_SYNTHESIS_INPUT_V1",
+      "schema_version": 1
+    },
+    {
+      "base_memory_exposed": false,
+      "group_manifest_sha256": "641de0230a046295e8a8c03e7b875f6822a38c357fa06e922c15bf0306538167",
+      "group_synthesis_input_sha256": "a23f3225cf00a11cd42c12072b220b28110d05c45b31dc15fb66fbf77bbaa675",
+      "member_rows": [
+        {
+          "error_instance_id": "ERR_FEEDBACK_NONADAPTATION",
+          "local_result_sha256": "ea5560eca15ba8d5639f3660d1a63854ecea61e494e012ae5b7af52f5419e32b",
+          "menu_sha256": "c2bc7e50599206b395ad727576f012e6a58f639b3c8a4f2351c0fd91d56f5ef6",
+          "proposal_slot_limit": 1,
+          "source_call_index": 4,
+          "source_state_sha256": "ece194aa6516b9acdf0d848cfa87c312561a4902a17c453df461d31df7979a17"
+        }
+      ],
+      "schema_id": "ANALYZER_GROUP_SYNTHESIS_INPUT_V1",
+      "schema_version": 1
+    },
+    {
+      "base_memory_exposed": false,
+      "group_manifest_sha256": "68348974cc7c72d24271ce867feaeb330103cb6050da4080ed10e8958a884b91",
+      "group_synthesis_input_sha256": "b382a1a35daa47b443285a0c51aff4b93d01072bea00d0b6687f81ba9e9e4d84",
+      "member_rows": [
+        {
+          "error_instance_id": "E4_PILLOW_MANIPULATION_LOOP",
+          "local_result_sha256": "831c70e9736c36721d34568c1b6cbed5fe3894961c141df8cf2ea366d17d0ae7",
+          "menu_sha256": "9e678ec2099c0818c4f9a841f6f52084822beeaff3346fb2e7a0ef1b71c99e3d",
+          "proposal_slot_limit": 1,
+          "source_call_index": 0,
+          "source_state_sha256": "f81f9d639d4c2bd57adac9e58c37ba4cf1e1608f89ee3bb92078d8a6fed44a0d"
+        }
+      ],
+      "schema_id": "ANALYZER_GROUP_SYNTHESIS_INPUT_V1",
+      "schema_version": 1
+    },
+    {
+      "base_memory_exposed": false,
+      "group_manifest_sha256": "e2d77496134944bd71b96640bed0d1a4c3c951bb391abdf6ee98c28104310efa",
+      "group_synthesis_input_sha256": "1069d62155749dc2062d3c4154d231d381d6ef677ae39a5bfa858184c3527366",
+      "member_rows": [
+        {
+          "error_instance_id": "error-2-failed-first-recovery",
+          "local_result_sha256": "71595694a62552d1d5f75e74b2e784ca0c5b1839e120b0446913e07f4660a5af",
+          "menu_sha256": "cf22ff4f78ce65ca6ef82e607280f21281831ba02b52445fdae5059f9b57d0f8",
+          "proposal_slot_limit": 1,
+          "source_call_index": 1,
+          "source_state_sha256": "5d7095a753302a880087664896ce01afa9652f674663138951ec05d23e2945ad"
+        }
+      ],
+      "schema_id": "ANALYZER_GROUP_SYNTHESIS_INPUT_V1",
+      "schema_version": 1
+    },
+    {
+      "base_memory_exposed": false,
+      "group_manifest_sha256": "a1e9e8f150d41ad5953bce8db534b45b5d540c7e7c9f26d831c9475b83ce73c9",
+      "group_synthesis_input_sha256": "76bdd2fbe93f48673ab37fd6d098742c57ea7138785129ae413f322fb4c2e810",
+      "member_rows": [
+        {
+          "error_instance_id": "ERR_PREREQUISITE_OMISSION",
+          "local_result_sha256": "8c77ee2d2df95c24b76b646fc960c63898c84b8a45e1f9f30cb2bc64131dd8ba",
+          "menu_sha256": "6315d3e0a19333f99f9eb91c4b4292673b58dbef6dcb8e228f893e8850fb9b5a",
+          "proposal_slot_limit": 1,
+          "source_call_index": 2,
+          "source_state_sha256": "4238fa5d0a62d5e9da9d79965ebb356ad1d1296a8508db8a26577dd42fb501d6"
+        }
+      ],
+      "schema_id": "ANALYZER_GROUP_SYNTHESIS_INPUT_V1",
+      "schema_version": 1
+    },
+    {
+      "base_memory_exposed": false,
+      "group_manifest_sha256": "23d8f79e49e1999ae4dbd07f6a3796a1a329ee84206582eb3f63384bb893d72c",
+      "group_synthesis_input_sha256": "07025a326dc1dae33d71f58fd12825894cf1599d17a6d7c8dde21d8e53a344d4",
+      "member_rows": [
+        {
+          "error_instance_id": "error-wrong-object-pickup-call-5",
+          "local_result_sha256": "a947f66b1c77a06d17233b1a018b410f6024590160bc453c3c07a73507c15ba9",
+          "menu_sha256": "7df1cb96a5455be4dd8dbc07e2416f184d3dd7abd5bfe5fccdb648a69b6de91e",
+          "proposal_slot_limit": 1,
+          "source_call_index": 6,
+          "source_state_sha256": "781e7bd2d8e6fae4ea82e377265dce521b72bb57b9fb7608dd3ff2d535caba79"
+        }
+      ],
+      "schema_id": "ANALYZER_GROUP_SYNTHESIS_INPUT_V1",
+      "schema_version": 1
+    },
+    {
+      "base_memory_exposed": false,
+      "group_manifest_sha256": "fc874759c87f5b95a8621f8ae0adcd968e63f32800616751efa25db1c7e31d55",
+      "group_synthesis_input_sha256": "bef28821717161d214477810e38eee0ccd22bc359b3575041cc67f8d3f6398c4",
+      "member_rows": [
+        {
+          "error_instance_id": "ERR-3-REPEATED-INADMISSIBLE-NAVIGATION",
+          "local_result_sha256": "f9df42a955607a1f7dfe082c42cc3acc18b8d69fbe515a14ce08288253a4de5e",
+          "menu_sha256": "60220355be5cdca4b08498f419db1ac60ff3a2e3aa28b2757f15b04cbfd85732",
+          "proposal_slot_limit": 1,
+          "source_call_index": 3,
+          "source_state_sha256": "116b23e9c6192e571c632acd8a9b08bc80e16e742b402785f4db1e2c5e192ab7"
+        }
+      ],
+      "schema_id": "ANALYZER_GROUP_SYNTHESIS_INPUT_V1",
+      "schema_version": 1
+    },
+    {
+      "base_memory_exposed": false,
+      "group_manifest_sha256": "31e5afd4ea22ccc4402b6b762b7c7fcabddcc0c4510d4675bdcc18b60aaaad5f",
+      "group_synthesis_input_sha256": "20f5bb0e06e5b2e2c775b6edd8cc0fcdf3cce33e3e3aa12c9c3b191aa8574c26",
+      "member_rows": [
+        {
+          "error_instance_id": "ERR-2-WRONG-GOAL-OBJECT-ACQUISITION",
+          "local_result_sha256": "f9df42a955607a1f7dfe082c42cc3acc18b8d69fbe515a14ce08288253a4de5e",
+          "menu_sha256": "60220355be5cdca4b08498f419db1ac60ff3a2e3aa28b2757f15b04cbfd85732",
+          "proposal_slot_limit": 1,
+          "source_call_index": 3,
+          "source_state_sha256": "116b23e9c6192e571c632acd8a9b08bc80e16e742b402785f4db1e2c5e192ab7"
+        }
+      ],
+      "schema_id": "ANALYZER_GROUP_SYNTHESIS_INPUT_V1",
+      "schema_version": 1
+    },
+    {
+      "base_memory_exposed": false,
+      "group_manifest_sha256": "3fe3c5b62418ce1fa4b986f0fd5813d77b1346b189493289fe530028e952d7fe",
+      "group_synthesis_input_sha256": "b722cc5b7f8cdb4e226e4d868610231be349c1c23d802670cba9184b94ac1ff9",
+      "member_rows": [
+        {
+          "error_instance_id": "ERR_INITIAL_INADMISSIBLE_NAVIGATION",
+          "local_result_sha256": "ea5560eca15ba8d5639f3660d1a63854ecea61e494e012ae5b7af52f5419e32b",
+          "menu_sha256": "c2bc7e50599206b395ad727576f012e6a58f639b3c8a4f2351c0fd91d56f5ef6",
+          "proposal_slot_limit": 1,
+          "source_call_index": 4,
+          "source_state_sha256": "ece194aa6516b9acdf0d848cfa87c312561a4902a17c453df461d31df7979a17"
+        }
+      ],
+      "schema_id": "ANALYZER_GROUP_SYNTHESIS_INPUT_V1",
+      "schema_version": 1
+    },
+    {
+      "base_memory_exposed": false,
+      "group_manifest_sha256": "b8da99e89a182fef7f96fc7da768dac4c151f0860074819d31fd655c6066155a",
+      "group_synthesis_input_sha256": "ff61d04a73709c7fd245b65affc572bcadca56607d242ab1079dbd4d2c66d65c",
+      "member_rows": [
+        {
+          "error_instance_id": "ERR-INADMISSIBLE-COUNTERTOP-NAVIGATION",
+          "local_result_sha256": "56b319c7d3b4f1d507e17271aa0b854a5e0808c2b5da10c2257f86446d76a55e",
+          "menu_sha256": "62f3112647fc2ae47fea2a3cda08fb5ff4f434313b7ff08c958dee719fa92792",
+          "proposal_slot_limit": 1,
+          "source_call_index": 3,
+          "source_state_sha256": "7a8d00ae65903c35cc7e4c3d2d70e8a50c4009b874a5f25d0bbe1f1e031ef789"
+        }
+      ],
+      "schema_id": "ANALYZER_GROUP_SYNTHESIS_INPUT_V1",
+      "schema_version": 1
+    },
+    {
+      "base_memory_exposed": false,
+      "group_manifest_sha256": "751e921fb8ceb53ae1c4d09ce6f9785a3b71b8d036ca3176d3e42fcdda708562",
+      "group_synthesis_input_sha256": "96a7668e537495ed7b59d9e668137a0509c75f4e7b432726edbdf44e9294c7bf",
+      "member_rows": [
+        {
+          "error_instance_id": "E1_MULTILINE_PROTOCOL_FAILURE",
+          "local_result_sha256": "5c2fc4b144e92271938ec8475229c6c7ca415400a8eb5c190f8bea4d4635bd6a",
+          "menu_sha256": "5c654288f6da5b5d7b72531c5a2ee7f048992cf4749d7c14e98739543eab11da",
+          "proposal_slot_limit": 1,
+          "source_call_index": 4,
+          "source_state_sha256": "ccd34f5d6b2c1830a9209a58b6d1be2bac29a93d3a73242a8d0f34bbeb02c044"
+        }
+      ],
+      "schema_id": "ANALYZER_GROUP_SYNTHESIS_INPUT_V1",
+      "schema_version": 1
+    },
+    {
+      "base_memory_exposed": false,
+      "group_manifest_sha256": "c6e31908658011c9aee5b7bf1419876f44413e1626c117ead005161a6880f9c5",
+      "group_synthesis_input_sha256": "e1124be1d22697431c0e2a14c8ea583cb3346ed8923e8f1db82fea0be0805c37",
+      "member_rows": [
+        {
+          "error_instance_id": "ERR-REPEATED-NO-EFFECT-EXAMINATION",
+          "local_result_sha256": "56b319c7d3b4f1d507e17271aa0b854a5e0808c2b5da10c2257f86446d76a55e",
+          "menu_sha256": "62f3112647fc2ae47fea2a3cda08fb5ff4f434313b7ff08c958dee719fa92792",
+          "proposal_slot_limit": 1,
+          "source_call_index": 3,
+          "source_state_sha256": "7a8d00ae65903c35cc7e4c3d2d70e8a50c4009b874a5f25d0bbe1f1e031ef789"
+        }
+      ],
+      "schema_id": "ANALYZER_GROUP_SYNTHESIS_INPUT_V1",
+      "schema_version": 1
+    },
+    {
+      "base_memory_exposed": false,
+      "group_manifest_sha256": "c02e27b5d189666f6bbdba96fbb73926bad836208bf2e5ed6717d36e1523dafb",
+      "group_synthesis_input_sha256": "ab9749fd3b5945f19107c92a3fcff6617236857c67954189beff18d131d4d5fd",
+      "member_rows": [
+        {
+          "error_instance_id": "ERR-2-REPEATED-COOLING-AFTER-TREATMENT",
+          "local_result_sha256": "b1e6ff320b538ded90a43385be1fc025be03235f25175526872d2bdb39832fe1",
+          "menu_sha256": "d1a3c7649aba8f49e638a187227f39281a17b2dc23dc89bfb63f93c9c1014b73",
+          "proposal_slot_limit": 1,
+          "source_call_index": 23,
+          "source_state_sha256": "d0eb3fc9ae65a49132ece8515e4409e8ab84593a4ae2dccbeaeaec06bfe54a3e"
+        }
+      ],
+      "schema_id": "ANALYZER_GROUP_SYNTHESIS_INPUT_V1",
+      "schema_version": 1
+    },
+    {
+      "base_memory_exposed": false,
+      "group_manifest_sha256": "7e2fa5f5d0c95cfaba5fa567677de293251d2d56565f7ffe811f0e35b64210d2",
+      "group_synthesis_input_sha256": "6a8bae5f7c246e54b291e826e8e1206aac44d6208a48f2851413ee97b0e62717",
+      "member_rows": [
+        {
+          "error_instance_id": "E3_NO_EFFECT_EXAMINATION_PERSEVERATION",
+          "local_result_sha256": "3978bad8c019dad3bd4aa4abc7b890d0f5bac791ebd31337093147e0b2685b12",
+          "menu_sha256": "f34387f336d1cb852a198467bcf6f360fe3f6d8659b33e662b2c323aaa1e7ba4",
+          "proposal_slot_limit": 1,
+          "source_call_index": 11,
+          "source_state_sha256": "5fccf26a33c6f797fcb31034f9d4eb36b35003bc5029af8fa92934b67a85e7bf"
+        }
+      ],
+      "schema_id": "ANALYZER_GROUP_SYNTHESIS_INPUT_V1",
+      "schema_version": 1
+    },
+    {
+      "base_memory_exposed": false,
+      "group_manifest_sha256": "8ced118050ddae48d793979b32e8dd3f661988cae5394aebb9477c9e9f6a63a7",
+      "group_synthesis_input_sha256": "a0940bdc6118768da3a5939c2df62f2b0acb39db06774f86cd7492e13f6ed29d",
+      "member_rows": [
+        {
+          "error_instance_id": "E1_POST_ACQUISITION_TREATMENT_OMISSION",
+          "local_result_sha256": "30f23ca3f30dcbbec40587639ffef271cd32b86e2b7a8b677baa16bda31972b6",
+          "menu_sha256": "67b334d5e31ed3361503bf046b305a1ddbbc47f1bfd64a6fc9aee99809cfcc41",
+          "proposal_slot_limit": 1,
+          "source_call_index": 3,
+          "source_state_sha256": "59941e77d3357513e7d5286c2f1e90af210c9359dbcc214e8d2046cf9ff54c49"
+        }
+      ],
+      "schema_id": "ANALYZER_GROUP_SYNTHESIS_INPUT_V1",
+      "schema_version": 1
+    },
+    {
+      "base_memory_exposed": false,
+      "group_manifest_sha256": "61fce68463d898eba8f08500919db6ade5226e2ad64ad7a0f23beac0127fc034",
+      "group_synthesis_input_sha256": "616a3aa38089306e1bce0375fa360e5d7c934accf9acba693eaa103f2d7f0ab1",
+      "member_rows": [
+        {
+          "error_instance_id": "E1_GOAL_OBJECT_MISMATCH",
+          "local_result_sha256": "831c70e9736c36721d34568c1b6cbed5fe3894961c141df8cf2ea366d17d0ae7",
+          "menu_sha256": "9e678ec2099c0818c4f9a841f6f52084822beeaff3346fb2e7a0ef1b71c99e3d",
+          "proposal_slot_limit": 1,
+          "source_call_index": 0,
+          "source_state_sha256": "f81f9d639d4c2bd57adac9e58c37ba4cf1e1608f89ee3bb92078d8a6fed44a0d"
+        }
+      ],
+      "schema_id": "ANALYZER_GROUP_SYNTHESIS_INPUT_V1",
+      "schema_version": 1
+    },
+    {
+      "base_memory_exposed": false,
+      "group_manifest_sha256": "a32a96a374a98891b95d2eb12ad71ba251636d9ff3182df22166a4ef8907b38b",
+      "group_synthesis_input_sha256": "d61c155cf2654b16645e09a5047441ecf5f864c00301a1baa22dbc8822e92f56",
+      "member_rows": [
+        {
+          "error_instance_id": "error-1-initial-unsupported-take",
+          "local_result_sha256": "71595694a62552d1d5f75e74b2e784ca0c5b1839e120b0446913e07f4660a5af",
+          "menu_sha256": "cf22ff4f78ce65ca6ef82e607280f21281831ba02b52445fdae5059f9b57d0f8",
+          "proposal_slot_limit": 1,
+          "source_call_index": 1,
+          "source_state_sha256": "5d7095a753302a880087664896ce01afa9652f674663138951ec05d23e2945ad"
+        }
+      ],
+      "schema_id": "ANALYZER_GROUP_SYNTHESIS_INPUT_V1",
+      "schema_version": 1
+    }
+  ],
+  "round_id": "CLEAN-HUMAN-REFERENCE-R1-PI0",
+  "schema_id": "STAGE6H_ANALYZER_GROUP_SYNTHESIS_INPUT_COLLECTION_V1",
+  "schema_version": 1
+}

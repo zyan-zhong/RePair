@@ -1,0 +1,17 @@
+{
+  "execution_status": "NOT_APPROVED",
+  "expected_normalized_outcome": "RESTRICTION_ENFORCED",
+  "forbidden_side_effects": [
+    "host_write",
+    "network",
+    "new_privilege",
+    "unreviewed_process"
+  ],
+  "payload_id": "landlock_restricted",
+  "payload_sha256": "ac479bf61714ccc717b34a362661637000fe144d8a34e3675829cee3bb60d8bb",
+  "permitted_side_effects": [],
+  "probe_id": "P18_RESTRICTED",
+  "profile_id": "S1_P18_LANDLOCK_ATTRIBUTION_V1",
+  "schema_version": 1,
+  "timeout_seconds": 10
+}

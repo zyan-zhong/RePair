@@ -1,0 +1,286 @@
+{
+  "$id": "E1_EPISODE_ARTIFACT_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "access_class": {
+      "enum": [
+        "DEV_VISIBLE",
+        "SELECT_SUMMARY_ONLY"
+      ],
+      "type": "string"
+    },
+    "attempt_ordinal": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "checkpoint_instance_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "completed_at_utc": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "condition_cell_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "condition_run_schedule_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "design_merge_commit": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "environment_call_trace_count": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "environment_runtime_manifest_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "episode_semantic_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "evaluation_context": {
+      "enum": [
+        "P4_HARNESS_OFF_SELECT"
+      ],
+      "type": "string"
+    },
+    "evaluator_commit": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "execution_attempt_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "final_budget": {
+      "additionalProperties": false,
+      "properties": {
+        "consecutive_nonexecuted_attempt_count": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "environment_step_count": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "inadmissible_action_count": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "policy_attempt_count": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "protocol_failure_count": {
+          "minimum": 0,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "policy_attempt_count",
+        "environment_step_count",
+        "protocol_failure_count",
+        "inadmissible_action_count",
+        "consecutive_nonexecuted_attempt_count"
+      ],
+      "type": "object"
+    },
+    "final_done": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "final_observation_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "final_score": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "final_won": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "gamefile_identity_manifest_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "gamefile_sha1": {
+      "pattern": "^[0-9a-f]{40}$",
+      "type": "string"
+    },
+    "gamefile_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "initial_observation_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "logical_condition_id": {
+      "minLength": 1,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,63}$",
+      "type": "string"
+    },
+    "operational_finalization_status": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "policy_condition_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "policy_condition_manifest_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "policy_request_schema_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "policy_runtime_manifest_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "public_transition_count": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "raw_protocol_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "run_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "runtime_core_commit": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "scheduled_cell_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "schema_id": {
+      "const": "E1_EPISODE_ARTIFACT_V1",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    },
+    "scientific_outcome_status": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "seed": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "select_policy_runtime_manifest_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "split_access_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "started_at_utc": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "success": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "task_access_manifest_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "task_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "task_index": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "task_type": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "termination_reason": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "trace_count": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "training_seed": {
+      "minimum": 0,
+      "type": [
+        "integer",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "run_id",
+    "scheduled_cell_id",
+    "execution_attempt_id",
+    "attempt_ordinal",
+    "task_index",
+    "task_id",
+    "task_type",
+    "gamefile_sha1",
+    "gamefile_sha256",
+    "seed",
+    "evaluator_commit",
+    "design_merge_commit",
+    "runtime_core_commit",
+    "raw_protocol_sha256",
+    "split_access_sha256",
+    "gamefile_identity_manifest_sha256",
+    "environment_runtime_manifest_sha256",
+    "policy_runtime_manifest_sha256",
+    "policy_request_schema_sha256",
+    "scientific_outcome_status",
+    "operational_finalization_status",
+    "success",
+    "termination_reason",
+    "final_score",
+    "final_done",
+    "final_won",
+    "final_budget",
+    "trace_count",
+    "public_transition_count",
+    "environment_call_trace_count",
+    "initial_observation_sha256",
+    "final_observation_sha256",
+    "episode_semantic_sha256",
+    "started_at_utc",
+    "completed_at_utc"
+  ],
+  "title": "E1 episode artifact",
+  "type": "object"
+}

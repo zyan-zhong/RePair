@@ -1,0 +1,161 @@
+{
+  "$id": "TRANSPORT_ATTEMPT_RECORD_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "ambiguous_post_send_disposition_id": {
+      "maxLength": 8192,
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "attempt_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "bytes_transmission_state": {
+      "enum": [
+        "NOT_SENT",
+        "MAY_HAVE_BEEN_SENT",
+        "CONFIRMED_SENT"
+      ],
+      "type": "string"
+    },
+    "cost_usd": {
+      "minimum": 0,
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "input_tokens": {
+      "minimum": 0,
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "latency_ms": {
+      "minimum": 0,
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "logical_call_id": {
+      "maxLength": 512,
+      "minLength": 1,
+      "type": "string"
+    },
+    "output_tokens": {
+      "minimum": 0,
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "provider_response_id": {
+      "maxLength": 8192,
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "raw_request_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "raw_response_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "reasoning_tokens": {
+      "minimum": 0,
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "retry_authority": {
+      "enum": [
+        "FROZEN_RUNTIME_POLICY",
+        "HUMAN_DISPOSITION",
+        "NOT_APPLICABLE"
+      ],
+      "type": "string"
+    },
+    "retry_class": {
+      "enum": [
+        "INITIAL",
+        "SAFE_PRE_SEND",
+        "SAFE_PROVIDER_REJECTION",
+        "NO_RETRY"
+      ],
+      "type": "string"
+    },
+    "retry_reason": {
+      "maxLength": 8192,
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "schema_id": {
+      "const": "TRANSPORT_ATTEMPT_RECORD_V1",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    },
+    "terminal_attempt_status": {
+      "enum": [
+        "NOT_SENT",
+        "SUCCEEDED",
+        "PROVIDER_REJECTED",
+        "REFUSED",
+        "SCHEMA_INVALID",
+        "SEMANTIC_INVALID",
+        "INFRASTRUCTURE_ERROR",
+        "AMBIGUOUS_POST_SEND"
+      ],
+      "type": "string"
+    },
+    "transport_attempt_id": {
+      "maxLength": 512,
+      "minLength": 1,
+      "type": "string"
+    },
+    "transport_attempt_index": {
+      "minimum": 0,
+      "type": "integer"
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "logical_call_id",
+    "transport_attempt_id",
+    "transport_attempt_index",
+    "bytes_transmission_state",
+    "retry_class",
+    "retry_reason",
+    "retry_authority",
+    "provider_response_id",
+    "terminal_attempt_status",
+    "ambiguous_post_send_disposition_id",
+    "raw_request_sha256",
+    "raw_response_sha256",
+    "input_tokens",
+    "output_tokens",
+    "reasoning_tokens",
+    "latency_ms",
+    "cost_usd",
+    "attempt_sha256"
+  ],
+  "type": "object"
+}

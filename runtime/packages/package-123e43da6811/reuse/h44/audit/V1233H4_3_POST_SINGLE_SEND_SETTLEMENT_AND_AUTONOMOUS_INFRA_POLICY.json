@@ -1,0 +1,38 @@
+{
+  "schema_id": "V1233H4_3_POST_SINGLE_SEND_SETTLEMENT_AND_AUTONOMOUS_INFRA_POLICY_V1",
+  "scientific_scope": "VERIFIED_COMPLETE_CURRENT_ROUND_PLANNER_POST_ONLY",
+  "native_f0f1_rerun": false,
+  "environment_verifier_rerun": false,
+  "training_execution_authorized": false,
+  "next_round_launch_authorized": false,
+  "same_logical_call_resend_authorized": false,
+  "autonomous_infrastructure_disposition": {
+    "human_scientific_decision_required": false,
+    "max_new_remediation_logical_calls": 1,
+    "eligible_retry_classes": ["SAFE_PRE_SEND", "SAFE_PROVIDER_REJECTION"],
+    "eligible_failure_classes": ["PRE_SEND_INFRASTRUCTURE_UNAVAILABLE", "PROVIDER_TRANSIENT_UNAVAILABLE"],
+    "ambiguous_post_send_retry": false,
+    "method_invalid_retry": false,
+    "auth_or_configuration_retry": false,
+    "runtime_adapter_defect_retry": false,
+    "unknown_partial_retry": false,
+    "second_remediation_retry": false
+  },
+  "remediation_identity": {
+    "same_provider_request_body_required": true,
+    "same_model_projection_schema_required": true,
+    "distinct_scientific_remediation_unit_identity": true,
+    "distinct_logical_call_id": true,
+    "original_logical_call_immutable": true
+  },
+  "authority_driven_cardinality": {
+    "current_branch_count_literal_used_as_production_constant": false,
+    "state_selection_authority": "ACCEPTED_PLANNER_PRE_HANDOFF",
+    "branch_budget_authority": "PLANNER_SELECTION_X_PROTOCOL_PAIRED_REPETITIONS_X_ARMS"
+  },
+  "tdd": {
+    "red": "6 failed because post_settlement module did not exist",
+    "green_focused": "6 passed",
+    "full_package_suite_before_manifest": "67 passed"
+  }
+}

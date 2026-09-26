@@ -1,0 +1,207 @@
+{
+  "active_integration_head": "b914f2b7dc02c141a31586756938154cf31a4823",
+  "canonical_main": "4fb1f124aa25325e6e62dfdb284c60c520c74c0b",
+  "paths": [
+    {
+      "exists": true,
+      "kind": "directory",
+      "name": "BADCASE_ROOT",
+      "path": "/data/run01/scwb204/sdar_repro/badcase"
+    },
+    {
+      "exists": true,
+      "kind": "directory",
+      "name": "CONTROL_ROOT",
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control"
+    },
+    {
+      "exists": true,
+      "kind": "directory",
+      "name": "EXPERIMENT_ROOT",
+      "path": "/data/run01/scwb204/sdar_repro/badcase/experiments"
+    },
+    {
+      "exists": true,
+      "kind": "directory",
+      "name": "BENCHMARK_ROOT",
+      "path": "/data/run01/scwb204/sdar_repro/badcase/benchmarks"
+    },
+    {
+      "exists": true,
+      "kind": "directory",
+      "name": "PCHSI_SCRIPTS",
+      "path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts"
+    },
+    {
+      "exists": true,
+      "kind": "directory",
+      "name": "GITHUB_EXPORTS",
+      "path": "/data/run01/scwb204/sdar_repro/badcase/github_exports"
+    },
+    {
+      "exists": true,
+      "git_branch": "integration/clean-human-r1-stage4e-v1",
+      "git_head": "4fb1f124aa25325e6e62dfdb284c60c520c74c0b",
+      "kind": "directory",
+      "name": "CANONICAL_REPO",
+      "path": "/data/run01/scwb204/sdar_repro/badcase/github_exports/pchsi-stage4e-clean-human-r1-integration-v1"
+    },
+    {
+      "exists": true,
+      "git_branch": "integration/strong-primary-takeover-prep-v1",
+      "git_head": "b914f2b7dc02c141a31586756938154cf31a4823",
+      "kind": "directory",
+      "name": "ACTIVE_TAKEOVER_WORKTREE",
+      "path": "/data/run01/scwb204/sdar_repro/badcase/github_exports/pchsi-wt-strong-primary-takeover-prep-v1"
+    },
+    {
+      "exists": true,
+      "git_branch": "fix/stage5q-component-evidence-binding-v1",
+      "git_head": "7dbcf9791d49f53dffa418c76b8255f06b30d5d9",
+      "kind": "directory",
+      "name": "STAGE5Q_WORKTREE",
+      "path": "/data/run01/scwb204/sdar_repro/badcase/github_exports/pchsi-wt-stage5q-component-evidence-binding-v1"
+    },
+    {
+      "exists": true,
+      "kind": "directory",
+      "name": "HUMAN_REFERENCE_ROUND_ROOT",
+      "path": "/data/run01/scwb204/sdar_repro/badcase/experiments/human_reference_round_pi1_pi2_v1"
+    },
+    {
+      "exists": true,
+      "kind": "directory",
+      "name": "GPT_5_6_SOL_BENCHMARK",
+      "path": "/data/run01/scwb204/sdar_repro/badcase/benchmarks/GPT_5.6sol_h"
+    },
+    {
+      "exists": true,
+      "kind": "file",
+      "name": "STAGE4E_FINAL_RECEIPT",
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4e_automatic_closeout_v1/978ab39389d447b74b1a1acf653619ff437c0d341c9fe76b72236dd8f5fd865b/FINAL_PUBLICATION_RECEIPT.json",
+      "sha256": "f1cf3d19e18c3ae8300a1814e91978a651633af2b23037de0761c36a36e5517e",
+      "size_bytes": 476
+    },
+    {
+      "exists": true,
+      "kind": "file",
+      "name": "STAGE5W_RECEIPT",
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage5w_strong_primary_takeover_registration_remote_sync_v1/b914f2b7dc02c141a31586756938154cf31a4823/STAGE5W_STRONG_PRIMARY_TAKEOVER_REGISTRATION_REMOTE_SYNC_RECEIPT_V1.json",
+      "sha256": "3a42a18c9efbac9546d9900592766501760bc4a79b6a156a6d18dc3f8a22f601",
+      "size_bytes": 1196
+    },
+    {
+      "exists": true,
+      "kind": "file",
+      "name": "STAGE5W_FULL_PYTEST_LOG",
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage5w_strong_primary_takeover_registration_remote_sync_v1/full_pytest.log",
+      "sha256": "ef6e2f4c0faa9e26d78a1ed1ce2d3ded0da8c34900676a289db5a55a72807709",
+      "size_bytes": 2193
+    },
+    {
+      "exists": true,
+      "kind": "file",
+      "name": "STAGE5Q_RECEIPT",
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage5q_fixed_head_closure_v1_3/7dbcf9791d49f53dffa418c76b8255f06b30d5d9/STAGE5Q_FIXED_HEAD_CLOSURE_V1_3.json",
+      "sha256": "93771889613cabbb8b4c15201231aa67a7be118fc5866d5d58e75048e78d31b9",
+      "size_bytes": 1006
+    },
+    {
+      "exists": true,
+      "kind": "file",
+      "name": "TAKEOVER_REGISTRATION",
+      "path": "/data/run01/scwb204/sdar_repro/badcase/github_exports/pchsi-wt-strong-primary-takeover-prep-v1/docs/project/strong_primary_takeover_v1/TAKEOVER_CALIBRATION_REGISTRATION_V1.json",
+      "sha256": "7e7ae61103d9bf23c69fba541d3c70a4df104b1e149e5218cc231841557c7e50",
+      "size_bytes": 52429
+    },
+    {
+      "exists": true,
+      "kind": "file",
+      "name": "LOCAL_SHADOW_BINDING_EVIDENCE",
+      "path": "/data/run01/scwb204/sdar_repro/badcase/github_exports/pchsi-wt-strong-primary-takeover-prep-v1/docs/project/strong_primary_takeover_v1/LOCAL_SHADOW_BINDING_EVIDENCE_V1.json",
+      "sha256": "98a7e155d027c8e9ba000b236033cb67bac785eed05674e4f9a0eb09bbfd1f13",
+      "size_bytes": 23032
+    },
+    {
+      "exists": true,
+      "kind": "file",
+      "name": "R2_RESOURCE_BUDGET_CANDIDATE",
+      "path": "/data/run01/scwb204/sdar_repro/badcase/github_exports/pchsi-wt-strong-primary-takeover-prep-v1/docs/project/strong_primary_takeover_v1/R2_RESOURCE_BUDGET_CANDIDATE_V1.json",
+      "sha256": "5e5f5174493c1ada52ce7e63af681125b339d869bf051d09c7a6403417b9088c",
+      "size_bytes": 2135
+    },
+    {
+      "exists": true,
+      "kind": "file",
+      "name": "ZERO_BASELINE_ESTIMAND",
+      "path": "/data/run01/scwb204/sdar_repro/badcase/github_exports/pchsi-wt-strong-primary-takeover-prep-v1/docs/project/strong_primary_takeover_v1/ZERO_BASELINE_TAKEOVER_ESTIMAND_V1.json",
+      "sha256": "9ada2f86c7c1cfb70cca0eaa8928262129a854c87cf31b76c9b4ac2431f75252",
+      "size_bytes": 991
+    },
+    {
+      "exists": true,
+      "kind": "file",
+      "name": "CURRENT_STATUS_V1",
+      "path": "/data/run01/scwb204/sdar_repro/badcase/github_exports/pchsi-wt-strong-primary-takeover-prep-v1/docs/project/AUTONOMOUS_LOOP_CANONICAL_STATUS_20260909.md",
+      "sha256": "05019470dbee526beeea47d91411edae5edd1af0e206e0fcdbc6d9048f421e07",
+      "size_bytes": 34064
+    },
+    {
+      "exists": true,
+      "kind": "file",
+      "name": "STAGE3Y_INPUT_INDEX",
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage3y_existing_training_preparation_v1/5c042850c1b926c3805a64f1f4b16d3688abf327af1db1eb34444b483baa5997/INPUT_ARTIFACT_INDEX.json",
+      "sha256": "ccd14a6e5a47dfcb331a65fc9073b5396fe16850fd1158eba558646d3ecbdfdf",
+      "size_bytes": 1036
+    },
+    {
+      "exists": true,
+      "kind": "file",
+      "name": "STAGE4A_CANDIDATE_HANDOFF",
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4a_clean_existing_trainer_v1/1711c5fbc6431f3bd59bda066011ab265837aecfcaf827b073f6a4754ec2f692/CANDIDATE_HANDOFF.json",
+      "sha256": "12843e82af08c1340e043440a658c1cc852322a4c1c0758eec64e7d86a7fd7ff",
+      "size_bytes": 3420
+    },
+    {
+      "exists": true,
+      "kind": "file",
+      "name": "STAGE4A_TRAINING_STAGE_BINDING",
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4a_clean_existing_trainer_v1/1711c5fbc6431f3bd59bda066011ab265837aecfcaf827b073f6a4754ec2f692/TRAINING_STAGE_BINDING.json",
+      "sha256": "6985f3ec970d1b3ce981295c9bca0da2f12e1699333876294c34ac06f4b6d8da",
+      "size_bytes": 5371
+    },
+    {
+      "exists": true,
+      "kind": "file",
+      "name": "STAGE4A_TRAINER_ROLE_BINDING",
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4a_clean_existing_trainer_v1/1711c5fbc6431f3bd59bda066011ab265837aecfcaf827b073f6a4754ec2f692/TRAINER_ROLE_BINDING.json",
+      "sha256": "caff540181ec6a54e9c49bba7545f27d33b8f3558bebdbc150437f510f57d262",
+      "size_bytes": 714
+    },
+    {
+      "exists": true,
+      "kind": "file",
+      "name": "STRONG_PRE_CANONICAL",
+      "path": "/data/run01/scwb204/sdar_repro/badcase/experiments/human_reference_round_pi1_pi2_v1/human_researcher_post_freeze_ready_v2_neutral_audit/source_evidence/STRONG_RESEARCHER_PRE_SHADOW_V2_CANONICAL.json",
+      "sha256": "a4ff20dc0753ec8d3d0b6c48ea6846d61dfbcae65de1733538a9aa28aaa241e9",
+      "size_bytes": 50375
+    },
+    {
+      "exists": true,
+      "kind": "file",
+      "name": "STRONG_PRE_VALIDATED",
+      "path": "/data/run01/scwb204/sdar_repro/badcase/experiments/human_reference_round_pi1_pi2_v1/strong_researcher_pre_shadow_v2/ce973b423a21f081d7606d780f6b9f9e6d7ea3aa018e0f1139d88da48ad9e873/validated_artifact.json",
+      "sha256": "a4ff20dc0753ec8d3d0b6c48ea6846d61dfbcae65de1733538a9aa28aaa241e9",
+      "size_bytes": 50375
+    },
+    {
+      "exists": true,
+      "kind": "file",
+      "name": "HUMAN_F0F1_ENV_RESULT",
+      "path": "/data/run01/scwb204/sdar_repro/badcase/experiments/human_reference_round_pi1_pi2_v1/human_post_environment_binding_correction_v1/ENVIRONMENT_RESULT_PACKAGE_V1.json",
+      "sha256": "4aa264e642f3800f7a2d2cd23db038a7b3d5af0cdd1d32958ccefc256dcc9212",
+      "size_bytes": 635
+    }
+  ],
+  "schema_id": "SERVER_PATH_REGISTRY_V2"
+}

@@ -1,0 +1,18 @@
+{
+  "authorization_semantics_changed": false,
+  "environment_sanitization_fix_preserved": true,
+  "expected_direct_input_artifact_count": 8,
+  "formal_attempt_id_changed": false,
+  "package_patch_id": "V1_2_PREFLIGHT_SUMMARY_SCHEMA_BINDING_FIX",
+  "parent_package_zip_sha256": "d179875ac5d59a2b4a0765e5c60ed13f055f5f689f997a9f40d35add044014e7",
+  "parent_patch_id": "V1_1_PREFLIGHT_ENV_SANITIZATION_FIX",
+  "patch_scope": "OFFLINE_PREFLIGHT_V21_SUMMARY_SCHEMA_BINDING_ONLY",
+  "pretraining_handoff_changed": false,
+  "root_cause": "V21_RUNTIME_PREFLIGHT_ADDED_DIRECT_INPUT_ARTIFACT_COUNT_8_BUT_HUMAN_T2_WRAPPER_EXPECTED_OLDER_SUMMARY_SHAPE",
+  "schema_id": "HUMAN_T2_FORMAL_TRAINING_PACKAGE_PATCH_V1",
+  "schema_version": 1,
+  "scientific_contract_changed": false,
+  "slurm_resource_policy_changed": false,
+  "trainer_runtime_changed": false,
+  "training_recipe_changed": false
+}

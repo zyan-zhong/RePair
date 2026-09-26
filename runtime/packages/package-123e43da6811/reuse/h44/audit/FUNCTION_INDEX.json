@@ -1,0 +1,297 @@
+[
+  {
+    "file": "option_adapter.py",
+    "sha256": "2225e03d62a8ddd86b4559b9efe88ec67b47c648aa5f9f6f3a3323d69f58ee26",
+    "definitions": [
+      {
+        "name": "_canonical",
+        "line": 28,
+        "end_line": 29
+      },
+      {
+        "name": "_hash",
+        "line": 32,
+        "end_line": 33
+      },
+      {
+        "name": "compile_option",
+        "line": 36,
+        "end_line": 66
+      },
+      {
+        "name": "validate_contract",
+        "line": 69,
+        "end_line": 87
+      },
+      {
+        "name": "_positive_visible_object",
+        "line": 90,
+        "end_line": 98
+      },
+      {
+        "name": "_take_admissible",
+        "line": 101,
+        "end_line": 103
+      },
+      {
+        "name": "_carried",
+        "line": 106,
+        "end_line": 113
+      },
+      {
+        "name": "decide",
+        "line": 116,
+        "end_line": 132
+      },
+      {
+        "name": "stop",
+        "line": 123,
+        "end_line": 123
+      }
+    ]
+  },
+  {
+    "file": "source_adapter.py",
+    "sha256": "2593f3ef20f962d785e7886e697e0afa7ee4c589d4119ff0158ca0a0aa6a6133",
+    "definitions": [
+      {
+        "name": "_loader",
+        "line": 19,
+        "end_line": 23
+      },
+      {
+        "name": "load_source_rows",
+        "line": 26,
+        "end_line": 62
+      },
+      {
+        "name": "register_source",
+        "line": 65,
+        "end_line": 100
+      }
+    ]
+  },
+  {
+    "file": "native_branch.py",
+    "sha256": "864ed0797379c2a1b9c395c960d94a7d558b684d006656f30599ea3276628efa",
+    "definitions": [
+      {
+        "name": "budget_dict",
+        "line": 22,
+        "end_line": 25
+      },
+      {
+        "name": "_feedback",
+        "line": 28,
+        "end_line": 30
+      },
+      {
+        "name": "_menu_sha",
+        "line": 33,
+        "end_line": 35
+      },
+      {
+        "name": "run_branch_core",
+        "line": 38,
+        "end_line": 171
+      },
+      {
+        "name": "NativePolicy",
+        "line": 174,
+        "end_line": 204
+      },
+      {
+        "name": "execute_native_branch",
+        "line": 207,
+        "end_line": 212
+      },
+      {
+        "name": "_execute_locked",
+        "line": 215,
+        "end_line": 316
+      },
+      {
+        "name": "prepare",
+        "line": 57,
+        "end_line": 62
+      },
+      {
+        "name": "step",
+        "line": 70,
+        "end_line": 87
+      },
+      {
+        "name": "__init__",
+        "line": 175,
+        "end_line": 180
+      },
+      {
+        "name": "act",
+        "line": 182,
+        "end_line": 204
+      },
+      {
+        "name": "event",
+        "line": 245,
+        "end_line": 247
+      }
+    ]
+  },
+  {
+    "file": "deployment.py",
+    "sha256": "e20d48ad37ba7f6aace7caa6a6fb1e38d6d4fe1e02a2e3b734df4a5de2fcfd62",
+    "definitions": [
+      {
+        "name": "resolve_memory",
+        "line": 8,
+        "end_line": 28
+      },
+      {
+        "name": "resolve_gamefiles",
+        "line": 31,
+        "end_line": 65
+      }
+    ]
+  },
+  {
+    "file": "round_plan.py",
+    "sha256": "706e4d532161f98703afc307935c4ceedaa0b7a60dd1f43e40d610227d7de24b",
+    "definitions": [
+      {
+        "name": "prepare_plan",
+        "line": 10,
+        "end_line": 89
+      }
+    ]
+  },
+  {
+    "file": "independent_verifier.py",
+    "sha256": "5773ad1acd9fd2ed287dfe5c23c4580c05583a0c720905ae496c0ef4f1c72392",
+    "definitions": [
+      {
+        "name": "verify_plan",
+        "line": 10,
+        "end_line": 90
+      },
+      {
+        "name": "complete",
+        "line": 62,
+        "end_line": 62
+      }
+    ]
+  },
+  {
+    "file": "strong_post.py",
+    "sha256": "8db8fc3eeb5d5400f899c7dd7f97c0118111a967bc986b69f05476e5dab7e80f",
+    "definitions": [
+      {
+        "name": "_terminal",
+        "line": 16,
+        "end_line": 28
+      },
+      {
+        "name": "execute_post",
+        "line": 31,
+        "end_line": 137
+      },
+      {
+        "name": "validate_output",
+        "line": 96,
+        "end_line": 99
+      }
+    ]
+  },
+  {
+    "file": "gpu_job.py",
+    "sha256": "90c123b6036f444d59470e5d5652732cc132c5dcf4a27f47a6a0104be904e9ad",
+    "definitions": [
+      {
+        "name": "run_allocation",
+        "line": 18,
+        "end_line": 88
+      }
+    ]
+  },
+  {
+    "file": "controller.py",
+    "sha256": "587ce66401083b44191b30748aed3aa640dc59e106c0d46fb1446568ea0d78ef",
+    "definitions": [
+      {
+        "name": "run_controller",
+        "line": 18,
+        "end_line": 82
+      },
+      {
+        "name": "launch",
+        "line": 85,
+        "end_line": 120
+      },
+      {
+        "name": "main",
+        "line": 123,
+        "end_line": 135
+      }
+    ]
+  },
+  {
+    "file": "io_utils.py",
+    "sha256": "d57bcb98cb7c6adf955e5fac00a07f7fa5b028b0e028afe8fa9592837f7cb327",
+    "definitions": [
+      {
+        "name": "canonical",
+        "line": 8,
+        "end_line": 9
+      },
+      {
+        "name": "sha",
+        "line": 12,
+        "end_line": 12
+      },
+      {
+        "name": "digest_file",
+        "line": 15,
+        "end_line": 19
+      },
+      {
+        "name": "strict_loads",
+        "line": 22,
+        "end_line": 30
+      },
+      {
+        "name": "read_json",
+        "line": 33,
+        "end_line": 33
+      },
+      {
+        "name": "write_new_or_equal",
+        "line": 36,
+        "end_line": 43
+      },
+      {
+        "name": "put_json",
+        "line": 46,
+        "end_line": 46
+      },
+      {
+        "name": "verify_extract",
+        "line": 49,
+        "end_line": 69
+      },
+      {
+        "name": "object_hash",
+        "line": 72,
+        "end_line": 76
+      },
+      {
+        "name": "pairs",
+        "line": 23,
+        "end_line": 28
+      },
+      {
+        "name": "bad",
+        "line": 29,
+        "end_line": 29
+      }
+    ]
+  }
+]

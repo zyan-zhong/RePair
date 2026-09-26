@@ -1,0 +1,27 @@
+{
+  "host": "ln02",
+  "rows": [
+    {
+      "path": "/data/run01/scwb204/pchsi/p2/p4_r1_q2_bad_training_runner_v1_frozen/formal_train.py",
+      "sha256": "4709c32d34b437d2884fa83d4967f4d898e4cd17d5a56ce0b9e72a250f0ad9e7",
+      "local_name": "formal_train.py",
+      "authority": "registered native training profile code and base-model metadata only",
+      "status": "READ",
+      "observed_sha256": "4709c32d34b437d2884fa83d4967f4d898e4cd17d5a56ce0b9e72a250f0ad9e7",
+      "bytes": 71934
+    },
+    {
+      "path": "/data/run01/scwb204/pchsi/p2/d_q2_bad_training_materialization_v1_frozen/provenance/model_artifact_manifest.json",
+      "sha256": "0d2673f685e0a3d7638d6973954f6d0758bb3951991a974d75d6a1183a391be2",
+      "local_name": "base_model_artifact_manifest.json",
+      "authority": "registered native training profile code and base-model metadata only",
+      "status": "READ",
+      "observed_sha256": "0d2673f685e0a3d7638d6973954f6d0758bb3951991a974d75d6a1183a391be2",
+      "bytes": 3107
+    }
+  ],
+  "schema_id": "EXACT_REGISTERED_SSH_READ_RECEIPT_V1",
+  "remote_filesystem_mutations": 0,
+  "filesystem_discovery_used": false,
+  "scientific_execution_count": 0
+}

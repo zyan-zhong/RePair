@@ -1,0 +1,107 @@
+{
+  "operation": "STAGING_CACHE_ONLY",
+  "changes": [
+    {
+      "member": "EXECUTION_SOURCE_REGISTRY.json",
+      "previous_sha256": "7641765fc904276cad83d3f234af51bbce273ba911c0ee23ee34768bf4241b57",
+      "sha256": "2e6854cd5cf1a0f9a856b083be6142bceee9fe38c4f0f471ca4dc332d378b58c"
+    },
+    {
+      "member": "PACKAGE_METADATA.json",
+      "previous_sha256": "777b9d37033508c149b90f641560314d1b5fc0e9c8b338a1ce57766e251d25c8",
+      "sha256": "bbbc242d3a157b5a632dd7bd50eaae77ba0ab8c44125d14872c879a626abf4e8"
+    },
+    {
+      "member": "README_ZH.md",
+      "previous_sha256": "d7943652566714618242b316556f023116a4a5be4f3d218562dbf0a511970a0b",
+      "sha256": "e382f6cfb7568416731d43dd48625980c36b95384c17cf4881486d29819d3923"
+    },
+    {
+      "member": "TEST_FIXTURE_REGISTRY.json",
+      "previous_sha256": "1e5af425f9ffa4edcfbf8b388cd6332f5382b3385689e38ae3a97f20fbc7de57",
+      "sha256": "62b0dd7d2c25df46f7cf1b4419531dd73b47d6b78c50c6ac44ed3b7fc08afd1c"
+    },
+    {
+      "member": "analyzer_binding/aggregate_context.py",
+      "previous_sha256": null,
+      "sha256": "82e322f757c5166b9988d8b71b01183b16aa2b0847081243a556d10ab8389e83"
+    },
+    {
+      "member": "analyzer_binding/source_binding.py",
+      "previous_sha256": "0fb0eee46e326b573f66cb0ffbfb14dcc10a743ba55082a59ee4213136005c6b",
+      "sha256": "181f79a414f78d98bdd2c280a548df1ff92f3f9257ac2496e9ccea1edcdecb66"
+    },
+    {
+      "member": "analyzer_binding/tests/test_aggregate_wiring.py",
+      "previous_sha256": null,
+      "sha256": "5652daf2acc56e6e0dc5b77ddb961e6fc65c52443d5ac56836a288144351b26d"
+    },
+    {
+      "member": "authority/FROZEN_TRAIN_SELECT_PROMOTION_RULE_V1.json",
+      "previous_sha256": null,
+      "sha256": "5dbeb551262182bc8f7bcce41df7b43c8de3e8652cb685844f7f0670a9114dba"
+    },
+    {
+      "member": "authority/USER_PROMOTION_AUTHORITY.json",
+      "previous_sha256": null,
+      "sha256": "db360c5529026c468c9f0d143bb02dac3b4bd8c07398cb0b10a601c4a4336ee2"
+    },
+    {
+      "member": "entry/driver.py",
+      "previous_sha256": "1273b750e6f3037068d8c598691622fc94d843ef49f63bd6e871dd1fcff311dd",
+      "sha256": "4fb3b7ea487de648ac2f528e2a77c2b180f4390ed29f2a091e89b422c332cd0d"
+    },
+    {
+      "member": "entry/preflight.py",
+      "previous_sha256": "c338c428f3e1e005043bac7ad96294f041613fb9c447533d2526950e123a64df",
+      "sha256": "c5d657e9176066115d354027de8dbf1b292641c45d9f4bc40cfff4bcc75deb3e"
+    },
+    {
+      "member": "entry/registration.py",
+      "previous_sha256": "9ea404ac8ec1f8878c866e7aecf342eb23356f83a9894e00abd524c6f687fabb",
+      "sha256": "3cfe570b72bd81a6665ee86f5a07bd2ce787805078b38770d515d29a3804ea05"
+    },
+    {
+      "member": "ledger/APPEND_ONLY_PROOF.json",
+      "previous_sha256": "66ebe2354901b488daa6ffd803448a34a38361749c44ca08c0991ba185b5aa96",
+      "sha256": "fb596ca63c3129d1d73827da102f0d98fe52a6208dadd0b77c34703748cc38c8"
+    },
+    {
+      "member": "ledger/PCHSI_CANONICAL_STATUS_20260924_FORMAL_MAX10_V1_8_SUCCESS_GAIN_MATERIALIZED_FULL.md",
+      "previous_sha256": null,
+      "sha256": "2e04f46d5cd3a0662c9fe3fb3e62d83f6ddc866dca6b055843a3b87bcb196100"
+    },
+    {
+      "member": "live_adapter/pre_stage.py",
+      "previous_sha256": "735ec2c424cc9b580323cfe1a7634828e673174a8142a8304667e4fb4d41d514",
+      "sha256": "14bcb76d1103f9c83df4b3bc5e6ed342c7a5a7c0c59ac46fcdaa7da248dcd698"
+    },
+    {
+      "member": "offoff_binding/execute.py",
+      "previous_sha256": "437c66dbc48708f5607ec419a06a4821c72abf996518ee73be0c660eec6ee19f",
+      "sha256": "02a0d84193fb81a95b5bd1606db42e1210a20eb11c0eaa51e9175472aa6ba213"
+    },
+    {
+      "member": "offoff_binding/promotion_rule.py",
+      "previous_sha256": null,
+      "sha256": "e42158c589e7036385dcefdb1c72d705a430b47f35c54495607cf7772c05aa5d"
+    },
+    {
+      "member": "offoff_binding/tests/test_promotion_rule.py",
+      "previous_sha256": null,
+      "sha256": "1cbe4de036d0bb33f2bee200e02b2508767f79d53a34032fa1a376b38518f3cb"
+    },
+    {
+      "member": "offoff_binding/tests/test_registered_promotion_source.py",
+      "previous_sha256": null,
+      "sha256": "299737d0c1d4f358669c315c4844ad29fb152ce22699467e55c53fe99faff572"
+    },
+    {
+      "member": "training_binding/tests/live_pre_fixture.py",
+      "previous_sha256": "9f8c6501c4432a7b989898ad1d2630e76152ef7056c2eb9c94dfa8d91fd56149",
+      "sha256": "aa99645bfc1ce975cb98372d54381bcefb3c95141b912f650b1c056d01436216"
+    }
+  ],
+  "production_git_mutation_count": 0,
+  "commit_or_push_claimed": false
+}

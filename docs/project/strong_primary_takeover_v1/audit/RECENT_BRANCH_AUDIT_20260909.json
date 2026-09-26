@@ -1,0 +1,458 @@
+{
+  "active_integration_head": "b914f2b7dc02c141a31586756938154cf31a4823",
+  "branches": [
+    {
+      "ahead_by": 0,
+      "archive_or_delete_authorized": false,
+      "behind_by": 117,
+      "branch": "archive/main-before-formal-analyzer-v2-consolidation-20260828",
+      "classification": "CONTAINED_IN_CANONICAL_MAIN",
+      "head": "b6b03d02d8a802f56d0d88fcf9a9de1d16ef5727",
+      "head_committer_date": "2026-08-22T22:32:10+08:00",
+      "merge_base": "b6b03d02d8a802f56d0d88fcf9a9de1d16ef5727",
+      "unique_code_paths": [],
+      "unique_doc_paths": [],
+      "unique_files": []
+    },
+    {
+      "ahead_by": 0,
+      "archive_or_delete_authorized": false,
+      "behind_by": 21,
+      "branch": "archive/stage0-stage1-dataflow-20260901-v2",
+      "classification": "CONTAINED_IN_CANONICAL_MAIN",
+      "head": "c41e536efd5935ab67c5fff0398d4c5854e27d5c",
+      "head_committer_date": "2026-09-01T10:37:22+08:00",
+      "merge_base": "c41e536efd5935ab67c5fff0398d4c5854e27d5c",
+      "unique_code_paths": [],
+      "unique_doc_paths": [],
+      "unique_files": []
+    },
+    {
+      "ahead_by": 0,
+      "archive_or_delete_authorized": false,
+      "behind_by": 430,
+      "branch": "audit/audit-001-doc-foundation",
+      "classification": "CONTAINED_IN_CANONICAL_MAIN",
+      "head": "99e9a983b7e6191c4d32a16a2fb294105bc8d72f",
+      "head_committer_date": "2026-07-29T00:25:30+08:00",
+      "merge_base": "99e9a983b7e6191c4d32a16a2fb294105bc8d72f",
+      "unique_code_paths": [],
+      "unique_doc_paths": [],
+      "unique_files": []
+    },
+    {
+      "ahead_by": 3,
+      "archive_or_delete_authorized": false,
+      "behind_by": 412,
+      "branch": "audit/historical-action-attribution-design-v1",
+      "classification": "DIVERGED_AUDIT_DOC_ONLY_PRESERVE_AS_REFERENCE",
+      "head": "672a3c5b5e282663ee43958f29b0b7efb235c66c",
+      "head_committer_date": "2026-07-31T10:02:08+08:00",
+      "merge_base": "97f200d3044d1859ba0d3fc36bf8ad09456f2700",
+      "unique_code_paths": [],
+      "unique_doc_paths": [
+        "docs/audits/AUDIT-001B-historical-action-attribution-amendment-v2.md",
+        "docs/audits/AUDIT-001B-historical-action-attribution-amendment-v2_1.md",
+        "docs/audits/AUDIT-001B-historical-action-attribution-design.md"
+      ],
+      "unique_files": [
+        "A\tdocs/audits/AUDIT-001B-historical-action-attribution-amendment-v2.md",
+        "A\tdocs/audits/AUDIT-001B-historical-action-attribution-amendment-v2_1.md",
+        "A\tdocs/audits/AUDIT-001B-historical-action-attribution-design.md"
+      ]
+    },
+    {
+      "ahead_by": 2,
+      "archive_or_delete_authorized": false,
+      "behind_by": 68,
+      "branch": "design/generic-self-improvement-loop-v1",
+      "classification": "DIVERGED_DESIGN_ONLY_PRESERVE_AS_REFERENCE",
+      "head": "c18501de8b41f4d5299dfa2991d83562984d41b0",
+      "head_committer_date": "2026-08-27T16:49:24+08:00",
+      "merge_base": "eef643fca368fe68be1967cf5f934df39a9b810e",
+      "unique_code_paths": [],
+      "unique_doc_paths": [
+        "docs/superpowers/specs/2026-08-27-generic-self-improvement-loop-orchestration-design.md",
+        "docs/superpowers/specs/2026-08-27-generic-self-improvement-loop-orchestration-targeted-hardening-v1.md"
+      ],
+      "unique_files": [
+        "A\tdocs/superpowers/specs/2026-08-27-generic-self-improvement-loop-orchestration-design.md",
+        "A\tdocs/superpowers/specs/2026-08-27-generic-self-improvement-loop-orchestration-targeted-hardening-v1.md"
+      ]
+    },
+    {
+      "ahead_by": 0,
+      "archive_or_delete_authorized": false,
+      "behind_by": 416,
+      "branch": "feature/action-trace-transport-parser-v1",
+      "classification": "CONTAINED_IN_CANONICAL_MAIN",
+      "head": "1f93d4422fa5b861ec16b41204e2f2423986d958",
+      "head_committer_date": "2026-07-29T15:21:48+08:00",
+      "merge_base": "1f93d4422fa5b861ec16b41204e2f2423986d958",
+      "unique_code_paths": [],
+      "unique_doc_paths": [],
+      "unique_files": []
+    },
+    {
+      "ahead_by": 0,
+      "archive_or_delete_authorized": false,
+      "behind_by": 7,
+      "branch": "fix/clean-f0f1-continuation-profile-v1",
+      "classification": "CONTAINED_IN_CANONICAL_MAIN",
+      "head": "5229d239a79fb166ffb64a115e1bbfdb09d8df41",
+      "head_committer_date": "2026-09-06T08:20:44+08:00",
+      "merge_base": "5229d239a79fb166ffb64a115e1bbfdb09d8df41",
+      "unique_code_paths": [],
+      "unique_doc_paths": [],
+      "unique_files": []
+    },
+    {
+      "ahead_by": 0,
+      "archive_or_delete_authorized": false,
+      "behind_by": 6,
+      "branch": "fix/clean-f0f1-source-prompt-v1",
+      "classification": "CONTAINED_IN_CANONICAL_MAIN",
+      "head": "629895d8ca9a7e5be2c9f2991c5e8c71d9ca3df3",
+      "head_committer_date": "2026-09-06T09:28:08+08:00",
+      "merge_base": "629895d8ca9a7e5be2c9f2991c5e8c71d9ca3df3",
+      "unique_code_paths": [],
+      "unique_doc_paths": [],
+      "unique_files": []
+    },
+    {
+      "ahead_by": 3,
+      "archive_or_delete_authorized": false,
+      "behind_by": 15,
+      "branch": "implementation/f0f1-round-adaptive-budget-v1",
+      "classification": "DIVERGED_CODE_BEARING_REVIEW_REQUIRED",
+      "head": "6a7ca0c25580382e3862e9cf45377cabd9928d01",
+      "head_committer_date": "2026-09-04T08:23:20+08:00",
+      "merge_base": "e1a5c9f09a1c999f46755ba23aa337012ba80af2",
+      "unique_code_paths": [
+        "configs/research_intelligence/clean_reference_f0f1_budget_v1.json",
+        "src/pchsi/cognitive_runtime/access.py",
+        "src/pchsi/research_intelligence/clean_f0f1_manifest.py",
+        "src/pchsi/round_control/analyzer_substage.py",
+        "src/pchsi/round_control/clean_group_analyzer_binding.py",
+        "tests/cognitive_runtime/test_group_task_access.py",
+        "tests/research_intelligence/test_clean_reference_f0f1_port_v1.py",
+        "tests/round_control/test_analyzer_substage.py",
+        "tests/round_control/test_clean_group_analyzer_binding.py"
+      ],
+      "unique_doc_paths": [],
+      "unique_files": [
+        "M\tconfigs/research_intelligence/clean_reference_f0f1_budget_v1.json",
+        "M\tsrc/pchsi/cognitive_runtime/access.py",
+        "M\tsrc/pchsi/research_intelligence/clean_f0f1_manifest.py",
+        "A\tsrc/pchsi/round_control/analyzer_substage.py",
+        "A\tsrc/pchsi/round_control/clean_group_analyzer_binding.py",
+        "A\ttests/cognitive_runtime/test_group_task_access.py",
+        "M\ttests/research_intelligence/test_clean_reference_f0f1_port_v1.py",
+        "A\ttests/round_control/test_analyzer_substage.py",
+        "A\ttests/round_control/test_clean_group_analyzer_binding.py"
+      ]
+    },
+    {
+      "ahead_by": 0,
+      "archive_or_delete_authorized": false,
+      "behind_by": 17,
+      "branch": "implementation/stage3d-clean-analyzer-binding-v1",
+      "classification": "CONTAINED_IN_CANONICAL_MAIN",
+      "head": "ffcc8068924d1624138a4222e9c4ee39a80aa97c",
+      "head_committer_date": "2026-09-02T21:51:12+08:00",
+      "merge_base": "ffcc8068924d1624138a4222e9c4ee39a80aa97c",
+      "unique_code_paths": [],
+      "unique_doc_paths": [],
+      "unique_files": []
+    },
+    {
+      "ahead_by": 0,
+      "archive_or_delete_authorized": false,
+      "behind_by": 16,
+      "branch": "implementation/stage3e-human-analyzer-primary-v1",
+      "classification": "CONTAINED_IN_CANONICAL_MAIN",
+      "head": "51ac47eb8691804183440e5051e36af77d52407f",
+      "head_committer_date": "2026-09-02T22:47:57+08:00",
+      "merge_base": "51ac47eb8691804183440e5051e36af77d52407f",
+      "unique_code_paths": [],
+      "unique_doc_paths": [],
+      "unique_files": []
+    },
+    {
+      "ahead_by": 0,
+      "archive_or_delete_authorized": false,
+      "behind_by": 15,
+      "branch": "implementation/stage3f-round-adaptive-analyzer-inputs-v1",
+      "classification": "CONTAINED_IN_CANONICAL_MAIN",
+      "head": "e1a5c9f09a1c999f46755ba23aa337012ba80af2",
+      "head_committer_date": "2026-09-03T00:16:55+08:00",
+      "merge_base": "e1a5c9f09a1c999f46755ba23aa337012ba80af2",
+      "unique_code_paths": [],
+      "unique_doc_paths": [],
+      "unique_files": []
+    },
+    {
+      "ahead_by": 1,
+      "archive_or_delete_authorized": false,
+      "behind_by": 15,
+      "branch": "implementation/stage3j-group-analyzer-access-budget-v1",
+      "classification": "DIVERGED_CODE_BEARING_REVIEW_REQUIRED",
+      "head": "f487c06d082e807c6b4fbfc886b0892f6358a98b",
+      "head_committer_date": "2026-09-03T16:03:49+08:00",
+      "merge_base": "e1a5c9f09a1c999f46755ba23aa337012ba80af2",
+      "unique_code_paths": [
+        "src/pchsi/cognitive_runtime/access.py",
+        "src/pchsi/round_control/clean_group_analyzer_binding.py",
+        "tests/cognitive_runtime/test_group_task_access.py",
+        "tests/round_control/test_clean_group_analyzer_binding.py"
+      ],
+      "unique_doc_paths": [],
+      "unique_files": [
+        "M\tsrc/pchsi/cognitive_runtime/access.py",
+        "A\tsrc/pchsi/round_control/clean_group_analyzer_binding.py",
+        "A\ttests/cognitive_runtime/test_group_task_access.py",
+        "A\ttests/round_control/test_clean_group_analyzer_binding.py"
+      ]
+    },
+    {
+      "ahead_by": 2,
+      "archive_or_delete_authorized": false,
+      "behind_by": 15,
+      "branch": "implementation/stage3l-analyzer-automation-bridge-v1",
+      "classification": "DIVERGED_CODE_BEARING_REVIEW_REQUIRED",
+      "head": "eaf22424128613d33cacb13aa4cd90b2c55355b4",
+      "head_committer_date": "2026-09-03T17:34:27+08:00",
+      "merge_base": "e1a5c9f09a1c999f46755ba23aa337012ba80af2",
+      "unique_code_paths": [
+        "src/pchsi/cognitive_runtime/access.py",
+        "src/pchsi/round_control/analyzer_substage.py",
+        "src/pchsi/round_control/clean_group_analyzer_binding.py",
+        "tests/cognitive_runtime/test_group_task_access.py",
+        "tests/round_control/test_analyzer_substage.py",
+        "tests/round_control/test_clean_group_analyzer_binding.py"
+      ],
+      "unique_doc_paths": [],
+      "unique_files": [
+        "M\tsrc/pchsi/cognitive_runtime/access.py",
+        "A\tsrc/pchsi/round_control/analyzer_substage.py",
+        "A\tsrc/pchsi/round_control/clean_group_analyzer_binding.py",
+        "A\ttests/cognitive_runtime/test_group_task_access.py",
+        "A\ttests/round_control/test_analyzer_substage.py",
+        "A\ttests/round_control/test_clean_group_analyzer_binding.py"
+      ]
+    },
+    {
+      "ahead_by": 3,
+      "archive_or_delete_authorized": false,
+      "behind_by": 15,
+      "branch": "implementation/strong-c-taxonomy-hardening-v1",
+      "classification": "DIVERGED_CODE_BEARING_REVIEW_REQUIRED",
+      "head": "c006eca0306c3dedc4104f1df1dba52ebcd50403",
+      "head_committer_date": "2026-09-04T08:23:02+08:00",
+      "merge_base": "e1a5c9f09a1c999f46755ba23aa337012ba80af2",
+      "unique_code_paths": [
+        "src/pchsi/cognitive_runtime/access.py",
+        "src/pchsi/cognitive_runtime/request_renderer.py",
+        "src/pchsi/round_control/analyzer_substage.py",
+        "src/pchsi/round_control/clean_group_analyzer_binding.py",
+        "tests/cognitive_runtime/test_c_component_taxonomy_enum_specialization.py",
+        "tests/cognitive_runtime/test_group_task_access.py",
+        "tests/round_control/test_analyzer_substage.py",
+        "tests/round_control/test_clean_group_analyzer_binding.py"
+      ],
+      "unique_doc_paths": [],
+      "unique_files": [
+        "M\tsrc/pchsi/cognitive_runtime/access.py",
+        "M\tsrc/pchsi/cognitive_runtime/request_renderer.py",
+        "A\tsrc/pchsi/round_control/analyzer_substage.py",
+        "A\tsrc/pchsi/round_control/clean_group_analyzer_binding.py",
+        "A\ttests/cognitive_runtime/test_c_component_taxonomy_enum_specialization.py",
+        "A\ttests/cognitive_runtime/test_group_task_access.py",
+        "A\ttests/round_control/test_analyzer_substage.py",
+        "A\ttests/round_control/test_clean_group_analyzer_binding.py"
+      ]
+    },
+    {
+      "ahead_by": 0,
+      "archive_or_delete_authorized": false,
+      "behind_by": 0,
+      "branch": "integration/clean-human-r1-stage4e-v1",
+      "classification": "CONTAINED_IN_CANONICAL_MAIN",
+      "head": "4fb1f124aa25325e6e62dfdb284c60c520c74c0b",
+      "head_committer_date": "2026-09-08T09:59:55+08:00",
+      "merge_base": "4fb1f124aa25325e6e62dfdb284c60c520c74c0b",
+      "unique_code_paths": [],
+      "unique_doc_paths": [],
+      "unique_files": []
+    },
+    {
+      "ahead_by": 4,
+      "archive_or_delete_authorized": false,
+      "behind_by": 15,
+      "branch": "integration/stage3t-reviewed-f0f1-registration-v1",
+      "classification": "DIVERGED_CODE_BEARING_REVIEW_REQUIRED",
+      "head": "6751ed1b816a79df37e9892c5437bbf668816c09",
+      "head_committer_date": "2026-09-04T10:48:12+08:00",
+      "merge_base": "e1a5c9f09a1c999f46755ba23aa337012ba80af2",
+      "unique_code_paths": [
+        "configs/research_intelligence/clean_reference_f0f1_budget_v1.json",
+        "src/pchsi/cognitive_runtime/access.py",
+        "src/pchsi/cognitive_runtime/request_renderer.py",
+        "src/pchsi/research_intelligence/clean_f0f1_manifest.py",
+        "src/pchsi/round_control/analyzer_substage.py",
+        "src/pchsi/round_control/clean_group_analyzer_binding.py",
+        "tests/cognitive_runtime/test_c_component_taxonomy_enum_specialization.py",
+        "tests/cognitive_runtime/test_group_task_access.py",
+        "tests/research_intelligence/test_clean_reference_f0f1_port_v1.py",
+        "tests/round_control/test_analyzer_substage.py",
+        "tests/round_control/test_clean_group_analyzer_binding.py"
+      ],
+      "unique_doc_paths": [],
+      "unique_files": [
+        "M\tconfigs/research_intelligence/clean_reference_f0f1_budget_v1.json",
+        "M\tsrc/pchsi/cognitive_runtime/access.py",
+        "M\tsrc/pchsi/cognitive_runtime/request_renderer.py",
+        "M\tsrc/pchsi/research_intelligence/clean_f0f1_manifest.py",
+        "A\tsrc/pchsi/round_control/analyzer_substage.py",
+        "A\tsrc/pchsi/round_control/clean_group_analyzer_binding.py",
+        "A\ttests/cognitive_runtime/test_c_component_taxonomy_enum_specialization.py",
+        "A\ttests/cognitive_runtime/test_group_task_access.py",
+        "M\ttests/research_intelligence/test_clean_reference_f0f1_port_v1.py",
+        "A\ttests/round_control/test_analyzer_substage.py",
+        "A\ttests/round_control/test_clean_group_analyzer_binding.py"
+      ]
+    },
+    {
+      "ahead_by": 0,
+      "archive_or_delete_authorized": false,
+      "behind_by": 8,
+      "branch": "integration/stage3u-planner-derived-budget-v1",
+      "classification": "CONTAINED_IN_CANONICAL_MAIN",
+      "head": "fe7048dfc8b1a207347490e1661b068ebca4530d",
+      "head_committer_date": "2026-09-05T19:01:41+08:00",
+      "merge_base": "fe7048dfc8b1a207347490e1661b068ebca4530d",
+      "unique_code_paths": [],
+      "unique_doc_paths": [],
+      "unique_files": []
+    },
+    {
+      "ahead_by": 3,
+      "archive_or_delete_authorized": false,
+      "behind_by": 0,
+      "branch": "integration/strong-primary-takeover-prep-v1",
+      "classification": "ACTIVE_INTEGRATION",
+      "head": "b914f2b7dc02c141a31586756938154cf31a4823",
+      "head_committer_date": "2026-09-09T12:02:45+08:00",
+      "merge_base": "4fb1f124aa25325e6e62dfdb284c60c520c74c0b",
+      "unique_code_paths": [
+        "src/pchsi/analyzer/component_attribution.py",
+        "tests/analyzer/test_component_evidence_binding_mechanism_refs_v1.py"
+      ],
+      "unique_doc_paths": [
+        "docs/project/AUTONOMOUS_LOOP_CANONICAL_STATUS_20260909.md",
+        "docs/project/strong_primary_takeover_v1/LEGACY_PILOT_REACHABILITY_AUDIT_V1.json",
+        "docs/project/strong_primary_takeover_v1/LOCAL_SHADOW_BINDING_EVIDENCE_V1.json",
+        "docs/project/strong_primary_takeover_v1/R2_RESOURCE_BUDGET_CANDIDATE_V1.json",
+        "docs/project/strong_primary_takeover_v1/TAKEOVER_CALIBRATION_REGISTRATION_V1.json",
+        "docs/project/strong_primary_takeover_v1/ZERO_BASELINE_TAKEOVER_ESTIMAND_V1.json"
+      ],
+      "unique_files": [
+        "A\tdocs/project/AUTONOMOUS_LOOP_CANONICAL_STATUS_20260909.md",
+        "A\tdocs/project/strong_primary_takeover_v1/LEGACY_PILOT_REACHABILITY_AUDIT_V1.json",
+        "A\tdocs/project/strong_primary_takeover_v1/LOCAL_SHADOW_BINDING_EVIDENCE_V1.json",
+        "A\tdocs/project/strong_primary_takeover_v1/R2_RESOURCE_BUDGET_CANDIDATE_V1.json",
+        "A\tdocs/project/strong_primary_takeover_v1/TAKEOVER_CALIBRATION_REGISTRATION_V1.json",
+        "A\tdocs/project/strong_primary_takeover_v1/ZERO_BASELINE_TAKEOVER_ESTIMAND_V1.json",
+        "M\tsrc/pchsi/analyzer/component_attribution.py",
+        "A\ttests/analyzer/test_component_evidence_binding_mechanism_refs_v1.py"
+      ]
+    },
+    {
+      "ahead_by": 0,
+      "archive_or_delete_authorized": false,
+      "behind_by": 0,
+      "branch": "main",
+      "classification": "CONTAINED_IN_CANONICAL_MAIN",
+      "head": "4fb1f124aa25325e6e62dfdb284c60c520c74c0b",
+      "head_committer_date": "2026-09-08T09:59:55+08:00",
+      "merge_base": "4fb1f124aa25325e6e62dfdb284c60c520c74c0b",
+      "unique_code_paths": [],
+      "unique_doc_paths": [],
+      "unique_files": []
+    },
+    {
+      "ahead_by": 0,
+      "archive_or_delete_authorized": false,
+      "behind_by": 7,
+      "branch": "review/clean-human-r1-f0f1-profile-5229d239a79f",
+      "classification": "CONTAINED_IN_CANONICAL_MAIN",
+      "head": "5229d239a79fb166ffb64a115e1bbfdb09d8df41",
+      "head_committer_date": "2026-09-06T08:20:44+08:00",
+      "merge_base": "5229d239a79fb166ffb64a115e1bbfdb09d8df41",
+      "unique_code_paths": [],
+      "unique_doc_paths": [],
+      "unique_files": []
+    },
+    {
+      "ahead_by": 0,
+      "archive_or_delete_authorized": false,
+      "behind_by": 6,
+      "branch": "review/clean-human-r1-f0f1-prompt-629895d8ca9a",
+      "classification": "CONTAINED_IN_CANONICAL_MAIN",
+      "head": "629895d8ca9a7e5be2c9f2991c5e8c71d9ca3df3",
+      "head_committer_date": "2026-09-06T09:28:08+08:00",
+      "merge_base": "629895d8ca9a7e5be2c9f2991c5e8c71d9ca3df3",
+      "unique_code_paths": [],
+      "unique_doc_paths": [],
+      "unique_files": []
+    },
+    {
+      "ahead_by": 0,
+      "archive_or_delete_authorized": false,
+      "behind_by": 5,
+      "branch": "review/clean-select-i1-81be0e698f7e",
+      "classification": "CONTAINED_IN_CANONICAL_MAIN",
+      "head": "ede426ffb069bd887bd3caf847add8193c801d60",
+      "head_committer_date": "2026-09-06T20:52:31+08:00",
+      "merge_base": "ede426ffb069bd887bd3caf847add8193c801d60",
+      "unique_code_paths": [],
+      "unique_doc_paths": [],
+      "unique_files": []
+    },
+    {
+      "ahead_by": 0,
+      "archive_or_delete_authorized": false,
+      "behind_by": 278,
+      "branch": "review/p1-b-eligible-pool-quota-v1",
+      "classification": "CONTAINED_IN_CANONICAL_MAIN",
+      "head": "052ec5d618f27367156d4b33c7e5d73fb798c611",
+      "head_committer_date": "2026-08-08T18:25:58+08:00",
+      "merge_base": "052ec5d618f27367156d4b33c7e5d73fb798c611",
+      "unique_code_paths": [],
+      "unique_doc_paths": [],
+      "unique_files": []
+    },
+    {
+      "ahead_by": 2,
+      "archive_or_delete_authorized": false,
+      "behind_by": 8,
+      "branch": "slime/context-handoff-20260908",
+      "classification": "DIVERGED_CONTEXT_ONLY_PRESERVE_NO_RAW_MERGE",
+      "head": "6ecb673dd43668348cb041e1e9d1c736ba0335d2",
+      "head_committer_date": "2026-09-08T16:16:40+08:00",
+      "merge_base": "fe7048dfc8b1a207347490e1661b068ebca4530d",
+      "unique_code_paths": [],
+      "unique_doc_paths": [
+        "AGENTS.md",
+        "SLIME_CONTEXT.md"
+      ],
+      "unique_files": [
+        "A\tAGENTS.md",
+        "A\tSLIME_CONTEXT.md"
+      ]
+    }
+  ],
+  "canonical_main": "4fb1f124aa25325e6e62dfdb284c60c520c74c0b",
+  "cleanup_authorized": false,
+  "schema_id": "RECENT_BRANCH_AUDIT_20260909_V1"
+}

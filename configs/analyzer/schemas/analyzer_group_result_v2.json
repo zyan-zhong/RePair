@@ -1,0 +1,171 @@
+{
+  "$id": "ANALYZER_GROUP_RESULT_V2",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "group_id": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "group_manifest_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "group_result_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "mechanism_hypotheses": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "evidence_sha256s": {
+            "items": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "hypothesis_id": {
+            "maxLength": 256,
+            "minLength": 1,
+            "type": "string"
+          },
+          "statement": {
+            "maxLength": 4096,
+            "minLength": 1,
+            "type": "string"
+          },
+          "uncertainty": {
+            "maxLength": 4096,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "hypothesis_id",
+          "statement",
+          "evidence_sha256s",
+          "uncertainty"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "schema_id": {
+      "const": "ANALYZER_GROUP_RESULT_V2",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 2,
+      "type": "integer"
+    },
+    "source_conditioned_proposals": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "error_instance_id": {
+            "maxLength": 256,
+            "minLength": 1,
+            "type": "string"
+          },
+          "exact_action": {
+            "maxLength": 256,
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Mutually exclusive proposal encoding. For an exact-action proposal, this is the exact current-menu action string; for a short-option proposal, this MUST be null."
+          },
+          "group_manifest_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "local_result_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "menu_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "option_actions": {
+            "items": {
+              "maxLength": 256,
+              "minLength": 1,
+              "type": "string"
+            },
+            "maxItems": 4,
+            "type": "array",
+            "description": "Mutually exclusive proposal encoding. For an exact-action proposal, this MUST be an empty array. For a short-option proposal, this MUST contain 1-4 actions and the first action must be an exact current-menu member."
+          },
+          "schema_id": {
+            "const": "ANALYZER_SOURCE_CONDITIONED_PROPOSAL_V1",
+            "type": "string"
+          },
+          "schema_version": {
+            "const": 1,
+            "type": "integer"
+          },
+          "source_proposal_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "source_state_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "supporting_evidence_sha256s": {
+            "items": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "termination_condition": {
+            "maxLength": 2048,
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Mutually exclusive proposal encoding. For an exact-action proposal, this MUST be null. For a short-option proposal, this MUST be a non-empty termination condition."
+          }
+        },
+        "required": [
+          "schema_id",
+          "schema_version",
+          "group_manifest_sha256",
+          "local_result_sha256",
+          "error_instance_id",
+          "source_state_sha256",
+          "menu_sha256",
+          "exact_action",
+          "option_actions",
+          "termination_condition",
+          "supporting_evidence_sha256s",
+          "source_proposal_sha256"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "source_conditioned_repair_sha256s": {
+      "items": {
+        "pattern": "^[0-9a-f]{64}$",
+        "type": "string"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "group_id",
+    "group_manifest_sha256",
+    "mechanism_hypotheses",
+    "source_conditioned_proposals",
+    "source_conditioned_repair_sha256s",
+    "group_result_sha256"
+  ],
+  "type": "object"
+}

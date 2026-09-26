@@ -1,0 +1,42 @@
+{
+  "benchmark_per_task_results_visible": false,
+  "candidate_authority": "FORMAL_ANALYZER_CANDIDATE_POOL",
+  "current_future_outcomes_visible_to_pre": false,
+  "current_reference_budget": {
+    "branch_arms_per_repetition": 2,
+    "derived_registered_state_budget": 12,
+    "paired_repetitions_per_state": 5,
+    "total_branch_run_budget": 120
+  },
+  "effect_authority": "INDEPENDENT_ENVIRONMENT_VERIFIER_ONLY",
+  "planner_post_dimensions": [
+    "VERIFIER_LABEL_CENSUS",
+    "BENEFIT_PER_BUDGET",
+    "CALLS_PER_BENEFIT",
+    "TASK_FAMILY_COVERAGE",
+    "DUPLICATE_MECHANISM_RATE",
+    "UNEXPECTED_HARM",
+    "TRAINING_RECOMMENDATION",
+    "NEXT_ROUND_LESSON"
+  ],
+  "planner_pre_dimensions": [
+    "EVIDENCE_GROUNDING",
+    "COUNTEREVIDENCE",
+    "EXPECTED_VALUE",
+    "HARM_RISK",
+    "VERIFICATION_COST",
+    "TASK_FAMILY_COVERAGE",
+    "MECHANISM_DUPLICATION",
+    "HISTORICAL_NO_GO_OVERLAP"
+  ],
+  "pre_post_separation": true,
+  "promotion_authority": "DETERMINISTIC_INDEPENDENT_GATE_ONLY",
+  "same_visible_input_for_human_strong_local": true,
+  "schema_id": "RESEARCH_PLANNER_REFERENCE_DEMONSTRATION_CONTRACT_V1",
+  "training_ratio_policy": {
+    "freeze_after_verifier_before_training": true,
+    "historical_50_50_mix_is_secondary_control": true,
+    "primary_ratio_frozen_before_f0f1": false,
+    "same_total_training_tokens": true
+  }
+}

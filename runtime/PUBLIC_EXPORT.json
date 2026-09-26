@@ -1,0 +1,230 @@
+{
+  "schema": "REPAIR_PUBLIC_SOURCE_EXPORT_V1",
+  "base_source_commit": "bba400738a7a53d0402552ecc3576f736ca0eec8",
+  "excluded": [
+    {
+      "path": "docs/history/README_before_20260926.md",
+      "sha256": "4f662342dbfe8611362117572eefbc40f16eadba5c4a43357b7aeef1baadd833",
+      "reason": "private_repository_history"
+    },
+    {
+      "path": "docs/ledger/APPEND_ONLY_PROOF.json",
+      "sha256": "5c531d56e1ba756e327c8f5a05e644cc17e36ae6647bd33a55ab8acf67de8da6",
+      "reason": "private_append_only_operations_history"
+    },
+    {
+      "path": "docs/ledger/INDEX.json",
+      "sha256": "ab70aebac0d7c4e9b6251f3b774d4d00d6eed0122236e20fd70e194c53a877e1",
+      "reason": "private_append_only_operations_history"
+    },
+    {
+      "path": "docs/ledger/PCHSI_CANONICAL_STATUS_20260926_V213_REVIEW_PAPER_FULL.md",
+      "sha256": "a4e32d7fa545642a8b2e8d5fea3395e30c30c084e66db15da6dee231c27523e6",
+      "reason": "private_append_only_operations_history"
+    },
+    {
+      "path": "docs/ledger/PCHSI_CANONICAL_STATUS_20260926_V214_PAPER_V43_FULL.md",
+      "sha256": "b9b8c226744247dfd1e551b92c4a406f7149f3c0a20194e394d091f54a7d687c",
+      "reason": "private_append_only_operations_history"
+    },
+    {
+      "path": "docs/ledger/PCHSI_GIT_STAGING_CACHE_V214.json",
+      "sha256": "ab0fb97c48da407e513a751f07980cab8481616ba3e7577f954667c9ee0e3856",
+      "reason": "private_append_only_operations_history"
+    },
+    {
+      "path": "docs/project/AUTONOMOUS_LOOP_CANONICAL_STATUS_20260909.md",
+      "sha256": "00a1e4c8019a12f2794c5727df341e7a432e369187efab1c1f33ba9b5345ab9c",
+      "reason": "private_append_only_operations_history"
+    },
+    {
+      "path": "docs/project/AUTONOMOUS_LOOP_CANONICAL_STATUS_20260909_V10.md",
+      "sha256": "8a5a0d393060aa51281be9aa49bb64032060a48d064cf3246e2be67a57adabc4",
+      "reason": "private_append_only_operations_history"
+    },
+    {
+      "path": "docs/project/AUTONOMOUS_LOOP_CANONICAL_STATUS_20260909_V11.md",
+      "sha256": "16e943378c56a26574a6a27b55aec515cccec266c59434e60dfaa9b39155f53d",
+      "reason": "private_append_only_operations_history"
+    },
+    {
+      "path": "docs/project/AUTONOMOUS_LOOP_CANONICAL_STATUS_20260909_V12.md",
+      "sha256": "0a20264bc075d25275aba154db70c21867a6d47e1c3816b1d4a4fd2be3330dc5",
+      "reason": "private_append_only_operations_history"
+    },
+    {
+      "path": "docs/project/AUTONOMOUS_LOOP_CANONICAL_STATUS_20260909_V13.md",
+      "sha256": "6a86ef41659ee598f3bb5bafab46ceb06ad06fb26539268d04ef00b75f653a47",
+      "reason": "private_append_only_operations_history"
+    },
+    {
+      "path": "docs/project/AUTONOMOUS_LOOP_CANONICAL_STATUS_20260909_V14.md",
+      "sha256": "3dd3168772b22911f36839c243a7d6b835ca91786740e4c13ce747a87b9c30ea",
+      "reason": "private_append_only_operations_history"
+    },
+    {
+      "path": "docs/project/AUTONOMOUS_LOOP_CANONICAL_STATUS_20260909_V3.md",
+      "sha256": "ef2e4c9c98a90a8c525c2c4053fa8f0839a924adf57765987842e60cf6dd158b",
+      "reason": "private_append_only_operations_history"
+    },
+    {
+      "path": "docs/project/AUTONOMOUS_LOOP_CANONICAL_STATUS_20260909_V5.md",
+      "sha256": "fa44b0f1844e730ea1ad20129d43036d22af355c6562deb81c15e04a40269343",
+      "reason": "private_append_only_operations_history"
+    },
+    {
+      "path": "docs/project/AUTONOMOUS_LOOP_CANONICAL_STATUS_20260909_V7.md",
+      "sha256": "1b957330991ceb67365b67341f4b4f387e4cfea4699442eb2e348e5dff64fb97",
+      "reason": "private_append_only_operations_history"
+    },
+    {
+      "path": "docs/project/AUTONOMOUS_LOOP_CANONICAL_STATUS_20260909_V8.md",
+      "sha256": "0497a478c1ef3fb5a1560f04eeae584c948030e0d22bb17f34946fefd0b15c05",
+      "reason": "private_append_only_operations_history"
+    },
+    {
+      "path": "docs/project/AUTONOMOUS_LOOP_CANONICAL_STATUS_20260909_V9.md",
+      "sha256": "e68d1bc30af7017a00adfcbad2f666db91e9aa0d1f46ed571d16003cd5d2518e",
+      "reason": "private_append_only_operations_history"
+    },
+    {
+      "path": "docs/project/AUTONOMOUS_LOOP_CANONICAL_STATUS_20260910_V15.md",
+      "sha256": "3adac9fde997ea728ab9367535efdc925dbe0291eacc5412e1a95f235aa0bd57",
+      "reason": "private_append_only_operations_history"
+    },
+    {
+      "path": "docs/project/AUTONOMOUS_LOOP_CANONICAL_STATUS_20260910_V16.md",
+      "sha256": "8f972485510a9f45d2e74ea58319267e80c3639f6ac570a9fe53b76a2dcbe8a7",
+      "reason": "private_append_only_operations_history"
+    },
+    {
+      "path": "docs/project/AUTONOMOUS_LOOP_CANONICAL_STATUS_20260910_V17.md",
+      "sha256": "8cbcd317cfb77c59004250408d6dfd82e95e2c08150eab0f96d0823bfca84885",
+      "reason": "private_append_only_operations_history"
+    },
+    {
+      "path": "docs/project/AUTONOMOUS_LOOP_CANONICAL_STATUS_20260910_V18.md",
+      "sha256": "bab223ac52504064d0dc771769124b32898ef7fe78dc2649198cbcb64e43a3bc",
+      "reason": "private_append_only_operations_history"
+    },
+    {
+      "path": "docs/project/AUTONOMOUS_LOOP_CANONICAL_STATUS_20260910_V19.md",
+      "sha256": "33afce118e8113173f4396d5b7b7aefb4c054a35184abdb75ef4aa4355c43418",
+      "reason": "private_append_only_operations_history"
+    },
+    {
+      "path": "docs/project/AUTONOMOUS_LOOP_CANONICAL_STATUS_20260910_V20.md",
+      "sha256": "df8915420a90325c4c37ac370f6dd5937c1babc519385988c058d2acccf8afb7",
+      "reason": "private_append_only_operations_history"
+    },
+    {
+      "path": "docs/project/PCHSI_AUTONOMOUS_LOOP_CANONICAL_STATUS_20260911_V74_FULL.md",
+      "sha256": "15ddd37509587d509c82be4abf78864649a660d499695ffb56066782882dd7a0",
+      "reason": "private_append_only_operations_history"
+    },
+    {
+      "path": "docs/project/PCHSI_AUTONOMOUS_LOOP_CANONICAL_STATUS_20260911_V74_FULL.md.sha256",
+      "sha256": "c46cfa56b2659a03d5ef44471c2206669bbd8cfda1b357e28b7df55e8895b812",
+      "reason": "private_append_only_operations_history"
+    },
+    {
+      "path": "docs/project/PCHSI_AUTONOMOUS_LOOP_CANONICAL_STATUS_20260911_V76_STAGE6AN_STAGE6AO_OVERLAY.md",
+      "sha256": "6198fec4f7f49f48eccd7cdfe4165a70ad0216da26aa905a068a2ba8ba0955e7",
+      "reason": "private_append_only_operations_history"
+    },
+    {
+      "path": "docs/project/PCHSI_AUTONOMOUS_LOOP_CANONICAL_STATUS_20260911_V76_STAGE6AN_STAGE6AO_OVERLAY.md.sha256",
+      "sha256": "1d3b78e95cb037bb6aceb1194dfce318c3a21f9f37ddebf9e8430c3f1bb65324",
+      "reason": "private_append_only_operations_history"
+    },
+    {
+      "path": "docs/project/PCHSI_AUTONOMOUS_LOOP_CANONICAL_STATUS_20260911_V77_STAGE6AO_V1_RECOVERY_OVERLAY.md",
+      "sha256": "babade82db14a490eb99765bd3d8ab8df76c9f96cf8e2c64f7e205002fb60abd",
+      "reason": "private_append_only_operations_history"
+    },
+    {
+      "path": "docs/project/PCHSI_AUTONOMOUS_LOOP_CANONICAL_STATUS_20260911_V77_STAGE6AO_V1_RECOVERY_OVERLAY.md.sha256",
+      "sha256": "7be54a95fb49d56b182c7974e989bab0a1fd3ec7fe46bcd6c6457544f847adf5",
+      "reason": "private_append_only_operations_history"
+    },
+    {
+      "path": "docs/project/PCHSI_AUTONOMOUS_LOOP_CANONICAL_STATUS_20260911_V78_STAGE6AO_V1_1_AND_FIRST_ROUND_EXECUTION_OVERLAY.md",
+      "sha256": "14a2917edddbd045758d5789473c7359fce86aff1bf23a6e8951ba91728f1ed8",
+      "reason": "private_append_only_operations_history"
+    },
+    {
+      "path": "docs/project/PCHSI_AUTONOMOUS_LOOP_CANONICAL_STATUS_20260911_V78_STAGE6AO_V1_1_AND_FIRST_ROUND_EXECUTION_OVERLAY.md.sha256",
+      "sha256": "c176ad2c8170e2a3e4c135517c2143cabb93e299bd6e88357feac100cc3a2bbb",
+      "reason": "private_append_only_operations_history"
+    },
+    {
+      "path": "docs/project/PCHSI_AUTONOMOUS_LOOP_CANONICAL_STATUS_20260912_V79_V78_EXPECTED_RED_RECOVERY_OVERLAY.md",
+      "sha256": "f30bb96223c7ed7a8d9502cb6923a70b3108256fd672358829f457fddf88f6bc",
+      "reason": "private_append_only_operations_history"
+    },
+    {
+      "path": "docs/project/PCHSI_AUTONOMOUS_LOOP_CANONICAL_STATUS_20260912_V79_V78_EXPECTED_RED_RECOVERY_OVERLAY.md.sha256",
+      "sha256": "c40b3376b01726d0d5942c9b7000326a836288ae5a4f56f42863d69c2451819e",
+      "reason": "private_append_only_operations_history"
+    },
+    {
+      "path": "docs/project/PCHSI_AUTONOMOUS_LOOP_CANONICAL_STATUS_20260912_V80_FULL.md",
+      "sha256": "be01b47e83aa7a428231dfa49c65a13de42a01eaa65caffc7acdcf5fc8c964a3",
+      "reason": "private_append_only_operations_history"
+    },
+    {
+      "path": "docs/project/PCHSI_AUTONOMOUS_LOOP_CANONICAL_STATUS_20260912_V80_FULL.md.sha256",
+      "sha256": "5187e1a18bc1eef392604f9e5569c098b8455959661b9f659ce4c436ebc9f543",
+      "reason": "private_append_only_operations_history"
+    },
+    {
+      "path": "runtime/packages/package-123e43da6811/ledger/APPEND.md",
+      "sha256": "2ea24adddba31792d7b52ba1a808dd691cecec6a82d9ea77c2a0cfc1e73b38db",
+      "reason": "private_append_only_operations_history"
+    },
+    {
+      "path": "runtime/packages/package-123e43da6811/ledger/APPEND_ONLY_PROOF.json",
+      "sha256": "20d8ea79d84ff232b35c0426d9961fb2a1f2a2d5c35d711c5cf88b869303b5a3",
+      "reason": "private_append_only_operations_history"
+    },
+    {
+      "path": "runtime/packages/package-123e43da6811/ledger/PCHSI_CANONICAL_STATUS_20260924_FORMAL_MAX10_V1_7_EXECUTION_ENTRY_FULL.md",
+      "sha256": "bb560f04cde2dc0fe1d611c5d0e9fa66aab080e5fdb29083dbd906fa1444a8bc",
+      "reason": "private_append_only_operations_history"
+    },
+    {
+      "path": "runtime/packages/package-123e43da6811/ledger/PCHSI_CANONICAL_STATUS_20260924_FORMAL_MAX10_V1_8_1_NATIVE_MEMORY_FIX_FULL.md",
+      "sha256": "3267b832fb630e0d548b5c2b0be4518b31bfa31b76597e2aea05a9a91829cf17",
+      "reason": "private_append_only_operations_history"
+    },
+    {
+      "path": "runtime/packages/package-123e43da6811/ledger/PCHSI_CANONICAL_STATUS_20260924_FORMAL_MAX10_V1_8_2_RECOVERY_READY_FULL.md",
+      "sha256": "dc052fd2bc7764f3ec6ad54fbdc8177e8dfbd521b65753a02d731c4208187002",
+      "reason": "private_append_only_operations_history"
+    },
+    {
+      "path": "runtime/packages/package-123e43da6811/ledger/PCHSI_CANONICAL_STATUS_20260924_FORMAL_MAX10_V1_8_SUCCESS_GAIN_MATERIALIZED_FULL.md",
+      "sha256": "2e04f46d5cd3a0662c9fe3fb3e62d83f6ddc866dca6b055843a3b87bcb196100",
+      "reason": "private_append_only_operations_history"
+    },
+    {
+      "path": "runtime/packages/package-123e43da6811/validation/NATIVE_BBA_EXACT_FIXTURE.zip",
+      "sha256": "47585cbb74cecec46b2306df259ff5b13d03c545813df6a0474f78b4c6b99a02",
+      "reason": "private_git_and_historical_sealed_fixture"
+    },
+    {
+      "path": "runtime/packages/package-123e43da6811/validation/NATIVE_GIT_OBJECTS.pack",
+      "sha256": "fc3453cf8361a605029441132dce0087602c0f62be1facd5cbe232bb8e38ca0b",
+      "reason": "private_git_and_historical_sealed_fixture"
+    },
+    {
+      "path": "runtime/packages/package-123e43da6811/validation/V16_SEALED_FIXTURE.zip",
+      "sha256": "347b775fee15de73bbe9c46a6f9ffc4122d70e6c7662215b739b1dc0e1927ca8",
+      "reason": "private_git_and_historical_sealed_fixture"
+    }
+  ],
+  "production_source_files_rewritten": false,
+  "original_manifests_preserved": true,
+  "production_launch_authority": false,
+  "scope": "Framework, registered runtime code, tests, experiment configuration and anonymous paper evidence. Private operational history and embedded Git fixtures are retained privately."
+}

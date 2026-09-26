@@ -1,0 +1,84 @@
+{
+  "owner_root": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359",
+  "host": "ln02",
+  "registered_python": "/data/home/scwb204/run/sdar_repro/conda_envs/sdar_sft_py312/bin/python",
+  "prior_launch": {
+    "argv": [
+      "/data/home/scwb204/run/sdar_repro/conda_envs/sdar_sft_py312/bin/python",
+      "-B",
+      "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/formal_max10_v204_validation/417999ec97fc215b0ce6c017bf762c68ab6301582cdea456b8dbb8e68aed05b0/MAX10_V2_0_4_EXECUTABLE_FEEDBACK/closure_entry.py",
+      "--run",
+      "--invocation",
+      "63b674075a9f45eba5feac2adbb3fbb1"
+    ],
+    "base_source_sha256": "123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359",
+    "extension_root": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/runtime_extensions/251d67deea109147336cfac84e48fb2b7c02e7f46a1447299019a3132f2a9cec",
+    "extension_sha256": "251d67deea109147336cfac84e48fb2b7c02e7f46a1447299019a3132f2a9cec",
+    "host": "ln02",
+    "invocation_id": "63b674075a9f45eba5feac2adbb3fbb1",
+    "invocation_root": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/runtime_extensions/251d67deea109147336cfac84e48fb2b7c02e7f46a1447299019a3132f2a9cec/invocations/63b674075a9f45eba5feac2adbb3fbb1",
+    "log_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/runtime_extensions/251d67deea109147336cfac84e48fb2b7c02e7f46a1447299019a3132f2a9cec/launch_receipts/63b674075a9f45eba5feac2adbb3fbb1/resident.log",
+    "memory_index_entry_manifest_sha256": "515fd323ea3a0f490f2140c7e640b3c649402d929faca81e4c6bef30b4b6f791",
+    "owner_root": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359",
+    "pid": 1584915,
+    "planner_context_entry_manifest_sha256": "d2fb38807fcb5f52bee91725ff9dc9a14c60df243a9af1b35282dd6e2a626be9",
+    "provider_success_claimed": false,
+    "runtime_root": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/attempts/000002/analyzer/local/strong_local_runtime/registered_credential_continuations/576da204ad3d56f0a9222a52a229ab88f8ba341915dc2ceacf8594c715dff54d/registered_credential_continuations/b08380cf695378534a0feed3caf718149ddea907967383c0e2985be1d3dc302e/registered_durable_continuations/251d67deea109147336cfac84e48fb2b7c02e7f46a1447299019a3132f2a9cec",
+    "schema_id": "REGISTERED_PLANNER_CONTEXT_RESIDENT_LAUNCHED_V1",
+    "source_condition_entry_manifest_sha256": "588cfd41a7133d3f83ef2b55a551202e53494b9beb8845cc90a442225c80342c",
+    "typed_option_entry_manifest_sha256": "987977467be6e1886ee6c487dd912d2539aa3685fea4a006305c49cce1057fd9",
+    "recipe_contract_entry_manifest_sha256": "9fdda452b29458907c95bdbc3687a1e3a57c412b7b01fd18ae38f0e13fee34cc",
+    "candidate_label_entry_manifest_sha256": "742fb853405d444692697da8a1b097fbcd5aaa588c9829627bdfbeefb3ec1ecb",
+    "promotion_entry_manifest_sha256": "5c82f6c32d95d5b475dc11e7b3642c66df1629cddd6f52d88202205e8f8b1b3e",
+    "promotion_exception_entry_manifest_sha256": "e71a5bddce853c462ede7e167e047ac5a41d37367902df42266674e67472a921",
+    "promotion_budget_entry_manifest_sha256": "0e0e3d4770cc356b985b203fd09c40c7a534722ae46ec771c84b07ea51c07056",
+    "durable_transport_manifest_sha256": "95eeb75d4f0306f0267a44d0063244a9189c7eaa1ba69b09f7708be73103fbe9",
+    "trained_parent_manifest_sha256": "154359f03d898d2d944669d149c3090b517702a44f38fc37b7e7bb7f2c3bfb25",
+    "closed_history_manifest_sha256": "417999ec97fc215b0ce6c017bf762c68ab6301582cdea456b8dbb8e68aed05b0",
+    "closed_history_entry_root": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/formal_max10_v204_validation/417999ec97fc215b0ce6c017bf762c68ab6301582cdea456b8dbb8e68aed05b0/MAX10_V2_0_4_EXECUTABLE_FEEDBACK",
+    "launched_utc": "2026-09-25T15:54:05.942210+00:00",
+    "scientific_progress_claimed": false
+  },
+  "context_recovery_binding_ref": {
+    "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/attempts/000006/CURRENT_ANALYZER_BINDING.json",
+    "sha256": "f58bd7020ab17762f0852402fecabed0b93e3d750600f550cba80a870f4defda"
+  },
+  "context_recovery_stop_ref": {
+    "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/runtime_extensions/251d67deea109147336cfac84e48fb2b7c02e7f46a1447299019a3132f2a9cec/invocations/63b674075a9f45eba5feac2adbb3fbb1/RESIDENT_RUNTIME_STOP.json",
+    "sha256": "5c6771950b81e1f592cbb3e198e124da68e0c8df7beb3a4e42aea35a6cc20ed9"
+  },
+  "pre_context_encoding_policy": {
+    "schema_id": "REGISTERED_LOSSLESS_PRE_TRANSPORT_POLICY_V1",
+    "representation": "NAMED_COLUMN_TABLES_AND_REGISTERED_PATH_PREFIX",
+    "file_ref_roots": {
+      "campaign_owner": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/formal_max10_strong_primary_campaign_v1/aa16e25cdd20e889c91312ff990091fb11b73f69a6e01614295b926329e92e44/campaign_owner/source_recoveries/a47ce923aa1dcbd79d72911650ab83f85d037281cd1e01d529630299a7dd11df/source_recoveries/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359"
+    },
+    "roundtrip_equality_required": true,
+    "scientific_rows_removed": false,
+    "scientific_text_truncated": false,
+    "output_schema_changed": false,
+    "budget_policy_changed": false,
+    "provider_calls_added": false,
+    "string_pool_context_window_tokens": 1050000
+  },
+  "context_pool_predecessor": {
+    "root": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/formal_max10_v204_validation/417999ec97fc215b0ce6c017bf762c68ab6301582cdea456b8dbb8e68aed05b0/MAX10_V2_0_4_EXECUTABLE_FEEDBACK",
+    "manifest_sha256": "417999ec97fc215b0ce6c017bf762c68ab6301582cdea456b8dbb8e68aed05b0"
+  },
+  "parallel_runtime_ref": {
+    "root": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/formal_max10_v205_validation/75b4e9a314151bc2102da593c0a5a00cbb9a5f23bc00daa4f0fc644c4ba0deaa/MAX10_V2_0_5_TWO_SOURCE_ANALYZER",
+    "manifest_sha256": "75b4e9a314151bc2102da593c0a5a00cbb9a5f23bc00daa4f0fc644c4ba0deaa"
+  },
+  "pre_context_overlay_ref": {
+    "path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/formal_max10_v188_validation/d2fb38807fcb5f52bee91725ff9dc9a14c60df243a9af1b35282dd6e2a626be9/MAX10_V1_8_8_PLANNER_CONTEXT_CONTINUATION/pre_overlay.py",
+    "sha256": "4bc6218d198b2368ebfce59a241afd0fbb5ab7185370408e8af39eefeba09b46"
+  },
+  "pre_context_source_authority_ref": {
+    "path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/formal_max10_v188_validation/d2fb38807fcb5f52bee91725ff9dc9a14c60df243a9af1b35282dd6e2a626be9/MAX10_V1_8_8_PLANNER_CONTEXT_CONTINUATION/AUTHORITY.json",
+    "sha256": "c0c2e77d960ef47fb0b9ca80551a77063fdce138cc158f1631fcf77f52dc98b3"
+  },
+  "native_entry_root": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/package_runs/formal_max10_v182_validation/123e43da681137a41ed7b68049480e6da780fd9aac8aaec10ce2b6a0fcd8a359/package",
+  "scientific_repo_root": "/data/run01/scwb204/sdar_repro/badcase/github_exports/pchsi-wt-strong-primary-takeover-prep-v1",
+  "registered_context_window_tokens": 1050000,
+  "scope": "PRE wire encoding only; preserve native science, current round serial; registered parallel from R6"
+}

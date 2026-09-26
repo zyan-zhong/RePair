@@ -1,0 +1,69 @@
+{
+  "schema_id": "V17_CONTINUITY_SOURCE_LINEAGE_V1",
+  "execution_authority_conferred": false,
+  "original_sources": [
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\native_bba_full\\src\\pchsi\\round_control\\no_training_update.py",
+      "sha256": "6302982d8954edd486c3fa6d7a50b9cc00ea35944dda6cd22f24ff9e828d09a9"
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\native_bba_full\\src\\pchsi\\round_control\\common.py",
+      "sha256": "47df7037836cbce8a244686d9428a6b7fa00e07a2b6fb514b3c5cd9f5e09ab63"
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\native_bba_full\\src\\pchsi\\round_control\\campaign_authority.py",
+      "sha256": "bc2f9850de2e72821d723e97aae2ef947107a923ae2796d992dbf4dbc6d08235"
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\native_bba_full\\src\\pchsi\\round_control\\scientific_round_governance.py",
+      "sha256": "c1e69e76cc9df19698fa0bd76625e19a8490a5806020167fbd7e9f6afcf09e4a"
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\native_bba_full\\src\\pchsi\\round_control\\rollout_collection.py",
+      "sha256": "6555f9a24e0b0a23314af380beef604690888ac39c23c447d7f80187c403f69c"
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\native_bba_full\\src\\pchsi\\round_control\\promotion.py",
+      "sha256": "0b563091a03a0257bce23eb9bf00fa38c8ce1091ac38f6aa54b1a12c8138a765"
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\native_bba_full\\src\\pchsi\\round_control\\next_round.py",
+      "sha256": "4a886b8342e031d326a805e623dde673f8570b00733b4e94dc486075cef1ad2f"
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\native_bba_full\\src\\pchsi\\reference_loop\\canonical.py",
+      "sha256": "d8693dc075d049a101b68f98e9b8ca892fc8ee0383a9180bd12a081733483d52"
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\native_bba_full\\src\\pchsi\\cognitive_runtime\\identity.py",
+      "sha256": "4e43e8697bf0d5ff6b820acf25dc68569f907e31ca66f9ef08f7d4adf8b99e90"
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\native_bba_full\\src\\pchsi\\cognitive_runtime\\researcher_primary.py",
+      "sha256": "143189ca04c135953266c64664c0f11b89df762eefd6f17255870b7feaecd859"
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\native_bba_full\\src\\pchsi\\memory\\round_maintenance.py",
+      "sha256": "65c860667587869533f0a570b694c5b14bb28eb4dc33bb03f9ab99fcf61ecd6e"
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\native_bba_full\\src\\pchsi\\memory\\dev_snapshot_loader.py",
+      "sha256": "b73b46ce328c1b4ed9676cb142c6e457ff6e693e8190cf6b8f4216e1e264854f"
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\native_bba_full\\src\\pchsi\\memory\\dev_descriptive_snapshot_v2.py",
+      "sha256": "8ead072c54ca52cd30210b42b70e4cddc48ef757551ff30398ba85aaad2b5109"
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\native_bba_full\\src\\pchsi\\memory\\procedural_builder.py",
+      "sha256": "845f6dc391fc019aeb00f26d7b7a5cb78d1e93b024312bb2bffe32068da09f3b"
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\work\\v17\\NATIVE_BBA_FULL_SOURCE_RECEIPT.json",
+      "sha256": "32002b8a1d8ad611dbc556cecb80355b597cc9e4e93cd77c83c66b3a2a2bdc5b"
+    }
+  ],
+  "overlay_file_sha256": "0f1a9a7951026ecebab629b8916ac4b844f204572f58aa953c755b72299b2c76",
+  "source_seal_complete": false,
+  "source_seal_scope": "Direct native imports and source-capture receipt only; root integration seals full dependency closure."
+}

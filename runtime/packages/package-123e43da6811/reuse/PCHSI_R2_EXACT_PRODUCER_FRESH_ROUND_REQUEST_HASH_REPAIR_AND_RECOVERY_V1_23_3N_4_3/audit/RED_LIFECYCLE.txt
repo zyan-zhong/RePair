@@ -1,0 +1,81 @@
+..FF.F                                                                   [100%]
+=================================== FAILURES ===================================
+________ test_one_submission_monitor_spawn_failure_contains_held_array _________
+
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-4/test_one_submission_monitor_sp0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7f8e66de1010>
+
+    def test_one_submission_monitor_spawn_failure_contains_held_array(tmp_path,monkeypatch):
+        root,ctx,r=ready_root(tmp_path);calls=[]
+        monkeypatch.setattr(recover,'assert_old_array_inactive',lambda *a,**k:{'status':'fixture_inactive'})
+        def command(argv,**kwargs):
+            calls.append(argv)
+            return {'argv':argv,'returncode':0,'stdout':'678\n' if argv[0]=='sbatch' else '', 'stderr':''}
+        monkeypatch.setattr(recover,'cmd',command)
+        monkeypatch.setattr(recover.subprocess,'Popen',lambda *a,**k:(_ for _ in ()).throw(OSError('fixture_spawn_failure')))
+        with pytest.raises(OSError):recover.execute(ctx,root,r)
+>       assert [x[0] for x in calls]==['sbatch','scancel']
+E       AssertionError: assert ['sbatch'] == ['sbatch', 'scancel']
+E         
+E         Right contains one more item: 'scancel'
+E         
+E         Full diff:
+E           [
+E               'sbatch',
+E         -     'scancel',
+E           ]
+
+tests/test_control_lifecycle.py:42: AssertionError
+________ test_handoff_without_global_terminal_not_released_to_analyzer _________
+
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-4/test_handoff_without_global_te0')
+
+    def test_handoff_without_global_terminal_not_released_to_analyzer(tmp_path):
+        root,ctx,r=ready_root(tmp_path)
+>       assert supervise.publication_ready(root) is False
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AttributeError: module 'supervise' has no attribute 'publication_ready'
+
+tests/test_control_lifecycle.py:49: AttributeError
+___________ test_release_error_is_not_treated_as_success_on_restart ____________
+
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-4/test_release_error_is_not_trea0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7f8e66cf1bf0>
+
+    def test_release_error_is_not_treated_as_success_on_restart(tmp_path,monkeypatch):
+        root,ctx,r=ready_root(tmp_path)
+        equal_or_new(root/'SUBMISSION_RECEIPT.json',{'ready_sha256':sha_file(root/'READY.json'),'array_job_id':'678'})
+        equal_or_new(root/'GATE_RELEASE_RECEIPT.json',{'returncode':1,'stderr':'fixture failed release'})
+        monkeypatch.setattr(supervise,'cmd',lambda *a,**k:pytest.fail('release resent or monitor polled'))
+>       with pytest.raises(ValueError,match='GATE_RELEASE_FAILED'):supervise.run(root)
+                                                                   ^^^^^^^^^^^^^^^^^^^
+
+tests/test_control_lifecycle.py:72: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+supervise.py:67: in run
+    q=cmd(['squeue','--noheader','--jobs',job,'--format','%i|%T'])
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+a = (['squeue', '--noheader', '--jobs', '678', '--format', '%i|%T'],), k = {}
+
+>   monkeypatch.setattr(supervise,'cmd',lambda *a,**k:pytest.fail('release resent or monitor polled'))
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   Failed: release resent or monitor polled
+
+tests/test_control_lifecycle.py:71: Failed
+----------------------------- Captured stdout call -----------------------------
+{"array_job_id": "678", "host": "localhost", "pid": 1536, "status": "RESIDENT_STARTED_GATE_HELD"}
+=========================== short test summary info ============================
+FAILED tests/test_control_lifecycle.py::test_one_submission_monitor_spawn_failure_contains_held_array - AssertionError: assert ['sbatch'] == ['sbatch', 'scancel']
+  
+  Right contains one more item: 'scancel'
+  
+  Full diff:
+    [
+        'sbatch',
+  -     'scancel',
+    ]
+FAILED tests/test_control_lifecycle.py::test_handoff_without_global_terminal_not_released_to_analyzer - AttributeError: module 'supervise' has no attribute 'publication_ready'
+FAILED tests/test_control_lifecycle.py::test_release_error_is_not_treated_as_success_on_restart - Failed: release resent or monitor polled
+3 failed, 3 passed in 0.15s

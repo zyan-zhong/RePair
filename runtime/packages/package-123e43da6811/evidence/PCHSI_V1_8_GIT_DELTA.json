@@ -1,0 +1,43 @@
+{
+  "schema_id": "PCHSI_STAGING_DELTA_V1",
+  "operation": "STAGING_CACHE_ONLY",
+  "repository": "https://github.com/zyan-zhong/phase-critical-harness-guided-self-improvement.git",
+  "registered_branch": "integration/strong-primary-takeover-prep-v1",
+  "registered_commit": "bba400738a7a53d0402552ecc3576f736ca0eec8",
+  "artifacts": [
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\outputs\\PCHSI_CANONICAL_STATUS_20260924_FORMAL_MAX10_V1_8_EXECUTION_RECORDED_FULL.md",
+      "sha256": "d9723cb4be5e60a23114ad8b4e8bac339a49a93fb451bdad4031ad526a08609e",
+      "bytes": 4699746
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\outputs\\PCHSI_V1_8_APPEND_ONLY_PROOF.json",
+      "sha256": "87185e2f697c5e1ac4ec997b7b1d2dd2d8fa93e5eb30ea8f471766422ca855b0",
+      "bytes": 932
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\outputs\\PCHSI_V1_8_ACTUAL_EXECUTION_RECONCILIATION.json",
+      "sha256": "d416aaf057f40a9d2e87d234ee53c9a93353930402b912e8e55a3306bddca976",
+      "bytes": 18059
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\outputs\\PCHSI_V1_8_FRESH_UNZIP_VERIFICATION.json",
+      "sha256": "fb2e7981e2b3b8c80ef978cfdf03295f0038d80510f9759b15d3a98a3e321d9a",
+      "bytes": 1444
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\outputs\\PCHSI_V1_8_HISTORY_RECHECK.json",
+      "sha256": "a4817f3eef0d3ca6cd4dfd758d16e0e4ec3fe2563616d96948a0e822bed33715",
+      "bytes": 2219
+    },
+    {
+      "path": "C:\\Users\\Henry Austin\\.codex\\.chatgpt-projects\\g-p-69fc970ce7fc8191bb2f6dd99ddd03ac\\outputs\\MAX10_V1_8_SUCCESS_GAIN_ENTRY\\git_staging\\V18_EXECUTION_DELTA.json",
+      "sha256": "41b49b9c99ed53bfdf693e7821d3a69c7e51a3d3790d90230b5a4f757b0ba925",
+      "bytes": 4617
+    }
+  ],
+  "production_git_mutation_count": 0,
+  "remote_git_mutation_count": 0,
+  "temporary_fixture_git_metadata_writes_present": true,
+  "commit_or_push_claimed": false
+}

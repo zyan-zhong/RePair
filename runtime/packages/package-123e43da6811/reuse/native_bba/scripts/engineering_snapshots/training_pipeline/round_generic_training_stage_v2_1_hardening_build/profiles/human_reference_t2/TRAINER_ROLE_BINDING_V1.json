@@ -1,0 +1,16 @@
+{
+  "authority_profile_id": "EXECUTE_FROZEN_TRAINING_CONTRACT_ONLY",
+  "checkpoint_or_adapter_sha256": "b296f2254b1fa1f2e141dffd3f6b5af903f839df4790ffcb245fd8dd57773ace",
+  "implementation_kind": "DETERMINISTIC",
+  "model_or_human_identity": "FROZEN_FORMAL_TRAIN_COMPAT_ADAPTER_V1",
+  "prompt_bundle_sha256": null,
+  "role_id": "TRAINER",
+  "role_kind": "TRAINING_EXECUTOR",
+  "round_id": "HUMAN_REFERENCE_ROUND_PI1_PI2_V1",
+  "runtime_manifest_sha256": "4709c32d34b437d2884fa83d4967f4d898e4cd17d5a56ce0b9e72a250f0ad9e7",
+  "schema_bundle_sha256": "d23339bc42f665f88bf4156550a030f5950b75d9d8bf813825a58627830ccf31",
+  "schema_id": "ROUND_ROLE_BINDING_MANIFEST_V1",
+  "schema_version": 1,
+  "shadow_only": false,
+  "visibility_profile_id": "TRAINING_ARTIFACTS_ONLY"
+}

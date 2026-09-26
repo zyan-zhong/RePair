@@ -1,0 +1,12 @@
+{
+  "live_current_causal_round_authorized": true,
+  "max10_released": false,
+  "next_round_launch_authorized": false,
+  "package_name": "PCHSI_PAPER_CRITICAL_CAUSAL_ROUND_EXECUTION_V1_23_3H4_4",
+  "recovery_scope": "POST_SINGLE_SEND_NO_RESEND_SETTLEMENT_AND_BOUNDED_AUTONOMOUS_INFRASTRUCTURE_DISPOSITION",
+  "release_scope": "POST_METHOD_CONTEXT_OVERFLOW_CONTENT_BOUNDED_RECOVERY",
+  "schema_id": "PCHSI_PAPER_CRITICAL_CAUSAL_ROUND_PACKAGE_IDENTITY_V1",
+  "supersedes_package": "PCHSI_PAPER_CRITICAL_CAUSAL_ROUND_EXECUTION_V1_23_3H4_3",
+  "supersedes_package_name": "PCHSI_PAPER_CRITICAL_CAUSAL_ROUND_EXECUTION_V1_23_3H4_3",
+  "training_execution_authorized": false
+}

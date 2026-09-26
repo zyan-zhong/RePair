@@ -1,0 +1,42 @@
+{
+  "common_post_input_file_sha256": "6c3afe075e884a0425ef7c9af57c5285b8eae049eedaab3b7bcf8f203bb23b37",
+  "common_post_input_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage3x_registered_post_v1/1099e3a418f99b5d6677a9b661d29282f2dafd8df6b054b8d80b53e441de55fb/COMMON_POST_INPUT.json",
+  "environment_result_package_file_sha256": "afcfc2872a6966d94f9ad6cdb68024ff326f62583393a87332f82a2b6f13911a",
+  "environment_result_package_path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage3x_registered_post_v1/1099e3a418f99b5d6677a9b661d29282f2dafd8df6b054b8d80b53e441de55fb/ENVIRONMENT_RESULT_PACKAGE_V1.json",
+  "environment_result_package_sha256": "4366c3f5797dfdcaf74dfb8c2cf1562f615fd48c363e3dfc1aa838814585f247",
+  "live_execution_authorized": true,
+  "memory_pack_sha256": "578ea0364534bb6775585e898cf904359b99794f616a042b8db86c0dd4544654",
+  "primary_pre_record_sha256": "892639f46533fcb7f37a68b2a2c3ed2359ce266afdb816e7d5fea6202692a87b",
+  "purpose": "LOCALIZATION_TEACHER_COLLECTION_ONLY",
+  "request_body_sha256": "d3ddf168b4c85127f02ff268d7ef646634a5768956a49630e779b6243d76a9f1",
+  "requested_model": "gpt-5.6-sol",
+  "round_id": "CLEAN-HUMAN-REFERENCE-R1-PI0",
+  "schema_id": "PLANNER_POST_TEACHER_REQUEST_PLAN_V1",
+  "schema_version": 1,
+  "scientific_unit_identity": {
+    "environment_result_package_sha256": "4366c3f5797dfdcaf74dfb8c2cf1562f615fd48c363e3dfc1aa838814585f247",
+    "identity_sha256": "5664a17fab16e8aef5e6b2b03ca14bbd411dde0501867271d41636c90725723e",
+    "memory_pack_sha256": "578ea0364534bb6775585e898cf904359b99794f616a042b8db86c0dd4544654",
+    "primary_pre_record_sha256": "892639f46533fcb7f37a68b2a2c3ed2359ce266afdb816e7d5fea6202692a87b",
+    "role": "TRAINING_RESEARCHER",
+    "round_id": "CLEAN-HUMAN-REFERENCE-R1-PI0",
+    "stage_id": "R-POST-PRIMARY-V1"
+  },
+  "stage_id": "R-POST-PRIMARY-V1",
+  "target_role_trace_access_class": "TRAIN_RESEARCH_INTELLIGENCE",
+  "target_role_trace_actor": "STRONG",
+  "target_role_trace_authority_mode": "SHADOW",
+  "target_role_trace_role": "RESEARCH_PLANNER_POST",
+  "task_access": {
+    "access_class": "TRAIN_RESEARCH_INTELLIGENCE",
+    "benchmark_result_values_visible": false,
+    "confirmatory_permitted": false,
+    "dataset_split": "TRAIN_RESEARCH_INTELLIGENCE",
+    "gamefile_sha256": "4366c3f5797dfdcaf74dfb8c2cf1562f615fd48c363e3dfc1aa838814585f247",
+    "policy_action_authority": false,
+    "select_evaluation_permitted": false,
+    "task_id": "CLEAN-HUMAN-REFERENCE-R1-PI0",
+    "teacher_call_permitted": true,
+    "training_permitted": false
+  }
+}

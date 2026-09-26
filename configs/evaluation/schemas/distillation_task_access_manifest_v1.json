@@ -1,0 +1,148 @@
+{
+  "$id": "DISTILLATION_TASK_ACCESS_MANIFEST_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "dataset_version": {
+      "maxLength": 128,
+      "minLength": 1,
+      "type": "string"
+    },
+    "historical_access_audit_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "manifest_id": {
+      "maxLength": 128,
+      "minLength": 1,
+      "type": "string"
+    },
+    "record_count": {
+      "minimum": 1,
+      "type": "integer"
+    },
+    "records": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "access_class": {
+            "enum": [
+              "DEV_VISIBLE",
+              "SELECT_SUMMARY_ONLY",
+              "CONFIRMATORY_SEALED",
+              "HISTORICALLY_EXPOSED"
+            ],
+            "type": "string"
+          },
+          "confirmatory_permitted": {
+            "type": "boolean"
+          },
+          "dataset_split": {
+            "maxLength": 128,
+            "minLength": 1,
+            "type": "string"
+          },
+          "gamefile": {
+            "maxLength": 4096,
+            "minLength": 1,
+            "type": "string"
+          },
+          "gamefile_sha1": {
+            "pattern": "^[0-9a-f]{40}$",
+            "type": "string"
+          },
+          "gamefile_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "historical_access_flags": {
+            "items": {
+              "enum": [
+                "NO_KNOWN_PRIOR_ACCESS",
+                "ACCESS_HISTORY_INCOMPLETE",
+                "AGGREGATE_ONLY",
+                "EXECUTED_NOT_INSPECTED",
+                "TRAJECTORY_INSPECTED",
+                "USED_FOR_METHOD_DESIGN",
+                "SENT_TO_EXTERNAL_MODEL"
+              ],
+              "type": "string"
+            },
+            "maxItems": 7,
+            "minItems": 1,
+            "type": "array"
+          },
+          "manifest_index": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "provenance_sources": {
+            "items": {
+              "maxLength": 4096,
+              "minLength": 1,
+              "type": "string"
+            },
+            "minItems": 1,
+            "type": "array"
+          },
+          "select_evaluation_permitted": {
+            "type": "boolean"
+          },
+          "task_id": {
+            "maxLength": 256,
+            "minLength": 1,
+            "type": "string"
+          },
+          "task_type": {
+            "maxLength": 256,
+            "minLength": 1,
+            "type": "string"
+          },
+          "teacher_call_permitted": {
+            "type": "boolean"
+          },
+          "training_permitted": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "manifest_index",
+          "task_id",
+          "dataset_split",
+          "task_type",
+          "gamefile",
+          "gamefile_sha1",
+          "gamefile_sha256",
+          "historical_access_flags",
+          "access_class",
+          "teacher_call_permitted",
+          "training_permitted",
+          "select_evaluation_permitted",
+          "confirmatory_permitted",
+          "provenance_sources"
+        ],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "schema_id": {
+      "const": "DISTILLATION_TASK_ACCESS_MANIFEST_V1",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "manifest_id",
+    "dataset_version",
+    "historical_access_audit_sha256",
+    "record_count",
+    "records"
+  ],
+  "type": "object"
+}

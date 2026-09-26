@@ -1,0 +1,402 @@
+{
+  "classification_counts": {
+    "ACCEPTED": 5,
+    "INFRASTRUCTURE_UNAVAILABLE:PRE_SEND_INFRASTRUCTURE_UNAVAILABLE": 6,
+    "NOT_EXECUTED_DUE_SOURCE_QUARANTINE": 3,
+    "SEMANTIC_INVALID:METHOD_OUTPUT_INVALID": 1,
+    "TRANSPORT_AMBIGUOUS_POST_SEND": 7
+  },
+  "complete_pair_source_count": 19,
+  "incomplete_source_count": 11,
+  "nonquarantine_incomplete_source_count": 4,
+  "original_selected_source_count": 30,
+  "outcome_adaptive_selection_used": false,
+  "quarantined_source_count": 7,
+  "replacement_source_state_count": 0,
+  "resource_budget_expansion": false,
+  "round_id": "CLEAN-HUMAN-REFERENCE-R1-PI0",
+  "rows": [
+    {
+      "quarantined": true,
+      "selection_rank": 2,
+      "source_unit_id": "169fbf524ad94f345afb72aab697d1b07e8b31c475b1d09cd9fd838cc731ae5f",
+      "stage_results": {
+        "L-A0": {
+          "bytes_transmission_state": "MAY_HAVE_BEEN_SENT",
+          "call_dir": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage6g_strong_role_teacher_wave1_live_v1/008ee9f5386e0199ddc02649c2761ef204895ae4/calls/ba62f45ab5e0ac56646865d5c96b1e6ed9d2302a2075219fb1e732cea98203b8",
+          "classification": "TRANSPORT_AMBIGUOUS_POST_SEND",
+          "executed": true,
+          "http_failure_class": "AMBIGUOUS_POST_SEND",
+          "logical_call_id": "ba62f45ab5e0ac56646865d5c96b1e6ed9d2302a2075219fb1e732cea98203b8",
+          "method_failure_class": "AMBIGUOUS_POST_SEND",
+          "retry_class": "NO_RETRY",
+          "retry_reason": "AMBIGUOUS_POST_SEND",
+          "terminal": true,
+          "terminal_method_status": "AMBIGUOUS_POST_SEND",
+          "validated_artifact_present": false,
+          "validation_failure_class": null
+        },
+        "L-A1": {
+          "classification": "NOT_EXECUTED_DUE_SOURCE_QUARANTINE",
+          "executed": false,
+          "terminal": false,
+          "terminal_method_status": null
+        }
+      }
+    },
+    {
+      "quarantined": false,
+      "selection_rank": 3,
+      "source_unit_id": "1da84747bd724d276fc3b571d3459dce41a285611f37f8138f31624aa246c97e",
+      "stage_results": {
+        "L-A0": {
+          "bytes_transmission_state": "CONFIRMED_SENT",
+          "call_dir": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage6g_strong_role_teacher_wave1_live_v1/008ee9f5386e0199ddc02649c2761ef204895ae4/calls/4fe1706a708a3c0ba023b467e35a0dfc2a6be7eac95a6b92cf629e745db3719e",
+          "classification": "SEMANTIC_INVALID:METHOD_OUTPUT_INVALID",
+          "executed": true,
+          "http_failure_class": null,
+          "logical_call_id": "4fe1706a708a3c0ba023b467e35a0dfc2a6be7eac95a6b92cf629e745db3719e",
+          "method_failure_class": null,
+          "retry_class": "INITIAL",
+          "retry_reason": null,
+          "terminal": true,
+          "terminal_method_status": "SEMANTIC_INVALID",
+          "validated_artifact_present": false,
+          "validation_failure_class": "METHOD_OUTPUT_INVALID"
+        },
+        "L-A1": {
+          "bytes_transmission_state": "CONFIRMED_SENT",
+          "call_dir": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage6g_strong_role_teacher_wave1_live_v1/008ee9f5386e0199ddc02649c2761ef204895ae4/calls/04466b37c79bcc7c5c62ec23b4f10fc4cda15c122cc29854dd02c9489cb4bc66",
+          "classification": "ACCEPTED",
+          "executed": true,
+          "http_failure_class": null,
+          "logical_call_id": "04466b37c79bcc7c5c62ec23b4f10fc4cda15c122cc29854dd02c9489cb4bc66",
+          "method_failure_class": null,
+          "retry_class": "INITIAL",
+          "retry_reason": null,
+          "terminal": true,
+          "terminal_method_status": "ACCEPTED",
+          "validated_artifact_present": true,
+          "validation_failure_class": null
+        }
+      }
+    },
+    {
+      "quarantined": true,
+      "selection_rank": 7,
+      "source_unit_id": "b08c267a22c5e4e061b173a72b1d5a5638899e8a921b861c2b08484e62d1df26",
+      "stage_results": {
+        "L-A0": {
+          "bytes_transmission_state": "CONFIRMED_SENT",
+          "call_dir": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage6g_strong_role_teacher_wave1_live_v1/008ee9f5386e0199ddc02649c2761ef204895ae4/calls/fb45a2d02e3d08142be03c350e2cf3ee753ed066c62951cebbeae4a966c4bf52",
+          "classification": "ACCEPTED",
+          "executed": true,
+          "http_failure_class": null,
+          "logical_call_id": "fb45a2d02e3d08142be03c350e2cf3ee753ed066c62951cebbeae4a966c4bf52",
+          "method_failure_class": null,
+          "retry_class": "INITIAL",
+          "retry_reason": null,
+          "terminal": true,
+          "terminal_method_status": "ACCEPTED",
+          "validated_artifact_present": true,
+          "validation_failure_class": null
+        },
+        "L-A1": {
+          "bytes_transmission_state": "MAY_HAVE_BEEN_SENT",
+          "call_dir": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage6g_strong_role_teacher_wave1_live_v1/008ee9f5386e0199ddc02649c2761ef204895ae4/calls/bf55fdd232e0cc63f060a717359659e07f27c35dde5b887f5e97ba2a171aae5f",
+          "classification": "TRANSPORT_AMBIGUOUS_POST_SEND",
+          "executed": true,
+          "http_failure_class": "AMBIGUOUS_POST_SEND",
+          "logical_call_id": "bf55fdd232e0cc63f060a717359659e07f27c35dde5b887f5e97ba2a171aae5f",
+          "method_failure_class": "AMBIGUOUS_POST_SEND",
+          "retry_class": "NO_RETRY",
+          "retry_reason": "AMBIGUOUS_POST_SEND",
+          "terminal": true,
+          "terminal_method_status": "AMBIGUOUS_POST_SEND",
+          "validated_artifact_present": false,
+          "validation_failure_class": null
+        }
+      }
+    },
+    {
+      "quarantined": true,
+      "selection_rank": 8,
+      "source_unit_id": "36a2e6134c68127c96412b9720a18183db6b1700aefd3547c54badc238db44bb",
+      "stage_results": {
+        "L-A0": {
+          "bytes_transmission_state": "NOT_SENT",
+          "call_dir": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage6g_strong_role_teacher_wave1_live_v1/008ee9f5386e0199ddc02649c2761ef204895ae4/calls/9524ac9cb9fb71fb2d8398201b675a98faaf72fb9d87229c3cbaff83f3483b00",
+          "classification": "INFRASTRUCTURE_UNAVAILABLE:PRE_SEND_INFRASTRUCTURE_UNAVAILABLE",
+          "executed": true,
+          "http_failure_class": "PRE_SEND_INFRASTRUCTURE_UNAVAILABLE",
+          "logical_call_id": "9524ac9cb9fb71fb2d8398201b675a98faaf72fb9d87229c3cbaff83f3483b00",
+          "method_failure_class": "PRE_SEND_INFRASTRUCTURE_UNAVAILABLE",
+          "retry_class": "SAFE_PRE_SEND",
+          "retry_reason": "PRE_SEND_INFRASTRUCTURE_UNAVAILABLE",
+          "terminal": true,
+          "terminal_method_status": "INFRASTRUCTURE_UNAVAILABLE",
+          "validated_artifact_present": false,
+          "validation_failure_class": null
+        },
+        "L-A1": {
+          "bytes_transmission_state": "MAY_HAVE_BEEN_SENT",
+          "call_dir": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage6g_strong_role_teacher_wave1_live_v1/008ee9f5386e0199ddc02649c2761ef204895ae4/calls/16e9fc8b2ecee3127fbbe2e6d9b8486402a739f1184b57e6f555776584146d95",
+          "classification": "TRANSPORT_AMBIGUOUS_POST_SEND",
+          "executed": true,
+          "http_failure_class": "AMBIGUOUS_POST_SEND",
+          "logical_call_id": "16e9fc8b2ecee3127fbbe2e6d9b8486402a739f1184b57e6f555776584146d95",
+          "method_failure_class": "AMBIGUOUS_POST_SEND",
+          "retry_class": "NO_RETRY",
+          "retry_reason": "AMBIGUOUS_POST_SEND",
+          "terminal": true,
+          "terminal_method_status": "AMBIGUOUS_POST_SEND",
+          "validated_artifact_present": false,
+          "validation_failure_class": null
+        }
+      }
+    },
+    {
+      "quarantined": false,
+      "selection_rank": 9,
+      "source_unit_id": "0dc1da4d0e364000861869f892a10b1c091cfcf386eb039c24bc84870a039c48",
+      "stage_results": {
+        "L-A0": {
+          "bytes_transmission_state": "NOT_SENT",
+          "call_dir": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage6g_strong_role_teacher_wave1_live_v1/008ee9f5386e0199ddc02649c2761ef204895ae4/calls/c47edfe80c71f6c97060b1af95b3ff48901ab8dd50c259c1b749cf145ff97fc1",
+          "classification": "INFRASTRUCTURE_UNAVAILABLE:PRE_SEND_INFRASTRUCTURE_UNAVAILABLE",
+          "executed": true,
+          "http_failure_class": "PRE_SEND_INFRASTRUCTURE_UNAVAILABLE",
+          "logical_call_id": "c47edfe80c71f6c97060b1af95b3ff48901ab8dd50c259c1b749cf145ff97fc1",
+          "method_failure_class": "PRE_SEND_INFRASTRUCTURE_UNAVAILABLE",
+          "retry_class": "SAFE_PRE_SEND",
+          "retry_reason": "PRE_SEND_INFRASTRUCTURE_UNAVAILABLE",
+          "terminal": true,
+          "terminal_method_status": "INFRASTRUCTURE_UNAVAILABLE",
+          "validated_artifact_present": false,
+          "validation_failure_class": null
+        },
+        "L-A1": {
+          "bytes_transmission_state": "CONFIRMED_SENT",
+          "call_dir": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage6g_strong_role_teacher_wave1_live_v1/008ee9f5386e0199ddc02649c2761ef204895ae4/calls/2a53a4f338636103d61bf385ce74d7b72887a5dab5af479773112f225312e938",
+          "classification": "ACCEPTED",
+          "executed": true,
+          "http_failure_class": null,
+          "logical_call_id": "2a53a4f338636103d61bf385ce74d7b72887a5dab5af479773112f225312e938",
+          "method_failure_class": null,
+          "retry_class": "INITIAL",
+          "retry_reason": null,
+          "terminal": true,
+          "terminal_method_status": "ACCEPTED",
+          "validated_artifact_present": true,
+          "validation_failure_class": null
+        }
+      }
+    },
+    {
+      "quarantined": true,
+      "selection_rank": 11,
+      "source_unit_id": "810bda7e8c7c9e78c0176d611940079bd36f302614ec4229eadd72a1073f50d8",
+      "stage_results": {
+        "L-A0": {
+          "bytes_transmission_state": "CONFIRMED_SENT",
+          "call_dir": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage6g_strong_role_teacher_wave1_live_v1/008ee9f5386e0199ddc02649c2761ef204895ae4/calls/6710159022b3f3cee01527f83d97dd34b2ae99bb4c3300d8795478e9819383b5",
+          "classification": "ACCEPTED",
+          "executed": true,
+          "http_failure_class": null,
+          "logical_call_id": "6710159022b3f3cee01527f83d97dd34b2ae99bb4c3300d8795478e9819383b5",
+          "method_failure_class": null,
+          "retry_class": "INITIAL",
+          "retry_reason": null,
+          "terminal": true,
+          "terminal_method_status": "ACCEPTED",
+          "validated_artifact_present": true,
+          "validation_failure_class": null
+        },
+        "L-A1": {
+          "bytes_transmission_state": "MAY_HAVE_BEEN_SENT",
+          "call_dir": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage6g_strong_role_teacher_wave1_live_v1/008ee9f5386e0199ddc02649c2761ef204895ae4/calls/48d8f48e77dc21f5b573395c4d616a01520e816aee220f0dbc42ea7a8125aee6",
+          "classification": "TRANSPORT_AMBIGUOUS_POST_SEND",
+          "executed": true,
+          "http_failure_class": "AMBIGUOUS_POST_SEND",
+          "logical_call_id": "48d8f48e77dc21f5b573395c4d616a01520e816aee220f0dbc42ea7a8125aee6",
+          "method_failure_class": "AMBIGUOUS_POST_SEND",
+          "retry_class": "NO_RETRY",
+          "retry_reason": "AMBIGUOUS_POST_SEND",
+          "terminal": true,
+          "terminal_method_status": "AMBIGUOUS_POST_SEND",
+          "validated_artifact_present": false,
+          "validation_failure_class": null
+        }
+      }
+    },
+    {
+      "quarantined": false,
+      "selection_rank": 12,
+      "source_unit_id": "2904656731a27f3e4d7ec477acea861be2dd62f8e318fc78ff3b68246308ba47",
+      "stage_results": {
+        "L-A0": {
+          "bytes_transmission_state": "NOT_SENT",
+          "call_dir": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage6g_strong_role_teacher_wave1_live_v1/008ee9f5386e0199ddc02649c2761ef204895ae4/calls/9ea80661ba3e3d51a5ce7aee9e3ed3710a81da0e649d52bd7dcb558a8bf5c1d5",
+          "classification": "INFRASTRUCTURE_UNAVAILABLE:PRE_SEND_INFRASTRUCTURE_UNAVAILABLE",
+          "executed": true,
+          "http_failure_class": "PRE_SEND_INFRASTRUCTURE_UNAVAILABLE",
+          "logical_call_id": "9ea80661ba3e3d51a5ce7aee9e3ed3710a81da0e649d52bd7dcb558a8bf5c1d5",
+          "method_failure_class": "PRE_SEND_INFRASTRUCTURE_UNAVAILABLE",
+          "retry_class": "SAFE_PRE_SEND",
+          "retry_reason": "PRE_SEND_INFRASTRUCTURE_UNAVAILABLE",
+          "terminal": true,
+          "terminal_method_status": "INFRASTRUCTURE_UNAVAILABLE",
+          "validated_artifact_present": false,
+          "validation_failure_class": null
+        },
+        "L-A1": {
+          "bytes_transmission_state": "NOT_SENT",
+          "call_dir": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage6g_strong_role_teacher_wave1_live_v1/008ee9f5386e0199ddc02649c2761ef204895ae4/calls/eca47cc427d0941c4b505924978602755ff34af199db3811f51b7d6d97ad6cd0",
+          "classification": "INFRASTRUCTURE_UNAVAILABLE:PRE_SEND_INFRASTRUCTURE_UNAVAILABLE",
+          "executed": true,
+          "http_failure_class": "PRE_SEND_INFRASTRUCTURE_UNAVAILABLE",
+          "logical_call_id": "eca47cc427d0941c4b505924978602755ff34af199db3811f51b7d6d97ad6cd0",
+          "method_failure_class": "PRE_SEND_INFRASTRUCTURE_UNAVAILABLE",
+          "retry_class": "SAFE_PRE_SEND",
+          "retry_reason": "PRE_SEND_INFRASTRUCTURE_UNAVAILABLE",
+          "terminal": true,
+          "terminal_method_status": "INFRASTRUCTURE_UNAVAILABLE",
+          "validated_artifact_present": false,
+          "validation_failure_class": null
+        }
+      }
+    },
+    {
+      "quarantined": false,
+      "selection_rank": 13,
+      "source_unit_id": "39787e912df00239512b98710a74b238d35213f7d30815ef85b41793f4cda55a",
+      "stage_results": {
+        "L-A0": {
+          "bytes_transmission_state": "NOT_SENT",
+          "call_dir": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage6g_strong_role_teacher_wave1_live_v1/008ee9f5386e0199ddc02649c2761ef204895ae4/calls/e9b98c9cc618a3bb44cc61ca60e23ce0316a95567dceea82efaedcf4c1ee0aea",
+          "classification": "INFRASTRUCTURE_UNAVAILABLE:PRE_SEND_INFRASTRUCTURE_UNAVAILABLE",
+          "executed": true,
+          "http_failure_class": "PRE_SEND_INFRASTRUCTURE_UNAVAILABLE",
+          "logical_call_id": "e9b98c9cc618a3bb44cc61ca60e23ce0316a95567dceea82efaedcf4c1ee0aea",
+          "method_failure_class": "PRE_SEND_INFRASTRUCTURE_UNAVAILABLE",
+          "retry_class": "SAFE_PRE_SEND",
+          "retry_reason": "PRE_SEND_INFRASTRUCTURE_UNAVAILABLE",
+          "terminal": true,
+          "terminal_method_status": "INFRASTRUCTURE_UNAVAILABLE",
+          "validated_artifact_present": false,
+          "validation_failure_class": null
+        },
+        "L-A1": {
+          "bytes_transmission_state": "NOT_SENT",
+          "call_dir": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage6g_strong_role_teacher_wave1_live_v1/008ee9f5386e0199ddc02649c2761ef204895ae4/calls/7c11c7029e84e614e9ab0bc8e5d2060539d76d0eea8fb9c68ea822bd400947a2",
+          "classification": "INFRASTRUCTURE_UNAVAILABLE:PRE_SEND_INFRASTRUCTURE_UNAVAILABLE",
+          "executed": true,
+          "http_failure_class": "PRE_SEND_INFRASTRUCTURE_UNAVAILABLE",
+          "logical_call_id": "7c11c7029e84e614e9ab0bc8e5d2060539d76d0eea8fb9c68ea822bd400947a2",
+          "method_failure_class": "PRE_SEND_INFRASTRUCTURE_UNAVAILABLE",
+          "retry_class": "SAFE_PRE_SEND",
+          "retry_reason": "PRE_SEND_INFRASTRUCTURE_UNAVAILABLE",
+          "terminal": true,
+          "terminal_method_status": "INFRASTRUCTURE_UNAVAILABLE",
+          "validated_artifact_present": false,
+          "validation_failure_class": null
+        }
+      }
+    },
+    {
+      "quarantined": true,
+      "selection_rank": 22,
+      "source_unit_id": "8cf2a4fdc1b94e2355961e580e9eabf0732e5df2004c1601c96790745115e18d",
+      "stage_results": {
+        "L-A0": {
+          "bytes_transmission_state": "MAY_HAVE_BEEN_SENT",
+          "call_dir": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage6g_strong_role_teacher_wave1_live_v1/008ee9f5386e0199ddc02649c2761ef204895ae4/calls/ad21cfcd2acf7f41b9d4f8246acb849bec1fde16e931116283788c747e17a59a",
+          "classification": "TRANSPORT_AMBIGUOUS_POST_SEND",
+          "executed": true,
+          "http_failure_class": "AMBIGUOUS_POST_SEND",
+          "logical_call_id": "ad21cfcd2acf7f41b9d4f8246acb849bec1fde16e931116283788c747e17a59a",
+          "method_failure_class": "AMBIGUOUS_POST_SEND",
+          "retry_class": "NO_RETRY",
+          "retry_reason": "AMBIGUOUS_POST_SEND",
+          "terminal": true,
+          "terminal_method_status": "AMBIGUOUS_POST_SEND",
+          "validated_artifact_present": false,
+          "validation_failure_class": null
+        },
+        "L-A1": {
+          "classification": "NOT_EXECUTED_DUE_SOURCE_QUARANTINE",
+          "executed": false,
+          "terminal": false,
+          "terminal_method_status": null
+        }
+      }
+    },
+    {
+      "quarantined": true,
+      "selection_rank": 23,
+      "source_unit_id": "e06990b32aa157c9bdc4bf09c46b3105014e69abbb23e1226c3476ca0a759d57",
+      "stage_results": {
+        "L-A0": {
+          "bytes_transmission_state": "MAY_HAVE_BEEN_SENT",
+          "call_dir": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage6g_strong_role_teacher_wave1_live_v1/008ee9f5386e0199ddc02649c2761ef204895ae4/calls/a9ee9c99b7d5f6ed64371a559e4792c13e2564c6a7ed1059340ae90efb304932",
+          "classification": "TRANSPORT_AMBIGUOUS_POST_SEND",
+          "executed": true,
+          "http_failure_class": "AMBIGUOUS_POST_SEND",
+          "logical_call_id": "a9ee9c99b7d5f6ed64371a559e4792c13e2564c6a7ed1059340ae90efb304932",
+          "method_failure_class": "AMBIGUOUS_POST_SEND",
+          "retry_class": "NO_RETRY",
+          "retry_reason": "AMBIGUOUS_POST_SEND",
+          "terminal": true,
+          "terminal_method_status": "AMBIGUOUS_POST_SEND",
+          "validated_artifact_present": false,
+          "validation_failure_class": null
+        },
+        "L-A1": {
+          "classification": "NOT_EXECUTED_DUE_SOURCE_QUARANTINE",
+          "executed": false,
+          "terminal": false,
+          "terminal_method_status": null
+        }
+      }
+    },
+    {
+      "quarantined": true,
+      "selection_rank": 25,
+      "source_unit_id": "4d42f6370c78088775391d7d60ec36a3be91132af82f0e00fa1facd5a6b7d81d",
+      "stage_results": {
+        "L-A0": {
+          "bytes_transmission_state": "CONFIRMED_SENT",
+          "call_dir": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage6g_strong_role_teacher_wave1_live_v1/008ee9f5386e0199ddc02649c2761ef204895ae4/calls/35790a00db38778cb1036b850fbfb6962369f440d4b6f8e6e01ef14bcc50d5c0",
+          "classification": "ACCEPTED",
+          "executed": true,
+          "http_failure_class": null,
+          "logical_call_id": "35790a00db38778cb1036b850fbfb6962369f440d4b6f8e6e01ef14bcc50d5c0",
+          "method_failure_class": null,
+          "retry_class": "INITIAL",
+          "retry_reason": null,
+          "terminal": true,
+          "terminal_method_status": "ACCEPTED",
+          "validated_artifact_present": true,
+          "validation_failure_class": null
+        },
+        "L-A1": {
+          "bytes_transmission_state": "MAY_HAVE_BEEN_SENT",
+          "call_dir": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage6g_strong_role_teacher_wave1_live_v1/008ee9f5386e0199ddc02649c2761ef204895ae4/calls/cd71c5cd7a921b3b9059ecf50fbfe3368d97dd8f551129f05fe32eac3c9a608b",
+          "classification": "TRANSPORT_AMBIGUOUS_POST_SEND",
+          "executed": true,
+          "http_failure_class": "AMBIGUOUS_POST_SEND",
+          "logical_call_id": "cd71c5cd7a921b3b9059ecf50fbfe3368d97dd8f551129f05fe32eac3c9a608b",
+          "method_failure_class": "AMBIGUOUS_POST_SEND",
+          "retry_class": "NO_RETRY",
+          "retry_reason": "AMBIGUOUS_POST_SEND",
+          "terminal": true,
+          "terminal_method_status": "AMBIGUOUS_POST_SEND",
+          "validated_artifact_present": false,
+          "validation_failure_class": null
+        }
+      }
+    }
+  ],
+  "schema_id": "WAVE1_INCOMPLETE_SOURCE_AUDIT_V1",
+  "schema_version": 1
+}

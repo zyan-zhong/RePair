@@ -1,0 +1,13 @@
+..................F                                                      [100%]
+=================================== FAILURES ===================================
+_______ test_finalizer_consumes_current_request_not_legacy_capsule_round _______
+
+    def test_finalizer_consumes_current_request_not_legacy_capsule_round():
+        text=(SOURCE_ROOT/'global_finalize.py').read_text()
+>       assert 'load_current_request(' in text
+E       AssertionError: assert 'load_current_request(' in 'from __future__ import annotations\n\nfrom pathlib import Path\nimport os\nimport shutil\nimport sys\n\nfrom safe_io ...      return True\n    finally:\n        # Keep lock as durable proof that finalization was attempted.\n        pass\n'
+
+tests/test_original_regressions.py:49: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_original_regressions.py::test_finalizer_consumes_current_request_not_legacy_capsule_round - AssertionError: assert 'load_current_request(' in 'from __future__ import annotations\n\nfrom pathlib import Path\nimport os\nimport shutil\nimport sys\n\nfrom safe_io ...      return True\n    finally:\n        # Keep lock as durable proof that finalization was attempted.\n        pass\n'
+1 failed, 18 passed in 0.14s

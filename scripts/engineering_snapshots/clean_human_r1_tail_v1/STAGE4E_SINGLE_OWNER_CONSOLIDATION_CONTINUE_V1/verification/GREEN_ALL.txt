@@ -1,0 +1,41 @@
+test_exact_completed_array_and_four_native_statuses_are_required (test_continuation.DependencyTests.test_exact_completed_array_and_four_native_statuses_are_required) ... STAGE4E_COMPLETED_ARRAY_RECHECK=156934
+all four complete
+ok
+test_graceful_partial_does_not_trigger_submission (test_continuation.DependencyTests.test_graceful_partial_does_not_trigger_submission) ... STAGE4E_COMPLETED_ARRAY_RECHECK=156934
+all four complete
+ok
+test_intent_changed_stops (test_continuation.DependencyTests.test_intent_changed_stops) ... ok
+test_missing_native_status_is_not_assumed_success (test_continuation.DependencyTests.test_missing_native_status_is_not_assumed_success) ... STAGE4E_COMPLETED_ARRAY_RECHECK=156934
+all four complete
+ok
+test_new_job_pointer_stops (test_continuation.DependencyTests.test_new_job_pointer_stops) ... ok
+test_running_or_unknown_or_failed_array_never_reads_shard_outcomes (test_continuation.DependencyTests.test_running_or_unknown_or_failed_array_never_reads_shard_outcomes) ... STAGE4E_COMPLETED_ARRAY_RECHECK=156934
+WAIT
+STAGE4E_COMPLETED_ARRAY_RECHECK=156934
+UNKNOWN
+STAGE4E_COMPLETED_ARRAY_RECHECK=156934
+STOP
+ok
+test_submission_array_identity_changed_stops (test_continuation.DependencyTests.test_submission_array_identity_changed_stops) ... ok
+test_unexpected_later_submission_stops (test_continuation.DependencyTests.test_unexpected_later_submission_stops) ... ok
+test_consolidation_failure_is_not_swallowed (test_continuation.LockRegressionTests.test_consolidation_failure_is_not_swallowed) ... ok
+test_driver_mutex_does_not_follow_symlink (test_continuation.LockRegressionTests.test_driver_mutex_does_not_follow_symlink) ... ok
+test_driver_mutex_is_still_exclusive_and_file_is_not_deleted (test_continuation.LockRegressionTests.test_driver_mutex_is_still_exclusive_and_file_is_not_deleted) ... ok
+test_fixed_handoff_lets_original_native_function_own_lock (test_continuation.LockRegressionTests.test_fixed_handoff_lets_original_native_function_own_lock) ... ok
+test_original_double_open_reproduces_reported_stop (test_continuation.LockRegressionTests.test_original_double_open_reproduces_reported_stop) ... ok
+test_real_native_lock_still_blocks_a_separate_process (test_continuation.LockRegressionTests.test_real_native_lock_still_blocks_a_separate_process) ... ok
+test_already_published_only_calls_original_remote_reverification (test_continuation.MainControlFlowTests.test_already_published_only_calls_original_remote_reverification) ... ok
+test_check_only_never_consolidates_archives_or_publishes (test_continuation.MainControlFlowTests.test_check_only_never_consolidates_archives_or_publishes) ... STAGE4E_SINGLE_OWNER_CONTINUATION_PREFLIGHT_PASS
+NEW_SCIENTIFIC_CELL_COUNT=0
+REMOTE_PUBLICATION_PERFORMED=false
+ok
+test_completed_flow_runs_original_consolidation_before_audit_publication (test_continuation.MainControlFlowTests.test_completed_flow_runs_original_consolidation_before_audit_publication) ... ok
+test_dependency_failure_never_consolidates_or_publishes (test_continuation.MainControlFlowTests.test_dependency_failure_never_consolidates_or_publishes) ... ok
+test_native_consolidation_error_never_enters_result_audit (test_continuation.MainControlFlowTests.test_native_consolidation_error_never_enters_result_audit) ... ok
+test_existing_packages_and_manifest_verification_are_reused (test_continuation.ScopeTests.test_existing_packages_and_manifest_verification_are_reused) ... ok
+test_no_model_execution_no_new_stage5_code_no_lock_deletion (test_continuation.ScopeTests.test_no_model_execution_no_new_stage5_code_no_lock_deletion) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 7.360s
+
+OK

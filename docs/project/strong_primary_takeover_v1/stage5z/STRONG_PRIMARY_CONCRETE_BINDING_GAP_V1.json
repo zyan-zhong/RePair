@@ -1,0 +1,15 @@
+{
+  "analyzer_existing_runtime_primary_reuse_candidate": true,
+  "human_primary_strong_shadow_factory_present": true,
+  "planner_primary_adapter_ready": false,
+  "post_shadow_schema_present": true,
+  "pre_shadow_human_gate_present": true,
+  "pre_shadow_schema_present": true,
+  "role_neutral_local_shadow_present": true,
+  "role_neutral_strong_primary_present": true,
+  "schema_id": "STRONG_PRIMARY_CONCRETE_BINDING_GAP_V1",
+  "schema_version": 1,
+  "status": "NEEDS_THIN_ROLE_NEUTRAL_STRONG_PRIMARY_PRE_POST_ADAPTER",
+  "strong_primary_execution_authorized": false,
+  "strong_primary_local_shadow_factory_present": false
+}

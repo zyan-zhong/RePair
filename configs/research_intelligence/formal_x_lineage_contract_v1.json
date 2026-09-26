@@ -1,0 +1,34 @@
+{
+  "a2_analyzer_memory_pack_count": 0,
+  "a3_candidate_memory_binding_count": 30,
+  "candidate_binding_denominator": 60,
+  "candidate_level_x_completeness_required": true,
+  "candidate_to_x_join": [
+    "candidate_projector_wrapper",
+    "g_custom_id",
+    "validated_formal_g_result",
+    "group_result_sha256",
+    "x_custom_id",
+    "validated_formal_x_crosscheck"
+  ],
+  "condition_counts": {
+    "A2": 30,
+    "A3": 30
+  },
+  "effect_authority_present": false,
+  "historical_only_accept_forbidden": true,
+  "human_pre_freeze_allowed": false,
+  "schema_id": "FORMAL_X_LINEAGE_CONTRACT_V1",
+  "source_state_count": 30,
+  "success_trajectory_optimization_active": false,
+  "unique_x_unit_count_forced_to_candidate_count": false,
+  "x_granularity": "GROUP_CONDITION",
+  "x_registry_identity_rule": {
+    "conflicting_target_group_condition_or_memory": "FAIL_CLOSED",
+    "custom_id": "SCIENTIFIC_UNIT_KEY",
+    "overlapping_scientific_claims_must_match": true,
+    "projection_path_is_scientific_identity": false,
+    "representation_provenance_preserved": true,
+    "whole_object_byte_identity_required": false
+  }
+}

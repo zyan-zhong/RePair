@@ -1,0 +1,33 @@
+{
+  "schema_id": "R2_PRODUCER_RUNTIME_SURFACE_PREFLIGHT_V1",
+  "schema_version": 1,
+  "purpose": "Bound the Strong-primary Analyzer reentry cleanliness check to the repository surfaces actually discovered/imported by V1232Q.",
+  "runtime_surface_pathspecs": [
+    "src/pchsi/analyzer",
+    "src/pchsi/round_control",
+    "src/pchsi/evaluation",
+    "src/pchsi/cognitive_runtime",
+    "scripts/memory",
+    "scripts/cognitive_runtime",
+    "configs/cognitive_runtime",
+    "configs/analyzer",
+    "docs/project/strong_primary_takeover_v1/stage6ao/ROLE_SCOPED_STRONG_PRIMARY_FRESH_ROUND_AUTHORITY_V1.json"
+  ],
+  "capsule_source_bindings": [],
+  "tracked_scan": {
+    "command": "git diff --name-only HEAD -- <runtime surfaces>",
+    "timeout_seconds": 60,
+    "require_empty_stdout": true
+  },
+  "untracked_scan": {
+    "command": "git ls-files --others --exclude-standard -- <runtime surfaces>",
+    "initial_timeout_seconds": 30,
+    "retry_timeout_seconds": 180,
+    "retry_condition": "TIMEOUT_ONLY",
+    "maximum_attempts": 2,
+    "argv_must_be_identical": true,
+    "require_empty_stdout": true
+  },
+  "full_worktree_git_status_forbidden": true,
+  "server_or_round_specific_identity_hardcoded": false
+}

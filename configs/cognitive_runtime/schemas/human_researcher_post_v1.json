@@ -1,0 +1,117 @@
+{
+  "$id": "HUMAN_RESEARCHER_POST_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "alternative_explanations": {
+      "items": {
+        "maxLength": 8192,
+        "minLength": 1,
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "denominator": {
+      "minimum": 0,
+      "type": "number"
+    },
+    "environment_result_package_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "human_pre_record_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "hypothesis_status": {
+      "enum": [
+        "SUPPORTED",
+        "REFUTED",
+        "MIXED",
+        "UNRESOLVED"
+      ],
+      "type": "string"
+    },
+    "lesson": {
+      "maxLength": 8192,
+      "minLength": 1,
+      "type": "string"
+    },
+    "next_round_implication": {
+      "maxLength": 8192,
+      "minLength": 1,
+      "type": "string"
+    },
+    "numerator": {
+      "type": "number"
+    },
+    "observed_outcome": {
+      "maxLength": 8192,
+      "minLength": 1,
+      "type": "string"
+    },
+    "post_record_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "protocol_audit": {
+      "maxLength": 8192,
+      "minLength": 1,
+      "type": "string"
+    },
+    "researcher_promotion_recommendation": {
+      "enum": [
+        "PROMOTE",
+        "ROLLBACK",
+        "HOLD"
+      ],
+      "type": "string"
+    },
+    "researcher_training_recommendation": {
+      "maxLength": 8192,
+      "minLength": 1,
+      "type": "string"
+    },
+    "round_id": {
+      "maxLength": 512,
+      "minLength": 1,
+      "type": "string"
+    },
+    "schema_id": {
+      "const": "HUMAN_RESEARCHER_POST_V1",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    },
+    "unexpected_evidence": {
+      "items": {
+        "maxLength": 8192,
+        "minLength": 1,
+        "type": "string"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "round_id",
+    "human_pre_record_sha256",
+    "environment_result_package_sha256",
+    "protocol_audit",
+    "observed_outcome",
+    "numerator",
+    "denominator",
+    "unexpected_evidence",
+    "hypothesis_status",
+    "alternative_explanations",
+    "researcher_training_recommendation",
+    "researcher_promotion_recommendation",
+    "lesson",
+    "next_round_implication",
+    "post_record_sha256"
+  ],
+  "type": "object"
+}

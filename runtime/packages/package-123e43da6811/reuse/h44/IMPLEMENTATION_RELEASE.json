@@ -1,0 +1,14 @@
+{
+  "schema_id": "PAPER_CRITICAL_IMPLEMENTATION_RELEASE_V1",
+  "implementation_candidate": false,
+  "current_causal_round_live_execution_authorized": true,
+  "authorized_scope": "CURRENT_ACCEPTED_PRE_CAUSAL_ROUND_ONLY",
+  "training_execution_authorized": false,
+  "next_round_launch_authorized": false,
+  "max10_released": false,
+  "scientific_actions": "native F0/F1 + independent verifier + one Strong Planner POST",
+  "no_human_scientific_decision_inside_execution": true,
+  "unsupported_semantics": "preserve protocol missingness; no top-up; no candidate replacement",
+  "infra_or_protocol_invalid_is_not_scientific_no_train": true,
+  "training_boundary": "TRAIN produces a typed pending handoff only; this package does not execute optimizer steps"
+}

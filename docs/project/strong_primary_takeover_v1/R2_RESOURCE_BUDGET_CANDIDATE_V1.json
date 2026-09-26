@@ -1,0 +1,26 @@
+{
+  "frozen_for_execution": false,
+  "resource_plan": {
+    "expected_additional_model_logical_calls": 0,
+    "expected_api_cost_usd": null,
+    "expected_environment_branch_runs": 120,
+    "expected_gpu_hours": null,
+    "resource_basis": "Frozen plan: 12 selected source states multiplied by 5 paired repetitions and 2 branch arms equals 120 environment branch runs; no adaptive replacement or additional model-planning calls are budgeted."
+  },
+  "source": "REUSE_FROZEN_STRONG_PRE_VERIFICATION_AND_RESOURCE_PLAN",
+  "source_shadow_record_sha256": "f6053675a8738299adb9f8383e75a071d2fd722dabd868aabfb837be54b321ec",
+  "verification_plan": {
+    "branch_arms_per_repetition": 2,
+    "branch_runs_per_state": 10,
+    "outcome_adaptive_budget_change_allowed": false,
+    "paired_repetitions_per_state": 5,
+    "primary_endpoint": "For each selected state, the paired difference between candidate and frozen comparator arms in verifier-recorded registered task progress, with task completion as the highest-priority progress event and invalid/nonexecuted repetition as a prespecified secondary diagnostic.",
+    "refutation_criterion": "Refute the portfolio hypothesis if fewer than eight states achieve at least three candidate-arm paired progress wins, or if aggregate paired wins do not exceed aggregate paired losses across the 60 repetitions.",
+    "selected_branch_run_budget": 120,
+    "selected_state_budget_ceiling": 12,
+    "stop_condition": "Execute exactly the frozen 120 branch runs unless an arm reaches its registered episode terminal condition; do not add, replace, or reallocate states based on observed outcomes. After all scheduled runs or registered terminal events are recorded, stop and seal the F0/F1 manifest.",
+    "support_criterion": "Support the hypothesis only if at least eight of 12 states show candidate-arm registered task progress in at least three of five paired repetitions and aggregate paired wins exceed paired losses, with no increase in aggregate invalid or nonexecuted repeated actions.",
+    "total_branch_run_budget_ceiling": 120,
+    "unfavorable_candidate_replacement_allowed": false
+  }
+}

@@ -1,0 +1,78 @@
+[
+  {
+    "run": "R1",
+    "states": 11,
+    "state_effects": {
+      "BENEFIT": 0,
+      "HARM": 0,
+      "NEUTRAL": 11,
+      "UNCERTAIN": 0
+    },
+    "pair_effects": {
+      "NEUTRAL": 55
+    },
+    "branch_count": 110,
+    "outcome": "NO_TRAINING_UPDATE"
+  },
+  {
+    "run": "R2",
+    "states": 6,
+    "state_effects": {
+      "BENEFIT": 1,
+      "HARM": 0,
+      "NEUTRAL": 5,
+      "UNCERTAIN": 0
+    },
+    "pair_effects": {
+      "NEUTRAL": 25,
+      "BENEFIT": 5
+    },
+    "branch_count": 60,
+    "outcome": "PROMOTED"
+  },
+  {
+    "run": "R3",
+    "states": 2,
+    "state_effects": {
+      "BENEFIT": 0,
+      "HARM": 0,
+      "NEUTRAL": 2,
+      "UNCERTAIN": 0
+    },
+    "pair_effects": {
+      "NEUTRAL": 10
+    },
+    "branch_count": 20,
+    "outcome": "NO_TRAINING_UPDATE"
+  },
+  {
+    "run": "R4",
+    "states": 1,
+    "state_effects": {
+      "BENEFIT": 0,
+      "HARM": 0,
+      "NEUTRAL": 1,
+      "UNCERTAIN": 0
+    },
+    "pair_effects": {
+      "NEUTRAL": 5
+    },
+    "branch_count": 10,
+    "outcome": "NO_TRAINING_UPDATE"
+  },
+  {
+    "run": "R5",
+    "states": 1,
+    "state_effects": {
+      "BENEFIT": 0,
+      "HARM": 0,
+      "NEUTRAL": 1,
+      "UNCERTAIN": 0
+    },
+    "pair_effects": {
+      "NEUTRAL": 5
+    },
+    "branch_count": 10,
+    "outcome": "NO_TRAINING_UPDATE"
+  }
+]

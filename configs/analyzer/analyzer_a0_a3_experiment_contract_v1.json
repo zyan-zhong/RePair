@@ -1,0 +1,37 @@
+{
+  "a1_local_reused_by_a2_a3":true,
+  "candidate_limit_per_condition_per_state":1,
+  "common_evidence_identical_across_conditions":true,
+  "formal_pair_repetitions":5,
+  "formal_prompt_changes_after_f0f1_visible":false,
+  "formal_stability_rule_status":"FREEZE_BEFORE_FORMAL_OUTCOMES",
+  "main_unique_states_target":30,
+  "max_f1_per_state":4,
+  "maximum_main_continuations":150,
+  "pilot_excluded_from_confirmatory_claim":true,
+  "pilot_unique_states":12,
+  "primary_contrasts":[
+    "A2_HIERARCHICAL_NO_HISTORY_MINUS_A1_MULTI_HYPOTHESIS_LOCAL",
+    "A3_HIERARCHICAL_WITH_HISTORY_MINUS_A2_HIERARCHICAL_NO_HISTORY"
+  ],
+  "primary_metrics":[
+    "VERIFIED_BENEFIT_RATE",
+    "ENVIRONMENT_CALLS_PER_BENEFIT"
+  ],
+  "schema_fixtures":3,
+  "schema_id":"ANALYZER_A0_A3_EXPERIMENT_CONTRACT_V1",
+  "schema_version":1,
+  "secondary_metrics":[
+    "BENEFIT_AT_K",
+    "HARM_AT_K",
+    "NEUTRAL_AT_K",
+    "TIME_TO_FIRST_BENEFIT",
+    "ANALYZER_TOKENS_PER_BENEFIT",
+    "API_COST_PER_BENEFIT",
+    "DUPLICATE_REPAIR_RATE",
+    "TASK_FAMILY_COVERAGE",
+    "ABSTENTION_RATE",
+    "CANDIDATE_EXECUTABLE_RATE"
+  ],
+  "shared_f0_per_state":1
+}

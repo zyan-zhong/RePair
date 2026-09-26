@@ -1,0 +1,102 @@
+{
+  "$id": "LOGICAL_CALL_RECORD_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "condition_id": {
+      "maxLength": 8192,
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "contributing_attempt_id": {
+      "maxLength": 8192,
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "logical_call_id": {
+      "maxLength": 512,
+      "minLength": 1,
+      "type": "string"
+    },
+    "logical_call_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "policy_version": {
+      "maxLength": 512,
+      "minLength": 1,
+      "type": "string"
+    },
+    "request_body_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "role": {
+      "enum": [
+        "ANALYZER",
+        "TRAINING_RESEARCHER"
+      ],
+      "type": "string"
+    },
+    "round_id": {
+      "maxLength": 512,
+      "minLength": 1,
+      "type": "string"
+    },
+    "runtime_manifest_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "schema_id": {
+      "const": "LOGICAL_CALL_RECORD_V1",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    },
+    "scientific_unit_identity_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "stage_id": {
+      "maxLength": 512,
+      "minLength": 1,
+      "type": "string"
+    },
+    "terminal_method_status": {
+      "enum": [
+        "PENDING",
+        "ACCEPTED",
+        "ABSTAIN",
+        "SCHEMA_INVALID",
+        "SEMANTIC_INVALID",
+        "REFUSED",
+        "INFRASTRUCTURE_UNAVAILABLE",
+        "AMBIGUOUS_POST_SEND"
+      ],
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "logical_call_id",
+    "scientific_unit_identity_sha256",
+    "role",
+    "stage_id",
+    "condition_id",
+    "round_id",
+    "policy_version",
+    "runtime_manifest_sha256",
+    "request_body_sha256",
+    "terminal_method_status",
+    "contributing_attempt_id",
+    "logical_call_sha256"
+  ],
+  "type": "object"
+}

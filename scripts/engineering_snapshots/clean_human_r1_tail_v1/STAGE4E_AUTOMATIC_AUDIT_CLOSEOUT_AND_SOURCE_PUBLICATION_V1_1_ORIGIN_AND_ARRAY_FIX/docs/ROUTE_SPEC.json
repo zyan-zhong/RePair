@@ -1,0 +1,381 @@
+{
+  "schema_id": "CLEAN_HUMAN_R1_CODE_ROUTE_SPEC_V1",
+  "steps": [
+    {
+      "component": "Round registration, component ports and execution plan",
+      "input": "Role-neutral parent/model and frozen data-plane bindings",
+      "output": "GenericRoundManifest / BindingRegistry / ExecutionPlan",
+      "boundary": "Existing control contracts are reused; no model/environment execution is inferred from contract existence.",
+      "source_paths": [
+        "src/pchsi/round_control/round_manifest.py",
+        "src/pchsi/round_control/bindings.py",
+        "src/pchsi/round_control/concrete_bindings.py",
+        "src/pchsi/round_control/clean_execution_binding.py",
+        "src/pchsi/round_control/execution_plan.py"
+      ]
+    },
+    {
+      "component": "Clean data / train partition access",
+      "input": "ALFWorld TRAIN_UPDATE, TRAIN_SELECT, TRAIN_AUDIT manifest identities",
+      "output": "Train-only stage access decisions; disjoint task universe",
+      "boundary": "No valid_seen/valid_unseen or old pilot semantic data in the adaptive loop.",
+      "source_paths": [
+        "src/pchsi/round_control/clean_data_gate.py",
+        "src/pchsi/round_control/retention.py",
+        "src/pchsi/evaluation/distillation_access.py",
+        "src/pchsi/evaluation/distillation_governance.py"
+      ]
+    },
+    {
+      "component": "Policy inference interface and task collection",
+      "input": "Frozen parent policy, complete menu, RAW prompt, I1 request schema, seeds and dual budgets",
+      "output": "Environment outcomes plus exact policy-call evidence",
+      "boundary": "Strict parser and exact menu membership retained. I1 affects generation; it is not unconstrained RAW generation.",
+      "source_paths": [
+        "src/pchsi/evaluation/episode_evaluator.py",
+        "src/pchsi/evaluation/raw_policy_prompt.py",
+        "src/pchsi/evaluation/raw_policy_parser.py",
+        "src/pchsi/evaluation/budget.py",
+        "src/pchsi/evaluation/runtime_core.py",
+        "src/pchsi/evaluation/policy_execution_profile.py",
+        "src/pchsi/evaluation/interface_isolation_request.py"
+      ]
+    },
+    {
+      "component": "Environment worker and attempt publication",
+      "input": "Registered gamefile / environment runtime; policy output",
+      "output": "Public transitions; no-clobber attempt bundle, lock and attempt receipts",
+      "boundary": "Environment failures and scientific task failures remain distinct.",
+      "source_paths": [
+        "src/pchsi/evaluation/alfworld_adapter.py",
+        "src/pchsi/evaluation/artifact_publisher.py",
+        "src/pchsi/evaluation/episode_artifact.py",
+        "src/pchsi/evaluation/schema_models.py",
+        "src/pchsi/evaluation/policy_call_evidence.py"
+      ]
+    },
+    {
+      "component": "Mechanical and clean Analyzer evidence",
+      "input": "Frozen train-side episode and full traces",
+      "output": "Evidence Pack / mechanical event facts / current clean policy binding",
+      "boundary": "Facts reconstructed by code; hypotheses do not overwrite environmental evidence.",
+      "source_paths": [
+        "src/pchsi/reference_loop/bundle_reader.py",
+        "src/pchsi/reference_loop/clean_analyzer_evidence.py",
+        "src/pchsi/reference_loop/analyzer_evidence_pack.py",
+        "src/pchsi/reference_loop/mechanical.py",
+        "src/pchsi/reference_loop/alfworld_events.py"
+      ]
+    },
+    {
+      "component": "Adaptive analysis budget and source input materialization",
+      "input": "Round resource cap + eligible complete failure universe",
+      "output": "Deterministic local input registry and count",
+      "boundary": "Counts derived from frozen budget and evidence; no Analyzer-controlled denominator.",
+      "source_paths": [
+        "src/pchsi/round_control/clean_analyzer_input_materialization.py",
+        "src/pchsi/round_control/clean_role_actor_binding.py",
+        "src/pchsi/round_control/analyzer_substage.py",
+        "src/pchsi/analyzer/analysis_budget.py",
+        "src/pchsi/analyzer/analysis_sampling.py",
+        "src/pchsi/analyzer/outcome_router.py"
+      ]
+    },
+    {
+      "component": "Local error lifecycle / A0-A1",
+      "input": "Same authorized train episode; Memory OFF",
+      "output": "Local error instances / principal proposal or abstention",
+      "boundary": "No causal Benefit authority; complete trace boundaries preserved.",
+      "source_paths": [
+        "src/pchsi/analyzer/local_results.py",
+        "src/pchsi/analyzer/authorities.py",
+        "scripts/analyzer/freeze_human_analyzer_primary_v1.py",
+        "src/pchsi/cognitive_runtime/projections.py",
+        "src/pchsi/cognitive_runtime/request_renderer.py",
+        "src/pchsi/cognitive_runtime/output_validation.py"
+      ]
+    },
+    {
+      "component": "Deterministic cross-trajectory groups / A2-A3",
+      "input": "Exact accepted A1 bytes + mechanical grouping; optional historical Memory pack",
+      "output": "Source-conditioned grouped hypotheses and candidate repairs",
+      "boundary": "A2 and A3 differ only by registered Memory exposure; K and member lineage retained.",
+      "source_paths": [
+        "src/pchsi/analyzer/grouping.py",
+        "src/pchsi/analyzer/state_candidate_budget.py",
+        "src/pchsi/analyzer/act3_registration.py",
+        "src/pchsi/round_control/clean_group_analyzer_binding.py"
+      ]
+    },
+    {
+      "component": "Component, policy profile and independent cross-check / C-P-X",
+      "input": "Group hypotheses / current evidence / admissible historical evidence",
+      "output": "Component attribution; deterministic policy profile; challenge results",
+      "boundary": "Challenge may reject/downgrade; cannot rewrite environment truth or secretly replace repairs.",
+      "source_paths": [
+        "src/pchsi/analyzer/component_attribution.py",
+        "src/pchsi/analyzer/capability_profile.py",
+        "src/pchsi/analyzer/crosscheck.py",
+        "src/pchsi/analyzer/candidate_projector.py"
+      ]
+    },
+    {
+      "component": "Strong cognitive runtime",
+      "input": "Typed actor manifest + stage projection + fixed output schema",
+      "output": "Exact requests/responses / validated result / censored attempt ledger",
+      "boundary": "Original P2 transport adapter reused. No hidden conversation state or retry after ambiguous send.",
+      "source_paths": [
+        "src/pchsi/cognitive_runtime/manifest.py",
+        "src/pchsi/cognitive_runtime/p2_assets.py",
+        "src/pchsi/cognitive_runtime/p2_bridge.py",
+        "src/pchsi/cognitive_runtime/orchestrator.py",
+        "src/pchsi/cognitive_runtime/ledger.py",
+        "src/pchsi/cognitive_runtime/formal_registry_v2.py",
+        "src/pchsi/cognitive_runtime/response.py"
+      ]
+    },
+    {
+      "component": "Procedural Failure Experience and role-specific retrieval",
+      "input": "Clean train experience, Analyzer hypotheses, frozen effect status",
+      "output": "Governed Memory records; Policy/Analyzer/Researcher projections",
+      "boundary": "Memory is evidence storage and retrieval, not a separate semantic reasoning model.",
+      "source_paths": [
+        "src/pchsi/memory/sequence_failure_experience.py",
+        "src/pchsi/memory/procedural_record.py",
+        "src/pchsi/memory/procedural_builder.py",
+        "src/pchsi/memory/consumer_views.py",
+        "src/pchsi/memory/formal_b_retrieval.py",
+        "src/pchsi/memory/policy_projection.py",
+        "src/pchsi/memory/policy_view_safety.py"
+      ]
+    },
+    {
+      "component": "Memory round maintenance / persistence",
+      "input": "Prior immutable snapshot + current round shadow events and verified effects",
+      "output": "Next-round promotion/quarantine decisions and immutable snapshot",
+      "boundary": "No same-round readback. Current T2 diagnostic result alone does not promote Memory content.",
+      "source_paths": [
+        "src/pchsi/memory/round_maintenance.py",
+        "src/pchsi/memory/effect_ledger.py",
+        "src/pchsi/memory/event_ledger.py",
+        "src/pchsi/memory/promotion_ledger.py",
+        "src/pchsi/memory/dev_snapshot_loader.py",
+        "src/pchsi/memory/component_ports.py"
+      ]
+    },
+    {
+      "component": "Research evidence hydration / role-neutral input",
+      "input": "Analyzer results, current scientific evidence, permitted Memory and cost views",
+      "output": "Round Evidence Package / Research Planner common input",
+      "boundary": "SELECT reaches Planner only as aggregate; sealed benchmarks never reach adaptive decisions.",
+      "source_paths": [
+        "src/pchsi/cognitive_runtime/round_evidence.py",
+        "src/pchsi/cognitive_runtime/researcher.py",
+        "src/pchsi/cognitive_runtime/researcher_hydrated.py",
+        "src/pchsi/research_intelligence/round_research_inputs.py",
+        "src/pchsi/research_intelligence/visibility.py",
+        "src/pchsi/research_intelligence/role_neutral.py"
+      ]
+    },
+    {
+      "component": "Planner PRE / high-value portfolio",
+      "input": "Shared blind evidence cutoff + candidate universe",
+      "output": "Single principal change; selected/rejected/deferred portfolio; verification budget",
+      "boundary": "Human PRE is current reference, not future permanent controller. Strong shadow cannot retroactively alter it.",
+      "source_paths": [
+        "src/pchsi/research_intelligence/repair_portfolio.py",
+        "src/pchsi/research_intelligence/planner_portfolio_selection.py",
+        "src/pchsi/research_intelligence/canonical_candidate_pool_v2.py",
+        "src/pchsi/research_intelligence/selected_candidate_authority.py",
+        "src/pchsi/research_intelligence/human_planner_freeze_lineage.py"
+      ]
+    },
+    {
+      "component": "Same-state F0/F1 verification",
+      "input": "Exact source state/prefix/menu/policy; frozen repair; paired seeds",
+      "output": "Branch evidence and terminal Benefit/Harm/Neutral/Uncertain labels",
+      "boundary": "No Analyzer/Planner self-granted causal authority; all branch actions consume original budgets.",
+      "source_paths": [
+        "src/pchsi/research_intelligence/clean_f0f1_manifest.py",
+        "src/pchsi/research_intelligence/human_f0f1_runtime.py",
+        "src/pchsi/memory/source_state_replay.py",
+        "src/pchsi/memory/source_state_contracts.py",
+        "scripts/research_intelligence/run_human_reference_f0f1_branch_v2.py",
+        "scripts/research_intelligence/aggregate_human_reference_f0f1_v2.py"
+      ]
+    },
+    {
+      "component": "Planner POST and training-data semantics",
+      "input": "Frozen F0/F1 results + original PRE decisions",
+      "output": "Selected training arm / dataset semantics / loss and resource plan",
+      "boundary": "Current T2 remains unverified-repair diagnostic. Neutral does not become Benefit.",
+      "source_paths": [
+        "src/pchsi/cognitive_runtime/researcher.py",
+        "scripts/research_intelligence/freeze_human_researcher_post_v1.py",
+        "scripts/engineering_snapshots/clean_human_r1_tail_v1/STAGE3Y_EXISTING_TRAINING_PREPARATION_V1/prepare.py",
+        "scripts/engineering_snapshots/clean_human_r1_tail_v1/STAGE3Y_EXISTING_TRAINING_PREPARATION_V1/RUN_PREPARE.py"
+      ]
+    },
+    {
+      "component": "Deterministic training materialization and renderer",
+      "input": "Approved training plan + exact source/action evidence",
+      "output": "Trainer-native input IDs, target labels and lineage checks",
+      "boundary": "No silent truncation; no benchmark data; use existing renderer and training contracts.",
+      "source_paths": [
+        "scripts/engineering_snapshots/training_pipeline/qwen25_3b_schema_aware_renderer_adapter_and_trainer_native_preflight_v1_7_2/tools/renderer_adapter_core.py",
+        "scripts/engineering_snapshots/training_pipeline/round_generic_training_stage_v2_1_hardening_build/round_training/contracts.py"
+      ]
+    },
+    {
+      "component": "Clean initialization, training execution and receipts",
+      "input": "Clean parent + fixed final-only training plan",
+      "output": "T2 adapter, formal training manifest, candidate handoff",
+      "boundary": "Current final checkpoint only; no post-evaluation seed selection or retraining.",
+      "source_paths": [
+        "scripts/engineering_snapshots/clean_human_r1_tail_v1/STAGE4A_EXISTING_TRAINER_CLEAN_INIT_V1/clean_adapter.py",
+        "scripts/engineering_snapshots/clean_human_r1_tail_v1/STAGE4A_EXISTING_TRAINER_CLEAN_INIT_V1/run_stage.py",
+        "scripts/engineering_snapshots/training_pipeline/round_generic_training_stage_v2_1_hardening_build/round_training/stage_runner.py",
+        "scripts/engineering_snapshots/training_pipeline/round_generic_training_stage_v2_1_hardening_build/round_training/receipts.py"
+      ]
+    },
+    {
+      "component": "SELECT preflight and frozen scientific protocol",
+      "input": "Candidate handoff + disjoint TRAIN_SELECT pool",
+      "output": "355-task seed-major T0/T2 grid; fixed protocol and fixed head",
+      "boundary": "No reselection, budget expansion, or changed I1 request semantics after results.",
+      "source_paths": [
+        "scripts/engineering_snapshots/clean_human_r1_tail_v1/STAGE4B_EXISTING_SELECT_PREFLIGHT_V1/preflight.py",
+        "scripts/engineering_snapshots/clean_human_r1_tail_v1/STAGE4B_EXISTING_SELECT_PREFLIGHT_V1/run_preflight.py",
+        "scripts/engineering_snapshots/clean_human_r1_tail_v1/STAGE4C_EXISTING_SELECT_FREEZE_V1/freeze_select.py",
+        "scripts/engineering_snapshots/clean_human_r1_tail_v1/STAGE4C_EXISTING_SELECT_FREEZE_V1/run_freeze.py"
+      ]
+    },
+    {
+      "component": "Typed SELECT binding and server readiness",
+      "input": "Frozen protocol + exact model/adapter/runtime",
+      "output": "Typed policy/server/condition/schedule manifests; two route probes",
+      "boundary": "Readiness is non-scientific; static base + single LoRA, no dynamic updates.",
+      "source_paths": [
+        "scripts/engineering_snapshots/clean_human_r1_tail_v1/STAGE4D_EXISTING_SELECT_LIVE_BINDING_AND_READINESS_V1_1_PROTOCOL_FIELD_FIX/stage4d_pkg/prepare.py",
+        "scripts/engineering_snapshots/clean_human_r1_tail_v1/STAGE4D_EXISTING_SELECT_LIVE_BINDING_AND_READINESS_V1_1_PROTOCOL_FIELD_FIX/stage4d_pkg/readiness.py",
+        "src/pchsi/evaluation/select_policy_runtime.py",
+        "src/pchsi/evaluation/policy_condition.py",
+        "src/pchsi/evaluation/condition_run_schedule.py",
+        "src/pchsi/evaluation/select_execution_identity.py"
+      ]
+    },
+    {
+      "component": "Four-GPU paired SELECT execution",
+      "input": "Original authorization + completed canonical prefix + exact schedules",
+      "output": "Shard-local attempt/receipt chains and deterministic canonical consolidation",
+      "boundary": "One GPU per shard; each pair remains T0 then T2; no duplicate scientific cells. This source is immutable while job 156834 runs.",
+      "source_paths": [
+        "scripts/engineering_snapshots/clean_human_r1_tail_v1/STAGE4D_FULL_SELECT_EXECUTION_AUTHORIZATION_AND_RESUMABLE_LIVE_V1_3_4GPU_PARALLEL_SHARDING/stage4d_full/authorize.py",
+        "scripts/engineering_snapshots/clean_human_r1_tail_v1/STAGE4D_FULL_SELECT_EXECUTION_AUTHORIZATION_AND_RESUMABLE_LIVE_V1_3_4GPU_PARALLEL_SHARDING/stage4d_full/contract.py",
+        "scripts/engineering_snapshots/clean_human_r1_tail_v1/STAGE4D_FULL_SELECT_EXECUTION_AUTHORIZATION_AND_RESUMABLE_LIVE_V1_3_4GPU_PARALLEL_SHARDING/stage4d_full/live.py",
+        "scripts/engineering_snapshots/clean_human_r1_tail_v1/STAGE4D_FULL_SELECT_EXECUTION_AUTHORIZATION_AND_RESUMABLE_LIVE_V1_3_4GPU_PARALLEL_SHARDING/stage4d_full/parallel.py",
+        "scripts/engineering_snapshots/clean_human_r1_tail_v1/STAGE4D_FULL_SELECT_EXECUTION_AUTHORIZATION_AND_RESUMABLE_LIVE_V1_3_4GPU_PARALLEL_SHARDING/stage4d_full/shard_worker.py",
+        "scripts/engineering_snapshots/clean_human_r1_tail_v1/STAGE4D_FULL_SELECT_EXECUTION_AUTHORIZATION_AND_RESUMABLE_LIVE_V1_3_4GPU_PARALLEL_SHARDING/stage4d_full/slurm_entry.py",
+        "scripts/engineering_snapshots/clean_human_r1_tail_v1/STAGE4D_FULL_SELECT_EXECUTION_AUTHORIZATION_AND_RESUMABLE_LIVE_V1_3_4GPU_PARALLEL_SHARDING/slurm_template.sh"
+      ]
+    },
+    {
+      "component": "Independent one-GPU array migration and outcome-blind completion follow",
+      "input": "Original authorization + verified canonical prefix + never-started pending job",
+      "output": "Four registered shard jobs, original canonical completion and original Stage4E closeout",
+      "boundary": "No new evaluator; cancel only an owned PENDING job; all array elements and native status hashes required; no failed-job rerun",
+      "source_paths": [
+        "scripts/engineering_snapshots/clean_human_r1_tail_v1/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1_1_ORIGIN_AND_ARRAY_FIX/stage4e/array_jobs.py",
+        "scripts/engineering_snapshots/clean_human_r1_tail_v1/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1_1_ORIGIN_AND_ARRAY_FIX/stage4e/array_driver.py",
+        "scripts/engineering_snapshots/clean_human_r1_tail_v1/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1_1_ORIGIN_AND_ARRAY_FIX/array_shard.sh"
+      ]
+    },
+    {
+      "component": "Completion-gated audit of full results",
+      "input": "Parent job completed 0:0 plus full 3550 completion artifact",
+      "output": "Reloaded attempts / native I1 identity-chain audit / complete denominator",
+      "boundary": "Never read partial success while waiting; missing scientific outcome is not a failure.",
+      "source_paths": [
+        "scripts/engineering_snapshots/clean_human_r1_tail_v1/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1_1_ORIGIN_AND_ARRAY_FIX/stage4e/driver.py",
+        "scripts/engineering_snapshots/clean_human_r1_tail_v1/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1_1_ORIGIN_AND_ARRAY_FIX/stage4e/audit.py",
+        "scripts/memory/materialize_sequence_failure_experience_v1.py",
+        "src/pchsi/evaluation/select_result_audit.py"
+      ]
+    },
+    {
+      "component": "Paired descriptive statistics",
+      "input": "Fully audited canonical T0/T2 receipt sets",
+      "output": "Per-task mean-over-seeds difference, equal task weighting; registered secondary metrics",
+      "boundary": "Reuse legacy numeric aggregator only, never old 17-task polluted pilot closeout. No post-hoc significance/equivalence threshold.",
+      "source_paths": [
+        "scripts/engineering_snapshots/stage0/human_pilot_stage0_offoff_execution_and_closeout_v1_9/stage0/result_audit.py",
+        "scripts/engineering_snapshots/clean_human_r1_tail_v1/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1_1_ORIGIN_AND_ARRAY_FIX/stage4e/__init__.py"
+      ]
+    },
+    {
+      "component": "Disposition and next-parent handoff",
+      "input": "Audited aggregate + frozen diagnostic non-promotion rule",
+      "output": "Native PromotionDecision ROLLBACK/retain-parent; NextRoundCreation record",
+      "boundary": "Positive measured delta does not override promotion_eligible=false. Next-round creation is not scientific execution authorization.",
+      "source_paths": [
+        "src/pchsi/round_control/promotion.py",
+        "src/pchsi/round_control/next_round.py",
+        "src/pchsi/round_control/attempt_receipts.py",
+        "src/pchsi/round_control/lifecycle.py"
+      ]
+    },
+    {
+      "component": "Human / Strong / Local role traces and localization data",
+      "input": "Frozen clean role traces with accepted/revised/rejected lineage",
+      "output": "RoleTraceRecord / reference demonstrations / eligible local supervision",
+      "boundary": "No current round answer leak or old contaminated pilot reuse. Runtime role equivalence must be verified, not asserted.",
+      "source_paths": [
+        "src/pchsi/round_control/trace_handoff.py",
+        "src/pchsi/round_control/retention.py",
+        "src/pchsi/research_intelligence/research_planner_reference_trace.py",
+        "src/pchsi/research_intelligence/demonstrations.py",
+        "src/pchsi/research_intelligence/distillation.py",
+        "src/pchsi/research_intelligence/reference_round.py"
+      ]
+    },
+    {
+      "component": "Strong-primary and later Local-primary takeover",
+      "input": "Measured takeover evidence, fresh round budget and actor/model bindings",
+      "output": "Existing deterministic eligibility and role authority plan",
+      "boundary": "No invented missing metrics, no routine human decision fallback. Insufficient evidence yields machine HOLD; full autonomous execution not yet claimed.",
+      "source_paths": [
+        "src/pchsi/research_intelligence/takeover.py",
+        "src/pchsi/round_control/role_authority.py",
+        "src/pchsi/round_control/orchestrator.py",
+        "src/pchsi/round_control/clean_role_actor_binding.py"
+      ]
+    },
+    {
+      "component": "Independent benchmark sealing",
+      "input": "Fixed compared policies and shared benchmark protocol",
+      "output": "Sealed standard benchmark product / controlled final unsealing",
+      "boundary": "Not an adaptive-loop data source; benchmark result values remain unread by this delivery.",
+      "source_paths": [
+        "src/pchsi/round_control/benchmark_sealing.py",
+        "src/pchsi/research_intelligence/benchmark_registry.py",
+        "src/pchsi/research_intelligence/product_isolation.py"
+      ]
+    },
+    {
+      "component": "Isolated source consolidation and verified Git publication",
+      "input": "Fixed native Git history + explicit latest execution wrappers + audit-only adapters",
+      "output": "Complete code-chain docs/AST index + FF-only atomic branch/main update",
+      "boundary": "No force push, no active worktree changes, no raw SELECT/benchmark trajectories or weights uploaded.",
+      "source_paths": [
+        "scripts/engineering_snapshots/clean_human_r1_tail_v1/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1_1_ORIGIN_AND_ARRAY_FIX/stage4e/source.py"
+      ]
+    }
+  ],
+  "unresolved_future_execution_requirements": [
+    "Formal Strong takeover metrics must be produced by the existing registered evaluation, including handling undefined ratios; values must not be invented.",
+    "Next-round resource budget, blind evidence cutoff and Strong-primary actor binding must be frozen before calls or training.",
+    "Local-shadow model/training artifact identity must exist before a local shadow is claimed.",
+    "Historical archive-provenance completeness remains false until the existing missing upstream lineage is independently closed.",
+    "This static source map does not prove a fresh Strong/Local autonomous round has executed."
+  ]
+}

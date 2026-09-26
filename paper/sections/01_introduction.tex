@@ -1,0 +1,81 @@
+\section{Introduction}
+\label{sec:introduction}
+A failed attempt tells a language agent that something went wrong. It does
+not tell the agent what to learn. In a long task, failure may follow an
+unproductive search, a missed change of subgoal, or an earlier error from
+which the agent never recovered. A research model can inspect the
+trajectory and suggest a correction. Reflection-based self-training uses
+such feedback to improve generated samples \citep{dou2024rerest}.
+Yet a convincing suggestion is still a hypothesis
+about the policy's future behavior. Opening a cabinet instead of continuing
+to search might reveal the needed object, or it might spend the remaining
+budget and leave the task unsolved. The useful question is therefore concrete:
+what happens when \emph{this policy} takes the proposed change from
+\emph{that state}?
+
+This question sits at a critical handoff in agent self-improvement. Memory
+and harness adaptation can preserve experience outside the model
+\citep{shinn2023reflexion,yu2026recuris}; policy training can carry useful
+experience into the model parameters themselves
+\citep{chen2026evotrainer,yang2026frontis}. The object we ultimately want to
+retain is a policy that performs better when these external aids are
+removed. A stronger intervention can improve the assisted trajectory
+while leaving that object unchanged. Aspire shows why completing the
+update loop is insufficient: agents can execute training while hidden-evaluation
+gains remain sparse or unstable \citep{wu2026aspire}. We study the smaller,
+more testable step between these two ends---how evidence from a failed attempt
+becomes supervision that still helps after the research process is gone.
+
+Prior work already supplies important pieces. CSO tests alternative actions
+through policy continuation and learns from verified preferences
+\citep{li2026cso}. SIRI validates skill-guided rollouts and distills useful
+actions into an unassisted policy \citep{he2026siri}. OPID and SEED turn
+trajectory hindsight into skills whose effect on action probabilities guides
+policy learning \citep{yang2026opid,wu2026seed}. These advances make two
+questions especially salient. First, which failure-derived changes actually
+deserve to enter training? Second, once a change has earned that evidence,
+what information should the learner receive from it?
+
+The first question requires a baseline for the counterfactual. Restarting a
+failed attempt gives the policy another opportunity to succeed even without
+the proposed change. RePair therefore restores the source decision state and
+runs two matched continuations: the registered baseline action and the
+candidate intervention, with the same frozen policy available for subsequent
+decisions. A bounded intervention can itself complete the task; its success
+then measures the intervention's utility, not autonomous policy behavior.
+The terminal outcomes measure whether adding the intervention changes
+completion from that point. This same-state comparison
+turns a plausible correction into experimentally grounded evidence.
+
+The second question begins after verification. An action target teaches the
+learner what to do at the source state. A compact strategy target can also
+teach the active subgoal, the progress signal to watch for, and the condition
+for changing course. In the cabinet example, opening the door is one action;
+recognizing what observation would complete the search, and how to recover if
+the object is absent, describes the decision structure around that action.
+The two targets define a controlled comparison on the same verified states
+and corrected actions. Here we instantiate the dual-view update and evaluate
+its descendant through the original action-only interface, with external
+failure memory and repair intervention disabled. An action-only training
+control remains necessary to isolate the auxiliary view's contribution.
+
+We introduce \method{} to make this handoff measurable end to end
+(Figure~\ref{fig:framework}). Failure analysis and cross-round experience
+help propose testable changes; same-state continuations determine which ones
+become positive evidence; action and strategy targets specify
+what enters learning; scaffold-free evaluation measures what remains in the
+policy. The surrounding Analyzer, Planner, and
+memory machinery supports this sequence, while the empirical study tracks
+which of these handoffs actually succeeds.
+
+Our ALFWorld study starts from Qwen2.5-3B-Instruct. Across five development
+rounds, most verified interventions leave both branches unsuccessful.
+Trace analysis locates a recurring failure: a local correction executes,
+but the continuation policy misses the next prerequisite or repeats an
+already completed action. A later validation makes more of the proposed
+strategy executable and obtains stable terminal benefits. Yet training on
+four such sources does not improve full-task selection success. These
+observations locate the unresolved handoff: a program can finish a task
+while the training examples teach only its initial decision. We report
+the trace and supervision evidence behind this gap and measure its
+consequence for the policy after external assistance is removed.

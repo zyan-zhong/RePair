@@ -1,0 +1,10 @@
+{
+  "adapter_implementation_allowed": false,
+  "package_name": "qwen25_3b_frozen_renderer_interface_census_and_reference_takeover_bridge_v1_6",
+  "purpose": "Read exact frozen Q2 source/materializer/native schemas and freeze Human-reference-to-Strong-takeover normative continuity without executing renderer/model/environment/trainer.",
+  "schema_id": "QWEN25_3B_FROZEN_RENDERER_INTERFACE_CENSUS_PACKAGE_V1",
+  "schema_version": 1,
+  "source_materializer_execution_allowed": false,
+  "trainer_execution_authorized": false,
+  "training_execution_count": 0
+}

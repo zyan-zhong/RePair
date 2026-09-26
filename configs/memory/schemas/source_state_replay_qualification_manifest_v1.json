@@ -1,0 +1,1 @@
+{"$id":"SOURCE_STATE_REPLAY_QUALIFICATION_MANIFEST_V1","$schema":"https://json-schema.org/draft/2020-12/schema","additionalProperties":false,"properties":{"authority_commit":{"pattern":"^[0-9a-f]{40}$","type":"string"},"cases":{"minItems":1,"type":"array"}},"required":["authority_commit","cases"],"type":"object"}

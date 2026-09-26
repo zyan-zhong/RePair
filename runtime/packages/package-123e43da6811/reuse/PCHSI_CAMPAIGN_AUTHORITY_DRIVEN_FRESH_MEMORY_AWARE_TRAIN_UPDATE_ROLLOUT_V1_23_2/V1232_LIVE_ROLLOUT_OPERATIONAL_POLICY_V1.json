@@ -1,0 +1,18 @@
+{
+  "job_requeue_authorized": false,
+  "owned_service_process_group_only": true,
+  "policy_http_timeout_seconds": 60,
+  "preexisting_bound_endpoint_reuse_authorized": false,
+  "rollout_schedule_mode": "SEQUENTIAL_FROZEN_ORDER",
+  "same_job_service_and_rollout_required": true,
+  "schema_id": "PCHSI_V1232_LIVE_ROLLOUT_OPERATIONAL_POLICY_V1",
+  "schema_version": 1,
+  "scientific_values_synthesized": false,
+  "service_probe_interval_seconds": 2,
+  "service_shutdown_grace_seconds": 60,
+  "service_startup_timeout_seconds": 1800,
+  "stop_new_environment_execution_after_infrastructure_invalid": true,
+  "submission_hold_before_durable_job_id": true,
+  "synthetic_terminalize_unstarted_cells_after_infrastructure_invalid": true,
+  "task_retry_count": 0
+}

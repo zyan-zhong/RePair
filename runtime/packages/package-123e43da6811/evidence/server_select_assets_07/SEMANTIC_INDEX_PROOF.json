@@ -1,0 +1,11 @@
+{
+  "registered_binding_sha256": "4ab7942b2c66238cb3833bdb04eb7f7ca23b52d10c388575aaf1bd272dfc100d",
+  "files": {
+    "CLEAN_SELECT_TASK_ACCESS_MANIFEST_V1.json": "474523129ec84582311768be00d4e7be5347a67907310a89651b97409bd8819e",
+    "SELECT_SERVER_RUNTIME_MANIFEST_V1.json": "f7c0c4cfb36f32c3a6c026644585e7b319ca338a2d4b67c6a7787dc1dc16aa04",
+    "ALFWORLD_ENVIRONMENT_RUNTIME_MANIFEST_V1.json": "79bac7ca03bc64f2e3eaa16ffab34ebe99d95d1e9dd17c61a874e85fa026aaea",
+    "CLEAN_SELECT_GAMEFILE_IDENTITY_MANIFEST_V1.json": "0d32562bf74ff2ffcbd1917e952b680e66c6f4b870fdda3592e3610571fa2583"
+  },
+  "validated": true,
+  "scientific_execution_started": false
+}

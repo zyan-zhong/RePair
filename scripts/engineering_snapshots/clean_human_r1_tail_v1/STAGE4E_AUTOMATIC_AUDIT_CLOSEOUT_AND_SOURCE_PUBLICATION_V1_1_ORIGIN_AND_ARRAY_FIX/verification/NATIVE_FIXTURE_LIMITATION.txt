@@ -1,0 +1,109 @@
+test_actual_authorization_contract_file_and_signatures (test_reused_integration.NativeIntegrationTests.test_actual_authorization_contract_file_and_signatures) ... ok
+test_existing_i1_wire_checks_real_evaluator_artifacts (test_reused_integration.NativeIntegrationTests.test_existing_i1_wire_checks_real_evaluator_artifacts) ... ERROR
+test_native_aggregator_then_clean_projection (test_reused_integration.NativeIntegrationTests.test_native_aggregator_then_clean_projection) ... ok
+test_native_disposition_and_next_round_keep_parent (test_reused_integration.NativeIntegrationTests.test_native_disposition_and_next_round_keep_parent) ... ok
+test_stage4e_uses_actual_native_identity_chain (test_reused_integration.NativeIntegrationTests.test_stage4e_uses_actual_native_identity_chain) ... ERROR
+
+======================================================================
+ERROR: test_existing_i1_wire_checks_real_evaluator_artifacts (test_reused_integration.NativeIntegrationTests.test_existing_i1_wire_checks_real_evaluator_artifacts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/stage4e_work/repository/src/pchsi/evaluation/schema_contract.py", line 101, in load_schema
+    path = inventory[schema_id]
+           ~~~~~~~~~^^^^^^^^^^^
+KeyError: 'E1_EPISODE_ARTIFACT_V1'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/native_tests/test_reused_integration.py", line 46, in test_existing_i1_wire_checks_real_evaluator_artifacts
+    m.test_audit_checks_original_prompt_factory_and_request_bytes(Path(d))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/mnt/data/stage4e_work/repository/tests/evaluation/test_select_i1_explicit_binding.py", line 167, in test_audit_checks_original_prompt_factory_and_request_bytes
+    result,_,_=run_episode(tmp_path,['{"action":"illegal"}']*3,[])
+               ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/stage4e_work/repository/tests/evaluation/test_select_i1_explicit_binding.py", line 131, in run_episode
+    result=run_single_episode(config=cfg,dependencies=deps)
+  File "/mnt/data/stage4e_work/repository/src/pchsi/evaluation/episode_evaluator.py", line 1261, in run_single_episode
+    episode = EpisodeArtifactV1(
+        schema_id="E1_EPISODE_ARTIFACT_V1",
+    ...<79 lines>...
+        completed_at_utc=completed_at,
+    )
+  File "<string>", line 51, in __init__
+  File "/mnt/data/stage4e_work/repository/src/pchsi/evaluation/schema_models.py", line 702, in __post_init__
+    self._validate()
+    ~~~~~~~~~~~~~~^^
+  File "/mnt/data/stage4e_work/repository/src/pchsi/evaluation/schema_models.py", line 77, in _validate
+    validate_payload_against_schema(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        schema_id=self.SCHEMA_ID,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+        payload=self.to_dict(),
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/mnt/data/stage4e_work/repository/src/pchsi/evaluation/schema_contract.py", line 447, in validate_payload_against_schema
+    schema = load_schema(schema_id)
+  File "/mnt/data/stage4e_work/repository/src/pchsi/evaluation/schema_contract.py", line 103, in load_schema
+    raise ValueError(
+        f"unknown evaluator schema: {schema_id}"
+    ) from error
+ValueError: unknown evaluator schema: E1_EPISODE_ARTIFACT_V1
+
+======================================================================
+ERROR: test_stage4e_uses_actual_native_identity_chain (test_reused_integration.NativeIntegrationTests.test_stage4e_uses_actual_native_identity_chain)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/stage4e_work/repository/src/pchsi/evaluation/schema_contract.py", line 101, in load_schema
+    path = inventory[schema_id]
+           ~~~~~~~~~^^^^^^^^^^^
+KeyError: 'E1_EPISODE_ARTIFACT_V1'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/data/STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1/native_tests/test_reused_integration.py", line 33, in test_stage4e_uses_actual_native_identity_chain
+    e,p,r,rs,call,trace,episode=fixture._select_final_audit_fixture(response_model_name='P4-R1-Q2-BAD-TRAIN17')
+                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/stage4e_work/repository/tests/evaluation/test_p4_select_execution_compat_v1.py", line 2089, in _select_final_audit_fixture
+    _select_episode_for_final_audit(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        policy_condition_sha256=(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+        ),
+        ^^
+    )
+    ^
+  File "/mnt/data/stage4e_work/repository/tests/evaluation/test_p4_select_execution_compat_v1.py", line 1852, in _select_episode_for_final_audit
+    return EpisodeArtifactV1(
+        schema_id=(
+    ...<121 lines>...
+        ),
+    )
+  File "<string>", line 51, in __init__
+  File "/mnt/data/stage4e_work/repository/src/pchsi/evaluation/schema_models.py", line 702, in __post_init__
+    self._validate()
+    ~~~~~~~~~~~~~~^^
+  File "/mnt/data/stage4e_work/repository/src/pchsi/evaluation/schema_models.py", line 77, in _validate
+    validate_payload_against_schema(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        schema_id=self.SCHEMA_ID,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+        payload=self.to_dict(),
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/mnt/data/stage4e_work/repository/src/pchsi/evaluation/schema_contract.py", line 447, in validate_payload_against_schema
+    schema = load_schema(schema_id)
+  File "/mnt/data/stage4e_work/repository/src/pchsi/evaluation/schema_contract.py", line 103, in load_schema
+    raise ValueError(
+        f"unknown evaluator schema: {schema_id}"
+    ) from error
+ValueError: unknown evaluator schema: E1_EPISODE_ARTIFACT_V1
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.563s
+
+FAILED (errors=2)

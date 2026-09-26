@@ -1,0 +1,39 @@
+{
+  "candidate_roots": [
+    "/data/run01/scwb204/pchsi/p2/p2_strong_offline_proposer_openai_v1_r1_1"
+  ],
+  "command_fallback_allowed": false,
+  "direct_openai_sdk_fallback_allowed": false,
+  "endpoint": {
+    "host": "api.openai.com",
+    "method": "POST",
+    "path": "/v1/responses"
+  },
+  "expected_asset_sha256": {
+    "runtime/p2_openai_adapter.py": "af8d923305444bd524db1bffa99b85670625787e68f658cfc0ed87c37e713a78",
+    "runtime/p2_openai_execute.py": "e970db06f4afe41c6c52f93f00c7eb3a9e7e785e88db74e8c02930c0928ac365"
+  },
+  "expected_httpx_version": "0.28.1",
+  "required_relative_files": [
+    "runtime/p2_openai_adapter.py",
+    "runtime/p2_openai_execute.py"
+  ],
+  "schema_id": "P2_ASSET_BINDING_V1",
+  "transport_callable_name": "_http_attempt",
+  "transport_exception_contract": {
+    "ambiguous_post_send": "HaltCaseAmbiguous",
+    "configuration_or_protocol_hard_stop": "HaltBatch",
+    "pre_send_connect_failure": "ConnectionError"
+  },
+  "transport_module_relative_path": "runtime/p2_openai_execute.py",
+  "transport_required_kwonly_parameters": [
+    "api_key",
+    "body",
+    "client_request_id"
+  ],
+  "transport_return_tuple": [
+    "http_status:int",
+    "allowlisted_headers:dict[str,str]",
+    "raw_response:bytes"
+  ]
+}

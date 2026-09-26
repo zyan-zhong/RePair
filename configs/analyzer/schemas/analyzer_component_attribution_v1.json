@@ -1,0 +1,69 @@
+{
+  "$id": "ANALYZER_COMPONENT_ATTRIBUTION_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "attribution_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "evidence_sha256s": {
+      "items": {
+        "pattern": "^[0-9a-f]{64}$",
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "group_result_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "principal_component": {
+      "maxLength": 256,
+      "minLength": 1,
+      "type": "string"
+    },
+    "raw_response_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "schema_id": {
+      "const": "ANALYZER_COMPONENT_ATTRIBUTION_V1",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    },
+    "secondary_components": {
+      "items": {
+        "maxLength": 256,
+        "minLength": 1,
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "uncertainty": {
+      "maxLength": 4096,
+      "minLength": 1,
+      "type": "string"
+    },
+    "validated_result_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_id",
+    "schema_version",
+    "group_result_sha256",
+    "principal_component",
+    "secondary_components",
+    "evidence_sha256s",
+    "uncertainty",
+    "raw_response_sha256",
+    "validated_result_sha256",
+    "attribution_sha256"
+  ],
+  "type": "object"
+}

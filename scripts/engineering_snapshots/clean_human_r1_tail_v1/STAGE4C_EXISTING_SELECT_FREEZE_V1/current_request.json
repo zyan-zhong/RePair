@@ -1,0 +1,25 @@
+{
+  "authority_context": {
+    "phase": "HUMAN_PRIMARY_STRONG_SHADOW",
+    "takeover_evaluation": null
+  },
+  "base_head": "629895d8ca9a7e5be2c9f2991c5e8c71d9ca3df3",
+  "base_tree": "841809224d03713a39fe3cd20e9d590cd9db3e02",
+  "output_parent": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4c_existing_select_freeze_v1",
+  "preflight_package": {
+    "files": {
+      "PATCH_SCOPE.json": "f79e97af12e8075e215ca4a46e0c4235c6695c5a770c7c2a292df3cac8ed812b",
+      "SELECT_I1_EXTENSION.patch": "7dccc2f1c6b466c81398bcffcb907b43c8ada3e153393ed1ec3365236d8c3c2c",
+      "current_request.json": "a2f60727ce7e4202973ab5262faeedb3746c9875234ffdc231abc51d051964a2",
+      "preflight.py": "f703ea94788b7b3048ab1d61fdd046c39281f2227aa24d8276f76be36450831a"
+    },
+    "path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/STAGE4B_EXISTING_SELECT_PREFLIGHT_V1"
+  },
+  "python": "/data/home/scwb204/run/sdar_repro/conda_envs/sdar_sft_py312/bin/python",
+  "repo": "/data/run01/scwb204/sdar_repro/badcase/github_exports/pchsi-wt-stage3u-planner-derived-budget-v1",
+  "schema_id": "EXISTING_SELECT_FREEZE_REQUEST_V1",
+  "source_review": {
+    "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4b_existing_select_preflight_v1/82fa066f0d56e6c1c528d47f44d373cfb5a13bfd4ab8c2eaed124b4bdd143389/SELECT_PREFLIGHT_REVIEW.zip",
+    "sha256": "e8263e5a9604a85d831187938b6938f721f76e9163da6f5025398d1c32d4db27"
+  }
+}

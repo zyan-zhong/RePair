@@ -1,0 +1,45 @@
+{
+  "expected_unresolved_slots": [
+    "policy_scorecard.policy_config_sha256",
+    "policy_scorecard.task_set_manifest_sha256"
+  ],
+  "input_human_head": "5b1184b6e724fd9f40e7b8e43be6545abe288fef",
+  "policy_config_resolution": {
+    "allowed_resolution_modes": [
+      "SEMANTIC_ALIAS_EXACT_FILE_SHA256",
+      "SEMANTIC_ALIAS_POLICY_CONDITION_MANIFEST"
+    ],
+    "attempt_records_are_authority": false,
+    "bound_reference_field": "policy_config_sha256",
+    "bound_reference_sha256": "457f4f58cd6733f863fa690e45c962f3fda3b2cf511d9961eb715b7a52c07e0b",
+    "required_policy_condition_id": "P4-R1-Q2-BAD-TRAIN17",
+    "required_sealed_lineage_field": "policy_condition_manifest_sha256"
+  },
+  "preservation": {
+    "f0f1_executed_by_default_run": false,
+    "human_adjudication_changed": false,
+    "human_pre_frozen_by_default_run": false,
+    "previously_resolved_slot_count": 7,
+    "previously_resolved_slots_must_be_byte_equivalent": true,
+    "strong_shadow_executed_by_default_run": false,
+    "success_trajectory_optimization_active": false,
+    "training_executed_by_default_run": false
+  },
+  "schema_id": "STRONG_RESEARCHER_FINAL_TWO_SLOT_RESOLUTION_CONTRACT_V1",
+  "schema_version": 1,
+  "source_blind_input_v1_sha256": "cf6a1d4f88f7db2ad0803a1955d5e65279bab98447cda2f7a445f6a17425ffed",
+  "source_hydration_manifest_file_sha256": "a568e440dc950f783f08291982be3972fe3a14685bb1baee79512f56c8111aac",
+  "source_hydration_manifest_sha256": "5656d840ed050a9fc6c16d7c8a3e20a4b5e72a4491b136974797609cdffe5544",
+  "task_set_resolution": {
+    "allowed_resolution_modes": [
+      "TASK_SET_EXACT_FILE_SHA256",
+      "TASK_SET_REGISTERED_MANIFEST_IDENTITY"
+    ],
+    "bound_reference_field": "task_set_manifest_sha256",
+    "bound_reference_sha256": "c21a280829623546eaa6ad7be4b472ba64fc267f2a290f6df39dafb41f01b448",
+    "deterministic_reconstruction_allowed_without_registered_builder": false,
+    "scientific_unit_identity_substitution_allowed": false,
+    "split_access_manifest_substitution_allowed": false,
+    "task_access_manifest_substitution_allowed": false
+  }
+}

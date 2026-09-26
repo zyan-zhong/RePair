@@ -1,0 +1,270 @@
+{
+  "schema_id": "STAGE4E_V1_1_CHANGE_SCOPE",
+  "files": [
+    {
+      "path": "00_VERIFY_PACKAGE.sh",
+      "change": "MODIFIED",
+      "file_sha256": "be30e1eefcf038fabf7d3c1f90ca75d9fc1b6be05dbd8bf1a5d06c45314207d4"
+    },
+    {
+      "path": "README_CN.md",
+      "change": "MODIFIED",
+      "file_sha256": "cbc5126eb1d3da350c3e4027bfc0a61f597d39fbb744a59c07ee3471554bd293"
+    },
+    {
+      "path": "REVIEW_FINDINGS.md",
+      "change": "MODIFIED",
+      "file_sha256": "1a17c8952d5c36bed71fa7fcd00189e2f5b9b865163f5a50a5888ae6a1e94070"
+    },
+    {
+      "path": "REVIEW_FINDINGS_V1_BASELINE.md",
+      "change": "ADDED",
+      "file_sha256": "26de7ffd37d234129dd18a4e35db38cc5adc5d7a04a952f9431cd58ba0fdf12b"
+    },
+    {
+      "path": "RUN_MIGRATE_SINGLE_GPU_ARRAY_AND_FOLLOW.sh",
+      "change": "ADDED",
+      "file_sha256": "bc422b5e0ede7d7157feb48bdfdcd724b3992d436b34562d2c17a89bc7a572e8"
+    },
+    {
+      "path": "RUN_PREPARE_AND_FOLLOW.sh",
+      "change": "UNCHANGED",
+      "file_sha256": "9e03526d90cf0b354650ae1d0ddf09da03bbdc5111064d6e2cfac1acdb605cfa"
+    },
+    {
+      "path": "array_shard.sh",
+      "change": "ADDED",
+      "file_sha256": "91401eba80297e140067e0e1fb1ebff59b7db085224906cb87c95c7b3babe4c4"
+    },
+    {
+      "path": "config.json",
+      "change": "MODIFIED",
+      "file_sha256": "d4f80c7966195937882b3e746d4f205419a95364b4d4480bf6c24a228c3e9268"
+    },
+    {
+      "path": "docs/CODE_CHAIN_PREVIEW.json",
+      "change": "MODIFIED",
+      "file_sha256": "47013907f9f112d9bf0071fc82afe2e79e1682410ef1d3ec10692adff2618493"
+    },
+    {
+      "path": "docs/CODE_CHAIN_PREVIEW.md",
+      "change": "MODIFIED",
+      "file_sha256": "f1061e29e8bc98f6aad961f5488998d77b23de6d2c2c56ff186bae6857571839"
+    },
+    {
+      "path": "docs/ROUTE_SPEC.json",
+      "change": "MODIFIED",
+      "file_sha256": "6767bceecdd94caa2c3ff71a4fe793e2a93e24c3e69c01209de09adbc4d2afd3"
+    },
+    {
+      "path": "native_tests/test_reused_integration.py",
+      "change": "UNCHANGED",
+      "file_sha256": "04e6afee7cb9764c60c08c3ce1fa29c19ef4b2ce7deea7ea4910206d902033d5"
+    },
+    {
+      "path": "stage4e/__init__.py",
+      "change": "UNCHANGED",
+      "file_sha256": "2188e65a6d09630eeaa290d019e102926d4dd83f3e323ea36f4b703a6e7108f2"
+    },
+    {
+      "path": "stage4e/array_driver.py",
+      "change": "ADDED",
+      "file_sha256": "8cf7275d63c3ddae705e099ff320e3a23c2724b9d21b0aa75bf7e6a31ad4065d"
+    },
+    {
+      "path": "stage4e/array_jobs.py",
+      "change": "ADDED",
+      "file_sha256": "e0851d7e2f6e9a2b3ec3e7218035cc91a0eb200f8e525e99100082f6da74c05e"
+    },
+    {
+      "path": "stage4e/audit.py",
+      "change": "UNCHANGED",
+      "file_sha256": "a589f616e66c68e9b97ede40ad1c3b766f39f46151891a9948624293d472cd28"
+    },
+    {
+      "path": "stage4e/driver.py",
+      "change": "UNCHANGED",
+      "file_sha256": "32ec70c9fd5e0c750b301cf48f713426f483e6f99647bcb312666bfa11e2bcaf"
+    },
+    {
+      "path": "stage4e/source.py",
+      "change": "MODIFIED",
+      "file_sha256": "12bf3c42282b1adfd9a095a7f5e2c9dec79a5074da537f76d0efb5aadcf020f9"
+    },
+    {
+      "path": "tests/test_array_contract.py",
+      "change": "ADDED",
+      "file_sha256": "016c3a0270a78cb2bf14bcfc59507991c5dba58c815d990881c6b0ec94f24d5c"
+    },
+    {
+      "path": "tests/test_array_driver.py",
+      "change": "ADDED",
+      "file_sha256": "3e40f36dec1801d3ce0ffdf395d3f5c873647db2b7248333afcf4557ba334a43"
+    },
+    {
+      "path": "tests/test_audit_adapter.py",
+      "change": "UNCHANGED",
+      "file_sha256": "eb54fe7c1f57098719fcd7aa474e83d5595f62b04c161cfa5ed8d2484de15efc"
+    },
+    {
+      "path": "tests/test_core.py",
+      "change": "UNCHANGED",
+      "file_sha256": "538fc91ac5dcd16df9524b5216a5477d3b1193fd24d8e08650b8d7680ae69bec"
+    },
+    {
+      "path": "tests/test_driver.py",
+      "change": "UNCHANGED",
+      "file_sha256": "50e4b71ec55bee8d06aea2f5e7c5be138b417cfb82c13d9c6cfb2f574e84e2c3"
+    },
+    {
+      "path": "tests/test_origin_recovery.py",
+      "change": "ADDED",
+      "file_sha256": "ab28ab3245f0720a8b6037b59f80fd9469e5463953ca74c62cdbb1b828bacaf0"
+    },
+    {
+      "path": "tests/test_publication_integration.py",
+      "change": "UNCHANGED",
+      "file_sha256": "af3a8ca024d7299650b3a3c399401d0aaf9c1e940f4cb829b6799c09165d5bcc"
+    },
+    {
+      "path": "tests/test_source.py",
+      "change": "UNCHANGED",
+      "file_sha256": "96e7b4eca9bf084637ee6db5df804b58a7b195ee45cb5e4604e5aa73d70a3d4d"
+    },
+    {
+      "path": "verification/ALL_56_TESTS_V1_1.txt",
+      "change": "ADDED",
+      "file_sha256": "70a867ad12ae239c1a12d1807086f5850da04cc5fec5110ee9f95daaf9d23465"
+    },
+    {
+      "path": "verification/ALL_59_TESTS_V1_1.txt",
+      "change": "ADDED",
+      "file_sha256": "855127b17acd5fce5a80d2f8db79c64e6509044966ef8d83dde402486d23d0d9"
+    },
+    {
+      "path": "verification/AVAILABLE_NATIVE_INTEGRATIONS.txt",
+      "change": "UNCHANGED",
+      "file_sha256": "ae72674c41661bb93ab5ad1feae820beb74483e521fab762d33afe76ffd6f40c"
+    },
+    {
+      "path": "verification/FINAL_UNIT_TESTS.txt",
+      "change": "UNCHANGED",
+      "file_sha256": "6015cb8743f0ae40656d02dd53d52aa6e43f474f67aa9efcd6137e7abdbf6767"
+    },
+    {
+      "path": "verification/GREEN_ARRAY_CONTRACT_V1_1.txt",
+      "change": "ADDED",
+      "file_sha256": "1542256533e0bda809c87e61f043fb8eff35cf99519c08e6328de539e7c758e6"
+    },
+    {
+      "path": "verification/GREEN_ARRAY_DRIVER_V1_1.txt",
+      "change": "ADDED",
+      "file_sha256": "9d79165e06c3ead70539bbb43fa2c971eaf373f033fe03a3df848712b1a665c7"
+    },
+    {
+      "path": "verification/GREEN_ARRAY_MISSING_ACCOUNTING.txt",
+      "change": "ADDED",
+      "file_sha256": "137175e44b9491428451353abe9dfa3e4ae1e83300eee9a245639e27647d1a8a"
+    },
+    {
+      "path": "verification/GREEN_AUDIT.txt",
+      "change": "UNCHANGED",
+      "file_sha256": "9a479f3437803354c76145329a2d035d14b209e4a37731ff9cecb6bc8dd599a3"
+    },
+    {
+      "path": "verification/GREEN_CORE.txt",
+      "change": "UNCHANGED",
+      "file_sha256": "9026100a9f64e5da539e0c2710466a7b3c2f6d73f79b798dcd146ada5eed0073"
+    },
+    {
+      "path": "verification/GREEN_DRIVER.txt",
+      "change": "UNCHANGED",
+      "file_sha256": "8e0cf87db9103261a83fc3335793fa6fb2de7d2adaaa54f698af94a1350c4dc9"
+    },
+    {
+      "path": "verification/GREEN_ORIGIN_V1_1.txt",
+      "change": "ADDED",
+      "file_sha256": "57b5604a6340a5cc00bee5ba03cd8b2945609600cb342c2907323982db64bee0"
+    },
+    {
+      "path": "verification/GREEN_PUBLICATION.txt",
+      "change": "UNCHANGED",
+      "file_sha256": "227e723db70e3d17ce13ddf803b43b63730dffabce6ce833a4458bda97c3c5ff"
+    },
+    {
+      "path": "verification/GREEN_SOURCE.txt",
+      "change": "UNCHANGED",
+      "file_sha256": "58a475f83cdf6a783f3729dba73c549439d723ea785030a6370bad9e69611a1e"
+    },
+    {
+      "path": "verification/NATIVE_FIXTURE_LIMITATION.txt",
+      "change": "UNCHANGED",
+      "file_sha256": "60be2b77f23d8586d3bd97b7b6955f39ce90be40476c02d2bcc273a423af290c"
+    },
+    {
+      "path": "verification/NATIVE_INTEGRATION_CURRENT.txt",
+      "change": "ADDED",
+      "file_sha256": "4edc11effbbf3c53358fba118c272d6c6a9ad12e52f2b75c81e32a358f7c4a5f"
+    },
+    {
+      "path": "verification/ORIGINAL_STAGE4D_18_TESTS.txt",
+      "change": "ADDED",
+      "file_sha256": "2d23ca49170a7879a8498f2325f531165d40c90f723cd6ceca6800e76565a6a2"
+    },
+    {
+      "path": "verification/RED_ARRAY_DRIVER_V1_1.txt",
+      "change": "ADDED",
+      "file_sha256": "d6d5354d80e9cd3fc87da9718dbcf3277efce1a9e5714735b7e11f5c37f94101"
+    },
+    {
+      "path": "verification/RED_ARRAY_MISSING_ACCOUNTING.txt",
+      "change": "ADDED",
+      "file_sha256": "a4bde64d05e1ac7c535f742cdaf1b5026af578130d6844c26b22ebfdf73b0d71"
+    },
+    {
+      "path": "verification/RED_ARRAY_V1_1.txt",
+      "change": "ADDED",
+      "file_sha256": "58cbfed5c8e9019ddbe7f7f88175d3e6d6456fbc22630b6a64f81d578d4da464"
+    },
+    {
+      "path": "verification/RED_AUDIT.txt",
+      "change": "UNCHANGED",
+      "file_sha256": "6014c01bf17e3d1ae7802f87aee8ca0121b66533eafdb992e4c6c6bf958b8bf3"
+    },
+    {
+      "path": "verification/RED_CORE.txt",
+      "change": "UNCHANGED",
+      "file_sha256": "210353de53061c6e6c025b90fe13a15854fbbcb12f11555e0e2eb183934da0c9"
+    },
+    {
+      "path": "verification/RED_DRIVER.txt",
+      "change": "UNCHANGED",
+      "file_sha256": "768d2506e3861ca27d22b4c811b0f3e936d455c938b47c061fecc64a0e6522f7"
+    },
+    {
+      "path": "verification/RED_NATIVE.txt",
+      "change": "UNCHANGED",
+      "file_sha256": "14d31f97f14f50154a535a924201124c0647d4410e7725f42253414029b89710"
+    },
+    {
+      "path": "verification/RED_ORIGIN_V1_1.txt",
+      "change": "ADDED",
+      "file_sha256": "d4bde9b748735a5c9089b4c7e33f2c9f0f40836d353bc8ab1243bbd8644c7b3a"
+    },
+    {
+      "path": "verification/RED_SOURCE.txt",
+      "change": "UNCHANGED",
+      "file_sha256": "0399cc08ad23ad83a67771b379f7e06071be1527a2fb0fac6a057e870545588a"
+    },
+    {
+      "path": "verification/SCOPE_AND_LIMITATIONS.txt",
+      "change": "UNCHANGED",
+      "file_sha256": "ab13654578691e05b1a7820fd94fa02cf3c9ec0ef3160eafd19bb262695824de"
+    }
+  ],
+  "original_stage4d_source_modified": false,
+  "native_evaluator_modified": false,
+  "training_or_scientific_protocol_modified": false,
+  "actual_cluster_execution_or_remote_publication_verified_here": false,
+  "inventory_self_exclusion": "CHANGE_SCOPE.json and PACKAGE_FILES.sha256 are excluded from this change index; PACKAGE_FILES.sha256 independently binds CHANGE_SCOPE.json."
+}

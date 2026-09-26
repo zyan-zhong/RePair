@@ -1,0 +1,224 @@
+{
+  "schema_id": "CLEAN_HUMAN_R1_TAIL_AUTOMATION_CONFIG_V1",
+  "delivery_name": "STAGE4E_AUTOMATIC_AUDIT_CLOSEOUT_AND_SOURCE_PUBLICATION_V1_1_ORIGIN_AND_ARRAY_FIX",
+  "fixed_head": "ede426ffb069bd887bd3caf847add8193c801d60",
+  "fixed_tree": "4460d1dd9b653258906ef0e625e5af7d7edbc338",
+  "round_id": "CLEAN-HUMAN-REFERENCE-R1-PI0",
+  "next_round_id": "CLEAN-STRONG-REFERENCE-R2-PI0",
+  "next_round_id_status": "RESERVED_ID_NOT_EXECUTED",
+  "round_root": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1",
+  "protocol": {
+    "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4c_existing_select_freeze_v1/65c7aa120baae98471deb20796927f4adfa5be5c2920d4ed31749308908bad5b/SELECT_EVALUATION_PROTOCOL_V1.json",
+    "file_sha256": "71890898f3c3ce66b860fcd634f98146c58eb346d3a89daec7537503c74289c1"
+  },
+  "candidate": {
+    "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4a_clean_existing_trainer_v1/1711c5fbc6431f3bd59bda066011ab265837aecfcaf827b073f6a4754ec2f692/CANDIDATE_HANDOFF.json",
+    "file_sha256": "12843e82af08c1340e043440a658c1cc852322a4c1c0758eec64e7d86a7fd7ff"
+  },
+  "stage4c_handoff": {
+    "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4c_existing_select_freeze_v1/65c7aa120baae98471deb20796927f4adfa5be5c2920d4ed31749308908bad5b/NEXT_STAGE_BINDING.json",
+    "file_sha256": "3bdfb902260abba8df52c685d2b178e179c9167e2b30f0f46a73a7d2a7e5bbcb"
+  },
+  "binding_root": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4d_existing_select_live_binding_v1/4ab7942b2c66238cb3833bdb04eb7f7ca23b52d10c388575aaf1bd272dfc100d",
+  "binding_sha256": "4ab7942b2c66238cb3833bdb04eb7f7ca23b52d10c388575aaf1bd272dfc100d",
+  "authorization_sha256": "978ab39389d447b74b1a1acf653619ff437c0d341c9fe76b72236dd8f5fd865b",
+  "readiness_sha256": "3958caccae90b3a7d990022e93539897c94dd7d04695948a962b593553bfee8a",
+  "request_schema_sha256": "f2dd1cc61bca16110be41c00245eee85f7ef1e6a36a73dd52789de0060a63f77",
+  "execution_root": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4d_existing_select_live_execution_v1/978ab39389d447b74b1a1acf653619ff437c0d341c9fe76b72236dd8f5fd865b",
+  "execution_log_root": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/logs/stage4d_existing_select_live_execution_v1",
+  "control_root": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4e_automatic_closeout_v1/978ab39389d447b74b1a1acf653619ff437c0d341c9fe76b72236dd8f5fd865b",
+  "log_root": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/logs/stage4e_automatic_closeout_v1",
+  "integration_repo": "/data/run01/scwb204/sdar_repro/badcase/github_exports/pchsi-stage4e-clean-human-r1-integration-v1",
+  "publication_branch": "integration/clean-human-r1-stage4e-v1",
+  "allowed_origin_urls": [
+    "https://github.com/zyan-zhong/phase-critical-harness-guided-self-improvement.git",
+    "git@github.com:zyan-zhong/phase-critical-harness-guided-self-improvement.git",
+    "https://github.com/zyan-zhong/phase-critical-harness-guided-self-improvement",
+    "ssh://git@ssh.github.com:443/zyan-zhong/phase-critical-harness-guided-self-improvement.git",
+    "ssh://git@ssh.github.com:443/zyan-zhong/phase-critical-harness-guided-self-improvement",
+    "ssh://ssh.github.com:443/zyan-zhong/phase-critical-harness-guided-self-improvement.git",
+    "ssh://ssh.github.com:443/zyan-zhong/phase-critical-harness-guided-self-improvement",
+    "ssh://git@github.com/zyan-zhong/phase-critical-harness-guided-self-improvement.git",
+    "ssh://git@github.com/zyan-zhong/phase-critical-harness-guided-self-improvement"
+  ],
+  "python": "/data/home/scwb204/run/sdar_repro/conda_envs/sdar_sft_py312/bin/python",
+  "full_package": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/STAGE4D_FULL_SELECT_EXECUTION_AUTHORIZATION_AND_RESUMABLE_LIVE_V1_3_4GPU_PARALLEL_SHARDING",
+  "readiness_package": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/STAGE4D_EXISTING_SELECT_LIVE_BINDING_AND_READINESS_V1_1_PROTOCOL_FIELD_FIX",
+  "pair_count": 1775,
+  "task_count": 355,
+  "seeds": [
+    17,
+    31,
+    47,
+    73,
+    101
+  ],
+  "poll_seconds": 60,
+  "max_automatic_resumptions": 1,
+  "automatic_resume_policy": "ONE_ONLY_COMPLETED_0_0_GRACEFUL_PARTIAL_EXISTING_4GPU_JOB_NO_RECIPE_CHANGE",
+  "result_audit_authority": "USER_REQUESTED_ROUND_CLOSEOUT_AFTER_FULL_IDENTITY_AUDIT",
+  "publication_authority": "USER_REQUESTED_COMPLETE_CODE_AND_AUDITED_AGGREGATE_PUBLICATION",
+  "routine_human_decision_count": 0,
+  "next_strong_execution_authorized": false,
+  "readiness_receipt": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4d_existing_select_live_binding_v1/4ab7942b2c66238cb3833bdb04eb7f7ca23b52d10c388575aaf1bd272dfc100d/readiness/RUNTIME_READINESS_156385_V1.json",
+  "input_refs": [
+    {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4c_existing_select_freeze_v1/65c7aa120baae98471deb20796927f4adfa5be5c2920d4ed31749308908bad5b/SELECT_EVALUATION_PROTOCOL_V1.json",
+      "file_sha256": "71890898f3c3ce66b860fcd634f98146c58eb346d3a89daec7537503c74289c1"
+    },
+    {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4a_clean_existing_trainer_v1/1711c5fbc6431f3bd59bda066011ab265837aecfcaf827b073f6a4754ec2f692/CANDIDATE_HANDOFF.json",
+      "file_sha256": "12843e82af08c1340e043440a658c1cc852322a4c1c0758eec64e7d86a7fd7ff"
+    },
+    {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4c_existing_select_freeze_v1/65c7aa120baae98471deb20796927f4adfa5be5c2920d4ed31749308908bad5b/NEXT_STAGE_BINDING.json",
+      "file_sha256": "3bdfb902260abba8df52c685d2b178e179c9167e2b30f0f46a73a7d2a7e5bbcb"
+    },
+    {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4a_clean_existing_trainer_v1/1711c5fbc6431f3bd59bda066011ab265837aecfcaf827b073f6a4754ec2f692/TRAINING_STAGE_BINDING.json",
+      "file_sha256": "6985f3ec970d1b3ce981295c9bca0da2f12e1699333876294c34ac06f4b6d8da"
+    },
+    {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4a_clean_existing_trainer_v1/1711c5fbc6431f3bd59bda066011ab265837aecfcaf827b073f6a4754ec2f692/TRAINER_ROLE_BINDING.json",
+      "file_sha256": "caff540181ec6a54e9c49bba7545f27d33b8f3558bebdbc150437f510f57d262"
+    },
+    {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4a_clean_existing_trainer_v1/1711c5fbc6431f3bd59bda066011ab265837aecfcaf827b073f6a4754ec2f692/INITIALIZATION_RECEIPT.json",
+      "file_sha256": "2d3526db1b1b0f0d02b76370e61e7d0be24b39ef5619b2e2d2c6de7a80964de0"
+    },
+    {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage3y_existing_training_preparation_v1/5c042850c1b926c3805a64f1f4b16d3688abf327af1db1eb34444b483baa5997/INPUT_ARTIFACT_INDEX.json",
+      "file_sha256": "ccd14a6e5a47dfcb331a65fc9073b5396fe16850fd1158eba558646d3ecbdfdf"
+    },
+    {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/stage2_clean_train_bootstrap_v1_output/stage2b/TRAIN_AUDIT_MANIFEST_V1.jsonl",
+      "file_sha256": "101d1b728d0f6cfe48c79e287771d36c9712e086388dd82633eb25e6e23eb71e"
+    },
+    {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/stage2_clean_train_bootstrap_v1_output/stage2b/TRAIN_SELECT_MANIFEST_V1.jsonl",
+      "file_sha256": "b68f00cf164f0fa38df3506daf1a909a41f972b4b09a4610841a27c2de254400"
+    },
+    {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/stage2_clean_train_bootstrap_v1_output/stage2b/TRAIN_UPDATE_MANIFEST_V1.jsonl",
+      "file_sha256": "07221cbfa374e5ac100443079aee5940ca6227ffc42600c49c75d1d69de074cb"
+    },
+    {
+      "path": "/data/run01/scwb204/sdar_repro/badcase/new_human_pi1/control/stage4d_existing_select_live_binding_v1/4ab7942b2c66238cb3833bdb04eb7f7ca23b52d10c388575aaf1bd272dfc100d/readiness/RUNTIME_READINESS_156385_V1.json",
+      "file_sha256": "3958caccae90b3a7d990022e93539897c94dd7d04695948a962b593553bfee8a"
+    }
+  ],
+  "source_packages": [
+    {
+      "name": "STAGE3Y_EXISTING_TRAINING_PREPARATION_V1",
+      "root": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/STAGE3Y_EXISTING_TRAINING_PREPARATION_V1",
+      "source_files": {
+        "RUN_PREPARE.py": "2e6a1525afc1fa278ec8adb8f771fbdc910fd2d43d6f744ca8251dbc979e9172",
+        "prepare.py": "bbb60518a2b245b756b322cc9f400704462d2cb1ad62f1607a6087c957126455",
+        "REUSE_AND_TRAINING_BOUNDARIES_ZH.md": "867b79c9f862716c0aa6094e2d50a7789b6324c309036d5e48d23b34f718411a",
+        "README.md": "9b9c0fad87629a4e9c6ae41a8d304c97d6e9c8e85c1e02e6b7609841b4f5fb7c",
+        "tests/test_prepare.py": "d38e8676e5126ba1c0a7fdbf2549e151a443c4f3304f0d3eceab748ff91c8f03",
+        "current_round.json": "742c0fdaaee27f029d4028d95c3ce91d7bc817ef3a13f28f2207032738686a59"
+      },
+      "use": "EXACT_REVIEWED_EXECUTION_SOURCE_ARCHIVE_NOT_RELOCATABLE_RUNTIME_SUBSTITUTION"
+    },
+    {
+      "name": "STAGE4A_EXISTING_TRAINER_CLEAN_INIT_V1",
+      "root": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/STAGE4A_EXISTING_TRAINER_CLEAN_INIT_V1",
+      "source_files": {
+        "REVIEW_ZH.md": "794bd617594ac2697a2d8966d10ba4482d427bffdfa9bb1a7b488abef30a6795",
+        "clean_adapter.py": "329c749d39fef22b62d38ad5a212f6ce6c0443ad12b60a3a6733332d651edacc",
+        "run_stage.py": "4739616881e09f4d0d85be8bcff4fcff74f315b3cbcb3f611391e5e8430f794d",
+        "README.md": "af56066a42c2c8333575abd1cadcafe0334d3a93971ed523dfdf36e7b7b84913",
+        "RUN_ALL.sh": "bdd554fd38fe73668cd63ac2939b6353a8f443043e3aeacf9983115acc6ecbea",
+        "tests/test_bridge.py": "56dbc190c05e38932464148cf42191f4d1a75edee6133bb7359be607fdb8912d",
+        "tests/test_existing_integration.py": "6e009190a2972a478ae666230730b8f5878073bc88f3420100a13353084fab85",
+        "tests/fixtures/formal_train.py": "4709c32d34b437d2884fa83d4967f4d898e4cd17d5a56ce0b9e72a250f0ad9e7",
+        "current_request.json": "368bc8d347dcb259d2bc08eae22503b18fab5ef9d7855df1c7c4e1237b8b7223",
+        "SOURCE_REUSE.json": "5c1acae3a7bcc32f12b95ad2bb5356698bc5ed2fe16e9e96970948fe96a8160d"
+      },
+      "use": "EXACT_REVIEWED_EXECUTION_SOURCE_ARCHIVE_NOT_RELOCATABLE_RUNTIME_SUBSTITUTION"
+    },
+    {
+      "name": "STAGE4B_EXISTING_SELECT_PREFLIGHT_V1",
+      "root": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/STAGE4B_EXISTING_SELECT_PREFLIGHT_V1",
+      "source_files": {
+        "REVIEW_ZH.md": "1089f7a12fb1d1c48cf8ce668ff5b447f9c63faf0e221f8ea5c9ce277c8e0a7d",
+        "RUN_ALL.py": "63f98cce84f16ce95f1487779aee7c7a03262a835d9c65784a38be76035a8daf",
+        "preflight.py": "f703ea94788b7b3048ab1d61fdd046c39281f2227aa24d8276f76be36450831a",
+        "README.md": "0ff55b8a3bd6f8c07459858443b140c468670bcfc6d0cd55c64b926c664f9632",
+        "run_preflight.py": "14d046b49ea6b855e48be64dd063f1c6c9f5fe9b4b14c056754f57c74b6324c1",
+        "tests/test_isolation.py": "20f6759c9349c863ef86f78614a493fea50dbc2af0698013966faaf2ea8d39fd",
+        "tests/test_preflight.py": "0a03ab893243b6339b9412666e7141182c27fd95aac79c142867c83e7a58c0dc",
+        "current_request.json": "a2f60727ce7e4202973ab5262faeedb3746c9875234ffdc231abc51d051964a2",
+        "SOURCE_REUSE.json": "ac034684005a4f69b1cfd3733700b0a32b431e69ab343b83b4ad010ef82ec130",
+        "PATCH_SCOPE.json": "f79e97af12e8075e215ca4a46e0c4235c6695c5a770c7c2a292df3cac8ed812b"
+      },
+      "use": "EXACT_REVIEWED_EXECUTION_SOURCE_ARCHIVE_NOT_RELOCATABLE_RUNTIME_SUBSTITUTION"
+    },
+    {
+      "name": "STAGE4C_EXISTING_SELECT_FREEZE_V1",
+      "root": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/STAGE4C_EXISTING_SELECT_FREEZE_V1",
+      "source_files": {
+        "REVIEW_ZH.md": "fb9f243a6a67d6625eb54c80fce00102631ea442ed1bf92aa53c7a0e4e2cdda0",
+        "RUN_ALL.py": "f244d4c6faf9b0f75f6a0118c614d12c22ef9367fa10edecbb2443c8eb2e6ff9",
+        "run_freeze.py": "556aa35b71572d7b397e25371574b433a7809ea4b7bb87e758f417530d9f9a73",
+        "README.md": "05b17acec30a9e0b821325d668eb09d1d57a4afd49e52e7d379896b58d43c0a6",
+        "freeze_select.py": "8ba7c97c13f387daa68019c3836f4c6db5c50d46730defaa1e63654cf8badf1d",
+        "tests/test_freeze.py": "8542d2a0640f168ed0124b6b3db649a602500657d5831b97f22870cd543a709e",
+        "tests/test_gate_workflow.py": "5680b39794c395a34a387b3ad1003b7a684092fddcfab31b6e4d32a5b2ec1072",
+        "current_request.json": "e901a2d2fc6e8c37a1cca72638aa536de0e287fb797a3b8d35f948d70d6b2325",
+        "SOURCE_REUSE.json": "bc7c65914c51b4b7fd6712040f8486efc8bba4ab62ccbb6c6440e17bdd252ac1"
+      },
+      "use": "EXACT_REVIEWED_EXECUTION_SOURCE_ARCHIVE_NOT_RELOCATABLE_RUNTIME_SUBSTITUTION"
+    },
+    {
+      "name": "STAGE4D_EXISTING_SELECT_LIVE_BINDING_AND_READINESS_V1_1_PROTOCOL_FIELD_FIX",
+      "root": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/STAGE4D_EXISTING_SELECT_LIVE_BINDING_AND_READINESS_V1_1_PROTOCOL_FIELD_FIX",
+      "source_files": {
+        "REVIEW_FINDINGS.md": "b724ba1113e1b1b7cd42f7299db8b5ba078fe4991015ab50739f14b5f7496698",
+        "00_VERIFY_PACKAGE.sh": "c2bfa9cbc8cf6eeada7d06c403dfa356dd8655e59b64878f9cb9d06a487cb641",
+        "README_CN.md": "246f87f4629db8fd9fa2a0d26bda933047ef2794fdd2f4ebb61a0a0e3a5be9cf",
+        "RUN_PREPARE_AND_SUBMIT_READINESS.sh": "0ebf8d34d3e217f43a3914d2a4a92ee22d9d88cf2d933882ea3a680903783b17",
+        "stage4d_pkg/prepare.py": "bd7f32adbd4820ad1df96fe8c85d9b171e8eb48632e44123ee68cb96b5d25735",
+        "stage4d_pkg/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stage4d_pkg/readiness.py": "bab901718dd66d9708808e41ba2a160ca81bd4eb7d42f81f918d92273f7d7fd8",
+        "stage4d_pkg/common.py": "aa47773ef40847c40cf7fbe2ec2819ba61266718d62a59b7c2543b40a1116156",
+        "tests/test_stage4d_contract.py": "7e30f85ff4b969a16abd4839d200c4c66d551b8c2364ca58d966fe0da89dfea7",
+        "PACKAGE_FILES.sha256": "bd0a3b80edf0aaf8dbca7468ae3ebd0f1e44ff4dfa467e48dc2cdddbcba987fd"
+      },
+      "use": "EXACT_REVIEWED_EXECUTION_SOURCE_ARCHIVE_NOT_RELOCATABLE_RUNTIME_SUBSTITUTION"
+    },
+    {
+      "name": "STAGE4D_FULL_SELECT_EXECUTION_AUTHORIZATION_AND_RESUMABLE_LIVE_V1_3_4GPU_PARALLEL_SHARDING",
+      "root": "/data/run01/scwb204/sdar_repro/badcase/pchsi_scripts/STAGE4D_FULL_SELECT_EXECUTION_AUTHORIZATION_AND_RESUMABLE_LIVE_V1_3_4GPU_PARALLEL_SHARDING",
+      "source_files": {
+        "REVIEW_FINDINGS.md": "764f373cf91fd3b706e3cd4a9ab66872d3cc03fba6b1d1f36b47d19494f54f66",
+        "slurm_template.sh": "7ea7524feb136376b5279fe01ae28b7f823682398cc5d552db69b287329c3ac8",
+        "00_VERIFY_PACKAGE.sh": "cd0d9825861037376b2c0924138de0d80696e121ce5c492929ad2f6cf3c49a13",
+        "README_CN.md": "58fa4f4fee400b30cfd8455a4756155f4c19b621bdd570a2cb869b112bcd1fac",
+        "RUN_AUTHORIZE_AND_SUBMIT.sh": "0d2b19eff4cfed3617299e1bce7d878b562b771f0364a07072fd73b38b52532d",
+        "tests/test_stage4d_full_contract.py": "fa17a2d39ef74361a4ff0231c5f3c2c931a272a7fa121c0f4fa9c0cc1f53d4f8",
+        "stage4d_full/contract.py": "c97e02310bfcc8d04b24ece35ad0e5dde676e911386329c8945e36ab953a40d3",
+        "stage4d_full/live.py": "1419854de8945b28840ff86d3282a53600af4b11b56aa373396966b9943bf8db",
+        "stage4d_full/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stage4d_full/authorize.py": "0e29fa28d962a83b5970bf4777580740f5dc6611458efb808d7a232abcc2b64d",
+        "stage4d_full/slurm_entry.py": "ec06301334fa6f3bd41280617813e41544ab2574b96f9147e22864df55bbd564",
+        "stage4d_full/parallel.py": "92d26d6183e191ed35ca944d2038179826a1f44671f27c4953f5ff671b6f4bd4",
+        "stage4d_full/shard_worker.py": "328e29d1e93c28bb7cb1721ff4a025297511095c9fe8b7fdd0c5017c378b0d13",
+        "PACKAGE_FILES.sha256": "7c84bc60a027fd4074ed232730762072ff1770302a19ab9a5f8a85b8c62db3ea"
+      },
+      "use": "EXACT_REVIEWED_EXECUTION_SOURCE_ARCHIVE_NOT_RELOCATABLE_RUNTIME_SUBSTITUTION"
+    }
+  ],
+  "array_policy": {
+    "shards": 4,
+    "max_concurrent_jobs": 4,
+    "gpus_per_job": 1,
+    "partition": "gpu_a800",
+    "walltime": "03:30:00",
+    "worker_budget_seconds": 11700,
+    "max_partial_resumptions": 1,
+    "automatic_failed_job_retry": false,
+    "node_placement": "INDEPENDENT_PER_SHARD_NOT_GANG_SCHEDULED"
+  }
+}

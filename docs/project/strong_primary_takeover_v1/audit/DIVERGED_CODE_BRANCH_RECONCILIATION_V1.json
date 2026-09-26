@@ -1,0 +1,377 @@
+{
+  "active_integration_parent_head": "b914f2b7dc02c141a31586756938154cf31a4823",
+  "archive_or_delete_authorized": false,
+  "branches": [
+    {
+      "ahead_by": 3,
+      "archive_or_delete_authorized": false,
+      "behind_by": 15,
+      "branch": "implementation/f0f1-round-adaptive-budget-v1",
+      "cherry_pick_authorized": false,
+      "classification": "PATCH_EQUIVALENT_COMMITS_WITH_LATER_MAIN_BYTE_EVOLUTION",
+      "code_path_comparisons": [
+        {
+          "branch_blob_sha": "69d79cc6dd6776516f971d756979c635aaa1fb2d",
+          "exact_blob_equal": true,
+          "main_blob_sha": "69d79cc6dd6776516f971d756979c635aaa1fb2d",
+          "main_path_exists": true,
+          "path": "configs/research_intelligence/clean_reference_f0f1_budget_v1.json"
+        },
+        {
+          "branch_blob_sha": "1284d9031c91319837503da9ef8e810b7869da9c",
+          "exact_blob_equal": true,
+          "main_blob_sha": "1284d9031c91319837503da9ef8e810b7869da9c",
+          "main_path_exists": true,
+          "path": "src/pchsi/cognitive_runtime/access.py"
+        },
+        {
+          "branch_blob_sha": "985b05b8cede22adc7236ca3ef791c0c75d7f709",
+          "exact_blob_equal": false,
+          "main_blob_sha": "64a33a353e7c4b073d0e868e9271b8b5e01ecfb3",
+          "main_path_exists": true,
+          "path": "src/pchsi/research_intelligence/clean_f0f1_manifest.py"
+        },
+        {
+          "branch_blob_sha": "511a8abfaad05024f61836c7c6fe847dd628f68a",
+          "exact_blob_equal": true,
+          "main_blob_sha": "511a8abfaad05024f61836c7c6fe847dd628f68a",
+          "main_path_exists": true,
+          "path": "src/pchsi/round_control/analyzer_substage.py"
+        },
+        {
+          "branch_blob_sha": "68c524bbdd32ca6b2a8d2fd4c12b924c5bd5e745",
+          "exact_blob_equal": true,
+          "main_blob_sha": "68c524bbdd32ca6b2a8d2fd4c12b924c5bd5e745",
+          "main_path_exists": true,
+          "path": "src/pchsi/round_control/clean_group_analyzer_binding.py"
+        },
+        {
+          "branch_blob_sha": "d475b5e5025554aff5382934d14573a134294cc7",
+          "exact_blob_equal": true,
+          "main_blob_sha": "d475b5e5025554aff5382934d14573a134294cc7",
+          "main_path_exists": true,
+          "path": "tests/cognitive_runtime/test_group_task_access.py"
+        },
+        {
+          "branch_blob_sha": "7ee1d46f4d8e060c462b01fa178891e804c9aae5",
+          "exact_blob_equal": true,
+          "main_blob_sha": "7ee1d46f4d8e060c462b01fa178891e804c9aae5",
+          "main_path_exists": true,
+          "path": "tests/research_intelligence/test_clean_reference_f0f1_port_v1.py"
+        },
+        {
+          "branch_blob_sha": "efcd6ea2016c96d4de4324f16466855c0321d6f1",
+          "exact_blob_equal": true,
+          "main_blob_sha": "efcd6ea2016c96d4de4324f16466855c0321d6f1",
+          "main_path_exists": true,
+          "path": "tests/round_control/test_analyzer_substage.py"
+        },
+        {
+          "branch_blob_sha": "49d5e302a96b7ca15b579e79f9f39c6721619d06",
+          "exact_blob_equal": true,
+          "main_blob_sha": "49d5e302a96b7ca15b579e79f9f39c6721619d06",
+          "main_path_exists": true,
+          "path": "tests/round_control/test_clean_group_analyzer_binding.py"
+        }
+      ],
+      "differing_code_paths": [
+        "src/pchsi/research_intelligence/clean_f0f1_manifest.py"
+      ],
+      "git_cherry_branch_unique_commits": [],
+      "git_cherry_patch_equivalent_commits": [
+        "f487c06d082e807c6b4fbfc886b0892f6358a98b",
+        "eaf22424128613d33cacb13aa4cd90b2c55355b4",
+        "6a7ca0c25580382e3862e9cf45377cabd9928d01"
+      ],
+      "head": "6a7ca0c25580382e3862e9cf45377cabd9928d01",
+      "merge_base": "e1a5c9f09a1c999f46755ba23aa337012ba80af2",
+      "whole_branch_merge_authorized": false
+    },
+    {
+      "ahead_by": 1,
+      "archive_or_delete_authorized": false,
+      "behind_by": 15,
+      "branch": "implementation/stage3j-group-analyzer-access-budget-v1",
+      "cherry_pick_authorized": false,
+      "classification": "CURRENT_MAIN_EXACT_BYTES_ALREADY_CONTAIN_BRANCH_CODE",
+      "code_path_comparisons": [
+        {
+          "branch_blob_sha": "1284d9031c91319837503da9ef8e810b7869da9c",
+          "exact_blob_equal": true,
+          "main_blob_sha": "1284d9031c91319837503da9ef8e810b7869da9c",
+          "main_path_exists": true,
+          "path": "src/pchsi/cognitive_runtime/access.py"
+        },
+        {
+          "branch_blob_sha": "68c524bbdd32ca6b2a8d2fd4c12b924c5bd5e745",
+          "exact_blob_equal": true,
+          "main_blob_sha": "68c524bbdd32ca6b2a8d2fd4c12b924c5bd5e745",
+          "main_path_exists": true,
+          "path": "src/pchsi/round_control/clean_group_analyzer_binding.py"
+        },
+        {
+          "branch_blob_sha": "d475b5e5025554aff5382934d14573a134294cc7",
+          "exact_blob_equal": true,
+          "main_blob_sha": "d475b5e5025554aff5382934d14573a134294cc7",
+          "main_path_exists": true,
+          "path": "tests/cognitive_runtime/test_group_task_access.py"
+        },
+        {
+          "branch_blob_sha": "49d5e302a96b7ca15b579e79f9f39c6721619d06",
+          "exact_blob_equal": true,
+          "main_blob_sha": "49d5e302a96b7ca15b579e79f9f39c6721619d06",
+          "main_path_exists": true,
+          "path": "tests/round_control/test_clean_group_analyzer_binding.py"
+        }
+      ],
+      "differing_code_paths": [],
+      "git_cherry_branch_unique_commits": [],
+      "git_cherry_patch_equivalent_commits": [
+        "f487c06d082e807c6b4fbfc886b0892f6358a98b"
+      ],
+      "head": "f487c06d082e807c6b4fbfc886b0892f6358a98b",
+      "merge_base": "e1a5c9f09a1c999f46755ba23aa337012ba80af2",
+      "whole_branch_merge_authorized": false
+    },
+    {
+      "ahead_by": 2,
+      "archive_or_delete_authorized": false,
+      "behind_by": 15,
+      "branch": "implementation/stage3l-analyzer-automation-bridge-v1",
+      "cherry_pick_authorized": false,
+      "classification": "CURRENT_MAIN_EXACT_BYTES_ALREADY_CONTAIN_BRANCH_CODE",
+      "code_path_comparisons": [
+        {
+          "branch_blob_sha": "1284d9031c91319837503da9ef8e810b7869da9c",
+          "exact_blob_equal": true,
+          "main_blob_sha": "1284d9031c91319837503da9ef8e810b7869da9c",
+          "main_path_exists": true,
+          "path": "src/pchsi/cognitive_runtime/access.py"
+        },
+        {
+          "branch_blob_sha": "511a8abfaad05024f61836c7c6fe847dd628f68a",
+          "exact_blob_equal": true,
+          "main_blob_sha": "511a8abfaad05024f61836c7c6fe847dd628f68a",
+          "main_path_exists": true,
+          "path": "src/pchsi/round_control/analyzer_substage.py"
+        },
+        {
+          "branch_blob_sha": "68c524bbdd32ca6b2a8d2fd4c12b924c5bd5e745",
+          "exact_blob_equal": true,
+          "main_blob_sha": "68c524bbdd32ca6b2a8d2fd4c12b924c5bd5e745",
+          "main_path_exists": true,
+          "path": "src/pchsi/round_control/clean_group_analyzer_binding.py"
+        },
+        {
+          "branch_blob_sha": "d475b5e5025554aff5382934d14573a134294cc7",
+          "exact_blob_equal": true,
+          "main_blob_sha": "d475b5e5025554aff5382934d14573a134294cc7",
+          "main_path_exists": true,
+          "path": "tests/cognitive_runtime/test_group_task_access.py"
+        },
+        {
+          "branch_blob_sha": "efcd6ea2016c96d4de4324f16466855c0321d6f1",
+          "exact_blob_equal": true,
+          "main_blob_sha": "efcd6ea2016c96d4de4324f16466855c0321d6f1",
+          "main_path_exists": true,
+          "path": "tests/round_control/test_analyzer_substage.py"
+        },
+        {
+          "branch_blob_sha": "49d5e302a96b7ca15b579e79f9f39c6721619d06",
+          "exact_blob_equal": true,
+          "main_blob_sha": "49d5e302a96b7ca15b579e79f9f39c6721619d06",
+          "main_path_exists": true,
+          "path": "tests/round_control/test_clean_group_analyzer_binding.py"
+        }
+      ],
+      "differing_code_paths": [],
+      "git_cherry_branch_unique_commits": [],
+      "git_cherry_patch_equivalent_commits": [
+        "f487c06d082e807c6b4fbfc886b0892f6358a98b",
+        "eaf22424128613d33cacb13aa4cd90b2c55355b4"
+      ],
+      "head": "eaf22424128613d33cacb13aa4cd90b2c55355b4",
+      "merge_base": "e1a5c9f09a1c999f46755ba23aa337012ba80af2",
+      "whole_branch_merge_authorized": false
+    },
+    {
+      "ahead_by": 3,
+      "archive_or_delete_authorized": false,
+      "behind_by": 15,
+      "branch": "implementation/strong-c-taxonomy-hardening-v1",
+      "cherry_pick_authorized": false,
+      "classification": "CURRENT_MAIN_EXACT_BYTES_ALREADY_CONTAIN_BRANCH_CODE",
+      "code_path_comparisons": [
+        {
+          "branch_blob_sha": "1284d9031c91319837503da9ef8e810b7869da9c",
+          "exact_blob_equal": true,
+          "main_blob_sha": "1284d9031c91319837503da9ef8e810b7869da9c",
+          "main_path_exists": true,
+          "path": "src/pchsi/cognitive_runtime/access.py"
+        },
+        {
+          "branch_blob_sha": "8c8f94e005458ce50f4fb871cbf2367dd8984e72",
+          "exact_blob_equal": true,
+          "main_blob_sha": "8c8f94e005458ce50f4fb871cbf2367dd8984e72",
+          "main_path_exists": true,
+          "path": "src/pchsi/cognitive_runtime/request_renderer.py"
+        },
+        {
+          "branch_blob_sha": "511a8abfaad05024f61836c7c6fe847dd628f68a",
+          "exact_blob_equal": true,
+          "main_blob_sha": "511a8abfaad05024f61836c7c6fe847dd628f68a",
+          "main_path_exists": true,
+          "path": "src/pchsi/round_control/analyzer_substage.py"
+        },
+        {
+          "branch_blob_sha": "68c524bbdd32ca6b2a8d2fd4c12b924c5bd5e745",
+          "exact_blob_equal": true,
+          "main_blob_sha": "68c524bbdd32ca6b2a8d2fd4c12b924c5bd5e745",
+          "main_path_exists": true,
+          "path": "src/pchsi/round_control/clean_group_analyzer_binding.py"
+        },
+        {
+          "branch_blob_sha": "6b42716afc87f681dbc150dae4dfd30592db0f81",
+          "exact_blob_equal": true,
+          "main_blob_sha": "6b42716afc87f681dbc150dae4dfd30592db0f81",
+          "main_path_exists": true,
+          "path": "tests/cognitive_runtime/test_c_component_taxonomy_enum_specialization.py"
+        },
+        {
+          "branch_blob_sha": "d475b5e5025554aff5382934d14573a134294cc7",
+          "exact_blob_equal": true,
+          "main_blob_sha": "d475b5e5025554aff5382934d14573a134294cc7",
+          "main_path_exists": true,
+          "path": "tests/cognitive_runtime/test_group_task_access.py"
+        },
+        {
+          "branch_blob_sha": "efcd6ea2016c96d4de4324f16466855c0321d6f1",
+          "exact_blob_equal": true,
+          "main_blob_sha": "efcd6ea2016c96d4de4324f16466855c0321d6f1",
+          "main_path_exists": true,
+          "path": "tests/round_control/test_analyzer_substage.py"
+        },
+        {
+          "branch_blob_sha": "49d5e302a96b7ca15b579e79f9f39c6721619d06",
+          "exact_blob_equal": true,
+          "main_blob_sha": "49d5e302a96b7ca15b579e79f9f39c6721619d06",
+          "main_path_exists": true,
+          "path": "tests/round_control/test_clean_group_analyzer_binding.py"
+        }
+      ],
+      "differing_code_paths": [],
+      "git_cherry_branch_unique_commits": [],
+      "git_cherry_patch_equivalent_commits": [
+        "f487c06d082e807c6b4fbfc886b0892f6358a98b",
+        "eaf22424128613d33cacb13aa4cd90b2c55355b4",
+        "c006eca0306c3dedc4104f1df1dba52ebcd50403"
+      ],
+      "head": "c006eca0306c3dedc4104f1df1dba52ebcd50403",
+      "merge_base": "e1a5c9f09a1c999f46755ba23aa337012ba80af2",
+      "whole_branch_merge_authorized": false
+    },
+    {
+      "ahead_by": 4,
+      "archive_or_delete_authorized": false,
+      "behind_by": 15,
+      "branch": "integration/stage3t-reviewed-f0f1-registration-v1",
+      "cherry_pick_authorized": false,
+      "classification": "PATCH_EQUIVALENT_COMMITS_WITH_LATER_MAIN_BYTE_EVOLUTION",
+      "code_path_comparisons": [
+        {
+          "branch_blob_sha": "69d79cc6dd6776516f971d756979c635aaa1fb2d",
+          "exact_blob_equal": true,
+          "main_blob_sha": "69d79cc6dd6776516f971d756979c635aaa1fb2d",
+          "main_path_exists": true,
+          "path": "configs/research_intelligence/clean_reference_f0f1_budget_v1.json"
+        },
+        {
+          "branch_blob_sha": "1284d9031c91319837503da9ef8e810b7869da9c",
+          "exact_blob_equal": true,
+          "main_blob_sha": "1284d9031c91319837503da9ef8e810b7869da9c",
+          "main_path_exists": true,
+          "path": "src/pchsi/cognitive_runtime/access.py"
+        },
+        {
+          "branch_blob_sha": "8c8f94e005458ce50f4fb871cbf2367dd8984e72",
+          "exact_blob_equal": true,
+          "main_blob_sha": "8c8f94e005458ce50f4fb871cbf2367dd8984e72",
+          "main_path_exists": true,
+          "path": "src/pchsi/cognitive_runtime/request_renderer.py"
+        },
+        {
+          "branch_blob_sha": "985b05b8cede22adc7236ca3ef791c0c75d7f709",
+          "exact_blob_equal": false,
+          "main_blob_sha": "64a33a353e7c4b073d0e868e9271b8b5e01ecfb3",
+          "main_path_exists": true,
+          "path": "src/pchsi/research_intelligence/clean_f0f1_manifest.py"
+        },
+        {
+          "branch_blob_sha": "511a8abfaad05024f61836c7c6fe847dd628f68a",
+          "exact_blob_equal": true,
+          "main_blob_sha": "511a8abfaad05024f61836c7c6fe847dd628f68a",
+          "main_path_exists": true,
+          "path": "src/pchsi/round_control/analyzer_substage.py"
+        },
+        {
+          "branch_blob_sha": "68c524bbdd32ca6b2a8d2fd4c12b924c5bd5e745",
+          "exact_blob_equal": true,
+          "main_blob_sha": "68c524bbdd32ca6b2a8d2fd4c12b924c5bd5e745",
+          "main_path_exists": true,
+          "path": "src/pchsi/round_control/clean_group_analyzer_binding.py"
+        },
+        {
+          "branch_blob_sha": "6b42716afc87f681dbc150dae4dfd30592db0f81",
+          "exact_blob_equal": true,
+          "main_blob_sha": "6b42716afc87f681dbc150dae4dfd30592db0f81",
+          "main_path_exists": true,
+          "path": "tests/cognitive_runtime/test_c_component_taxonomy_enum_specialization.py"
+        },
+        {
+          "branch_blob_sha": "d475b5e5025554aff5382934d14573a134294cc7",
+          "exact_blob_equal": true,
+          "main_blob_sha": "d475b5e5025554aff5382934d14573a134294cc7",
+          "main_path_exists": true,
+          "path": "tests/cognitive_runtime/test_group_task_access.py"
+        },
+        {
+          "branch_blob_sha": "7ee1d46f4d8e060c462b01fa178891e804c9aae5",
+          "exact_blob_equal": true,
+          "main_blob_sha": "7ee1d46f4d8e060c462b01fa178891e804c9aae5",
+          "main_path_exists": true,
+          "path": "tests/research_intelligence/test_clean_reference_f0f1_port_v1.py"
+        },
+        {
+          "branch_blob_sha": "efcd6ea2016c96d4de4324f16466855c0321d6f1",
+          "exact_blob_equal": true,
+          "main_blob_sha": "efcd6ea2016c96d4de4324f16466855c0321d6f1",
+          "main_path_exists": true,
+          "path": "tests/round_control/test_analyzer_substage.py"
+        },
+        {
+          "branch_blob_sha": "49d5e302a96b7ca15b579e79f9f39c6721619d06",
+          "exact_blob_equal": true,
+          "main_blob_sha": "49d5e302a96b7ca15b579e79f9f39c6721619d06",
+          "main_path_exists": true,
+          "path": "tests/round_control/test_clean_group_analyzer_binding.py"
+        }
+      ],
+      "differing_code_paths": [
+        "src/pchsi/research_intelligence/clean_f0f1_manifest.py"
+      ],
+      "git_cherry_branch_unique_commits": [],
+      "git_cherry_patch_equivalent_commits": [
+        "f487c06d082e807c6b4fbfc886b0892f6358a98b",
+        "eaf22424128613d33cacb13aa4cd90b2c55355b4",
+        "74a5dbaea1d0347a91f85109cc3db965365e338c",
+        "6751ed1b816a79df37e9892c5437bbf668816c09"
+      ],
+      "head": "6751ed1b816a79df37e9892c5437bbf668816c09",
+      "merge_base": "e1a5c9f09a1c999f46755ba23aa337012ba80af2",
+      "whole_branch_merge_authorized": false
+    }
+  ],
+  "canonical_main": "4fb1f124aa25325e6e62dfdb284c60c520c74c0b",
+  "schema_id": "DIVERGED_CODE_BRANCH_RECONCILIATION_V1",
+  "whole_branch_merge_authorized": false
+}
