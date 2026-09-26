@@ -3718,8 +3718,8 @@
     },
     {
       "path": "requirements-dev.txt",
-      "sha256": "f40723c374d8534ab2a6295025f6d643f81eeac4d826db1e48947662a073a520",
-      "bytes": 14
+      "sha256": "437b05fc8bfa89e589119c188f69de40385374ae40abffd80715345d028468f2",
+      "bytes": 33
     },
     {
       "path": "runtime/COMPONENT_INDEX.json",
