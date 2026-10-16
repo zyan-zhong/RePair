@@ -102,5 +102,5 @@ See [rights and third-party components](NOTICE.md).
 The [trigger-window and factual-binding rehearsal utilities](experiments/trigger_fact_rehearsal/README.md)
 archive an ongoing supervised-learning experiment with exact source hashes and
 offline tests. They do not establish completed role distillation or change the
-reported paper results. The [shared-model online-learning design](docs/repair/ONLINE_LEARNING_DESIGN_20261016.md)
+reported paper results. The [shared-model online-learning design](docs/repair/ONLINE_LEARNING_REVISED_20261016.md)
 is awaiting review; no RL implementation or experiment is included.

@@ -45,7 +45,7 @@ python tools/verify_release.py
 python tools/verify_registered_sources.py
 ```
 
-The 20 unit tests cover complete-before-focus scheduling, zero-LR and fragmented
+The 22 unit tests cover complete-before-focus scheduling, zero-LR and fragmented
 coverage, unchanged policy/nonlocal samples, no teacher-token substitution,
 module shadowing, current-target precedence, approved-view identity and
 supervision coverage. They demonstrate engineering boundaries, not scientific
@@ -65,6 +65,22 @@ claimed. Reused development cases are not an untouched final holdout. The
 existing 355-task, single paired seed17, Memory-OFF/Harness-OFF selection and
 the final 134 unseen/140 seen isolation remain separate.
 
-The [online-learning design](../../docs/repair/ONLINE_LEARNING_DESIGN_20261016.md)
+The [online-learning design](../../docs/repair/ONLINE_LEARNING_REVISED_20261016.md)
 is a proposal for human review. Archiving it does not approve or implement RL
 rewards, penalties, eligibility changes or new training objectives.
+
+## Default observation entry correction
+
+`observer_entry.py` binds the existing default and shadow authority slots to the
+same SHA-registered current task. The old owner only replaced the shadow slot,
+so the default command could still display a completed B control. Two offline
+regressions cover both slots, idempotence, preserved renderer flags and rejection
+of unknown entry layouts. The server change preserves the prior wrapper and an
+immutable adoption receipt; no active scientific package, training data, role
+prompt, renderer or color scheme was changed. Future entry construction must
+reuse the new adoption receipt rather than the stale central-script SHA.
+
+The revised design requires SFT task success to exceed the verified comparable
+framework best before any RL pilot. Role/decision process credit, smaller trial
+budgets and the reason for each suggestion remain under discussion. No RL
+reward or loss is approved by this archive.

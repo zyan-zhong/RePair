@@ -3713,8 +3713,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "6e689cd02f724c401375f8b08e358fa003d86cf5f8a539d708a9713d06cd9f50",
-      "bytes": 5735
+      "sha256": "89da680cbcc9ad4d98b16faaace5d38185b38a8be01ab5c9abd657ae705aaada",
+      "bytes": 5736
     },
     {
       "path": "requirements-dev.txt",
@@ -17003,18 +17003,18 @@
     },
     {
       "path": "docs/repair/ONLINE_LEARNING_DESIGN_20261016.md",
-      "sha256": "11e3131b03886c24fe4ecd4f1faf8e2046e48b29273e0666fda0e8fc34b50437",
-      "bytes": 20316
+      "sha256": "247375630992d2234996f07abc402e8cf386cca46ca646b2de16dc2ce90a75b1",
+      "bytes": 20523
     },
     {
       "path": "experiments/trigger_fact_rehearsal/PROVENANCE.json",
-      "sha256": "986a2e2b556302724b8d4aa796bcb8d1438d4ba09d701fbd05fceaf92727a144",
-      "bytes": 1852
+      "sha256": "456657e50269f1a213663498a61ae0b371d1c92c795a5b3e02d82f1ecffbb580",
+      "bytes": 2350
     },
     {
       "path": "experiments/trigger_fact_rehearsal/README.md",
-      "sha256": "1e06cbb17b82f566d282b50940b816b477e56d41a369499f91c289cdda1a2c3b",
-      "bytes": 3966
+      "sha256": "6c200c3f03689ab18b45dbc81ef2441eec17b6012fdf3ebd598bd1a262cccb13",
+      "bytes": 4914
     },
     {
       "path": "experiments/trigger_fact_rehearsal/fact_practice.py",
@@ -17055,6 +17055,21 @@
       "path": "experiments/trigger_fact_rehearsal/test_target_binding.py",
       "sha256": "644da6332455bf409f5741f737c13671580b6cac24c2cbce2dcc9a4eef936adb",
       "bytes": 3620
+    },
+    {
+      "path": "docs/repair/ONLINE_LEARNING_REVISED_20261016.md",
+      "sha256": "d255d534ac65c92b49fc66a97e9bba807a1da740a38e339280cc52afd4a34770",
+      "bytes": 11204
+    },
+    {
+      "path": "experiments/trigger_fact_rehearsal/observer_entry.py",
+      "sha256": "4d825b970cdc729c62a5a1a0ec2dfe979b5b50059c0c40164c42dddf21c62a6b",
+      "bytes": 712
+    },
+    {
+      "path": "experiments/trigger_fact_rehearsal/test_observer_entry.py",
+      "sha256": "ecbcff2d350c72622782f55a3fdb39bb67a302d67777b9c2a32774579dec0a04",
+      "bytes": 966
     }
   ]
 }
