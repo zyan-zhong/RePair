@@ -1,4 +1,5 @@
 {
+  "active_scientific_entry_rebuilt": false,
   "entry_zip_sha256": "b93fd965e32c5a5ab71dc282774e4649c13079452a14496d3c707105855e10a5",
   "files": [
     {
@@ -40,8 +41,19 @@
       "origin": "registered_entry_zip_member",
       "path": "test_supervision_coverage.py",
       "sha256": "0fa48b996a34235e84defe75a6dfcd3aff3146a07caf67a29f78d35fabf3d853"
+    },
+    {
+      "origin": "post-deployment_default_and_shadow_binding_repair",
+      "path": "observer_entry.py",
+      "sha256": "4d825b970cdc729c62a5a1a0ec2dfe979b5b50059c0c40164c42dddf21c62a6b"
+    },
+    {
+      "origin": "post-deployment_default_and_shadow_binding_repair",
+      "path": "test_observer_entry.py",
+      "sha256": "ecbcff2d350c72622782f55a3fdb39bb67a302d67777b9c2a32774579dec0a04"
     }
   ],
+  "observer_renderer_and_colors_changed": false,
   "private_material_omitted": [
     "credentials",
     "model_weights",
