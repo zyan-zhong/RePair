@@ -8,8 +8,8 @@
     },
     {
       "path": ".github/workflows/checks.yml",
-      "sha256": "51997a609f49036230a111b10d1c57b20a3fc27ab4beb11447f90cd2d29cc529",
-      "bytes": 934
+      "sha256": "7bd81e6120bd36efdf50da415832ccb8b409833a0fb871d4d7b601aea0000a48",
+      "bytes": 1090
     },
     {
       "path": ".gitignore",
@@ -3713,8 +3713,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "9d5fc2364dfca71a33bdddb59a5364f070a0fe07c633cc05ab9fdcb6413b95fc",
-      "bytes": 5248
+      "sha256": "6e689cd02f724c401375f8b08e358fa003d86cf5f8a539d708a9713d06cd9f50",
+      "bytes": 5735
     },
     {
       "path": "requirements-dev.txt",
@@ -17000,6 +17000,61 @@
       "path": "tools/verify_release.py",
       "sha256": "2edb81124470518ff6ff310dddcb1cc7e63055f4380d5f199bfb44b2586cfbef",
       "bytes": 1299
+    },
+    {
+      "path": "docs/repair/ONLINE_LEARNING_DESIGN_20261016.md",
+      "sha256": "11e3131b03886c24fe4ecd4f1faf8e2046e48b29273e0666fda0e8fc34b50437",
+      "bytes": 20316
+    },
+    {
+      "path": "experiments/trigger_fact_rehearsal/PROVENANCE.json",
+      "sha256": "986a2e2b556302724b8d4aa796bcb8d1438d4ba09d701fbd05fceaf92727a144",
+      "bytes": 1852
+    },
+    {
+      "path": "experiments/trigger_fact_rehearsal/README.md",
+      "sha256": "1e06cbb17b82f566d282b50940b816b477e56d41a369499f91c289cdda1a2c3b",
+      "bytes": 3966
+    },
+    {
+      "path": "experiments/trigger_fact_rehearsal/fact_practice.py",
+      "sha256": "732c24a2a7a14c975553fdfb115b91f1436e9072c6de8ae643c9e8c205b760ac",
+      "bytes": 2947
+    },
+    {
+      "path": "experiments/trigger_fact_rehearsal/fact_rehearsal.py",
+      "sha256": "b2be22a237a321489c9293dc78dc2644c020c548a148b42de83b9ac1c2434eda",
+      "bytes": 3907
+    },
+    {
+      "path": "experiments/trigger_fact_rehearsal/prepare_rehearsal.py",
+      "sha256": "34d292624795c66a5edfa2e959c40b65654cc2ab6340142b13e5d595a6872c71",
+      "bytes": 4367
+    },
+    {
+      "path": "experiments/trigger_fact_rehearsal/supervision_coverage.py",
+      "sha256": "10d21603fc26386be60eaaf39c2cdbece94350e11f692755aaeb54f21d7e9171",
+      "bytes": 2043
+    },
+    {
+      "path": "experiments/trigger_fact_rehearsal/target_binding.py",
+      "sha256": "1ce72cf2226e1dec0d5ad26dddbb3e63fed2f60e4a1f15fb995eadb9f1037f6f",
+      "bytes": 2022
+    },
+    {
+      "path": "experiments/trigger_fact_rehearsal/test_fact_rehearsal.py",
+      "sha256": "ad30c5380b3343bac21c46a23f04f15e72d3213c247e0bd9dccf0af84691778f",
+      "bytes": 5486
+    },
+    {
+      "path": "experiments/trigger_fact_rehearsal/test_supervision_coverage.py",
+      "sha256": "0fa48b996a34235e84defe75a6dfcd3aff3146a07caf67a29f78d35fabf3d853",
+      "bytes": 1579
+    },
+    {
+      "path": "experiments/trigger_fact_rehearsal/test_target_binding.py",
+      "sha256": "644da6332455bf409f5741f737c13671580b6cac24c2cbce2dcc9a4eef936adb",
+      "bytes": 3620
     }
   ]
 }

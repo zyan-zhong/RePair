@@ -23,6 +23,8 @@ jobs:
           python tools/verify_registered_sources.py
       - name: Recount paper results
         run: python paper/reproduce_results.py
+      - name: Rehearsal utility boundaries (no model loading)
+        run: python -m unittest discover -s experiments/trigger_fact_rehearsal -p 'test_*.py'
       - name: Framework regression suite
         run: |
           make -C native/s1_backend_probe all
