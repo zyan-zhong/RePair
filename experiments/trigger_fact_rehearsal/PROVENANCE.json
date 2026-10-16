@@ -1,0 +1,55 @@
+{
+  "entry_zip_sha256": "b93fd965e32c5a5ab71dc282774e4649c13079452a14496d3c707105855e10a5",
+  "files": [
+    {
+      "origin": "registered_entry_source",
+      "path": "fact_rehearsal.py",
+      "sha256": "b2be22a237a321489c9293dc78dc2644c020c548a148b42de83b9ac1c2434eda"
+    },
+    {
+      "origin": "registered_entry_source",
+      "path": "fact_practice.py",
+      "sha256": "732c24a2a7a14c975553fdfb115b91f1436e9072c6de8ae643c9e8c205b760ac"
+    },
+    {
+      "origin": "registered_entry_source",
+      "path": "target_binding.py",
+      "sha256": "1ce72cf2226e1dec0d5ad26dddbb3e63fed2f60e4a1f15fb995eadb9f1037f6f"
+    },
+    {
+      "origin": "registered_entry_source",
+      "path": "prepare_rehearsal.py",
+      "sha256": "34d292624795c66a5edfa2e959c40b65654cc2ab6340142b13e5d595a6872c71"
+    },
+    {
+      "origin": "registered_entry_source",
+      "path": "supervision_coverage.py",
+      "sha256": "10d21603fc26386be60eaaf39c2cdbece94350e11f692755aaeb54f21d7e9171"
+    },
+    {
+      "origin": "registered_entry_source",
+      "path": "test_fact_rehearsal.py",
+      "sha256": "ad30c5380b3343bac21c46a23f04f15e72d3213c247e0bd9dccf0af84691778f"
+    },
+    {
+      "origin": "registered_entry_source",
+      "path": "test_target_binding.py",
+      "sha256": "644da6332455bf409f5741f737c13671580b6cac24c2cbce2dcc9a4eef936adb"
+    },
+    {
+      "origin": "registered_entry_zip_member",
+      "path": "test_supervision_coverage.py",
+      "sha256": "0fa48b996a34235e84defe75a6dfcd3aff3146a07caf67a29f78d35fabf3d853"
+    }
+  ],
+  "private_material_omitted": [
+    "credentials",
+    "model_weights",
+    "training_and_audit_case_payloads",
+    "server_locations",
+    "private_canonical_ledger"
+  ],
+  "production_execution_authority": false,
+  "schema": "REPAIR_TRIGGER_FACT_REHEARSAL_PUBLIC_SOURCE_V1",
+  "scientific_method_qualified": false
+}
